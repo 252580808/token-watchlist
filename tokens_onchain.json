@@ -112,7 +112,12 @@
     "intro": "Hold a Float token that buys from a pool of real graded Pokémon cards using its trading fees & splits amongst holders. Powered by \r\n@floatdotxyz",
     "twitter": "https://poolonfloat.lol",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794264120
   },
   {
     "ca": "BuqeQaxHi5TywXL7ijWGTunk6DCVFFC4vqWcqVFKMa4g",
@@ -135,7 +140,12 @@
     "intro": "",
     "twitter": "https://x.com/jon_float",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 2,
+    "buy_total": 2,
+    "buy_state": "ok",
+    "buy_ts": 1794264132
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
