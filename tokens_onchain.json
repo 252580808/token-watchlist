@@ -361,7 +361,7 @@
     "buy_kol": 4,
     "buy_total": 5,
     "buy_state": "ok",
-    "buy_ts": 1794267720
+    "buy_ts": 1794267715
   },
   {
     "ca": "HWytgukdG825oXWhRmQLHtArtvghvbFSsN9u5xo5cJFA",
@@ -389,7 +389,7 @@
     "buy_kol": 0,
     "buy_total": 1,
     "buy_state": "ok",
-    "buy_ts": 1794267733
+    "buy_ts": 1794267734
   },
   {
     "ca": "8MuTFfgeFCYa7BKMkKzRbxPLjgdEZFfHtNM2XWSfdtH2",
@@ -412,7 +412,12 @@
     "intro": "",
     "twitter": "https://buidl.tech",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 1,
+    "buy_kol": 3,
+    "buy_total": 4,
+    "buy_state": "ok",
+    "buy_ts": 1794267752
   },
   {
     "ca": "Cd8i5Xhppx792UiGmatCwcbe1M8ga57Y8Znp8M7LX6Lr",
@@ -435,7 +440,12 @@
     "intro": "",
     "twitter": "https://raftlaunch.xyz/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794267770
   },
   {
     "ca": "T8PVfjmAsczCPk5odgScSHbjyywe4QTxSaVPeVoELYS",
@@ -458,7 +468,12 @@
     "intro": "The memecoin launchpad for Elysium. Launch with HYPE or SOL.",
     "twitter": "https://elys.run",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 1,
+    "buy_kol": 1,
+    "buy_total": 2,
+    "buy_state": "ok",
+    "buy_ts": 1794267788
   },
   {
     "ca": "BEhGKMb2xqz3UBLT7sQcRk9SWEi28P88SjJzF7ke5ZUo",
@@ -481,7 +496,12 @@
     "intro": "",
     "twitter": "https://x.com/chuck_float",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 7,
+    "buy_kol": 2,
+    "buy_total": 9,
+    "buy_state": "ok",
+    "buy_ts": 1794267885
   },
   {
     "ca": "ALsXYwQk6CACHBPLaB22yES6SVEZgbf4earK519uUns",
@@ -504,7 +524,12 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/tokens/ALsXYwQk6CACHBPLaB22yES6SVEZgbf4earK519uUns",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 3,
+    "buy_kol": 1,
+    "buy_total": 4,
+    "buy_state": "ok",
+    "buy_ts": 1794267824
   },
   {
     "ca": "BqtMgJhL52yLZnrgGcHNnTRhipY69ZqjQbRizkTAbruh",
@@ -527,7 +552,12 @@
     "intro": "",
     "twitter": "https://bruhtoken.fun/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 3,
+    "buy_total": 3,
+    "buy_state": "ok",
+    "buy_ts": 1794267842
   },
   {
     "ca": "9kvjRCmGRkbn511qgwUaVVsjqbeG33YNrixJzFTW8pNt",
@@ -550,6 +580,11 @@
     "intro": "",
     "twitter": "https://thehumancoin.fun/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794267860
   }
 ]
