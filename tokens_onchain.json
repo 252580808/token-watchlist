@@ -1,5 +1,28 @@
 [
   {
+    "ca": "9xubLvbt1eHQjGMNKESzMqqPvQ71mmbQ1uF6neSxGkff",
+    "chain": "sol",
+    "name": "Inuvestor",
+    "symbol": "INUVESTOR",
+    "first_seen": "2026-11-09 20:54",
+    "created_at": "2026-11-10 04:54",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 20:54",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 38631.77402698028,
+    "market_cap": 0,
+    "holders": 2,
+    "dev_count": 1,
+    "dev_creator": "DrLXRkTUtUD17dLvqgLEP1oEHbukHckK79y5hsoKEFeX",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "Deployed using https://j7tracker.io",
+    "intro": "Deployed using https://j7tracker.io",
+    "twitter": "https://inuvestdog.fun",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "F9DrbB5ATbAtLqt4PUbFGcVa5dAHqV3E9ucYvkEBLESS",
     "chain": "sol",
     "name": "SYGNAL",
