@@ -20,12 +20,7 @@
     "intro": "Interchange for KYC",
     "twitter": "https://useknown.dev/",
     "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": null,
-    "buy_kol": 1,
-    "buy_total": 1,
-    "buy_state": "ok",
-    "buy_ts": 1794242489
+    "telegram": "https://t.me/1"
   },
   {
     "ca": "GLEpJAdQQ6hEyqfa571RQtnpYsAL1MTNK894QHi37mtF",
@@ -48,12 +43,7 @@
     "intro": "",
     "twitter": "https://x.com/cexfloat",
     "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": null,
-    "buy_kol": 1,
-    "buy_total": 1,
-    "buy_state": "ok",
-    "buy_ts": 1794242497
+    "telegram": "https://t.me/1"
   },
   {
     "ca": "AhMWqC77W2YUx6rPXtoju3N3L1pA89p5JvZxYWN3dHUf",
@@ -420,29 +410,6 @@
     "description": "发射台 ray_launchpad",
     "intro": "",
     "twitter": "",
-    "website": "",
-    "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "zfZ27sjzYP5jEvbz76McQNxDs6CAWiiaFhXcrmyFffs",
-    "chain": "sol",
-    "name": "FloatV2xyz",
-    "symbol": "FloatV2xyz",
-    "first_seen": "2026-11-08 16:42",
-    "created_at": "2026-11-09 00:42",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 16:42",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 8929.29718092624,
-    "market_cap": 26084.76,
-    "holders": 31,
-    "dev_count": 1,
-    "dev_creator": "D1fyQUHcD27b647H1Ard1mViG8WG19VxVxisRMSbpWHp",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://floatv2.xyz/",
     "website": "",
     "telegram": "https://t.me/1"
   }
