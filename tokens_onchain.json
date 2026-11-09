@@ -1,5 +1,28 @@
 [
   {
+    "ca": "1y5Hgr6qec6seF87qBFRxaWF1QSpmNEsfqMFKp9k9g",
+    "chain": "sol",
+    "name": "1 coin can change your life",
+    "symbol": "1",
+    "first_seen": "2026-11-09 17:37",
+    "created_at": "2026-11-10 01:37",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 17:37",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 24975.75487,
+    "market_cap": 47578.91,
+    "holders": 198,
+    "dev_count": 1,
+    "dev_creator": "AS3fCtbq3FLy6FnJbjwtes65piiHtBqGgJH1waWqYhbd",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "发射台 ray_launchpad",
+    "intro": "",
+    "twitter": "https://www.floatlaunch.xyz/tokens/1y5Hgr6qec6seF87qBFRxaWF1QSpmNEsfqMFKp9k9g",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
     "chain": "sol",
     "name": "Froly",
