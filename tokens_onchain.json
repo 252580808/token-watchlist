@@ -1,5 +1,28 @@
 [
   {
+    "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
+    "chain": "sol",
+    "name": "FAIR",
+    "symbol": "FAIR",
+    "first_seen": "2026-11-09 19:48",
+    "created_at": "2026-11-10 03:48",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 19:48",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 28143.08870021996,
+    "market_cap": 0,
+    "holders": 635,
+    "dev_count": 1,
+    "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "Pick your pairing.\r\nPick your opening market cap.\r\n\r\nThe Solana launchpad that rewards holders.",
+    "intro": "Pick your pairing.\r\nPick your opening market cap.\r\n\r\nThe Solana launchpad that rewards holders.",
+    "twitter": "https://launchfair.fun/",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "11hK1Ak4Ghtinbh9Uc6KWiJDqvgurPjmDptDxLCncn",
     "chain": "sol",
     "name": "Basket",
