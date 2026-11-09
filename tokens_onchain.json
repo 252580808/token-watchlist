@@ -1,5 +1,28 @@
 [
   {
+    "ca": "11hK1Ak4Ghtinbh9Uc6KWiJDqvgurPjmDptDxLCncn",
+    "chain": "sol",
+    "name": "Basket",
+    "symbol": "BASKET",
+    "first_seen": "2026-11-09 19:15",
+    "created_at": "2026-11-10 03:15",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 19:15",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 12112.250470327,
+    "market_cap": 29519.82,
+    "holders": 67,
+    "dev_count": 1,
+    "dev_creator": "81kRpHEixwKMvK59YqJCuto7MprHGWq4jBB9vrP9SsLf",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "发射台 ray_launchpad",
+    "intro": "",
+    "twitter": "https://floatingbasket.fun/",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "1y5Hgr6qec6seF87qBFRxaWF1QSpmNEsfqMFKp9k9g",
     "chain": "sol",
     "name": "1 coin can change your life",
@@ -43,12 +66,7 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/tokens/1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
     "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 0,
-    "buy_kol": 1,
-    "buy_total": 1,
-    "buy_state": "ok",
-    "buy_ts": 1794251548
+    "telegram": "https://t.me/1"
   },
   {
     "ca": "EhWgXU9KC9TdGALvKFwxu8mCRdrpcZaNaJEk4gdknwn",
@@ -71,12 +89,7 @@
     "intro": "Interchange for KYC",
     "twitter": "https://useknown.dev/",
     "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 0,
-    "buy_kol": 1,
-    "buy_total": 1,
-    "buy_state": "ok",
-    "buy_ts": 1794251560
+    "telegram": "https://t.me/1"
   },
   {
     "ca": "GLEpJAdQQ6hEyqfa571RQtnpYsAL1MTNK894QHi37mtF",
