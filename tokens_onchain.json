@@ -1,5 +1,28 @@
 [
   {
+    "ca": "481PDxs2Fg8KikAw4BoG2vcdn4WPzSJS4TWZVX5wF33D",
+    "chain": "sol",
+    "name": "F33D",
+    "symbol": "F33D",
+    "first_seen": "2026-11-09 21:32",
+    "created_at": "2026-11-10 05:32",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 21:32",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 50883.60136327104,
+    "market_cap": 82914.85,
+    "holders": 319,
+    "dev_count": 2,
+    "dev_creator": "ANppuXB58vHobrRo3A1zohwG4Gx6TcsNfp4JxqkuQ18E",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "The launchpad that feeds.\r\nPowered by Solana + Helius",
+    "intro": "The launchpad that feeds.\r\nPowered by Solana + Helius",
+    "twitter": "https://F33D.pro/",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "25bYec4YaCbNQLJrkDK5F4j7MA16JXsm2pRZcocg79wA",
     "chain": "sol",
     "name": "Super Inu",
