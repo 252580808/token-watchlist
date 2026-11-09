@@ -43,7 +43,12 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/tokens/1y5Hgr6qec6seF87qBFRxaWF1QSpmNEsfqMFKp9k9g",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 1,
+    "buy_kol": 6,
+    "buy_total": 7,
+    "buy_state": "ok",
+    "buy_ts": 1794253348
   },
   {
     "ca": "1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
@@ -66,7 +71,12 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/tokens/1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794253360
   },
   {
     "ca": "EhWgXU9KC9TdGALvKFwxu8mCRdrpcZaNaJEk4gdknwn",
