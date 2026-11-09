@@ -504,28 +504,5 @@
     "twitter": "https://floatchains.xyz/",
     "website": "",
     "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "CYkhLTCQ8z3o2zyWz6Ubzsszs5b8pCYfskL6DrRSbXvX",
-    "chain": "sol",
-    "name": "FloatPool",
-    "symbol": "FloatPool",
-    "first_seen": "2026-11-08 22:33",
-    "created_at": "2026-11-09 06:33",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 22:33",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 14460.6993969505,
-    "market_cap": 0,
-    "holders": 85,
-    "dev_count": 1,
-    "dev_creator": "AYeUh4x2y2D7WmFRUdYJLSmw8xLyvLnoK8owsRdST9wC",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://FloatPool.tech/",
-    "website": "",
-    "telegram": "https://t.me/1"
   }
 ]
