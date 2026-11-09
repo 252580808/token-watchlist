@@ -43,7 +43,12 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/tokens/1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794251548
   },
   {
     "ca": "EhWgXU9KC9TdGALvKFwxu8mCRdrpcZaNaJEk4gdknwn",
@@ -66,7 +71,12 @@
     "intro": "Interchange for KYC",
     "twitter": "https://useknown.dev/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794251560
   },
   {
     "ca": "GLEpJAdQQ6hEyqfa571RQtnpYsAL1MTNK894QHi37mtF",
