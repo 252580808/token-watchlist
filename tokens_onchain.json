@@ -527,28 +527,5 @@
     "twitter": "https://rageguy.xyz/",
     "website": "",
     "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "jvbgJbED1avU8KyeKiwLCxytN5rR149mdQmDiBCqJRH",
-    "chain": "sol",
-    "name": "Nipples Very Distracting Alice",
-    "symbol": "NVDA",
-    "first_seen": "2026-11-08 21:07",
-    "created_at": "2026-11-09 05:07",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 21:07",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 11782.58765348568,
-    "market_cap": 29460.56,
-    "holders": 31,
-    "dev_count": 1,
-    "dev_creator": "GcXVjyfDmrE6FHEQKcjHb7eb3WSi2LnHUr3qiRHBtuLX",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://www.floatlaunch.xyz/",
-    "website": "",
-    "telegram": "https://t.me/1"
   }
 ]
