@@ -20,7 +20,12 @@
     "intro": "Interchange for KYC",
     "twitter": "https://useknown.dev/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794241983
   },
   {
     "ca": "GLEpJAdQQ6hEyqfa571RQtnpYsAL1MTNK894QHi37mtF",
@@ -43,7 +48,12 @@
     "intro": "",
     "twitter": "https://x.com/cexfloat",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 1,
+    "buy_kol": 1,
+    "buy_total": 2,
+    "buy_state": "ok",
+    "buy_ts": 1794242001
   },
   {
     "ca": "AhMWqC77W2YUx6rPXtoju3N3L1pA89p5JvZxYWN3dHUf",
@@ -66,7 +76,12 @@
     "intro": "",
     "twitter": "https://www.curvd.fun/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "throttle:每分钟额度让路",
+    "buy_ts": 1794242023
   },
   {
     "ca": "HWytgukdG825oXWhRmQLHtArtvghvbFSsN9u5xo5cJFA",
@@ -89,7 +104,12 @@
     "intro": "",
     "twitter": "https://www.fl00r.cash/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 1,
+    "buy_kol": null,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794242045
   },
   {
     "ca": "8MuTFfgeFCYa7BKMkKzRbxPLjgdEZFfHtNM2XWSfdtH2",
@@ -112,7 +132,12 @@
     "intro": "",
     "twitter": "https://buidl.tech",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": 3,
+    "buy_total": 3,
+    "buy_state": "ok",
+    "buy_ts": 1794242064
   },
   {
     "ca": "Cd8i5Xhppx792UiGmatCwcbe1M8ga57Y8Znp8M7LX6Lr",
@@ -135,7 +160,12 @@
     "intro": "",
     "twitter": "https://raftlaunch.xyz/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "throttle:每分钟额度让路",
+    "buy_ts": 1794242086
   },
   {
     "ca": "T8PVfjmAsczCPk5odgScSHbjyywe4QTxSaVPeVoELYS",
@@ -158,7 +188,12 @@
     "intro": "The memecoin launchpad for Elysium. Launch with HYPE or SOL.",
     "twitter": "https://elys.run",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 1,
+    "buy_kol": 1,
+    "buy_total": 2,
+    "buy_state": "ok",
+    "buy_ts": 1794242105
   },
   {
     "ca": "BEhGKMb2xqz3UBLT7sQcRk9SWEi28P88SjJzF7ke5ZUo",
@@ -181,7 +216,12 @@
     "intro": "",
     "twitter": "https://x.com/chuck_float",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 7,
+    "buy_kol": 2,
+    "buy_total": 9,
+    "buy_state": "ok",
+    "buy_ts": 1794242124
   },
   {
     "ca": "ALsXYwQk6CACHBPLaB22yES6SVEZgbf4earK519uUns",
@@ -204,7 +244,12 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/tokens/ALsXYwQk6CACHBPLaB22yES6SVEZgbf4earK519uUns",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "throttle:每分钟额度让路",
+    "buy_ts": 1794242146
   },
   {
     "ca": "BqtMgJhL52yLZnrgGcHNnTRhipY69ZqjQbRizkTAbruh",
@@ -227,7 +272,12 @@
     "intro": "",
     "twitter": "https://bruhtoken.fun/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 3,
+    "buy_total": 3,
+    "buy_state": "ok",
+    "buy_ts": 1794242167
   },
   {
     "ca": "9kvjRCmGRkbn511qgwUaVVsjqbeG33YNrixJzFTW8pNt",
@@ -250,7 +300,12 @@
     "intro": "",
     "twitter": "https://thehumancoin.fun/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794242186
   },
   {
     "ca": "FCC5aFpXMVZMZJ75SAWRKvPsCbqc3Gz8ymbr8vNw1adP",
@@ -273,30 +328,12 @@
     "intro": "",
     "twitter": "https://floatchains.xyz/",
     "website": "",
-    "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "CYkhLTCQ8z3o2zyWz6Ubzsszs5b8pCYfskL6DrRSbXvX",
-    "chain": "sol",
-    "name": "FloatPool",
-    "symbol": "FloatPool",
-    "first_seen": "2026-11-08 22:33",
-    "created_at": "2026-11-09 06:33",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 22:33",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 14460.6993969505,
-    "market_cap": 0,
-    "holders": 85,
-    "dev_count": 1,
-    "dev_creator": "AYeUh4x2y2D7WmFRUdYJLSmw8xLyvLnoK8owsRdST9wC",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://FloatPool.tech/",
-    "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "throttle:每分钟额度让路",
+    "buy_ts": 1794242208
   },
   {
     "ca": "6cMF6tTYGjDW4YiBtaA2HMedog4VihbyirDpJY6utVhr",
@@ -319,7 +356,12 @@
     "intro": "",
     "twitter": "https://rageguy.xyz/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794242246
   },
   {
     "ca": "jvbgJbED1avU8KyeKiwLCxytN5rR149mdQmDiBCqJRH",
@@ -342,7 +384,12 @@
     "intro": "",
     "twitter": "https://www.floatlaunch.xyz/",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "throttle:每分钟额度让路",
+    "buy_ts": 1794242268
   },
   {
     "ca": "F8XdNszpWQfDpUsjXhuk63GiiVR972JA9cFnt37dCTLg",
@@ -365,30 +412,12 @@
     "intro": "",
     "twitter": "https://bruhtoken.fun/",
     "website": "",
-    "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "JZfPUu1h2cMTbUtvFofRsiu2kDNf3e7wqZpde3fR7dh",
-    "chain": "sol",
-    "name": "Pusheen",
-    "symbol": "Pusheen",
-    "first_seen": "2026-11-08 18:50",
-    "created_at": "2026-11-09 02:50",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 18:50",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 9681.9071263512,
-    "market_cap": 26967.31,
-    "holders": 37,
-    "dev_count": 1,
-    "dev_creator": "8D3eABEYzvaeRHzno28xpCD6abLwY8pJSU7y2sQ1YAQH",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://www.floatlaunch.xyz/tokens/JZfPUu1h2cMTbUtvFofRsiu2kDNf3e7wqZpde3fR7dh",
-    "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 2,
+    "buy_total": 2,
+    "buy_state": "ok",
+    "buy_ts": 1794242287
   },
   {
     "ca": "nUESj13byLn6bHFFaygmf7mCQbHZvb6yKqdHjjLWmj1",
@@ -411,29 +440,11 @@
     "intro": "",
     "twitter": "",
     "website": "",
-    "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "zfZ27sjzYP5jEvbz76McQNxDs6CAWiiaFhXcrmyFffs",
-    "chain": "sol",
-    "name": "FloatV2xyz",
-    "symbol": "FloatV2xyz",
-    "first_seen": "2026-11-08 16:42",
-    "created_at": "2026-11-09 00:42",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 16:42",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 8929.29718092624,
-    "market_cap": 26084.76,
-    "holders": 31,
-    "dev_count": 1,
-    "dev_creator": "D1fyQUHcD27b647H1Ard1mViG8WG19VxVxisRMSbpWHp",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://floatv2.xyz/",
-    "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "throttle:每分钟额度让路",
+    "buy_ts": 1794242328
   }
 ]
