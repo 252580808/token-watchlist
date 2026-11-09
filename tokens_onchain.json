@@ -458,28 +458,5 @@
     "twitter": "https://deepfloat.fun/",
     "website": "",
     "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "8uUuaftMvA2QsVawSYgQzHnhN5p3ezfLbhs2HAkcTdpC",
-    "chain": "sol",
-    "name": "Refloat",
-    "symbol": "REFLOAT",
-    "first_seen": "2026-11-08 15:45",
-    "created_at": "2026-11-08 23:45",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 15:45",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 8156.87783969904,
-    "market_cap": 0,
-    "holders": 84,
-    "dev_count": 1,
-    "dev_creator": "3cqKgUPeR1HgAcW72zxU8epZmpXQEGPwdEUGPGMpT6SM",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://refloat.tools/",
-    "website": "",
-    "telegram": "https://t.me/1"
   }
 ]
