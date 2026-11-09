@@ -43,7 +43,12 @@
     "intro": "",
     "twitter": "https://floatlaunch.xyz/token/25bYec4YaCbNQLJrkDK5F4j7MA16JXsm2pRZcocg79wA",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 1,
+    "buy_total": 1,
+    "buy_state": "ok",
+    "buy_ts": 1794265936
   },
   {
     "ca": "9xubLvbt1eHQjGMNKESzMqqPvQ71mmbQ1uF6neSxGkff",
@@ -66,7 +71,12 @@
     "intro": "Deployed using https://j7tracker.io",
     "twitter": "https://inuvestdog.fun",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 0,
+    "buy_kol": 3,
+    "buy_total": 3,
+    "buy_state": "ok",
+    "buy_ts": 1794265949
   },
   {
     "ca": "F9DrbB5ATbAtLqt4PUbFGcVa5dAHqV3E9ucYvkEBLESS",
