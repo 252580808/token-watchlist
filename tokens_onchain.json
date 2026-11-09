@@ -527,28 +527,5 @@
     "twitter": "https://FloatPool.tech/",
     "website": "",
     "telegram": "https://t.me/1"
-  },
-  {
-    "ca": "6cMF6tTYGjDW4YiBtaA2HMedog4VihbyirDpJY6utVhr",
-    "chain": "sol",
-    "name": "Rageguy",
-    "symbol": "RAGEGUY",
-    "first_seen": "2026-11-08 22:20",
-    "created_at": "2026-11-09 06:20",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-08 22:20",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 16125.6177675372,
-    "market_cap": 33506.3,
-    "holders": 78,
-    "dev_count": 1,
-    "dev_creator": "2F8Dfnn3pX2nkK7jLr4M2UrLBgBAWfpMMShuJH69guNz",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://rageguy.xyz/",
-    "website": "",
-    "telegram": "https://t.me/1"
   }
 ]
