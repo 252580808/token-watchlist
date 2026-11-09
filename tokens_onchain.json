@@ -1,5 +1,28 @@
 [
   {
+    "ca": "25bYec4YaCbNQLJrkDK5F4j7MA16JXsm2pRZcocg79wA",
+    "chain": "sol",
+    "name": "Super Inu",
+    "symbol": "SI",
+    "first_seen": "2026-11-09 20:56",
+    "created_at": "2026-11-10 04:56",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 20:56",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 32281.585061693157,
+    "market_cap": 0,
+    "holders": 6,
+    "dev_count": 1,
+    "dev_creator": "51p78LEH6D5ji6gwjKqMHxzG3PapqWVimEkcT2H2Bxum",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "发射台 ray_launchpad",
+    "intro": "",
+    "twitter": "https://floatlaunch.xyz/token/25bYec4YaCbNQLJrkDK5F4j7MA16JXsm2pRZcocg79wA",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "9xubLvbt1eHQjGMNKESzMqqPvQ71mmbQ1uF6neSxGkff",
     "chain": "sol",
     "name": "Inuvestor",
