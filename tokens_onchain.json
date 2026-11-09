@@ -1,5 +1,28 @@
 [
   {
+    "ca": "1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
+    "chain": "sol",
+    "name": "Froly",
+    "symbol": "FROLY",
+    "first_seen": "2026-11-09 16:58",
+    "created_at": "2026-11-10 00:58",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 16:58",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 14952.306944414364,
+    "market_cap": 32355.68,
+    "holders": 65,
+    "dev_count": 1,
+    "dev_creator": "ELrfB3AmFEGZ8T4eDWx7b6DMKHxXkgRPgtoqP4hmdqi4",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "发射台 ray_launchpad",
+    "intro": "",
+    "twitter": "https://www.floatlaunch.xyz/tokens/1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
+    "website": "",
+    "telegram": "https://t.me/1"
+  },
+  {
     "ca": "EhWgXU9KC9TdGALvKFwxu8mCRdrpcZaNaJEk4gdknwn",
     "chain": "sol",
     "name": "Known",
