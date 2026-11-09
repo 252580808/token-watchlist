@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>新币监控看板</title>
+<style>
+  :root{
+    --bg:#0b0e13; --bg2:#10141c; --panel:#12161f; --panel2:#171c28; --line:#232a3a; --line2:#2c354a;
+    --text:#eef1f7; --muted:#9aa3b5; --faint:#6b7488;
+    --green:#2bd97c; --green-dim:rgba(43,217,124,.12);
+    --red:#ff5c6c; --red-dim:rgba(255,92,108,.12);
+    --amber:#f5b83d; --blue:#4da3ff; --cyan:#2dd4d8;
+    --sol:#9945ff; --bsc:#f0b90b; --eth:#627eea; --base:#0052ff; --arb:#28a0f0;
+    --radius:10px;
+    --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#eef1f6; --bg2:#e6eaf1; --panel:#ffffff; --panel2:#f4f6fa; --line:#dde3ee; --line2:#cbd4e4;
+      --text:#131722; --muted:#5b6579; --faint:#8a93a7;
+      --green:#0aa85c; --green-dim:rgba(10,168,92,.1);
+      --red:#e0344a; --red-dim:rgba(224,52,74,.09);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  button{font-family:inherit;cursor:pointer}
+  input,select,textarea{font-family:inherit}
+  ::selection{background:rgba(77,163,255,.35)}
+
+  .wrap{max-width:1560px;margin:0 auto;padding:14px 14px 40px}
+
+  /* ---------- top strip ---------- */
+  .topbar{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin-bottom:12px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;min-width:118px;flex:0 1 auto}
+  .stat .k{font-size:11px;color:var(--faint);letter-spacing:.04em}
+  .stat .v{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:1px}
+  .stat .v small{font-size:12px;color:var(--muted);font-weight:500}
+  .stat .sub{font-size:11px;color:var(--muted)}
+  .stat.grow{flex:1 1 220px}
+  .live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;box-shadow:0 0 0 3px var(--green-dim);vertical-align:1px}
+  .live-dot.off{background:var(--faint);box-shadow:none}
+  .newbadge{display:none;background:var(--green);color:#06130b;font-weight:700;border-radius:999px;padding:1px 9px;font-size:12px;margin-left:8px;vertical-align:2px}
+  .newbadge.show{display:inline-block}
+  .autonote{display:none;margin-top:6px;font-size:12.5px;font-weight:700;color:var(--green);background:var(--green-dim);border:1px solid rgba(43,217,124,.35);border-radius:7px;padding:5px 9px}
+  .autonote.show{display:inline-block;animation:autonoteflash 1.6s ease-out}
+  @keyframes autonoteflash{0%{background:rgba(43,217,124,.35)}100%{background:var(--green-dim)}}
+  @media (prefers-reduced-motion: reduce){ .autonote.show{animation:none} }
+
+  /* ---------- panels ---------- */
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px}
+  .panel-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .panel-h .t{font-weight:700;font-size:13px}
+  .panel-h .hint{font-size:12px;color:var(--muted)}
+  .panel-b{padding:12px 14px}
+
+  /* feed config */
+  .feedrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .feedrow input[type="url"]{flex:1 1 340px;background:var(--bg2);border:1px solid var(--line2);color:var(--text);border-radius:8px;padding:9px 11px;font-family:var(--mono);font-size:12.5px;min-width:0}
+  .feedrow select,.toolbar select{background:var(--bg2);border:1px solid var(--line2);color:var(--text);border-radius:8px;padding:8px 9px;font-size:13px}
+  .btn{border:1px solid var(--line2);background:var(--panel2);color:var(--text);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600}
+  .btn:hover{border-color:var(--faint)}
+  .btn.primary{background:var(--green);border-color:var(--green);color:#06130b}
+  .btn.primary:hover{filter:brightness(1.07)}
+  .btn.ghost{background:transparent}
+  .btn.sm{padding:5px 10px;font-size:12px}
+  .btn:disabled{opacity:.5;cursor:wait}
+  .btn.danger{color:var(--red);border-color:rgba(255,92,108,.45)}
+  .btn.danger:hover{border-color:var(--red);background:var(--red-dim)}
+  .acts .block-btn{border:1px solid rgba(255,92,108,.45);background:transparent;border-radius:7px;padding:4px 9px;font-size:12px;color:var(--red);font-weight:600;white-space:nowrap;cursor:pointer}
+  .acts .block-btn:hover{background:var(--red-dim);border-color:var(--red)}
+  /* blocked list */
+  .blocked-list{display:flex;flex-direction:column;gap:0}
+  .blocked-item{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:9px 0;border-bottom:1px solid var(--line)}
+  .blocked-item:last-child{border-bottom:none}
+  .blocked-item .bn{font-weight:700}
+  .blocked-item .bn span{color:var(--muted);font-weight:500;font-size:12px;margin-left:5px}
+  .blocked-item .bca{font-family:var(--mono);font-size:11.5px;color:var(--faint);word-break:break-all}
+  .blocked-item .bmeta{font-size:11.5px;color:var(--faint)}
+  .blocked-empty{font-size:13px;color:var(--muted);padding:2px 0}
+  /* confirm modal */
+  .modal-mask{position:fixed;inset:0;background:rgba(4,6,10,.62);display:none;align-items:center;justify-content:center;z-index:80;padding:18px}
+  .modal-mask.open{display:flex}
+  .modal{background:var(--panel);border:1px solid var(--line2);border-radius:12px;max-width:440px;width:100%;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+  .modal h3{margin:0 0 8px;font-size:16px}
+  .modal p{margin:0 0 10px;font-size:13.5px;color:var(--muted);line-height:1.65}
+  .modal .mca{font-family:var(--mono);font-size:12px;color:var(--text);background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;word-break:break-all;margin-bottom:12px}
+  .modal .mrow{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+  .modal .btn.confirm-block{background:var(--red);border-color:var(--red);color:#fff}
+  .modal .btn.confirm-block:hover{filter:brightness(1.08)}
+  .switch{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+  .switch .track{width:36px;height:20px;border-radius:999px;background:var(--line2);position:relative;transition:.15s;flex:none}
+  .switch .track::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:.15s}
+  .switch.on .track{background:var(--green)}
+  .switch.on .track::after{left:18px}
+  .feedmeta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:12px;color:var(--muted)}
+  .feedmeta b{color:var(--text);font-variant-numeric:tabular-nums}
+  .feedstatus.ok{color:var(--green)} .feedstatus.err{color:var(--red)}
+
+  /* toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 14px}
+  .search{flex:1 1 200px;display:flex;align-items:center;gap:7px;background:var(--bg2);border:1px solid var(--line2);border-radius:8px;padding:0 11px;min-width:0}
+  .search svg{flex:none;opacity:.55}
+  .search input{flex:1;background:none;border:none;outline:none;color:var(--text);padding:9px 0;font-size:13.5px;min-width:0}
+  .pills{display:flex;flex-wrap:wrap;gap:6px}
+  .pill{border:1px solid var(--line2);background:transparent;color:var(--muted);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600}
+  .pill:hover{color:var(--text)}
+  .pill.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+  .pill .n{opacity:.6;font-weight:500;margin-left:3px}
+
+  /* ---------- table ---------- */
+  .tblwrap{overflow:hidden}
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  thead th{font-size:11.5px;color:var(--faint);font-weight:600;text-align:right;padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--panel)}
+  thead th:first-child,thead th:nth-child(2){text-align:left}
+  thead th.sortable{cursor:pointer;user-select:none}
+  thead th.sortable:hover{color:var(--text)}
+  thead th .arr{font-size:9px;margin-left:2px}
+  tbody td{padding:10px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top;font-size:13.5px}
+  tbody td:first-child,tbody td:nth-child(2){text-align:left}
+  tbody tr.row{cursor:pointer}
+  tbody tr.row:hover{background:var(--panel2)}
+  tbody tr.fresh{animation:freshflash 2.4s ease-out}
+  @keyframes freshflash{0%{background:var(--green-dim)}100%{background:transparent}}
+  @media (prefers-reduced-motion: reduce){ tbody tr.fresh{animation:none} }
+  .tok{display:flex;gap:10px;align-items:flex-start;min-width:0}
+  .avatar{width:34px;height:34px;border-radius:9px;flex:none;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+  .tok .nm{font-weight:700;font-size:14px;line-height:1.25;word-break:break-word}
+  .tok .nm span{color:var(--muted);font-weight:500;font-size:12px;margin-left:5px}
+  .intro-line{font-size:11.5px;color:var(--muted);margin-top:3px;max-width:230px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.4}
+  .ca{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:11.5px;color:var(--faint);margin-top:2px}
+  .ca button{background:none;border:none;color:var(--faint);padding:2px;border-radius:4px;line-height:0}
+  .ca button:hover{color:var(--text)}
+  .chain{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;white-space:nowrap}
+  .cdot{width:8px;height:8px;border-radius:50%;flex:none}
+  .src{display:block;font-size:11px;color:var(--faint);margin-top:2px;white-space:nowrap}
+  .age{font-weight:700;white-space:nowrap}
+  .agebar{width:64px;height:4px;border-radius:2px;background:var(--line);margin:5px 0 0 auto;overflow:hidden}
+  .agebar i{display:block;height:100%;border-radius:2px;background:var(--cyan)}
+  .agebar i.warn{background:var(--amber)} .agebar i.danger{background:var(--red)}
+  .remain{font-size:11px;color:var(--faint);white-space:nowrap}
+  .up{color:var(--green)} .down{color:var(--red)}
+  .pct{font-size:12px;font-weight:600}
+  .price{font-family:var(--mono);font-size:12.5px}
+  .txns small{display:block;font-size:11.5px}
+  .buy{color:var(--green)} .sell{color:var(--red)}
+  .devn{font-weight:700}
+  .devn.hot{color:var(--amber)}
+  .socials{display:flex;gap:4px;justify-content:flex-end}
+  .socials a,.socials span{display:inline-flex;width:26px;height:26px;border-radius:7px;border:1px solid var(--line2);align-items:center;justify-content:center;color:var(--muted)}
+  .socials a:hover{color:var(--text);border-color:var(--faint);text-decoration:none}
+  .socials span{opacity:.28}
+  .acts{display:flex;gap:5px;justify-content:flex-end}
+  .acts a{border:1px solid var(--line2);border-radius:7px;padding:4px 9px;font-size:12px;color:var(--text);font-weight:600;white-space:nowrap}
+  .acts a:hover{border-color:var(--green);color:var(--green);text-decoration:none}
+  tr.detail td{text-align:left;background:var(--bg2);padding:12px 14px 14px 58px}
+  .detailbox{display:grid;grid-template-columns:1.4fr 1fr;gap:14px 26px}
+  .detailbox h4{margin:0 0 5px;font-size:11px;color:var(--faint);letter-spacing:.05em;font-weight:600}
+  .detailbox p{margin:0;font-size:13px;color:var(--muted)}
+  .detailbox .kv{font-size:12.5px;color:var(--muted);line-height:1.9}
+  .detailbox .kv b{color:var(--text);font-family:var(--mono);font-weight:600;word-break:break-all}
+  .empty{padding:44px 20px;text-align:center;color:var(--muted)}
+  .empty .big{font-size:15px;font-weight:700;color:var(--text);margin-bottom:5px}
+
+  /* import */
+  #importPanel{display:none}
+  #importPanel.open{display:block}
+  #importPanel textarea{width:100%;min-height:110px;background:var(--bg2);border:1px solid var(--line2);border-radius:8px;color:var(--text);padding:10px 11px;font-family:var(--mono);font-size:12.5px;resize:vertical}
+  .importrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px;align-items:center}
+  .importrow .hint{font-size:12px;color:var(--muted)}
+
+  .foot{font-size:12px;color:var(--faint);line-height:1.8;padding:2px 2px 0}
+  .foot code{font-family:var(--mono);background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:0 5px;font-size:11.5px}
+  .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(16px);background:var(--text);color:var(--bg);font-weight:600;font-size:13px;border-radius:9px;padding:10px 16px;opacity:0;pointer-events:none;transition:.2s;z-index:50;max-width:92vw;text-align:center}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ---------- mobile cards ---------- */
+  .cards{display:none}
+  @media (max-width:900px){
+    .tblwrap{display:none}
+    .cards{display:block}
+    .card{border-bottom:1px solid var(--line);padding:12px 14px;cursor:pointer}
+    .card.fresh{animation:freshflash 2.4s ease-out}
+    .card .r1{display:flex;gap:10px;align-items:flex-start}
+    .card .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 10px;margin-top:11px}
+    .card .cell .k{font-size:10.5px;color:var(--faint)}
+    .card .cell .v{font-size:13.5px;font-weight:600;margin-top:1px}
+    .card .r3{display:flex;align-items:center;gap:8px;margin-top:11px}
+    .card .detailbox{grid-template-columns:1fr;margin-top:12px}
+    .stat{min-width:calc(33.3% - 7px);flex:1 1 0;padding:8px 11px}
+    .stat .v{font-size:17px}
+    .stat.grow{flex:1 1 100%}
+    tr.detail td{padding-left:14px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ======= status strip ======= -->
+  <div class="topbar">
+    <div class="stat grow">
+      <div class="k"><span class="live-dot off" id="liveDot"></span>实时监控 · GitHub tokens.json<span class="newbadge" id="newBadge">新增 0</span></div>
+      <div><span class="autonote" id="autoNote" role="status">同步中…</span></div>
+    </div>
+    <div class="stat"><div class="k">监控中</div><div class="v" id="stTotal">0</div><div class="sub">满 3 天自动移除</div></div>
+    <div class="stat"><div class="k">6 小时内新币</div><div class="v" id="stFresh">0</div><div class="sub">最新一批信号</div></div>
+    <div class="stat"><div class="k">24h 总交易量</div><div class="v" id="stVol">—</div><div class="sub">池内合计</div></div>
+    <div class="stat"><div class="k">覆盖公链</div><div class="v" id="stChains">0 <small>条</small></div><div class="sub">全部来源链都收</div></div>
+  </div>
+
+  <!-- ======= auto feed config ======= -->
+  <div class="panel">
+    <div class="panel-h">
+      <span class="t">自动添加 · tokens.json 数据源</span>
+      <span class="hint">地址可改，改完点保存；拉不到时不清空，继续显示上次成功的数据。</span>
+    </div>
+    <div class="panel-b">
+      <div class="feedrow">
+        <input type="url" id="feedUrl" value="https://api.github.com/repos/252580808/token-watchlist/contents/tokens.json" placeholder="https://api.github.com/repos/252580808/token-watchlist/contents/tokens.json" spellcheck="false" />
+        <select id="feedInterval" title="拉取间隔">
+          <option value="120">每 2 分钟</option>
+          <option value="180">每 3 分钟</option>
+          <option value="300" selected>每 5 分钟</option>
+        </select>
+        <button class="btn primary" id="feedSave">保存并立即拉取</button>
+        <button class="btn" id="feedNow">手动刷新</button>
+        <span class="switch on" id="feedSwitch" role="switch" aria-checked="true" tabindex="0"><span class="track"></span>自动拉取</span>
+      </div>
+      <div class="feedmeta">
+        <span>状态：<b class="feedstatus" id="feedStatus">正在同步：清单 + 行情一起拉取…</b></span>
+        <span>累计自动新增：<b id="feedAdded">0</b></span>
+        <span>已到期移除：<b id="feedExpired">0</b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= toolbar + table ======= -->
+  <div class="panel">
+    <div class="toolbar">
+      <div class="pills" id="chainPills"></div>
+      <label class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <input id="q" type="search" placeholder="搜名称 / 代码 / CA…" />
+      </label>
+      <select id="srcFilter" title="来源">
+        <option value="">全部来源</option>
+        <option>新潜力币</option>
+        <option>KOL转发</option>
+        <option>TG群监控</option>
+        <option>X List</option>
+        <option>手动添加</option>
+      </select>
+      <select id="sortSel" title="排序">
+        <option value="push" selected>按最新推送（新→旧）</option>
+        <option value="age">按创建时间（新→旧）</option>
+        <option value="mcap">按市值（高→低）</option>
+        <option value="liq">按流动性（高→低）</option>
+        <option value="vol">按 24h 量（高→低）</option>
+        <option value="holders">按持有人（多→少）</option>
+        <option value="chg">按 24h 涨幅</option>
+      </select>
+      <button class="btn sm" id="refreshBtn">↻ 同步刷新</button>
+      <button class="btn sm ghost" id="importToggle">＋ 粘贴添加</button>
+    </div>
+
+    <div id="importPanel" class="panel-b" style="border-top:1px solid var(--line)">
+      <textarea id="importText" placeholder="临时手动补币：把 TG 监控消息全文、CA 清单或 CSV 粘进来，一行一个也行。自动识别 0x… 和 Solana 地址，重复的会自动跳过。链和来源识别不到时默认按 BSC / 手动添加，可在展开行里看。"></textarea>
+      <div class="importrow">
+        <button class="btn primary sm" id="importGo">解析并添加</button>
+        <span class="hint" id="importHint">正式使用请走上方 tokens.json 自动拉取，这里只是临时补漏。</span>
+      </div>
+    </div>
+
+    <div class="tblwrap">
+      <table>
+        <thead><tr>
+          <th style="text-align:left">代币</th>
+          <th style="text-align:left">链 / 来源</th>
+          <th class="sortable" data-k="age">年龄<span class="arr"></span></th>
+          <th>价格 / 24h</th>
+          <th class="sortable" data-k="mcap">市值<span class="arr"></span></th>
+          <th class="sortable" data-k="liq">流动性<span class="arr"></span></th>
+          <th class="sortable" data-k="vol">24h 交易量<span class="arr"></span></th>
+          <th>24h 交易（买/卖）</th>
+          <th class="sortable" data-k="holders">持有人<span class="arr"></span></th>
+          <th>Dev 发币</th>
+          <th>社媒</th>
+          <th>操作</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="empty" id="emptyState" style="display:none">
+        <div class="big">当前筛选下没有币</div>
+        <div>换个链或来源看看；新币会随 tokens.json 拉取自动出现在这里。</div>
+      </div>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+
+  <div class="foot">
+    行内「删除」是本地屏蔽：只记在当前浏览器的本地存储里，只影响这个浏览器里看到的看板，不会修改 GitHub 上的 tokens.json，可在页面最下方的「已屏蔽代币」里随时恢复或一键清空。<br/>
+    通道与行情说明（只此一处）：清单拉取顺序为 GitHub 官方 API（无 CDN 缓存，返回内容需 base64 解码）→ GitHub raw → jsDelivr（最后兜底，可能滞后最长 12 小时）；行情（价格 / 市值 / 流动性 / 24h 量）主数据源是 GeckoTerminal 免费批量接口（不用 Key，按链分组、每链一次最多 30 个地址并行查，市值优先用 market_cap_usd、为空时用 fdv_usd），查不到的币再回落 DexScreener 补一次，两边都没有时保留 tokens.json 文件里自带的值。Elysium / Robinhood 没有公开行情接口覆盖，只显示文件里自带的值，文件里没有的显示 —，不编造数据。24h 涨幅与交易笔数（买/卖）取 top pool / 交易对数据。社媒与项目介绍以 TG 原消息为准，Dev 发币数量来自 TG 监控原消息（如 GMGN trenches 的「Dev发币数」），接口查不到，看板不自算。<br/>
+    tokens.json 格式：数组，或 <code>{"tokens":[...]}</code>；每项至少给 <code>ca</code> 和 <code>chain</code>（solana / bsc / ethereum / elysium / base / robinhood / arc），其余字段 <code>symbol, name, created_at, first_seen, source, dev_launches / dev_count, intro, twitter, telegram, website, liquidity_usd, holders, early_signal</code> 有就填。文件里的 <code>created_at</code> / <code>first_seen</code> 是世界时 UTC，看板按 UTC 解析后统一换成北京时间显示，年龄与剩余时间也按换算后的绝对时间算。按 CA+链去重，保留规则与脚本清单一致：<code>created_at</code> 或 <code>first_seen</code> 任一在 72 小时内就保留（创建时间较早、但脚本刚发现推上来的，按首次发现算年龄并注明），两个时间都超 72 小时才下架，展开后同时显示两个时间。
+  </div>
+
+  <!-- ======= blocked list（页面最底部） ======= -->
+  <div class="panel" id="blockedPanel" style="margin-top:12px">
+    <div class="panel-h">
+      <span class="t">已屏蔽代币</span>
+      <span class="hint">已屏蔽 <b id="blockedCount" style="color:var(--text)">0</b> 个 · 屏蔽只影响当前浏览器里看到的看板，不会修改 GitHub 上的 tokens.json；之后重新拉取时，被屏蔽的币也不会再出现</span>
+      <span style="flex:1"></span>
+      <button class="btn sm danger" id="clearBlocked">一键清空屏蔽</button>
+    </div>
+    <div class="panel-b">
+      <div class="blocked-list" id="blockedList"></div>
+      <div class="blocked-empty" id="blockedEmpty">暂无屏蔽的代币。觉得某个币没有价值时，点它那一行里的「删除」就会屏蔽它。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= block confirm modal ======= -->
+<div class="modal-mask" id="blockModal" role="dialog" aria-modal="true" aria-labelledby="blockModalTitle">
+  <div class="modal">
+    <h3 id="blockModalTitle">确定屏蔽这个币？</h3>
+    <p id="blockModalText">屏蔽后，这个币会立刻从看板上消失，并记进当前浏览器的屏蔽名单。以后重新拉取 GitHub tokens.json 时，它也不会再出现。</p>
+    <p><strong>注意：屏蔽只影响当前这个浏览器里看到的看板，不会去改 GitHub 上的 tokens.json</strong>，其他设备和 Cloudflare 上的原始数据不受影响。随时可以在页面最下方的「已屏蔽代币」里点「恢复」把它放回来。</p>
+    <div class="mca" id="blockModalCA">—</div>
+    <div class="mrow">
+      <button class="btn" id="blockCancel">取消</button>
+      <button class="btn confirm-block" id="blockConfirm">确认屏蔽</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= 初始清单（页面打开、首次拉取完成前的兜底显示） =================
+   页面打开后会立即实时拉取 GitHub tokens.json 并每 5 分钟自动刷新；下面这批币只是
+   首次拉取完成前先显示的初始清单，拉通后以 GitHub 最新清单为准合并更新。
+   first_seen / created_at 按文件原样存世界时 UTC（如 07:34 UTC），显示时统一转北京时间（15:34）。
+   snapshot:1 标记的是初始清单币，拉取失败时保留显示，不按 24 小时窗口下架。 */
+var SAMPLE = [];
+var SNAPSHOT_LABEL = "";
+
+var CHAIN_META = {
+  solana:{label:"Solana",color:"#9945ff",gmgn:"sol",dexChain:"solana",gtChain:"solana"},
+  bsc:{label:"BSC",color:"#f0b90b",gmgn:"bsc",dexChain:"bsc",gtChain:"bsc"},
+  ethereum:{label:"Ethereum",color:"#627eea",gmgn:"eth",dexChain:"ethereum",gtChain:"eth"},
+  elysium:{label:"Elysium",color:"#e879a8",gmgn:"elysium",dexChain:"",gtChain:""},
+  base:{label:"Base",color:"#4d7cff",gmgn:"base",dexChain:"base",gtChain:"base"},
+  robinhood:{label:"Robinhood",color:"#00c805",gmgn:"robinhood",dexChain:"",gtChain:""},
+  arc:{label:"Arc",color:"#2dd4d8",gmgn:"arc",dexChain:"",gtChain:""}
+};
+var AV_COLORS = ["#7c5cff","#0ea5a4","#e0653a","#3a8de0","#c2438f","#5da23a","#b8892b","#5468c4"];
+
+/* ================= state ================= */
+var tokens = [];           // 全部在池代币
+var freshKeys = {};        // 本次新增高亮
+var totalAdded = 0, totalExpired = 0;
+/* 默认地址走 GitHub 官方 API（无 CDN 缓存，返回 base64 内容需先解码再解析）；raw 次之，jsDelivr 最后兜底（可能滞后最长 12 小时） */
+var GITHUB_API_URL = "https://api.github.com/repos/252580808/token-watchlist/contents/tokens.json";
+var GITHUB_RAW_URL = "https://raw.githubusercontent.com/252580808/token-watchlist/main/tokens.json";
+var JSDELIVR_URL = "https://cdn.jsdelivr.net/gh/252580808/token-watchlist@main/tokens.json";
+var DEFAULT_FEED_URL = GITHUB_API_URL;
+var FALLBACK_FEED_URL = GITHUB_RAW_URL;
+var feedUrl = DEFAULT_FEED_URL, feedTimer = null, feedOn = true, feedBusy = false;
+var state = { chain:"", q:"", src:"", sort:"push", openKey:null };
+var MAX_AGE_MS = 24*3600*1000;
+
+/* ================= 本地屏蔽名单（只存当前浏览器） =================
+   按用户要求存浏览器本地存储（localStorage），键为 链|CA（小写）。
+   只影响当前浏览器里看到的看板，不会修改 GitHub 上的 tokens.json。
+   本地存储不可用时（如隐私模式）退回内存，至少本次打开期间有效。 */
+var BLOCK_STORE_KEY = "tw_blocked_v1";
+var blockedMap = {};
+var pendingBlockKey = null;
+function loadBlocked(){
+  blockedMap = {};
+  try{
+    var raw = window.localStorage ? window.localStorage.getItem(BLOCK_STORE_KEY) : null;
+    if(raw){
+      var arr = JSON.parse(raw);
+      if(Array.isArray(arr)) arr.forEach(function(x){ if(x && x.key) blockedMap[x.key] = x; });
+    }
+  }catch(e){ blockedMap = {}; }
+}
+function saveBlocked(){
+  try{
+    if(window.localStorage) window.localStorage.setItem(BLOCK_STORE_KEY, JSON.stringify(Object.keys(blockedMap).map(function(k){ return blockedMap[k]; })));
+  }catch(e){ /* 本地存储不可用时只保存在内存里 */ }
+}
+function isBlockedKey(k){ return !!blockedMap[k]; }
+loadBlocked();
+
+function keyOf(t){ return (t.chain||"").toLowerCase()+"|"+(t.ca||"").toLowerCase(); }
+/* 全部时间按北京时间（UTC+8）显示：把绝对时间戳 +8 小时后用 UTC 字段拼串，
+   与浏览器所在时区无关，任何设备上看到的都是北京时间 */
+function bjPad(n){ return (n<10?"0":"")+n; }
+function bjStr(ts, withSec){
+  var d = new Date(Number(ts)+8*3600*1000);
+  var s = bjPad(d.getUTCMonth()+1)+"-"+bjPad(d.getUTCDate())+" "+bjPad(d.getUTCHours())+":"+bjPad(d.getUTCMinutes());
+  if(withSec) s += ":"+bjPad(d.getUTCSeconds());
+  return s;
+}
+function bjFull(ts){
+  var d = new Date(Number(ts)+8*3600*1000);
+  return d.getUTCFullYear()+"-"+bjPad(d.getUTCMonth()+1)+"-"+bjPad(d.getUTCDate())+" "+bjPad(d.getUTCHours())+":"+bjPad(d.getUTCMinutes());
+}
+function nowStr(d){
+  var ts = d==null ? Date.now() : (d instanceof Date ? d.getTime() : Number(d));
+  return bjStr(ts, true);
+}
+
+/* ================= format ================= */
+function fmtMoney(v){
+  if(v==null||isNaN(v)) return "—";
+  if(v>=1e9) return "$"+(v/1e9).toFixed(2)+"B";
+  if(v>=1e6) return "$"+(v/1e6).toFixed(2)+"M";
+  if(v>=1e3) return "$"+(v/1e3).toFixed(1)+"K";
+  return "$"+v.toFixed(0);
+}
+function fmtNum(v){ if(v==null||isNaN(v)) return "—"; return Number(v).toLocaleString("en-US"); }
+function fmtPrice(v){
+  if(v==null||isNaN(v)) return "—";
+  if(v>=1) return "$"+v.toFixed(4);
+  if(v>=0.01) return "$"+v.toFixed(5);
+  return "$"+v.toPrecision(3);
+}
+function fmtAge(ms){
+  var m = Math.floor(ms/60000);
+  if(m<60) return m+"m";
+  var h = Math.floor(m/60);
+  if(h<24) return h+"h "+(m%60)+"m";
+  return Math.floor(h/24)+"d "+(h%24)+"h";
+}
+function fmtRemain(ms){
+  if(ms<=0) return "已到期";
+  return "剩 "+fmtAge(ms);
+}
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+function shortCA(ca){ return ca.length>13 ? ca.slice(0,6)+"…"+ca.slice(-4) : ca; }
+function avColor(sym){ var s=0; for(var i=0;i<sym.length;i++) s+=sym.charCodeAt(i); return AV_COLORS[s%AV_COLORS.length]; }
+function gmgnUrl(t){ var m=CHAIN_META[t.chain]; return "https://gmgn.ai/"+(m?m.gmgn:t.chain)+"/token/"+t.ca; }
+
+/* ================= ingest ================= */
+/* tokens.json 里 WorkBuddy 写的时间是世界时 UTC（如 "2026-11-09 07:34" = 北京时间 15:34）：
+   没带时区的字符串一律按 UTC 解析（补 Z），带 Z / 时区偏移的按原样解析；
+   绝不能按本地时间或北京时间直接读，否则会差 8 小时。显示时再统一转北京时间。 */
+function parseFeedTime(v){
+  if(v==null || v==="") return null;
+  if(typeof v==="number") return v<1e12 ? v*1000 : v;
+  var s = String(v).trim();
+  if(!s) return null;
+  if(/^\d+$/.test(s)){ var n = Number(s); return n<1e12 ? n*1000 : n; }
+  s = s.replace(/\s*(UTC|GMT)\s*$/i, "").trim();
+  var iso = s.replace(" ", "T");
+  if(!/(Z|[+-]\d{2}:?\d{2})$/i.test(iso)) iso += "Z";
+  var t = new Date(iso).getTime();
+  return isNaN(t) ? null : t;
+}
+function canonSource(s){
+  s = String(s||"");
+  if(!s) return "手动添加";
+  if(s.indexOf("新潜力币")>=0) return "新潜力币";
+  if(s.indexOf("KOL")>=0) return "KOL转发";
+  if(s.indexOf("List")>=0 || s.indexOf("list")>=0) return "X List";
+  if(s.indexOf("TG")>=0) return "TG群监控";
+  return s;
+}
+function normalize(raw){
+  if(!raw || !raw.ca) return null;
+  var chain = String(raw.chain||raw.chain_id||"bsc").toLowerCase();
+  if(chain==="eth") chain="ethereum";
+  if(chain==="bnb"||chain==="bnb chain"||chain==="bnbchain") chain="bsc";
+  if(chain==="sol") chain="solana";
+  /* created_at（链上创建时间）与 first_seen（首次发现）分开保存，都是 UTC，parseFeedTime 按 UTC 解析 */
+  var createdMs = null, firstMs = null;
+  if(raw.created_at!=null && raw.created_at!=="") createdMs = parseFeedTime(raw.created_at);
+  var fsRaw = raw.first_seen!=null ? raw.first_seen : (raw.firstSeen!=null ? raw.firstSeen : raw.discovered_at);
+  if(fsRaw!=null && fsRaw!=="") firstMs = parseFeedTime(fsRaw);
+  var early = raw.early_signal===1 || raw.early_signal==="1" || raw.early_signal===true;
+  var nowMs = Date.now();
+  /* 年龄基准：脚本清单以「抓到才推上来」为准，看板不再按 created_at 单方面砍币。
+     created_at 在 72 小时内 → 按 created_at 算；created_at 已超期或为空、但 first_seen 在 72 小时内
+     → 按 first_seen 保留（到期 = first_seen + 72 小时）；两个时间都超期才下架。 */
+  var ageBase = null, keptEarly = false, explicitTime = false;
+  var isSnap = !!raw.snapshot;
+  if(isSnap && firstMs){ ageBase = firstMs; explicitTime = true; keptEarly = !!createdMs && (firstMs-createdMs)>MAX_AGE_MS; }
+  else if(createdMs && (nowMs-createdMs)<MAX_AGE_MS){ ageBase = createdMs; explicitTime = true; }
+  else if(firstMs && (nowMs-firstMs)<MAX_AGE_MS){ ageBase = firstMs; explicitTime = true; keptEarly = !!createdMs; }
+  else if(createdMs){ ageBase = createdMs; explicitTime = true; }
+  else if(firstMs){ ageBase = firstMs; explicitTime = true; }
+  if(!ageBase && raw.createdMinsAgo!=null) ageBase = nowMs-raw.createdMinsAgo*60000;
+  else if(!ageBase && raw.pairCreatedAt) ageBase = Number(raw.pairCreatedAt);
+  if(!ageBase || isNaN(ageBase)) ageBase = nowMs;
+  if(ageBase > nowMs+5*60000) ageBase = nowMs;
+  return {
+    symbol: raw.symbol||raw.ticker||"—", name: raw.name||raw.symbol||"未命名",
+    ca: String(raw.ca).trim(), chain: chain, source: canonSource(raw.source),
+    createdAt: ageBase, createdRaw: createdMs, firstSeen: firstMs,
+    snapshot: isSnap, ord: (raw.ord!=null ? raw.ord : null),
+    earlySignal: early, earlyReason: raw.early_reason||"", keptEarly: keptEarly,
+    hasExplicitTime: explicitTime,
+    price: numOrNull(raw.price!=null?raw.price:(raw.price_usd!=null?raw.price_usd:raw.priceUsd)), chg24: numOrNull(raw.chg24!=null?raw.chg24:raw.priceChange24h),
+    mcap: numOrNull(raw.mcap!=null?raw.mcap:(raw.marketCap!=null?raw.marketCap:(raw.market_cap_usd!=null?raw.market_cap_usd:(raw.market_cap!=null?raw.market_cap:(raw.fdv_usd!=null?raw.fdv_usd:raw.fdv))))),
+    liq: numOrNull(raw.liq!=null?raw.liq:(raw.liquidity_usd!=null?raw.liquidity_usd:(raw.liquidity!=null?raw.liquidity:raw.total_reserve_in_usd))),
+    vol24: numOrNull(raw.vol24!=null?raw.vol24:(raw.volume24h!=null?raw.volume24h:(raw.volume_usd&&raw.volume_usd.h24!=null?raw.volume_usd.h24:(raw.volume_24h_usd!=null?raw.volume_24h_usd:raw.volume_h24)))),
+    txB: numOrNull(raw.txB!=null?raw.txB:raw.buys24h), txS: numOrNull(raw.txS!=null?raw.txS:raw.sells24h),
+    holders: numOrNull(raw.holders), dev: numOrNull(raw.dev!=null?raw.dev:(raw.dev_launches!=null?raw.dev_launches:raw.dev_count)),
+    intro: raw.intro||raw.description||"", twitter: raw.twitter||"", telegram: raw.telegram||"", website: raw.website||"",
+    dex: raw.dex||raw.pool_type||"", liveAt: null, liveSource: ""
+  };
+}
+function numOrNull(v){ if(v==null||v===""||isNaN(Number(v))) return null; return Number(v); }
+
+function sweepExpired(){
+  var t = Date.now(), before = tokens.length;
+  tokens = tokens.filter(function(x){ return x.snapshot || t - x.createdAt < MAX_AGE_MS; });
+  var removed = before - tokens.length;
+  if(removed>0){ totalExpired += removed; document.getElementById("feedExpired").textContent = totalExpired; toast("有 "+removed+" 个币已满 24 小时，自动移除"); }
+  return removed;
+}
+
+/* 把一批原始记录并入池子：去重 + 3 天过滤，返回新增列表。
+   新增批次整段拼到顶部并保持文件内原有顺序（文件里排第一的币在看板也排第一） */
+function ingest(list, markFresh){
+  var existing = {};
+  tokens.forEach(function(t){ existing[keyOf(t)] = t; });
+  var added = [];
+  list.forEach(function(raw){
+    var t = normalize(raw);
+    if(!t) return;
+    if(isBlockedKey(keyOf(t))) return;                                          // 本地已屏蔽：重新拉取也不再出现
+    if(!t.snapshot && Date.now() - t.createdAt >= MAX_AGE_MS) return;           // 超 24 小时不进池（早期信号例外已在 normalize 里按 first_seen 算）；初始清单币不下架
+    var k = keyOf(t);
+    if(existing[k]){                                               // CA+链去重：已有的不重复加，只用真实数据补正
+      var ex = existing[k];
+      if(t.hasExplicitTime){ ex.createdAt = t.createdAt; ex.createdRaw = t.createdRaw; ex.firstSeen = t.firstSeen; ex.keptEarly = t.keptEarly; }
+      if(t.earlySignal) ex.earlySignal = true;
+      if(t.earlyReason && !ex.earlyReason) ex.earlyReason = t.earlyReason;
+      if(ex.dev==null && t.dev!=null) ex.dev = t.dev;
+      if(t.holders!=null) ex.holders = t.holders;                // 文件里的持有人数以文件为准
+      if(t.liq!=null && (ex.liq==null || !ex.liveAt)) ex.liq = t.liq;  // 文件里的流动性：没有实时行情时直接用文件的
+      if(t.mcap!=null && (ex.mcap==null || !ex.liveAt)) ex.mcap = t.mcap;
+      if(t.vol24!=null && (ex.vol24==null || !ex.liveAt)) ex.vol24 = t.vol24;
+      if(t.price!=null && (ex.price==null || !ex.liveAt)) ex.price = t.price;
+      if(!ex.intro && t.intro) ex.intro = t.intro;
+      if(!ex.twitter && t.twitter) ex.twitter = t.twitter;
+      if(!ex.telegram && t.telegram) ex.telegram = t.telegram;
+      if(!ex.website && t.website) ex.website = t.website;
+      return;
+    }
+    existing[k] = t;
+    added.push(t);
+    if(markFresh) freshKeys[k] = 1;
+  });
+  if(added.length){
+    tokens = added.concat(tokens);                                // 新币整批置顶，保持文件顺序
+    if(markFresh){
+      totalAdded += added.length;
+      document.getElementById("feedAdded").textContent = totalAdded;
+      showNewBadge(added.length);
+    }
+  }
+  return added;
+}
+
+function showNewBadge(n){
+  var b = document.getElementById("newBadge");
+  b.textContent = "新增 "+n;
+  b.classList.add("show");
+  setTimeout(function(){ b.classList.remove("show"); }, 8000);
+}
+
+var toastTimer = null;
+function toast(msg){
+  var el = document.getElementById("toast");
+  el.textContent = msg; el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ el.classList.remove("show"); }, 3200);
+}
+
+/* ================= render ================= */
+function filtered(){
+  var q = state.q.trim().toLowerCase();
+  var list = tokens.filter(function(t){
+    if(state.chain && t.chain!==state.chain) return false;
+    if(state.src && t.source!==state.src) return false;
+    if(q && (t.symbol+" "+t.name+" "+t.ca).toLowerCase().indexOf(q)<0) return false;
+    return true;
+  });
+  var k = state.sort;
+  list.sort(function(a,b){
+    if(k==="push"){
+      /* 最新推送：按首次发现/推送时间（firstSeen）倒序，新推送的排最上面；
+         没有 firstSeen 时回落到年龄基准时间。同批同分钟的币靠稳定排序保持进池顺序（新批次在前） */
+      var pa = (a.firstSeen!=null ? a.firstSeen : a.createdAt);
+      var pb = (b.firstSeen!=null ? b.firstSeen : b.createdAt);
+      return (pb-pa) || (b.createdAt-a.createdAt);
+    }
+    if(k==="mcap") return (b.mcap||-1)-(a.mcap||-1);
+    if(k==="liq") return (b.liq||-1)-(a.liq||-1);
+    if(k==="vol") return (b.vol24||-1)-(a.vol24||-1);
+    if(k==="holders") return (b.holders||-1)-(a.holders||-1);
+    if(k==="chg") return (b.chg24==null?-999:b.chg24)-(a.chg24==null?-999:a.chg24);
+    return b.createdAt-a.createdAt;
+  });
+  return list;
+}
+
+function socialsHTML(t){
+  function icon(kind){
+    if(kind==="x") return '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20z"/></svg>';
+    if(kind==="tg") return '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.4 18.8 19c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-1 .5l.4-4.7L18 6.6c.4-.3-.1-.5-.6-.2L6.7 13.2 2.1 11.8c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.6 1z"/></svg>';
+    return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3z"/></svg>';
+  }
+  function cell(url, kind, label){
+    if(url) return '<a href="'+esc(url)+'" target="_blank" rel="noopener" title="'+label+'" onclick="event.stopPropagation()">'+icon(kind)+'</a>';
+    return '<span title="暂无'+label+'">'+icon(kind)+'</span>';
+  }
+  return cell(t.twitter,"x","推特") + cell(t.telegram,"tg","Telegram") + cell(t.website,"web","官网");
+}
+
+function detailHTML(t){
+  var rows = "";
+  rows += '<div><h4>项目介绍</h4><p>'+(t.intro?esc(t.intro):"暂无介绍（等 TG 原消息或 GMGN 补全）")+'</p></div>';
+  var kv = "";
+  kv += "CA：<b>"+esc(t.ca)+"</b><br/>";
+  if(t.createdRaw && t.firstSeen && t.createdRaw!==t.firstSeen){
+    kv += "创建时间：<b>"+bjFull(t.createdRaw)+"</b>（北京时间）<br/>";
+    kv += "首次发现：<b>"+bjFull(t.firstSeen)+"</b>（北京时间） · 剩余监控 <b>"+fmtRemain(t.createdAt+MAX_AGE_MS-Date.now())+"</b><br/>";
+  } else if(t.firstSeen && !t.createdRaw){
+    kv += "首次发现：<b>"+bjFull(t.firstSeen)+"</b>（北京时间，文件未给创建时间，按首次发现算年龄） · 剩余监控 <b>"+fmtRemain(t.createdAt+MAX_AGE_MS-Date.now())+"</b><br/>";
+  } else {
+    kv += "创建时间：<b>"+bjFull(t.createdAt)+"</b>（北京时间） · 剩余监控 <b>"+fmtRemain(t.createdAt+MAX_AGE_MS-Date.now())+"</b><br/>";
+  }
+  if(t.keptEarly) kv += "保留原因：<b>创建时间已超 24 小时，脚本按首次发现推入，看板按首次发现保留监控</b><br/>";
+  if(t.earlySignal) kv += "早期信号：<b>是</b>"+(t.earlyReason?"（"+esc(t.earlyReason)+"）":"")+"<br/>";
+  if(t.dex) kv += "DEX：<b>"+esc(t.dex)+"</b>　";
+  kv += "来源：<b>"+esc(t.source)+"</b>";
+  if(t.liveAt) kv += "<br/>行情更新：<b>"+bjStr(t.liveAt, true)+"</b>（北京时间，"+esc(t.liveSource||"GeckoTerminal")+"）";
+  else if(!((CHAIN_META[t.chain]||{}).gtChain)) kv += "<br/>行情来源：<b>tokens.json 文件自带值</b>（该链无公开行情接口覆盖，文件里没有的显示 —）";
+  rows += '<div><h4>详情</h4><div class="kv">'+kv+'</div></div>';
+  return '<div class="detailbox">'+rows+'</div>';
+}
+
+function render(){
+  sweepExpiredSilent();
+  var list = filtered();
+  var tb = document.getElementById("tbody");
+  var cards = document.getElementById("cards");
+  var t = Date.now();
+  var html = "", chtml = "";
+
+  list.forEach(function(x){
+    var k = keyOf(x), m = CHAIN_META[x.chain] || {label:x.chain,color:"#888"};
+    var ageMs = t - x.createdAt, remainMs = MAX_AGE_MS - ageMs;
+    var pctLeft = Math.max(0, Math.min(100, remainMs/MAX_AGE_MS*100));
+    var barCls = remainMs < 6*3600*1000 ? "danger" : (remainMs < 24*3600*1000 ? "warn" : "");
+    var chg = x.chg24==null ? '<span class="pct">—</span>' :
+      '<div class="pct '+(x.chg24>=0?"up":"down")+'">'+(x.chg24>=0?"+":"")+x.chg24.toFixed(1)+'%</div>';
+    var sym0 = (x.symbol && x.symbol!=="—") ? x.symbol : x.name;
+    var txns = (x.txB==null && x.txS==null) ? "—" :
+      '<span style="font-weight:600">'+fmtNum((x.txB||0)+(x.txS||0))+'</span><small><span class="buy">'+fmtNum(x.txB)+'</span> / <span class="sell">'+fmtNum(x.txS)+'</span></small>';
+    var fresh = freshKeys[k] ? ' class="row fresh"' : ' class="row"';
+
+    html += '<tr'+fresh+' data-k="'+esc(k)+'">'
+      + '<td><div class="tok"><div class="avatar" style="background:'+avColor(sym0)+'">'+esc(sym0.slice(0,1).toUpperCase())+'</div>'
+      + '<div style="min-width:0"><div class="nm">'+esc(x.symbol)+(x.name&&x.name!==x.symbol?'<span>'+esc(x.name)+'</span>':"")+'</div>'
+      + '<div class="ca">'+esc(shortCA(x.ca))+'<button title="复制 CA" data-copy="'+esc(x.ca)+'"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>'
+      + (x.intro ? '<div class="intro-line">'+esc(x.intro)+'</div>' : '<div class="intro-line">暂无介绍</div>')
+      + '</div></div></td>'
+      + '<td><span class="chain"><span class="cdot" style="background:'+m.color+'"></span>'+esc(m.label)+'</span><span class="src">'+esc(x.source)+'</span></td>'
+      + '<td><span class="age">'+fmtAge(ageMs)+'</span><div class="agebar"><i class="'+barCls+'" style="width:'+pctLeft+'%"></i></div><span class="remain">'+fmtRemain(remainMs)+'</span>'+(x.keptEarly?'<span class="remain" style="display:block;color:var(--amber)">创建时间较早 · 按首次发现保留</span>':"")+'</td>'
+      + '<td><span class="price">'+fmtPrice(x.price)+'</span>'+chg+'</td>'
+      + '<td style="font-weight:600">'+fmtMoney(x.mcap)+'</td>'
+      + '<td>'+fmtMoney(x.liq)+'</td>'
+      + '<td>'+fmtMoney(x.vol24)+'</td>'
+      + '<td class="txns">'+txns+'</td>'
+      + '<td>'+fmtNum(x.holders)+'</td>'
+      + '<td><span class="devn'+(x.dev!=null&&x.dev>=3?" hot":"")+'">'+(x.dev==null?"—":x.dev)+'</span></td>'
+      + '<td><div class="socials">'+socialsHTML(x)+'</div></td>'
+      + '<td><div class="acts"><a href="'+gmgnUrl(x)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">GMGN</a><button type="button" class="block-btn" data-block="'+esc(k)+'" title="屏蔽这个币，只影响当前浏览器">删除</button></div></td>'
+      + '</tr>';
+    if(state.openKey===k) html += '<tr class="detail"><td colspan="12">'+detailHTML(x)+'</td></tr>';
+
+    chtml += '<div class="card'+(freshKeys[k]?" fresh":"")+'" data-k="'+esc(k)+'">'
+      + '<div class="r1"><div class="avatar" style="background:'+avColor(sym0)+'">'+esc(sym0.slice(0,1).toUpperCase())+'</div>'
+      + '<div style="flex:1;min-width:0"><div class="nm" style="font-weight:700">'+esc(x.symbol)+(x.name&&x.name!==x.symbol?'<span style="color:var(--muted);font-weight:500;font-size:12px;margin-left:5px">'+esc(x.name)+'</span>':"")+'</div>'
+      + '<div class="ca">'+esc(shortCA(x.ca))+'<button title="复制 CA" data-copy="'+esc(x.ca)+'"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>'
+      + (x.intro ? '<div class="intro-line" style="max-width:210px">'+esc(x.intro)+'</div>' : '')
+      + '</div>'
+      + '<div style="text-align:right"><span class="chain"><span class="cdot" style="background:'+m.color+'"></span>'+esc(m.label)+'</span><span class="src">'+esc(x.source)+'</span></div></div>'
+      + '<div class="grid">'
+      + cell2("年龄 / 剩余", fmtAge(ageMs)+" · "+fmtRemain(remainMs))
+      + cell2("价格 / 24h", fmtPrice(x.price)+(x.chg24==null?"":' <span class="'+(x.chg24>=0?"up":"down")+'">'+(x.chg24>=0?"+":"")+x.chg24.toFixed(1)+'%</span>'))
+      + cell2("市值", fmtMoney(x.mcap))
+      + cell2("流动性", fmtMoney(x.liq))
+      + cell2("24h 交易量", fmtMoney(x.vol24))
+      + cell2("24h 交易 买/卖", (x.txB==null&&x.txS==null)?"—":'<span class="buy">'+fmtNum(x.txB)+'</span> / <span class="sell">'+fmtNum(x.txS)+'</span>')
+      + cell2("持有人", fmtNum(x.holders))
+      + cell2("Dev 发币", x.dev==null?"—":String(x.dev))
+      + '<div class="cell"><div class="k">社媒</div><div class="v"><div class="socials" style="justify-content:flex-start">'+socialsHTML(x)+'</div></div></div>'
+      + '</div>'
+      + '<div class="r3"><div class="acts"><a href="'+gmgnUrl(x)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">GMGN</a><button type="button" class="block-btn" data-block="'+esc(k)+'" title="屏蔽这个币，只影响当前浏览器">删除</button></div>'
+      + '<span style="flex:1"></span><span class="remain">'+fmtRemain(remainMs)+' 后移除</span></div>'
+      + (state.openKey===k ? detailHTML(x) : "")
+      + '</div>';
+  });
+  function cell2(k2,v2){ return '<div class="cell"><div class="k">'+k2+'</div><div class="v">'+v2+'</div></div>'; }
+
+  tb.innerHTML = html;
+  cards.innerHTML = chtml;
+  document.getElementById("emptyState").style.display = list.length ? "none" : "block";
+
+  /* stats */
+  document.getElementById("stTotal").textContent = tokens.length;
+  var fresh6 = tokens.filter(function(x){ return t-x.createdAt < 6*3600*1000; }).length;
+  document.getElementById("stFresh").textContent = fresh6;
+  var vol = tokens.reduce(function(s,x){ return s+(x.vol24||0); },0);
+  document.getElementById("stVol").textContent = vol? fmtMoney(vol) : "—";
+  var chains = {}; tokens.forEach(function(x){ chains[x.chain]=1; });
+  document.getElementById("stChains").innerHTML = Object.keys(chains).length + " <small>条</small>";
+
+  renderPills();
+  bindRows();
+  renderBlocked();
+}
+function sweepExpiredSilent(){
+  var t = Date.now();
+  tokens = tokens.filter(function(x){ return !isBlockedKey(keyOf(x)) && (x.snapshot || t - x.createdAt < MAX_AGE_MS); });
+}
+
+function renderPills(){
+  var counts = {"":tokens.length};
+  tokens.forEach(function(x){ counts[x.chain]=(counts[x.chain]||0)+1; });
+  var order = ["", "solana","bsc","ethereum","elysium","base","robinhood","arc"];
+  var html = "";
+  order.forEach(function(c){
+    if(c && !counts[c]) return;
+    var label = c==="" ? "全部" : (CHAIN_META[c]?CHAIN_META[c].label:c);
+    html += '<button class="pill'+(state.chain===c?" on":"")+'" data-chain="'+c+'">'+label+'<span class="n">'+(counts[c]||0)+'</span></button>';
+  });
+  /* 兜底：样本外链也显示 */
+  Object.keys(counts).forEach(function(c){
+    if(c && order.indexOf(c)<0) html += '<button class="pill'+(state.chain===c?" on":"")+'" data-chain="'+c+'">'+c+'<span class="n">'+counts[c]+'</span></button>';
+  });
+  var el = document.getElementById("chainPills");
+  el.innerHTML = html;
+  el.querySelectorAll(".pill").forEach(function(p){
+    p.addEventListener("click", function(){ state.chain = p.getAttribute("data-chain"); render(); });
+  });
+}
+
+/* ================= 屏蔽：确认框 / 名单 / 恢复 ================= */
+function renderBlocked(){
+  var keys = Object.keys(blockedMap);
+  document.getElementById("blockedCount").textContent = keys.length;
+  document.getElementById("blockedEmpty").style.display = keys.length ? "none" : "block";
+  document.getElementById("clearBlocked").disabled = !keys.length;
+  var html = "";
+  keys.sort(function(a,b){ return (blockedMap[b].blockedAt||0)-(blockedMap[a].blockedAt||0); });
+  keys.forEach(function(k){
+    var b = blockedMap[k];
+    var m = CHAIN_META[b.chain] || {label:b.chain||"",color:"#888"};
+    html += '<div class="blocked-item">'
+      + '<span class="bn">'+esc(b.symbol||"—")+(b.name && b.name!==b.symbol ? '<span>'+esc(b.name)+'</span>' : "")+'</span>'
+      + '<span class="chain"><span class="cdot" style="background:'+m.color+'"></span>'+esc(m.label)+'</span>'
+      + '<span class="bca">'+esc(b.ca||"")+'</span>'
+      + (b.blockedAt ? '<span class="bmeta">屏蔽于 '+bjStr(b.blockedAt, true)+'（北京时间）</span>' : "")
+      + '<span style="flex:1"></span>'
+      + '<button type="button" class="btn sm" data-unblock="'+esc(k)+'">恢复</button>'
+      + '</div>';
+  });
+  var listEl = document.getElementById("blockedList");
+  listEl.innerHTML = html;
+  listEl.querySelectorAll("[data-unblock]").forEach(function(btn){
+    btn.addEventListener("click", function(){ unblockToken(btn.getAttribute("data-unblock")); });
+  });
+}
+function openBlockModal(k){
+  var t = null;
+  tokens.forEach(function(x){ if(keyOf(x)===k) t = x; });
+  if(!t) return;
+  pendingBlockKey = k;
+  document.getElementById("blockModalText").textContent = "确定屏蔽「"+(t.symbol||t.name||"这个币")+"」吗？屏蔽后它会立刻从看板上消失，并记进当前浏览器的屏蔽名单。以后重新拉取 GitHub tokens.json 时，它也不会再出现。";
+  document.getElementById("blockModalCA").textContent = (t.symbol||"")+" · "+((CHAIN_META[t.chain]||{}).label||t.chain)+" · "+t.ca;
+  document.getElementById("blockModal").classList.add("open");
+}
+function closeBlockModal(){
+  pendingBlockKey = null;
+  document.getElementById("blockModal").classList.remove("open");
+}
+function confirmBlock(){
+  var k = pendingBlockKey;
+  if(!k){ closeBlockModal(); return; }
+  var t = null;
+  tokens.forEach(function(x){ if(keyOf(x)===k) t = x; });
+  if(t){
+    blockedMap[k] = { key:k, symbol:t.symbol, name:t.name, ca:t.ca, chain:t.chain, blockedAt:Date.now() };
+    saveBlocked();
+    tokens = tokens.filter(function(x){ return keyOf(x)!==k; });
+    if(state.openKey===k) state.openKey = null;
+    toast("已屏蔽 "+(t.symbol||"该币")+"，只影响当前浏览器");
+  }
+  closeBlockModal();
+  renderBlocked();
+  render();
+}
+function unblockToken(k){
+  if(!k || !blockedMap[k]) return;
+  var info = blockedMap[k];
+  delete blockedMap[k];
+  saveBlocked();
+  renderBlocked();
+  toast("已恢复 "+(info.symbol||"该币")+"，正在重新拉取…");
+  /* 先看初始清单里有没有，有就立刻放回；再触发一次实时拉取从 GitHub 放回 */
+  var fromSample = SAMPLE.filter(function(raw){ return rawKeyOf(raw)===k; });
+  if(fromSample.length){ ingest(fromSample, false); render(); }
+  pullFeed(true);
+}
+function bindRows(){
+  document.querySelectorAll("[data-block]").forEach(function(b){
+    b.addEventListener("click", function(e){
+      e.stopPropagation();
+      openBlockModal(b.getAttribute("data-block"));
+    });
+  });
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click", function(e){
+      e.stopPropagation();
+      var ca = b.getAttribute("data-copy");
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(ca).then(function(){ toast("CA 已复制"); }, function(){ toast(ca); });
+      } else { toast(ca); }
+    });
+  });
+  document.querySelectorAll("tbody tr.row, .cards .card").forEach(function(r){
+    r.addEventListener("click", function(){
+      var k = r.getAttribute("data-k");
+      state.openKey = state.openKey===k ? null : k;
+      render();
+    });
+  });
+}
+
+/* ================= 行情：GeckoTerminal 主源（批量）+ DexScreener 兜底 =================
+   规则：
+   - 只查有 gtChain 的链（solana / bsc / ethereum→eth / base）；elysium / robinhood / arc 无公开接口覆盖，
+     不发请求，行情只用 tokens.json 文件自带值，文件里没有的显示 —，不编造。
+   - GeckoTerminal：按链分组并行，每链分批最多 30 个地址一次请求（multi 接口）。
+     price=price_usd；市值优先 market_cap_usd，为空用 fdv_usd；24h量=volume_usd.h24；
+     流动性=total_reserve_in_usd，为空用 top pool 的 reserve_in_usd。
+   - GeckoTerminal 查不到的币，再用 DexScreener tokens/v1 按币补一次。
+   - 两边都查不到：什么都不改，保留文件里已有的 price/mcap/liq/vol/holders，绝不清空成 —。
+   本组函数只写数据、不渲染；渲染由 syncAll 在清单+行情都回来后统一做一次。 */
+var refreshing = false;
+function gtNum(v){ if(v==null||v==="") return null; var n=Number(v); return isNaN(n)?null:n; }
+function applyMarket(t, d, source){
+  if(!d) return false;
+  var hit = false;
+  if(d.price!=null){ t.price = d.price; hit = true; }
+  if(d.mcap!=null){ t.mcap = d.mcap; hit = true; }
+  if(d.liq!=null){ t.liq = d.liq; hit = true; }
+  if(d.vol24!=null){ t.vol24 = d.vol24; hit = true; }
+  if(d.chg24!=null){ t.chg24 = d.chg24; hit = true; }
+  if(d.txB!=null) t.txB = d.txB;
+  if(d.txS!=null) t.txS = d.txS;
+  if(d.symbol && (!t.symbol || t.symbol==="—")) t.symbol = d.symbol;
+  if(d.name && (!t.name || t.name==="未命名")) t.name = d.name;
+  if(d.intro && !t.intro) t.intro = d.intro;
+  if(d.website && !t.website) t.website = d.website;
+  if(d.twitter && !t.twitter) t.twitter = d.twitter;
+  if(d.telegram && !t.telegram) t.telegram = d.telegram;
+  if(d.dex) t.dex = t.dex || d.dex;
+  if(d.pairCreatedAt && !t.hasExplicitTime && (Date.now()-d.pairCreatedAt) < MAX_AGE_MS) t.createdAt = d.pairCreatedAt;
+  if(hit){ t.liveAt = Date.now(); t.liveSource = source; }
+  return hit;
+}
+function gtSane(v, max){ return v!=null && isFinite(v) && v>=0 && v<=max; }
+function fetchGtBatch(gtChain, batch){
+  var addrs = batch.map(function(t){ return t.ca; }).join(",");
+  var url = "https://api.geckoterminal.com/api/v2/networks/"+gtChain+"/tokens/multi/"+addrs+"?include=top_pools";
+  return fetchWithTimeout(url, 12000)
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      var out = {};
+      if(!j || !Array.isArray(j.data)) return out;
+      var pools = {};
+      if(Array.isArray(j.included)) j.included.forEach(function(x){ if(x && x.type==="pool") pools[x.id]=x; });
+      j.data.forEach(function(item){
+        if(!item || !item.attributes) return;
+        var a = item.attributes;
+        var addr = String(a.address||"").toLowerCase();
+        if(!addr) return;
+        var tp = null;
+        if(item.relationships && item.relationships.top_pools && Array.isArray(item.relationships.top_pools.data) && item.relationships.top_pools.data.length){
+          tp = pools[item.relationships.top_pools.data[0].id] || null;
+        }
+        var tpa = (tp && tp.attributes) ? tp.attributes : null;
+        /* 市值：market_cap_usd 为空用 fdv_usd；个别币 GT 的总供应量解析异常会算出天文数字 FDV，
+           超过 10 万亿一律视为无效丢弃（不显示假数），该字段保留文件值/等 Dex 兜底 */
+        var mcap = gtNum(a.market_cap_usd);
+        if(mcap==null) mcap = gtNum(a.fdv_usd);
+        if(!gtSane(mcap, 1e13) || mcap===0) mcap = null;
+        /* 流动性：优先 top pool 的 reserve_in_usd（实测 total_reserve 偶尔因异常池子算出天文数字），
+           top pool 没有再用 total_reserve_in_usd；同样做合理范围校验 */
+        var tpLiq = tpa ? gtNum(tpa.reserve_in_usd) : null;
+        var totLiq = gtNum(a.total_reserve_in_usd);
+        var liq = gtSane(tpLiq, 1e13) ? tpLiq : (gtSane(totLiq, 1e13) ? totLiq : null);
+        var price = gtNum(a.price_usd);
+        if(!gtSane(price, 1e9) || price===0) price = null;
+        var vol = (a.volume_usd ? gtNum(a.volume_usd.h24) : null);
+        if(!gtSane(vol, 1e14)) vol = null;
+        out[addr] = {
+          price: price,
+          mcap: mcap,
+          liq: liq,
+          vol24: vol,
+          chg24: (tpa && tpa.price_change_percentage ? gtNum(tpa.price_change_percentage.h24) : null),
+          txB: (tpa && tpa.transactions && tpa.transactions.h24 ? gtNum(tpa.transactions.h24.buys) : null),
+          txS: (tpa && tpa.transactions && tpa.transactions.h24 ? gtNum(tpa.transactions.h24.sells) : null),
+          symbol: a.symbol||"", name: a.name||""
+        };
+      });
+      return out;
+    })
+    .catch(function(){ return {}; });
+}
+function fetchDexOne(t){
+  var m = CHAIN_META[t.chain];
+  if(!m || !m.dexChain) return Promise.resolve(null);
+  var url = "https://api.dexscreener.com/tokens/v1/"+m.dexChain+"/"+t.ca;
+  return fetchWithTimeout(url, 12000)
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      var pairs = Array.isArray(j) ? j : (j && Array.isArray(j.pairs) ? j.pairs : null);
+      if(!pairs || !pairs.length) return null;
+      var mine = pairs.filter(function(x){ return x && x.baseToken && x.baseToken.address && x.baseToken.address.toLowerCase()===t.ca.toLowerCase(); });
+      var use = mine.length ? mine : pairs;
+      use.sort(function(a,b){ return (((b.liquidity&&b.liquidity.usd)||0)-((a.liquidity&&a.liquidity.usd)||0)); });
+      var px = use[0];
+      var d = {
+        price: gtNum(px.priceUsd),
+        mcap: gtNum(px.marketCap) || gtNum(px.fdv),
+        liq: (px.liquidity ? gtNum(px.liquidity.usd) : null),
+        vol24: (px.volume ? gtNum(px.volume.h24) : null),
+        chg24: (px.priceChange ? gtNum(px.priceChange.h24) : null),
+        txB: (px.txns && px.txns.h24 ? gtNum(px.txns.h24.buys) : null),
+        txS: (px.txns && px.txns.h24 ? gtNum(px.txns.h24.sells) : null),
+        symbol: (px.baseToken ? px.baseToken.symbol : "")||"",
+        name: (px.baseToken ? px.baseToken.name : "")||"",
+        dex: px.dexId||"",
+        pairCreatedAt: px.pairCreatedAt ? Number(px.pairCreatedAt) : null
+      };
+      if(px.info){
+        if(px.info.description) d.intro = px.info.description;
+        if(px.info.websites && px.info.websites[0]) d.website = px.info.websites[0].url;
+        if(Array.isArray(px.info.socials)) px.info.socials.forEach(function(sx){
+          if(sx.type==="twitter") d.twitter = sx.url;
+          if(sx.type==="telegram") d.telegram = sx.url;
+        });
+      }
+      return d;
+    })
+    .catch(function(){ return null; });
+}
+/* 刷一批币的行情（不渲染）。返回 {updated, gt, dex} */
+function fetchAllMarket(list){
+  var targets = (list||[]).filter(function(t){ var m=CHAIN_META[t.chain]; return m && m.gtChain; });
+  if(!targets.length) return Promise.resolve({updated:0, gt:0, dex:0});
+  var groups = {};
+  targets.forEach(function(t){ (groups[t.chain] = groups[t.chain]||[]).push(t); });
+  var gtMap = {}, jobs = [];
+  Object.keys(groups).forEach(function(chain){
+    var gtChain = CHAIN_META[chain].gtChain;
+    var arr = groups[chain];
+    for(var i=0;i<arr.length;i+=30){
+      (function(batch){
+        jobs.push(fetchGtBatch(gtChain, batch).then(function(m){ Object.keys(m).forEach(function(k){ gtMap[chain+"|"+k]=m[k]; }); }));
+      })(arr.slice(i,i+30));
+    }
+  });
+  return Promise.all(jobs).then(function(){
+    var updated = 0, gtHit = 0, missing = [];
+    targets.forEach(function(t){
+      var d = gtMap[t.chain+"|"+t.ca.toLowerCase()];
+      if(d && applyMarket(t, d, "GeckoTerminal")){ updated++; gtHit++; }
+      else missing.push(t);
+    });
+    if(!missing.length) return {updated:updated, gt:gtHit, dex:0};
+    var dexHit = 0;
+    return Promise.all(missing.map(function(t){
+      return fetchDexOne(t).then(function(d){
+        if(d && applyMarket(t, d, "DexScreener")){ updated++; dexHit++; }
+      });
+    })).then(function(){ return {updated:updated, gt:gtHit, dex:dexHit}; });
+  });
+}
+/* 兼容旧调用：单独刷行情时也走统一同步（清单+行情一起），避免再出现两路不一致 */
+function refreshMarket(silent){
+  return syncAll(!silent);
+}
+
+/* ================= tokens.json 自动拉取 ================= */
+function setFeedStatus(txt, cls){
+  var el = document.getElementById("feedStatus");
+  el.textContent = txt; el.className = "feedstatus "+(cls||"");
+}
+/* 每次自动拉取 / 自动行情刷新完成并重新渲染后，在顶部状态栏亮出明确提示，
+   让用户一眼看到这次是自动刷的、刷的时间是北京时间几点，不用再手动刷新页面确认 */
+var lastPullTs = 0;
+function showAutoUpdated(text){
+  var el = document.getElementById("autoNote");
+  if(!el) return;
+  el.textContent = text;
+  el.classList.remove("show");
+  void el.offsetWidth;   /* 重启动画，让每次更新都闪一下 */
+  el.classList.add("show");
+}
+function fetchWithTimeout(url, ms){
+  if(typeof AbortController==="undefined") return fetch(url, {cache:"no-store"});
+  var ctl = new AbortController();
+  var to = setTimeout(function(){ try{ ctl.abort(); }catch(e){} }, ms);
+  return fetch(url, {cache:"no-store", signal:ctl.signal}).then(
+    function(r){ clearTimeout(to); return r; },
+    function(e){ clearTimeout(to); throw e; });
+}
+function fetchFeedJson(url){
+  return fetchWithTimeout(url, 12000).then(function(r){
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    return r.json();
+  });
+}
+/* GitHub 官方 API 通道：不走 CDN 缓存（jsDelivr 对 @main 分支文件最长缓存 12 小时，
+   拉通了新币也会迟到），且自带跨域允许头；contents 接口返回 base64 内容，
+   解码后按 UTF-8 解析（清单里有中文介绍，不能直接 atob 当文本用） */
+function fetchViaGithubApi(){
+  return fetchWithTimeout(GITHUB_API_URL, 12000)
+    .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+    .then(function(j){
+      if(!j || !j.content) throw new Error("GitHub API 没返回内容");
+      var bin = atob(String(j.content).replace(/\s/g, ""));
+      var bytes = new Uint8Array(bin.length);
+      for(var i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
+      var text = (typeof TextDecoder!=="undefined") ? new TextDecoder("utf-8").decode(bytes) : decodeURIComponent(escape(bin));
+      return JSON.parse(text);
+    });
+}
+var demoKeys = {};      /* 旧演示样本标记（已无演示币，保留变量兼容 pullFeed 逻辑） */
+var feedSynced = false; /* 是否已成功拉到过一次真实清单 */
+function fetchFeedSmart(url){
+  if(url && url.indexOf("api.github.com")>=0) return fetchViaGithubApi();
+  return fetchFeedJson(url);
+}
+function feedTransports(){
+  var list = [];
+  var isKnown = (feedUrl===GITHUB_API_URL || feedUrl===GITHUB_RAW_URL || feedUrl===JSDELIVR_URL);
+  if(!isKnown && feedUrl) list.push({name:"当前地址", lag:false, run:function(){ return fetchFeedSmart(feedUrl); }});
+  list.push({name:"GitHub 官方 API", lag:false, run:fetchViaGithubApi});
+  list.push({name:"GitHub raw", lag:false, run:function(){ return fetchFeedJson(GITHUB_RAW_URL); }});
+  list.push({name:"jsDelivr", lag:true, run:function(){ return fetchFeedJson(JSDELIVR_URL); }});
+  return list;
+}
+function rawKeyOf(raw){
+  if(!raw || !raw.ca) return "";
+  var chain = String(raw.chain||raw.chain_id||"bsc").toLowerCase();
+  if(chain==="eth") chain="ethereum";
+  if(chain==="bnb"||chain==="bnb chain"||chain==="bnbchain") chain="bsc";
+  if(chain==="sol") chain="solana";
+  return chain+"|"+String(raw.ca).trim().toLowerCase();
+}
+/* 只拉清单数据（不渲染、不刷行情）：依次试 GitHub 官方 API → GitHub raw → jsDelivr */
+function fetchFeedData(){
+  var usedName = "", usedLag = false, lastErr = null;
+  var chainP = Promise.reject(new Error("start"));
+  feedTransports().forEach(function(tp){
+    chainP = chainP.catch(function(){
+      return tp.run().then(function(j){ usedName = tp.name; usedLag = !!tp.lag; return j; },
+                           function(e){ lastErr = e; throw e; });
+    });
+  });
+  return chainP.then(function(j){
+    var list = Array.isArray(j) ? j : (j.tokens || j.data || []);
+    return {list:list, usedName:usedName, usedLag:usedLag};
+  }, function(){ throw (lastErr || new Error("网络错误")); });
+}
+var syncBusy = false;
+var lastSyncTs = 0;
+/* ===== 统一同步：一个周期里清单 + 行情并行拉，两边都回来只渲染一次 =====
+   原来清单和行情是两条分开的定时器，容易出现清单刷了行情没刷、字段一堆 —。
+   现在：feedPromise 与 marketPromise 同时发出（行情先刷同步开始时已在池的币）；
+   清单回来后新进池的币再补刷一次行情（仍在同一次渲染之前），然后统一 render 一次，
+   新币置顶高亮、到期下架、行情/统计/状态栏全部一起更新。 */
+function syncAll(manual){
+  if(!feedUrl){ if(manual) toast("先填 tokens.json 地址再拉取"); return Promise.resolve(); }
+  if(syncBusy || feedBusy) return Promise.resolve();
+  syncBusy = true; feedBusy = true;
+  var btn = document.getElementById("refreshBtn");
+  if(btn){ btn.disabled = true; btn.textContent = "同步中…"; }
+  setFeedStatus("同步中：清单和行情一起拉取…", "");
+  var feedRes = null, feedErr = null;
+  var feedPromise = fetchFeedData().then(function(r){ feedRes = r; }, function(e){ feedErr = e; });
+  var marketRes = {updated:0, gt:0, dex:0};
+  var marketPromise = fetchAllMarket(tokens.slice()).then(function(r){ marketRes = r; }, function(){});
+  return Promise.all([feedPromise, marketPromise]).then(function(){
+    var added = [];
+    var firstSync = false;
+    if(feedRes){
+      firstSync = !feedSynced;
+      if(firstSync){ feedSynced = true; demoKeys = {}; }
+      added = ingest(feedRes.list, true);
+      /* 以线上 tokens.json 为准：清单里已经删掉的币从页面移除（手动补的不动） */
+      if(feedRes.list && feedRes.list.length){
+        var liveKeys = {};
+        feedRes.list.forEach(function(raw){
+          var tt = normalize(raw);
+          if(tt) liveKeys[keyOf(tt)] = 1;
+        });
+        if(Object.keys(liveKeys).length){
+          var rmCount = tokens.length;
+          tokens = tokens.filter(function(x){
+            if(x.snapshot) return false;
+            if(liveKeys[keyOf(x)]) return true;
+            return String(x.source||"") === "手动添加";
+          });
+          rmCount = rmCount - tokens.length;   /* 清单已删的币直接下线，不计入「到期」统计 */
+        }
+      }
+      sweepExpired();
+    }
+    var extraPromise = (added.length ? fetchAllMarket(added).then(function(r){
+      marketRes.updated += r.updated; marketRes.gt += r.gt; marketRes.dex += r.dex;
+    }, function(){}) : Promise.resolve());
+    return extraPromise.then(function(){ return {added:added, firstSync:firstSync}; });
+  }).then(function(ctx){
+    lastPullTs = Date.now(); lastSyncTs = lastPullTs;
+    render();   /* 唯一一次渲染：清单、行情、统计、状态全部一起更新 */
+    if(feedRes){
+      /* 状态行只写这一句；上次拉取时间、同步间隔、拉取通道、行情更新数只在绿色提示条里写全一次，不在别处重复 */
+      setFeedStatus("正常 · 池内 "+tokens.length+" 个", "ok");
+      var secs = Number(document.getElementById("feedInterval").value)||300;
+      showAutoUpdated("清单和行情已一起同步更新，北京时间 "+nowStr()+" · 每 "+Math.round(secs/60)+" 分钟同步一次 · 经"+feedRes.usedName+"拉取"+(feedRes.usedLag ? "（jsDelivr 可能滞后最长 12 小时）" : "")+" · 行情更新 "+marketRes.updated+" 个（GeckoTerminal "+marketRes.gt+" / DexScreener 兜底 "+marketRes.dex+"）");
+      if(ctx.firstSync) toast("已同步：池内 "+tokens.length+" 个币");
+      else if(ctx.added.length) toast("自动添加 "+ctx.added.length+" 个新币，已置顶，行情已同步");
+      else if(manual) toast("同步完成：清单和行情已一起更新");
+      if(ctx.added.length) setTimeout(function(){ freshKeys = {}; render(); }, 2600);
+    } else {
+      var msg = feedErr ? (feedErr.message||"网络错误") : "网络错误";
+      setFeedStatus("清单拉取失败 · 池内 "+tokens.length+" 个", "err");
+      showAutoUpdated("行情已更新，清单拉取失败（"+msg+"），北京时间 "+nowStr()+" · 行情更新 "+marketRes.updated+" 个（GeckoTerminal "+marketRes.gt+" / DexScreener 兜底 "+marketRes.dex+"）· 清单继续显示上次成功的数据");
+      if(manual) toast("清单拉取失败，行情已刷新，清单继续显示上次的");
+    }
+  }).then(function(){
+    syncBusy = false; feedBusy = false;
+    if(btn){ btn.disabled = false; btn.textContent = "↻ 同步刷新"; }
+  });
+}
+function pullFeed(manual){ return syncAll(manual); }
+function restartFeedTimer(){
+  if(feedTimer) clearInterval(feedTimer);
+  feedTimer = null;
+  if(feedUrl && feedOn){
+    var secs = Number(document.getElementById("feedInterval").value)||300;
+    feedTimer = setInterval(function(){ syncAll(false); }, secs*1000);
+  }
+  document.getElementById("liveDot").className = "live-dot"+(feedOn?"":" off");
+}
+
+/* ================= import (粘贴) ================= */
+function parseImport(text){
+  var out = [];
+  var evm = text.match(/0x[a-fA-F0-9]{40}/g) || [];
+  evm.forEach(function(ca){
+    var chain = "bsc";
+    var around = text.slice(Math.max(0, text.indexOf(ca)-160), text.indexOf(ca)+60).toLowerCase();
+    if(around.indexOf("base")>=0) chain="base";
+    else if(around.indexOf("ethereum")>=0 || around.indexOf("eth")>=0 && around.indexOf("bsc")<0) chain="ethereum";
+    out.push({ca:ca, chain:chain, source:"手动添加"});
+  });
+  var cleaned = text.replace(/0x[a-fA-F0-9]{40}/g," ");
+  var sol = cleaned.match(/\b[1-9A-HJ-NP-Za-km-z]{40,44}\b/g) || [];
+  sol.forEach(function(ca){ out.push({ca:ca, chain:"solana", source:"手动添加"}); });
+  /* Dev 发币数：就近找 "Dev发币数: N" */
+  var dm = text.match(/Dev\s*发币数[:：]?\s*(\d+)/);
+  if(dm && out.length) out[0].dev_launches = Number(dm[1]);
+  return out;
+}
+
+/* ================= events ================= */
+document.getElementById("q").addEventListener("input", function(e){ state.q = e.target.value; render(); });
+document.getElementById("srcFilter").addEventListener("change", function(e){ state.src = e.target.value; render(); });
+document.getElementById("sortSel").addEventListener("change", function(e){ state.sort = e.target.value; render(); });
+document.querySelectorAll("thead th.sortable").forEach(function(th){
+  th.addEventListener("click", function(){
+    state.sort = th.getAttribute("data-k");
+    document.getElementById("sortSel").value = state.sort;
+    render();
+  });
+});
+document.getElementById("refreshBtn").addEventListener("click", function(){ refreshMarket(false); });
+
+document.getElementById("feedSave").addEventListener("click", function(){
+  feedUrl = document.getElementById("feedUrl").value.trim();
+  if(!feedUrl){ toast("先填 tokens.json 地址"); return; }
+  restartFeedTimer();
+  pullFeed(true);
+});
+document.getElementById("feedNow").addEventListener("click", function(){
+  syncAll(true);
+});
+document.getElementById("feedInterval").addEventListener("change", restartFeedTimer);
+var sw = document.getElementById("feedSwitch");
+function toggleSwitch(){
+  feedOn = !feedOn;
+  sw.classList.toggle("on", feedOn);
+  sw.setAttribute("aria-checked", feedOn);
+  restartFeedTimer();
+  toast(feedOn ? "自动拉取已开" : "自动拉取已暂停");
+}
+sw.addEventListener("click", toggleSwitch);
+sw.addEventListener("keydown", function(e){ if(e.key===" "||e.key==="Enter"){ e.preventDefault(); toggleSwitch(); } });
+
+document.getElementById("blockCancel").addEventListener("click", closeBlockModal);
+document.getElementById("blockConfirm").addEventListener("click", confirmBlock);
+document.getElementById("blockModal").addEventListener("click", function(e){ if(e.target===this) closeBlockModal(); });
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeBlockModal(); });
+document.getElementById("clearBlocked").addEventListener("click", function(){
+  if(!Object.keys(blockedMap).length) return;
+  var was = Object.keys(blockedMap).map(function(k){ return blockedMap[k]; });
+  blockedMap = {};
+  saveBlocked();
+  renderBlocked();
+  toast("已清空屏蔽名单，正在重新拉取…");
+  var fromSample = SAMPLE.filter(function(raw){ return was.some(function(b){ return b.key===rawKeyOf(raw); }); });
+  if(fromSample.length){ ingest(fromSample, false); render(); }
+  pullFeed(true);
+});
+
+document.getElementById("importToggle").addEventListener("click", function(){
+  document.getElementById("importPanel").classList.toggle("open");
+});
+document.getElementById("importGo").addEventListener("click", function(){
+  var text = document.getElementById("importText").value;
+  var list = parseImport(text);
+  if(!list.length){ document.getElementById("importHint").textContent = "没识别到 CA，检查一下粘贴内容。"; return; }
+  var added = ingest(list, true);
+  document.getElementById("importHint").textContent = "识别到 "+list.length+" 个 CA，新添加 "+added.length+" 个（重复或超 3 天的已跳过），正在补行情…";
+  render();
+  fetchAllMarket(added.length ? added : tokens.slice()).then(function(){ render(); });
+  setTimeout(function(){ freshKeys = {}; render(); }, 2600);
+});
+
+/* ================= boot ================= */
+ingest(SAMPLE, false);
+totalAdded = 0; document.getElementById("feedAdded").textContent = "0";
+document.getElementById("feedUrl").value = feedUrl;    /* 默认 GitHub tokens.json 地址 */
+render();
+renderBlocked();
+restartFeedTimer();                                    /* 唯一一条定时器：按所选间隔（默认 5 分钟）统一同步清单+行情 */
+syncAll(false);                                        /* 打开页面完整跑一次：清单和行情并行拉，两边都回来只渲染一次 */
+setInterval(function(){ render(); }, 60*1000);          /* 年龄/到期每分钟走一格（只走时钟，不单独拉行情） */
+/* 页面切到后台时浏览器会节流定时器；切回前台时如果距上次成功拉取已超过一个间隔，立刻补拉一次并自动渲染，避免错过新币 */
+document.addEventListener("visibilitychange", function(){
+  if(document.hidden || !feedOn || !feedUrl) return;
+  var secs = Number(document.getElementById("feedInterval").value)||300;
+  var lastTs = lastSyncTs || lastPullTs;
+  if(lastTs && Date.now()-lastTs >= secs*1000) syncAll(false);
+});
+</script>
+</body>
+</html>
