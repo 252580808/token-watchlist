@@ -20,7 +20,12 @@
     "intro": "",
     "twitter": "",
     "website": "",
-    "telegram": "https://t.me/1"
+    "telegram": "https://t.me/1",
+    "buy_smart": 3,
+    "buy_kol": 1,
+    "buy_total": 4,
+    "buy_state": "ok",
+    "buy_ts": 1794274887
   },
   {
     "ca": "481PDxs2Fg8KikAw4BoG2vcdn4WPzSJS4TWZVX5wF33D",
