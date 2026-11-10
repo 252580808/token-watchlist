@@ -10,8 +10,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 32452.75,
-    "market_cap": 172866.0,
+    "liquidity_usd": 33105.68,
+    "market_cap": 179681.0,
     "holders": 1265,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
@@ -26,7 +26,7 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 32452.75,
-    "liq_ts": 1794339661
+    "liq_now": 33105.68,
+    "liq_ts": 1794339961
   }
 ]
