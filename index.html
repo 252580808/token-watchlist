@@ -735,29 +735,9 @@ function render(){
   bindRows();
   renderBlocked();
 }
-/* ================= 自动隐藏（2026-11-11）=================
-   只是「看板不显示」，tokens.json 里的数据一条都不删，随时可恢复。
-   规则：
-     1) 没名字的币（symbol 为空 / — / - / ?）→ 隐藏（GMGN 也查不到的死币、无效地址）
-     2) 双低：流动性 < $10,000 且 持有人 < 100 → 隐藏
-        持有人查不到（空值）时不误杀，必须两个都明确低于线才隐藏。
-   想调：改下面两个数字即可；想临时看全部，网址后面加 ?all=1 */
-var AUTO_HIDE_LIQ = 10000;
-var AUTO_HIDE_HOLDERS = 100;
-var SHOW_ALL = /[?&]all=1/.test(window.location.search);
-function autoHidden(x){
-  var s = String(x.symbol==null ? "" : x.symbol).trim();
-  if(!s || s==="—" || s==="-" || s==="?") return true;
-  var liq = Number(x.liq);
-  var holders = Number(x.holders);
-  var lowLiq = (x.liq!=null && x.liq!=="" && !isNaN(liq) && liq < AUTO_HIDE_LIQ);
-  var lowHolders = (x.holders!=null && x.holders!=="" && !isNaN(holders) && holders < AUTO_HIDE_HOLDERS);
-  return lowLiq && lowHolders;
-}
 function sweepExpiredSilent(){
   var t = Date.now();
   tokens = tokens.filter(function(x){ return !isBlockedKey(keyOf(x)) && (x.snapshot || t - x.createdAt < MAX_AGE_MS); });
-  if(!SHOW_ALL) tokens = tokens.filter(function(x){ return !autoHidden(x); });
 }
 
 function renderPills(){
