@@ -10,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 20:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 15167.88,
-    "market_cap": 38486.0,
-    "holders": 371,
+    "liquidity_usd": 15115.04,
+    "market_cap": 38332.0,
+    "holders": 367,
     "dev_count": 1,
     "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
     "gmgn_launchpad": "ray_launchpad",
@@ -26,8 +26,8 @@
     "buy_total": 2,
     "buy_state": "ok",
     "buy_ts": 1794267553,
-    "liq_now": 15167.88,
-    "liq_ts": 1794316561
+    "liq_now": 15115.04,
+    "liq_ts": 1794316903
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
@@ -40,9 +40,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 40106.92,
-    "market_cap": 260779.0,
-    "holders": 1386,
+    "liquidity_usd": 39779.55,
+    "market_cap": 257246.0,
+    "holders": 1384,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
     "gmgn_launchpad": "ray_launchpad",
@@ -56,7 +56,7 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 40106.92,
-    "liq_ts": 1794316561
+    "liq_now": 39779.55,
+    "liq_ts": 1794316903
   }
 ]
