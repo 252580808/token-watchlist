@@ -10,8 +10,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 20:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 14629.22,
-    "market_cap": 34825.0,
+    "liquidity_usd": 14639.9,
+    "market_cap": 34869.0,
     "holders": 350,
     "dev_count": 1,
     "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
@@ -26,8 +26,8 @@
     "buy_total": 2,
     "buy_state": "ok",
     "buy_ts": 1794267553,
-    "liq_now": 14629.22,
-    "liq_ts": 1794285962
+    "liq_now": 14639.9,
+    "liq_ts": 1794286262
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
@@ -40,8 +40,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 32163.95,
-    "market_cap": 166846.0,
+    "liquidity_usd": 33944.62,
+    "market_cap": 185745.0,
     "holders": 1322,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
@@ -56,8 +56,8 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 32163.95,
-    "liq_ts": 1794285962
+    "liq_now": 33944.62,
+    "liq_ts": 1794286262
   },
   {
     "ca": "AhMWqC77W2YUx6rPXtoju3N3L1pA89p5JvZxYWN3dHUf",
@@ -70,8 +70,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 09:56",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 11647.17,
-    "market_cap": 21350.0,
+    "liquidity_usd": 11475.83,
+    "market_cap": 20696.0,
     "holders": 322,
     "dev_count": 1,
     "dev_creator": "FKUkqu1iWFXPkSRvK7fk3nnshiV4W2fipBq5M2zDmB2E",
@@ -81,8 +81,8 @@
     "twitter": "https://www.curvd.fun/",
     "website": "",
     "telegram": "https://t.me/1",
-    "liq_now": 11647.17,
-    "liq_ts": 1794285962
+    "liq_now": 11475.83,
+    "liq_ts": 1794286262
   },
   {
     "ca": "8MuTFfgeFCYa7BKMkKzRbxPLjgdEZFfHtNM2XWSfdtH2",
@@ -95,8 +95,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 05:10",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 18625.87,
-    "market_cap": 40097.0,
+    "liquidity_usd": 17035.65,
+    "market_cap": 33491.0,
     "holders": 404,
     "dev_count": 1,
     "dev_creator": "6jLAgqmFcK74PHFbSnoPK7taKYqxc8CxdUZFWaURxULA",
@@ -111,7 +111,7 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267752,
-    "liq_now": 18625.87,
-    "liq_ts": 1794285962
+    "liq_now": 17035.65,
+    "liq_ts": 1794286262
   }
 ]
