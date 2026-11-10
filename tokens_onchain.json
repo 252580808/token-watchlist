@@ -530,33 +530,5 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267824
-  },
-  {
-    "ca": "BqtMgJhL52yLZnrgGcHNnTRhipY69ZqjQbRizkTAbruh",
-    "chain": "sol",
-    "name": "BRUH",
-    "symbol": "BRUH",
-    "first_seen": "2026-11-09 00:05",
-    "created_at": "2026-11-09 08:05",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 00:05",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 13601.8365473014,
-    "market_cap": 31263.26,
-    "holders": 59,
-    "dev_count": 1,
-    "dev_creator": "89iijy43T9DMvB3DoCZfM2ASFkpzrg4NXahCNMbAk751",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://bruhtoken.fun/",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 0,
-    "buy_kol": 3,
-    "buy_total": 3,
-    "buy_state": "ok",
-    "buy_ts": 1794267842
   }
 ]
