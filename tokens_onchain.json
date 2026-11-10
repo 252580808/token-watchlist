@@ -1,5 +1,30 @@
 [
   {
+    "ca": "F9DrbB5ATbAtLqt4PUbFGcVa5dAHqV3E9ucYvkEBLESS",
+    "chain": "sol",
+    "name": "SYGNAL",
+    "symbol": "SYGNAL",
+    "first_seen": "2026-11-09 20:48",
+    "created_at": "2026-11-10 04:48",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-09 20:48",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
+    "liquidity_usd": 10208.15,
+    "market_cap": 17523.0,
+    "holders": 311,
+    "dev_count": 1,
+    "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
+    "gmgn_launchpad": "ray_launchpad",
+    "description": "The launchpad that pays people for yapping on Fomo, Pump, and X. Every token runs a yap campaign from its trading fees.",
+    "intro": "The launchpad that pays people for yapping on Fomo, Pump, and X. Every token runs a yap campaign from its trading fees.",
+    "twitter": "https://sygnal.fun/",
+    "website": "",
+    "telegram": "https://t.me/1",
+    "liq_now": 10208.15,
+    "liq_ts": 1794329498
+  },
+  {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
     "chain": "sol",
     "name": "FAIR",
@@ -10,9 +35,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 27107.79,
-    "market_cap": 123605.0,
-    "holders": 1336,
+    "liquidity_usd": 30142.55,
+    "market_cap": 152135.0,
+    "holders": 1284,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
     "gmgn_launchpad": "ray_launchpad",
@@ -26,7 +51,7 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 27107.79,
-    "liq_ts": 1794329161
+    "liq_now": 30142.55,
+    "liq_ts": 1794329498
   }
 ]
