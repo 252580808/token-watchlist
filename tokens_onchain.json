@@ -25,35 +25,8 @@
     "buy_kol": 1,
     "buy_total": 4,
     "buy_state": "ok",
-    "buy_ts": 1794274887
-  },
-  {
-    "ca": "481PDxs2Fg8KikAw4BoG2vcdn4WPzSJS4TWZVX5wF33D",
-    "chain": "sol",
-    "name": "F33D",
-    "symbol": "F33D",
-    "first_seen": "2026-11-09 21:32",
-    "created_at": "2026-11-10 05:32",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 21:32",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 50883.60136327104,
-    "market_cap": 82914.85,
-    "holders": 319,
-    "dev_count": 2,
-    "dev_creator": "ANppuXB58vHobrRo3A1zohwG4Gx6TcsNfp4JxqkuQ18E",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "The launchpad that feeds.\r\nPowered by Solana + Helius",
-    "intro": "The launchpad that feeds.\r\nPowered by Solana + Helius",
-    "twitter": "https://F33D.pro/",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 3,
-    "buy_kol": 2,
-    "buy_total": 5,
-    "buy_state": "ok",
-    "buy_ts": 1794267499
+    "buy_ts": 1794274887,
+    "liq_now": null
   },
   {
     "ca": "25bYec4YaCbNQLJrkDK5F4j7MA16JXsm2pRZcocg79wA",
@@ -81,7 +54,8 @@
     "buy_kol": 1,
     "buy_total": 1,
     "buy_state": "ok",
-    "buy_ts": 1794267517
+    "buy_ts": 1794267517,
+    "liq_now": null
   },
   {
     "ca": "9xubLvbt1eHQjGMNKESzMqqPvQ71mmbQ1uF6neSxGkff",
@@ -109,7 +83,8 @@
     "buy_kol": 3,
     "buy_total": 3,
     "buy_state": "ok",
-    "buy_ts": 1794267535
+    "buy_ts": 1794267535,
+    "liq_now": null
   },
   {
     "ca": "F9DrbB5ATbAtLqt4PUbFGcVa5dAHqV3E9ucYvkEBLESS",
@@ -122,8 +97,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 20:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 17129.5582929816,
-    "market_cap": 0,
+    "liquidity_usd": 17867.86,
+    "market_cap": 52722.0,
     "holders": 265,
     "dev_count": 1,
     "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
@@ -137,7 +112,9 @@
     "buy_kol": 1,
     "buy_total": 2,
     "buy_state": "ok",
-    "buy_ts": 1794267553
+    "buy_ts": 1794267553,
+    "liq_now": 17867.86,
+    "liq_ts": 1794277559
   },
   {
     "ca": "5pPCxf8dE7bFyeEvcMieM1obUaFSG1u4xWtZcya85vB7",
@@ -165,7 +142,8 @@
     "buy_kol": 1,
     "buy_total": 1,
     "buy_state": "ok",
-    "buy_ts": 1794267571
+    "buy_ts": 1794267571,
+    "liq_now": null
   },
   {
     "ca": "BuqeQaxHi5TywXL7ijWGTunk6DCVFFC4vqWcqVFKMa4g",
@@ -193,7 +171,8 @@
     "buy_kol": 2,
     "buy_total": 2,
     "buy_state": "ok",
-    "buy_ts": 1794267589
+    "buy_ts": 1794267589,
+    "liq_now": null
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
@@ -206,8 +185,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 28143.08870021996,
-    "market_cap": 0,
+    "liquidity_usd": 22311.2,
+    "market_cap": 78563.0,
     "holders": 635,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
@@ -221,35 +200,9 @@
     "buy_kol": 3,
     "buy_total": 4,
     "buy_state": "ok",
-    "buy_ts": 1794267607
-  },
-  {
-    "ca": "11hK1Ak4Ghtinbh9Uc6KWiJDqvgurPjmDptDxLCncn",
-    "chain": "sol",
-    "name": "Basket",
-    "symbol": "BASKET",
-    "first_seen": "2026-11-09 19:15",
-    "created_at": "2026-11-10 03:15",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 19:15",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 12112.250470327,
-    "market_cap": 29519.82,
-    "holders": 67,
-    "dev_count": 1,
-    "dev_creator": "81kRpHEixwKMvK59YqJCuto7MprHGWq4jBB9vrP9SsLf",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://floatingbasket.fun/",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 0,
-    "buy_kol": 3,
-    "buy_total": 3,
-    "buy_state": "ok",
-    "buy_ts": 1794267625
+    "buy_ts": 1794267607,
+    "liq_now": 22311.2,
+    "liq_ts": 1794277559
   },
   {
     "ca": "1y5Hgr6qec6seF87qBFRxaWF1QSpmNEsfqMFKp9k9g",
@@ -277,7 +230,8 @@
     "buy_kol": 6,
     "buy_total": 7,
     "buy_state": "ok",
-    "buy_ts": 1794267643
+    "buy_ts": 1794267643,
+    "liq_now": null
   },
   {
     "ca": "1ypf7WxtPaeeYPpCCb9cWmdXhSQ2zLr2UKYif8C8Yt",
@@ -305,35 +259,8 @@
     "buy_kol": 1,
     "buy_total": 1,
     "buy_state": "ok",
-    "buy_ts": 1794267661
-  },
-  {
-    "ca": "EhWgXU9KC9TdGALvKFwxu8mCRdrpcZaNaJEk4gdknwn",
-    "chain": "sol",
-    "name": "Known",
-    "symbol": "KNOWN",
-    "first_seen": "2026-11-09 12:40",
-    "created_at": "2026-11-09 20:40",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 12:40",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 6630.23573543562,
-    "market_cap": 12639.53,
-    "holders": 63,
-    "dev_count": 1,
-    "dev_creator": "FjQucmWEvjEQJxNZnjXpy9BE27TQxWno6e5CAjyZe9EZ",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "Interchange for KYC",
-    "intro": "Interchange for KYC",
-    "twitter": "https://useknown.dev/",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 0,
-    "buy_kol": 1,
-    "buy_total": 1,
-    "buy_state": "ok",
-    "buy_ts": 1794267679
+    "buy_ts": 1794267661,
+    "liq_now": null
   },
   {
     "ca": "GLEpJAdQQ6hEyqfa571RQtnpYsAL1MTNK894QHi37mtF",
@@ -361,7 +288,8 @@
     "buy_kol": 1,
     "buy_total": 2,
     "buy_state": "ok",
-    "buy_ts": 1794267697
+    "buy_ts": 1794267697,
+    "liq_now": null
   },
   {
     "ca": "AhMWqC77W2YUx6rPXtoju3N3L1pA89p5JvZxYWN3dHUf",
@@ -374,8 +302,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 09:56",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 5528.45166570332,
-    "market_cap": 0,
+    "liquidity_usd": 11512.04,
+    "market_cap": 20911.0,
     "holders": 79,
     "dev_count": 1,
     "dev_creator": "FKUkqu1iWFXPkSRvK7fk3nnshiV4W2fipBq5M2zDmB2E",
@@ -389,35 +317,9 @@
     "buy_kol": 4,
     "buy_total": 5,
     "buy_state": "ok",
-    "buy_ts": 1794267715
-  },
-  {
-    "ca": "HWytgukdG825oXWhRmQLHtArtvghvbFSsN9u5xo5cJFA",
-    "chain": "sol",
-    "name": "fl00r",
-    "symbol": "Fl00R",
-    "first_seen": "2026-11-09 09:35",
-    "created_at": "2026-11-09 17:34",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 09:35",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 5629.03357718304,
-    "market_cap": 0,
-    "holders": 90,
-    "dev_count": 1,
-    "dev_creator": "5zsaQsJLVMiayRCXnNNy8Vxy4CZwHRVuZmupwwVsmHRw",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://www.fl00r.cash/",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 1,
-    "buy_kol": 0,
-    "buy_total": 1,
-    "buy_state": "ok",
-    "buy_ts": 1794267734
+    "buy_ts": 1794267715,
+    "liq_now": 11512.04,
+    "liq_ts": 1794277559
   },
   {
     "ca": "8MuTFfgeFCYa7BKMkKzRbxPLjgdEZFfHtNM2XWSfdtH2",
@@ -430,8 +332,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 05:10",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 13832.7472072944,
-    "market_cap": 0,
+    "liquidity_usd": 17139.29,
+    "market_cap": 34054.0,
     "holders": 108,
     "dev_count": 1,
     "dev_creator": "6jLAgqmFcK74PHFbSnoPK7taKYqxc8CxdUZFWaURxULA",
@@ -445,7 +347,9 @@
     "buy_kol": 3,
     "buy_total": 4,
     "buy_state": "ok",
-    "buy_ts": 1794267752
+    "buy_ts": 1794267752,
+    "liq_now": 17139.29,
+    "liq_ts": 1794277559
   },
   {
     "ca": "Cd8i5Xhppx792UiGmatCwcbe1M8ga57Y8Znp8M7LX6Lr",
@@ -473,34 +377,7 @@
     "buy_kol": 1,
     "buy_total": 1,
     "buy_state": "ok",
-    "buy_ts": 1794267770
-  },
-  {
-    "ca": "T8PVfjmAsczCPk5odgScSHbjyywe4QTxSaVPeVoELYS",
-    "chain": "sol",
-    "name": "ELYS.RUN",
-    "symbol": "ELYS",
-    "first_seen": "2026-11-09 02:30",
-    "created_at": "2026-11-09 10:30",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 02:30",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 12280.589203667769,
-    "market_cap": 0,
-    "holders": 243,
-    "dev_count": 1,
-    "dev_creator": "6j7obhkdvYzePf5eWQBvWyH4GgdxsKfsES3LRmhg8xSr",
-    "gmgn_launchpad": "Pump.fun",
-    "description": "The memecoin launchpad for Elysium. Launch with HYPE or SOL.",
-    "intro": "The memecoin launchpad for Elysium. Launch with HYPE or SOL.",
-    "twitter": "https://elys.run",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 1,
-    "buy_kol": 1,
-    "buy_total": 2,
-    "buy_state": "ok",
-    "buy_ts": 1794267788
+    "buy_ts": 1794267770,
+    "liq_now": null
   }
 ]
