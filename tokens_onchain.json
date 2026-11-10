@@ -10,8 +10,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 20:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 11533.73,
-    "market_cap": 22183.0,
+    "liquidity_usd": 11465.69,
+    "market_cap": 21879.0,
     "holders": 305,
     "dev_count": 1,
     "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
@@ -21,8 +21,8 @@
     "twitter": "https://sygnal.fun/",
     "website": "",
     "telegram": "https://t.me/1",
-    "liq_now": 11533.73,
-    "liq_ts": 1794332193
+    "liq_now": 11465.69,
+    "liq_ts": 1794332461
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
@@ -35,8 +35,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 31921.18,
-    "market_cap": 168716.0,
+    "liquidity_usd": 32553.52,
+    "market_cap": 176496.0,
     "holders": 1301,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
@@ -51,7 +51,7 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 31921.18,
-    "liq_ts": 1794332193
+    "liq_now": 32553.52,
+    "liq_ts": 1794332461
   }
 ]
