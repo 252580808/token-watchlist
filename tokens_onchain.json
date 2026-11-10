@@ -22,7 +22,12 @@
     "website": "",
     "telegram": "https://t.me/1",
     "liq_now": 11465.69,
-    "liq_ts": 1794332461
+    "liq_ts": 1794332461,
+    "buy_smart": null,
+    "buy_kol": null,
+    "buy_total": null,
+    "buy_state": "partial",
+    "buy_ts": 1794332533
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
