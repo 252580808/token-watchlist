@@ -82,7 +82,12 @@
     "website": "",
     "telegram": "https://t.me/1",
     "liq_now": 11647.17,
-    "liq_ts": 1794285662
+    "liq_ts": 1794285662,
+    "buy_smart": 1,
+    "buy_kol": 4,
+    "buy_total": 5,
+    "buy_state": "ok",
+    "buy_ts": 1794285756
   },
   {
     "ca": "8MuTFfgeFCYa7BKMkKzRbxPLjgdEZFfHtNM2XWSfdtH2",
