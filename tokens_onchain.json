@@ -82,6 +82,11 @@
     "website": "",
     "telegram": "https://t.me/1",
     "liq_now": 11567.22,
-    "liq_ts": 1794287462
+    "liq_ts": 1794287462,
+    "buy_smart": 1,
+    "buy_kol": 4,
+    "buy_total": 5,
+    "buy_state": "ok",
+    "buy_ts": 1794287541
   }
 ]
