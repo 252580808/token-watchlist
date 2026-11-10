@@ -97,8 +97,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 20:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 19766.5,
-    "market_cap": 64370.0,
+    "liquidity_usd": 18157.91,
+    "market_cap": 54034.0,
     "holders": 265,
     "dev_count": 1,
     "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
@@ -113,8 +113,8 @@
     "buy_total": 2,
     "buy_state": "ok",
     "buy_ts": 1794267553,
-    "liq_now": 19766.5,
-    "liq_ts": 1794278761
+    "liq_now": 18157.91,
+    "liq_ts": 1794279061
   },
   {
     "ca": "5pPCxf8dE7bFyeEvcMieM1obUaFSG1u4xWtZcya85vB7",
@@ -185,8 +185,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 22707.17,
-    "market_cap": 82513.0,
+    "liquidity_usd": 22860.6,
+    "market_cap": 83454.0,
     "holders": 635,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
@@ -201,8 +201,8 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 22707.17,
-    "liq_ts": 1794278761
+    "liq_now": 22860.6,
+    "liq_ts": 1794279061
   },
   {
     "ca": "1y5Hgr6qec6seF87qBFRxaWF1QSpmNEsfqMFKp9k9g",
@@ -319,7 +319,7 @@
     "buy_state": "ok",
     "buy_ts": 1794267715,
     "liq_now": 11526.23,
-    "liq_ts": 1794278761
+    "liq_ts": 1794279061
   },
   {
     "ca": "8MuTFfgeFCYa7BKMkKzRbxPLjgdEZFfHtNM2XWSfdtH2",
@@ -332,8 +332,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 05:10",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 15215.03,
-    "market_cap": 26807.0,
+    "liquidity_usd": 15393.99,
+    "market_cap": 27422.0,
     "holders": 108,
     "dev_count": 1,
     "dev_creator": "6jLAgqmFcK74PHFbSnoPK7taKYqxc8CxdUZFWaURxULA",
@@ -348,8 +348,8 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267752,
-    "liq_now": 15215.03,
-    "liq_ts": 1794278761
+    "liq_now": 15393.99,
+    "liq_ts": 1794279061
   },
   {
     "ca": "Cd8i5Xhppx792UiGmatCwcbe1M8ga57Y8Znp8M7LX6Lr",
