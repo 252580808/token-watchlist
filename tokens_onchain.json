@@ -10,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 20:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 16694.64,
-    "market_cap": 45888.0,
-    "holders": 365,
+    "liquidity_usd": 16678.18,
+    "market_cap": 45862.0,
+    "holders": 361,
     "dev_count": 1,
     "dev_creator": "FMEgaC6yr8trRqudkJNDdq7DsoU6jqsWd6fNKubJKVnA",
     "gmgn_launchpad": "ray_launchpad",
@@ -26,8 +26,8 @@
     "buy_total": 2,
     "buy_state": "ok",
     "buy_ts": 1794267553,
-    "liq_now": 16694.64,
-    "liq_ts": 1794301861
+    "liq_now": 16678.18,
+    "liq_ts": 1794302217
   },
   {
     "ca": "FairDR2UmRqHxsVPdPcetePCjFaDqVYv3oQX9fcQTpTg",
@@ -40,9 +40,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 19:48",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 35253.08,
-    "market_cap": 194713.0,
-    "holders": 1326,
+    "liquidity_usd": 37885.45,
+    "market_cap": 225473.0,
+    "holders": 1329,
     "dev_count": 1,
     "dev_creator": "J4CZxeh3Recf7xUqGCzGAM2WJfkqARfxSHnMt8idfair",
     "gmgn_launchpad": "ray_launchpad",
@@ -56,8 +56,8 @@
     "buy_total": 4,
     "buy_state": "ok",
     "buy_ts": 1794267607,
-    "liq_now": 35253.08,
-    "liq_ts": 1794301861
+    "liq_now": 37885.45,
+    "liq_ts": 1794302217
   },
   {
     "ca": "AhMWqC77W2YUx6rPXtoju3N3L1pA89p5JvZxYWN3dHUf",
@@ -70,9 +70,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-09 09:56",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 10915.11,
-    "market_cap": 18346.0,
-    "holders": 330,
+    "liquidity_usd": 11077.14,
+    "market_cap": 18957.0,
+    "holders": 321,
     "dev_count": 1,
     "dev_creator": "FKUkqu1iWFXPkSRvK7fk3nnshiV4W2fipBq5M2zDmB2E",
     "gmgn_launchpad": "ray_launchpad",
@@ -81,12 +81,7 @@
     "twitter": "https://www.curvd.fun/",
     "website": "",
     "telegram": "https://t.me/1",
-    "liq_now": 10915.11,
-    "liq_ts": 1794301861,
-    "buy_smart": 2,
-    "buy_kol": 4,
-    "buy_total": 6,
-    "buy_state": "ok",
-    "buy_ts": 1794301953
+    "liq_now": 11077.14,
+    "liq_ts": 1794302217
   }
 ]
