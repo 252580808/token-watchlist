@@ -502,33 +502,5 @@
     "buy_total": 9,
     "buy_state": "ok",
     "buy_ts": 1794267885
-  },
-  {
-    "ca": "ALsXYwQk6CACHBPLaB22yES6SVEZgbf4earK519uUns",
-    "chain": "sol",
-    "name": "fronty",
-    "symbol": "fronty",
-    "first_seen": "2026-11-09 01:09",
-    "created_at": "2026-11-09 09:09",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-09 01:09",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 6759.250027499008,
-    "market_cap": 0,
-    "holders": 41,
-    "dev_count": 1,
-    "dev_creator": "6uCi3D9samHq2J11HgRJjdajws2nJHv6omY9fWTshNhw",
-    "gmgn_launchpad": "ray_launchpad",
-    "description": "发射台 ray_launchpad",
-    "intro": "",
-    "twitter": "https://www.floatlaunch.xyz/tokens/ALsXYwQk6CACHBPLaB22yES6SVEZgbf4earK519uUns",
-    "website": "",
-    "telegram": "https://t.me/1",
-    "buy_smart": 3,
-    "buy_kol": 1,
-    "buy_total": 4,
-    "buy_state": "ok",
-    "buy_ts": 1794267824
   }
 ]
