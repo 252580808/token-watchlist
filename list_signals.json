@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T11:49:42.377183Z",
+  "generated_at": "2026-11-12T11:59:04.406161Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
@@ -7,19 +7,39 @@
   "stats": {
     "signals_total": 1553,
     "with_ca": 190,
-    "list_posts_total": 72,
-    "unique_cas": 53,
-    "dedup_merged_posts": 19,
-    "passed": 8,
+    "list_posts_total": 80,
+    "unique_cas": 59,
+    "dedup_merged_posts": 21,
+    "passed": 9,
     "dropped_dev": 16,
-    "dropped_old": 25,
-    "dropped_no_time": 4,
+    "dropped_old": 27,
+    "dropped_no_time": 7,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "no_pool": 4
+      "no_pool": 7
     }
   },
   "items": [
+    {
+      "ca": "89iRVoDVPd8tuRrMyhgPfe58eDneasPsdEVu5AUMpump",
+      "chain": "solana",
+      "symbol": "LuckyCoin",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-11T15:55:41Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T11:53:27Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "rutradebtc",
+          "author_name": "rutradebtc",
+          "post_time": "2026-11-12T11:53:27Z",
+          "text_clean": "What we buying today? | | $AIB | $MIHAO | $MAX | solana:Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump | $MIHAO | $CBUCKS | solana:89iRVoDVPd8tuRrMyhgPfe58eDneasPsdEVu5AUMpump | $GATO | $CHILL | $BIG | $NOBUSHIBA | $FLC | $OAK | $X | $UPDOG | $REX x.com/rutradebtc/status/2120847439427174769/photo/1",
+          "tweet_url": "https://x.com/rutradebtc/status/2120847439427174769"
+        }
+      ]
+    },
     {
       "ca": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
       "chain": "solana",
@@ -28,8 +48,8 @@
       "pair_created_at": "2026-11-11T21:00:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T11:40:21Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "Ax886333",
@@ -37,6 +57,13 @@
           "post_time": "2026-11-12T11:40:21Z",
           "text_clean": "solana:5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump | | 今天以为老马@elonmusk 儿子发币了，听到 Debot 监控一直报警，提醒倍数冲到 174x，以为大的又要来了，但是后来老马取关了，币价也从 13M 暴跌到 2M 附近，玩名人盘风险还是高，目前老外社区讨论比较激烈，但是不太建议追了，先保持观望吧！ x.com/Ax886333/status/2120844142737854784/photo/1",
           "tweet_url": "https://x.com/Ax886333/status/2120844142737854784"
+        },
+        {
+          "author": "Cryptochunshui",
+          "author_name": "Cryptochunshui",
+          "post_time": "2026-11-12T11:51:50Z",
+          "text_clean": "链上行情很差，最近有四个和马斯克相关的标。SOL链上的 solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM 和 solana:5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+          "tweet_url": "https://x.com/Cryptochunshui/status/2120847030973350285"
         }
       ]
     },
@@ -48,7 +75,7 @@
       "pair_created_at": "2026-11-12T11:26:41Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T11:32:19Z",
-      "post_count": 1,
+      "post_count": 2,
       "unique_authors": 1,
       "posts": [
         {
@@ -57,6 +84,13 @@
           "post_time": "2026-11-12T11:32:19Z",
           "text_clean": "牛逼的东西 默默发射 | | 6Q1fGqo13A2bNUuDTzQFYMnNMzXN59RViZnPs2YPnbHf x.com/VVmmao/status/2120842119313330265/photo/1",
           "tweet_url": "https://x.com/VVmmao/status/2120842119313330265"
+        },
+        {
+          "author": "VVmmao",
+          "author_name": "VVmmao",
+          "post_time": "2026-11-12T11:50:33Z",
+          "text_clean": "6Q1fGqo13A2bNUuDTzQFYMnNMzXN59RViZnPs2YPnbHf 研究",
+          "tweet_url": "https://x.com/VVmmao/status/2120846709429604411"
         }
       ]
     },
