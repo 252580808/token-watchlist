@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-12T13:03:00.213962Z",
+  "generated_at": "2026-11-12T13:12:04.496988Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1586,
-    "with_ca": 190,
-    "list_posts_total": 135,
-    "unique_cas": 90,
-    "dedup_merged_posts": 45,
+    "signals_total": 1590,
+    "with_ca": 191,
+    "list_posts_total": 143,
+    "unique_cas": 94,
+    "dedup_merged_posts": 49,
     "passed": 18,
-    "dropped_dev": 22,
-    "dropped_old": 38,
-    "dropped_no_time": 12,
+    "dropped_dev": 24,
+    "dropped_old": 39,
+    "dropped_no_time": 13,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "no_pool": 12
+      "no_pool": 13
     }
   },
   "items": [
