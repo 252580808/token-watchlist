@@ -1,31 +1,82 @@
 {
-  "generated_at": "2026-11-12T23:14:19.274588Z",
+  "generated_at": "2026-11-12T23:23:27.081539Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1739,
+    "signals_total": 1741,
     "with_ca": 200,
-    "list_posts_total": 513,
-    "unique_cas": 262,
-    "dedup_merged_posts": 251,
-    "passed": 43,
+    "list_posts_total": 520,
+    "unique_cas": 265,
+    "dedup_merged_posts": 255,
+    "passed": 45,
     "dropped_dev": 65,
-    "dropped_old": 116,
+    "dropped_old": 117,
     "dropped_no_time": 38,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 261,
+    "verdict_cached": 262,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 116,
+      "old": 117,
       "dev_over": 65,
       "no_pool": 37,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "GgeWgeVTyVQVCK6KA8dJYiSqxDVio8puqiuVyFfpumps",
+      "chain": "solana",
+      "symbol": "PUMPS",
+      "dev_count": 1,
+      "smart_degen_count": 8,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-12T22:58:47Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T23:15:23Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "AminTabaFuriju",
+          "author_name": "AminTabaFuriju",
+          "post_time": "2026-11-12T23:15:23Z",
+          "text_clean": "@fatpumpsfun Website ai slop &amp; used domain free | | GgeWgeVTyVQVCK6KA8dJYiSqxDVio8puqiuVyFfpumps",
+          "tweet_url": "https://x.com/AminTabaFuriju/status/2121019052986704125"
+        },
+        {
+          "author": "AminTabaFuriju",
+          "author_name": "AminTabaFuriju",
+          "post_time": "2026-11-12T23:19:16Z",
+          "text_clean": "@fatpumpsfun Instant rug , wns | | GgeWgeVTyVQVCK6KA8dJYiSqxDVio8puqiuVyFfpumps x.com/AminTabaFuriju/status/2121020029965873539/photo/1",
+          "tweet_url": "https://x.com/AminTabaFuriju/status/2121020029965873539"
+        }
+      ]
+    },
+    {
+      "ca": "0x4e091e05d48ce26386472536bbc2ef86f9ec7777",
+      "chain": "bsc",
+      "symbol": "HRX",
+      "dev_count": 1,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-12T21:09:25Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T23:10:53Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "suozigx",
+          "author_name": "suozigx",
+          "post_time": "2026-11-12T23:10:53Z",
+          "text_clean": "0x4e091e05d48ce26386472536bbc2ef86f9ec7777 | 黄仁勋真的辞职了 | 接下来的大叙事预期就是黄仁勋的去向问题 | 现在全网看好的炒的最热的就是和马斯克合体 | 这个合体的头像老马曾点赞过 | 昨天有人让马斯克雇佣老黄仁勋 | 马斯克说那是一份荣幸 | 这无疑给这份期待添了一把柴 | 值得注意的是 | 黄仁勋首字母=HRX",
+          "tweet_url": "https://x.com/suozigx/status/2121017921690640425"
+        }
+      ]
+    },
     {
       "ca": "a9zoLRHvqn12KiGxERC298Gr2rS8YQxuMuN9VFMpump",
       "chain": "solana",
