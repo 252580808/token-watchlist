@@ -1,25 +1,46 @@
 {
-  "generated_at": "2026-11-12T12:08:36.720121Z",
+  "generated_at": "2026-11-12T12:21:55.599425Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1557,
+    "signals_total": 1560,
     "with_ca": 190,
-    "list_posts_total": 89,
-    "unique_cas": 66,
-    "dedup_merged_posts": 23,
-    "passed": 10,
-    "dropped_dev": 17,
-    "dropped_old": 28,
-    "dropped_no_time": 11,
-    "dropped_dev_unknown": 0,
+    "list_posts_total": 95,
+    "unique_cas": 70,
+    "dedup_merged_posts": 25,
+    "passed": 9,
+    "dropped_dev": 13,
+    "dropped_old": 30,
+    "dropped_no_time": 10,
+    "dropped_dev_unknown": 8,
     "dropped_detail": {
-      "no_pool": 11
+      "gmgn_error:HTTPError": 8,
+      "no_pool": 10
     }
   },
   "items": [
+    {
+      "ca": "0x0e944387904f1dae53eae7281b61eed9199a7777",
+      "chain": "bsc",
+      "symbol": "熊走",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T00:53:11Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T12:11:25Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Kasperclam",
+          "author_name": "Kasperclam",
+          "post_time": "2026-11-12T12:11:25Z",
+          "text_clean": "牛来 熊走 | 不起飞 不信邪 | | 0x0e944387904f1dae53eae7281b61eed9199a7777",
+          "tweet_url": "https://x.com/Kasperclam/status/2120851960895287398"
+        }
+      ]
+    },
     {
       "ca": "0x3120361cfad11272dffd2b7af6f1dfb4302f44ee",
       "chain": "ethereum",
@@ -61,6 +82,26 @@
       ]
     },
     {
+      "ca": "0x170f021a2abcbe7213ab2cfead7644a41ce2cc68",
+      "chain": "bsc",
+      "symbol": "PAP",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T01:51:48Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T11:41:58Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "fhaddad39",
+          "author_name": "fhaddad39",
+          "post_time": "2026-11-12T11:41:58Z",
+          "text_clean": "PAPER — BNB Smart Chain 上的 Agent ID 公售 | papagent.app/agents | 0x170f021a2abcbe7213ab2cfead7644a41ce2cc68 | 今晚打老虎",
+          "tweet_url": "https://x.com/fhaddad39/status/2120844550650658888"
+        }
+      ]
+    },
+    {
       "ca": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
       "chain": "solana",
       "symbol": "Max",
@@ -68,8 +109,8 @@
       "pair_created_at": "2026-11-11T21:00:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T11:40:21Z",
-      "post_count": 3,
-      "unique_authors": 3,
+      "post_count": 4,
+      "unique_authors": 4,
       "posts": [
         {
           "author": "Ax886333",
@@ -91,6 +132,13 @@
           "post_time": "2026-11-12T12:00:56Z",
           "text_clean": "$MAX 复盘：凌晨 05:00 到上午 11:00，一个教科书阴谋盘的完整生命周期 | | CA： | 5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump | | 这盘我没上，全程旁观，所以可以冷静拆解。它是过去半年 Solana 上最完整的阴谋盘教科书。 | | 05:00 pump.fun 内盘开盘。最低价对应市值 3.1 万美元。X 账号 x.com/xiaoluoweb3/status/2120849323789529120/photo/1",
           "tweet_url": "https://x.com/xiaoluoweb3/status/2120849323789529120"
+        },
+        {
+          "author": "coinwingscn",
+          "author_name": "coinwingscn",
+          "post_time": "2026-11-12T12:05:18Z",
+          "text_clean": "CoinWings 链上观察 | $Max (solana) | 方向：买入 | | 24小时内，301 个聪明钱地址买入 Max。 | 成交均价：$0.00395775 | 成交金额：$1.21M | 交易时市值：$2.58M | 地址数：15216 | 5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump | | 下载 CoinWings，追踪链上资金动向。",
+          "tweet_url": "https://x.com/coinwingscn/status/2120850419643773084"
         }
       ]
     },
@@ -185,66 +233,6 @@
           "post_time": "2026-11-12T10:59:15Z",
           "text_clean": "0xd9544df1eeba5a65848f47ad510ce7c900546d7e | | 被低估的",
           "tweet_url": "https://x.com/mewudi669/status/2120833800351674408"
-        }
-      ]
-    },
-    {
-      "ca": "0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039",
-      "chain": "bsc",
-      "symbol": "StarsAI",
-      "dev_count": 1,
-      "pair_created_at": "2026-11-12T08:46:53Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-12T10:55:01Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "hongxiao_sol",
-          "author_name": "hongxiao_sol",
-          "post_time": "2026-11-12T10:55:01Z",
-          "text_clean": "起飞，在群里说了，塞就完了 | | $starsai 目前应该2x，打的可以出本，跟上吃肉 | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/hongxiao_sol/status/2120832732477702406/photo/1",
-          "tweet_url": "https://x.com/hongxiao_sol/status/2120832732477702406"
-        }
-      ]
-    },
-    {
-      "ca": "7FxGzQZjdxL87R9hTvtghmtn1vCUc79oVvKiV31azZrQ",
-      "chain": "solana",
-      "symbol": "NEVERDOOM",
-      "dev_count": 1,
-      "pair_created_at": "2026-11-11T19:03:50Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-12T10:30:20Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "badattrading_",
-          "author_name": "badattrading_",
-          "post_time": "2026-11-12T10:30:20Z",
-          "text_clean": "$NEVERDOOM (CA 7FxGzQZjdxL87R9hTvtghmtn1vCUc79oVvKiV31azZrQ) doesn't have snipers, insiders have 11.7% per devsnightmare. Ely, McMuffinsPlayhouse, Yogchill, wrld_sol, Clark10x, jimmy heaters are top holders. | | A cluster has 7.4% on Bubblemaps- you can ignore it it's just spam. x.com/badattrading_/status/2120826520587342240/photo/1",
-          "tweet_url": "https://x.com/badattrading_/status/2120826520587342240"
-        }
-      ]
-    },
-    {
-      "ca": "3hVLBBmifdZE24hHJSR8wbQXfBUsSSumkNGhRxjppump",
-      "chain": "solana",
-      "symbol": "Archive",
-      "dev_count": 2,
-      "pair_created_at": "2026-11-12T10:18:48Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-12T10:27:28Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "VVmmao",
-          "author_name": "VVmmao",
-          "post_time": "2026-11-12T10:27:28Z",
-          "text_clean": "顶级项目 | | 3hVLBBmifdZE24hHJSR8wbQXfBUsSSumkNGhRxjppump",
-          "tweet_url": "https://x.com/VVmmao/status/2120825801977516457"
         }
       ]
     }
