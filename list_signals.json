@@ -1,22 +1,21 @@
 {
-  "generated_at": "2026-11-12T12:21:55.599425Z",
+  "generated_at": "2026-11-12T12:27:53.014888Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1560,
+    "signals_total": 1565,
     "with_ca": 190,
-    "list_posts_total": 95,
-    "unique_cas": 70,
-    "dedup_merged_posts": 25,
-    "passed": 9,
-    "dropped_dev": 13,
-    "dropped_old": 30,
+    "list_posts_total": 105,
+    "unique_cas": 74,
+    "dedup_merged_posts": 31,
+    "passed": 13,
+    "dropped_dev": 19,
+    "dropped_old": 32,
     "dropped_no_time": 10,
-    "dropped_dev_unknown": 8,
+    "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "gmgn_error:HTTPError": 8,
       "no_pool": 10
     }
   },
@@ -38,6 +37,26 @@
           "post_time": "2026-11-12T12:11:25Z",
           "text_clean": "牛来 熊走 | 不起飞 不信邪 | | 0x0e944387904f1dae53eae7281b61eed9199a7777",
           "tweet_url": "https://x.com/Kasperclam/status/2120851960895287398"
+        }
+      ]
+    },
+    {
+      "ca": "0x7f13d45060742cCbC3b4c27d91124D60d2307777",
+      "chain": "bsc",
+      "symbol": "SHIB",
+      "dev_count": 0,
+      "pair_created_at": "2026-11-12T12:23:34Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T11:59:02Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "MEJ50749",
+          "author_name": "MEJ50749",
+          "post_time": "2026-11-12T11:59:02Z",
+          "text_clean": "可以mint了：flap.sh/apps/corla/mint/0x7f13d45060742cCbC3b4c27d91124D60d2307777?mint=0xe4210b8b388b18e331567954c16bab673c3d0b36&factory=0xfba753f8b890eb35caa000c427f99ed5903ea517&catalogVersion=4&lang=zh | 合约：0x7f13d45060742cCbC3b4c27d91124D60d2307777",
+          "tweet_url": "https://x.com/MEJ50749/status/2120848844598743511"
         }
       ]
     },
@@ -233,6 +252,66 @@
           "post_time": "2026-11-12T10:59:15Z",
           "text_clean": "0xd9544df1eeba5a65848f47ad510ce7c900546d7e | | 被低估的",
           "tweet_url": "https://x.com/mewudi669/status/2120833800351674408"
+        }
+      ]
+    },
+    {
+      "ca": "0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039",
+      "chain": "bsc",
+      "symbol": "StarsAI",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T08:46:53Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T10:55:01Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "hongxiao_sol",
+          "author_name": "hongxiao_sol",
+          "post_time": "2026-11-12T10:55:01Z",
+          "text_clean": "起飞，在群里说了，塞就完了 | | $starsai 目前应该2x，打的可以出本，跟上吃肉 | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/hongxiao_sol/status/2120832732477702406/photo/1",
+          "tweet_url": "https://x.com/hongxiao_sol/status/2120832732477702406"
+        }
+      ]
+    },
+    {
+      "ca": "7FxGzQZjdxL87R9hTvtghmtn1vCUc79oVvKiV31azZrQ",
+      "chain": "solana",
+      "symbol": "NEVERDOOM",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-11T19:03:50Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T10:30:20Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "badattrading_",
+          "author_name": "badattrading_",
+          "post_time": "2026-11-12T10:30:20Z",
+          "text_clean": "$NEVERDOOM (CA 7FxGzQZjdxL87R9hTvtghmtn1vCUc79oVvKiV31azZrQ) doesn't have snipers, insiders have 11.7% per devsnightmare. Ely, McMuffinsPlayhouse, Yogchill, wrld_sol, Clark10x, jimmy heaters are top holders. | | A cluster has 7.4% on Bubblemaps- you can ignore it it's just spam. x.com/badattrading_/status/2120826520587342240/photo/1",
+          "tweet_url": "https://x.com/badattrading_/status/2120826520587342240"
+        }
+      ]
+    },
+    {
+      "ca": "3hVLBBmifdZE24hHJSR8wbQXfBUsSSumkNGhRxjppump",
+      "chain": "solana",
+      "symbol": "Archive",
+      "dev_count": 2,
+      "pair_created_at": "2026-11-12T10:18:48Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T10:27:28Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "VVmmao",
+          "author_name": "VVmmao",
+          "post_time": "2026-11-12T10:27:28Z",
+          "text_clean": "顶级项目 | | 3hVLBBmifdZE24hHJSR8wbQXfBUsSSumkNGhRxjppump",
+          "tweet_url": "https://x.com/VVmmao/status/2120825801977516457"
         }
       ]
     }
