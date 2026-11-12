@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T15:26:27.974584Z",
+  "generated_at": "2026-11-12T15:35:18.909973Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,25 +7,54 @@
   "stats": {
     "signals_total": 1670,
     "with_ca": 195,
-    "list_posts_total": 341,
-    "unique_cas": 186,
-    "dedup_merged_posts": 155,
-    "passed": 24,
-    "dropped_dev": 47,
-    "dropped_old": 88,
+    "list_posts_total": 353,
+    "unique_cas": 190,
+    "dedup_merged_posts": 163,
+    "passed": 25,
+    "dropped_dev": 48,
+    "dropped_old": 90,
     "dropped_no_time": 27,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 183,
-    "tags_refreshed": 7,
+    "verdict_cached": 186,
+    "tags_refreshed": 0,
     "dropped_detail": {
-      "old": 88,
-      "dev_over": 47,
+      "old": 90,
+      "dev_over": 48,
       "no_pool": 26,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump",
+      "chain": "solana",
+      "symbol": "greg",
+      "dev_count": 1,
+      "smart_degen_count": 51,
+      "renowned_count": 6,
+      "pair_created_at": "2026-11-11T02:27:43Z",
+      "freshness": "72h",
+      "first_seen_at": "2026-11-12T15:25:55Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-12T15:25:55Z",
+          "text_clean": "CA: | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/scarlex0/status/2120900906799563222/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2120900906799563222"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-12T15:31:37Z",
+          "text_clean": "🍾 4.2X on a $GREG | | CA | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/scarlex0/status/2120902343621218814/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2120902343621218814"
+        }
+      ]
+    },
     {
       "ca": "0xeb3841d05d2ad5d941abd0defafd41a8dda19801",
       "chain": "base",
