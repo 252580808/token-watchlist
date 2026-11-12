@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T13:48:13.822630Z",
+  "generated_at": "2026-11-12T13:59:33.851846Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
@@ -7,16 +7,16 @@
   "stats": {
     "signals_total": 1603,
     "with_ca": 193,
-    "list_posts_total": 210,
-    "unique_cas": 123,
-    "dedup_merged_posts": 87,
+    "list_posts_total": 225,
+    "unique_cas": 131,
+    "dedup_merged_posts": 94,
     "passed": 22,
     "dropped_dev": 31,
-    "dropped_old": 51,
-    "dropped_no_time": 19,
+    "dropped_old": 54,
+    "dropped_no_time": 24,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "no_pool": 19
+      "no_pool": 24
     }
   },
   "items": [
