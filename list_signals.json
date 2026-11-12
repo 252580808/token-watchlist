@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T22:38:18.306535Z",
+  "generated_at": "2026-11-12T22:47:18.265747Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,9 +7,9 @@
   "stats": {
     "signals_total": 1737,
     "with_ca": 200,
-    "list_posts_total": 510,
+    "list_posts_total": 511,
     "unique_cas": 261,
-    "dedup_merged_posts": 249,
+    "dedup_merged_posts": 250,
     "passed": 43,
     "dropped_dev": 65,
     "dropped_old": 116,
@@ -82,7 +82,7 @@
       "chain": "solana",
       "symbol": "CHRISTMAX",
       "dev_count": 1,
-      "smart_degen_count": 41,
+      "smart_degen_count": 43,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T20:29:52Z",
       "freshness": "24h",
