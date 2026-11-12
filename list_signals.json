@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-12T20:50:18.255249Z",
+  "generated_at": "2026-11-12T20:59:22.976487Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1720,
+    "signals_total": 1723,
     "with_ca": 198,
-    "list_posts_total": 472,
-    "unique_cas": 247,
-    "dedup_merged_posts": 225,
-    "passed": 39,
+    "list_posts_total": 474,
+    "unique_cas": 248,
+    "dedup_merged_posts": 226,
+    "passed": 40,
     "dropped_dev": 63,
     "dropped_old": 115,
     "dropped_no_time": 30,
@@ -26,6 +26,35 @@
     }
   },
   "items": [
+    {
+      "ca": "478PuXdVMyM8K23kPnprBguEHYER8G4LBjcXWbPTpump",
+      "chain": "solana",
+      "symbol": "Helmiz",
+      "dev_count": 2,
+      "smart_degen_count": 59,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-12T19:40:40Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T20:49:11Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-12T20:49:11Z",
+          "text_clean": "CA: | | 478PuXdVMyM8K23kPnprBguEHYER8G4LBjcXWbPTpump x.com/scarlex0/status/2120982261369553277/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2120982261369553277"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-12T20:54:46Z",
+          "text_clean": "🐬 4.3X on a $HELMIZ | | CA | | 478PuXdVMyM8K23kPnprBguEHYER8G4LBjcXWbPTpump x.com/scarlex0/status/2120983666742468977/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2120983666742468977"
+        }
+      ]
+    },
     {
       "ca": "91wjaiPv4uhsDUA1qo8NwNAkYNgqnjV7TvSCPeA7pump",
       "chain": "solana",
@@ -854,7 +883,7 @@
       "chain": "solana",
       "symbol": "Max",
       "dev_count": 1,
-      "smart_degen_count": 432,
+      "smart_degen_count": 433,
       "renowned_count": 42,
       "pair_created_at": "2026-11-11T21:00:29Z",
       "freshness": "24h",
