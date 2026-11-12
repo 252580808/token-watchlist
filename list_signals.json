@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T17:32:20.492456Z",
+  "generated_at": "2026-11-12T17:41:28.527589Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,25 +7,47 @@
   "stats": {
     "signals_total": 1695,
     "with_ca": 195,
-    "list_posts_total": 423,
-    "unique_cas": 222,
-    "dedup_merged_posts": 201,
-    "passed": 32,
-    "dropped_dev": 59,
-    "dropped_old": 103,
+    "list_posts_total": 429,
+    "unique_cas": 225,
+    "dedup_merged_posts": 204,
+    "passed": 33,
+    "dropped_dev": 60,
+    "dropped_old": 104,
     "dropped_no_time": 28,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 221,
-    "tags_refreshed": 7,
+    "verdict_cached": 222,
+    "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 103,
-      "dev_over": 59,
+      "old": 104,
+      "dev_over": 60,
       "no_pool": 27,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0xf96c66a8730df490037b7cd1cc2ca1a17a544444",
+      "chain": "bsc",
+      "symbol": "BAGENT",
+      "dev_count": 1,
+      "smart_degen_count": 1,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-12T14:48:09Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T17:37:13Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Lovefeng87",
+          "author_name": "Lovefeng87",
+          "post_time": "2026-11-12T17:37:13Z",
+          "text_clean": "@covachong @OpenFour_dev 0xf96c66a8730df490037b7cd1cc2ca1a17a544444",
+          "tweet_url": "https://x.com/Lovefeng87/status/2120933952198492416"
+        }
+      ]
+    },
     {
       "ca": "DvuEhF4iHbCxUoMqaEkS4643XTG13M2LfTzui2DEpump",
       "chain": "solana",
@@ -82,7 +104,7 @@
       "chain": "solana",
       "symbol": "AMD",
       "dev_count": 1,
-      "smart_degen_count": 55,
+      "smart_degen_count": 59,
       "renowned_count": 5,
       "pair_created_at": "2026-11-12T16:00:38Z",
       "freshness": "24h",
@@ -118,7 +140,7 @@
       "chain": "solana",
       "symbol": "AKT",
       "dev_count": 0,
-      "smart_degen_count": 6,
+      "smart_degen_count": 11,
       "renowned_count": 3,
       "pair_created_at": "2026-11-11T22:42:08Z",
       "freshness": "24h",
@@ -628,7 +650,7 @@
       "chain": "solana",
       "symbol": "LuckyCoin",
       "dev_count": 1,
-      "smart_degen_count": 32,
+      "smart_degen_count": 33,
       "renowned_count": 4,
       "pair_created_at": "2026-11-11T15:55:41Z",
       "freshness": "24h",
