@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-12T13:12:04.496988Z",
+  "generated_at": "2026-11-12T13:23:13.522414Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1590,
+    "signals_total": 1591,
     "with_ca": 191,
-    "list_posts_total": 143,
-    "unique_cas": 94,
-    "dedup_merged_posts": 49,
-    "passed": 18,
-    "dropped_dev": 24,
-    "dropped_old": 39,
+    "list_posts_total": 153,
+    "unique_cas": 98,
+    "dedup_merged_posts": 55,
+    "passed": 19,
+    "dropped_dev": 25,
+    "dropped_old": 41,
     "dropped_no_time": 13,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
@@ -20,6 +20,26 @@
     }
   },
   "items": [
+    {
+      "ca": "0x6bbfce7518dfc450f42ae7c64b45ab8c3c20ce6f",
+      "chain": "base",
+      "symbol": "PMA",
+      "dev_count": 0,
+      "pair_created_at": "2026-11-12T13:02:56Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T13:13:44Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "laoyouhui",
+          "author_name": "laoyouhui",
+          "post_time": "2026-11-12T13:13:44Z",
+          "text_clean": "first programmable on base | | 0x6bbfce7518dfc450f42ae7c64b45ab8c3c20ce6f",
+          "tweet_url": "https://x.com/laoyouhui/status/2120867643783835871"
+        }
+      ]
+    },
     {
       "ca": "MLhh3XX8wfNd3vfRt7d6yTXj49crMnNKYfS9FfThvT2",
       "chain": "solana",
