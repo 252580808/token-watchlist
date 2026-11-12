@@ -1,25 +1,45 @@
 {
-  "generated_at": "2026-11-12T11:59:04.406161Z",
+  "generated_at": "2026-11-12T12:08:36.720121Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1553,
+    "signals_total": 1557,
     "with_ca": 190,
-    "list_posts_total": 80,
-    "unique_cas": 59,
-    "dedup_merged_posts": 21,
-    "passed": 9,
-    "dropped_dev": 16,
-    "dropped_old": 27,
-    "dropped_no_time": 7,
+    "list_posts_total": 89,
+    "unique_cas": 66,
+    "dedup_merged_posts": 23,
+    "passed": 10,
+    "dropped_dev": 17,
+    "dropped_old": 28,
+    "dropped_no_time": 11,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "no_pool": 7
+      "no_pool": 11
     }
   },
   "items": [
+    {
+      "ca": "0x3120361cfad11272dffd2b7af6f1dfb4302f44ee",
+      "chain": "ethereum",
+      "symbol": "PF",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T11:49:35Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T11:58:45Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "btc_789",
+          "author_name": "btc_789",
+          "post_time": "2026-11-12T11:58:45Z",
+          "text_clean": "赌博 | | 0x3120361cfad11272dffd2b7af6f1dfb4302f44ee",
+          "tweet_url": "https://x.com/btc_789/status/2120848771089354992"
+        }
+      ]
+    },
     {
       "ca": "89iRVoDVPd8tuRrMyhgPfe58eDneasPsdEVu5AUMpump",
       "chain": "solana",
@@ -48,8 +68,8 @@
       "pair_created_at": "2026-11-11T21:00:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T11:40:21Z",
-      "post_count": 2,
-      "unique_authors": 2,
+      "post_count": 3,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "Ax886333",
@@ -64,6 +84,13 @@
           "post_time": "2026-11-12T11:51:50Z",
           "text_clean": "链上行情很差，最近有四个和马斯克相关的标。SOL链上的 solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM 和 solana:5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
           "tweet_url": "https://x.com/Cryptochunshui/status/2120847030973350285"
+        },
+        {
+          "author": "xiaoluoweb3",
+          "author_name": "xiaoluoweb3",
+          "post_time": "2026-11-12T12:00:56Z",
+          "text_clean": "$MAX 复盘：凌晨 05:00 到上午 11:00，一个教科书阴谋盘的完整生命周期 | | CA： | 5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump | | 这盘我没上，全程旁观，所以可以冷静拆解。它是过去半年 Solana 上最完整的阴谋盘教科书。 | | 05:00 pump.fun 内盘开盘。最低价对应市值 3.1 万美元。X 账号 x.com/xiaoluoweb3/status/2120849323789529120/photo/1",
+          "tweet_url": "https://x.com/xiaoluoweb3/status/2120849323789529120"
         }
       ]
     },
