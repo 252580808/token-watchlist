@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:57:01.440982Z",
+  "generated_at": "2026-11-12T14:59:17.402615Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查",
@@ -16,7 +16,7 @@
     "dropped_no_time": 27,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 167,
+    "verdict_cached": 171,
     "dropped_detail": {
       "old": 79,
       "dev_over": 42,
