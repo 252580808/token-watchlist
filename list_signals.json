@@ -1,25 +1,65 @@
 {
-  "generated_at": "2026-11-12T12:48:06.724294Z",
+  "generated_at": "2026-11-12T12:54:11.446613Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1574,
+    "signals_total": 1582,
     "with_ca": 190,
-    "list_posts_total": 116,
-    "unique_cas": 79,
-    "dedup_merged_posts": 37,
-    "passed": 15,
+    "list_posts_total": 128,
+    "unique_cas": 88,
+    "dedup_merged_posts": 40,
+    "passed": 17,
     "dropped_dev": 22,
-    "dropped_old": 32,
-    "dropped_no_time": 10,
+    "dropped_old": 38,
+    "dropped_no_time": 11,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "no_pool": 10
+      "no_pool": 11
     }
   },
   "items": [
+    {
+      "ca": "FU9tk2pSZUjQxX2MbkrJ2KbMHMV4ZFAae7yEZKispump",
+      "chain": "solana",
+      "symbol": "斗笠",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T11:56:47Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T12:47:36Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "guapi2235",
+          "author_name": "guapi2235",
+          "post_time": "2026-11-12T12:47:36Z",
+          "text_clean": "FU9tk2pSZUjQxX2MbkrJ2KbMHMV4ZFAae7yEZKispump | | 0x2a1d19b76c97b1fd24da75ccd5ac84f809e47777 | | sol开始玩这个斗笠猫了 中国wif | og 极品3k！！ x.com/guapi2235/status/2120861064346976386/photo/1",
+          "tweet_url": "https://x.com/guapi2235/status/2120861064346976386"
+        }
+      ]
+    },
+    {
+      "ca": "8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump",
+      "chain": "solana",
+      "symbol": "Shitcoin",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T08:30:05Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T12:46:20Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-12T12:46:20Z",
+          "text_clean": "CA: | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/scarlex0/status/2120860748016730224/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2120860748016730224"
+        }
+      ]
+    },
     {
       "ca": "E6muPkTZ3vb1cGumPUEv2buyfFnvAuXQWmmuN1Sypump",
       "chain": "solana",
@@ -28,7 +68,7 @@
       "pair_created_at": "2026-11-12T12:18:47Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:35:54Z",
-      "post_count": 1,
+      "post_count": 2,
       "unique_authors": 1,
       "posts": [
         {
@@ -37,6 +77,13 @@
           "post_time": "2026-11-12T12:35:54Z",
           "text_clean": "Easy 5X on $TRUMPHAO | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | E6muPkTZ3vb1cGumPUEv2buyfFnvAuXQWmmuN1Sypump x.com/0xAnon01/status/2120858123342848172/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2120858123342848172"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-12T12:38:58Z",
+          "text_clean": "6X on $TRUMPHAO | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | E6muPkTZ3vb1cGumPUEv2buyfFnvAuXQWmmuN1Sypump x.com/0xAnon01/status/2120858892737380458/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2120858892737380458"
         }
       ]
     },
