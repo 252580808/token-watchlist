@@ -1,31 +1,82 @@
 {
-  "generated_at": "2026-11-12T15:35:18.909973Z",
+  "generated_at": "2026-11-12T15:54:48.374067Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1670,
+    "signals_total": 1673,
     "with_ca": 195,
-    "list_posts_total": 353,
-    "unique_cas": 190,
-    "dedup_merged_posts": 163,
-    "passed": 25,
-    "dropped_dev": 48,
-    "dropped_old": 90,
+    "list_posts_total": 369,
+    "unique_cas": 198,
+    "dedup_merged_posts": 171,
+    "passed": 27,
+    "dropped_dev": 50,
+    "dropped_old": 94,
     "dropped_no_time": 27,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 186,
-    "tags_refreshed": 0,
+    "verdict_cached": 193,
+    "tags_refreshed": 7,
     "dropped_detail": {
-      "old": 90,
-      "dev_over": 48,
+      "old": 94,
+      "dev_over": 50,
       "no_pool": 26,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "EE9dhUZGVDWqJXs4GhC4oXRpEoLV3u8j4GkMjvgTBUCK",
+      "chain": "solana",
+      "symbol": "IANBUCK",
+      "dev_count": 1,
+      "smart_degen_count": 2,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-12T15:24:49Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T15:47:00Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "VVmmao",
+          "author_name": "VVmmao",
+          "post_time": "2026-11-12T15:47:00Z",
+          "text_clean": "x.com/ia_buck | | 他发的 ！！ | | EE9dhUZGVDWqJXs4GhC4oXRpEoLV3u8j4GkMjvgTBUCK",
+          "tweet_url": "https://x.com/VVmmao/status/2120906214423081026"
+        }
+      ]
+    },
+    {
+      "ca": "GcyEnJLRM9R7mWC1Qh6up173RVjZg2dbssdSEcbxpump",
+      "chain": "solana",
+      "symbol": "POPPER",
+      "dev_count": 1,
+      "smart_degen_count": 4,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-12T15:19:05Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T15:44:04Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-12T15:44:04Z",
+          "text_clean": "My entry on $POPPER at $63k Market Cap | | First called in my private Tg | | GcyEnJLRM9R7mWC1Qh6up173RVjZg2dbssdSEcbxpump x.com/1000x_Hunter_/status/2120905475218641111/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2120905475218641111"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-12T15:45:49Z",
+          "text_clean": "6.9x Returns from our initial | investment on $POPPER | | 🚀🔥 | Ca | | GcyEnJLRM9R7mWC1Qh6up173RVjZg2dbssdSEcbxpump x.com/1000x_Hunter_/status/2120905917516677255/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2120905917516677255"
+        }
+      ]
+    },
     {
       "ca": "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump",
       "chain": "solana",
@@ -61,7 +112,7 @@
       "symbol": "PENNY",
       "dev_count": 1,
       "smart_degen_count": 2,
-      "renowned_count": 4,
+      "renowned_count": 7,
       "pair_created_at": "2026-11-12T13:52:12Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T15:12:22Z",
