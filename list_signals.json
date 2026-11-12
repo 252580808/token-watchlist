@@ -1,25 +1,45 @@
 {
-  "generated_at": "2026-11-12T12:54:11.446613Z",
+  "generated_at": "2026-11-12T13:03:00.213962Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
   "stats": {
-    "signals_total": 1582,
+    "signals_total": 1586,
     "with_ca": 190,
-    "list_posts_total": 128,
-    "unique_cas": 88,
-    "dedup_merged_posts": 40,
-    "passed": 17,
+    "list_posts_total": 135,
+    "unique_cas": 90,
+    "dedup_merged_posts": 45,
+    "passed": 18,
     "dropped_dev": 22,
     "dropped_old": 38,
-    "dropped_no_time": 11,
+    "dropped_no_time": 12,
     "dropped_dev_unknown": 0,
     "dropped_detail": {
-      "no_pool": 11
+      "no_pool": 12
     }
   },
   "items": [
+    {
+      "ca": "MLhh3XX8wfNd3vfRt7d6yTXj49crMnNKYfS9FfThvT2",
+      "chain": "solana",
+      "symbol": "MINERPAID",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T12:49:29Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T12:55:20Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "VVmmao",
+          "author_name": "VVmmao",
+          "post_time": "2026-11-12T12:55:20Z",
+          "text_clean": "天才 | | 第一个将比特币矿机指向任意 X 账号的 launchpad。创作者费用用来租赁算力，收益以任意代币形式打入其 X Money。 | | MLhh3XX8wfNd3vfRt7d6yTXj49crMnNKYfS9FfThvT2",
+          "tweet_url": "https://x.com/VVmmao/status/2120863012223619146"
+        }
+      ]
+    },
     {
       "ca": "FU9tk2pSZUjQxX2MbkrJ2KbMHMV4ZFAae7yEZKispump",
       "chain": "solana",
@@ -48,7 +68,7 @@
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:46:20Z",
-      "post_count": 1,
+      "post_count": 2,
       "unique_authors": 1,
       "posts": [
         {
@@ -57,6 +77,13 @@
           "post_time": "2026-11-12T12:46:20Z",
           "text_clean": "CA: | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/scarlex0/status/2120860748016730224/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2120860748016730224"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-12T12:51:58Z",
+          "text_clean": "✨ 5.2X on a $SHITCOIN | | CA | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/scarlex0/status/2120862166664327414/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2120862166664327414"
         }
       ]
     },
