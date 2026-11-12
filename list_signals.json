@@ -1,25 +1,76 @@
 {
-  "generated_at": "2026-11-12T13:59:33.851846Z",
+  "generated_at": "2026-11-12T14:11:41.652435Z",
   "window_days": 7,
   "window_basis": "post_time",
-  "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数取 GMGN 官方 OpenAPI；查不到一律不入选",
-  "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票",
+  "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查",
+  "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1603,
+    "signals_total": 1609,
     "with_ca": 193,
-    "list_posts_total": 225,
-    "unique_cas": 131,
-    "dedup_merged_posts": 94,
-    "passed": 22,
-    "dropped_dev": 31,
-    "dropped_old": 54,
+    "list_posts_total": 243,
+    "unique_cas": 139,
+    "dedup_merged_posts": 104,
+    "passed": 23,
+    "dropped_dev": 33,
+    "dropped_old": 59,
     "dropped_no_time": 24,
     "dropped_dev_unknown": 0,
+    "pending_retry": 0,
+    "verdict_cached": 0,
     "dropped_detail": {
+      "old": 59,
+      "dev_over": 33,
       "no_pool": 24
     }
   },
   "items": [
+    {
+      "ca": "Bev9PB2tSRPWhrnfsY95a7t5qnE2jettmcAqF2Mkpump",
+      "chain": "solana",
+      "symbol": "¢",
+      "dev_count": 1,
+      "pair_created_at": "2026-11-12T13:32:48Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T13:53:31Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-12T13:53:31Z",
+          "text_clean": "Easy 5X on $ | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | Bev9PB2tSRPWhrnfsY95a7t5qnE2jettmcAqF2Mkpump x.com/0xAnon01/status/2120877653536239794/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2120877653536239794"
+        }
+      ]
+    },
+    {
+      "ca": "0xcC96b01452ae970b1186756eA32C97E4334Cd451",
+      "chain": "robinhood",
+      "symbol": "Rex",
+      "dev_count": 0,
+      "pair_created_at": "2026-11-12T00:59:22Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-12T13:52:12Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-12T13:52:12Z",
+          "text_clean": "My entry on $Rex at $42k Market Cap | | First called in my private TG | | 0xcC96b01452ae970b1186756eA32C97E4334Cd451 x.com/1000x_Hunter_/status/2120877323872350502/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2120877323872350502"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-12T13:54:42Z",
+          "text_clean": "6x Returns from our initial | investment on $Rex | | 🚀🔥 | Ca&gt; | | 0xcC96b01452ae970b1186756eA32C97E4334Cd451 x.com/1000x_Hunter_/status/2120877953626116423/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2120877953626116423"
+        }
+      ]
+    },
     {
       "ca": "A7MsvrYStawWBp9Ae2KFqAdMyka3B81Mtbi28vc4pump",
       "chain": "solana",
@@ -393,33 +444,6 @@
           "post_time": "2026-11-12T11:50:33Z",
           "text_clean": "6Q1fGqo13A2bNUuDTzQFYMnNMzXN59RViZnPs2YPnbHf 研究",
           "tweet_url": "https://x.com/VVmmao/status/2120846709429604411"
-        }
-      ]
-    },
-    {
-      "ca": "6RwrrJMapN5YzMJbLyN2LHxdHrnYisAWzxinQs3rpump",
-      "chain": "solana",
-      "symbol": "HEIRLOOM",
-      "dev_count": 1,
-      "pair_created_at": "2026-11-12T11:06:00Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-12T11:13:17Z",
-      "post_count": 2,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "VVmmao",
-          "author_name": "VVmmao",
-          "post_time": "2026-11-12T11:13:17Z",
-          "text_clean": "6RwrrJMapN5YzMJbLyN2LHxdHrnYisAWzxinQs3rpump 大的来了？",
-          "tweet_url": "https://x.com/VVmmao/status/2120837329611112718"
-        },
-        {
-          "author": "XPnftclub",
-          "author_name": "XPnftclub",
-          "post_time": "2026-11-12T11:20:03Z",
-          "text_clean": "卧槽 $HEIRLOOM | | 感觉这个项目叙事还可以 | | 属于nft和meme联动了，刚毕业 | | CA: 6RwrrJMapN5YzMJbLyN2LHxdHrnYisAWzxinQs3rpump",
-          "tweet_url": "https://x.com/XPnftclub/status/2120839033219879143"
         }
       ]
     },
