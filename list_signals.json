@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T17:05:32.200923Z",
+  "generated_at": "2026-11-13T17:14:32.266695Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2118,
+    "signals_total": 2119,
     "with_ca": 246,
-    "list_posts_total": 1523,
-    "unique_cas": 656,
-    "dedup_merged_posts": 867,
-    "passed": 109,
-    "dropped_dev": 177,
-    "dropped_old": 257,
-    "dropped_no_time": 113,
+    "list_posts_total": 1538,
+    "unique_cas": 661,
+    "dedup_merged_posts": 877,
+    "passed": 110,
+    "dropped_dev": 179,
+    "dropped_old": 258,
+    "dropped_no_time": 114,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 652,
+    "verdict_cached": 656,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 257,
-      "dev_over": 177,
-      "no_pool": 112,
+      "old": 258,
+      "dev_over": 179,
+      "no_pool": 113,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "CMvxaM4qAbiBpRNpMydKxjbqZ82VCLN5mvkowa4ipump",
+      "chain": "solana",
+      "symbol": "mudomo",
+      "dev_count": 2,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-12T21:10:00Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T17:08:14Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Castro764028",
+          "author_name": "Castro764028",
+          "post_time": "2026-11-13T17:08:14Z",
+          "text_clean": "$MUDOMO Just got launched and the dev and the team behind it is planning something big in sending it to the moon | Load up your bags now so you won't miss the big push guys | | CA: CMvxaM4qAbiBpRNpMydKxjbqZ82VCLN5mvkowa4ipump x.com/Castro764028/status/2121289045984899078/photo/1",
+          "tweet_url": "https://x.com/Castro764028/status/2121289045984899078"
+        }
+      ]
+    },
     {
       "ca": "BdgruXDnBP4v7MQ7t5475vy9n9FSQyWWMFMz6QZxpump",
       "chain": "solana",
@@ -36,8 +58,8 @@
       "pair_created_at": "2026-11-13T16:30:52Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T16:51:03Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "wick_calls",
@@ -45,6 +67,13 @@
           "post_time": "2026-11-13T16:51:03Z",
           "text_clean": "$HOMEBADGE Homemade Badge · mc $13.2k · dev's first coin | Category: tech. kairayden built a homemade Breakpoint badge with its own wallet, then launched HOMEBADGE on pumpfun directly from the device. | BdgruXDnBP4v7MQ7t5475vy9n9FSQyWWMFMz6QZxpump x.com/wick_calls/status/2121284720239444227/photo/1",
           "tweet_url": "https://x.com/wick_calls/status/2121284720239444227"
+        },
+        {
+          "author": "AutorunAlert",
+          "author_name": "AutorunAlert",
+          "post_time": "2026-11-13T17:04:51Z",
+          "text_clean": "🔔 New token! Check the ANALYSIS! (Screenshot) | | $HOMEBADGE | BdgruXDnBP4v7MQ7t5475vy9n9FSQyWWMFMz6QZxpump | | ⭐ Open Pumpfun app here: pump.fun/join/autorun | 🎉 DEPOSIT $50, GET $50 FREE! 💵 | 📌 For more info, check my profile. x.com/AutorunAlert/status/2121288193039650849/photo/1",
+          "tweet_url": "https://x.com/AutorunAlert/status/2121288193039650849"
         }
       ]
     },
@@ -207,7 +236,7 @@
       "symbol": "小丑舞",
       "dev_count": 3,
       "smart_degen_count": 1,
-      "renowned_count": 2,
+      "renowned_count": 3,
       "pair_created_at": "2026-11-12T16:11:52Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T15:17:19Z",
@@ -718,7 +747,7 @@
       "chain": "solana",
       "symbol": "FASTMOON",
       "dev_count": 1,
-      "smart_degen_count": 21,
+      "smart_degen_count": 28,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T11:20:51Z",
       "freshness": "24h",
