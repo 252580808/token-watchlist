@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-13T22:20:21.739614Z",
+  "generated_at": "2026-11-13T22:29:22.627484Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2152,
-    "with_ca": 264,
-    "list_posts_total": 1680,
-    "unique_cas": 738,
-    "dedup_merged_posts": 942,
+    "signals_total": 2154,
+    "with_ca": 265,
+    "list_posts_total": 1688,
+    "unique_cas": 741,
+    "dedup_merged_posts": 947,
     "passed": 132,
-    "dropped_dev": 210,
+    "dropped_dev": 211,
     "dropped_old": 279,
-    "dropped_no_time": 117,
+    "dropped_no_time": 119,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 736,
+    "verdict_cached": 738,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 279,
-      "dev_over": 210,
-      "no_pool": 116,
+      "dev_over": 211,
+      "no_pool": 118,
       "no_created_at": 1
     }
   },
@@ -349,8 +349,8 @@
       "pair_created_at": "2026-11-13T18:44:33Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T19:42:49Z",
-      "post_count": 3,
-      "unique_authors": 1,
+      "post_count": 5,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "Douma_signal",
@@ -372,6 +372,20 @@
           "post_time": "2026-11-13T21:32:17Z",
           "text_clean": "Buy gmgn : gmgn.ai/robinhood/token/Douma_0xc9f412f082866aa2eabd0de6280da54c839c3013",
           "tweet_url": "https://x.com/Douma_signal/status/2121355495399371156"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T22:18:58Z",
+          "text_clean": "My entry on $ESTR at $4.7k market cap | | Shared in my TG | | 0xc9f412F082866aA2EabD0DE6280dA54C839c3013 x.com/1000x_Hunter_/status/2121367241744949543/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121367241744949543"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T22:20:49Z",
+          "text_clean": "89x Returns from our initial | investment on $ESTR | | 🚀🔥 | Ca | 0xc9f412F082866aA2EabD0DE6280dA54C839c3013 x.com/1000x_Hunter_/status/2121367707274621160/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121367707274621160"
         }
       ]
     },
@@ -541,7 +555,7 @@
       "chain": "solana",
       "symbol": "BAWSAQ",
       "dev_count": 1,
-      "smart_degen_count": 54,
+      "smart_degen_count": 56,
       "renowned_count": 6,
       "pair_created_at": "2026-11-13T17:57:19Z",
       "freshness": "24h",
@@ -2400,7 +2414,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 7,
+      "post_count": 8,
       "unique_authors": 4,
       "posts": [
         {
@@ -2451,6 +2465,13 @@
           "post_time": "2026-11-13T22:02:28Z",
           "text_clean": "I like solana:BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W solana:4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump solana:3sKZuSZF7onqPYFrWu3bH4Lh141duydt9MAmSd46jaLJ and solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring | | @Ringssol",
           "tweet_url": "https://x.com/ZKhedge/status/2121363090419896677"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-13T22:19:32Z",
+          "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring looks very nice here - privacy on Sol | | $Mask solana:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR x.com/ZKhedge/status/2121367385504665629/photo/1",
+          "tweet_url": "https://x.com/ZKhedge/status/2121367385504665629"
         }
       ]
     },
@@ -2748,7 +2769,7 @@
       "chain": "solana",
       "symbol": "Helmiz",
       "dev_count": 2,
-      "smart_degen_count": 80,
+      "smart_degen_count": 83,
       "renowned_count": 3,
       "pair_created_at": "2026-11-12T19:40:40Z",
       "freshness": "24h",
