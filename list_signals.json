@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-13T01:56:29.000476Z",
+  "generated_at": "2026-11-13T02:05:18.764728Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1778,
+    "signals_total": 1781,
     "with_ca": 201,
-    "list_posts_total": 590,
+    "list_posts_total": 593,
     "unique_cas": 301,
-    "dedup_merged_posts": 289,
+    "dedup_merged_posts": 292,
     "passed": 54,
     "dropped_dev": 68,
     "dropped_old": 133,
     "dropped_no_time": 46,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 298,
+    "verdict_cached": 301,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 133,
@@ -58,7 +58,7 @@
       "pair_created_at": "2026-11-13T01:32:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T01:49:52Z",
-      "post_count": 3,
+      "post_count": 5,
       "unique_authors": 2,
       "posts": [
         {
@@ -81,6 +81,20 @@
           "post_time": "2026-11-13T01:53:39Z",
           "text_clean": "CA: | | CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump x.com/scarlex0/status/2121058882290127309/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2121058882290127309"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T01:54:44Z",
+          "text_clean": "Easy 5X on $ZERO | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump x.com/0xAnon01/status/2121059153892585837/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121059153892585837"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-13T01:59:14Z",
+          "text_clean": "💎 4.8X on a $ZERO | | CA | | CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump x.com/scarlex0/status/2121060289114468444/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121060289114468444"
         }
       ]
     },
@@ -133,7 +147,7 @@
       "chain": "solana",
       "symbol": "Rings",
       "dev_count": 1,
-      "smart_degen_count": 63,
+      "smart_degen_count": 64,
       "renowned_count": 4,
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
