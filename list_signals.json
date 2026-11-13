@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T13:20:28.522607Z",
+  "generated_at": "2026-11-13T13:29:34.573781Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2044,
-    "with_ca": 232,
-    "list_posts_total": 1337,
-    "unique_cas": 567,
-    "dedup_merged_posts": 770,
-    "passed": 92,
-    "dropped_dev": 132,
-    "dropped_old": 242,
-    "dropped_no_time": 101,
+    "signals_total": 2048,
+    "with_ca": 233,
+    "list_posts_total": 1345,
+    "unique_cas": 572,
+    "dedup_merged_posts": 773,
+    "passed": 93,
+    "dropped_dev": 133,
+    "dropped_old": 244,
+    "dropped_no_time": 102,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 564,
+    "verdict_cached": 567,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 242,
-      "dev_over": 132,
-      "no_pool": 100,
+      "old": 244,
+      "dev_over": 133,
+      "no_pool": 101,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0xe4ce6f8caa3a76a53fdad70f2af393c01ecd7777",
+      "chain": "bsc",
+      "symbol": "Rocket",
+      "dev_count": 1,
+      "smart_degen_count": 3,
+      "renowned_count": 6,
+      "pair_created_at": "2026-11-13T13:27:27Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T13:19:31Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "king1883560",
+          "author_name": "king1883560",
+          "post_time": "2026-11-13T13:19:31Z",
+          "text_clean": "flap.sh/apps/rocketpad/mint/0xe4ce6f8caa3a76a53fdad70f2af393c01ecd7777?lang=zh 这是另一个模式 也开了",
+          "tweet_url": "https://x.com/king1883560/status/2121231484497645819"
+        }
+      ]
+    },
     {
       "ca": "0xb69ed26addd625e06f384d4f3a6af2bb1bafe5fd",
       "chain": "robinhood",
@@ -232,7 +254,7 @@
       "chain": "solana",
       "symbol": "FASTMOON",
       "dev_count": 1,
-      "smart_degen_count": 9,
+      "smart_degen_count": 19,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T11:20:51Z",
       "freshness": "24h",
