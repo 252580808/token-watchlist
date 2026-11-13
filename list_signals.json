@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T23:32:27.137506Z",
+  "generated_at": "2026-11-13T23:41:19.296164Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,19 +7,19 @@
   "stats": {
     "signals_total": 2162,
     "with_ca": 267,
-    "list_posts_total": 1709,
-    "unique_cas": 754,
-    "dedup_merged_posts": 955,
+    "list_posts_total": 1713,
+    "unique_cas": 755,
+    "dedup_merged_posts": 958,
     "passed": 138,
     "dropped_dev": 217,
-    "dropped_old": 280,
+    "dropped_old": 281,
     "dropped_no_time": 119,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 751,
+    "verdict_cached": 754,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 280,
+      "old": 281,
       "dev_over": 217,
       "no_pool": 118,
       "no_created_at": 1
@@ -36,7 +36,7 @@
       "pair_created_at": "2026-11-13T22:46:06Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T23:24:05Z",
-      "post_count": 1,
+      "post_count": 3,
       "unique_authors": 1,
       "posts": [
         {
@@ -45,6 +45,20 @@
           "post_time": "2026-11-13T23:24:05Z",
           "text_clean": "CA | | 44qqXe5keKWp9cBJG6n8ou3kEVG9NTCfzQtBH3sMpump x.com/alphaviper01/status/2121383630081871918/photo/1",
           "tweet_url": "https://x.com/alphaviper01/status/2121383630081871918"
+        },
+        {
+          "author": "alphaviper01",
+          "author_name": "alphaviper01",
+          "post_time": "2026-11-13T23:28:14Z",
+          "text_clean": "2.6x profit secured on $TTP | | 44qqXe5keKWp9cBJG6n8ou3kEVG9NTCfzQtBH3sMpump x.com/alphaviper01/status/2121384675176563179/photo/1",
+          "tweet_url": "https://x.com/alphaviper01/status/2121384675176563179"
+        },
+        {
+          "author": "alphaviper01",
+          "author_name": "alphaviper01",
+          "post_time": "2026-11-13T23:31:25Z",
+          "text_clean": "🔥 3x profit secured on $TTP | | 44qqXe5keKWp9cBJG6n8ou3kEVG9NTCfzQtBH3sMpump x.com/alphaviper01/status/2121385474732220690/photo/1",
+          "tweet_url": "https://x.com/alphaviper01/status/2121385474732220690"
         }
       ]
     },
