@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T07:29:37.792775Z",
+  "generated_at": "2026-11-13T07:38:30.020454Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1910,
+    "signals_total": 1911,
     "with_ca": 211,
-    "list_posts_total": 932,
-    "unique_cas": 428,
-    "dedup_merged_posts": 504,
-    "passed": 68,
+    "list_posts_total": 956,
+    "unique_cas": 432,
+    "dedup_merged_posts": 524,
+    "passed": 69,
     "dropped_dev": 95,
-    "dropped_old": 197,
-    "dropped_no_time": 68,
+    "dropped_old": 198,
+    "dropped_no_time": 70,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 421,
+    "verdict_cached": 428,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 197,
+      "old": 198,
       "dev_over": 95,
-      "no_pool": 67,
+      "no_pool": 69,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "EwrBRVJ6uhBzBSovyuENXb7MrwrnxwuhNsHU4rNQpump",
+      "chain": "solana",
+      "symbol": "Eglefly",
+      "dev_count": 1,
+      "smart_degen_count": 3,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T07:20:16Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T07:35:27Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "wick_calls",
+          "author_name": "wick_calls",
+          "post_time": "2026-11-13T07:35:27Z",
+          "text_clean": "$Eglefly · mc $15.3k · dev's first coin | Category: tech. Paste a Solana coin address into Eglefly for a plain-English risk check: mint and freeze powers, holders and liquidity. No wallet connection. | EwrBRVJ6uhBzBSovyuENXb7MrwrnxwuhNsHU4rNQpump x.com/wick_calls/status/2121144898896196022/photo/1",
+          "tweet_url": "https://x.com/wick_calls/status/2121144898896196022"
+        }
+      ]
+    },
     {
       "ca": "6hXYEBdfQwh57TfPBMs45s659uw2KJPHrdRQdVSNpump",
       "chain": "solana",
@@ -516,8 +538,8 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 2,
-      "unique_authors": 1,
+      "post_count": 3,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "kimjoona2026",
@@ -532,6 +554,13 @@
           "post_time": "2026-11-13T06:29:27Z",
           "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring 已从我频道 t.me/memelottery2024 的 $19.76K 入场点上涨 20 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring x.com/kimjoona2026/status/2121128288970228108/photo/1",
           "tweet_url": "https://x.com/kimjoona2026/status/2121128288970228108"
+        },
+        {
+          "author": "crbpite8",
+          "author_name": "crbpite8",
+          "post_time": "2026-11-13T07:29:28Z",
+          "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring 现价 326K DYOR | | 靠 GMGN 扫链工具捕捉到机会，从 $1.1K —》 $7.9K 稳稳拿下这波涨幅 | | 想要抓住 meme 币的行情，链上工具搭配一手前沿消息，就是抓上涨机会的关键 | | 一键追踪钱包地址：gmgn.ai/sol/address/MjhhuWaq_GrkMpvdEtQLLPhmP5fnjk2PSiz96qn7MfUUkEqgLuinT x.com/crbpite8/status/2121143391991762980/photo/1",
+          "tweet_url": "https://x.com/crbpite8/status/2121143391991762980"
         }
       ]
     },
