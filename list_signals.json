@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-13T13:38:42.187488Z",
+  "generated_at": "2026-11-13T13:47:30.764310Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2051,
+    "signals_total": 2054,
     "with_ca": 234,
-    "list_posts_total": 1363,
-    "unique_cas": 576,
-    "dedup_merged_posts": 787,
+    "list_posts_total": 1374,
+    "unique_cas": 580,
+    "dedup_merged_posts": 794,
     "passed": 93,
-    "dropped_dev": 136,
-    "dropped_old": 244,
+    "dropped_dev": 138,
+    "dropped_old": 246,
     "dropped_no_time": 103,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 572,
+    "verdict_cached": 576,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 244,
-      "dev_over": 136,
+      "old": 246,
+      "dev_over": 138,
       "no_pool": 102,
       "no_created_at": 1
     }
@@ -478,7 +478,7 @@
       "chain": "solana",
       "symbol": "Maxcoin",
       "dev_count": 1,
-      "smart_degen_count": 43,
+      "smart_degen_count": 44,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T08:42:54Z",
       "freshness": "24h",
@@ -2586,7 +2586,7 @@
       "pair_created_at": "2026-11-11T21:00:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T11:40:21Z",
-      "post_count": 8,
+      "post_count": 9,
       "unique_authors": 7,
       "posts": [
         {
@@ -2644,6 +2644,13 @@
           "post_time": "2026-11-12T20:14:32Z",
           "text_clean": "13x Returns from our initial | investment on | $Max | | 🚀🔥 | Ca | 5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump x.com/1000x_Hunter_/status/2120973541042499876/photo/1",
           "tweet_url": "https://x.com/1000x_Hunter_/status/2120973541042499876"
+        },
+        {
+          "author": "SellerOfOptions",
+          "author_name": "SellerOfOptions",
+          "post_time": "2026-11-13T13:42:09Z",
+          "text_clean": "$Max | 5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump | 这是触底震荡了，就差互动和来庄了！ | $JAgent 0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15 | 我又被套住了！ | #牛逼 $GM 都已经后劲不足！ | $GANG 总体持续力还可以 | whale-4:native 已经触地，最佳位置！",
+          "tweet_url": "https://x.com/SellerOfOptions/status/2121237181801152890"
         }
       ]
     },
