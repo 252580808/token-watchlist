@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-13T18:08:27.939540Z",
+  "generated_at": "2026-11-13T18:17:23.876121Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2123,
+    "signals_total": 2124,
     "with_ca": 248,
-    "list_posts_total": 1577,
-    "unique_cas": 678,
+    "list_posts_total": 1578,
+    "unique_cas": 679,
     "dedup_merged_posts": 899,
-    "passed": 112,
+    "passed": 113,
     "dropped_dev": 189,
     "dropped_old": 263,
     "dropped_no_time": 114,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 674,
+    "verdict_cached": 678,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 263,
@@ -26,6 +26,28 @@
     }
   },
   "items": [
+    {
+      "ca": "62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray",
+      "chain": "solana",
+      "symbol": "DEFAULT",
+      "dev_count": 2,
+      "smart_degen_count": 12,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T17:06:54Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T18:08:27Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T18:08:27Z",
+          "text_clean": "⚡️ PAID DEX PUSH | $DEFAULT | Default PFP | | Dexscreener Paid Signal: Yes | | • MC: $36.6K | Liq: $14.6K | • Bundlers: 78 | Smart: 10 | • Holders: 116 | Age: 1168m | • Top10: 24.2% | Rug Score: 0% | | CA: 62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray | | 🚀 Trade Token: gmgn.ai/sol/token/lu5EtQcb_62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121304196393664873"
+        }
+      ]
+    },
     {
       "ca": "7dzdHo9DKx2dqnXBVXRyMUJUETQhfwFoV4NwcgfVpump",
       "chain": "solana",
