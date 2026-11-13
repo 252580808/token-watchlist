@@ -1,31 +1,76 @@
 {
-  "generated_at": "2026-11-13T09:44:42.983192Z",
+  "generated_at": "2026-11-13T09:54:02.159946Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1964,
+    "signals_total": 1968,
     "with_ca": 218,
-    "list_posts_total": 1113,
-    "unique_cas": 487,
-    "dedup_merged_posts": 626,
-    "passed": 75,
-    "dropped_dev": 105,
-    "dropped_old": 220,
-    "dropped_no_time": 87,
+    "list_posts_total": 1123,
+    "unique_cas": 493,
+    "dedup_merged_posts": 630,
+    "passed": 77,
+    "dropped_dev": 106,
+    "dropped_old": 221,
+    "dropped_no_time": 88,
     "dropped_dev_unknown": 0,
-    "pending_retry": 0,
-    "verdict_cached": 482,
+    "pending_retry": 1,
+    "verdict_cached": 487,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 220,
-      "dev_over": 105,
-      "no_pool": 86,
-      "no_created_at": 1
+      "old": 221,
+      "dev_over": 106,
+      "no_pool": 87,
+      "no_created_at": 1,
+      "pending_retry": 1
     }
   },
   "items": [
+    {
+      "ca": "A1s8HwGmLFePFAEeHabYfbefJRQi8MmPukCJMRtww9Na",
+      "chain": "solana",
+      "symbol": "SolanaOS",
+      "dev_count": 1,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T09:31:19Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T09:42:39Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "onononup719",
+          "author_name": "onononup719",
+          "post_time": "2026-11-13T09:42:39Z",
+          "text_clean": "A1s8HwGmLFePFAEeHabYfbefJRQi8MmPukCJMRtww9Na | Solana基金会推出了“Solana OS”系统，这是Solana专属的Windows/Linux替代品，在Breakpoint 会议上爆火",
+          "tweet_url": "https://x.com/onononup719/status/2121176910894104743"
+        }
+      ]
+    },
+    {
+      "ca": "0x30768b5482e5dd8a2487ce0be61e01fa03af37ff",
+      "chain": "robinhood",
+      "symbol": "BULL",
+      "dev_count": 1,
+      "smart_degen_count": 21,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T09:20:21Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T09:42:30Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "kang1_wei",
+          "author_name": "kang1_wei",
+          "post_time": "2026-11-13T09:42:30Z",
+          "text_clean": "0x30768b5482e5dd8a2487ce0be61e01fa03af37ff | | DEV 是 @TMtheOG | 关注列表超级夸张 | | 目前30多K 小赌一些 | | 希望能飞到500K 让RH链久违出现个金狗吧~",
+          "tweet_url": "https://x.com/kang1_wei/status/2121176870905589927"
+        }
+      ]
+    },
     {
       "ca": "0x90d0a55e3428b003885263ea5295125aea257777",
       "chain": "bsc",
@@ -36,8 +81,8 @@
       "pair_created_at": "2026-11-13T09:15:43Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T09:17:58Z",
-      "post_count": 2,
-      "unique_authors": 2,
+      "post_count": 5,
+      "unique_authors": 5,
       "posts": [
         {
           "author": "feibo03",
@@ -52,6 +97,27 @@
           "post_time": "2026-11-13T09:20:04Z",
           "text_clean": "0x90d0a55e3428b003885263ea5295125aea257777 | 流通很低 flap等会可能会发推奶 新模式",
           "tweet_url": "https://x.com/1onlyliveonce_1/status/2121171228035809388"
+        },
+        {
+          "author": "JITUI_Bnb",
+          "author_name": "JITUI_Bnb",
+          "post_time": "2026-11-13T09:36:59Z",
+          "text_clean": "很像一个资金盘的地推项目 | | #比特币 | | 0x90d0a55e3428b003885263ea5295125aea257777 | | 有矿机和自动减半机制",
+          "tweet_url": "https://x.com/JITUI_Bnb/status/2121175481588564305"
+        },
+        {
+          "author": "laoyouhui",
+          "author_name": "laoyouhui",
+          "post_time": "2026-11-13T09:37:38Z",
+          "text_clean": "很像一个资金盘的地推项目 | | #比特币 | | 0x90d0a55e3428b003885263ea5295125aea257777 | | 有矿机和自动减半机制",
+          "tweet_url": "https://x.com/laoyouhui/status/2121175647804600632"
+        },
+        {
+          "author": "lingluan1998",
+          "author_name": "lingluan1998",
+          "post_time": "2026-11-13T09:37:51Z",
+          "text_clean": "蝴蝶出了tapeout模式 | 就20%流通！ | 0x90d0a55e3428b003885263ea5295125aea257777",
+          "tweet_url": "https://x.com/lingluan1998/status/2121175700430639138"
         }
       ]
     },
