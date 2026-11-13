@@ -1,31 +1,75 @@
 {
-  "generated_at": "2026-11-13T03:26:25.209094Z",
+  "generated_at": "2026-11-13T03:35:38.392125Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1818,
-    "with_ca": 204,
-    "list_posts_total": 680,
-    "unique_cas": 338,
-    "dedup_merged_posts": 342,
-    "passed": 59,
-    "dropped_dev": 75,
-    "dropped_old": 149,
-    "dropped_no_time": 55,
+    "signals_total": 1822,
+    "with_ca": 205,
+    "list_posts_total": 690,
+    "unique_cas": 344,
+    "dedup_merged_posts": 346,
+    "passed": 61,
+    "dropped_dev": 77,
+    "dropped_old": 150,
+    "dropped_no_time": 56,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 336,
+    "verdict_cached": 338,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 149,
-      "dev_over": 75,
-      "no_pool": 54,
+      "old": 150,
+      "dev_over": 77,
+      "no_pool": 55,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "9azVa2sxrvM1meRA2ixEyyYNcYMoYQYgjtjmFczUpump",
+      "chain": "solana",
+      "symbol": "ODDME",
+      "dev_count": 1,
+      "smart_degen_count": 24,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-12T05:02:16Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T03:29:16Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-13T03:29:16Z",
+          "text_clean": "CA: | | 9azVa2sxrvM1meRA2ixEyyYNcYMoYQYgjtjmFczUpump x.com/scarlex0/status/2121082945163178484/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121082945163178484"
+        }
+      ]
+    },
+    {
+      "ca": "0x9258a4c8ffa26683390686355def8c5ad380c3ee",
+      "chain": "robinhood",
+      "symbol": "APESHIT",
+      "dev_count": 1,
+      "smart_degen_count": 3,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T01:26:19Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T03:26:25Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "pizzabasedev1x",
+          "author_name": "pizzabasedev1x",
+          "post_time": "2026-11-13T03:26:25Z",
+          "text_clean": "$APESHIT IS LIVE ON @PONS 🦍 🏹🔥 | | ponsfamily.com/launchpad/0x9258a4c8ffa26683390686355def8c5ad380c3ee | | CA: 0x9258a4c8ffa26683390686355def8c5ad380c3ee | | Tg t.me/apeshitcoalition | | #PONS #RobinhoodChain #APESHIT #Memecoin #Crypto #ETH #DeFi #RobinhoodAp x.com/pizzabasedev1x/status/2121082228969271398/photo/1",
+          "tweet_url": "https://x.com/pizzabasedev1x/status/2121082228969271398"
+        }
+      ]
+    },
     {
       "ca": "0xe8c58047c96627b4a9a558e5e877c311f8708e41",
       "chain": "elysium",
@@ -305,8 +349,8 @@
       "pair_created_at": "2026-11-13T00:33:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T00:53:56Z",
-      "post_count": 3,
-      "unique_authors": 2,
+      "post_count": 4,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "0xAnon01",
@@ -328,6 +372,13 @@
           "post_time": "2026-11-13T01:38:46Z",
           "text_clean": "🏆 3.9X on a solana:EFLwx1cVeLoFx15eRzfei3yCYBHXFZefuzwi4R7Cpump | CA | | RrbQT9U7fghJxK3w5EURFsCZc86V3YbKxZzRdE5pump x.com/scarlex0/status/2121055137858998573/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2121055137858998573"
+        },
+        {
+          "author": "SVSH441728",
+          "author_name": "SVSH441728",
+          "post_time": "2026-11-13T03:26:45Z",
+          "text_clean": "solana:RrbQT9U7fghJxK3w5EURFsCZc86V3YbKxZzRdE5pump 300k 懂我意思？",
+          "tweet_url": "https://x.com/SVSH441728/status/2121082311492112829"
         }
       ]
     },
