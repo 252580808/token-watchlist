@@ -1,31 +1,75 @@
 {
-  "generated_at": "2026-11-13T00:53:18.844205Z",
+  "generated_at": "2026-11-13T01:02:35.075113Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1753,
+    "signals_total": 1758,
     "with_ca": 201,
-    "list_posts_total": 556,
-    "unique_cas": 279,
+    "list_posts_total": 560,
+    "unique_cas": 283,
     "dedup_merged_posts": 277,
-    "passed": 47,
+    "passed": 49,
     "dropped_dev": 67,
-    "dropped_old": 122,
+    "dropped_old": 124,
     "dropped_no_time": 43,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
     "verdict_cached": 279,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 122,
+      "old": 124,
       "dev_over": 67,
       "no_pool": 42,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "RrbQT9U7fghJxK3w5EURFsCZc86V3YbKxZzRdE5pump",
+      "chain": "solana",
+      "symbol": "fap",
+      "dev_count": 3,
+      "smart_degen_count": 19,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-13T00:33:05Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T00:53:56Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T00:53:56Z",
+          "text_clean": "RrbQT9U7fghJxK3w5EURFsCZc86V3YbKxZzRdE5pump x.com/0xAnon01/status/2121043855428800914/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121043855428800914"
+        }
+      ]
+    },
+    {
+      "ca": "FQbUZry4SJTzxS1GxAeZGLW2ngzDnwxv3XDNVXa4pump",
+      "chain": "solana",
+      "symbol": "THRONG",
+      "dev_count": 1,
+      "smart_degen_count": 40,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-13T00:46:32Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T00:52:45Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "coinwingscn",
+          "author_name": "coinwingscn",
+          "post_time": "2026-11-13T00:52:45Z",
+          "text_clean": "CoinWings 链上观察 | $THRONG (solana) | 方向：买入 | | 5分钟内，5 个聪明钱地址买入 THRONG。 | 成交均价：$0.000303894 | 成交金额：$4.47K | 交易时市值：$336.52K | 地址数：407 | FQbUZry4SJTzxS1GxAeZGLW2ngzDnwxv3XDNVXa4pump | | 下载 CoinWings，追踪链上资金动向。",
+          "tweet_url": "https://x.com/coinwingscn/status/2121043556752355495"
+        }
+      ]
+    },
     {
       "ca": "0xa713a15b85cab304f9e2fbc649440b5e3ab8a8d4",
       "chain": "elysium",
@@ -510,7 +554,7 @@
       "chain": "solana",
       "symbol": "AMD",
       "dev_count": 1,
-      "smart_degen_count": 80,
+      "smart_degen_count": 81,
       "renowned_count": 5,
       "pair_created_at": "2026-11-12T16:00:38Z",
       "freshness": "24h",
