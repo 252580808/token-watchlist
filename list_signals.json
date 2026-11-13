@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T02:50:22.386805Z",
+  "generated_at": "2026-11-13T02:59:40.982503Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1802,
+    "signals_total": 1804,
     "with_ca": 204,
-    "list_posts_total": 630,
-    "unique_cas": 314,
-    "dedup_merged_posts": 316,
-    "passed": 57,
-    "dropped_dev": 71,
-    "dropped_old": 139,
-    "dropped_no_time": 47,
+    "list_posts_total": 647,
+    "unique_cas": 322,
+    "dedup_merged_posts": 325,
+    "passed": 58,
+    "dropped_dev": 72,
+    "dropped_old": 143,
+    "dropped_no_time": 49,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 312,
+    "verdict_cached": 314,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 139,
-      "dev_over": 71,
-      "no_pool": 46,
+      "old": 143,
+      "dev_over": 72,
+      "no_pool": 48,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "5EzBbYU6afwGMTzraff2JqjgWYGqnDmKRH3HsFTQpump",
+      "chain": "solana",
+      "symbol": "Dodgeball",
+      "dev_count": 2,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T02:22:53Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T02:57:45Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Allan__Lin",
+          "author_name": "Allan__Lin",
+          "post_time": "2026-11-13T02:57:45Z",
+          "text_clean": "Why hasn't anyone noticed this yet? The grand finale is about to begin, and the winner will take home one Bitcoin!!! www.coinbasemundododgeball.com/ 5EzBbYU6afwGMTzraff2JqjgWYGqnDmKRH3HsFTQpump",
+          "tweet_url": "https://x.com/Allan__Lin/status/2121075014019817628"
+        }
+      ]
+    },
     {
       "ca": "0x33DeEc7F76e8f6435B8b53D6c1400C7FF39fC872",
       "chain": "elysium",
