@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-13T06:44:29.500121Z",
+  "generated_at": "2026-11-13T06:53:34.035644Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1890,
-    "with_ca": 208,
-    "list_posts_total": 868,
-    "unique_cas": 404,
-    "dedup_merged_posts": 464,
+    "signals_total": 1895,
+    "with_ca": 210,
+    "list_posts_total": 877,
+    "unique_cas": 407,
+    "dedup_merged_posts": 470,
     "passed": 65,
-    "dropped_dev": 90,
-    "dropped_old": 185,
-    "dropped_no_time": 64,
+    "dropped_dev": 91,
+    "dropped_old": 186,
+    "dropped_no_time": 65,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 398,
-    "tags_refreshed": 8,
+    "verdict_cached": 404,
+    "tags_refreshed": 7,
     "dropped_detail": {
-      "old": 185,
-      "dev_over": 90,
-      "no_pool": 63,
+      "old": 186,
+      "dev_over": 91,
+      "no_pool": 64,
       "no_created_at": 1
     }
   },
@@ -1409,8 +1409,8 @@
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:46:20Z",
-      "post_count": 5,
-      "unique_authors": 3,
+      "post_count": 6,
+      "unique_authors": 4,
       "posts": [
         {
           "author": "scarlex0",
@@ -1446,6 +1446,13 @@
           "post_time": "2026-11-13T03:33:41Z",
           "text_clean": "Obviously we are in a bear market, altcoins and Bitcoin will scrape along the bottom for many money until it rebuilds momentum. | | BUT, meme coins never die. PEPE did a $1.6B run in the middle of a bear market. | | Just saying. solana:8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump",
           "tweet_url": "https://x.com/JamesWynnReal/status/2121084054552351206"
+        },
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-13T06:43:05Z",
+          "text_clean": "$Shitcoin 已从我频道 t.me/memelottery2024 的 $36.30K 入场点上涨 5.2 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/kimjoona2026/status/2121131721295057241/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2121131721295057241"
         }
       ]
     },
