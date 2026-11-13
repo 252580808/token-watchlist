@@ -1,31 +1,89 @@
 {
-  "generated_at": "2026-11-13T15:45:19.312691Z",
+  "generated_at": "2026-11-13T15:54:03.312508Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2105,
+    "signals_total": 2106,
     "with_ca": 244,
-    "list_posts_total": 1461,
-    "unique_cas": 621,
-    "dedup_merged_posts": 840,
-    "passed": 104,
-    "dropped_dev": 154,
+    "list_posts_total": 1469,
+    "unique_cas": 625,
+    "dedup_merged_posts": 844,
+    "passed": 106,
+    "dropped_dev": 156,
     "dropped_old": 252,
     "dropped_no_time": 111,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 618,
+    "verdict_cached": 621,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 252,
-      "dev_over": 154,
+      "dev_over": 156,
       "no_pool": 110,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "9RZH5NbSW27KewwfAcbhQXixMRUaMc7zNppCRnfUpump",
+      "chain": "solana",
+      "symbol": "JENSLA",
+      "dev_count": 1,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T15:30:17Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T15:42:58Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T15:42:58Z",
+          "text_clean": "My entry on $JENSLA at $1.4k market cap | | Shared in my TG | | 9RZH5NbSW27KewwfAcbhQXixMRUaMc7zNppCRnfUpump x.com/1000x_Hunter_/status/2121267587929538721/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121267587929538721"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T15:44:56Z",
+          "text_clean": "162x Returns from our initial | investment on $JENSLA | | 🚀🔥 | Ca | | 9RZH5NbSW27KewwfAcbhQXixMRUaMc7zNppCRnfUpump x.com/1000x_Hunter_/status/2121268081532260517/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121268081532260517"
+        }
+      ]
+    },
+    {
+      "ca": "CczMv6GBMyFgybUKgRrbUxPwYrju7vqJv5L9FR2Hpump",
+      "chain": "solana",
+      "symbol": "RWA",
+      "dev_count": 2,
+      "smart_degen_count": null,
+      "renowned_count": null,
+      "pair_created_at": "2026-11-13T15:17:42Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T15:40:03Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T15:40:03Z",
+          "text_clean": "My entry on $RWA at $2.1k market cap | | Shared in my TG | | CczMv6GBMyFgybUKgRrbUxPwYrju7vqJv5L9FR2Hpump x.com/1000x_Hunter_/status/2121266852567392593/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121266852567392593"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T15:41:23Z",
+          "text_clean": "62x Returns from our initial | investment on $RWA | | 🚀🔥 | Ca | | CczMv6GBMyFgybUKgRrbUxPwYrju7vqJv5L9FR2Hpump x.com/1000x_Hunter_/status/2121267186111295966/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121267186111295966"
+        }
+      ]
+    },
     {
       "ca": "AYNh84eQNRndwutf2Yoxa2AvHEbZj48wSmv3xYjwFumP",
       "chain": "solana",
@@ -437,7 +495,7 @@
       "chain": "solana",
       "symbol": "YIPPEE",
       "dev_count": 1,
-      "smart_degen_count": 21,
+      "smart_degen_count": 25,
       "renowned_count": 5,
       "pair_created_at": "2026-11-13T11:20:54Z",
       "freshness": "24h",
