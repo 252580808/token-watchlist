@@ -1,31 +1,60 @@
 {
-  "generated_at": "2026-11-13T09:17:23.477150Z",
+  "generated_at": "2026-11-13T09:26:34.418401Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1955,
-    "with_ca": 217,
-    "list_posts_total": 1086,
-    "unique_cas": 476,
-    "dedup_merged_posts": 610,
-    "passed": 74,
+    "signals_total": 1956,
+    "with_ca": 218,
+    "list_posts_total": 1094,
+    "unique_cas": 480,
+    "dedup_merged_posts": 614,
+    "passed": 75,
     "dropped_dev": 104,
-    "dropped_old": 217,
-    "dropped_no_time": 81,
+    "dropped_old": 218,
+    "dropped_no_time": 83,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 475,
+    "verdict_cached": 476,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 217,
+      "old": 218,
       "dev_over": 104,
-      "no_pool": 80,
+      "no_pool": 82,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0x90d0a55e3428b003885263ea5295125aea257777",
+      "chain": "bsc",
+      "symbol": "比特币",
+      "dev_count": 1,
+      "smart_degen_count": 10,
+      "renowned_count": 8,
+      "pair_created_at": "2026-11-13T09:15:43Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T09:17:58Z",
+      "post_count": 2,
+      "unique_authors": 2,
+      "posts": [
+        {
+          "author": "feibo03",
+          "author_name": "feibo03",
+          "post_time": "2026-11-13T09:17:58Z",
+          "text_clean": "蝴蝶挖矿来了？ | 0x90d0a55e3428b003885263ea5295125aea257777",
+          "tweet_url": "https://x.com/feibo03/status/2121170696978256040"
+        },
+        {
+          "author": "1onlyliveonce_1",
+          "author_name": "1onlyliveonce_1",
+          "post_time": "2026-11-13T09:20:04Z",
+          "text_clean": "0x90d0a55e3428b003885263ea5295125aea257777 | 流通很低 flap等会可能会发推奶 新模式",
+          "tweet_url": "https://x.com/1onlyliveonce_1/status/2121171228035809388"
+        }
+      ]
+    },
     {
       "ca": "5VoTL4ZkWoMWiQucrrBYTNExufFpT5LYG1aiYGjRpump",
       "chain": "solana",
@@ -104,7 +133,7 @@
       "chain": "robinhood",
       "symbol": "AUTISM",
       "dev_count": 0,
-      "smart_degen_count": 3,
+      "smart_degen_count": 4,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T07:23:18Z",
       "freshness": "24h",
@@ -1897,7 +1926,7 @@
       "chain": "solana",
       "symbol": "Max",
       "dev_count": 1,
-      "smart_degen_count": 442,
+      "smart_degen_count": 444,
       "renowned_count": 42,
       "pair_created_at": "2026-11-11T21:00:29Z",
       "freshness": "24h",
