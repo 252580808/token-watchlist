@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T06:53:34.035644Z",
+  "generated_at": "2026-11-13T07:02:30.421950Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1895,
-    "with_ca": 210,
-    "list_posts_total": 877,
-    "unique_cas": 407,
-    "dedup_merged_posts": 470,
-    "passed": 65,
-    "dropped_dev": 91,
-    "dropped_old": 186,
+    "signals_total": 1902,
+    "with_ca": 211,
+    "list_posts_total": 887,
+    "unique_cas": 412,
+    "dedup_merged_posts": 475,
+    "passed": 66,
+    "dropped_dev": 92,
+    "dropped_old": 189,
     "dropped_no_time": 65,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 404,
-    "tags_refreshed": 7,
+    "verdict_cached": 407,
+    "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 186,
-      "dev_over": 91,
+      "old": 189,
+      "dev_over": 92,
       "no_pool": 64,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0x2cb55b446552cf75cda6bac1c4f5d3380a54aa57",
+      "chain": "elysium",
+      "symbol": "LODE",
+      "dev_count": 1,
+      "smart_degen_count": 1,
+      "renowned_count": 2,
+      "pair_created_at": "2026-11-13T06:44:51Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T06:51:00Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-13T06:51:00Z",
+          "text_clean": "0x2cb55b446552cf75cda6bac1c4f5d3380a54aa57 | | 天局 项目啊？ 总量 ？ | | 第一个 hook mining 协议 | | 玩法（Hook Mining） | 每 60 秒一轮： | | 一个 4×4 网格（16 个格子）。 | 用户用 $LODE 在任意格子上质押。 | 时间到后，通过可验证的公平随机（commit-reveal + block hash）抽出 1 个母矿（Motherlode）",
+          "tweet_url": "https://x.com/mewudi669/status/2121133712028942760"
+        }
+      ]
+    },
     {
       "ca": "0x965c490d5c501a500b7152629af87db50ec62ac3",
       "chain": "robinhood",
@@ -416,7 +438,7 @@
       "chain": "bsc",
       "symbol": "MoonAI",
       "dev_count": 1,
-      "smart_degen_count": 7,
+      "smart_degen_count": 8,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T15:22:41Z",
       "freshness": "24h",
