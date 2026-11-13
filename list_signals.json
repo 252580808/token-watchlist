@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T16:20:26.460604Z",
+  "generated_at": "2026-11-13T16:29:45.066902Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2108,
-    "with_ca": 245,
-    "list_posts_total": 1487,
-    "unique_cas": 636,
-    "dedup_merged_posts": 851,
-    "passed": 107,
-    "dropped_dev": 162,
-    "dropped_old": 255,
+    "signals_total": 2112,
+    "with_ca": 246,
+    "list_posts_total": 1496,
+    "unique_cas": 641,
+    "dedup_merged_posts": 855,
+    "passed": 108,
+    "dropped_dev": 165,
+    "dropped_old": 256,
     "dropped_no_time": 112,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 633,
+    "verdict_cached": 636,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 255,
-      "dev_over": 162,
+      "old": 256,
+      "dev_over": 165,
       "no_pool": 111,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0x4B1D6Ed85fb71dF2e6370e8b77f1049D55CDc9E5",
+      "chain": "robinhood",
+      "symbol": "Speed",
+      "dev_count": 0,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T15:56:03Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T16:19:32Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T16:19:32Z",
+          "text_clean": "📊 TRADING FLOW | | Speed | 5m: 85 / 33 | 24h: 337 / 154 | Buy Vol: $45189 | Sell Vol: $28253 | | CA: | 0x4B1D6Ed85fb71dF2e6370e8b77f1049D55CDc9E5 | | ⚡ Trade on GMGN: gmgn.ai/robinhood/token/lu5EtQcb_0x4B1D6Ed85fb71dF2e6370e8b77f1049D55CDc9E5",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121276789469171950"
+        }
+      ]
+    },
     {
       "ca": "ZEZr9GMaP65S7a4mYMmVgxJaQGtkdpxEW4hp3UQpump",
       "chain": "solana",
@@ -279,7 +301,7 @@
       "chain": "solana",
       "symbol": "PARANOID",
       "dev_count": 1,
-      "smart_degen_count": 11,
+      "smart_degen_count": 16,
       "renowned_count": 1,
       "pair_created_at": "2026-11-12T21:27:50Z",
       "freshness": "24h",
@@ -717,7 +739,7 @@
       "chain": "solana",
       "symbol": "Tek",
       "dev_count": 2,
-      "smart_degen_count": 9,
+      "smart_degen_count": 10,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T09:45:52Z",
       "freshness": "24h",
@@ -2732,7 +2754,7 @@
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:46:20Z",
-      "post_count": 12,
+      "post_count": 13,
       "unique_authors": 4,
       "posts": [
         {
@@ -2818,6 +2840,13 @@
           "post_time": "2026-11-13T16:04:42Z",
           "text_clean": "💫 12.4X on a $SHITCOIN | | CA | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/scarlex0/status/2121273056865968338/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2121273056865968338"
+        },
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-13T16:18:20Z",
+          "text_clean": "$Shitcoin 已从我频道 t.me/memelottery2024 的 $36.30K 入场点上涨 10 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/kimjoona2026/status/2121276488150647181/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2121276488150647181"
         }
       ]
     },
