@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T20:14:19.143990Z",
+  "generated_at": "2026-11-13T20:23:28.902281Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,25 +7,83 @@
   "stats": {
     "signals_total": 2139,
     "with_ca": 258,
-    "list_posts_total": 1626,
-    "unique_cas": 708,
-    "dedup_merged_posts": 918,
-    "passed": 122,
-    "dropped_dev": 200,
+    "list_posts_total": 1634,
+    "unique_cas": 711,
+    "dedup_merged_posts": 923,
+    "passed": 124,
+    "dropped_dev": 201,
     "dropped_old": 269,
     "dropped_no_time": 117,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 707,
+    "verdict_cached": 708,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 269,
-      "dev_over": 200,
+      "dev_over": 201,
       "no_pool": 116,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "HcJGYDM5bS19fDSMUHNcH6wKP68kmHksNmXsTW2Wpump",
+      "chain": "solana",
+      "symbol": "TOGO",
+      "dev_count": 1,
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T20:05:23Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T20:14:03Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T20:14:03Z",
+          "text_clean": "My entry on $TOGO at $9.8k market cap | | Shared in my TG | | HcJGYDM5bS19fDSMUHNcH6wKP68kmHksNmXsTW2Wpump x.com/1000x_Hunter_/status/2121335808816767325/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121335808816767325"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T20:16:01Z",
+          "text_clean": "16x Returns from our initial | investment on $TOGO | | 🚀🔥 | Ca | HcJGYDM5bS19fDSMUHNcH6wKP68kmHksNmXsTW2Wpump x.com/1000x_Hunter_/status/2121336300628308041/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121336300628308041"
+        }
+      ]
+    },
+    {
+      "ca": "2CUsXJdV5gPu9SujUjvsXEaaJhmEk6J5wFGkh59epump",
+      "chain": "solana",
+      "symbol": "Daniela",
+      "dev_count": 1,
+      "smart_degen_count": 4,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T19:55:49Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T20:10:07Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T20:10:07Z",
+          "text_clean": "Easy 3X on $DANIELA | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 2CUsXJdV5gPu9SujUjvsXEaaJhmEk6J5wFGkh59epump x.com/0xAnon01/status/2121334817782734860/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121334817782734860"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T20:16:33Z",
+          "text_clean": "4X on $DANIELA | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 2CUsXJdV5gPu9SujUjvsXEaaJhmEk6J5wFGkh59epump x.com/0xAnon01/status/2121336434594550242/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121336434594550242"
+        }
+      ]
+    },
     {
       "ca": "BPoGXKyvgtVFW5UBwUDE97nyUEefYDbMScHPfzhZpump",
       "chain": "solana",
@@ -36,7 +94,7 @@
       "pair_created_at": "2026-11-13T19:58:56Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T20:01:23Z",
-      "post_count": 2,
+      "post_count": 3,
       "unique_authors": 2,
       "posts": [
         {
@@ -52,6 +110,13 @@
           "post_time": "2026-11-13T20:07:57Z",
           "text_clean": "BPoGXKyvgtVFW5UBwUDE97nyUEefYDbMScHPfzhZpump x.com/0xAnon01/status/2121334273252938020/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2121334273252938020"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T20:12:02Z",
+          "text_clean": "Easy 3X on $CRED | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | BPoGXKyvgtVFW5UBwUDE97nyUEefYDbMScHPfzhZpump x.com/0xAnon01/status/2121335299137806714/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121335299137806714"
         }
       ]
     },
@@ -129,7 +194,7 @@
       ]
     },
     {
-      "ca": "0x7b43495c05581bd2d9326fe9c1c18c62c63dd2fc",
+      "ca": "0x7b43495c05581bD2D9326Fe9c1c18c62c63Dd2fc",
       "chain": "ethereum",
       "symbol": "POPO",
       "dev_count": 0,
@@ -138,8 +203,8 @@
       "pair_created_at": "2026-11-12T15:43:11Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T19:26:21Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "bokaiixu",
@@ -147,6 +212,13 @@
           "post_time": "2026-11-13T19:26:21Z",
           "text_clean": "0x7b43495c05581bd2d9326fe9c1c18c62c63dd2fc | | 我发现 在我的推特时间线里 基本都没有kol喊这个币 | | 我基本推上不发ca 也没有让你们买 | | 只是单纯分享 这只主网的小乌龟popo | | 已经在无人的角落里 拉成一条直线了",
           "tweet_url": "https://x.com/bokaiixu/status/2121323804118892834"
+        },
+        {
+          "author": "theblockcitizen",
+          "author_name": "theblockcitizen",
+          "post_time": "2026-11-13T20:11:56Z",
+          "text_clean": "turns out market not so dead after all | | 0x7b43495c05581bD2D9326Fe9c1c18c62c63Dd2fc | | $POPO x.com/theblockcitizen/status/2121335273212555552/photo/1",
+          "tweet_url": "https://x.com/theblockcitizen/status/2121335273212555552"
         }
       ]
     },
@@ -243,7 +315,7 @@
       "chain": "solana",
       "symbol": "DEFAULT",
       "dev_count": 2,
-      "smart_degen_count": 12,
+      "smart_degen_count": 14,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T17:06:54Z",
       "freshness": "24h",
@@ -270,7 +342,7 @@
       "pair_created_at": "2026-11-13T17:57:19Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T18:03:12Z",
-      "post_count": 4,
+      "post_count": 5,
       "unique_authors": 3,
       "posts": [
         {
@@ -300,6 +372,13 @@
           "post_time": "2026-11-13T18:39:11Z",
           "text_clean": "$BAWSAQ 已从我频道 t.me/memelottery2024 的 $47.32K 入场点上涨 5.1 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_7dzdHo9DKx2dqnXBVXRyMUJUETQhfwFoV4NwcgfVpump x.com/kimjoona2026/status/2121311931768438800/photo/1",
           "tweet_url": "https://x.com/kimjoona2026/status/2121311931768438800"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T20:11:20Z",
+          "text_clean": "66x Returns from our initial | investment on $BAWSAQ | | 🚀🔥 | Ca | 7dzdHo9DKx2dqnXBVXRyMUJUETQhfwFoV4NwcgfVpump x.com/1000x_Hunter_/status/2121335121395478951/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121335121395478951"
         }
       ]
     },
@@ -2902,7 +2981,7 @@
       "symbol": "PENNY",
       "dev_count": 1,
       "smart_degen_count": 3,
-      "renowned_count": 11,
+      "renowned_count": 12,
       "pair_created_at": "2026-11-12T13:52:12Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T15:12:22Z",
