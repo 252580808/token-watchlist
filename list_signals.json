@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T19:29:23.716861Z",
+  "generated_at": "2026-11-13T19:38:22.944586Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2133,
-    "with_ca": 254,
-    "list_posts_total": 1612,
-    "unique_cas": 700,
-    "dedup_merged_posts": 912,
-    "passed": 118,
+    "signals_total": 2136,
+    "with_ca": 256,
+    "list_posts_total": 1615,
+    "unique_cas": 702,
+    "dedup_merged_posts": 913,
+    "passed": 119,
     "dropped_dev": 199,
-    "dropped_old": 266,
+    "dropped_old": 267,
     "dropped_no_time": 117,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 698,
+    "verdict_cached": 700,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 266,
+      "old": 267,
       "dev_over": 199,
       "no_pool": 116,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "4fHpMoS7Bc2jSMXvgnAffQrrGxq9BosKeiGVLBEypump",
+      "chain": "solana",
+      "symbol": "WALLET",
+      "dev_count": 1,
+      "smart_degen_count": 4,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T19:27:06Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T19:28:50Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T19:28:50Z",
+          "text_clean": "Pump migration: $WALLET (ChatGPT Wallet) just hit the AMM. | | Sitting at $37.4K MC with $10.5K liquidity and 352 holders. Mint is renounced and LP shows locked. | | CA below if you're tracking it: | 4fHpMoS7Bc2jSMXvgnAffQrrGxq9BosKeiGVLBEypump | | 📊 View Chart: gmgn.ai/sol/token/lu5EtQcb_4fHpMoS7Bc2jSMXvgnAffQrrGxq9BosKeiGVLBEypump",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121324429036646842"
+        }
+      ]
+    },
     {
       "ca": "0x7b43495c05581bd2d9326fe9c1c18c62c63dd2fc",
       "chain": "ethereum",
@@ -1161,7 +1183,7 @@
       "chain": "solana",
       "symbol": "Maxcoin",
       "dev_count": 1,
-      "smart_degen_count": 47,
+      "smart_degen_count": 48,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T08:42:54Z",
       "freshness": "24h",
