@@ -1,31 +1,89 @@
 {
-  "generated_at": "2026-11-13T01:47:31.923477Z",
+  "generated_at": "2026-11-13T01:56:29.000476Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1775,
+    "signals_total": 1778,
     "with_ca": 201,
-    "list_posts_total": 583,
-    "unique_cas": 298,
-    "dedup_merged_posts": 285,
-    "passed": 52,
+    "list_posts_total": 590,
+    "unique_cas": 301,
+    "dedup_merged_posts": 289,
+    "passed": 54,
     "dropped_dev": 68,
-    "dropped_old": 132,
+    "dropped_old": 133,
     "dropped_no_time": 46,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 289,
+    "verdict_cached": 298,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 132,
+      "old": 133,
       "dev_over": 68,
       "no_pool": 45,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0x055c0e7962a52f42052e1149e41fbc6909268fc0",
+      "chain": "robinhood",
+      "symbol": "TROGENT",
+      "dev_count": 1,
+      "smart_degen_count": 2,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T01:36:18Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T01:53:31Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "AminTabaFuriju",
+          "author_name": "AminTabaFuriju",
+          "post_time": "2026-11-13T01:53:31Z",
+          "text_clean": "Leet see $trogent | | 0x055c0e7962a52f42052e1149e41fbc6909268fc0",
+          "tweet_url": "https://x.com/AminTabaFuriju/status/2121058849952350376"
+        }
+      ]
+    },
+    {
+      "ca": "CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump",
+      "chain": "solana",
+      "symbol": "zero",
+      "dev_count": 1,
+      "smart_degen_count": 35,
+      "renowned_count": 2,
+      "pair_created_at": "2026-11-13T01:32:29Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T01:49:52Z",
+      "post_count": 3,
+      "unique_authors": 2,
+      "posts": [
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T01:49:52Z",
+          "text_clean": "CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump x.com/0xAnon01/status/2121057928983539988/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121057928983539988"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T01:53:23Z",
+          "text_clean": "3X on $ZERO | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump x.com/0xAnon01/status/2121058812996026453/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121058812996026453"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-13T01:53:39Z",
+          "text_clean": "CA: | | CXvoRriW4Dzw9n4EzLR1gYeuY8J8wga6M2efzP8qpump x.com/scarlex0/status/2121058882290127309/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121058882290127309"
+        }
+      ]
+    },
     {
       "ca": "MRPVcV8efFFGJNvdMYUpWWDb9DXgzeJePJ7smujpump",
       "chain": "solana",
@@ -97,7 +155,7 @@
       "chain": "solana",
       "symbol": "fap",
       "dev_count": 3,
-      "smart_degen_count": 19,
+      "smart_degen_count": 31,
       "renowned_count": 1,
       "pair_created_at": "2026-11-13T00:33:05Z",
       "freshness": "24h",
@@ -1032,8 +1090,8 @@
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:46:20Z",
-      "post_count": 3,
-      "unique_authors": 2,
+      "post_count": 4,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "scarlex0",
@@ -1055,6 +1113,13 @@
           "post_time": "2026-11-12T14:08:04Z",
           "text_clean": "It has to be $Shitcoin or I have lost all faith in the trenches, this is the final call. Join me. | | I will lead the way, but we are stronger in numbers, | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/JamesWynnReal/status/2120881315671355899/photo/1",
           "tweet_url": "https://x.com/JamesWynnReal/status/2120881315671355899"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-13T01:49:31Z",
+          "text_clean": "Easy 2X on $SHITCOIN | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/0xAnon01/status/2121057842472104162/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121057842472104162"
         }
       ]
     },
