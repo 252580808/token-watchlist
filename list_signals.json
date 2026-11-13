@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T23:59:23.337008Z",
+  "generated_at": "2026-11-13T00:08:23.086872Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,16 +7,16 @@
   "stats": {
     "signals_total": 1745,
     "with_ca": 201,
-    "list_posts_total": 533,
-    "unique_cas": 273,
-    "dedup_merged_posts": 260,
-    "passed": 45,
+    "list_posts_total": 539,
+    "unique_cas": 274,
+    "dedup_merged_posts": 265,
+    "passed": 46,
     "dropped_dev": 67,
     "dropped_old": 119,
     "dropped_no_time": 42,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 271,
+    "verdict_cached": 273,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 119,
@@ -27,11 +27,40 @@
   },
   "items": [
     {
+      "ca": "FU82YPmep6nDoqCu1HzsMGZwdyuLqVTGWoPtfrKbpump",
+      "chain": "solana",
+      "symbol": "REVIVE",
+      "dev_count": 1,
+      "smart_degen_count": 26,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-12T23:50:08Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T00:02:42Z",
+      "post_count": 2,
+      "unique_authors": 2,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-13T00:02:42Z",
+          "text_clean": "CA: | | FU82YPmep6nDoqCu1HzsMGZwdyuLqVTGWoPtfrKbpump x.com/scarlex0/status/2121030962591195253/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121030962591195253"
+        },
+        {
+          "author": "coinwingscn",
+          "author_name": "coinwingscn",
+          "post_time": "2026-11-13T00:03:16Z",
+          "text_clean": "CoinWings 链上观察 | $REVIVE (solana) | 方向：买入 | | 5分钟内，5 个聪明钱地址买入 REVIVE。 | 成交均价：$0.0000727517 | 成交金额：$3.38K | 交易时市值：$67.57K | 地址数：508 | FU82YPmep6nDoqCu1HzsMGZwdyuLqVTGWoPtfrKbpump | | 下载 CoinWings，追踪链上资金动向。",
+          "tweet_url": "https://x.com/coinwingscn/status/2121031102102188208"
+        }
+      ]
+    },
+    {
       "ca": "GgeWgeVTyVQVCK6KA8dJYiSqxDVio8puqiuVyFfpumps",
       "chain": "solana",
       "symbol": "PUMPS",
       "dev_count": 1,
-      "smart_degen_count": 8,
+      "smart_degen_count": 13,
       "renowned_count": 1,
       "pair_created_at": "2026-11-12T22:58:47Z",
       "freshness": "24h",
