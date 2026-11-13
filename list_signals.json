@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:50:32.872488Z",
+  "generated_at": "2026-11-13T14:59:40.130855Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,25 +7,69 @@
   "stats": {
     "signals_total": 2088,
     "with_ca": 241,
-    "list_posts_total": 1426,
-    "unique_cas": 602,
+    "list_posts_total": 1429,
+    "unique_cas": 605,
     "dedup_merged_posts": 824,
-    "passed": 97,
-    "dropped_dev": 145,
+    "passed": 99,
+    "dropped_dev": 146,
     "dropped_old": 252,
     "dropped_no_time": 108,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 598,
+    "verdict_cached": 602,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 252,
-      "dev_over": 145,
+      "dev_over": 146,
       "no_pool": 107,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "4ZD2n8StszEtvbGuk7ybi3cY9Ceipj17RwunJZL4pump",
+      "chain": "solana",
+      "symbol": "PirateCoin",
+      "dev_count": 1,
+      "smart_degen_count": 2,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T14:54:10Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T14:55:20Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T14:55:20Z",
+          "text_clean": "Pump migration: $PIRATECOIN (Pirate D. Speedy) just hit the AMM. | | Sitting at $41.8K MC with $13.1K liquidity and 183 holders. Mint is renounced and LP shows locked. | | CA below if you're tracking it: | 4ZD2n8StszEtvbGuk7ybi3cY9Ceipj17RwunJZL4pump | | 🔗 Open on GMGN:",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121255597160943621"
+        }
+      ]
+    },
+    {
+      "ca": "EcFqNvSqKuHEm5UxMpCHzgJcKdK8wLydvtP44b1cpump",
+      "chain": "solana",
+      "symbol": "WIZARDIO",
+      "dev_count": 1,
+      "smart_degen_count": 6,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T14:24:59Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T14:44:56Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T14:44:56Z",
+          "text_clean": "🧬 WALLET FLOW CHECK | $WIZARDIO | CA: EcFqNvSqKuHEm5UxMpCHzgJcKdK8wLydvtP44b1cpump | | Pump Fun Migrated | | 💧 Liq: $12.3K | Holders: 375 | 🥷 Sniper Hold: 0.6% | 🤖 Bot Degen Rate: 4.5% | Dev Team Hold: 0.0% | Top10 Holders: 13.1% | | 💹 Chart &amp; Trade: gmgn.ai/sol/token/lu5EtQcb_EcFqNvSqKuHEm5UxMpCHzgJcKdK8wLydvtP44b1cpump",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121252982654415087"
+        }
+      ]
+    },
     {
       "ca": "12m4AufHNA6fxGF6z5dH1quWKrGHMEmVRKiuhRLepump",
       "chain": "solana",
