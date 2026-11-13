@@ -1,31 +1,53 @@
 {
-  "generated_at": "2026-11-13T15:17:26.929364Z",
+  "generated_at": "2026-11-13T15:26:45.412920Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2093,
-    "with_ca": 241,
-    "list_posts_total": 1436,
-    "unique_cas": 609,
-    "dedup_merged_posts": 827,
-    "passed": 101,
-    "dropped_dev": 148,
+    "signals_total": 2096,
+    "with_ca": 242,
+    "list_posts_total": 1447,
+    "unique_cas": 617,
+    "dedup_merged_posts": 830,
+    "passed": 102,
+    "dropped_dev": 153,
     "dropped_old": 252,
-    "dropped_no_time": 108,
+    "dropped_no_time": 110,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 608,
+    "verdict_cached": 609,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 252,
-      "dev_over": 148,
-      "no_pool": 107,
+      "dev_over": 153,
+      "no_pool": 109,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0xe946b0991a2c7e2882160c3affe22b9ae7377777",
+      "chain": "bsc",
+      "symbol": "小丑舞",
+      "dev_count": 3,
+      "smart_degen_count": 1,
+      "renowned_count": 2,
+      "pair_created_at": "2026-11-12T16:11:52Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T15:17:19Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "0xZhangCrypto1",
+          "author_name": "0xZhangCrypto1",
+          "post_time": "2026-11-13T15:17:19Z",
+          "text_clean": "这个小丑模仿起来了 0xe946b0991a2c7e2882160c3affe22b9ae7377777 | | 但是我觉得最好的 ticker 是 JOKER，主角模仿的是希斯莱杰，核心不是舞蹈，是 JOKER | | 0xc66c73b1886fafd6f3871f661f430f029cf57777 | | 虽然我两个都买了，大家各取所需吧",
+          "tweet_url": "https://x.com/0xZhangCrypto1/status/2121261132279370239"
+        }
+      ]
+    },
     {
       "ca": "FcMLcMMNpXVYVensguqpGSuc1yiJ2QJ3RbusYnU4hhJW",
       "chain": "solana",
@@ -415,13 +437,13 @@
       "chain": "bsc",
       "symbol": "游戏人生",
       "dev_count": 1,
-      "smart_degen_count": 15,
-      "renowned_count": 9,
+      "smart_degen_count": 16,
+      "renowned_count": 11,
       "pair_created_at": "2026-11-13T11:59:48Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T12:04:48Z",
-      "post_count": 9,
-      "unique_authors": 6,
+      "post_count": 11,
+      "unique_authors": 8,
       "posts": [
         {
           "author": "coinwingscn",
@@ -485,6 +507,20 @@
           "post_time": "2026-11-13T12:55:02Z",
           "text_clean": "Weekly Launch 首期 @gamelifememe 游戏人生发射 | | 官方推出 10BNB代币额外奖励，市值达到 | | -200K奖励 2BNB | -500K奖励 3BNB | -1M奖励 5BNB | | 所有奖励的BNB用于回购 $游戏人生 代币销毁 | gang.fun/token/0xe9563df445e8625a28017333d757394f8fb8abcd?s=g0y x.com/akafish00/status/2121225325090930787/photo/1",
           "tweet_url": "https://x.com/akafish00/status/2121225325090930787"
+        },
+        {
+          "author": "klys7788",
+          "author_name": "klys7788",
+          "post_time": "2026-11-13T15:14:20Z",
+          "text_clean": "买了点 Gang 平台第一期的launch week 代币 | | #游戏人生 | | 0xe9563df445e8625a28017333d757394f8fb8abcd",
+          "tweet_url": "https://x.com/klys7788/status/2121260379796127766"
+        },
+        {
+          "author": "NiaoShen988",
+          "author_name": "NiaoShen988",
+          "post_time": "2026-11-13T15:16:37Z",
+          "text_clean": "买了点 Gang 平台第一期的launch week 代币 #游戏人生 | | 0xe9563df445e8625a28017333d757394f8fb8abcd",
+          "tweet_url": "https://x.com/NiaoShen988/status/2121260957091717556"
         }
       ]
     },
@@ -1117,7 +1153,7 @@
       "chain": "robinhood",
       "symbol": "HOOKDOG",
       "dev_count": 0,
-      "smart_degen_count": 3,
+      "smart_degen_count": 4,
       "renowned_count": 0,
       "pair_created_at": "2026-11-11T18:54:16Z",
       "freshness": "72h",
@@ -1501,7 +1537,7 @@
       "chain": "solana",
       "symbol": "MEGASPEED",
       "dev_count": 1,
-      "smart_degen_count": 13,
+      "smart_degen_count": 15,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T01:35:00Z",
       "freshness": "24h",
