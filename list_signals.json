@@ -1,31 +1,82 @@
 {
-  "generated_at": "2026-11-13T15:35:20.873206Z",
+  "generated_at": "2026-11-13T15:45:19.312691Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2102,
-    "with_ca": 243,
-    "list_posts_total": 1455,
-    "unique_cas": 618,
-    "dedup_merged_posts": 837,
-    "passed": 102,
-    "dropped_dev": 153,
+    "signals_total": 2105,
+    "with_ca": 244,
+    "list_posts_total": 1461,
+    "unique_cas": 621,
+    "dedup_merged_posts": 840,
+    "passed": 104,
+    "dropped_dev": 154,
     "dropped_old": 252,
     "dropped_no_time": 111,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 617,
+    "verdict_cached": 618,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 252,
-      "dev_over": 153,
+      "dev_over": 154,
       "no_pool": 110,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "AYNh84eQNRndwutf2Yoxa2AvHEbZj48wSmv3xYjwFumP",
+      "chain": "solana",
+      "symbol": "HUNT",
+      "dev_count": 1,
+      "smart_degen_count": null,
+      "renowned_count": null,
+      "pair_created_at": "2026-11-13T15:12:08Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T15:37:24Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "wick_calls",
+          "author_name": "wick_calls",
+          "post_time": "2026-11-13T15:37:24Z",
+          "text_clean": "$HUNT · mc $15.2k · dev's first coin | Category: tech. Hunt gives everyone an item to find IRL every 5 minutes. First verified camera photo takes the SOL pot. No uploads or screen photos. | AYNh84eQNRndwutf2Yoxa2AvHEbZj48wSmv3xYjwFumP x.com/wick_calls/status/2121266183580119506/photo/1",
+          "tweet_url": "https://x.com/wick_calls/status/2121266183580119506"
+        }
+      ]
+    },
+    {
+      "ca": "F37BKMyLrJxpHAmLcsQxza4f1uwPyCAmMmaeA2C7pump",
+      "chain": "solana",
+      "symbol": "JENSEN",
+      "dev_count": 1,
+      "smart_degen_count": 2,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T15:05:25Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T15:35:16Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T15:35:16Z",
+          "text_clean": "My entry on $JENSEN at $22k market cap | | Shared in my TG | | F37BKMyLrJxpHAmLcsQxza4f1uwPyCAmMmaeA2C7pump x.com/1000x_Hunter_/status/2121265648621789314/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121265648621789314"
+        },
+        {
+          "author": "1000x_Hunter_",
+          "author_name": "1000x_Hunter_",
+          "post_time": "2026-11-13T15:37:14Z",
+          "text_clean": "27x Returns from our initial | investment on $JENSEN | | 🚀🔥 | Ca | F37BKMyLrJxpHAmLcsQxza4f1uwPyCAmMmaeA2C7pump x.com/1000x_Hunter_/status/2121266142694252805/photo/1",
+          "tweet_url": "https://x.com/1000x_Hunter_/status/2121266142694252805"
+        }
+      ]
+    },
     {
       "ca": "0xe946b0991a2c7e2882160c3affe22b9ae7377777",
       "chain": "bsc",
@@ -58,8 +109,8 @@
       "pair_created_at": "2026-11-13T15:05:36Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T15:06:01Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "AutorunAlert",
@@ -67,6 +118,13 @@
           "post_time": "2026-11-13T15:06:01Z",
           "text_clean": "🆕 New token! Check the ANALYSIS! (Screenshot) | | $FEEPAD | FcMLcMMNpXVYVensguqpGSuc1yiJ2QJ3RbusYnU4hhJW | | ✨ Try the Pumpfun app: pump.fun/join/autorun | 💰 DEPOSIT $50, GET $50 FREE! 🤑 | 📍 For more info, check my profile. x.com/AutorunAlert/status/2121258285739462761/photo/1",
           "tweet_url": "https://x.com/AutorunAlert/status/2121258285739462761"
+        },
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T15:36:34Z",
+          "text_clean": "🚀 NEW CTO SIGNAL | | CLMM Feepad (solana:FcMLcMMNpXVYVensguqpGSuc1yiJ2QJ3RbusYnU4hhJW) | CA: FcMLcMMNpXVYVensguqpGSuc1yiJ2QJ3RbusYnU4hhJW | | ATH MC: $51.1K | Holders: 233 | Liq: $12.1K | Burn: 100% | CTO: ✅ | DEX: ✅ | | 🔗 Open on GMGN: gmgn.ai/sol/token/lu5EtQcb_FcMLcMMNpXVYVensguqpGSuc1yiJ2QJ3RbusYnU4hhJW",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121265975311917453"
         }
       ]
     },
@@ -2594,7 +2652,7 @@
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:46:20Z",
-      "post_count": 10,
+      "post_count": 11,
       "unique_authors": 4,
       "posts": [
         {
@@ -2666,6 +2724,13 @@
           "post_time": "2026-11-13T12:59:17Z",
           "text_clean": "Make Shitcoins Great Again 🔥 💰 | | Shite📲: shitcoin4u.com/ | | Shart📈: dexscreener.com/solana/9ovadmtnzr164fjvbpypehiq9a5fzmlacattaprm8xxj | | Contract Address: | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump | | Pump Fun: pump.fun/coin/8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump | | Jupiter: jup.ag/?sell=So11111111111111111111111111111111111111112&buy=8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/JamesWynnReal/status/2121226392725831780/photo/1",
           "tweet_url": "https://x.com/JamesWynnReal/status/2121226392725831780"
+        },
+        {
+          "author": "JamesWynnReal",
+          "author_name": "JamesWynnReal",
+          "post_time": "2026-11-13T15:35:37Z",
+          "text_clean": "Holy shit! solana:8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump is in price discovery!! | | Not surprised. At all. | | Official CA: | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump | | solana:8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/JamesWynnReal/status/2121265736828211624/photo/1",
+          "tweet_url": "https://x.com/JamesWynnReal/status/2121265736828211624"
         }
       ]
     },
