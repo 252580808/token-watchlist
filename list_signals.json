@@ -1,31 +1,75 @@
 {
-  "generated_at": "2026-11-13T22:02:21.039746Z",
+  "generated_at": "2026-11-13T22:11:32.091198Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2147,
-    "with_ca": 261,
-    "list_posts_total": 1664,
-    "unique_cas": 730,
-    "dedup_merged_posts": 934,
-    "passed": 130,
-    "dropped_dev": 207,
-    "dropped_old": 276,
+    "signals_total": 2150,
+    "with_ca": 263,
+    "list_posts_total": 1676,
+    "unique_cas": 736,
+    "dedup_merged_posts": 940,
+    "passed": 132,
+    "dropped_dev": 209,
+    "dropped_old": 278,
     "dropped_no_time": 117,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 729,
+    "verdict_cached": 730,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 276,
-      "dev_over": 207,
+      "old": 278,
+      "dev_over": 209,
       "no_pool": 116,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "85xrw1gHPUMeauAhGhy5k2eGJ37hk4Tf1UvK9bNQpump",
+      "chain": "solana",
+      "symbol": "SpaceCat",
+      "dev_count": 1,
+      "smart_degen_count": 7,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-13T21:21:04Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T22:02:02Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-13T22:02:02Z",
+          "text_clean": "$SpaceCat 已从我频道 t.me/memelottery2024 的入场点上涨 85 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_85xrw1gHPUMeauAhGhy5k2eGJ37hk4Tf1UvK9bNQpump x.com/kimjoona2026/status/2121362982441742488/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2121362982441742488"
+        }
+      ]
+    },
+    {
+      "ca": "DoxBUm4K1yfBdyX4JSBKmgNxZ4e8dFqtZHebGNZFwFNc",
+      "chain": "solana",
+      "symbol": "Dacity",
+      "dev_count": 1,
+      "smart_degen_count": 7,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-13T21:34:45Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-13T22:01:08Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-13T22:01:08Z",
+          "text_clean": "🟢 CTO PING: $DACITY (DacityCoin) | | 💰 MC: $32.2K | 💧 Liq: $8.5K | 👥 58 HODLers | 🛡 Taxes: 0%/0% | 🚫 Mint: ✅ Renounced | 🔥 Burned: 0% | 🛑 Rug Ratio: 0% | | 👉 CA: $DACITY | | 📊 View Chart: gmgn.ai/sol/token/lu5EtQcb_DoxBUm4K1yfBdyX4JSBKmgNxZ4e8dFqtZHebGNZFwFNc",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121362755567657088"
+        }
+      ]
+    },
     {
       "ca": "BApgNbjD25PHFft8WNATeL6gwpFFucEn5VBg2VHDpump",
       "chain": "solana",
@@ -2356,7 +2400,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 6,
+      "post_count": 7,
       "unique_authors": 4,
       "posts": [
         {
@@ -2400,6 +2444,13 @@
           "post_time": "2026-11-13T11:24:54Z",
           "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring 已从我频道 t.me/memelottery2024 的 $19.76K 入场点上涨 25 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring x.com/kimjoona2026/status/2121202640495558986/photo/1",
           "tweet_url": "https://x.com/kimjoona2026/status/2121202640495558986"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-13T22:02:28Z",
+          "text_clean": "I like solana:BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W solana:4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump solana:3sKZuSZF7onqPYFrWu3bH4Lh141duydt9MAmSd46jaLJ and solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring | | @Ringssol",
+          "tweet_url": "https://x.com/ZKhedge/status/2121363090419896677"
         }
       ]
     },
@@ -3116,8 +3167,8 @@
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-12T15:25:55Z",
-      "post_count": 2,
-      "unique_authors": 1,
+      "post_count": 3,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "scarlex0",
@@ -3132,6 +3183,13 @@
           "post_time": "2026-11-12T15:31:37Z",
           "text_clean": "🍾 4.2X on a $GREG | | CA | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/scarlex0/status/2120902343621218814/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2120902343621218814"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-13T22:02:28Z",
+          "text_clean": "I like solana:BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W solana:4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump solana:3sKZuSZF7onqPYFrWu3bH4Lh141duydt9MAmSd46jaLJ and solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring | | @Ringssol",
+          "tweet_url": "https://x.com/ZKhedge/status/2121363090419896677"
         }
       ]
     },
