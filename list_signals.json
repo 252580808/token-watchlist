@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-14T17:44:25.084946Z",
+  "generated_at": "2026-11-14T17:53:24.764065Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2343,
+    "signals_total": 2344,
     "with_ca": 320,
-    "list_posts_total": 2413,
-    "unique_cas": 1034,
-    "dedup_merged_posts": 1379,
+    "list_posts_total": 2415,
+    "unique_cas": 1035,
+    "dedup_merged_posts": 1380,
     "passed": 181,
-    "dropped_dev": 312,
+    "dropped_dev": 313,
     "dropped_old": 358,
     "dropped_no_time": 183,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
     "verdict_cached": 1034,
     "tags_refreshed": 8,
-    "dev_rechecked": 2,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
       "old": 358,
-      "dev_over": 312,
+      "dev_over": 313,
       "no_pool": 181,
       "no_created_at": 2
     }
@@ -5153,8 +5153,8 @@
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-12T15:25:55Z",
-      "post_count": 7,
-      "unique_authors": 4,
+      "post_count": 8,
+      "unique_authors": 5,
       "posts": [
         {
           "author": "scarlex0",
@@ -5204,6 +5204,13 @@
           "post_time": "2026-11-14T08:48:48Z",
           "text_clean": "$greg 467k - 49.4x by AI bot | | All creator fees go to holder | | My ai bot caught at 9.45k !!! | | CA: 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump | | Chart + Trade: gmgn.ai/robinhood/token/Hanzx0Ol_4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump | | Check the: t.me/pumpfunnevadie/184957 x.com/chinapumprocket/status/2121525747575816222/photo/1",
           "tweet_url": "https://x.com/chinapumprocket/status/2121525747575816222"
+        },
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-14T17:41:57Z",
+          "text_clean": "📊 PAID DEXSCREENER SIGNAL | $GREG | greg | | CA: 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump | | 🚨 Dex Paid: Yes | Chain: SOL | 💰 MC: $467.1K | Liq: $31.8K | 📈 Bundlers: 363 | Smart: 82 | ⏱️ Age: 5237m | Holders: 926 | | 🌐 Socials: | X: Yes | TG: No | Web: Yes | | ⚠️ Risk: | Top10: 25.1% | Rug",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121659916528087301"
         }
       ]
     },
@@ -5724,7 +5731,7 @@
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T08:32:20.510557Z",
       "smart_degen_count": 43,
-      "renowned_count": 4,
+      "renowned_count": 5,
       "pair_created_at": "2026-11-11T15:55:41Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T11:53:27Z",
