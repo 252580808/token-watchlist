@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T08:50:42.659414Z",
+  "generated_at": "2026-11-14T09:00:14.359076Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,16 +7,16 @@
   "stats": {
     "signals_total": 2257,
     "with_ca": 288,
-    "list_posts_total": 2134,
+    "list_posts_total": 2138,
     "unique_cas": 900,
-    "dedup_merged_posts": 1234,
+    "dedup_merged_posts": 1238,
     "passed": 162,
     "dropped_dev": 271,
     "dropped_old": 315,
     "dropped_no_time": 152,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 899,
+    "verdict_cached": 900,
     "tags_refreshed": 8,
     "dev_rechecked": 6,
     "dev_recheck_blocked": 0,
@@ -367,8 +367,8 @@
       "pair_created_at": "2026-11-14T03:27:38Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T04:05:30Z",
-      "post_count": 15,
-      "unique_authors": 4,
+      "post_count": 17,
+      "unique_authors": 5,
       "posts": [
         {
           "author": "0xAnon01",
@@ -474,6 +474,20 @@
           "post_time": "2026-11-14T08:13:39Z",
           "text_clean": "solana:3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump 210K | | CA：3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump | | gmgn.ai/sol/token/bSBYaRka_3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump | | 这次我觉得 solana:3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump 的点，不是普通抽象meme，而是直接把“锡纸帽”这个文化符号搬上了链。 x.com/patiriko1/status/2121516900333007242/photo/1",
           "tweet_url": "https://x.com/patiriko1/status/2121516900333007242"
+        },
+        {
+          "author": "Kalijahsmith1",
+          "author_name": "Kalijahsmith1",
+          "post_time": "2026-11-14T08:51:06Z",
+          "text_clean": "solana:3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump 350K | | 3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump | | 网络安全成为市场关注的话题之一。黑客事件不断曝光，Google Trends 上“cyber security”的搜索热度上升，Broadcom 等相关股票也受到资金关注。 | | 与此同时，TikTok x.com/Kalijahsmith1/status/2121526326314017240/photo/1",
+          "tweet_url": "https://x.com/Kalijahsmith1/status/2121526326314017240"
+        },
+        {
+          "author": "Kalijahsmith1",
+          "author_name": "Kalijahsmith1",
+          "post_time": "2026-11-14T08:51:08Z",
+          "text_clean": "K线： | gmgn.ai/sol/token/bSBYaRka_3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump",
+          "tweet_url": "https://x.com/Kalijahsmith1/status/2121526331263644058"
         }
       ]
     },
@@ -4344,7 +4358,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T08:59:43.580862Z",
       "smart_degen_count": 82,
       "renowned_count": 5,
       "pair_created_at": "2026-11-12T16:00:38Z",
@@ -4383,7 +4397,7 @@
       "dev_count": 0,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T08:59:43.580862Z",
       "smart_degen_count": 11,
       "renowned_count": 3,
       "pair_created_at": "2026-11-11T22:42:08Z",
@@ -4415,7 +4429,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T08:59:43.580862Z",
       "smart_degen_count": 0,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T15:07:08Z",
@@ -4447,7 +4461,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T08:59:43.580862Z",
       "smart_degen_count": 2,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T15:24:49Z",
@@ -4472,7 +4486,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T08:59:43.580862Z",
       "smart_degen_count": 4,
       "renowned_count": 1,
       "pair_created_at": "2026-11-12T15:19:05Z",
@@ -4504,14 +4518,14 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T08:59:43.580862Z",
       "smart_degen_count": 70,
       "renowned_count": 6,
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-12T15:25:55Z",
-      "post_count": 6,
-      "unique_authors": 3,
+      "post_count": 7,
+      "unique_authors": 4,
       "posts": [
         {
           "author": "scarlex0",
@@ -4554,6 +4568,13 @@
           "post_time": "2026-11-14T05:09:54Z",
           "text_clean": "2X on $GREG | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/0xAnon01/status/2121470658567672242/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2121470658567672242"
+        },
+        {
+          "author": "chinapumprocket",
+          "author_name": "chinapumprocket",
+          "post_time": "2026-11-14T08:48:48Z",
+          "text_clean": "$greg 467k - 49.4x by AI bot | | All creator fees go to holder | | My ai bot caught at 9.45k !!! | | CA: 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump | | Chart + Trade: gmgn.ai/robinhood/token/Hanzx0Ol_4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump | | Check the: t.me/pumpfunnevadie/184957 x.com/chinapumprocket/status/2121525747575816222/photo/1",
+          "tweet_url": "https://x.com/chinapumprocket/status/2121525747575816222"
         }
       ]
     },
@@ -4934,7 +4955,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T08:41:24.880108Z",
-      "smart_degen_count": 7,
+      "smart_degen_count": 8,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T12:18:47Z",
       "freshness": "24h",
