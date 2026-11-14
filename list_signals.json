@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T19:32:25.436282Z",
+  "generated_at": "2026-11-14T19:41:23.939908Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,23 +7,23 @@
   "stats": {
     "signals_total": 2354,
     "with_ca": 324,
-    "list_posts_total": 2446,
-    "unique_cas": 1050,
-    "dedup_merged_posts": 1396,
+    "list_posts_total": 2450,
+    "unique_cas": 1051,
+    "dedup_merged_posts": 1399,
     "passed": 184,
-    "dropped_dev": 316,
+    "dropped_dev": 317,
     "dropped_old": 364,
     "dropped_no_time": 186,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 1047,
+    "verdict_cached": 1050,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
       "old": 364,
-      "dev_over": 316,
+      "dev_over": 317,
       "no_pool": 184,
       "no_created_at": 2
     }
