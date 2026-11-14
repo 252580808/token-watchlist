@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T15:02:29.241076Z",
+  "generated_at": "2026-11-14T15:11:35.504810Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,28 +7,53 @@
   "stats": {
     "signals_total": 2327,
     "with_ca": 311,
-    "list_posts_total": 2325,
-    "unique_cas": 984,
-    "dedup_merged_posts": 1341,
-    "passed": 175,
-    "dropped_dev": 296,
-    "dropped_old": 341,
+    "list_posts_total": 2329,
+    "unique_cas": 987,
+    "dedup_merged_posts": 1342,
+    "passed": 176,
+    "dropped_dev": 297,
+    "dropped_old": 342,
     "dropped_no_time": 172,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 983,
+    "verdict_cached": 984,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
-      "old": 341,
-      "dev_over": 296,
+      "old": 342,
+      "dev_over": 297,
       "no_pool": 171,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "2eaMBKmpfxVJVFU6XwrBBaKsRz3vQ35WDpLQwvCFpump",
+      "chain": "solana",
+      "symbol": "PC",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 2,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-14T14:55:16Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T14:59:44Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-14T14:59:44Z",
+          "text_clean": "⚡️ PAID DEX PUSH | $PC | PumpCity | | Dexscreener Paid Signal: Yes | | • MC: $8.6K | Liq: $8.7K | • Bundlers: 64 | Smart: 1 | • Holders: 92 | Age: 4m | • Top10: 16.4% | Rug Score: 0% | | CA: 2eaMBKmpfxVJVFU6XwrBBaKsRz3vQ35WDpLQwvCFpump | | 📊 View Chart: gmgn.ai/sol/token/lu5EtQcb_2eaMBKmpfxVJVFU6XwrBBaKsRz3vQ35WDpLQwvCFpump",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121619093543432517"
+        }
+      ]
+    },
     {
       "ca": "GSLgNd3oMkKKp8478cKYvGmWf3NEbakdXNEBZKKMpump",
       "chain": "solana",
