@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:38:21.120177Z",
+  "generated_at": "2026-11-14T18:47:27.814565Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,13 +7,13 @@
   "stats": {
     "signals_total": 2348,
     "with_ca": 321,
-    "list_posts_total": 2427,
-    "unique_cas": 1039,
-    "dedup_merged_posts": 1388,
-    "passed": 183,
+    "list_posts_total": 2432,
+    "unique_cas": 1043,
+    "dedup_merged_posts": 1389,
+    "passed": 184,
     "dropped_dev": 314,
-    "dropped_old": 359,
-    "dropped_no_time": 183,
+    "dropped_old": 361,
+    "dropped_no_time": 184,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
     "verdict_cached": 1039,
@@ -22,13 +22,45 @@
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
-      "old": 359,
+      "old": 361,
       "dev_over": 314,
-      "no_pool": 181,
+      "no_pool": 182,
       "no_created_at": 2
     }
   },
   "items": [
+    {
+      "ca": "3531MEu4B5n5RvTP3mWQQWJv9uNRD4Z5SYGcqYkppump",
+      "chain": "solana",
+      "symbol": "billie",
+      "dev_count": 2,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 36,
+      "renowned_count": 2,
+      "pair_created_at": "2026-11-14T18:23:53Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T18:36:46Z",
+      "post_count": 2,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-14T18:36:46Z",
+          "text_clean": "CA: | | 3531MEu4B5n5RvTP3mWQQWJv9uNRD4Z5SYGcqYkppump x.com/scarlex0/status/2121673714387288122/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121673714387288122"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-14T18:42:11Z",
+          "text_clean": "🔥 4.4X on a $BILLIE | | CA | | 3531MEu4B5n5RvTP3mWQQWJv9uNRD4Z5SYGcqYkppump x.com/scarlex0/status/2121675077691355381/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121675077691355381"
+        }
+      ]
+    },
     {
       "ca": "8ACn9Fn3zQkYtwj1y4Xvk7ygMki4HYHJ2usdWTsipump",
       "chain": "solana",
@@ -1581,7 +1613,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T11:26:41.386029Z",
-      "smart_degen_count": 23,
+      "smart_degen_count": 24,
       "renowned_count": 1,
       "pair_created_at": "2026-11-13T20:05:39Z",
       "freshness": "24h",
@@ -2214,7 +2246,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T10:50:46.772747Z",
-      "smart_degen_count": 25,
+      "smart_degen_count": 28,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T17:06:54Z",
       "freshness": "24h",
