@@ -517,28 +517,8 @@ function normalize(raw){
     txB: numOrNull(raw.txB!=null?raw.txB:raw.buys24h), txS: numOrNull(raw.txS!=null?raw.txS:raw.sells24h),
     holders: numOrNull(raw.holders), dev: numOrNull(raw.dev!=null?raw.dev:(raw.dev_launches!=null?raw.dev_launches:raw.dev_count)),
     intro: raw.intro||raw.description||"", twitter: raw.twitter||"", telegram: raw.telegram||"", website: raw.website||"",
-    dex: raw.dex||raw.pool_type||"", liveAt: null, liveSource: "",
-    /* 2026-11-14 出生硬标签：只展示、不参与任何筛选 */
-    hardTwitterDup: numOrNull(raw.twitter_dup), hardImageDup: numOrNull(raw.image_dup),
-    hardDevStatus: raw.creator_token_status ? String(raw.creator_token_status) : ""
+    dex: raw.dex||raw.pool_type||"", liveAt: null, liveSource: ""
   };
-}
-function hardTagHTML(x){
-  var out = "", td = x.hardTwitterDup, idp = x.hardImageDup;
-  var base = "display:inline-block;font-size:11px;line-height:1.5;padding:1px 6px;margin:2px 4px 0 0;border-radius:4px;white-space:nowrap;";
-  if(td!=null && td>0) out += '<span style="'+base+'background:#FAEEDA;color:#854F0B">社媒被抄 '+fmtNum(td)+'次</span>';
-  if(idp!=null && idp>0) out += '<span style="'+base+'background:#FAEEDA;color:#854F0B">图片被抄 '+fmtNum(idp)+'次</span>';
-  if(x.hardDevStatus==="creator_close") out += '<span style="'+base+'background:#FCEBEB;color:#A32D2D">dev 已清仓</span>';
-  return out;
-}
-function hardTagDetail(x){
-  if(x.hardTwitterDup==null && x.hardImageDup==null && !x.hardDevStatus)
-    return "暂无（旧数据；新推送的币会自动带上）";
-  var st = x.hardDevStatus==="creator_close" ? "已清仓" :
-           x.hardDevStatus==="creator_hold" ? "持币中" : (x.hardDevStatus||"未知");
-  return "社媒被抄 <b>"+(x.hardTwitterDup==null?"—":fmtNum(x.hardTwitterDup))+"</b> 次　·　"
-       + "图片被抄 <b>"+(x.hardImageDup==null?"—":fmtNum(x.hardImageDup))+"</b> 次　·　"
-       + "dev 状态 <b>"+esc(st)+"</b>";
 }
 function numOrNull(v){ if(v==null||v===""||isNaN(Number(v))) return null; return Number(v); }
 
@@ -665,7 +645,6 @@ function detailHTML(t){
   }
   if(t.keptEarly) kv += "保留原因：<b>创建时间已超 24 小时，脚本按首次发现推入，看板按首次发现保留监控</b><br/>";
   if(t.earlySignal) kv += "早期信号：<b>是</b>"+(t.earlyReason?"（"+esc(t.earlyReason)+"）":"")+"<br/>";
-  kv += "出生硬标签："+hardTagDetail(t)+"<br/>";
   if(t.dex) kv += "DEX：<b>"+esc(t.dex)+"</b>　";
   kv += "来源：<b>"+esc(t.source)+"</b>";
   if(t.liveAt) kv += "<br/>行情更新：<b>"+bjStr(t.liveAt, true)+"</b>（北京时间，"+esc(t.liveSource||"GeckoTerminal")+"）";
@@ -699,7 +678,6 @@ function render(){
       + '<div style="min-width:0"><div class="nm">'+esc(x.symbol)+(x.name&&x.name!==x.symbol?'<span>'+esc(x.name)+'</span>':"")+'</div>'
       + '<div class="ca">'+esc(shortCA(x.ca))+'<button title="复制 CA" data-copy="'+esc(x.ca)+'"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>'
       + (x.intro ? '<div class="intro-line">'+esc(x.intro)+'</div>' : '<div class="intro-line">暂无介绍</div>')
-      + hardTagHTML(x)
       + '</div></div></td>'
       + '<td><span class="chain"><span class="cdot" style="background:'+m.color+'"></span>'+esc(m.label)+'</span><span class="src">'+esc(x.source)+'</span></td>'
       + '<td><span class="age">'+fmtAge(ageMs)+'</span><div class="agebar"><i class="'+barCls+'" style="width:'+pctLeft+'%"></i></div><span class="remain">'+fmtRemain(remainMs)+'</span>'+(x.keptEarly?'<span class="remain" style="display:block;color:var(--amber)">创建时间较早 · 按首次发现保留</span>':"")+'</td>'
@@ -720,7 +698,6 @@ function render(){
       + '<div style="flex:1;min-width:0"><div class="nm" style="font-weight:700">'+esc(x.symbol)+(x.name&&x.name!==x.symbol?'<span style="color:var(--muted);font-weight:500;font-size:12px;margin-left:5px">'+esc(x.name)+'</span>':"")+'</div>'
       + '<div class="ca">'+esc(shortCA(x.ca))+'<button title="复制 CA" data-copy="'+esc(x.ca)+'"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></button></div>'
       + (x.intro ? '<div class="intro-line" style="max-width:210px">'+esc(x.intro)+'</div>' : '')
-      + hardTagHTML(x)
       + '</div>'
       + '<div style="text-align:right"><span class="chain"><span class="cdot" style="background:'+m.color+'"></span>'+esc(m.label)+'</span><span class="src">'+esc(x.source)+'</span></div></div>'
       + '<div class="grid">'
@@ -732,7 +709,6 @@ function render(){
       + cell2("24h 交易 买/卖", (x.txB==null&&x.txS==null)?"—":'<span class="buy">'+fmtNum(x.txB)+'</span> / <span class="sell">'+fmtNum(x.txS)+'</span>')
       + cell2("持有人", fmtNum(x.holders))
       + cell2("Dev 发币", x.dev==null?"—":String(x.dev))
-      + cell2("出生硬标签", hardTagHTML(x)||"—")
       + '<div class="cell"><div class="k">社媒</div><div class="v"><div class="socials" style="justify-content:flex-start">'+socialsHTML(x)+'</div></div></div>'
       + '</div>'
       + '<div class="r3"><div class="acts"><a href="'+gmgnUrl(x)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">GMGN</a><button type="button" class="block-btn" data-block="'+esc(k)+'" title="屏蔽这个币，只影响当前浏览器">删除</button></div>'
