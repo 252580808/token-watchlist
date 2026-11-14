@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T04:13:52.981439Z",
+  "generated_at": "2026-11-14T04:22:53.538189Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,19 +7,19 @@
   "stats": {
     "signals_total": 2217,
     "with_ca": 283,
-    "list_posts_total": 1939,
-    "unique_cas": 831,
-    "dedup_merged_posts": 1108,
+    "list_posts_total": 1942,
+    "unique_cas": 832,
+    "dedup_merged_posts": 1110,
     "passed": 149,
     "dropped_dev": 245,
-    "dropped_old": 297,
+    "dropped_old": 298,
     "dropped_no_time": 140,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 829,
+    "verdict_cached": 831,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 297,
+      "old": 298,
       "dev_over": 245,
       "no_pool": 139,
       "no_created_at": 1
@@ -227,7 +227,7 @@
       "chain": "solana",
       "symbol": "RARECOIN",
       "dev_count": 1,
-      "smart_degen_count": 19,
+      "smart_degen_count": 22,
       "renowned_count": 0,
       "pair_created_at": "2026-11-14T01:30:12Z",
       "freshness": "24h",
@@ -249,7 +249,7 @@
       "chain": "solana",
       "symbol": "MORI",
       "dev_count": 0,
-      "smart_degen_count": 27,
+      "smart_degen_count": 29,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T19:20:00Z",
       "freshness": "24h",
@@ -2907,7 +2907,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 9,
+      "post_count": 10,
       "unique_authors": 4,
       "posts": [
         {
@@ -2972,6 +2972,13 @@
           "post_time": "2026-11-14T00:06:16Z",
           "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring daily is upto something.... | | $MASK $stonk x.com/ZKhedge/status/2121394246574121135/photo/1",
           "tweet_url": "https://x.com/ZKhedge/status/2121394246574121135"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-14T04:17:24Z",
+          "text_clean": "never seen guys ship like this in my life | | @mert 👀 check em out | | solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring $MASK solana:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
+          "tweet_url": "https://x.com/ZKhedge/status/2121457446887764385"
         }
       ]
     },
@@ -4378,7 +4385,7 @@
       "symbol": "StarsAI",
       "dev_count": 1,
       "smart_degen_count": 24,
-      "renowned_count": 4,
+      "renowned_count": 5,
       "pair_created_at": "2026-11-12T08:46:53Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T10:55:01Z",
