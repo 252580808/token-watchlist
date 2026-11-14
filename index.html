@@ -309,7 +309,7 @@
     行内「删除」是本地屏蔽：只记在当前浏览器的本地存储里，只影响这个浏览器里看到的看板，不会修改 GitHub 上的 tokens.json，可在页面最下方的「已屏蔽代币」里随时恢复或一键清空。<br/>
     Dev 发币数 &gt; 3 的币不在看板上展示：脚本每轮会复查 dev，涨过 3 就把 <code>dev_count</code> 更新成最新值、并写 <code>muse_hide=true</code>，看板据此隐藏这个币（数据仍在 GitHub 的 tokens.json 里，只是不展示；手动添加的币不受这条限制）。<br/>
     通道与行情说明（只此一处）：清单拉取顺序为 GitHub 官方 API（无 CDN 缓存，返回内容需 base64 解码）→ GitHub raw → jsDelivr（最后兜底，可能滞后最长 12 小时）；行情（价格 / 市值 / 流动性 / 24h 量）主数据源是 GeckoTerminal 免费批量接口（不用 Key，按链分组、每链一次最多 30 个地址并行查，市值优先用 market_cap_usd、为空时用 fdv_usd），查不到的币再回落 DexScreener 补一次，两边都没有时保留 tokens.json 文件里自带的值。Elysium / Robinhood 没有公开行情接口覆盖，只显示文件里自带的值，文件里没有的显示 —，不编造数据。24h 涨幅与交易笔数（买/卖）取 top pool / 交易对数据。社媒与项目介绍以 TG 原消息为准，Dev 发币数量来自 TG 监控原消息（如 GMGN trenches 的「Dev发币数」），接口查不到，看板不自算。<br/>
-    tokens.json 格式：数组，或 <code>{"tokens":[...]}</code>；每项至少给 <code>ca</code> 和 <code>chain</code>（solana / bsc / ethereum / elysium / base / robinhood / arc），其余字段 <code>symbol, name, created_at, first_seen, source, dev_launches / dev_count, intro, twitter, telegram, website, liquidity_usd, holders, early_signal</code> 有就填。文件里的 <code>created_at</code> / <code>first_seen</code> 是世界时 UTC，看板按 UTC 解析后统一换成北京时间显示，年龄与剩余时间也按换算后的绝对时间算。按 CA+链去重，保留规则与脚本清单一致：<code>created_at</code> 或 <code>first_seen</code> 任一在 72 小时内就保留（创建时间较早、但脚本刚发现推上来的，按首次发现算年龄并注明），两个时间都超 72 小时才下架，展开后同时显示两个时间。
+    tokens.json 格式：数组，或 <code>{"tokens":[...]}</code>；每项至少给 <code>ca</code> 和 <code>chain</code>（solana / bsc / ethereum / elysium / base / robinhood / arc），其余字段 <code>symbol, name, created_at, first_seen, source, dev_launches / dev_count, intro, twitter, telegram, website, liquidity_usd, holders, early_signal</code> 有就填。文件里的 <code>created_at</code> / <code>first_seen</code> 是世界时 UTC，看板按 UTC 解析后统一换成北京时间显示，年龄与剩余时间也按换算后的绝对时间算。按 CA+链去重，保留规则与脚本清单一致（脚本侧 <code>WATCHLIST_MAX_AGE_HOURS=24</code>，到点即从 tokens.json 删除）：<code>created_at</code> 或 <code>first_seen</code> 任一在 24 小时内就保留（创建时间较早、但脚本刚发现推上来的，按首次发现算年龄并注明），两个时间都超 24 小时才下架，展开后同时显示两个时间。
   </div>
 
   <!-- ======= blocked list（页面最底部） ======= -->
@@ -491,8 +491,8 @@ function normalize(raw){
   var early = raw.early_signal===1 || raw.early_signal==="1" || raw.early_signal===true;
   var nowMs = Date.now();
   /* 年龄基准：脚本清单以「抓到才推上来」为准，看板不再按 created_at 单方面砍币。
-     created_at 在 72 小时内 → 按 created_at 算；created_at 已超期或为空、但 first_seen 在 72 小时内
-     → 按 first_seen 保留（到期 = first_seen + 72 小时）；两个时间都超期才下架。 */
+     created_at 在 24 小时内 → 按 created_at 算；created_at 已超期或为空、但 first_seen 在 24 小时内
+     → 按 first_seen 保留（到期 = first_seen + 24 小时）；两个时间都超期才下架。 */
   var ageBase = null, keptEarly = false, explicitTime = false;
   var isSnap = !!raw.snapshot;
   if(isSnap && firstMs){ ageBase = firstMs; explicitTime = true; keptEarly = !!createdMs && (firstMs-createdMs)>MAX_AGE_MS; }
