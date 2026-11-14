@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-11-14T13:23:23.180306Z",
+  "generated_at": "2026-11-14T13:32:26.386939Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2308,
-    "with_ca": 303,
-    "list_posts_total": 2278,
-    "unique_cas": 959,
-    "dedup_merged_posts": 1319,
+    "signals_total": 2311,
+    "with_ca": 306,
+    "list_posts_total": 2286,
+    "unique_cas": 963,
+    "dedup_merged_posts": 1323,
     "passed": 170,
-    "dropped_dev": 286,
-    "dropped_old": 337,
-    "dropped_no_time": 166,
+    "dropped_dev": 287,
+    "dropped_old": 338,
+    "dropped_no_time": 168,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 958,
+    "verdict_cached": 959,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
-      "old": 337,
-      "dev_over": 286,
-      "no_pool": 165,
+      "old": 338,
+      "dev_over": 287,
+      "no_pool": 167,
       "no_created_at": 1
     }
   },
@@ -67,7 +67,7 @@
       "pair_created_at": "2026-11-14T12:18:04Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T12:36:57Z",
-      "post_count": 5,
+      "post_count": 6,
       "unique_authors": 2,
       "posts": [
         {
@@ -104,6 +104,13 @@
           "post_time": "2026-11-14T13:06:51Z",
           "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot | 看看这家伙 | 这真是个百年一遇的项目",
           "tweet_url": "https://x.com/Lqrp92/status/2121590685447115025"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-14T13:27:31Z",
+          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot | 越来越多的人注意到我们了 | 这真的是个很好的项目",
+          "tweet_url": "https://x.com/abhao92702/status/2121595885532721194"
         }
       ]
     },
@@ -1996,7 +2003,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T10:50:46.772747Z",
-      "smart_degen_count": 28,
+      "smart_degen_count": 29,
       "renowned_count": 1,
       "pair_created_at": "2026-11-13T16:30:52Z",
       "freshness": "24h",
