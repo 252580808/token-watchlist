@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T05:35:16.493953Z",
+  "generated_at": "2026-11-14T05:44:02.157716Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,25 +7,69 @@
   "stats": {
     "signals_total": 2229,
     "with_ca": 286,
-    "list_posts_total": 2007,
-    "unique_cas": 852,
-    "dedup_merged_posts": 1155,
-    "passed": 150,
+    "list_posts_total": 2015,
+    "unique_cas": 855,
+    "dedup_merged_posts": 1160,
+    "passed": 152,
     "dropped_dev": 255,
-    "dropped_old": 304,
+    "dropped_old": 305,
     "dropped_no_time": 143,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 849,
+    "verdict_cached": 852,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 304,
+      "old": 305,
       "dev_over": 255,
       "no_pool": 142,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "2ewYnEMPEJSgBW8W81j5CyN9MyTGWqmXKjtATJfhpump",
+      "chain": "solana",
+      "symbol": "FIH",
+      "dev_count": 1,
+      "smart_degen_count": 1,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T05:38:39Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T05:39:47Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-14T05:39:47Z",
+          "text_clean": "👛 CTO WALLET ACTIVITY | | $FIH | | Smart Wallets: 1 | Renowned Wallets: 0 | Fresh Wallets: 33 | Sniper Wallets: 0 | Bundler Wallets: 100 | Top Wallets: 20 | | Creator Hold: 0.00% | Dev/Team Hold: 12.62% | | CA: 2ewYnEMPEJSgBW8W81j5CyN9MyTGWqmXKjtATJfhpump | | 🔗 Open on GMGN: gmgn.ai/sol/token/lu5EtQcb_2ewYnEMPEJSgBW8W81j5CyN9MyTGWqmXKjtATJfhpump",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121478179734860159"
+        }
+      ]
+    },
+    {
+      "ca": "6JnVjxMBEe9KwtimYAUMXFZ3W9drZjCJKo2BsM5wpump",
+      "chain": "solana",
+      "symbol": "ANON",
+      "dev_count": 1,
+      "smart_degen_count": 1,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T04:57:20Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T05:33:30Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-14T05:33:30Z",
+          "text_clean": "$ANON team just paid for their Dexscreener push. Social presence is a bit bare bones but active. | | Stats: $8.6K MC | $8.8K pool depth | 65 holders. Top 10 supply control is at 21.5%. | | CA: | 6JnVjxMBEe9KwtimYAUMXFZ3W9drZjCJKo2BsM5wpump | | 💹 Chart &amp; Trade: gmgn.ai/sol/token/lu5EtQcb_6JnVjxMBEe9KwtimYAUMXFZ3W9drZjCJKo2BsM5wpump",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121476599015223747"
+        }
+      ]
+    },
     {
       "ca": "EU5eYvzyTrWprCBSzK7zkETYvDLyJ662Yd7bDFN6pump",
       "chain": "solana",
@@ -58,7 +102,7 @@
       "pair_created_at": "2026-11-14T03:27:38Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T04:05:30Z",
-      "post_count": 8,
+      "post_count": 10,
       "unique_authors": 1,
       "posts": [
         {
@@ -116,6 +160,20 @@
           "post_time": "2026-11-14T05:25:56Z",
           "text_clean": "15x on $TINFOIL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump x.com/0xAnon01/status/2121474693932749260/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2121474693932749260"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-14T05:36:45Z",
+          "text_clean": "16X on $TINFOIL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump x.com/0xAnon01/status/2121477415814021534/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121477415814021534"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-14T05:39:54Z",
+          "text_clean": "18X on $TINFOIL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump x.com/0xAnon01/status/2121478209199845774/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121478209199845774"
         }
       ]
     },
@@ -3747,7 +3805,7 @@
       "chain": "solana",
       "symbol": "greg",
       "dev_count": 1,
-      "smart_degen_count": 63,
+      "smart_degen_count": 69,
       "renowned_count": 6,
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
@@ -4474,7 +4532,7 @@
       "pair_created_at": "2026-11-12T08:46:53Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T10:55:01Z",
-      "post_count": 6,
+      "post_count": 7,
       "unique_authors": 6,
       "posts": [
         {
@@ -4518,6 +4576,13 @@
           "post_time": "2026-11-14T05:23:29Z",
           "text_clean": "0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | 新平台 | 专属直达：web3.okx.com/join/12788",
           "tweet_url": "https://x.com/Micims6n/status/2121474077059875244"
+        },
+        {
+          "author": "hongxiao_sol",
+          "author_name": "hongxiao_sol",
+          "post_time": "2026-11-14T05:34:26Z",
+          "text_clean": "不经常发密码，一发就有倍数 | | 跟上mint的有福了 $starsai | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/hongxiao_sol/status/2121476833866846209/photo/1",
+          "tweet_url": "https://x.com/hongxiao_sol/status/2121476833866846209"
         }
       ]
     },
