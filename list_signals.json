@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-14T05:07:53.515401Z",
+  "generated_at": "2026-11-14T05:16:55.711509Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2221,
-    "with_ca": 283,
-    "list_posts_total": 1979,
-    "unique_cas": 845,
-    "dedup_merged_posts": 1134,
+    "signals_total": 2224,
+    "with_ca": 284,
+    "list_posts_total": 1991,
+    "unique_cas": 847,
+    "dedup_merged_posts": 1144,
     "passed": 150,
-    "dropped_dev": 250,
+    "dropped_dev": 252,
     "dropped_old": 303,
     "dropped_no_time": 142,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 844,
+    "verdict_cached": 845,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 303,
-      "dev_over": 250,
+      "dev_over": 252,
       "no_pool": 141,
       "no_created_at": 1
     }
@@ -204,7 +204,7 @@
       "chain": "solana",
       "symbol": "GTA6",
       "dev_count": 1,
-      "smart_degen_count": 15,
+      "smart_degen_count": 19,
       "renowned_count": 2,
       "pair_created_at": "2026-11-14T02:17:46Z",
       "freshness": "24h",
@@ -3745,8 +3745,8 @@
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-12T15:25:55Z",
-      "post_count": 3,
-      "unique_authors": 2,
+      "post_count": 6,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "scarlex0",
@@ -3768,6 +3768,27 @@
           "post_time": "2026-11-13T22:02:28Z",
           "text_clean": "I like solana:BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W solana:4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump solana:3sKZuSZF7onqPYFrWu3bH4Lh141duydt9MAmSd46jaLJ and solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring | | @Ringssol",
           "tweet_url": "https://x.com/ZKhedge/status/2121363090419896677"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-14T05:03:36Z",
+          "text_clean": "💰 12.9X on a $GREG | | CA | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/scarlex0/status/2121469072088985642/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121469072088985642"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-14T05:08:41Z",
+          "text_clean": "🏆 16.7X on a $GREG | | CA | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/scarlex0/status/2121470353083937148/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121470353083937148"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-14T05:09:54Z",
+          "text_clean": "2X on $GREG | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump x.com/0xAnon01/status/2121470658567672242/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121470658567672242"
         }
       ]
     },
@@ -4439,8 +4460,8 @@
       "pair_created_at": "2026-11-12T08:46:53Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T10:55:01Z",
-      "post_count": 4,
-      "unique_authors": 4,
+      "post_count": 5,
+      "unique_authors": 5,
       "posts": [
         {
           "author": "hongxiao_sol",
@@ -4469,6 +4490,13 @@
           "post_time": "2026-11-14T04:00:54Z",
           "text_clean": "🔥 $StarsAI 来了！生态首个 Mint 代币。 | 托底机制稳住下限，底池规模翻倍对应价格目标10倍。 | 从这里开启 STARS AI 发射台。 | | 合约：0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | 社交渠道： | | QQ 禁言群：1132428862 | QQ 备用群：1132381261 | QQ 备用群：1132442783 | | DEBOX群:m.debox.pro/group?id=ymorh7qr&code=5f73j9cm x.com/CryptoKeji/status/2121453295168323662/photo/1",
           "tweet_url": "https://x.com/CryptoKeji/status/2121453295168323662"
+        },
+        {
+          "author": "NiaoShen988",
+          "author_name": "NiaoShen988",
+          "post_time": "2026-11-14T05:07:02Z",
+          "text_clean": "地推盘 地推资金进场了 | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039",
+          "tweet_url": "https://x.com/NiaoShen988/status/2121469934811373613"
         }
       ]
     },
