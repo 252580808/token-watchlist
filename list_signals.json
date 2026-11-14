@@ -1,31 +1,75 @@
 {
-  "generated_at": "2026-11-14T06:20:00.885049Z",
+  "generated_at": "2026-11-14T06:29:12.449625Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2233,
-    "with_ca": 287,
-    "list_posts_total": 2038,
-    "unique_cas": 862,
-    "dedup_merged_posts": 1176,
-    "passed": 153,
-    "dropped_dev": 257,
+    "signals_total": 2234,
+    "with_ca": 288,
+    "list_posts_total": 2046,
+    "unique_cas": 867,
+    "dedup_merged_posts": 1179,
+    "passed": 155,
+    "dropped_dev": 259,
     "dropped_old": 306,
-    "dropped_no_time": 146,
+    "dropped_no_time": 147,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 860,
+    "verdict_cached": 862,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 306,
-      "dev_over": 257,
-      "no_pool": 145,
+      "dev_over": 259,
+      "no_pool": 146,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "HNcUE2N2uUvWE51j3yuyAUMtmCpwYvvCxycwLWscpump",
+      "chain": "solana",
+      "symbol": "Fronk",
+      "dev_count": 3,
+      "smart_degen_count": 17,
+      "renowned_count": 2,
+      "pair_created_at": "2026-11-14T04:55:39Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T06:17:21Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Kasperclam",
+          "author_name": "Kasperclam",
+          "post_time": "2026-11-14T06:17:21Z",
+          "text_clean": "HNcUE2N2uUvWE51j3yuyAUMtmCpwYvvCxycwLWscpump | | 官推有了 社区氛围不错",
+          "tweet_url": "https://x.com/Kasperclam/status/2121487633667043465"
+        }
+      ]
+    },
+    {
+      "ca": "9W2NkHVVjS4p1KGrxBX9dJACiW3UtdkDHLAjnkyxpump",
+      "chain": "solana",
+      "symbol": "Twinothy",
+      "dev_count": 1,
+      "smart_degen_count": 1,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T05:35:21Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T06:16:04Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-14T06:16:04Z",
+          "text_clean": "Easy 4X on $TWINOTHY | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 9W2NkHVVjS4p1KGrxBX9dJACiW3UtdkDHLAjnkyxpump x.com/0xAnon01/status/2121487308549423449/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121487308549423449"
+        }
+      ]
+    },
     {
       "ca": "0x14c23EB992cF789a4E6ad57B49b27c888BDFC430",
       "chain": "robinhood",
@@ -261,7 +305,7 @@
       "chain": "solana",
       "symbol": "STABLE",
       "dev_count": 1,
-      "smart_degen_count": 13,
+      "smart_degen_count": 14,
       "renowned_count": 1,
       "pair_created_at": "2026-11-14T02:17:22Z",
       "freshness": "24h",
@@ -597,7 +641,7 @@
       "chain": "solana",
       "symbol": "PEACEFROG",
       "dev_count": 1,
-      "smart_degen_count": 14,
+      "smart_degen_count": 21,
       "renowned_count": 1,
       "pair_created_at": "2026-11-13T20:05:39Z",
       "freshness": "24h",
@@ -1178,7 +1222,7 @@
       "chain": "solana",
       "symbol": "BAWSAQ",
       "dev_count": 1,
-      "smart_degen_count": 56,
+      "smart_degen_count": 58,
       "renowned_count": 6,
       "pair_created_at": "2026-11-13T17:57:19Z",
       "freshness": "24h",
@@ -2340,8 +2384,8 @@
       "pair_created_at": "2026-11-13T09:15:43Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T09:17:58Z",
-      "post_count": 5,
-      "unique_authors": 5,
+      "post_count": 6,
+      "unique_authors": 6,
       "posts": [
         {
           "author": "feibo03",
@@ -2377,6 +2421,13 @@
           "post_time": "2026-11-13T09:37:51Z",
           "text_clean": "蝴蝶出了tapeout模式 | 就20%流通！ | 0x90d0a55e3428b003885263ea5295125aea257777",
           "tweet_url": "https://x.com/lingluan1998/status/2121175700430639138"
+        },
+        {
+          "author": "jos314159",
+          "author_name": "jos314159",
+          "post_time": "2026-11-14T06:17:17Z",
+          "text_clean": "只看不买day4, | 持续看好，再加一个 #Jacket | 0x90d0a55e3428b003885263ea5295125aea257777 逻辑：黄仁勋要是真能回去就叙事升级，回不去就归零了",
+          "tweet_url": "https://x.com/jos314159/status/2121487615002292722"
         }
       ]
     },
