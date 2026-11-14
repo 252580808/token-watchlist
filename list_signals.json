@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-14T23:08:33.430635Z",
+  "generated_at": "2026-11-14T23:17:34.124214Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2382,
-    "with_ca": 337,
-    "list_posts_total": 2535,
-    "unique_cas": 1088,
-    "dedup_merged_posts": 1447,
+    "signals_total": 2385,
+    "with_ca": 338,
+    "list_posts_total": 2539,
+    "unique_cas": 1089,
+    "dedup_merged_posts": 1450,
     "passed": 194,
     "dropped_dev": 326,
-    "dropped_old": 378,
+    "dropped_old": 379,
     "dropped_no_time": 190,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
@@ -22,7 +22,7 @@
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 3,
     "dropped_detail": {
-      "old": 378,
+      "old": 379,
       "dev_over": 326,
       "no_pool": 188,
       "no_created_at": 2
@@ -274,7 +274,7 @@
       "pair_created_at": "2026-11-14T19:43:13Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T19:50:09Z",
-      "post_count": 4,
+      "post_count": 5,
       "unique_authors": 2,
       "posts": [
         {
@@ -304,6 +304,13 @@
           "post_time": "2026-11-14T20:24:18Z",
           "text_clean": "💥 9.8X on a $BILL | | CA | | 85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump x.com/scarlex0/status/2121700775185551436/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2121700775185551436"
+        },
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-14T23:13:02Z",
+          "text_clean": "🐳 14.4X on a $BILL | | CA | | 85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump x.com/scarlex0/status/2121743236175704204/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121743236175704204"
         }
       ]
     },
@@ -1105,7 +1112,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T19:23:07.657362Z",
-      "smart_degen_count": 68,
+      "smart_degen_count": 69,
       "renowned_count": 1,
       "pair_created_at": "2026-11-11T21:02:27Z",
       "freshness": "72h",
@@ -2469,7 +2476,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T10:59:40.357212Z",
+      "dev_check_at": "2026-11-14T23:17:07.232154Z",
       "smart_degen_count": 5,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T18:56:50Z",
@@ -2494,7 +2501,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T10:59:40.357212Z",
+      "dev_check_at": "2026-11-14T23:17:07.232154Z",
       "smart_degen_count": 4,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T18:49:13Z",
@@ -2519,7 +2526,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T10:50:46.772747Z",
+      "dev_check_at": "2026-11-14T23:17:07.232154Z",
       "smart_degen_count": 6,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T18:20:08Z",
@@ -2544,7 +2551,7 @@
       "dev_count": 2,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T10:50:46.772747Z",
+      "dev_check_at": "2026-11-14T23:17:07.232154Z",
       "smart_degen_count": 28,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T17:06:54Z",
@@ -2583,7 +2590,7 @@
       "dev_count": 2,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T10:50:46.772747Z",
+      "dev_check_at": "2026-11-14T23:17:07.232154Z",
       "smart_degen_count": 65,
       "renowned_count": 6,
       "pair_created_at": "2026-11-13T17:57:19Z",
@@ -2643,7 +2650,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T10:50:46.772747Z",
+      "dev_check_at": "2026-11-14T23:17:07.232154Z",
       "smart_degen_count": 4,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T17:02:56Z",
@@ -4678,7 +4685,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 10,
+      "post_count": 11,
       "unique_authors": 4,
       "posts": [
         {
@@ -4750,6 +4757,13 @@
           "post_time": "2026-11-14T04:17:24Z",
           "text_clean": "never seen guys ship like this in my life | | @mert 👀 check em out | | solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring $MASK solana:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR",
           "tweet_url": "https://x.com/ZKhedge/status/2121457446887764385"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-14T23:07:30Z",
+          "text_clean": "Sending todays rewards $69 to someone who tails me in on my $RCAT call on the @Pumpfun app | | Its 7k and a leveraged bet on solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring x.com/ZKhedge/status/2121741845697057259/photo/1",
+          "tweet_url": "https://x.com/ZKhedge/status/2121741845697057259"
         }
       ]
     },
