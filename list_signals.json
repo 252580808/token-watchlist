@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T14:35:41.133181Z",
+  "generated_at": "2026-11-14T14:44:29.086987Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,16 +7,16 @@
   "stats": {
     "signals_total": 2322,
     "with_ca": 309,
-    "list_posts_total": 2319,
+    "list_posts_total": 2321,
     "unique_cas": 981,
-    "dedup_merged_posts": 1338,
+    "dedup_merged_posts": 1340,
     "passed": 175,
     "dropped_dev": 294,
     "dropped_old": 340,
     "dropped_no_time": 172,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 977,
+    "verdict_cached": 981,
     "tags_refreshed": 8,
     "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "ca": "0x0A90e9911fBB3e18D0AEd2Eb33b00dCdF1477777",
+      "ca": "0x0a90e9911fbb3e18d0aed2eb33b00dcdf1477777",
       "chain": "bsc",
       "symbol": "邪教",
       "dev_count": 0,
@@ -252,7 +252,7 @@
       "pair_created_at": "2026-11-14T12:08:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T12:25:59Z",
-      "post_count": 6,
+      "post_count": 7,
       "unique_authors": 5,
       "posts": [
         {
@@ -296,6 +296,13 @@
           "post_time": "2026-11-14T13:08:44Z",
           "text_clean": "0x0a90e9911fbb3e18d0aed2eb33b00dcdf1477777 thiefs supporting each others !!",
           "tweet_url": "https://x.com/Moonerhigh/status/2121591160682787227"
+        },
+        {
+          "author": "AminTabaFuriju",
+          "author_name": "AminTabaFuriju",
+          "post_time": "2026-11-14T14:36:42Z",
+          "text_clean": "Rug instan 😹 | | 0x0a90e9911fbb3e18d0aed2eb33b00dcdf1477777 x.com/AminTabaFuriju/status/2121613295824326876/photo/1",
+          "tweet_url": "https://x.com/AminTabaFuriju/status/2121613295824326876"
         }
       ]
     },
@@ -485,7 +492,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "",
-      "smart_degen_count": 25,
+      "smart_degen_count": 28,
       "renowned_count": 1,
       "pair_created_at": "2026-11-12T07:28:59Z",
       "freshness": "72h",
@@ -1024,7 +1031,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T14:44:06.577879Z",
       "smart_degen_count": 19,
       "renowned_count": 2,
       "pair_created_at": "2026-11-14T02:17:46Z",
