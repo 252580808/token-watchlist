@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T00:08:25.153464Z",
+  "generated_at": "2026-11-14T00:17:21.125760Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,20 +7,20 @@
   "stats": {
     "signals_total": 2167,
     "with_ca": 269,
-    "list_posts_total": 1731,
-    "unique_cas": 766,
-    "dedup_merged_posts": 965,
+    "list_posts_total": 1740,
+    "unique_cas": 767,
+    "dedup_merged_posts": 973,
     "passed": 139,
-    "dropped_dev": 220,
+    "dropped_dev": 221,
     "dropped_old": 281,
     "dropped_no_time": 126,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 763,
+    "verdict_cached": 766,
     "tags_refreshed": 8,
     "dropped_detail": {
       "old": 281,
-      "dev_over": 220,
+      "dev_over": 221,
       "no_pool": 125,
       "no_created_at": 1
     }
@@ -2596,7 +2596,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 8,
+      "post_count": 9,
       "unique_authors": 4,
       "posts": [
         {
@@ -2654,6 +2654,13 @@
           "post_time": "2026-11-13T22:19:32Z",
           "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring looks very nice here - privacy on Sol | | $Mask solana:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR x.com/ZKhedge/status/2121367385504665629/photo/1",
           "tweet_url": "https://x.com/ZKhedge/status/2121367385504665629"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-14T00:06:16Z",
+          "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring daily is upto something.... | | $MASK $stonk x.com/ZKhedge/status/2121394246574121135/photo/1",
+          "tweet_url": "https://x.com/ZKhedge/status/2121394246574121135"
         }
       ]
     },
