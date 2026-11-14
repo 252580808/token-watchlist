@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T04:40:50.741604Z",
+  "generated_at": "2026-11-14T04:50:13.616814Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,21 +7,21 @@
   "stats": {
     "signals_total": 2218,
     "with_ca": 283,
-    "list_posts_total": 1950,
-    "unique_cas": 832,
-    "dedup_merged_posts": 1118,
+    "list_posts_total": 1961,
+    "unique_cas": 839,
+    "dedup_merged_posts": 1122,
     "passed": 149,
-    "dropped_dev": 245,
-    "dropped_old": 298,
-    "dropped_no_time": 140,
+    "dropped_dev": 248,
+    "dropped_old": 301,
+    "dropped_no_time": 141,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
     "verdict_cached": 832,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 298,
-      "dev_over": 245,
-      "no_pool": 139,
+      "old": 301,
+      "dev_over": 248,
+      "no_pool": 140,
       "no_created_at": 1
     }
   },
@@ -36,7 +36,7 @@
       "pair_created_at": "2026-11-14T03:27:38Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T04:05:30Z",
-      "post_count": 5,
+      "post_count": 6,
       "unique_authors": 1,
       "posts": [
         {
@@ -73,6 +73,13 @@
           "post_time": "2026-11-14T04:26:34Z",
           "text_clean": "Hit 9X on $TINFOIL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump x.com/0xAnon01/status/2121459752219636035/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2121459752219636035"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-14T04:39:06Z",
+          "text_clean": "Done 10X on $TINFOIL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | 3D5nV4rQuNJezr6BGfxgQY3qqrtigmEnV2gqSi7ipump x.com/0xAnon01/status/2121462907342934470/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2121462907342934470"
         }
       ]
     },
@@ -562,7 +569,7 @@
       "chain": "solana",
       "symbol": "PPA",
       "dev_count": 1,
-      "smart_degen_count": 5,
+      "smart_degen_count": 6,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T21:02:18Z",
       "freshness": "24h",
