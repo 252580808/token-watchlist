@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T07:20:09.459120Z",
+  "generated_at": "2026-11-14T07:29:04.892432Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,21 +7,21 @@
   "stats": {
     "signals_total": 2243,
     "with_ca": 288,
-    "list_posts_total": 2069,
-    "unique_cas": 877,
-    "dedup_merged_posts": 1192,
+    "list_posts_total": 2084,
+    "unique_cas": 880,
+    "dedup_merged_posts": 1204,
     "passed": 158,
-    "dropped_dev": 261,
-    "dropped_old": 310,
-    "dropped_no_time": 148,
+    "dropped_dev": 262,
+    "dropped_old": 311,
+    "dropped_no_time": 149,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 875,
+    "verdict_cached": 877,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 310,
-      "dev_over": 261,
-      "no_pool": 147,
+      "old": 311,
+      "dev_over": 262,
+      "no_pool": 148,
       "no_created_at": 1
     }
   },
@@ -865,8 +865,8 @@
       "pair_created_at": "2026-11-13T18:39:58Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T20:35:09Z",
-      "post_count": 2,
-      "unique_authors": 1,
+      "post_count": 3,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "1000x_Hunter_",
@@ -881,6 +881,13 @@
           "post_time": "2026-11-13T20:36:43Z",
           "text_clean": "600x Returns from our initial | investment on $AMC | | 🚀🔥 | Ca | | HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump x.com/1000x_Hunter_/status/2121341512600711448/photo/1",
           "tweet_url": "https://x.com/1000x_Hunter_/status/2121341512600711448"
+        },
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-14T07:23:21Z",
+          "text_clean": "$AMC 已从我频道 t.me/memelottery2024 的 $1.09M 入场点上涨 5 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump x.com/kimjoona2026/status/2121504240392901111/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2121504240392901111"
         }
       ]
     },
@@ -4706,8 +4713,8 @@
       "pair_created_at": "2026-11-12T08:46:53Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T10:55:01Z",
-      "post_count": 8,
-      "unique_authors": 7,
+      "post_count": 9,
+      "unique_authors": 8,
       "posts": [
         {
           "author": "hongxiao_sol",
@@ -4764,6 +4771,13 @@
           "post_time": "2026-11-14T05:59:55Z",
           "text_clean": "$StarsAI 680K ⚠️ | 核心话术 | 星星截止目前为止，阿峰，奶牛，才哥，老蒋，方圆，大帝，已经建仓，并通知核心在进场。😤😤 | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/0xdizai/status/2121483245057712387/photo/1",
           "tweet_url": "https://x.com/0xdizai/status/2121483245057712387"
+        },
+        {
+          "author": "dbiwnqun13510",
+          "author_name": "dbiwnqun13510",
+          "post_time": "2026-11-14T07:17:22Z",
+          "text_clean": "快回本拉！！！ | 0xAe9563df445e8625a28017333d757394f8fb8abcd | 这个本质上最后还有一波博弈 200K-500K吧 | 能蹭到cz就是1M-10M | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | 奶牛买到了突破的二段上好厉害 | 0xb82535e74b03ffe4910efea1c759b6bbbf0a7777 | 黄杰克居然还能拉 这确实没想到 x.com/dbiwnqun13510/status/2121502733903831343/photo/1",
+          "tweet_url": "https://x.com/dbiwnqun13510/status/2121502733903831343"
         }
       ]
     },
