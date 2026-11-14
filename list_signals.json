@@ -1,34 +1,84 @@
 {
-  "generated_at": "2026-11-14T14:26:31.007277Z",
+  "generated_at": "2026-11-14T14:35:41.133181Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2320,
-    "with_ca": 308,
-    "list_posts_total": 2313,
-    "unique_cas": 977,
-    "dedup_merged_posts": 1336,
-    "passed": 173,
-    "dropped_dev": 293,
+    "signals_total": 2322,
+    "with_ca": 309,
+    "list_posts_total": 2319,
+    "unique_cas": 981,
+    "dedup_merged_posts": 1338,
+    "passed": 175,
+    "dropped_dev": 294,
     "dropped_old": 340,
-    "dropped_no_time": 171,
+    "dropped_no_time": 172,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 974,
+    "verdict_cached": 977,
     "tags_refreshed": 8,
-    "dev_rechecked": 0,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
       "old": 340,
-      "dev_over": 293,
-      "no_pool": 170,
+      "dev_over": 294,
+      "no_pool": 171,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "GSLgNd3oMkKKp8478cKYvGmWf3NEbakdXNEBZKKMpump",
+      "chain": "solana",
+      "symbol": "RICH",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T13:29:14Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T14:31:32Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "pizzabasedev1x",
+          "author_name": "pizzabasedev1x",
+          "post_time": "2026-11-14T14:31:32Z",
+          "text_clean": "Welcome to the RICHCOON takeover! | | THE STREETS HAVE A NEW KING. 👑 | | 🟢 LIVE NOW ON SOLANA | | CA:GSLgNd3oMkKKp8478cKYvGmWf3NEbakdXNEBZKKMpump | | Tg t.me/RICHCOON09 | | #RICHCOON #RICH #SOLANA #MEMECOIN x.com/pizzabasedev1x/status/2121611997108416772/photo/1",
+          "tweet_url": "https://x.com/pizzabasedev1x/status/2121611997108416772"
+        }
+      ]
+    },
+    {
+      "ca": "3Cjd8fUvcEt9bAvt6ZV723CqUVYWzMgoCyzr65rApump",
+      "chain": "solana",
+      "symbol": "CHAD",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 3,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T14:24:49Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T14:27:30Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "SolanaMemesScan",
+          "author_name": "SolanaMemesScan",
+          "post_time": "2026-11-14T14:27:30Z",
+          "text_clean": "⚡️ FRESH PUMP MIGRATED | $CHAD | MC $31.7K | Liq $9.38K | Holders 462 | CTO No | DEX No | Burn Yes | Locked Yes | CA: 3Cjd8fUvcEt9bAvt6ZV723CqUVYWzMgoCyzr65rApump | | ⚡ Trade on GMGN: gmgn.ai/sol/token/lu5EtQcb_3Cjd8fUvcEt9bAvt6ZV723CqUVYWzMgoCyzr65rApump",
+          "tweet_url": "https://x.com/SolanaMemesScan/status/2121610980413104358"
+        }
+      ]
+    },
     {
       "ca": "5ZDiuBxCLuAjjxSKiBdumQJ36P7Jd9mh5HFLY94Ppump",
       "chain": "solana",
@@ -999,7 +1049,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T14:35:22.662592Z",
       "smart_degen_count": 8,
       "renowned_count": 1,
       "pair_created_at": "2026-11-14T02:09:57Z",
