@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-14T01:20:25.643056Z",
+  "generated_at": "2026-11-14T01:29:22.592038Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。每个 CA 只在第一次出现时查一次，结论记入判定表后永不复查、也不再重算池龄；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数。判定结论一次定终身，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2177,
+    "signals_total": 2179,
     "with_ca": 275,
-    "list_posts_total": 1784,
-    "unique_cas": 783,
-    "dedup_merged_posts": 1001,
+    "list_posts_total": 1790,
+    "unique_cas": 785,
+    "dedup_merged_posts": 1005,
     "passed": 139,
-    "dropped_dev": 229,
-    "dropped_old": 284,
+    "dropped_dev": 230,
+    "dropped_old": 285,
     "dropped_no_time": 131,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 780,
+    "verdict_cached": 783,
     "tags_refreshed": 8,
     "dropped_detail": {
-      "old": 284,
-      "dev_over": 229,
+      "old": 285,
+      "dev_over": 230,
       "no_pool": 130,
       "no_created_at": 1
     }
@@ -133,7 +133,7 @@
       "chain": "ethereum",
       "symbol": "YARL",
       "dev_count": 0,
-      "smart_degen_count": 10,
+      "smart_degen_count": 11,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T21:14:47Z",
       "freshness": "24h",
@@ -720,8 +720,8 @@
       "pair_created_at": "2026-11-13T17:06:54Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T18:08:27Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 3,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "SolanaMemesScan",
@@ -729,6 +729,20 @@
           "post_time": "2026-11-13T18:08:27Z",
           "text_clean": "⚡️ PAID DEX PUSH | $DEFAULT | Default PFP | | Dexscreener Paid Signal: Yes | | • MC: $36.6K | Liq: $14.6K | • Bundlers: 78 | Smart: 10 | • Holders: 116 | Age: 1168m | • Top10: 24.2% | Rug Score: 0% | | CA: 62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray | | 🚀 Trade Token: gmgn.ai/sol/token/lu5EtQcb_62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray",
           "tweet_url": "https://x.com/SolanaMemesScan/status/2121304196393664873"
+        },
+        {
+          "author": "alphaviper01",
+          "author_name": "alphaviper01",
+          "post_time": "2026-11-14T01:21:01Z",
+          "text_clean": "CA | | 62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray x.com/alphaviper01/status/2121413059470381453/photo/1",
+          "tweet_url": "https://x.com/alphaviper01/status/2121413059470381453"
+        },
+        {
+          "author": "alphaviper01",
+          "author_name": "alphaviper01",
+          "post_time": "2026-11-14T01:25:05Z",
+          "text_clean": "🔥 2.5x profit secured on $DEFAULT | | 62MnzU6NVvGrVRLHyqKrwrSnCJsZGHm9bE8aHaB82ray x.com/alphaviper01/status/2121414080208707876/photo/1",
+          "tweet_url": "https://x.com/alphaviper01/status/2121414080208707876"
         }
       ]
     },
@@ -901,8 +915,8 @@
       "pair_created_at": "2026-11-13T15:06:31Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T16:05:54Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "SolanaMemesScan",
@@ -910,6 +924,13 @@
           "post_time": "2026-11-13T16:05:54Z",
           "text_clean": "🚨 CTO SIGNAL 🟢 LAUNCHING | | Token: pearl | Ticker: $PEARL | Route: Pump Fun → pump | | ATH MC: $29.0K | Liq: $16.6K | Holders: 121 | | CTO: ✅ | DEX Updated: ✅ | Burn: 100% | | CA: ZEZr9GMaP65S7a4mYMmVgxJaQGtkdpxEW4hp3UQpump | | 💹 Chart &amp; Trade: gmgn.ai/sol/token/lu5EtQcb_ZEZr9GMaP65S7a4mYMmVgxJaQGtkdpxEW4hp3UQpump",
           "tweet_url": "https://x.com/SolanaMemesScan/status/2121273358033789405"
+        },
+        {
+          "author": "Crypto_Nerrd2",
+          "author_name": "Crypto_Nerrd2",
+          "post_time": "2026-11-14T01:19:43Z",
+          "text_clean": "My guy is always on point. | | I called in channel earlier. Just been lazy today to tweet anything. | | From what I hear this should cook goods | | Speculating at this point. | | $Pearl | | ZEZr9GMaP65S7a4mYMmVgxJaQGtkdpxEW4hp3UQpump",
+          "tweet_url": "https://x.com/Crypto_Nerrd2/status/2121412731010204045"
         }
       ]
     },
@@ -1604,7 +1625,7 @@
       "chain": "solana",
       "symbol": "Christmax",
       "dev_count": 1,
-      "smart_degen_count": 17,
+      "smart_degen_count": 18,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T22:16:27Z",
       "freshness": "24h",
