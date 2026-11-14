@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-11-14T13:41:21.585796Z",
+  "generated_at": "2026-11-14T13:50:29.660350Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2313,
-    "with_ca": 306,
-    "list_posts_total": 2288,
-    "unique_cas": 965,
-    "dedup_merged_posts": 1323,
-    "passed": 170,
+    "signals_total": 2315,
+    "with_ca": 307,
+    "list_posts_total": 2291,
+    "unique_cas": 966,
+    "dedup_merged_posts": 1325,
+    "passed": 171,
     "dropped_dev": 288,
     "dropped_old": 338,
     "dropped_no_time": 169,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 963,
+    "verdict_cached": 965,
     "tags_refreshed": 8,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
@@ -29,6 +29,31 @@
     }
   },
   "items": [
+    {
+      "ca": "bSU2Zy75MJiF25Y1VcV9ARhJv2hfai9w38vW1q6pump",
+      "chain": "solana",
+      "symbol": "Fede",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 18,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-11T20:29:30Z",
+      "freshness": "72h",
+      "first_seen_at": "2026-11-14T13:41:12Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "badattrading_",
+          "author_name": "badattrading_",
+          "post_time": "2026-11-14T13:41:12Z",
+          "text_clean": "$Fede (CA bSU2Zy75MJiF25Y1VcV9ARhJv2hfai9w38vW1q6pump) cannot be analyzed with devsnightmare. narc, BagCalls 🎒 are top holders. | | A cluster has 3% on Bubblemaps. CEX cluster has 47.2%, Binance funded wallets have 14.7%, Coinbase 12.8%, Bybit 9.2%, Mexc 8.3%, Cryptocom 7.5%, x.com/badattrading_/status/2121599330675024217/photo/1",
+          "tweet_url": "https://x.com/badattrading_/status/2121599330675024217"
+        }
+      ]
+    },
     {
       "ca": "DsUeh5Lf9RmrCb6ANd6ZGLJojfwTm2zWYWHqVVgipump",
       "chain": "solana",
@@ -2111,8 +2136,8 @@
       "pair_created_at": "2026-11-13T15:30:17Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T15:42:58Z",
-      "post_count": 2,
-      "unique_authors": 1,
+      "post_count": 3,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "1000x_Hunter_",
@@ -2127,6 +2152,13 @@
           "post_time": "2026-11-13T15:44:56Z",
           "text_clean": "162x Returns from our initial | investment on $JENSLA | | 🚀🔥 | Ca | | 9RZH5NbSW27KewwfAcbhQXixMRUaMc7zNppCRnfUpump x.com/1000x_Hunter_/status/2121268081532260517/photo/1",
           "tweet_url": "https://x.com/1000x_Hunter_/status/2121268081532260517"
+        },
+        {
+          "author": "badattrading_",
+          "author_name": "badattrading_",
+          "post_time": "2026-11-14T13:42:47Z",
+          "text_clean": "$JENSLA (CA 9RZH5NbSW27KewwfAcbhQXixMRUaMc7zNppCRnfUpump) is a bundled pile of crap, don't buy, stay away. x.com/badattrading_/status/2121599731105144863/photo/1",
+          "tweet_url": "https://x.com/badattrading_/status/2121599731105144863"
         }
       ]
     },
@@ -2791,7 +2823,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T10:27:18.939094Z",
-      "smart_degen_count": 29,
+      "smart_degen_count": 31,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T11:20:51Z",
       "freshness": "24h",
