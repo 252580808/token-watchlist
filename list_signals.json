@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:17:25.607763Z",
+  "generated_at": "2026-11-14T17:26:31.078142Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,16 +7,16 @@
   "stats": {
     "signals_total": 2341,
     "with_ca": 318,
-    "list_posts_total": 2407,
-    "unique_cas": 1030,
+    "list_posts_total": 2409,
+    "unique_cas": 1032,
     "dedup_merged_posts": 1377,
-    "passed": 179,
+    "passed": 181,
     "dropped_dev": 311,
     "dropped_old": 357,
     "dropped_no_time": 183,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 1028,
+    "verdict_cached": 1030,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
@@ -29,6 +29,56 @@
     }
   },
   "items": [
+    {
+      "ca": "5bzT7x5nYZx3grnRaL6cDRQuSKxEWDVwh2WUxd91pump",
+      "chain": "solana",
+      "symbol": "Angel",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 67,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-14T13:50:52Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T17:17:39Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-14T17:17:39Z",
+          "text_clean": "solana:5bzT7x5nYZx3grnRaL6cDRQuSKxEWDVwh2WUxd91pump 已从我频道 t.me/memelottery2024 的 $37.53K 入场点上涨 5 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_FvgQJtsNmo4o38eUy3sqatTyhNcVD4yXiwJurhVghhFL x.com/kimjoona2026/status/2121653802654924883/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2121653802654924883"
+        }
+      ]
+    },
+    {
+      "ca": "FvgQJtsNmo4o38eUy3sqatTyhNcVD4yXiwJurhVghhFL",
+      "chain": "solana",
+      "symbol": "Angel",
+      "dev_count": 0,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T16:36:36Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T17:17:39Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-14T17:17:39Z",
+          "text_clean": "solana:5bzT7x5nYZx3grnRaL6cDRQuSKxEWDVwh2WUxd91pump 已从我频道 t.me/memelottery2024 的 $37.53K 入场点上涨 5 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_FvgQJtsNmo4o38eUy3sqatTyhNcVD4yXiwJurhVghhFL x.com/kimjoona2026/status/2121653802654924883/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2121653802654924883"
+        }
+      ]
+    },
     {
       "ca": "8dbLrW3ZTTu4qeAKYYBjuuSSAPhMvABwUes3eWoXpump",
       "chain": "solana",
@@ -439,7 +489,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "",
-      "smart_degen_count": 4,
+      "smart_degen_count": 5,
       "renowned_count": 1,
       "pair_created_at": "2026-11-14T10:00:27Z",
       "freshness": "24h",
@@ -1954,7 +2004,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T10:59:40.357212Z",
-      "smart_degen_count": 30,
+      "smart_degen_count": 31,
       "renowned_count": 4,
       "pair_created_at": "2026-11-12T15:43:11Z",
       "freshness": "72h",
@@ -5084,7 +5134,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T08:59:43.580862Z",
-      "smart_degen_count": 79,
+      "smart_degen_count": 82,
       "renowned_count": 6,
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
