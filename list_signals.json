@@ -1,34 +1,59 @@
 {
-  "generated_at": "2026-11-14T11:00:10.661007Z",
+  "generated_at": "2026-11-14T11:09:22.008451Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2280,
+    "signals_total": 2281,
     "with_ca": 293,
-    "list_posts_total": 2213,
-    "unique_cas": 930,
-    "dedup_merged_posts": 1283,
-    "passed": 165,
+    "list_posts_total": 2216,
+    "unique_cas": 932,
+    "dedup_merged_posts": 1284,
+    "passed": 166,
     "dropped_dev": 280,
-    "dropped_old": 324,
+    "dropped_old": 325,
     "dropped_no_time": 161,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 929,
+    "verdict_cached": 930,
     "tags_refreshed": 8,
     "dev_rechecked": 6,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
-      "old": 324,
+      "old": 325,
       "dev_over": 280,
       "no_pool": 160,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "5HZvoq6WxD9W1HZsssjYpm3bdDbHHQUdgcyokN1kpump",
+      "chain": "solana",
+      "symbol": "Anne",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 3,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-14T10:00:27Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T11:00:43Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "wick_calls",
+          "author_name": "wick_calls",
+          "post_time": "2026-11-14T11:00:43Z",
+          "text_clean": "$Anne Reaching Wiener Dog · mc $14.1k · dev's first coin | Category: meme. Anne the dachshund reaching through a fence for a tennis ball is traders reaching for financial freedom. | 5HZvoq6WxD9W1HZsssjYpm3bdDbHHQUdgcyokN1kpump x.com/wick_calls/status/2121558944661270980/photo/1",
+          "tweet_url": "https://x.com/wick_calls/status/2121558944661270980"
+        }
+      ]
+    },
     {
       "ca": "0x47fe745f44f68198c600b79b73aadf9cfd4b7777",
       "chain": "bsc",
@@ -1242,7 +1267,7 @@
       "dev_count": 0,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T11:08:48.484079Z",
       "smart_degen_count": 3,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T19:47:42Z",
@@ -1281,7 +1306,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T11:08:48.484079Z",
       "smart_degen_count": 1,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T20:41:53Z",
@@ -1306,7 +1331,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T11:08:48.484079Z",
       "smart_degen_count": 0,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T20:05:23Z",
@@ -1338,7 +1363,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T11:08:48.484079Z",
       "smart_degen_count": 4,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T19:55:49Z",
@@ -1370,7 +1395,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T11:08:48.484079Z",
       "smart_degen_count": 5,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T19:58:56Z",
@@ -1409,7 +1434,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T11:08:48.484079Z",
       "smart_degen_count": 4,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T19:38:30Z",
@@ -1557,8 +1582,8 @@
       "pair_created_at": "2026-11-11T04:28:27Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T19:05:04Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "unclecoco",
@@ -1566,6 +1591,13 @@
           "post_time": "2026-11-13T19:05:04Z",
           "text_clean": "Great MEME lol | | I thought it was ai at first. | | Real LIFE GTABOY | | ACQaUNABukRNGqJJS2geF1XhDignZuvG21hcE9gZpump",
           "tweet_url": "https://x.com/unclecoco/status/2121318447917477927"
+        },
+        {
+          "author": "cryptobaddiee1",
+          "author_name": "cryptobaddiee1",
+          "post_time": "2026-11-14T10:59:17Z",
+          "text_clean": "@blessed_mayor Next : ACQaUNABukRNGqJJS2geF1XhDignZuvG21hcE9gZpump",
+          "tweet_url": "https://x.com/cryptobaddiee1/status/2121558583037039038"
         }
       ]
     },
