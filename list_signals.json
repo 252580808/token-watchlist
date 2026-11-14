@@ -1,34 +1,59 @@
 {
-  "generated_at": "2026-11-14T13:50:29.660350Z",
+  "generated_at": "2026-11-14T13:59:39.089781Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2315,
+    "signals_total": 2316,
     "with_ca": 307,
-    "list_posts_total": 2291,
-    "unique_cas": 966,
-    "dedup_merged_posts": 1325,
-    "passed": 171,
+    "list_posts_total": 2298,
+    "unique_cas": 969,
+    "dedup_merged_posts": 1329,
+    "passed": 172,
     "dropped_dev": 288,
-    "dropped_old": 338,
-    "dropped_no_time": 169,
+    "dropped_old": 339,
+    "dropped_no_time": 170,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 965,
+    "verdict_cached": 966,
     "tags_refreshed": 8,
-    "dev_rechecked": 0,
+    "dev_rechecked": 2,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "dropped_detail": {
-      "old": 338,
+      "old": 339,
       "dev_over": 288,
-      "no_pool": 168,
+      "no_pool": 169,
       "no_created_at": 1
     }
   },
   "items": [
+    {
+      "ca": "0x4CAcBE52089AA3e8312D95c89BEF45d50F0047D8",
+      "chain": "bsc",
+      "symbol": "HAPPE",
+      "dev_count": 0,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 0,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-14T13:16:06Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-14T13:53:24Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "mrchrismast_",
+          "author_name": "mrchrismast_",
+          "post_time": "2026-11-14T13:53:24Z",
+          "text_clean": "Anh em mint kèo này lúc chiều lúc 0.0015 BNB giờ x9 lần nếu trúng Legend rồi. Ngon vcl. | | Đây là link mint lúc chiều, ae check nhé, NFT thì vẫn bị lock, chiều ae nào múc 1$ thì vào check bán nhé. Market cap đang 60k$ | | Link swap: pancakeswap.finance/swap?inputCurrency=0x4CAcBE52089AA3e8312D95c89BEF45d50F0047D8&outputCurrency=BNB | | Link mint lúc 5h x.com/mrchrismast_/status/2121602399194546441/photo/1",
+          "tweet_url": "https://x.com/mrchrismast_/status/2121602399194546441"
+        }
+      ]
+    },
     {
       "ca": "bSU2Zy75MJiF25Y1VcV9ARhJv2hfai9w38vW1q6pump",
       "chain": "solana",
@@ -1006,7 +1031,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T13:59:17.374481Z",
       "smart_degen_count": 22,
       "renowned_count": 0,
       "pair_created_at": "2026-11-14T01:30:12Z",
@@ -1031,7 +1056,7 @@
       "dev_count": 0,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-14T13:59:17.374481Z",
       "smart_degen_count": 29,
       "renowned_count": 0,
       "pair_created_at": "2026-11-13T19:20:00Z",
@@ -1777,8 +1802,8 @@
       "pair_created_at": "2026-11-11T04:28:27Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T19:05:04Z",
-      "post_count": 2,
-      "unique_authors": 2,
+      "post_count": 3,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "unclecoco",
@@ -1793,6 +1818,13 @@
           "post_time": "2026-11-14T10:59:17Z",
           "text_clean": "@blessed_mayor Next : ACQaUNABukRNGqJJS2geF1XhDignZuvG21hcE9gZpump",
           "tweet_url": "https://x.com/cryptobaddiee1/status/2121558583037039038"
+        },
+        {
+          "author": "blessed_mayor",
+          "author_name": "blessed_mayor",
+          "post_time": "2026-11-14T13:53:54Z",
+          "text_clean": "GTA in real life sounds gay. Im in | | ACQaUNABukRNGqJJS2geF1XhDignZuvG21hcE9gZpump x.com/blessed_mayor/status/2121602525023617124/photo/1",
+          "tweet_url": "https://x.com/blessed_mayor/status/2121602525023617124"
         }
       ]
     },
