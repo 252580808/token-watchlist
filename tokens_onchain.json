@@ -10,8 +10,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-14 01:38",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标）",
-    "liquidity_usd": 14858.79,
-    "market_cap": 38860.0,
+    "liquidity_usd": 9549783.13,
+    "market_cap": 52882855.0,
     "holders": 847,
     "dev_count": 1,
     "dev_creator": "6cZLbNkPctyKB2p8gLedzRpBy6EKiqg619P5487QKo3d",
@@ -21,7 +21,7 @@
     "twitter": "https://x.com/WE_LOVE_OMNK/status/2121034755445854531",
     "website": "",
     "telegram": "https://t.me/1",
-    "liq_now": 14858.79,
-    "liq_ts": 1794620465
+    "liq_now": 9549783.13,
+    "liq_ts": 1794620764
   }
 ]
