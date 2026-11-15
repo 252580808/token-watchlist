@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T07:43:26.902697Z",
+  "generated_at": "2026-11-15T07:46:54.181811Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,24 +7,24 @@
   "stats": {
     "signals_total": 2446,
     "with_ca": 351,
-    "list_posts_total": 2784,
+    "list_posts_total": 2785,
     "unique_cas": 1169,
-    "dedup_merged_posts": 1615,
-    "passed": 199,
+    "dedup_merged_posts": 1616,
+    "passed": 198,
     "dropped_dev": 360,
     "dropped_old": 394,
     "dropped_no_time": 212,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 0,
     "pending_retry": 0,
-    "verdict_cached": 1166,
+    "verdict_cached": 1169,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 3,
     "site_rechecked": 3,
-    "site_recheck_blocked": 0,
-    "site_blocked_live": 4,
+    "site_recheck_blocked": 1,
+    "site_blocked_live": 5,
     "dropped_detail": {
       "old": 394,
       "dev_over": 360,
@@ -6687,108 +6687,6 @@
           "post_time": "2026-11-12T10:59:15Z",
           "text_clean": "0xd9544df1eeba5a65848f47ad510ce7c900546d7e | | 被低估的",
           "tweet_url": "https://x.com/mewudi669/status/2120833800351674408"
-        }
-      ]
-    },
-    {
-      "ca": "0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039",
-      "chain": "bsc",
-      "symbol": "StarsAI",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T20:26:06.924782Z",
-      "smart_degen_count": 26,
-      "renowned_count": 5,
-      "pair_created_at": "2026-11-12T08:46:53Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-12T10:55:01Z",
-      "post_count": 12,
-      "unique_authors": 11,
-      "posts": [
-        {
-          "author": "hongxiao_sol",
-          "author_name": "hongxiao_sol",
-          "post_time": "2026-11-12T10:55:01Z",
-          "text_clean": "起飞，在群里说了，塞就完了 | | $starsai 目前应该2x，打的可以出本，跟上吃肉 | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/hongxiao_sol/status/2120832732477702406/photo/1",
-          "tweet_url": "https://x.com/hongxiao_sol/status/2120832732477702406"
-        },
-        {
-          "author": "hanhanbtc",
-          "author_name": "hanhanbtc",
-          "post_time": "2026-11-14T00:25:25Z",
-          "text_clean": "🚀 以 $StarsAI 为起点，建设 STARS AI 发射台与社区。 | 创新流动性模型，底池增长一倍，价格目标实现十倍；托底机制护航。 | | 合约：0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | | 社交渠道： | | QQ 禁言群：1132428862 | QQ 备用群：1132381261 | QQ 备用群：1132442783 | | DEBOX群:m.debox.pro/group?id=ymorh7qr&code=5f73j9cm | | TG x.com/hanhanbtc/status/2121399065204367814/photo/1",
-          "tweet_url": "https://x.com/hanhanbtc/status/2121399065204367814"
-        },
-        {
-          "author": "xhdweb3",
-          "author_name": "xhdweb3",
-          "post_time": "2026-11-14T03:00:03Z",
-          "text_clean": "🌟 $StarsAI 正式上线！首个 STARS AI Mint 代币。 | 设计目标：价格不低于发行价70%，底池翻倍对应10倍价格目标。 | | 合约：0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | | 社交渠道： | | QQ 禁言群：1132428862 | QQ 备用群：1132381261 | QQ 备用群：1132442783 | | DEBOX群:m.debox.pro/group?id=ymorh7qr&code=5f73j9cm | | TG x.com/xhdweb3/status/2121437980565111016/photo/1",
-          "tweet_url": "https://x.com/xhdweb3/status/2121437980565111016"
-        },
-        {
-          "author": "CryptoKeji",
-          "author_name": "CryptoKeji",
-          "post_time": "2026-11-14T04:00:54Z",
-          "text_clean": "🔥 $StarsAI 来了！生态首个 Mint 代币。 | 托底机制稳住下限，底池规模翻倍对应价格目标10倍。 | 从这里开启 STARS AI 发射台。 | | 合约：0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | 社交渠道： | | QQ 禁言群：1132428862 | QQ 备用群：1132381261 | QQ 备用群：1132442783 | | DEBOX群:m.debox.pro/group?id=ymorh7qr&code=5f73j9cm x.com/CryptoKeji/status/2121453295168323662/photo/1",
-          "tweet_url": "https://x.com/CryptoKeji/status/2121453295168323662"
-        },
-        {
-          "author": "NiaoShen988",
-          "author_name": "NiaoShen988",
-          "post_time": "2026-11-14T05:07:02Z",
-          "text_clean": "地推盘 地推资金进场了 | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039",
-          "tweet_url": "https://x.com/NiaoShen988/status/2121469934811373613"
-        },
-        {
-          "author": "Micims6n",
-          "author_name": "Micims6n",
-          "post_time": "2026-11-14T05:23:29Z",
-          "text_clean": "0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | 新平台 | 专属直达：web3.okx.com/join/12788",
-          "tweet_url": "https://x.com/Micims6n/status/2121474077059875244"
-        },
-        {
-          "author": "hongxiao_sol",
-          "author_name": "hongxiao_sol",
-          "post_time": "2026-11-14T05:34:26Z",
-          "text_clean": "不经常发密码，一发就有倍数 | | 跟上mint的有福了 $starsai | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/hongxiao_sol/status/2121476833866846209/photo/1",
-          "tweet_url": "https://x.com/hongxiao_sol/status/2121476833866846209"
-        },
-        {
-          "author": "0xdizai",
-          "author_name": "0xdizai",
-          "post_time": "2026-11-14T05:59:55Z",
-          "text_clean": "$StarsAI 680K ⚠️ | 核心话术 | 星星截止目前为止，阿峰，奶牛，才哥，老蒋，方圆，大帝，已经建仓，并通知核心在进场。😤😤 | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/0xdizai/status/2121483245057712387/photo/1",
-          "tweet_url": "https://x.com/0xdizai/status/2121483245057712387"
-        },
-        {
-          "author": "dbiwnqun13510",
-          "author_name": "dbiwnqun13510",
-          "post_time": "2026-11-14T07:17:22Z",
-          "text_clean": "快回本拉！！！ | 0xAe9563df445e8625a28017333d757394f8fb8abcd | 这个本质上最后还有一波博弈 200K-500K吧 | 能蹭到cz就是1M-10M | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | 奶牛买到了突破的二段上好厉害 | 0xb82535e74b03ffe4910efea1c759b6bbbf0a7777 | 黄杰克居然还能拉 这确实没想到 x.com/dbiwnqun13510/status/2121502733903831343/photo/1",
-          "tweet_url": "https://x.com/dbiwnqun13510/status/2121502733903831343"
-        },
-        {
-          "author": "bitxinxin",
-          "author_name": "bitxinxin",
-          "post_time": "2026-11-14T09:40:11Z",
-          "text_clean": "性价比高 12K 天赐龙二 龙一 $GSTOCK 3。5M | 0xc1e1ffea92c932eb0ff6c74fae43db477abc9165 | | 还有这个牛逼 企稳了，感觉可以埋伏撸个反弹 我要出去吃火锅了，你们看着玩 | | 0x9665f094d862f4d5c221843e019b463d3c607777 | $StarsAI 有点实力 | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 x.com/bitxinxin/status/2121538675922403388/photo/1",
-          "tweet_url": "https://x.com/bitxinxin/status/2121538675922403388"
-        },
-        {
-          "author": "Naive_BNB",
-          "author_name": "Naive_BNB",
-          "post_time": "2026-11-14T10:33:06Z",
-          "text_clean": "我的意思是： | | StarsAI 这个台子，比 GANG 要好！ | | 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039",
-          "tweet_url": "https://x.com/Naive_BNB/status/2121551991684149305"
-        },
-        {
-          "author": "guoxf23",
-          "author_name": "guoxf23",
-          "post_time": "2026-11-15T07:11:25Z",
-          "text_clean": "🚀 错过StarAI的抓紧了！MoonAI时机刚刚好！ | | 🌟 $StarsAI（平台币） | CA: 0x81c3ab2c7ee773af2ac823b8cef3c430ef11f039 | | 🌕 $MoonAI | CA: 0x11f07e749af9440c9cb4bd455e7dd992be58cc7f | | 以前OKX那波实力，动不动几十上百倍。现在STARS AI Mint平台正式登陆BSC！ x.com/guoxf23/status/2121863626575552797/photo/1",
-          "tweet_url": "https://x.com/guoxf23/status/2121863626575552797"
         }
       ]
     },
