@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-15T05:28:18.598605Z",
+  "generated_at": "2026-11-15T05:37:10.553924Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2423,
+    "signals_total": 2424,
     "with_ca": 346,
-    "list_posts_total": 2733,
-    "unique_cas": 1155,
-    "dedup_merged_posts": 1578,
+    "list_posts_total": 2742,
+    "unique_cas": 1157,
+    "dedup_merged_posts": 1585,
     "passed": 196,
-    "dropped_dev": 352,
+    "dropped_dev": 353,
     "dropped_old": 393,
-    "dropped_no_time": 210,
+    "dropped_no_time": 211,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 0,
     "pending_retry": 0,
     "verdict_cached": 1155,
     "tags_refreshed": 8,
-    "dev_rechecked": 2,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 3,
     "site_rechecked": 4,
@@ -27,8 +27,8 @@
     "site_blocked_live": 4,
     "dropped_detail": {
       "old": 393,
-      "dev_over": 352,
-      "no_pool": 208,
+      "dev_over": 353,
+      "no_pool": 209,
       "no_created_at": 2
     }
   },
@@ -533,8 +533,8 @@
       "pair_created_at": "2026-11-14T19:43:13Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-14T19:50:09Z",
-      "post_count": 8,
-      "unique_authors": 2,
+      "post_count": 9,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "SolanaMemesScan",
@@ -591,6 +591,13 @@
           "post_time": "2026-11-15T01:49:16Z",
           "text_clean": "🍾 27.4X on a $BILL | | CA | | 85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump x.com/scarlex0/status/2121782553463988382/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2121782553463988382"
+        },
+        {
+          "author": "cfm_sol",
+          "author_name": "cfm_sol",
+          "post_time": "2026-11-15T05:30:50Z",
+          "text_clean": "$bill 600k dyor | | 85RhcSEMy15SNhFLmSArNm7udPKXVagVgsq4YmSopump | | okx wallet:web3.okx.com/ul/52alrff?ref=JEFF1 | | A pure meme coin, with the image of a U.S. dollar bill with legs. | | The official narrative is: \"Every billion starts with a bill.\" | | Both the website and X are producing a series of x.com/cfm_sol/status/2121838313825083437/photo/1",
+          "tweet_url": "https://x.com/cfm_sol/status/2121838313825083437"
         }
       ]
     },
