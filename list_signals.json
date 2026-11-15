@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:43:17.055719Z",
+  "generated_at": "2026-11-15T16:52:07.664279Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,17 +7,17 @@
   "stats": {
     "signals_total": 2517,
     "with_ca": 357,
-    "list_posts_total": 2967,
-    "unique_cas": 1238,
-    "dedup_merged_posts": 1729,
+    "list_posts_total": 2971,
+    "unique_cas": 1240,
+    "dedup_merged_posts": 1731,
     "passed": 202,
-    "dropped_dev": 394,
-    "dropped_old": 406,
+    "dropped_dev": 395,
+    "dropped_old": 407,
     "dropped_no_time": 230,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 1,
     "pending_retry": 0,
-    "verdict_cached": 1234,
+    "verdict_cached": 1238,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
@@ -26,8 +26,8 @@
     "site_recheck_blocked": 0,
     "site_blocked_live": 5,
     "dropped_detail": {
-      "old": 406,
-      "dev_over": 394,
+      "old": 407,
+      "dev_over": 395,
       "no_pool": 228,
       "no_created_at": 2,
       "fake_website:linktr.ee": 1
@@ -136,8 +136,8 @@
       "pair_created_at": "2026-11-15T09:16:14Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T10:02:51Z",
-      "post_count": 11,
-      "unique_authors": 4,
+      "post_count": 12,
+      "unique_authors": 5,
       "posts": [
         {
           "author": "scarlex0",
@@ -215,6 +215,13 @@
           "post_time": "2026-11-15T16:07:43Z",
           "text_clean": "FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump",
           "tweet_url": "https://x.com/Lovefeng87/status/2121998590210191713"
+        },
+        {
+          "author": "Castro764028",
+          "author_name": "Castro764028",
+          "post_time": "2026-11-15T16:49:36Z",
+          "text_clean": "Socks Neobank is still early guys | Load up your bags now and join the movement | | CA: FS1pBmZKp2Qw1atC64GoLamHstECAos9ot8bGPgDpump x.com/Castro764028/status/2122009130810417554/photo/1",
+          "tweet_url": "https://x.com/Castro764028/status/2122009130810417554"
         }
       ]
     },
