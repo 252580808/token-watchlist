@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-15T03:22:10.479359Z",
+  "generated_at": "2026-11-15T03:31:12.085224Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2409,
+    "signals_total": 2410,
     "with_ca": 345,
-    "list_posts_total": 2677,
-    "unique_cas": 1146,
-    "dedup_merged_posts": 1531,
+    "list_posts_total": 2685,
+    "unique_cas": 1148,
+    "dedup_merged_posts": 1537,
     "passed": 196,
-    "dropped_dev": 345,
+    "dropped_dev": 347,
     "dropped_old": 393,
     "dropped_no_time": 209,
     "dropped_dev_unknown": 0,
@@ -22,12 +22,12 @@
     "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 3,
-    "site_rechecked": 16,
-    "site_recheck_blocked": 3,
+    "site_rechecked": 14,
+    "site_recheck_blocked": 0,
     "site_blocked_live": 3,
     "dropped_detail": {
       "old": 393,
-      "dev_over": 345,
+      "dev_over": 347,
       "no_pool": 207,
       "no_created_at": 2
     }
@@ -46,7 +46,7 @@
       "pair_created_at": "2026-11-15T02:30:46Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T02:43:26Z",
-      "post_count": 5,
+      "post_count": 10,
       "unique_authors": 1,
       "posts": [
         {
@@ -83,6 +83,41 @@
           "post_time": "2026-11-15T03:08:57Z",
           "text_clean": "0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777 | 官方会发的 | 这是个很不错的meme | 百年一遇",
           "tweet_url": "https://x.com/abhao92702/status/2121802607073349923"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:17:30Z",
+          "text_clean": "0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777 | 我相信市场会做出反应 | 这是个很棒的标",
+          "tweet_url": "https://x.com/abhao92702/status/2121804761204941182"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:20:32Z",
+          "text_clean": "@Ed_x0101 @BinanceWallet @heyibinance @cz_binance 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777哥看看这个",
+          "tweet_url": "https://x.com/abhao92702/status/2121805523398152441"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:20:58Z",
+          "text_clean": "@YYzzy_diamond @TCryptochicks 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777哥看看这个",
+          "tweet_url": "https://x.com/abhao92702/status/2121805630109552776"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:21:32Z",
+          "text_clean": "@0xZhangCrypto1 @superbitmaneth 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777哥看看这个",
+          "tweet_url": "https://x.com/abhao92702/status/2121805773588291816"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:24:32Z",
+          "text_clean": "@heyi_binance4 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777哥看看这个",
+          "tweet_url": "https://x.com/abhao92702/status/2121806530345574680"
         }
       ]
     },
@@ -1693,7 +1728,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T15:29:18.559122Z",
+      "dev_check_at": "2026-11-15T03:30:53.391868Z",
       "smart_degen_count": 2,
       "renowned_count": 5,
       "pair_created_at": "2026-11-14T02:43:39Z",
