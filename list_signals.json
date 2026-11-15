@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T02:26:23.366453Z",
+  "generated_at": "2026-11-15T02:35:28.415447Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,28 +7,53 @@
   "stats": {
     "signals_total": 2403,
     "with_ca": 344,
-    "list_posts_total": 2628,
-    "unique_cas": 1125,
-    "dedup_merged_posts": 1503,
-    "passed": 196,
-    "dropped_dev": 342,
+    "list_posts_total": 2635,
+    "unique_cas": 1127,
+    "dedup_merged_posts": 1508,
+    "passed": 197,
+    "dropped_dev": 343,
     "dropped_old": 388,
     "dropped_no_time": 199,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
     "verdict_cached": 1125,
     "tags_refreshed": 8,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 4,
     "dropped_detail": {
       "old": 388,
-      "dev_over": 342,
+      "dev_over": 343,
       "no_pool": 197,
       "no_created_at": 2
     }
   },
   "items": [
+    {
+      "ca": "7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump",
+      "chain": "solana",
+      "symbol": "worth",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 30,
+      "renowned_count": 3,
+      "pair_created_at": "2026-11-15T00:50:29Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-15T02:26:06Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "scarlex0",
+          "author_name": "scarlex0",
+          "post_time": "2026-11-15T02:26:06Z",
+          "text_clean": "CA: | | 7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump x.com/scarlex0/status/2121791822448189808/photo/1",
+          "tweet_url": "https://x.com/scarlex0/status/2121791822448189808"
+        }
+      ]
+    },
     {
       "ca": "6pAYz4RmnatiTFqCTpgUC64fAKYPszqZK3CbRCvZpump",
       "chain": "solana",
