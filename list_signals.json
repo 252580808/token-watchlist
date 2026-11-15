@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T04:25:11.007792Z",
+  "generated_at": "2026-11-15T04:34:07.279325Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,24 +7,24 @@
   "stats": {
     "signals_total": 2417,
     "with_ca": 345,
-    "list_posts_total": 2713,
+    "list_posts_total": 2717,
     "unique_cas": 1154,
-    "dedup_merged_posts": 1559,
-    "passed": 197,
+    "dedup_merged_posts": 1563,
+    "passed": 196,
     "dropped_dev": 352,
     "dropped_old": 393,
     "dropped_no_time": 209,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 0,
     "pending_retry": 0,
-    "verdict_cached": 1152,
+    "verdict_cached": 1154,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 3,
-    "site_rechecked": 6,
-    "site_recheck_blocked": 0,
-    "site_blocked_live": 3,
+    "site_rechecked": 5,
+    "site_recheck_blocked": 1,
+    "site_blocked_live": 4,
     "dropped_detail": {
       "old": 393,
       "dev_over": 352,
@@ -3237,31 +3237,6 @@
       ]
     },
     {
-      "ca": "EcFqNvSqKuHEm5UxMpCHzgJcKdK8wLydvtP44b1cpump",
-      "chain": "solana",
-      "symbol": "WIZARDIO",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T22:50:07.887433Z",
-      "smart_degen_count": 6,
-      "renowned_count": 0,
-      "pair_created_at": "2026-11-13T14:24:59Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-13T14:44:56Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "SolanaMemesScan",
-          "author_name": "SolanaMemesScan",
-          "post_time": "2026-11-13T14:44:56Z",
-          "text_clean": "🧬 WALLET FLOW CHECK | $WIZARDIO | CA: EcFqNvSqKuHEm5UxMpCHzgJcKdK8wLydvtP44b1cpump | | Pump Fun Migrated | | 💧 Liq: $12.3K | Holders: 375 | 🥷 Sniper Hold: 0.6% | 🤖 Bot Degen Rate: 4.5% | Dev Team Hold: 0.0% | Top10 Holders: 13.1% | | 💹 Chart &amp; Trade: gmgn.ai/sol/token/lu5EtQcb_EcFqNvSqKuHEm5UxMpCHzgJcKdK8wLydvtP44b1cpump",
-          "tweet_url": "https://x.com/SolanaMemesScan/status/2121252982654415087"
-        }
-      ]
-    },
-    {
       "ca": "12m4AufHNA6fxGF6z5dH1quWKrGHMEmVRKiuhRLepump",
       "chain": "solana",
       "symbol": "PARANOID",
@@ -5310,7 +5285,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T21:20:14.123162Z",
-      "smart_degen_count": 91,
+      "smart_degen_count": 92,
       "renowned_count": 3,
       "pair_created_at": "2026-11-12T19:40:40Z",
       "freshness": "24h",
@@ -6108,7 +6083,7 @@
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-12T12:46:20Z",
-      "post_count": 15,
+      "post_count": 16,
       "unique_authors": 4,
       "posts": [
         {
@@ -6215,6 +6190,13 @@
           "post_time": "2026-11-14T06:32:14Z",
           "text_clean": "A new ATH soon today shitcoiners and I can’t wait 👏 | | If you like buying shitcoins, take a look at @ShitCoin4u | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump x.com/JamesWynnReal/status/2121491376462602545/photo/1",
           "tweet_url": "https://x.com/JamesWynnReal/status/2121491376462602545"
+        },
+        {
+          "author": "JamesWynnReal",
+          "author_name": "JamesWynnReal",
+          "post_time": "2026-11-15T04:25:21Z",
+          "text_clean": "We are $SHITCOIN. | | No utility, no value, no promises. | | 8p7GCo3fWJ55LFQbhkBd8hCpw3ACk98PgK7Lsd6Upump",
+          "tweet_url": "https://x.com/JamesWynnReal/status/2121821833129607570"
         }
       ]
     },
