@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-15T18:12:58.379951Z",
+  "generated_at": "2026-11-15T18:22:01.218367Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2509,
+    "signals_total": 2507,
     "with_ca": 357,
-    "list_posts_total": 2988,
-    "unique_cas": 1246,
-    "dedup_merged_posts": 1742,
-    "passed": 203,
+    "list_posts_total": 2992,
+    "unique_cas": 1248,
+    "dedup_merged_posts": 1744,
+    "passed": 204,
     "dropped_dev": 398,
-    "dropped_old": 407,
+    "dropped_old": 408,
     "dropped_no_time": 232,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 1,
     "pending_retry": 0,
-    "verdict_cached": 1245,
+    "verdict_cached": 1246,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 5,
-    "site_rechecked": 0,
+    "site_rechecked": 1,
     "site_recheck_blocked": 0,
     "site_blocked_live": 5,
     "dropped_detail": {
-      "old": 407,
+      "old": 408,
       "dev_over": 398,
       "no_pool": 230,
       "no_created_at": 2,
@@ -34,6 +34,31 @@
     }
   },
   "items": [
+    {
+      "ca": "0x0a3fc34070f002b4d62190812531db353f9021de",
+      "chain": "bsc",
+      "symbol": "SunAI",
+      "dev_count": 2,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 10,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-13T00:57:14Z",
+      "freshness": "72h",
+      "first_seen_at": "2026-11-15T18:16:17Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "peterkong777777",
+          "author_name": "peterkong777777",
+          "post_time": "2026-11-15T18:16:17Z",
+          "text_clean": "太阳就是希望。☀️ | ca：0x0a3fc34070f002b4d62190812531db353f9021de",
+          "tweet_url": "https://x.com/peterkong777777/status/2122030944009986286"
+        }
+      ]
+    },
     {
       "ca": "4TBfZCEafNoreVyAceHxWq62cxvTswpHcjqaMkMFpump",
       "chain": "solana",
@@ -511,8 +536,8 @@
       "pair_created_at": "2026-11-15T00:50:29Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T02:26:06Z",
-      "post_count": 3,
-      "unique_authors": 2,
+      "post_count": 4,
+      "unique_authors": 3,
       "posts": [
         {
           "author": "scarlex0",
@@ -534,6 +559,13 @@
           "post_time": "2026-11-15T02:36:32Z",
           "text_clean": "Cooked 2X on $WORTH | | 7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump x.com/0xAnon01/status/2121794450103873795/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2121794450103873795"
+        },
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-15T18:18:15Z",
+          "text_clean": "$worth 已从我频道 t.me/memelottery2024 的 $44.55K 入场点上涨 5.5 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_7mH4PaR9BMxAid2i1QNDBmziAwxyXBsPNKSMiWySpump x.com/kimjoona2026/status/2122031440481443983/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2122031440481443983"
         }
       ]
     },
@@ -6141,7 +6173,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-15T09:07:36.536186Z",
-      "smart_degen_count": 82,
+      "smart_degen_count": 84,
       "renowned_count": 6,
       "pair_created_at": "2026-11-11T02:27:43Z",
       "freshness": "72h",
