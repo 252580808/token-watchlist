@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T03:49:06.954296Z",
+  "generated_at": "2026-11-15T03:58:21.264882Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,27 +7,27 @@
   "stats": {
     "signals_total": 2414,
     "with_ca": 345,
-    "list_posts_total": 2693,
-    "unique_cas": 1150,
-    "dedup_merged_posts": 1543,
+    "list_posts_total": 2703,
+    "unique_cas": 1152,
+    "dedup_merged_posts": 1551,
     "passed": 196,
-    "dropped_dev": 349,
+    "dropped_dev": 351,
     "dropped_old": 393,
     "dropped_no_time": 209,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 0,
     "pending_retry": 0,
-    "verdict_cached": 1149,
+    "verdict_cached": 1150,
     "tags_refreshed": 8,
-    "dev_rechecked": 0,
+    "dev_rechecked": 2,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 3,
-    "site_rechecked": 10,
+    "site_rechecked": 8,
     "site_recheck_blocked": 0,
     "site_blocked_live": 3,
     "dropped_detail": {
       "old": 393,
-      "dev_over": 349,
+      "dev_over": 351,
       "no_pool": 207,
       "no_created_at": 2
     }
@@ -46,7 +46,7 @@
       "pair_created_at": "2026-11-15T02:30:46Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T02:43:26Z",
-      "post_count": 12,
+      "post_count": 14,
       "unique_authors": 1,
       "posts": [
         {
@@ -132,6 +132,20 @@
           "post_time": "2026-11-15T03:26:27Z",
           "text_clean": "@kingofgoldendog @JensenHuang @nvidia 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777哥看看这个",
           "tweet_url": "https://x.com/abhao92702/status/2121807012963164465"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:50:21Z",
+          "text_clean": "@DongBnb 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777看看这个dong",
+          "tweet_url": "https://x.com/abhao92702/status/2121813027272171526"
+        },
+        {
+          "author": "abhao92702",
+          "author_name": "abhao92702",
+          "post_time": "2026-11-15T03:50:51Z",
+          "text_clean": "@aa_AFeng @Dagoudao888 0x3adebc9dd0f8e8bcbb3b23eff41ad0fbfca37777看看这个峰哥",
+          "tweet_url": "https://x.com/abhao92702/status/2121813150408581478"
         }
       ]
     },
@@ -726,7 +740,7 @@
       "dev_count": 0,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-15T03:58:00.430488Z",
       "smart_degen_count": 0,
       "renowned_count": 0,
       "pair_created_at": "2026-11-14T14:49:51Z",
@@ -1717,7 +1731,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-14T15:56:32.146775Z",
+      "dev_check_at": "2026-11-15T03:58:00.430488Z",
       "smart_degen_count": 16,
       "renowned_count": 1,
       "pair_created_at": "2026-11-14T02:17:22Z",
