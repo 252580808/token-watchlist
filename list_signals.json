@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-15T01:23:28.380969Z",
+  "generated_at": "2026-11-15T01:32:21.362988Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2399,
-    "with_ca": 343,
-    "list_posts_total": 2607,
+    "signals_total": 2400,
+    "with_ca": 344,
+    "list_posts_total": 2610,
     "unique_cas": 1118,
-    "dedup_merged_posts": 1489,
+    "dedup_merged_posts": 1492,
     "passed": 196,
     "dropped_dev": 339,
     "dropped_old": 386,
     "dropped_no_time": 197,
     "dropped_dev_unknown": 0,
     "pending_retry": 0,
-    "verdict_cached": 1115,
+    "verdict_cached": 1118,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
@@ -3456,8 +3456,8 @@
       "pair_created_at": "2026-11-13T11:59:48Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-13T12:04:48Z",
-      "post_count": 13,
-      "unique_authors": 9,
+      "post_count": 14,
+      "unique_authors": 10,
       "posts": [
         {
           "author": "coinwingscn",
@@ -3549,6 +3549,13 @@
           "post_time": "2026-11-14T02:30:22Z",
           "text_clean": "又入金了 | 找老妈要了钱 | 我觉得回到我的成本应该问题不大 | 我现在要做的就是不停的波段 | 把我的成本压下去 | 0xe9563df445e8625a28017333d757394f8fb8abcd",
           "tweet_url": "https://x.com/dbiwnqun13510/status/2121430511398838486"
+        },
+        {
+          "author": "tc87839487",
+          "author_name": "tc87839487",
+          "post_time": "2026-11-15T01:29:48Z",
+          "text_clean": "@jagerbnb_ @AgentCardsHQ 5️⃣ GANG：Game Life 第 5 章已解锁；第 2 期申请今晚 00:00 开放 | @gangdotfun 第 1 期 Game Life（游戏人生）已毕业。API 现读 24h 成交约 3.53 万 USD，持仓约 360，FDV 约 4.53 万 USD。CA：0xE9563DF445e8625A28017333d757394F8fB8abcD | 买卖税各 3%，金库",
+          "tweet_url": "https://x.com/tc87839487/status/2121777656626659644"
         }
       ]
     },
@@ -4563,7 +4570,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-14T21:47:07.837582Z",
-      "smart_degen_count": 11,
+      "smart_degen_count": 14,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T23:32:51Z",
       "freshness": "24h",
