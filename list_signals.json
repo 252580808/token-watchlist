@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T12:25:47.220781Z",
+  "generated_at": "2026-11-16T12:34:47.513537Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,33 +7,58 @@
   "stats": {
     "signals_total": 2347,
     "with_ca": 317,
-    "list_posts_total": 3469,
-    "unique_cas": 1423,
-    "dedup_merged_posts": 2046,
-    "passed": 236,
+    "list_posts_total": 3474,
+    "unique_cas": 1426,
+    "dedup_merged_posts": 2048,
+    "passed": 237,
     "dropped_dev": 447,
     "dropped_old": 434,
-    "dropped_no_time": 298,
+    "dropped_no_time": 300,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 1,
     "pending_retry": 0,
     "verdict_cached": 1423,
     "tags_refreshed": 8,
-    "dev_rechecked": 5,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 7,
-    "site_rechecked": 0,
+    "site_rechecked": 1,
     "site_recheck_blocked": 0,
     "site_blocked_live": 7,
     "dropped_detail": {
       "old": 434,
       "dev_over": 447,
-      "no_pool": 296,
+      "no_pool": 298,
       "no_created_at": 2,
       "fake_website:linktr.ee": 1
     }
   },
   "items": [
+    {
+      "ca": "0x5773df1708968fac1ecdb039a61063a3a7017777",
+      "chain": "bsc",
+      "symbol": "SWJ",
+      "dev_count": 2,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 9,
+      "renowned_count": 4,
+      "pair_created_at": "2026-11-16T12:11:06Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-16T12:26:24Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "zhubi_",
+          "author_name": "zhubi_",
+          "post_time": "2026-11-16T12:26:24Z",
+          "text_clean": "01 | I stand with Jensen | | 02 | #standwithjensen | | 03 | CA: 0x5773df1708968fac1ecdb039a61063a3a7017777 | | 04 | 0xbfa0dcb163518275b07886d32b1096d7c1478b8f",
+          "tweet_url": "https://x.com/zhubi_/status/2122305282068160570"
+        }
+      ]
+    },
     {
       "ca": "0x50ced772634a8a54f1423670e340d8817b747777",
       "chain": "bsc",
@@ -47,7 +72,7 @@
       "pair_created_at": "2026-11-16T02:58:08Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T12:06:19Z",
-      "post_count": 2,
+      "post_count": 3,
       "unique_authors": 2,
       "posts": [
         {
@@ -63,6 +88,13 @@
           "post_time": "2026-11-16T12:09:49Z",
           "text_clean": "币安人生的 | 先上车再研究0x50ced772634a8a54f1423670e340d8817b747777",
           "tweet_url": "https://x.com/lingluan1998/status/2122301108387549606"
+        },
+        {
+          "author": "lingluan1998",
+          "author_name": "lingluan1998",
+          "post_time": "2026-11-16T12:28:01Z",
+          "text_clean": "阴谋 | 先上车再研究0x50ced772634a8a54f1423670e340d8817b747777",
+          "tweet_url": "https://x.com/lingluan1998/status/2122305689033003062"
         }
       ]
     },
@@ -129,7 +161,7 @@
       "pair_created_at": "2026-11-16T09:48:47Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T10:00:03Z",
-      "post_count": 3,
+      "post_count": 4,
       "unique_authors": 1,
       "posts": [
         {
@@ -152,6 +184,13 @@
           "post_time": "2026-11-16T10:04:59Z",
           "text_clean": "耄耋合约极度干净。 | 没有老鼠仓，没有提前仓，这次我们要一起做出圈，耄耋万岁。 | 0x8a3a399dbd40a1842e64e7075ee3f86815f87777 x.com/MURCATi/status/2122269695508455446/photo/1",
           "tweet_url": "https://x.com/MURCATi/status/2122269695508455446"
+        },
+        {
+          "author": "MURCATi",
+          "author_name": "MURCATi",
+          "post_time": "2026-11-16T12:32:16Z",
+          "text_clean": "史上最大的空投。 | 每买入100U 耄耋。即可获得飞轮50U奖励。 | 无限制，即时到账。 | 0x8a3a399dbd40a1842e64e7075ee3f86815f87777 x.com/MURCATi/status/2122306760644161993/photo/1",
+          "tweet_url": "https://x.com/MURCATi/status/2122306760644161993"
         }
       ]
     },
