@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-16T15:42:59.539317Z",
+  "generated_at": "2026-11-16T15:51:14.274025Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2327,
-    "with_ca": 315,
-    "list_posts_total": 3563,
-    "unique_cas": 1459,
-    "dedup_merged_posts": 2104,
+    "signals_total": 2323,
+    "with_ca": 313,
+    "list_posts_total": 3578,
+    "unique_cas": 1463,
+    "dedup_merged_posts": 2115,
     "passed": 70,
     "dropped_dev": 52,
     "dropped_old": 223,
@@ -27,7 +27,7 @@
     "site_blocked_live": 5,
     "dropped_detail": {
       "old": 223,
-      "l2_suffix": 814,
+      "l2_suffix": 818,
       "dev_over": 52,
       "no_pool": 290,
       "no_created_at": 2,
@@ -49,7 +49,7 @@
       "pair_created_at": "2026-11-16T15:16:14Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T15:16:41Z",
-      "post_count": 4,
+      "post_count": 7,
       "unique_authors": 1,
       "posts": [
         {
@@ -79,6 +79,27 @@
           "post_time": "2026-11-16T15:36:21Z",
           "text_clean": "4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122353086903833008/photo/1",
           "tweet_url": "https://x.com/JamesWynnReal/status/2122353086903833008"
+        },
+        {
+          "author": "JamesWynnReal",
+          "author_name": "JamesWynnReal",
+          "post_time": "2026-11-16T15:41:17Z",
+          "text_clean": "Telegram coming soon | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | this is gonna be a fun one! x.com/JamesWynnReal/status/2122354327289573385/photo/1",
+          "tweet_url": "https://x.com/JamesWynnReal/status/2122354327289573385"
+        },
+        {
+          "author": "JamesWynnReal",
+          "author_name": "JamesWynnReal",
+          "post_time": "2026-11-16T15:42:18Z",
+          "text_clean": "y’as all ready for this one??? | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | bobothebear.net | | tg coming soon x.com/JamesWynnReal/status/2122354582261203020/photo/1",
+          "tweet_url": "https://x.com/JamesWynnReal/status/2122354582261203020"
+        },
+        {
+          "author": "JamesWynnReal",
+          "author_name": "JamesWynnReal",
+          "post_time": "2026-11-16T15:44:59Z",
+          "text_clean": "$186k volume | | 200 holders | | Sniper shield finishes in 2 mins | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122355258387259802/photo/1",
+          "tweet_url": "https://x.com/JamesWynnReal/status/2122355258387259802"
         }
       ]
     },
