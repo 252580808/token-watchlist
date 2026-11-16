@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-16T07:33:44.152975Z",
+  "generated_at": "2026-11-16T07:36:29.480997Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2462,
-    "with_ca": 338,
-    "list_posts_total": 3313,
-    "unique_cas": 1361,
-    "dedup_merged_posts": 1952,
-    "passed": 224,
+    "signals_total": 2455,
+    "with_ca": 336,
+    "list_posts_total": 3319,
+    "unique_cas": 1363,
+    "dedup_merged_posts": 1956,
+    "passed": 225,
     "dropped_dev": 432,
-    "dropped_old": 423,
+    "dropped_old": 424,
     "dropped_no_time": 274,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 1,
     "pending_retry": 0,
-    "verdict_cached": 1359,
+    "verdict_cached": 1361,
     "tags_refreshed": 8,
-    "dev_rechecked": 3,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 6,
-    "site_rechecked": 0,
+    "site_rechecked": 1,
     "site_recheck_blocked": 0,
     "site_blocked_live": 7,
     "dropped_detail": {
-      "old": 423,
+      "old": 424,
       "dev_over": 432,
       "no_pool": 272,
       "no_created_at": 2,
@@ -34,6 +34,31 @@
     }
   },
   "items": [
+    {
+      "ca": "5s9L2dSDuxAe7QmBcs6GZsy6PN5Wn3Hww3T7LCjBRKR",
+      "chain": "solana",
+      "symbol": "BREAKER",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 11,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-15T19:27:00Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-16T07:24:14Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Lqrp92",
+          "author_name": "Lqrp92",
+          "post_time": "2026-11-16T07:24:14Z",
+          "text_clean": "非常不错的项目方，锁了3亿两年， | 做的东西也不错 | 5s9L2dSDuxAe7QmBcs6GZsy6PN5Wn3Hww3T7LCjBRKR | @breakerdotto",
+          "tweet_url": "https://x.com/Lqrp92/status/2122229239147864400"
+        }
+      ]
+    },
     {
       "ca": "0xde8cd9e69799bbf0ad7b9e0ce262181923999863",
       "chain": "bsc",
@@ -72,7 +97,7 @@
       "pair_created_at": "2026-11-16T05:18:50Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T05:22:34Z",
-      "post_count": 1,
+      "post_count": 2,
       "unique_authors": 1,
       "posts": [
         {
@@ -81,6 +106,13 @@
           "post_time": "2026-11-16T05:22:34Z",
           "text_clean": "CA: 5qCoiRAxPBWQ6P1DpEGFA8DWXAkn5QUUBRotubiWpump | | helioswarm.xyz",
           "tweet_url": "https://x.com/dudunode/status/2122198623010369670"
+        },
+        {
+          "author": "dudunode",
+          "author_name": "dudunode",
+          "post_time": "2026-11-16T07:23:54Z",
+          "text_clean": "CA: 5qCoiRAxPBWQ6P1DpEGFA8DWXAkn5QUUBRotubiWpump",
+          "tweet_url": "https://x.com/dudunode/status/2122229154653577375"
         }
       ]
     },
@@ -389,8 +421,8 @@
       "pair_created_at": "2026-11-15T22:12:04Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T00:40:32Z",
-      "post_count": 4,
-      "unique_authors": 1,
+      "post_count": 5,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "scarlex0",
@@ -419,6 +451,13 @@
           "post_time": "2026-11-16T02:22:47Z",
           "text_clean": "💸 12.2X on a solana:2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump | CA | | 2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump x.com/scarlex0/status/2122153378448818505/photo/1",
           "tweet_url": "https://x.com/scarlex0/status/2122153378448818505"
+        },
+        {
+          "author": "guapi2235",
+          "author_name": "guapi2235",
+          "post_time": "2026-11-16T07:25:11Z",
+          "text_clean": "0x1b5e17be621d83c726cbc825c7eb1c8e247f7777 | | 2kWx47CUrcXtzptFNnbSXKq3vo1ebqyLBhRytKRGpump | | sol都玩到400k了啊 这是抖音的小狗啊 78天前的og！！在bsc发送吧！ x.com/guapi2235/status/2122229480290918547/photo/1",
+          "tweet_url": "https://x.com/guapi2235/status/2122229480290918547"
         }
       ]
     },
@@ -2340,7 +2379,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-15T19:33:48.106259Z",
+      "dev_check_at": "2026-11-16T07:35:31.241132Z",
       "smart_degen_count": 69,
       "renowned_count": 1,
       "pair_created_at": "2026-11-11T21:02:27Z",
@@ -5913,7 +5952,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 21,
+      "post_count": 22,
       "unique_authors": 4,
       "posts": [
         {
@@ -6062,6 +6101,13 @@
           "post_time": "2026-11-16T01:13:47Z",
           "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring 已从我频道 t.me/memelottery2024 的 $19.76K 入场点上涨 40 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring x.com/kimjoona2026/status/2122136013464350926/photo/1",
           "tweet_url": "https://x.com/kimjoona2026/status/2122136013464350926"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-16T07:26:19Z",
+          "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring to 100mil by EOM! | | $MASK $PONS x.com/ZKhedge/status/2122229762198561012/photo/1",
+          "tweet_url": "https://x.com/ZKhedge/status/2122229762198561012"
         }
       ]
     },
@@ -7189,7 +7235,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-15T20:54:43.139283Z",
-      "smart_degen_count": 65,
+      "smart_degen_count": 66,
       "renowned_count": 0,
       "pair_created_at": "2026-11-12T08:30:05Z",
       "freshness": "24h",
