@@ -1,39 +1,114 @@
 {
-  "generated_at": "2026-11-16T00:57:56.725341Z",
+  "generated_at": "2026-11-16T01:07:18.039002Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2488,
-    "with_ca": 353,
-    "list_posts_total": 3132,
-    "unique_cas": 1303,
-    "dedup_merged_posts": 1829,
-    "passed": 213,
-    "dropped_dev": 410,
+    "signals_total": 2487,
+    "with_ca": 352,
+    "list_posts_total": 3141,
+    "unique_cas": 1309,
+    "dedup_merged_posts": 1832,
+    "passed": 216,
+    "dropped_dev": 411,
     "dropped_old": 416,
-    "dropped_no_time": 257,
+    "dropped_no_time": 259,
     "dropped_dev_unknown": 0,
     "dropped_fake_site": 1,
     "pending_retry": 0,
     "verdict_cached": 1303,
     "tags_refreshed": 8,
-    "dev_rechecked": 0,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 6,
-    "site_rechecked": 0,
+    "site_rechecked": 3,
     "site_recheck_blocked": 0,
     "site_blocked_live": 6,
     "dropped_detail": {
       "old": 416,
-      "dev_over": 410,
-      "no_pool": 255,
+      "dev_over": 411,
+      "no_pool": 257,
       "no_created_at": 2,
       "fake_website:linktr.ee": 1
     }
   },
   "items": [
+    {
+      "ca": "0xa14af51c0e9ef38bc0d0008b8c8f5508f9f3f237",
+      "chain": "ethereum",
+      "symbol": "BETTY",
+      "dev_count": 0,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 16,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-15T12:06:59Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-16T01:01:23Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "Sol5000u",
+          "author_name": "Sol5000u",
+          "post_time": "2026-11-16T01:01:23Z",
+          "text_clean": "x.com/blackbettyuni/status/2121991682560237995?a=-rRRvrpcxcYOM0mFiPY&s=20 | 0xa14af51c0e9ef38bc0d0008b8c8f5508f9f3f237 | 彩票赌一手？ | 3E开盘 烧了 很诡异 权限没丢 看了下网站做得还可以 原创IP DEX付了 INS TIKTOK YOUTUBE都还弄了账号 | 风险就是权限没丢",
+          "tweet_url": "https://x.com/Sol5000u/status/2122132892914782625"
+        }
+      ]
+    },
+    {
+      "ca": "0x7efd78b1540a281ecc3f03da98f25d5fac46ffff",
+      "chain": "ethereum",
+      "symbol": "PHIGHT",
+      "dev_count": 0,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 24,
+      "renowned_count": 0,
+      "pair_created_at": "2026-11-15T23:55:47Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-16T00:56:05Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "_mlnbro",
+          "author_name": "_mlnbro",
+          "post_time": "2026-11-16T00:56:05Z",
+          "text_clean": "$PHIGHT 快速研究⬇️ | | 1️⃣ 基本信息 | 合约地址⬇️ | 0x7efd78b1540a281ecc3f03da98f25d5fac46ffff | 名称/符号：Phight Company / $PHIGHT | | 发起钱包：0xd75BCb22bE4326842fed1423feA9286C7Ec80E52（现在持有 6.90%） | | 链上标注的创建者 0xB97dA46B4C19A825Ae54D297A676763Bdca069c2 是官方发射合约",
+          "tweet_url": "https://x.com/_mlnbro/status/2122131557725151645"
+        }
+      ]
+    },
+    {
+      "ca": "5zWiVuC6n8tw9Sj31WZzm9PD6a3LM7dXVACNPyYypump",
+      "chain": "solana",
+      "symbol": "t[o_o]t",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 4,
+      "renowned_count": 1,
+      "pair_created_at": "2026-11-16T00:35:51Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-16T00:56:04Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "wick_calls",
+          "author_name": "wick_calls",
+          "post_time": "2026-11-16T00:56:04Z",
+          "text_clean": "$t[o_o]t · mc $13.9k · dev's first coin | Category: AI. An AI agent uses trading fees to build paid apps and cover its own bills. Half the apps’ revenue buys back and burns the coin. | 5zWiVuC6n8tw9Sj31WZzm9PD6a3LM7dXVACNPyYypump x.com/wick_calls/status/2122131552796578215/photo/1",
+          "tweet_url": "https://x.com/wick_calls/status/2122131552796578215"
+        }
+      ]
+    },
     {
       "ca": "Fvv62MhgjrXpvXmKcLci2HoiCAxFmSkUm1Niamvipump",
       "chain": "solana",
@@ -1644,7 +1719,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-15T13:01:34.771246Z",
+      "dev_check_at": "2026-11-16T01:07:00.993766Z",
       "smart_degen_count": 9,
       "renowned_count": 1,
       "pair_created_at": "2026-11-14T12:18:04Z",
@@ -5554,7 +5629,7 @@
       "pair_created_at": "2026-11-10T19:09:08Z",
       "freshness": "72h",
       "first_seen_at": "2026-11-13T01:05:14Z",
-      "post_count": 18,
+      "post_count": 20,
       "unique_authors": 4,
       "posts": [
         {
@@ -5682,6 +5757,20 @@
           "post_time": "2026-11-16T00:32:58Z",
           "text_clean": "this will be huge, and its FREE, 250x here MIN solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring",
           "tweet_url": "https://x.com/ZKhedge/status/2122125740657569969"
+        },
+        {
+          "author": "kimjoona2026",
+          "author_name": "kimjoona2026",
+          "post_time": "2026-11-16T00:54:45Z",
+          "text_clean": "solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring 已从我频道 t.me/memelottery2024 的 $19.76K 入场点上涨 35 倍 | | 群里信号很多，点击加入。 | | 📈 图表 &amp; 交易: gmgn.ai/sol/token/BlRuyRK8_65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring x.com/kimjoona2026/status/2122131220956119058/photo/1",
+          "tweet_url": "https://x.com/kimjoona2026/status/2122131220956119058"
+        },
+        {
+          "author": "ZKhedge",
+          "author_name": "ZKhedge",
+          "post_time": "2026-11-16T00:55:35Z",
+          "text_clean": "WEN @bigwarzeth, @uncsnipes and @ZKhedge in the same coin, you know its doing 9 figures! | | solana:65iH8k736QNhuUHm1tt8X7yJXpJ517HPPq8BrVdwring x.com/ZKhedge/status/2122131430994247704/photo/1",
+          "tweet_url": "https://x.com/ZKhedge/status/2122131430994247704"
         }
       ]
     },
