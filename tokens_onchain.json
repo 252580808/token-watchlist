@@ -1,34 +1,5 @@
 [
   {
-    "ca": "EnrLgY3pVYGDUjpeK53SZjQZibtUPdTcR89zKLdKypay",
-    "chain": "sol",
-    "name": "Payout",
-    "symbol": "PAYOUT",
-    "first_seen": "2026-11-16 11:14",
-    "created_at": "2026-11-16 19:13",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-16 11:14",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 10437.56,
-    "market_cap": 15044.9,
-    "holders": 171,
-    "dev_count": 0,
-    "dev_creator": "",
-    "gmgn_launchpad": "Pump.fun",
-    "description": "Deployed using https://j7tracker.io",
-    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知  Deployed using https://j7tracker.io",
-    "twitter": "https://x.com/UsePayout",
-    "website": "https://usepayout.fun/",
-    "telegram": "",
-    "twitter_dup": 0,
-    "image_dup": 0,
-    "creator_token_status": "",
-    "liq_now": 10437.55607689876,
-    "liq_ts": 1794829561,
-    "liq_src": "GMGN"
-  },
-  {
     "ca": "qay6c14bea8Y2ebCYwDpNtMqxEE27WZFJELKPQ6cGTA",
     "chain": "sol",
     "name": "Turnpike",
@@ -54,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 19445.81044840128,
-    "liq_ts": 1794829561,
+    "liq_ts": 1794829866,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 24441.337937103843,
-    "liq_ts": 1794829561,
+    "liq_ts": 1794829866,
     "liq_src": "GMGN"
   }
 ]
