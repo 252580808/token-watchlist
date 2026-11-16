@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-11-16T18:42:35.377990Z",
+  "generated_at": "2026-11-16T18:51:30.743791Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2316,
+    "signals_total": 2315,
     "with_ca": 316,
-    "list_posts_total": 3667,
-    "unique_cas": 1491,
-    "dedup_merged_posts": 2176,
-    "passed": 26,
+    "list_posts_total": 3674,
+    "unique_cas": 1493,
+    "dedup_merged_posts": 2181,
+    "passed": 25,
     "dropped_dev": 54,
     "dropped_old": 230,
-    "dropped_no_time": 295,
+    "dropped_no_time": 296,
     "dropped_dev_unknown": 2,
     "dropped_fake_site": 1,
     "pending_retry": 0,
-    "verdict_cached": 656,
+    "verdict_cached": 659,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
-    "site_rechecked": 1,
+    "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 5,
-    "pool_too_old_live": 46,
+    "pool_too_old_live": 47,
     "dropped_detail": {
       "old": 230,
-      "l2_suffix": 832,
+      "l2_suffix": 833,
       "dev_over": 54,
-      "no_pool": 293,
+      "no_pool": 294,
       "no_created_at": 2,
       "fake_website:linktr.ee": 1,
       "mcap_liq_high": 2
@@ -50,8 +50,8 @@
       "pair_created_at": "2026-11-16T18:23:06Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T18:36:05Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "abhao92702",
@@ -59,6 +59,13 @@
           "post_time": "2026-11-16T18:36:05Z",
           "text_clean": "0x2c853c68aa83dd6258fbde57caed21d97b6edb90 | 看看这个我草 x.com/abhao92702/status/2122398317133062286/photo/1",
           "tweet_url": "https://x.com/abhao92702/status/2122398317133062286"
+        },
+        {
+          "author": "Skullow00",
+          "author_name": "Skullow00",
+          "post_time": "2026-11-16T18:46:17Z",
+          "text_clean": "Holy shit, all these accounts in FOMO's demo video bought the same token called FOMOFUN at the same time. | | WTF??? IS THIS A FUCKING LAUNCH FROM FOMO THEMSELVES???? | | 0x2c853c68aa83dd6258fbde57caed21d97b6edb90 x.com/Skullow00/status/2122400883619283028/photo/1",
+          "tweet_url": "https://x.com/Skullow00/status/2122400883619283028"
         }
       ]
     },
@@ -100,7 +107,7 @@
       "pair_created_at": "2026-11-16T15:16:14Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T15:16:41Z",
-      "post_count": 15,
+      "post_count": 16,
       "unique_authors": 1,
       "posts": [
         {
@@ -207,6 +214,13 @@
           "post_time": "2026-11-16T18:28:58Z",
           "text_clean": "x.com/i/spaces/1zkZaXoWanVbjb | | Can buy here pre bond with USDC on Solana: | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | Let’s run it.",
           "tweet_url": "https://x.com/JamesWynnReal/status/2122396524223299728"
+        },
+        {
+          "author": "JamesWynnReal",
+          "author_name": "JamesWynnReal",
+          "post_time": "2026-11-16T18:44:32Z",
+          "text_clean": "Will be by far the biggest runner this bear cycle | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122400443322241335/photo/1",
+          "tweet_url": "https://x.com/JamesWynnReal/status/2122400443322241335"
         }
       ]
     },
@@ -925,59 +939,6 @@
           "post_time": "2026-11-13T23:22:18Z",
           "text_clean": "Buy gmgn : gmgn.ai/robinhood/token/Douma_0x2a804708122850a06025e216a57db04f13d2acf6",
           "tweet_url": "https://x.com/Douma_signal/status/2121383182222389727"
-        }
-      ]
-    },
-    {
-      "ca": "0xc9f412f082866aa2eabd0de6280da54c839c3013",
-      "chain": "robinhood",
-      "symbol": "ESTR",
-      "dev_count": 0,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-16T11:58:24.134696Z",
-      "smart_degen_count": 3,
-      "renowned_count": 0,
-      "pair_created_at": "2026-11-13T18:44:33Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-13T19:42:49Z",
-      "post_count": 5,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "Douma_signal",
-          "author_name": "Douma_signal",
-          "post_time": "2026-11-13T19:42:49Z",
-          "text_clean": "Buy gmgn : gmgn.ai/robinhood/token/Douma_0xc9f412f082866aa2eabd0de6280da54c839c3013",
-          "tweet_url": "https://x.com/Douma_signal/status/2121327946376135066"
-        },
-        {
-          "author": "Douma_signal",
-          "author_name": "Douma_signal",
-          "post_time": "2026-11-13T21:32:01Z",
-          "text_clean": "✅ $ESTR updated - called at $188k, now $389k | | 2X done 🔥 | | 0xc9f412f082866aa2eabd0de6280da54c839c3013 | | x.com/Douma_signal/status/2121327719107703283 | | #dyor x.com/Douma_signal/status/2121355428001165820/photo/1",
-          "tweet_url": "https://x.com/Douma_signal/status/2121355428001165820"
-        },
-        {
-          "author": "Douma_signal",
-          "author_name": "Douma_signal",
-          "post_time": "2026-11-13T21:32:17Z",
-          "text_clean": "Buy gmgn : gmgn.ai/robinhood/token/Douma_0xc9f412f082866aa2eabd0de6280da54c839c3013",
-          "tweet_url": "https://x.com/Douma_signal/status/2121355495399371156"
-        },
-        {
-          "author": "1000x_Hunter_",
-          "author_name": "1000x_Hunter_",
-          "post_time": "2026-11-13T22:18:58Z",
-          "text_clean": "My entry on $ESTR at $4.7k market cap | | Shared in my TG | | 0xc9f412F082866aA2EabD0DE6280dA54C839c3013 x.com/1000x_Hunter_/status/2121367241744949543/photo/1",
-          "tweet_url": "https://x.com/1000x_Hunter_/status/2121367241744949543"
-        },
-        {
-          "author": "1000x_Hunter_",
-          "author_name": "1000x_Hunter_",
-          "post_time": "2026-11-13T22:20:49Z",
-          "text_clean": "89x Returns from our initial | investment on $ESTR | | 🚀🔥 | Ca | 0xc9f412F082866aA2EabD0DE6280dA54C839c3013 x.com/1000x_Hunter_/status/2121367707274621160/photo/1",
-          "tweet_url": "https://x.com/1000x_Hunter_/status/2121367707274621160"
         }
       ]
     }
