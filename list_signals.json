@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T17:59:49.539026Z",
+  "generated_at": "2026-11-17T18:08:20.779451Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,31 +7,31 @@
   "stats": {
     "signals_total": 1975,
     "with_ca": 266,
-    "list_posts_total": 4444,
-    "unique_cas": 1783,
-    "dedup_merged_posts": 2661,
-    "passed": 21,
+    "list_posts_total": 4449,
+    "unique_cas": 1785,
+    "dedup_merged_posts": 2664,
+    "passed": 22,
     "dropped_dev": 63,
     "dropped_old": 251,
     "dropped_no_time": 368,
     "dropped_dev_unknown": 2,
     "dropped_fake_site": 2,
     "pending_retry": 0,
-    "verdict_cached": 771,
+    "verdict_cached": 772,
     "tags_refreshed": 8,
     "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
-    "site_rechecked": 0,
+    "site_rechecked": 1,
     "site_recheck_blocked": 0,
     "site_blocked_live": 5,
     "pool_too_old_live": 60,
-    "v9_rechecked": 6,
+    "v9_rechecked": 1,
     "v9_ready": 0,
     "v9_not_ready": 0,
     "dropped_detail": {
       "old": 251,
-      "l2_suffix": 1011,
+      "l2_suffix": 1012,
       "dev_over": 63,
       "no_pool": 366,
       "no_created_at": 2,
@@ -41,6 +41,37 @@
     }
   },
   "items": [
+    {
+      "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
+      "chain": "solana",
+      "symbol": "ACRUX",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 14,
+      "renowned_count": 0,
+      "ready_to_push": false,
+      "net_buy_count": null,
+      "net_buy_pass": null,
+      "social_ok": null,
+      "v9_reasons": [],
+      "v9_check_at": "",
+      "pair_created_at": "2026-11-17T17:30:24Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-17T18:04:00Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "alphaviper01",
+          "author_name": "alphaviper01",
+          "post_time": "2026-11-17T18:04:00Z",
+          "text_clean": "CA | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122752631139623065/photo/1",
+          "tweet_url": "https://x.com/alphaviper01/status/2122752631139623065"
+        }
+      ]
+    },
     {
       "ca": "4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu",
       "chain": "solana",
@@ -60,8 +91,8 @@
       "pair_created_at": "2026-11-17T16:45:56Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T17:40:01Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "shanheBTC888",
@@ -69,6 +100,13 @@
           "post_time": "2026-11-17T17:40:01Z",
           "text_clean": "solana:4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu | | 4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu | | 网络一断，卡刷不了、转账停了、AI也离线。 | | 但你的手机不必跟着黑。 | | REFUGIUM | ✅ 离线支付（二维码 / 蓝牙 / 声音传递，有信号再上链） | ✅ 手机对手机消息 | ✅",
           "tweet_url": "https://x.com/shanheBTC888/status/2122746593996870106"
+        },
+        {
+          "author": "btc2ai",
+          "author_name": "btc2ai",
+          "post_time": "2026-11-17T17:58:05Z",
+          "text_clean": "$REFU | Refugium 使用了Solana的durable nonce机制，很符合现在大环境哈，和地缘政治战争环境而准备 | | CA：4ULpYvaTGRq1KnaCiPhz52nyQFx86wN1vqqX3ny8refu x.com/btc2ai/status/2122751141469679739/photo/1",
+          "tweet_url": "https://x.com/btc2ai/status/2122751141469679739"
         }
       ]
     },
