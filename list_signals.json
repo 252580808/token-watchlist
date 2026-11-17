@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T23:32:16.915374Z",
+  "generated_at": "2026-11-17T23:37:42.464830Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -10,7 +10,7 @@
     "list_posts_total": 4564,
     "unique_cas": 1811,
     "dedup_merged_posts": 2753,
-    "passed": 25,
+    "passed": 22,
     "dropped_dev": 64,
     "dropped_old": 252,
     "dropped_no_time": 371,
@@ -19,7 +19,7 @@
     "pending_retry": 0,
     "verdict_cached": 782,
     "tags_refreshed": 8,
-    "dev_rechecked": 1,
+    "dev_rechecked": 4,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 1,
     "site_rechecked": 0,
@@ -27,8 +27,8 @@
     "site_blocked_live": 5,
     "pool_too_old_live": 60,
     "v9_rechecked": 6,
-    "v9_ready": 0,
-    "v9_not_ready": 0,
+    "v9_ready": 5,
+    "v9_not_ready": 3,
     "dropped_detail": {
       "old": 252,
       "l2_suffix": 1029,
@@ -38,7 +38,8 @@
       "fake_website:linktr.ee": 1,
       "mcap_liq_high": 3,
       "fake_website:knowyourmeme.com": 1
-    }
+    },
+    "v9_new_protected": 12
   },
   "items": [
     {
@@ -54,6 +55,7 @@
       "ready_to_push": false,
       "net_buy_count": null,
       "net_buy_pass": null,
+      "net_buy_source": "",
       "social_ok": null,
       "v9_reasons": [],
       "v9_check_at": "",
@@ -85,6 +87,7 @@
       "ready_to_push": false,
       "net_buy_count": null,
       "net_buy_pass": null,
+      "net_buy_source": "",
       "social_ok": null,
       "v9_reasons": [],
       "v9_check_at": "",
@@ -116,12 +119,10 @@
       "ready_to_push": false,
       "net_buy_count": null,
       "net_buy_pass": null,
+      "net_buy_source": "",
       "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T21:44:15.553920Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-17T10:54:53Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T19:28:05Z",
@@ -150,11 +151,10 @@
       "ready_to_push": false,
       "net_buy_count": 0,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:20:17.745721Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-17T17:30:24Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T18:04:00Z",
@@ -197,11 +197,10 @@
       "ready_to_push": false,
       "net_buy_count": 1,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:02:13.706291Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-17T16:45:56Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T17:40:01Z",
@@ -237,11 +236,10 @@
       "ready_to_push": false,
       "net_buy_count": 0,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:38:21.707546Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-17T16:02:35Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T16:14:48Z",
@@ -264,17 +262,16 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-17T23:37:17.801519Z",
       "smart_degen_count": 41,
       "renowned_count": 1,
       "ready_to_push": false,
       "net_buy_count": null,
       "net_buy_pass": null,
+      "net_buy_source": "",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:14:13.873216Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-17T10:53:31Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T11:23:15Z",
@@ -324,11 +321,10 @@
       "ready_to_push": false,
       "net_buy_count": 0,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:14:13.873216Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-16T23:28:22Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T11:08:22Z",
@@ -357,12 +353,10 @@
       "ready_to_push": false,
       "net_buy_count": 1,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T23:14:13.873216Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-16T19:15:26Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T10:24:00Z",
@@ -391,12 +385,10 @@
       "ready_to_push": false,
       "net_buy_count": 0,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T23:14:13.873216Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-16T12:20:46Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T09:59:59Z",
@@ -425,12 +417,10 @@
       "ready_to_push": false,
       "net_buy_count": 0,
       "net_buy_pass": false,
+      "net_buy_source": "",
       "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T23:14:13.873216Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-17T09:06:00Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T09:20:56Z",
@@ -456,14 +446,13 @@
       "dev_check_at": "2026-11-17T16:02:12.379128Z",
       "smart_degen_count": 27,
       "renowned_count": 4,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 31,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:14:13.873216Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:37:41.556385Z",
       "pair_created_at": "2026-11-17T03:11:34Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T03:52:56Z",
@@ -531,14 +520,13 @@
       "dev_check_at": "2026-11-17T15:53:14.835782Z",
       "smart_degen_count": 69,
       "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 69,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:05:15.712988Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:37:41.556385Z",
       "pair_created_at": "2026-11-17T02:35:51Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T03:29:41Z",
@@ -585,14 +573,13 @@
       "dev_check_at": "2026-11-17T18:52:56.254331Z",
       "smart_degen_count": 21,
       "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 21,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:05:15.712988Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:37:41.556385Z",
       "pair_created_at": "2026-11-16T18:23:06Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T18:36:05Z",
@@ -628,11 +615,10 @@
       "ready_to_push": false,
       "net_buy_count": null,
       "net_buy_pass": null,
+      "net_buy_source": "",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T16:38:15.166077Z",
+      "v9_reasons": [],
+      "v9_check_at": "",
       "pair_created_at": "2026-11-16T17:50:58Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T18:21:12Z",
@@ -656,145 +642,6 @@
       ]
     },
     {
-      "ca": "4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd",
-      "chain": "solana",
-      "symbol": "BOBO",
-      "dev_count": 2,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T16:02:12.379128Z",
-      "smart_degen_count": 12,
-      "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
-      "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T23:05:15.712988Z",
-      "pair_created_at": "2026-11-16T15:16:14Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-16T15:16:41Z",
-      "post_count": 16,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:16:41Z",
-          "text_clean": "4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122348134185767119"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:23:40Z",
-          "text_clean": "JUST SOLD ALL MY DEV TOKENS FOR $120 AS I ACCIDENTLY BOUGHT 24% SUPPLY INSTEAD OF 2.4% | | NOW THIS CAN BOND. BONDING CURVE IS $69K. | | THEN WE UPDATE DEX, AND MOON THIS BEAR MARKET | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122349894522515607/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122349894522515607"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:25:19Z",
-          "text_clean": "INSANE VOLUME | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122350308458467629"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:36:21Z",
-          "text_clean": "4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122353086903833008/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122353086903833008"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:41:17Z",
-          "text_clean": "Telegram coming soon | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | this is gonna be a fun one! x.com/JamesWynnReal/status/2122354327289573385/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122354327289573385"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:42:18Z",
-          "text_clean": "y’as all ready for this one??? | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | bobothebear.net | | tg coming soon x.com/JamesWynnReal/status/2122354582261203020/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122354582261203020"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:44:59Z",
-          "text_clean": "$186k volume | | 200 holders | | Sniper shield finishes in 2 mins | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122355258387259802/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122355258387259802"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T15:49:18Z",
-          "text_clean": "Can buy here before the bond!!! | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122356343730573589/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122356343730573589"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T16:09:45Z",
-          "text_clean": "We launched on EmberCurve. | | To bond is $69k. | | We are currently at $25k. | | To buy before we hit the DEX’s you must buy here: | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | Connect wallet, just as you would with jupiter or pump fun…",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122361488245743723"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T16:37:22Z",
-          "text_clean": "Links: | | BoboTheBear.net | | CA: 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | TG: t.me/bobothebearportal | | Ticker: $BOBO (check CA from above) x.com/JamesWynnReal/status/2122368442246566082/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122368442246566082"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T16:40:57Z",
-          "text_clean": "@_BOBO_THE_BEAR | | Chart is solid! You can buy on Ember before it bonds. We set v high bond of $69k ensuring thick LP going forward for a meme as big as this. | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122369340393857374"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T17:23:52Z",
-          "text_clean": "ALMOST BONDED BOBO THE BEAR AT A $69K CURVE! | | BUY THROUGH LINK BELOW, A FEW MORE BUYS AND WE HIT THE DEX’S. | | BOBO IS BACK!!! | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122380141980741983/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122380141980741983"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T17:28:05Z",
-          "text_clean": "80% BONDED DONE, ONLY A FEW MORE BUYS LEFT! | | THEN ITS BOBO TAKEOVER!!! | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122381201659121826"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T18:05:17Z",
-          "text_clean": "embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122390563186204946/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122390563186204946"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T18:28:58Z",
-          "text_clean": "x.com/i/spaces/1zkZaXoWanVbjb | | Can buy here pre bond with USDC on Solana: | | embercurve.fun/t/4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd | | Let’s run it.",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122396524223299728"
-        },
-        {
-          "author": "JamesWynnReal",
-          "author_name": "JamesWynnReal",
-          "post_time": "2026-11-16T18:44:32Z",
-          "text_clean": "Will be by far the biggest runner this bear cycle | | 4Ukp7Q68NhudLJfoRSY9BvjzQRvJFhPXR1W4vQ8v8tNd x.com/JamesWynnReal/status/2122400443322241335/photo/1",
-          "tweet_url": "https://x.com/JamesWynnReal/status/2122400443322241335"
-        }
-      ]
-    },
-    {
       "ca": "0x4a710f62fe4e704d723eea2fabb9f72c7cdda87a",
       "chain": "ethereum",
       "symbol": "SYD",
@@ -804,14 +651,13 @@
       "dev_check_at": "2026-11-17T16:02:12.379128Z",
       "smart_degen_count": 30,
       "renowned_count": 1,
-      "ready_to_push": false,
-      "net_buy_count": 1,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 31,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:05:15.712988Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:37:41.556385Z",
       "pair_created_at": "2026-11-16T14:59:47Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T15:14:04Z",
@@ -834,17 +680,16 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T11:35:26.273733Z",
+      "dev_check_at": "2026-11-17T23:37:17.801519Z",
       "smart_degen_count": 14,
       "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 14,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:05:15.712988Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:37:41.556385Z",
       "pair_created_at": "2026-11-16T10:12:18Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T10:37:31Z",
@@ -870,14 +715,13 @@
       "dev_check_at": "2026-11-17T19:55:56.243484Z",
       "smart_degen_count": 6,
       "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 6,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T23:05:15.712988Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:35:18.480015Z",
       "pair_created_at": "2026-11-16T07:24:25Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T07:34:35Z",
@@ -894,95 +738,6 @@
       ]
     },
     {
-      "ca": "5s9L2dSDuxAe7QmBcs6GZsy6PN5Wn3Hww3T7LCjBRKR",
-      "chain": "solana",
-      "symbol": "BREAKER",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T19:46:56.288039Z",
-      "smart_degen_count": 12,
-      "renowned_count": 1,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
-      "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T22:56:13.634548Z",
-      "pair_created_at": "2026-11-15T19:27:00Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-16T07:24:14Z",
-      "post_count": 2,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "Lqrp92",
-          "author_name": "Lqrp92",
-          "post_time": "2026-11-16T07:24:14Z",
-          "text_clean": "非常不错的项目方，锁了3亿两年， | 做的东西也不错 | 5s9L2dSDuxAe7QmBcs6GZsy6PN5Wn3Hww3T7LCjBRKR | @breakerdotto",
-          "tweet_url": "https://x.com/Lqrp92/status/2122229239147864400"
-        },
-        {
-          "author": "1_qqqii",
-          "author_name": "1_qqqii",
-          "post_time": "2026-11-17T12:33:11Z",
-          "text_clean": "$BREAKER | 5s9L2dSDuxAe7QmBcs6GZsy6PN5Wn3Hww3T7LCjBRKR",
-          "tweet_url": "https://x.com/1_qqqii/status/2122669377569100123"
-        }
-      ]
-    },
-    {
-      "ca": "0xde8cd9e69799bbf0ad7b9e0ce262181923999863",
-      "chain": "bsc",
-      "symbol": "UranusAI",
-      "dev_count": 2,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T18:34:55.135986Z",
-      "smart_degen_count": 1,
-      "renowned_count": 1,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
-      "social_ok": false,
-      "v9_reasons": [
-        "netbuy_unknown",
-        "social_missing"
-      ],
-      "v9_check_at": "2026-11-17T22:56:13.634548Z",
-      "pair_created_at": "2026-11-16T02:33:42Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-16T06:15:23Z",
-      "post_count": 3,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "planb333",
-          "author_name": "planb333",
-          "post_time": "2026-11-16T06:15:23Z",
-          "text_clean": "starsagent.org/token/0xde8cd9e69799bbf0ad7b9e0ce262181923999863 | 这个天王星也要打满了 x.com/planb333/status/2122211915044909502/photo/1",
-          "tweet_url": "https://x.com/planb333/status/2122211915044909502"
-        },
-        {
-          "author": "eunike_eltha",
-          "author_name": "eunike_eltha",
-          "post_time": "2026-11-16T07:35:20Z",
-          "text_clean": "我也想去天王星看看 | 有人在建设了，买了的可以去看看 | 0xde8cd9e69799bbf0ad7b9e0ce262181923999863 x.com/eunike_eltha/status/2122232033577710049/photo/1",
-          "tweet_url": "https://x.com/eunike_eltha/status/2122232033577710049"
-        },
-        {
-          "author": "planb333",
-          "author_name": "planb333",
-          "post_time": "2026-11-16T09:39:41Z",
-          "text_clean": "星际征途不止火星，下一站天王星 | 马斯克推文破圈，催生这枚星辰Meme | 原生基因预埋爆发潜力，热度自带流量 | 市场风口转瞬即逝，拒绝再次踏空 | 同频玩家集结，一起奔赴星辰行情 | Q群：1130667232 | 0xde8cd9e69799bbf0ad7b9e0ce262181923999863",
-          "tweet_url": "https://x.com/planb333/status/2122263327212699718"
-        }
-      ]
-    },
-    {
       "ca": "Fww6zaNKcjpJaB33JayvUzsofBUobX5JaHiuQBN1Jf9g",
       "chain": "solana",
       "symbol": "XRL",
@@ -992,14 +747,13 @@
       "dev_check_at": "2026-11-17T17:04:56.451691Z",
       "smart_degen_count": 37,
       "renowned_count": 2,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 39,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:56:13.634548Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:35:18.480015Z",
       "pair_created_at": "2026-11-15T21:45:23Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T04:45:31Z",
@@ -1028,6 +782,7 @@
       "ready_to_push": true,
       "net_buy_count": 3,
       "net_buy_pass": true,
+      "net_buy_source": "",
       "social_ok": true,
       "v9_reasons": [
         "netbuy_unknown"
@@ -1065,14 +820,13 @@
       "dev_check_at": "2026-11-17T11:44:19.630670Z",
       "smart_degen_count": 20,
       "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 20,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:56:13.634548Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:35:18.480015Z",
       "pair_created_at": "2026-11-15T20:49:01Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T23:25:02Z",
@@ -1116,17 +870,16 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T11:35:26.273733Z",
+      "dev_check_at": "2026-11-17T23:37:17.801519Z",
       "smart_degen_count": 25,
       "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": 0,
-      "net_buy_pass": false,
+      "ready_to_push": true,
+      "net_buy_count": 25,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
       "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:56:13.634548Z",
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-17T23:35:18.480015Z",
       "pair_created_at": "2026-11-15T15:38:17Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T23:15:22Z",
