@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T20:41:19.288667Z",
+  "generated_at": "2026-11-17T20:50:13.633812Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,9 +7,9 @@
   "stats": {
     "signals_total": 1978,
     "with_ca": 275,
-    "list_posts_total": 4505,
+    "list_posts_total": 4506,
     "unique_cas": 1798,
-    "dedup_merged_posts": 2707,
+    "dedup_merged_posts": 2708,
     "passed": 23,
     "dropped_dev": 64,
     "dropped_old": 252,
@@ -17,9 +17,9 @@
     "dropped_dev_unknown": 2,
     "dropped_fake_site": 2,
     "pending_retry": 0,
-    "verdict_cached": 778,
+    "verdict_cached": 779,
     "tags_refreshed": 8,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 1,
     "site_rechecked": 0,
@@ -27,7 +27,7 @@
     "site_blocked_live": 5,
     "pool_too_old_live": 60,
     "v9_rechecked": 6,
-    "v9_ready": 0,
+    "v9_ready": 1,
     "v9_not_ready": 0,
     "dropped_detail": {
       "old": 252,
@@ -826,9 +826,10 @@
       "net_buy_pass": false,
       "social_ok": false,
       "v9_reasons": [
+        "netbuy_unknown",
         "social_missing"
       ],
-      "v9_check_at": "2026-11-17T18:44:12.315970Z",
+      "v9_check_at": "2026-11-17T20:50:11.711758Z",
       "pair_created_at": "2026-11-15T19:27:00Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T07:24:14Z",
@@ -866,9 +867,10 @@
       "net_buy_pass": false,
       "social_ok": false,
       "v9_reasons": [
+        "netbuy_unknown",
         "social_missing"
       ],
-      "v9_check_at": "2026-11-17T18:44:12.315970Z",
+      "v9_check_at": "2026-11-17T20:50:11.711758Z",
       "pair_created_at": "2026-11-16T02:33:42Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T06:15:23Z",
@@ -912,8 +914,10 @@
       "net_buy_count": 0,
       "net_buy_pass": false,
       "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-17T18:44:12.315970Z",
+      "v9_reasons": [
+        "netbuy_unknown"
+      ],
+      "v9_check_at": "2026-11-17T20:50:11.711758Z",
       "pair_created_at": "2026-11-15T21:45:23Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T04:45:31Z",
@@ -943,8 +947,10 @@
       "net_buy_count": 3,
       "net_buy_pass": true,
       "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-17T18:44:12.315970Z",
+      "v9_reasons": [
+        "netbuy_unknown"
+      ],
+      "v9_check_at": "2026-11-17T20:50:11.711758Z",
       "pair_created_at": "2026-11-15T12:06:59Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-16T01:01:23Z",
@@ -981,8 +987,10 @@
       "net_buy_count": 0,
       "net_buy_pass": false,
       "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-17T18:44:12.315970Z",
+      "v9_reasons": [
+        "netbuy_unknown"
+      ],
+      "v9_check_at": "2026-11-17T20:50:11.711758Z",
       "pair_created_at": "2026-11-15T20:49:01Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T23:25:02Z",
@@ -1026,8 +1034,10 @@
       "net_buy_count": 0,
       "net_buy_pass": false,
       "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-17T18:44:12.315970Z",
+      "v9_reasons": [
+        "netbuy_unknown"
+      ],
+      "v9_check_at": "2026-11-17T20:50:11.711758Z",
       "pair_created_at": "2026-11-15T15:38:17Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-15T23:15:22Z",
