@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T19:56:51.019691Z",
+  "generated_at": "2026-11-17T20:05:49.144992Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,19 +7,19 @@
   "stats": {
     "signals_total": 1978,
     "with_ca": 274,
-    "list_posts_total": 4482,
-    "unique_cas": 1792,
-    "dedup_merged_posts": 2690,
+    "list_posts_total": 4495,
+    "unique_cas": 1796,
+    "dedup_merged_posts": 2699,
     "passed": 23,
     "dropped_dev": 63,
-    "dropped_old": 251,
+    "dropped_old": 252,
     "dropped_no_time": 371,
     "dropped_dev_unknown": 2,
     "dropped_fake_site": 2,
     "pending_retry": 0,
     "verdict_cached": 777,
     "tags_refreshed": 8,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 1,
     "site_rechecked": 0,
@@ -27,11 +27,11 @@
     "site_blocked_live": 5,
     "pool_too_old_live": 60,
     "v9_rechecked": 6,
-    "v9_ready": 0,
+    "v9_ready": 1,
     "v9_not_ready": 0,
     "dropped_detail": {
-      "old": 251,
-      "l2_suffix": 1015,
+      "old": 252,
+      "l2_suffix": 1018,
       "dev_over": 63,
       "no_pool": 369,
       "no_created_at": 2,
@@ -91,7 +91,7 @@
       "pair_created_at": "2026-11-17T17:30:24Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T18:04:00Z",
-      "post_count": 2,
+      "post_count": 3,
       "unique_authors": 1,
       "posts": [
         {
@@ -107,6 +107,13 @@
           "post_time": "2026-11-17T18:07:18Z",
           "text_clean": "🔥 6x profit secured on $ACRUX | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122753459346944301/photo/1",
           "tweet_url": "https://x.com/alphaviper01/status/2122753459346944301"
+        },
+        {
+          "author": "alphaviper01",
+          "author_name": "alphaviper01",
+          "post_time": "2026-11-17T20:03:16Z",
+          "text_clean": "9x profit secured on $ACRUX | | Early calls are always in my private Tg 🔥🚀 | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122782645700411751/photo/1",
+          "tweet_url": "https://x.com/alphaviper01/status/2122782645700411751"
         }
       ]
     },
