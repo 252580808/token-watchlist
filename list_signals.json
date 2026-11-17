@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-17T04:17:46.777973Z",
+  "generated_at": "2026-11-17T04:26:19.532437Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2161,
+    "signals_total": 2156,
     "with_ca": 300,
-    "list_posts_total": 3900,
-    "unique_cas": 1579,
-    "dedup_merged_posts": 2321,
+    "list_posts_total": 3908,
+    "unique_cas": 1582,
+    "dedup_merged_posts": 2326,
     "passed": 21,
     "dropped_dev": 57,
     "dropped_old": 237,
@@ -28,7 +28,7 @@
     "pool_too_old_live": 53,
     "dropped_detail": {
       "old": 237,
-      "l2_suffix": 895,
+      "l2_suffix": 898,
       "dev_over": 57,
       "no_pool": 306,
       "no_created_at": 2,
@@ -50,8 +50,8 @@
       "pair_created_at": "2026-11-17T03:11:34Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T03:52:56Z",
-      "post_count": 1,
-      "unique_authors": 1,
+      "post_count": 2,
+      "unique_authors": 2,
       "posts": [
         {
           "author": "onononup719",
@@ -59,6 +59,13 @@
           "post_time": "2026-11-17T03:52:56Z",
           "text_clean": "$DRILL | Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL | DRILL作为Solana上的链上提取协议，用户质押SOL后可随钻探倍数上升选择提取，并在崩盘前退出。",
           "tweet_url": "https://x.com/onononup719/status/2122538453267329050"
+        },
+        {
+          "author": "YokaiCapital",
+          "author_name": "YokaiCapital",
+          "post_time": "2026-11-17T04:24:06Z",
+          "text_clean": "Ts2yi5FhTDAmhwTKH6ab6unWeoCMzzjz4JCPtBDRiLL | $DRILL | - github goes back with commits 6 months ago, domain purchased 6 months ago | - contract verifiable onchain to be provably fair | - each bet BUYS $DRILL each win pays user by selling $DRILL | - protocol is set up in a way that x.com/YokaiCapital/status/2122546295072018717/photo/1",
+          "tweet_url": "https://x.com/YokaiCapital/status/2122546295072018717"
         }
       ]
     },
@@ -75,7 +82,7 @@
       "pair_created_at": "2026-11-17T02:35:51Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T03:29:41Z",
-      "post_count": 3,
+      "post_count": 4,
       "unique_authors": 1,
       "posts": [
         {
@@ -98,6 +105,13 @@
           "post_time": "2026-11-17T03:42:24Z",
           "text_clean": "7X on $BUL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv x.com/0xAnon01/status/2122535803414819038/photo/1",
           "tweet_url": "https://x.com/0xAnon01/status/2122535803414819038"
+        },
+        {
+          "author": "0xAnon01",
+          "author_name": "0xAnon01",
+          "post_time": "2026-11-17T04:18:24Z",
+          "text_clean": "12X on $BUL | | Tg me t.me/OxAnon1 for Early CAs and network alpha. | | Dys6SYbjUsy8kksaqrXqo5L2GzgCYDiguGGcS8B5rkrv x.com/0xAnon01/status/2122544860901392690/photo/1",
+          "tweet_url": "https://x.com/0xAnon01/status/2122544860901392690"
         }
       ]
     },
@@ -499,7 +513,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "2026-11-16T23:44:17.654267Z",
-      "smart_degen_count": 19,
+      "smart_degen_count": 20,
       "renowned_count": 0,
       "pair_created_at": "2026-11-15T20:49:01Z",
       "freshness": "24h",
