@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-11-17T12:11:48.493672Z",
+  "generated_at": "2026-11-17T12:20:39.814953Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 2018,
+    "signals_total": 2015,
     "with_ca": 267,
     "list_posts_total": 4196,
     "unique_cas": 1699,
     "dedup_merged_posts": 2497,
-    "passed": 23,
+    "passed": 22,
     "dropped_dev": 60,
     "dropped_old": 244,
     "dropped_no_time": 348,
     "dropped_dev_unknown": 2,
     "dropped_fake_site": 1,
     "pending_retry": 0,
-    "verdict_cached": 737,
+    "verdict_cached": 739,
     "tags_refreshed": 8,
-    "dev_rechecked": 2,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 5,
-    "pool_too_old_live": 56,
+    "pool_too_old_live": 57,
     "dropped_detail": {
       "old": 244,
       "l2_suffix": 960,
@@ -850,66 +850,6 @@
           "post_time": "2026-11-14T13:53:24Z",
           "text_clean": "Anh em mint kèo này lúc chiều lúc 0.0015 BNB giờ x9 lần nếu trúng Legend rồi. Ngon vcl. | | Đây là link mint lúc chiều, ae check nhé, NFT thì vẫn bị lock, chiều ae nào múc 1$ thì vào check bán nhé. Market cap đang 60k$ | | Link swap: pancakeswap.finance/swap?inputCurrency=0x4CAcBE52089AA3e8312D95c89BEF45d50F0047D8&outputCurrency=BNB | | Link mint lúc 5h x.com/mrchrismast_/status/2121602399194546441/photo/1",
           "tweet_url": "https://x.com/mrchrismast_/status/2121602399194546441"
-        }
-      ]
-    },
-    {
-      "ca": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot",
-      "chain": "solana",
-      "symbol": "HOT",
-      "dev_count": 2,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T01:16:53.584043Z",
-      "smart_degen_count": 9,
-      "renowned_count": 1,
-      "pair_created_at": "2026-11-14T12:18:04Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-14T12:36:57Z",
-      "post_count": 6,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "abhao92702",
-          "author_name": "abhao92702",
-          "post_time": "2026-11-14T12:36:57Z",
-          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot | 这挺好 | 锁了一个亿",
-          "tweet_url": "https://x.com/abhao92702/status/2121583162430210195"
-        },
-        {
-          "author": "abhao92702",
-          "author_name": "abhao92702",
-          "post_time": "2026-11-14T12:50:33Z",
-          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot我就当是SOL本身项目跑得慢吧",
-          "tweet_url": "https://x.com/abhao92702/status/2121586585481421186"
-        },
-        {
-          "author": "abhao92702",
-          "author_name": "abhao92702",
-          "post_time": "2026-11-14T12:58:04Z",
-          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot确实很不错 | 值得发射",
-          "tweet_url": "https://x.com/abhao92702/status/2121588476667945466"
-        },
-        {
-          "author": "abhao92702",
-          "author_name": "abhao92702",
-          "post_time": "2026-11-14T13:05:37Z",
-          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot | 看看这家伙 | 这真是个百年一遇的项目",
-          "tweet_url": "https://x.com/abhao92702/status/2121590375542653047"
-        },
-        {
-          "author": "Lqrp92",
-          "author_name": "Lqrp92",
-          "post_time": "2026-11-14T13:06:51Z",
-          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot | 看看这家伙 | 这真是个百年一遇的项目",
-          "tweet_url": "https://x.com/Lqrp92/status/2121590685447115025"
-        },
-        {
-          "author": "abhao92702",
-          "author_name": "abhao92702",
-          "post_time": "2026-11-14T13:27:31Z",
-          "text_clean": "5R9MnNEGLpsvq6wNmAkh82peNLqwfSTyu5ny9ezPzhot | 越来越多的人注意到我们了 | 这真的是个很好的项目",
-          "tweet_url": "https://x.com/abhao92702/status/2121595885532721194"
         }
       ]
     }
