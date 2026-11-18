@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T02:30:28.778531Z",
+  "generated_at": "2026-11-18T02:32:55.156349Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1675,
+    "posts_total": 1674,
     "blocked": 232,
-    "no_entry": 1278,
+    "no_entry": 1276,
     "events": 65,
-    "merged_posts": 100,
+    "merged_posts": 101,
     "terms_failed": 0
   },
   "events": [
@@ -113,7 +113,7 @@
       "first_seen_at": "2026-11-12T08:10:17Z",
       "last_seen_at": "2026-11-17T22:14:36Z",
       "window_bucket": 83077,
-      "post_count": 32,
+      "post_count": 33,
       "representative_text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 meme 已经确定下来了，目前日期还没定等最终审批 x.com/Ouh_web1/status/2120537228682379641/photo/1",
       "keywords": "[\"高:新东西\"]",
       "tweet_url": "https://x.com/Ouh_web1/status/2120791275381354627",
