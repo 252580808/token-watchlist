@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T02:03:50.893297Z",
+  "generated_at": "2026-11-18T02:12:13.477727Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1678,
+    "posts_total": 1676,
     "blocked": 231,
-    "no_entry": 1282,
+    "no_entry": 1281,
     "events": 65,
-    "merged_posts": 100,
+    "merged_posts": 99,
     "terms_failed": 0
   },
   "events": [
@@ -621,19 +621,14 @@
       "event_id": "domain:onlystreets.fun",
       "identity": "domain:onlystreets.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T02:05:40Z",
+      "first_seen_at": "2026-11-11T03:17:56Z",
       "last_seen_at": "2026-11-16T04:24:09Z",
       "window_bucket": 83072,
-      "post_count": 12,
-      "representative_text": "终于有人想治治满屏偷图和 AI 跑图发币的乱象了。 | | OnlyStreets 搞的这个机制有点意思：必须 App 内实时实拍发币，禁相册上传。 | | 1️⃣ 物理锁死偷跑：杜绝去 Pinterest 偷现成图做局 | 2️⃣ 强行拉回现实：把发币场景直接搬到线下街头 | 3️⃣ 滤掉流水线盘：至少发币前你得真出门看一眼世界 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin starts ",
+      "post_count": 11,
+      "representative_text": "看到一个挺有意思的 Solana 新项目：onlystreets.fun，目前还在 Coming Soon 阶段。 | | 它想做的事情比较特别，就是把现实生活中的真实瞬间变成 Meme 币。和普通发射平台不太一样，用户必须通过 App 现场拍摄一张新照片才能创建代币，不允许从手机相册上传图片。 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin starts with a fresh photo",
       "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/hisevenih/status/2120337131013070915",
+      "tweet_url": "https://x.com/sodislikea/status/2120355316164391290",
       "samples": [
-        {
-          "text": "终于有人想治治满屏偷图和 AI 跑图发币的乱象了。 | | OnlyStreets 搞的这个机制有点意思：必须 App 内实时实拍发币，禁相册上传。 | | 1️⃣ 物理锁死偷跑：杜绝去 Pinterest 偷现成图做局 | 2️⃣ 强行拉回现实：把发币场景直接搬到线下街头 | 3️⃣ 滤掉流水线盘：至少发币前你得真出门看一眼世界 onlystreets.fun is coming soon on",
-          "url": "https://x.com/hisevenih/status/2120337131013070915",
-          "post_time": "2026-11-11T02:05:40+00:00"
-        },
         {
           "text": "看到一个挺有意思的 Solana 新项目：onlystreets.fun，目前还在 Coming Soon 阶段。 | | 它想做的事情比较特别，就是把现实生活中的真实瞬间变成 Meme 币。和普通发射平台不太一样，用户必须通过 App 现场拍摄一张新照片才能创建代币，不允许从手机相册上传图片。 onlystreets.fun is coming soon on Solana. | | A one",
           "url": "https://x.com/sodislikea/status/2120355316164391290",
@@ -668,6 +663,11 @@
           "text": ". @rarelistio 这个台子是每天都有几个任务，点赞，评论，转发的。 | 我的节奏就是每天写一篇帖子。 | Rarelist项目的排名是1742， @onlystreetsfun 的排名是1058 x.com/jiao_newlife/status/2121117923876221088/photo/1 Introducing onlystreets.fun | | A Solana la",
           "url": "https://x.com/jiao_newlife/status/2121117923876221088",
           "post_time": "2026-11-13T05:48:16+00:00"
+        },
+        {
+          "text": "OnlyStreets 是一个代币发行平台 @onlystreetsfun | | 即将在上线前发布空投奖励 | | 奖品为1000U | 第一名300u | 前两名150u | 前三名100 U | 前4-15名恭喜450U | 前两百名占供应量的1% | 项目只做分享，不做投资建议 Introducing onlystreets.fun | | A Solana launchpad for f",
+          "url": "https://x.com/wen394428142129/status/2121151581249024372",
+          "post_time": "2026-11-13T08:02:00+00:00"
         }
       ]
     },
