@@ -1,16 +1,35 @@
 {
-  "generated_at": "2026-11-18T01:10:22.480173Z",
+  "generated_at": "2026-11-18T01:19:28.790367Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现：过统一屏蔽词(唯一拦)+命中关键词即收；不要求标准CA/官网/ID格式。事件ID=主域名或资产ID或文本指纹 + 6h时间桶，同事件聚合只推群一次、看板累加条数。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1690,
+    "posts_total": 1689,
     "blocked": 232,
-    "events": 1296,
+    "events": 1295,
     "merged_posts": 162
   },
   "events": [
+    {
+      "event_id": "text:60095eea3ffb|83100",
+      "identity": "text:60095eea3ffb",
+      "identity_type": "text_fp",
+      "first_seen_at": "2026-11-18T01:10:32Z",
+      "last_seen_at": "2026-11-18T01:10:32Z",
+      "window_bucket": 83100,
+      "post_count": 1,
+      "representative_text": "@bboczeng 回购确实能托住短期股价，但长期看，董事会再强硬也替代不了老黄的技术直觉，这船能不能稳住还得看新品爬坡和毛利修复。",
+      "keywords": "[\"高:回购\"]",
+      "tweet_url": "https://x.com/yff5188/status/2122859970400284951",
+      "samples": [
+        {
+          "text": "@bboczeng 回购确实能托住短期股价，但长期看，董事会再强硬也替代不了老黄的技术直觉，这船能不能稳住还得看新品爬坡和毛利修复。",
+          "url": "https://x.com/yff5188/status/2122859970400284951",
+          "post_time": "2026-11-18T01:10:32+00:00"
+        }
+      ]
+    },
     {
       "event_id": "text:e729a00fcbb7|83100",
       "identity": "text:e729a00fcbb7",
@@ -25389,44 +25408,6 @@
           "text": "我再把vitalik的观点附在这里： | | 为什么我认为专注于“ETH 作为价值储存（SoV）”比“ETH 作为费用销毁代币”更有意义。 | | 三个主要原因： | | 1. ETH 作为费用销毁代币从来都没有像看起来那么强大 | 2. 优化 ETH 作为费用销毁代币将要求以太坊和 ETH 以一种与去中心化和捕获抵抗性非常难以兼容的方式运作。 | 3.",
           "url": "https://x.com/shangu365/status/2120326624763924907",
           "post_time": "2026-11-11T01:23:55+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "text:a164ea31914e|83072",
-      "identity": "text:a164ea31914e",
-      "identity_type": "text_fp",
-      "first_seen_at": "2026-11-11T01:15:22Z",
-      "last_seen_at": "2026-11-11T01:15:22Z",
-      "window_bucket": 83072,
-      "post_count": 1,
-      "representative_text": "“上次我们还讨论过市场流传的 OpenAI ARR 数字，当时有人在交易约 700 亿美元的口径，我觉得不合理 | 从 400 多亿美元一下跳到 700 亿美元，即使增长很快，也需要有能解释这个变化的过程 | 既然公司还要融资，相关经营数字迟早需要被重新解释，市场原本拿来做多的依据，也可能因此发生变化 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注",
-      "keywords": "[\"高:打新\"]",
-      "tweet_url": "https://x.com/168X_Fortune/status/2120324471336870048",
-      "samples": [
-        {
-          "text": "“上次我们还讨论过市场流传的 OpenAI ARR 数字，当时有人在交易约 700 亿美元的口径，我觉得不合理 | 从 400 多亿美元一下跳到 700 亿美元，即使增长很快，也需要有能解释这个变化的过程 | 既然公司还要融资，相关经营数字迟早需要被重新解释，市场原本拿来做多的依据，也可能因此发生变化 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港",
-          "url": "https://x.com/168X_Fortune/status/2120324471336870048",
-          "post_time": "2026-11-11T01:15:22+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "tweet:wallstreet0name|83072",
-      "identity": "tweet:wallstreet0name",
-      "identity_type": "tweet_post",
-      "first_seen_at": "2026-11-11T01:12:12Z",
-      "last_seen_at": "2026-11-11T01:12:12Z",
-      "window_bucket": 83072,
-      "post_count": 1,
-      "representative_text": "Anthropic今日开始打新了，针对比特币的吸血即将结束 | | 北京时间11月12日 06:00后，MSCI 公布是否从指数剔除mstr，剔除基本已经被定价，宣布剔除可能只是往下插针，并不会加速。 | | 比特币9月21至今的震荡下跌非常恶心，多头和空头的持仓体验都不好，整体是跌但是太震了，你什么价格开单都会回到成本价格 x.com/WallStreet0Name/status/2120323673198600499/photo/1 没有什么特定价格，根据Anthropic的打新窗口来就行了 x.com/WallStreet0Name/status/2115978230486474842/",
-      "keywords": "[\"高:打新\"]",
-      "tweet_url": "https://x.com/WallStreet0Name/status/2120323673198600499",
-      "samples": [
-        {
-          "text": "Anthropic今日开始打新了，针对比特币的吸血即将结束 | | 北京时间11月12日 06:00后，MSCI 公布是否从指数剔除mstr，剔除基本已经被定价，宣布剔除可能只是往下插针，并不会加速。 | | 比特币9月21至今的震荡下跌非常恶心，多头和空头的持仓体验都不好，整体是跌但是太震了，你什么价格开单都会回到成本价格 x.com/WallStreet0Name/status/2120323",
-          "url": "https://x.com/WallStreet0Name/status/2120323673198600499",
-          "post_time": "2026-11-11T01:12:12+00:00"
         }
       ]
     }
