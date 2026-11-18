@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T06:07:36.725087Z",
+  "generated_at": "2026-11-18T06:18:33.330862Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1634,
+    "posts_total": 1628,
     "blocked": 233,
-    "no_entry": 1237,
+    "no_entry": 1232,
     "events": 64,
-    "merged_posts": 100,
+    "merged_posts": 99,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 0
@@ -531,19 +531,14 @@
       "event_id": "domain:gang.fun",
       "identity": "domain:gang.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T06:10:19Z",
+      "first_seen_at": "2026-11-16T11:32:12Z",
       "last_seen_at": "2026-11-16T11:32:12Z",
-      "window_bucket": 83073,
-      "post_count": 2,
-      "representative_text": "GANG Built For Agents， | | Launchpad On BNB， | | Chain, Fair Launches For Agents。 I’ll be liking gang.fun posts. | | gang.fun 트윗은 좋아요 누를게요. | | gang.fun paylaşımlarını beğeneceğim. | | Tôi sẽ thích các bài viết về gang.fun. | | 我会点赞一些 gang.fun 的推文。",
-      "keywords": "[\"高:fair launch\", \"高:launchpad\"]",
-      "tweet_url": "https://x.com/KevinQin_eth/status/2120398698018656407",
+      "window_bucket": 83093,
+      "post_count": 1,
+      "representative_text": "这个 gang.fun 我认真看了 BNB链上专门给AI Agent发币的发射台 | | 新币先在内盘打 只有带着.ai的币安Agent钱包能打 单钱包 上限总量的1% | GANG已经发射 代币没有买卖税 平台手续费八成 回购销毁 有的新项目还用GANG来计价 合约没有owner，也不能增发 x.com/102BTC/status/2122291642183115116/photo/1 $JAGENT | 那时候才4万市值 我发了这张K线图 | | 现在四十多万份打出去了 市值到了五百万附近 | | 但这事才刚开头 总共444万份，现在才打了不到一成 | | 打一份现在大约4.36U 后面档",
+      "keywords": "[\"高:回购\", \"高:销毁\", \"高:新币\"]",
+      "tweet_url": "https://x.com/102BTC/status/2122291642183115116",
       "samples": [
-        {
-          "text": "GANG Built For Agents， | | Launchpad On BNB， | | Chain, Fair Launches For Agents。 I’ll be liking gang.fun posts. | | gang.fun 트윗은 좋아요 누를게요. | | gang.fun paylaşımlarını beğeneceğim. | | Tôi sẽ thích cá",
-          "url": "https://x.com/KevinQin_eth/status/2120398698018656407",
-          "post_time": "2026-11-11T06:10:19+00:00"
-        },
         {
           "text": "这个 gang.fun 我认真看了 BNB链上专门给AI Agent发币的发射台 | | 新币先在内盘打 只有带着.ai的币安Agent钱包能打 单钱包 上限总量的1% | GANG已经发射 代币没有买卖税 平台手续费八成 回购销毁 有的新项目还用GANG来计价 合约没有owner，也不能增发 x.com/102BTC/status/2122291642183115116/photo/1 $JAG",
           "url": "https://x.com/102BTC/status/2122291642183115116",
