@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-18T10:53:33.904611Z",
+  "generated_at": "2026-11-18T11:02:48.430984Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1927,
-    "with_ca": 290,
-    "list_posts_total": 4967,
-    "unique_cas": 1966,
-    "dedup_merged_posts": 3001,
-    "passed": 13,
+    "signals_total": 1929,
+    "with_ca": 291,
+    "list_posts_total": 4969,
+    "unique_cas": 1967,
+    "dedup_merged_posts": 3002,
+    "passed": 11,
     "dropped_dev": 67,
     "dropped_old": 266,
     "dropped_no_time": 408,
@@ -19,20 +19,20 @@
     "pending_retry": 0,
     "verdict_cached": 842,
     "tags_refreshed": 20,
-    "dev_rechecked": 0,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 2,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 6,
-    "dead_blocked_live": 24,
-    "pool_too_old_live": 45,
+    "dead_blocked_live": 28,
+    "pool_too_old_live": 43,
     "v9_rechecked": 0,
     "v9_ready": 0,
     "v9_not_ready": 6,
     "dropped_detail": {
       "old": 266,
-      "l2_suffix": 1124,
+      "l2_suffix": 1125,
       "dev_over": 67,
       "no_pool": 406,
       "no_created_at": 2,
@@ -495,100 +495,6 @@
           "post_time": "2026-11-16T04:45:31Z",
           "text_clean": "单笔赚1.31k美金，这也就meme才有可能了，这个SOL钱包靠 $XRL ，用$350 赚到了 $1.31k！ | | Fww6zaNKcjpJaB33JayvUzsofBUobX5JaHiuQBN1Jf9g | | 只用了1个小时！速度快到超出大部分人的预期。 | | 我把他的钱包地址放在这里了，赶快学习，说不定你也行：web3.okx.com/ul/EHwTx4k?ref=JZHUO | | 其他盈利： | $SAPLING x.com/faheemdil2/status/2122189296535052314/photo/1",
           "tweet_url": "https://x.com/faheemdil2/status/2122189296535052314"
-        }
-      ]
-    },
-    {
-      "ca": "0xa14af51c0e9ef38bc0d0008b8c8f5508f9f3f237",
-      "chain": "ethereum",
-      "symbol": "BETTY",
-      "dev_count": 0,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-18T01:25:42.860589Z",
-      "smart_degen_count": 28,
-      "renowned_count": 2,
-      "ready_to_push": true,
-      "net_buy_count": 3,
-      "net_buy_pass": true,
-      "net_buy_source": "",
-      "social_ok": true,
-      "v9_reasons": [
-        "netbuy_unknown"
-      ],
-      "v9_check_at": "2026-11-17T22:56:13.634548Z",
-      "pair_created_at": "2026-11-15T12:06:59Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-16T01:01:23Z",
-      "post_count": 2,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "Sol5000u",
-          "author_name": "Sol5000u",
-          "post_time": "2026-11-16T01:01:23Z",
-          "text_clean": "x.com/blackbettyuni/status/2121991682560237995?a=-rRRvrpcxcYOM0mFiPY&s=20 | 0xa14af51c0e9ef38bc0d0008b8c8f5508f9f3f237 | 彩票赌一手？ | 3E开盘 烧了 很诡异 权限没丢 看了下网站做得还可以 原创IP DEX付了 INS TIKTOK YOUTUBE都还弄了账号 | 风险就是权限没丢",
-          "tweet_url": "https://x.com/Sol5000u/status/2122132892914782625"
-        },
-        {
-          "author": "du1_yu",
-          "author_name": "du1_yu",
-          "post_time": "2026-11-16T03:16:54Z",
-          "text_clean": "老外做的自创meme，目前类似于红果，在youtube和tiktok不断更新视频，有希望成为一个热点meme | 0xa14af51c0e9ef38bc0d0008b8c8f5508f9f3f237 | | x.com/blackbettyuni/",
-          "tweet_url": "https://x.com/du1_yu/status/2122166995655578002"
-        }
-      ]
-    },
-    {
-      "ca": "0xa06c6b3d518b1ed11cab00651bfabacbb20f5c4a",
-      "chain": "robinhood",
-      "symbol": "GC",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-17T23:45:14.329650Z",
-      "smart_degen_count": 20,
-      "renowned_count": 0,
-      "ready_to_push": true,
-      "net_buy_count": 20,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-17T23:35:18.480015Z",
-      "pair_created_at": "2026-11-15T20:49:01Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-15T23:25:02Z",
-      "post_count": 4,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "bajieChina",
-          "author_name": "bajieChina",
-          "post_time": "2026-11-15T23:25:02Z",
-          "text_clean": "好久没看罗宾汉链的技术项目了，这个项目挺有意思的 $gc | | ca：0xa06c6b3d518b1ed11cab00651bfabacbb20f5c4a",
-          "tweet_url": "https://x.com/bajieChina/status/2122108643562885509"
-        },
-        {
-          "author": "bajieChina",
-          "author_name": "bajieChina",
-          "post_time": "2026-11-15T23:26:55Z",
-          "text_clean": "@youneedaGC @RobinhoodCrypto @ponsdotfamily @Larpcheckbot 0xa06c6b3d518b1ed11cab00651bfabacbb20f5c4a",
-          "tweet_url": "https://x.com/bajieChina/status/2122109120618897693"
-        },
-        {
-          "author": "bajieChina",
-          "author_name": "bajieChina",
-          "post_time": "2026-11-16T03:10:59Z",
-          "text_clean": "明早发布v1版本 $gc | | ca：0xa06c6b3d518b1ed11cab00651bfabacbb20f5c4a",
-          "tweet_url": "https://x.com/bajieChina/status/2122165508434968671"
-        },
-        {
-          "author": "de_gang5426",
-          "author_name": "de_gang5426",
-          "post_time": "2026-11-17T23:31:16Z",
-          "text_clean": "0xa06c6b3d518b1ed11cab00651bfabacbb20f5c4a 这么好的东西 居然只有20k？",
-          "tweet_url": "https://x.com/de_gang5426/status/2122834987741323653"
         }
       ]
     },
