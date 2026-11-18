@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T00:19:44.621929Z",
+  "generated_at": "2026-11-18T00:28:40.730396Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1980,
-    "with_ca": 278,
-    "list_posts_total": 4579,
-    "unique_cas": 1817,
-    "dedup_merged_posts": 2762,
+    "signals_total": 1977,
+    "with_ca": 279,
+    "list_posts_total": 4584,
+    "unique_cas": 1818,
+    "dedup_merged_posts": 2766,
     "passed": 20,
     "dropped_dev": 64,
     "dropped_old": 252,
@@ -19,19 +19,19 @@
     "pending_retry": 0,
     "verdict_cached": 786,
     "tags_refreshed": 8,
-    "dev_rechecked": 2,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 1,
     "site_rechecked": 0,
-    "site_recheck_blocked": 0,
-    "site_blocked_live": 5,
+    "site_recheck_blocked": 1,
+    "site_blocked_live": 6,
     "pool_too_old_live": 60,
     "v9_rechecked": 6,
     "v9_ready": 0,
-    "v9_not_ready": 9,
+    "v9_not_ready": 8,
     "dropped_detail": {
       "old": 252,
-      "l2_suffix": 1031,
+      "l2_suffix": 1032,
       "dev_over": 64,
       "no_pool": 369,
       "no_created_at": 2,
@@ -62,7 +62,7 @@
       "pair_created_at": "2026-11-17T22:08:41Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-17T23:51:36Z",
-      "post_count": 1,
+      "post_count": 2,
       "unique_authors": 1,
       "posts": [
         {
@@ -71,6 +71,13 @@
           "post_time": "2026-11-17T23:51:36Z",
           "text_clean": "@astral_eth_92 @Larpcheckbot 0x07a143c18ca06ed41507d745e2a62525e30ccd91",
           "tweet_url": "https://x.com/bajieChina/status/2122840106277245125"
+        },
+        {
+          "author": "bajieChina",
+          "author_name": "bajieChina",
+          "post_time": "2026-11-18T00:18:50Z",
+          "text_clean": "老外也是真的能找角度，在cb的开发者文档里，找到了一只meme $fcat | | 可惜，现在的市值有点高了，cb官方也没有人出面回应…… | | ca：0x07a143c18ca06ed41507d745e2a62525e30ccd91",
+          "tweet_url": "https://x.com/bajieChina/status/2122846959795126491"
         }
       ]
     },
@@ -224,7 +231,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "",
-      "smart_degen_count": 29,
+      "smart_degen_count": 31,
       "renowned_count": 3,
       "ready_to_push": true,
       "net_buy_count": 32,
