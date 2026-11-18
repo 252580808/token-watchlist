@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18T07:11:21.396107Z",
+  "generated_at": "2026-11-18T07:21:19.203140Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1628,
-    "blocked": 233,
-    "no_entry": 1232,
+    "posts_total": 1623,
+    "blocked": 231,
+    "no_entry": 1229,
     "events": 64,
     "merged_posts": 99,
     "terms_failed": 0,
