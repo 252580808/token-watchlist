@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-11-18T01:44:11.564711Z",
+  "generated_at": "2026-11-18T01:45:14.293188Z",
   "window_days": 7,
   "window_hours": 6.0,
-  "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口(官网域名/GitHub仓库/推特文章)+6h时间桶，同事件聚合并只推群一次。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
+  "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
     "posts_total": 1684,
     "blocked": 232,
     "no_entry": 1287,
-    "events": 97,
-    "merged_posts": 68
+    "events": 65,
+    "merged_posts": 100,
+    "terms_failed": 0
   },
   "events": [
     {
@@ -52,26 +53,61 @@
       ]
     },
     {
-      "event_id": "domain:oneswap.cc|83099",
+      "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-17T22:14:36Z",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-12T08:10:17Z",
       "last_seen_at": "2026-11-17T22:14:36Z",
-      "window_bucket": 83099,
-      "post_count": 1,
-      "representative_text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: +78.8% | | jose doesn't check the btc chart. jose digs ⛏️🌱 x.com/onepumpcc/status/212261347040761870",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/into9966/status/2122815694136058294",
+      "window_bucket": 83077,
+      "post_count": 32,
+      "representative_text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 meme 已经确定下来了，目前日期还没定等最终审批 x.com/Ouh_web1/status/2120537228682379641/photo/1",
+      "keywords": "[\"高:新东西\"]",
+      "tweet_url": "https://x.com/Ouh_web1/status/2120791275381354627",
       "samples": [
         {
-          "text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: ",
-          "url": "https://x.com/into9966/status/2122815694136058294",
-          "post_time": "2026-11-17T22:14:36+00:00"
+          "text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 me",
+          "url": "https://x.com/Ouh_web1/status/2120791275381354627",
+          "post_time": "2026-11-12T08:10:17+00:00"
+        },
+        {
+          "text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/21209827585",
+          "url": "https://x.com/Reboottttttt/status/2120982758537449683",
+          "post_time": "2026-11-12T20:51:10+00:00"
+        },
+        {
+          "text": "www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc GM. we're building the first memecoin launchpad on Canton. | | 2 minutes to launch, trades the same second. no mempool, so nothing to snipe",
+          "url": "https://x.com/jiumeng88888/status/2120983608974618854",
+          "post_time": "2026-11-12T20:54:33+00:00"
+        },
+        {
+          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 第一个",
+          "url": "https://x.com/Reboottttttt/status/2120984905001922972",
+          "post_time": "2026-11-12T20:59:42+00:00"
+        },
+        {
+          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 这是第一个 www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc",
+          "url": "https://x.com/jiumeng88888/status/2120986601346265274",
+          "post_time": "2026-11-12T21:06:26+00:00"
+        },
+        {
+          "text": "第一个 现在20k 市值 x.com/juesaiquan/status/2120986612062617865/photo/1 CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现",
+          "url": "https://x.com/juesaiquan/status/2120986612062617865",
+          "post_time": "2026-11-12T21:06:28+00:00"
+        },
+        {
+          "text": "这个台子开了 @onepumpcc @Oneswapcc | | 前三个 | | onebot | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | onecat | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f |",
+          "url": "https://x.com/AKAKAY04/status/2120989541930795259",
+          "post_time": "2026-11-12T21:18:07+00:00"
+        },
+        {
+          "text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
+          "url": "https://x.com/RK_Bitcoin/status/2120991313361559955",
+          "post_time": "2026-11-12T21:25:09+00:00"
         }
       ]
     },
     {
-      "event_id": "domain:gtawanted.xyz|83099",
+      "event_id": "domain:gtawanted.xyz",
       "identity": "domain:gtawanted.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-17T21:48:46Z",
@@ -90,7 +126,7 @@
       ]
     },
     {
-      "event_id": "github:lakylife/quinvium|83099",
+      "event_id": "github:lakylife/quinvium",
       "identity": "github:lakylife/quinvium",
       "identity_type": "github",
       "first_seen_at": "2026-11-17T21:39:42Z",
@@ -128,17 +164,22 @@
       ]
     },
     {
-      "event_id": "domain:pxio.fun|83098",
+      "event_id": "domain:pxio.fun",
       "identity": "domain:pxio.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T16:06:55Z",
+      "first_seen_at": "2026-11-16T14:25:05Z",
       "last_seen_at": "2026-11-17T16:06:55Z",
-      "window_bucket": 83098,
-      "post_count": 1,
-      "representative_text": "这个pxio昨天领的免费的 今天看竟然打满了 | | 不过是真垃圾啊 | | 收的 bnb 直接进项目方钱包，也不说拿来干嘛 | | 池子没多少钱，nft 也没几个人买，挖再多币卖给谁啊…… x.com/kuk47377341/status/2122723164589584541/photo/1 pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不打 | | 网站比这几天的流水盘看着舒服多了 | | 玩法就是 你的NFT是矿机 每小时可以产 $pxio | | ai告诉我 NFT是可以交易的 但是网站还没看到 | | 反正先给免费档拿着。花钱的",
+      "window_bucket": 83094,
+      "post_count": 2,
+      "representative_text": "pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不打 | | 网站比这几天的流水盘看着舒服多了 | | 玩法就是 你的NFT是矿机 每小时可以产 $pxio | | ai告诉我 NFT是可以交易的 但是网站还没看到 | | 反正先给免费档拿着。花钱的不要打！！！ | | 链接：pxio.fun/ x.com/kuk47377341/status/2122335150990340451/photo/1",
       "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/kuk47377341/status/2122723164589584541",
+      "tweet_url": "https://x.com/kuk47377341/status/2122335150990340451",
       "samples": [
+        {
+          "text": "pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不打 | | 网站比这几天的流水盘看着舒服多了 | | 玩法就是 你的NFT是矿机 每小时可以产 $pxio | | ai告诉我 NFT是可以交易的 但是网站还没看到 | | 反正先给免费档拿着。花钱的不要打！！！ | | 链接：pxio.fun/ x.com/kuk47377341/status/",
+          "url": "https://x.com/kuk47377341/status/2122335150990340451",
+          "post_time": "2026-11-16T14:25:05+00:00"
+        },
         {
           "text": "这个pxio昨天领的免费的 今天看竟然打满了 | | 不过是真垃圾啊 | | 收的 bnb 直接进项目方钱包，也不说拿来干嘛 | | 池子没多少钱，nft 也没几个人买，挖再多币卖给谁啊…… x.com/kuk47377341/status/2122723164589584541/photo/1 pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不",
           "url": "https://x.com/kuk47377341/status/2122723164589584541",
@@ -147,7 +188,7 @@
       ]
     },
     {
-      "event_id": "domain:punchin.fun|83098",
+      "event_id": "domain:punchin.fun",
       "identity": "domain:punchin.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-17T13:20:18Z",
@@ -171,7 +212,7 @@
       ]
     },
     {
-      "event_id": "domain:buildaster.xyz|83098",
+      "event_id": "domain:buildaster.xyz",
       "identity": "domain:buildaster.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-17T12:32:47Z",
@@ -190,7 +231,7 @@
       ]
     },
     {
-      "event_id": "domain:pepe666.cc|83097",
+      "event_id": "domain:pepe666.cc",
       "identity": "domain:pepe666.cc",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-17T10:25:13Z",
@@ -209,60 +250,81 @@
       ]
     },
     {
-      "event_id": "domain:fungolabs.org|83097",
+      "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T10:17:23Z",
+      "first_seen_at": "2026-11-15T11:26:45Z",
       "last_seen_at": "2026-11-17T10:18:30Z",
-      "window_bucket": 83097,
-      "post_count": 2,
-      "representative_text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
+      "window_bucket": 83089,
+      "post_count": 12,
+      "representative_text": "Cỡ này bú được 10$ ko các khầy. 🤣🤣🤣 | | Anh em check hết chưa, chúa tể scam hả ae 🤣🤣🤣 | | Ko chỉnh chu bài viết và viết trong 2 ngày 5 bài cho nhiêu thì cũng thank you, mà cho ít quá là có chiện. 🤣🤣 | | Link check: fungolabs.org/launchpad/leaderboard?view=x x.com/mrchrismast_/status/2121927883891601",
       "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/wen394428142129/status/2122635201499234493",
+      "tweet_url": "https://x.com/mrchrismast_/status/2121927883891601580",
       "samples": [
         {
-          "text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
-          "url": "https://x.com/wen394428142129/status/2122635201499234493",
-          "post_time": "2026-11-17T10:17:23+00:00"
+          "text": "Cỡ này bú được 10$ ko các khầy. 🤣🤣🤣 | | Anh em check hết chưa, chúa tể scam hả ae 🤣🤣🤣 | | Ko chỉnh chu bài viết và viết trong 2 ngày 5 bài cho nhiêu thì cũng thank you, mà cho ít quá là có chiện. 🤣🤣 |",
+          "url": "https://x.com/mrchrismast_/status/2121927883891601580",
+          "post_time": "2026-11-15T11:26:45+00:00"
         },
         {
-          "text": "Captain Cat ($DM) | fungolabs.org/launchpad/c/pg6cwm83",
-          "url": "https://x.com/wen394428142129/status/2122635483524243966",
-          "post_time": "2026-11-17T10:18:30+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc|83097",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-17T09:22:52Z",
-      "last_seen_at": "2026-11-17T09:22:52Z",
-      "window_bucket": 83097,
-      "post_count": 1,
-      "representative_text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入！ | | $JOSE",
-      "keywords": "[\"高:launchpad\", \"高:新东西\"]",
-      "tweet_url": "https://x.com/01573bit/status/2122621484090916945",
-      "samples": [
+          "text": "0 points on FungoLabs Launchpad fungolabs.org/launchpad/p/Yiyixmb",
+          "url": "https://x.com/Yiyixmb/status/2121928786992414942",
+          "post_time": "2026-11-15T11:30:21+00:00"
+        },
         {
-          "text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入",
-          "url": "https://x.com/01573bit/status/2122621484090916945",
-          "post_time": "2026-11-17T09:22:52+00:00"
+          "text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
+          "url": "https://x.com/kuk47377341/status/2121942907032867181",
+          "post_time": "2026-11-15T12:26:27+00:00"
+        },
+        {
+          "text": "fungolabs的创造者分配出来了兄弟们查 | | 传送门：fungolabs.org/launchpad/leaderboard | | 看看能不能吃到一顿猪脚饭啊 | | 我感觉是小毛我丢🥲看市值多少把 x.com/CandyDAO_leaf/status/2121966986917990704/photo/1 熊市兄弟们撸现金奖励吧 | | 真实发奖的，之前撸不少了🥲 | | Jasper",
+          "url": "https://x.com/CandyDAO_leaf/status/2121966986917990704",
+          "post_time": "2026-11-15T14:02:08+00:00"
+        },
+        {
+          "text": "🔗：fungolabs.org/launchpad/leaderboard?view=x",
+          "url": "https://x.com/ETH116688/status/2121967301021041080",
+          "post_time": "2026-11-15T14:03:23+00:00"
+        },
+        {
+          "text": "Level 2, Ember Silver, 18 points on FungoLabs Launchpad fungolabs.org/launchpad/p/wen394428142129",
+          "url": "https://x.com/wen394428142129/status/2121968951408443722",
+          "post_time": "2026-11-15T14:09:56+00:00"
+        },
+        {
+          "text": "I reached level 3, Flare, on FungoLabs Launchpad fungolabs.org/launchpad/p/ElvieEvon67457",
+          "url": "https://x.com/ElvieEvon67457/status/2121970288548266275",
+          "post_time": "2026-11-15T14:15:15+00:00"
+        },
+        {
+          "text": "I earned the 5 Badges badge on FungoLabs Launchpad fungolabs.org/launchpad/p/ElvieEvon67457",
+          "url": "https://x.com/ElvieEvon67457/status/2121972981459038489",
+          "post_time": "2026-11-15T14:25:57+00:00"
         }
       ]
     },
     {
-      "event_id": "domain:oripa.xyz|83097",
+      "event_id": "domain:oripa.xyz",
       "identity": "domain:oripa.xyz",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T09:10:40Z",
+      "first_seen_at": "2026-11-16T13:57:06Z",
       "last_seen_at": "2026-11-17T09:10:40Z",
-      "window_bucket": 83097,
-      "post_count": 1,
-      "representative_text": "看到很多人都在说这个oripa项目 | | 感觉他和之前的papertrade类似，抽中了就会获得真实卡片（可换成USDC），没抽中就给你 $ORIPA 代币 | | 但是这个代币也并没有说可以交易，本质类似于链上开盲盒，前期头矿应该是能赚到钱的，后面进去的都是接盘侠 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
+      "window_bucket": 83094,
+      "post_count": 3,
+      "representative_text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
       "keywords": "[\"高:头矿\"]",
-      "tweet_url": "https://x.com/lugeweb3/status/2122618412379812117",
+      "tweet_url": "https://x.com/Mulight/status/2122328107734728957",
       "samples": [
+        {
+          "text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @Hyp",
+          "url": "https://x.com/Mulight/status/2122328107734728957",
+          "post_time": "2026-11-16T13:57:06+00:00"
+        },
+        {
+          "text": "跟着搞 @oripaxyz 头矿 | | 简单来说就是 抽卡版的Papertrade，11/25之前整WL，12/2公开参与回合 | | 嘿嘿有点晚了 明天写个详细版玩法参考 x.com/0xStudy/status/2122346701726106052/photo/1 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.c",
+          "url": "https://x.com/0xStudy/status/2122346701726106052",
+          "post_time": "2026-11-16T15:10:59+00:00"
+        },
         {
           "text": "看到很多人都在说这个oripa项目 | | 感觉他和之前的papertrade类似，抽中了就会获得真实卡片（可换成USDC），没抽中就给你 $ORIPA 代币 | | 但是这个代币也并没有说可以交易，本质类似于链上开盲盒，前期头矿应该是能赚到钱的，后面进去的都是接盘侠 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com",
           "url": "https://x.com/lugeweb3/status/2122618412379812117",
@@ -271,17 +333,52 @@
       ]
     },
     {
-      "event_id": "domain:pump.fun|83097",
+      "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T07:27:02Z",
+      "first_seen_at": "2026-11-13T08:27:35Z",
       "last_seen_at": "2026-11-17T07:27:02Z",
-      "window_bucket": 83097,
-      "post_count": 1,
-      "representative_text": "谁能想到还能这样？Grok搭了个 pump.fun/u/QKL2058 小应用，它负责交易，我就在旁边看着。 | | 800美元，只用17秒就做到4055美元。 | | 它遇到每个币，都会把操作步骤明明白白展示出来： | | → 在 pump.fun/u/QKL2058 刷出新币 | → 检查会不会rug：看开发者钱包、筹码捆绑、X平台帖子数量 | → 买入 | → x.com/crbpite8/status/2122592331517870287/video/1",
-      "keywords": "[\"高:新币\"]",
-      "tweet_url": "https://x.com/crbpite8/status/2122592331517870287",
+      "window_bucket": 83081,
+      "post_count": 8,
+      "representative_text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X ,$UODOG 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度直接起飞 x.com/PepeBoost888/status/21211300892030320",
+      "keywords": "[\"高:创始人\"]",
+      "tweet_url": "https://x.com/AODHLG/status/2121158020575240519",
       "samples": [
+        {
+          "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X ,$UODOG 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人",
+          "url": "https://x.com/AODHLG/status/2121158020575240519",
+          "post_time": "2026-11-13T08:27:35+00:00"
+        },
+        {
+          "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X , $updog 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始",
+          "url": "https://x.com/AODHLG/status/2121160338595004448",
+          "post_time": "2026-11-13T08:36:48+00:00"
+        },
+        {
+          "text": "GigaX 真的是越来越好用了，信号大升级这波必须吹爆！🔥 | | $FOOD 这波75x的超级大肉虽然没赶上，但这早鸟信号是真猛，两天内推了好几个几十倍的大金狗，$MAX 25x，$updog 33x，别说没行情，用了 @GigaXApp，还怕没机会，随便抓到一个就够吹上好一阵子！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机",
+          "url": "https://x.com/0xldb/status/2121162353194738124",
+          "post_time": "2026-11-13T08:44:48+00:00"
+        },
+        {
+          "text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
+          "url": "https://x.com/tiger_web3/status/2121239029928653014",
+          "post_time": "2026-11-13T13:49:30+00:00"
+        },
+        {
+          "text": "蛙总的 @GigaXApp 太权威了，信号又升级了，不愧是中文区的fomo版打狗神器 | | 这两天的大金狗全都被早鸟信号抓到了， $FOOD 75x ， $MAX 20x、 $UPDOG 30x，FOOD当时看到了，没上车，眼睁睁看它一路狂飙 | | 这次的 AI $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载",
+          "url": "https://x.com/Feng_btc/status/2121245953256763458",
+          "post_time": "2026-11-13T14:17:00+00:00"
+        },
+        {
+          "text": "不得不说，蛙哥全力转战 @GigaXApp后，信号功能越来越完善，今天 $FOOD 直接爆拉到75x，早鸟信号真得牛逼 | | 两天内信号就推送了好几个几十倍大金狗， $MAX 25x， $updog 33x，胜率真不错！信号可以根据自己需求配置，早鸟信号抓更早机会，翻倍概率更高；趋势信号专盯顶级交易员进场，专门抓大金 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
+          "url": "https://x.com/sweet919268/status/2121248920676479209",
+          "post_time": "2026-11-13T14:28:48+00:00"
+        },
+        {
+          "text": "卧槽，蛙总的 @GigaXApp 这波 AI 信号升级真的杀疯了，中文区最权威的打狗神器！ | | 先看这两天的战绩，大金狗全call到了:FOOD 狂飙 75x，UPDOG 33x，MAX 25x。FOOD 那波我眼睁睁看它飞没上车，下个金狗按头好吗！ | | 这次 AI 信号升级牛在哪？ | 🐣 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 Gi",
+          "url": "https://x.com/CandyDAO_leaf/status/2121250352250998918",
+          "post_time": "2026-11-13T14:34:29+00:00"
+        },
         {
           "text": "谁能想到还能这样？Grok搭了个 pump.fun/u/QKL2058 小应用，它负责交易，我就在旁边看着。 | | 800美元，只用17秒就做到4055美元。 | | 它遇到每个币，都会把操作步骤明明白白展示出来： | | → 在 pump.fun/u/QKL2058 刷出新币 | → 检查会不会rug：看开发者钱包、筹码捆绑、X平台帖子数量 | → 买入 | → x.com/crbpite8/",
           "url": "https://x.com/crbpite8/status/2122592331517870287",
@@ -290,7 +387,7 @@
       ]
     },
     {
-      "event_id": "domain:poolfun.app|83097",
+      "event_id": "domain:poolfun.app",
       "identity": "domain:poolfun.app",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-17T06:10:18Z",
@@ -309,7 +406,7 @@
       ]
     },
     {
-      "event_id": "domain:getblessed.fun|83096",
+      "event_id": "domain:getblessed.fun",
       "identity": "domain:getblessed.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-17T04:49:08Z",
@@ -328,74 +425,7 @@
       ]
     },
     {
-      "event_id": "domain:oneswap.cc|83096",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-17T01:32:11Z",
-      "last_seen_at": "2026-11-17T01:32:11Z",
-      "window_bucket": 83096,
-      "post_count": 1,
-      "representative_text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购 $JOSE x.com/MiracleboyNFT/status/2122503032047129064/photo/1 盯了一个多月的 canton-network:native 链的发射台One",
-      "keywords": "[\"高:第一个\", \"高:回购\"]",
-      "tweet_url": "https://x.com/MiracleboyNFT/status/2122503032047129064",
-      "samples": [
-        {
-          "text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购",
-          "url": "https://x.com/MiracleboyNFT/status/2122503032047129064",
-          "post_time": "2026-11-17T01:32:11+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc|83095",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-16T21:30:41Z",
-      "last_seen_at": "2026-11-16T21:31:28Z",
-      "window_bucket": 83095,
-      "post_count": 2,
-      "representative_text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/c423855046/status/2122442256938594785",
-      "samples": [
-        {
-          "text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-          "url": "https://x.com/c423855046/status/2122442256938594785",
-          "post_time": "2026-11-16T21:30:41+00:00"
-        },
-        {
-          "text": "jose现在660k了， @onepumpcc | 前几个币也拉一拉呗，都是好角度 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/212104470160027259",
-          "url": "https://x.com/CC4238/status/2122442452007260457",
-          "post_time": "2026-11-16T21:31:28+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oripa.xyz|83094",
-      "identity": "domain:oripa.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T13:57:06Z",
-      "last_seen_at": "2026-11-16T15:10:59Z",
-      "window_bucket": 83094,
-      "post_count": 2,
-      "representative_text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
-      "keywords": "[\"高:头矿\"]",
-      "tweet_url": "https://x.com/Mulight/status/2122328107734728957",
-      "samples": [
-        {
-          "text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @Hyp",
-          "url": "https://x.com/Mulight/status/2122328107734728957",
-          "post_time": "2026-11-16T13:57:06+00:00"
-        },
-        {
-          "text": "跟着搞 @oripaxyz 头矿 | | 简单来说就是 抽卡版的Papertrade，11/25之前整WL，12/2公开参与回合 | | 嘿嘿有点晚了 明天写个详细版玩法参考 x.com/0xStudy/status/2122346701726106052/photo/1 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.c",
-          "url": "https://x.com/0xStudy/status/2122346701726106052",
-          "post_time": "2026-11-16T15:10:59+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:strategy.com|83094",
+      "event_id": "domain:strategy.com",
       "identity": "domain:strategy.com",
       "identity_type": "domain",
       "first_seen_at": "2026-11-16T13:20:27Z",
@@ -419,26 +449,7 @@
       ]
     },
     {
-      "event_id": "domain:pxio.fun|83094",
-      "identity": "domain:pxio.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T14:25:05Z",
-      "last_seen_at": "2026-11-16T14:25:05Z",
-      "window_bucket": 83094,
-      "post_count": 1,
-      "representative_text": "pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不打 | | 网站比这几天的流水盘看着舒服多了 | | 玩法就是 你的NFT是矿机 每小时可以产 $pxio | | ai告诉我 NFT是可以交易的 但是网站还没看到 | | 反正先给免费档拿着。花钱的不要打！！！ | | 链接：pxio.fun/ x.com/kuk47377341/status/2122335150990340451/photo/1",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/kuk47377341/status/2122335150990340451",
-      "samples": [
-        {
-          "text": "pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不打 | | 网站比这几天的流水盘看着舒服多了 | | 玩法就是 你的NFT是矿机 每小时可以产 $pxio | | ai告诉我 NFT是可以交易的 但是网站还没看到 | | 反正先给免费档拿着。花钱的不要打！！！ | | 链接：pxio.fun/ x.com/kuk47377341/status/",
-          "url": "https://x.com/kuk47377341/status/2122335150990340451",
-          "post_time": "2026-11-16T14:25:05+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:make.fun|83094",
+      "event_id": "domain:make.fun",
       "identity": "domain:make.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-16T12:54:01Z",
@@ -462,7 +473,7 @@
       ]
     },
     {
-      "event_id": "domain:meritfunded.com|83094",
+      "event_id": "domain:meritfunded.com",
       "identity": "domain:meritfunded.com",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-16T12:53:32Z",
@@ -481,7 +492,7 @@
       ]
     },
     {
-      "event_id": "domain:insert1up.fun|83094",
+      "event_id": "domain:insert1up.fun",
       "identity": "domain:insert1up.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-16T12:08:28Z",
@@ -510,17 +521,22 @@
       ]
     },
     {
-      "event_id": "domain:gang.fun|83093",
+      "event_id": "domain:gang.fun",
       "identity": "domain:gang.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T11:32:12Z",
+      "first_seen_at": "2026-11-11T06:10:19Z",
       "last_seen_at": "2026-11-16T11:32:12Z",
-      "window_bucket": 83093,
-      "post_count": 1,
-      "representative_text": "这个 gang.fun 我认真看了 BNB链上专门给AI Agent发币的发射台 | | 新币先在内盘打 只有带着.ai的币安Agent钱包能打 单钱包 上限总量的1% | GANG已经发射 代币没有买卖税 平台手续费八成 回购销毁 有的新项目还用GANG来计价 合约没有owner，也不能增发 x.com/102BTC/status/2122291642183115116/photo/1 $JAGENT | 那时候才4万市值 我发了这张K线图 | | 现在四十多万份打出去了 市值到了五百万附近 | | 但这事才刚开头 总共444万份，现在才打了不到一成 | | 打一份现在大约4.36U 后面档",
-      "keywords": "[\"高:回购\", \"高:销毁\", \"高:新币\"]",
-      "tweet_url": "https://x.com/102BTC/status/2122291642183115116",
+      "window_bucket": 83073,
+      "post_count": 2,
+      "representative_text": "GANG Built For Agents， | | Launchpad On BNB， | | Chain, Fair Launches For Agents。 I’ll be liking gang.fun posts. | | gang.fun 트윗은 좋아요 누를게요. | | gang.fun paylaşımlarını beğeneceğim. | | Tôi sẽ thích các bài viết về gang.fun. | | 我会点赞一些 gang.fun 的推文。",
+      "keywords": "[\"高:fair launch\", \"高:launchpad\"]",
+      "tweet_url": "https://x.com/KevinQin_eth/status/2120398698018656407",
       "samples": [
+        {
+          "text": "GANG Built For Agents， | | Launchpad On BNB， | | Chain, Fair Launches For Agents。 I’ll be liking gang.fun posts. | | gang.fun 트윗은 좋아요 누를게요. | | gang.fun paylaşımlarını beğeneceğim. | | Tôi sẽ thích cá",
+          "url": "https://x.com/KevinQin_eth/status/2120398698018656407",
+          "post_time": "2026-11-11T06:10:19+00:00"
+        },
         {
           "text": "这个 gang.fun 我认真看了 BNB链上专门给AI Agent发币的发射台 | | 新币先在内盘打 只有带着.ai的币安Agent钱包能打 单钱包 上限总量的1% | GANG已经发射 代币没有买卖税 平台手续费八成 回购销毁 有的新项目还用GANG来计价 合约没有owner，也不能增发 x.com/102BTC/status/2122291642183115116/photo/1 $JAG",
           "url": "https://x.com/102BTC/status/2122291642183115116",
@@ -529,7 +545,7 @@
       ]
     },
     {
-      "event_id": "domain:gigax.fun|83093",
+      "event_id": "domain:gigax.fun",
       "identity": "domain:gigax.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-16T06:44:42Z",
@@ -544,49 +560,6 @@
           "text": "#现货不怕 | 第一个发射信号是37k出的 | 第二个早鸟信号大概是50多k出得 | 无脑买入 | 走我链接减免50%手续费哦✌️ | 顶级信号欢迎试试 | | gigax.fun/r/xino112 x.com/cryptopepace/status/2122219290296569901/photo/1",
           "url": "https://x.com/cryptopepace/status/2122219290296569901",
           "post_time": "2026-11-16T06:44:42+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:fungolabs.org|83093",
-      "identity": "domain:fungolabs.org",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T06:02:16Z",
-      "last_seen_at": "2026-11-16T06:38:59Z",
-      "window_bucket": 83093,
-      "post_count": 2,
-      "representative_text": "2/3. Tiny worlds in pixel space | fungolabs.org/launchpad/c/nvs5bw7x",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/Kangzi_VC/status/2122208612571631692",
-      "samples": [
-        {
-          "text": "2/3. Tiny worlds in pixel space | fungolabs.org/launchpad/c/nvs5bw7x",
-          "url": "https://x.com/Kangzi_VC/status/2122208612571631692",
-          "post_time": "2026-11-16T06:02:16+00:00"
-        },
-        {
-          "text": "最烦的事儿就是： | 你期待很久的项目要空投了，大盘开始阴跌了 | ▪️Extended 的代币盘前跌破 0.2 | ▪️Variational 年底之前空投概率跌到了 66% | 虽然对他俩信心很足，但看数据还是会心烦🙃 x.com/zaijin338191/status/2122217853978092002/photo/1 打了 @FungoLabs 的兄弟可以去开箱子 | 有群友已经开出 ",
-          "url": "https://x.com/zaijin338191/status/2122217853978092002",
-          "post_time": "2026-11-16T06:38:59+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc|83092",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-16T05:11:36Z",
-      "last_seen_at": "2026-11-16T05:11:36Z",
-      "window_bucket": 83092,
-      "post_count": 1,
-      "representative_text": "这个行情能不断保持新高的不多了，本月第一个alphacall，含金量如何？ | 63k--380k--6x | | canton链的背景是相当豪华的，只是玩的人少 | 爆发起来不比任何一个公链差 | @onepumpcc @JoseOnCanton | #canton x.com/SkyAAmen/status/2122195863066046529/photo/1 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8",
-      "keywords": "[\"高:launchpad\", \"高:第一个\", \"高:台子\"]",
-      "tweet_url": "https://x.com/SkyAAmen/status/2122195863066046529",
-      "samples": [
-        {
-          "text": "这个行情能不断保持新高的不多了，本月第一个alphacall，含金量如何？ | 63k--380k--6x | | canton链的背景是相当豪华的，只是玩的人少 | 爆发起来不比任何一个公链差 | @onepumpcc @JoseOnCanton | #canton x.com/SkyAAmen/status/2122195863066046529/photo/1 onepump作为canton",
-          "url": "https://x.com/SkyAAmen/status/2122195863066046529",
-          "post_time": "2026-11-16T05:11:36+00:00"
         }
       ]
     },
@@ -645,26 +618,61 @@
       ]
     },
     {
-      "event_id": "domain:onlystreets.fun|83092",
+      "event_id": "domain:onlystreets.fun",
       "identity": "domain:onlystreets.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T04:24:09Z",
+      "first_seen_at": "2026-11-11T02:05:40Z",
       "last_seen_at": "2026-11-16T04:24:09Z",
-      "window_bucket": 83092,
-      "post_count": 1,
-      "representative_text": "OnlyStreets 是一个即将上线的 Solana 链上 memecoin 发射平台 | | 它的最大特点是：每个币必须从应用内实时拍摄的照片开始 | | 不能从相册上传、截图、网络图片或库存图。只有你在街上亲眼看到并当场用 App 相机拍下来的瞬间，才能变成代币 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and launch a c",
+      "window_bucket": 83072,
+      "post_count": 12,
+      "representative_text": "终于有人想治治满屏偷图和 AI 跑图发币的乱象了。 | | OnlyStreets 搞的这个机制有点意思：必须 App 内实时实拍发币，禁相册上传。 | | 1️⃣ 物理锁死偷跑：杜绝去 Pinterest 偷现成图做局 | 2️⃣ 强行拉回现实：把发币场景直接搬到线下街头 | 3️⃣ 滤掉流水线盘：至少发币前你得真出门看一眼世界 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin starts ",
       "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/yingge001/status/2122183922041974799",
+      "tweet_url": "https://x.com/hisevenih/status/2120337131013070915",
       "samples": [
         {
-          "text": "OnlyStreets 是一个即将上线的 Solana 链上 memecoin 发射平台 | | 它的最大特点是：每个币必须从应用内实时拍摄的照片开始 | | 不能从相册上传、截图、网络图片或库存图。只有你在街上亲眼看到并当场用 App 相机拍下来的瞬间，才能变成代币 Introducing onlystreets.fun | | A Solana launchpad for fresh auth",
-          "url": "https://x.com/yingge001/status/2122183922041974799",
-          "post_time": "2026-11-16T04:24:09+00:00"
+          "text": "终于有人想治治满屏偷图和 AI 跑图发币的乱象了。 | | OnlyStreets 搞的这个机制有点意思：必须 App 内实时实拍发币，禁相册上传。 | | 1️⃣ 物理锁死偷跑：杜绝去 Pinterest 偷现成图做局 | 2️⃣ 强行拉回现实：把发币场景直接搬到线下街头 | 3️⃣ 滤掉流水线盘：至少发币前你得真出门看一眼世界 onlystreets.fun is coming soon on",
+          "url": "https://x.com/hisevenih/status/2120337131013070915",
+          "post_time": "2026-11-11T02:05:40+00:00"
+        },
+        {
+          "text": "看到一个挺有意思的 Solana 新项目：onlystreets.fun，目前还在 Coming Soon 阶段。 | | 它想做的事情比较特别，就是把现实生活中的真实瞬间变成 Meme 币。和普通发射平台不太一样，用户必须通过 App 现场拍摄一张新照片才能创建代币，不允许从手机相册上传图片。 onlystreets.fun is coming soon on Solana. | | A one",
+          "url": "https://x.com/sodislikea/status/2120355316164391290",
+          "post_time": "2026-11-11T03:17:56+00:00"
+        },
+        {
+          "text": "最近看到一個滿有趣的項目 @onlystreetsfun | | OnlyStreets 想把日常生活中的有趣瞬間，直接帶到 Solana 鏈上。 | | 玩法很簡單 | 在街上看到有趣的畫面，用 App 即時拍照。 | | 替照片取名、設定 Ticker，就能創建自己的 Meme Coin。 | | 比較特別的是，它要求使用 App 現場拍攝，不能直接從相簿上傳圖片。 x.com/luke102",
+          "url": "https://x.com/luke102579/status/2120719985597096236",
+          "post_time": "2026-11-12T03:27:00+00:00"
+        },
+        {
+          "text": "Memecoins inspired by real-life moments? That's what @onlystreetsfun is exploring. | | Capture something funny or unusual, turn it into a Solana coin, and bring real-world culture on-chain. | | Intere",
+          "url": "https://x.com/mrchrismast_/status/2120860163754414126",
+          "post_time": "2026-11-12T12:44:01+00:00"
+        },
+        {
+          "text": "Đôi khi một khoảnh khắc bình thường ngoài đường lại có thể trở thành câu chuyện được hàng nghìn người quan tâm | | Đó là điều khiến mình muốn khám phá @onlystreetsfun. Ý tưởng đưa những hình ảnh đời t",
+          "url": "https://x.com/mrchrismast_/status/2121018405637816356",
+          "post_time": "2026-11-12T23:12:49+00:00"
+        },
+        {
+          "text": "大部分 launchpad 拼的是叙事和包装，OnlyStreets 直接把约束写成规则：币只能从 App 相机拍的照片里出来。这个限制反而把同质化的图文素材清出去了，让\"街头实拍\"本身成了稀缺性来源，和 Rarelist 按真实社交行为排名的思路天然契合。 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic",
+          "url": "https://x.com/PumpVaultBase/status/2121061677055836206",
+          "post_time": "2026-11-13T02:04:45+00:00"
+        },
+        {
+          "text": "現在的 Meme 市場，大家每天都在尋找下一個熱門敘事。 | | 但有沒有想過，下一個爆紅的 Meme，可能就在你每天經過的街道上？ | | @onlystreetsfun 想做的事情很有意思：把現實生活中有趣、荒謬、甚至莫名其妙的瞬間，直接變成 Solana 上的代幣。 | | 看到一個有趣的畫面，現場拍照、取名，就能創建一枚 Coin。 Introducing onlystreets.fun ",
+          "url": "https://x.com/luke102579/status/2121080863391887676",
+          "post_time": "2026-11-13T03:21:00+00:00"
+        },
+        {
+          "text": ". @rarelistio 这个台子是每天都有几个任务，点赞，评论，转发的。 | 我的节奏就是每天写一篇帖子。 | Rarelist项目的排名是1742， @onlystreetsfun 的排名是1058 x.com/jiao_newlife/status/2121117923876221088/photo/1 Introducing onlystreets.fun | | A Solana la",
+          "url": "https://x.com/jiao_newlife/status/2121117923876221088",
+          "post_time": "2026-11-13T05:48:16+00:00"
         }
       ]
     },
     {
-      "event_id": "domain:newbeggar.com|83092",
+      "event_id": "domain:newbeggar.com",
       "identity": "domain:newbeggar.com",
       "identity_type": "domain",
       "first_seen_at": "2026-11-16T00:01:37Z",
@@ -702,75 +710,7 @@
       ]
     },
     {
-      "event_id": "domain:fungolabs.org|83090",
-      "identity": "domain:fungolabs.org",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T12:26:27Z",
-      "last_seen_at": "2026-11-15T14:25:57Z",
-      "window_bucket": 83090,
-      "post_count": 6,
-      "representative_text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/kuk47377341/status/2121942907032867181",
-      "samples": [
-        {
-          "text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
-          "url": "https://x.com/kuk47377341/status/2121942907032867181",
-          "post_time": "2026-11-15T12:26:27+00:00"
-        },
-        {
-          "text": "fungolabs的创造者分配出来了兄弟们查 | | 传送门：fungolabs.org/launchpad/leaderboard | | 看看能不能吃到一顿猪脚饭啊 | | 我感觉是小毛我丢🥲看市值多少把 x.com/CandyDAO_leaf/status/2121966986917990704/photo/1 熊市兄弟们撸现金奖励吧 | | 真实发奖的，之前撸不少了🥲 | | Jasper",
-          "url": "https://x.com/CandyDAO_leaf/status/2121966986917990704",
-          "post_time": "2026-11-15T14:02:08+00:00"
-        },
-        {
-          "text": "🔗：fungolabs.org/launchpad/leaderboard?view=x",
-          "url": "https://x.com/ETH116688/status/2121967301021041080",
-          "post_time": "2026-11-15T14:03:23+00:00"
-        },
-        {
-          "text": "Level 2, Ember Silver, 18 points on FungoLabs Launchpad fungolabs.org/launchpad/p/wen394428142129",
-          "url": "https://x.com/wen394428142129/status/2121968951408443722",
-          "post_time": "2026-11-15T14:09:56+00:00"
-        },
-        {
-          "text": "I reached level 3, Flare, on FungoLabs Launchpad fungolabs.org/launchpad/p/ElvieEvon67457",
-          "url": "https://x.com/ElvieEvon67457/status/2121970288548266275",
-          "post_time": "2026-11-15T14:15:15+00:00"
-        },
-        {
-          "text": "I earned the 5 Badges badge on FungoLabs Launchpad fungolabs.org/launchpad/p/ElvieEvon67457",
-          "url": "https://x.com/ElvieEvon67457/status/2121972981459038489",
-          "post_time": "2026-11-15T14:25:57+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:fungolabs.org|83089",
-      "identity": "domain:fungolabs.org",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T11:26:45Z",
-      "last_seen_at": "2026-11-15T11:30:21Z",
-      "window_bucket": 83089,
-      "post_count": 2,
-      "representative_text": "Cỡ này bú được 10$ ko các khầy. 🤣🤣🤣 | | Anh em check hết chưa, chúa tể scam hả ae 🤣🤣🤣 | | Ko chỉnh chu bài viết và viết trong 2 ngày 5 bài cho nhiêu thì cũng thank you, mà cho ít quá là có chiện. 🤣🤣 | | Link check: fungolabs.org/launchpad/leaderboard?view=x x.com/mrchrismast_/status/2121927883891601",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/mrchrismast_/status/2121927883891601580",
-      "samples": [
-        {
-          "text": "Cỡ này bú được 10$ ko các khầy. 🤣🤣🤣 | | Anh em check hết chưa, chúa tể scam hả ae 🤣🤣🤣 | | Ko chỉnh chu bài viết và viết trong 2 ngày 5 bài cho nhiêu thì cũng thank you, mà cho ít quá là có chiện. 🤣🤣 |",
-          "url": "https://x.com/mrchrismast_/status/2121927883891601580",
-          "post_time": "2026-11-15T11:26:45+00:00"
-        },
-        {
-          "text": "0 points on FungoLabs Launchpad fungolabs.org/launchpad/p/Yiyixmb",
-          "url": "https://x.com/Yiyixmb/status/2121928786992414942",
-          "post_time": "2026-11-15T11:30:21+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:cnbc.com|83089",
+      "event_id": "domain:cnbc.com",
       "identity": "domain:cnbc.com",
       "identity_type": "domain",
       "first_seen_at": "2026-11-15T10:42:01Z",
@@ -789,7 +729,7 @@
       ]
     },
     {
-      "event_id": "domain:agmask.org|83089",
+      "event_id": "domain:agmask.org",
       "identity": "domain:agmask.org",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-15T08:40:17Z",
@@ -808,40 +748,26 @@
       ]
     },
     {
-      "event_id": "domain:zxoxo.xyz|83089",
+      "event_id": "domain:zxoxo.xyz",
       "identity": "domain:zxoxo.xyz",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T06:57:46Z",
+      "first_seen_at": "2026-11-13T10:59:18Z",
       "last_seen_at": "2026-11-15T06:57:46Z",
-      "window_bucket": 83089,
-      "post_count": 1,
-      "representative_text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/c",
+      "window_bucket": 83081,
+      "post_count": 2,
+      "representative_text": "Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/card/G9DJ-9BJN x.com/aiqiang888/status/2121196197981696344/photo/1",
       "keywords": "[\"高:新东西\"]",
-      "tweet_url": "https://x.com/aiqiang888/status/2121860192845631999",
+      "tweet_url": "https://x.com/aiqiang888/status/2121196197981696344",
       "samples": [
+        {
+          "text": "Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/card/G9DJ-9BJN x.com/aiqiang888/status/2121196197981696344/photo",
+          "url": "https://x.com/aiqiang888/status/2121196197981696344",
+          "post_time": "2026-11-13T10:59:18+00:00"
+        },
         {
           "text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类",
           "url": "https://x.com/aiqiang888/status/2121860192845631999",
           "post_time": "2026-11-15T06:57:46+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:onlystreets.fun|83089",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T06:04:31Z",
-      "last_seen_at": "2026-11-15T06:04:31Z",
-      "window_bucket": 83089,
-      "post_count": 1,
-      "representative_text": "@onlystreetsfun 是 Solana 上的一个发币平台，想把现实生活中的瞬间带上链，用不同的方式创作 meme 币 | | 发币流程分四步：在现实中看到好笑、奇怪或有意思的东西，用 OnlyStreets 的 App 内相机拍下来，起名字和 ticker，然后当场发币 | | 币发出来后，任何人都能发现、买卖和分享 | 卷起来！ onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin st",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/yingge001/status/2121846788357554290",
-      "samples": [
-        {
-          "text": "@onlystreetsfun 是 Solana 上的一个发币平台，想把现实生活中的瞬间带上链，用不同的方式创作 meme 币 | | 发币流程分四步：在现实中看到好笑、奇怪或有意思的东西，用 OnlyStreets 的 App 内相机拍下来，起名字和 ticker，然后当场发币 | | 币发出来后，任何人都能发现、买卖和分享 | 卷起来！ onlystreets.fun is coming so",
-          "url": "https://x.com/yingge001/status/2121846788357554290",
-          "post_time": "2026-11-15T06:04:31+00:00"
         }
       ]
     },
@@ -884,7 +810,7 @@
       ]
     },
     {
-      "event_id": "domain:hero-sms.com|83087",
+      "event_id": "domain:hero-sms.com",
       "identity": "domain:hero-sms.com",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-14T21:15:00Z",
@@ -903,7 +829,7 @@
       ]
     },
     {
-      "event_id": "domain:analos.org|83087",
+      "event_id": "domain:analos.org",
       "identity": "domain:analos.org",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-14T19:02:50Z",
@@ -927,7 +853,7 @@
       ]
     },
     {
-      "event_id": "domain:btc-agent.fun|83086",
+      "event_id": "domain:btc-agent.fun",
       "identity": "domain:btc-agent.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-14T12:54:55Z",
@@ -961,7 +887,7 @@
       ]
     },
     {
-      "event_id": "domain:agentlife.fun|83086",
+      "event_id": "domain:agentlife.fun",
       "identity": "domain:agentlife.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-14T12:04:45Z",
@@ -980,31 +906,7 @@
       ]
     },
     {
-      "event_id": "domain:oneswap.cc|83085",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-14T09:35:10Z",
-      "last_seen_at": "2026-11-14T11:37:53Z",
-      "window_bucket": 83085,
-      "post_count": 2,
-      "representative_text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc/launchpad/token/8c3fd77c-75a7-5be4-955f-07c7da397eb5",
-      "keywords": "[\"高:launchpad\", \"高:回购\"]",
-      "tweet_url": "https://x.com/drjingle/status/2121537412719612092",
-      "samples": [
-        {
-          "text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc",
-          "url": "https://x.com/drjingle/status/2121537412719612092",
-          "post_time": "2026-11-14T09:35:10+00:00"
-        },
-        {
-          "text": "实在没啥玩的了😭 | | 刚在CC链上了点彩票，创始人发了三个币都还卡着没发射 | | @onepumpcc @Oneswapcc 能不能给点力啊 | oneswap.cc 跨链蹲着等起飞 🌱 x.com/guoxf23/status/2121568298756436229/photo/1",
-          "url": "https://x.com/guoxf23/status/2121568298756436229",
-          "post_time": "2026-11-14T11:37:53+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:flap.sh|83085",
+      "event_id": "domain:flap.sh",
       "identity": "domain:flap.sh",
       "identity_type": "domain",
       "first_seen_at": "2026-11-14T08:54:03Z",
@@ -1023,7 +925,7 @@
       ]
     },
     {
-      "event_id": "domain:xiaoyuzhoufm.com|83085",
+      "event_id": "domain:xiaoyuzhoufm.com",
       "identity": "domain:xiaoyuzhoufm.com",
       "identity_type": "domain",
       "first_seen_at": "2026-11-14T07:49:54Z",
@@ -1042,7 +944,7 @@
       ]
     },
     {
-      "event_id": "domain:69meme.fun|83085",
+      "event_id": "domain:69meme.fun",
       "identity": "domain:69meme.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-14T06:05:34Z",
@@ -1080,7 +982,7 @@
       ]
     },
     {
-      "event_id": "domain:zro.fun|83084",
+      "event_id": "domain:zro.fun",
       "identity": "domain:zro.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-14T05:08:31Z",
@@ -1099,84 +1001,26 @@
       ]
     },
     {
-      "event_id": "domain:rarelist.io|83084",
+      "event_id": "domain:rarelist.io",
       "identity": "domain:rarelist.io",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T03:09:35Z",
+      "first_seen_at": "2026-11-13T07:47:05Z",
       "last_seen_at": "2026-11-14T03:09:35Z",
-      "window_bucket": 83084,
-      "post_count": 1,
-      "representative_text": "這次 @rarelistio 新推出的競賽只剩3天了 | | 大家的排名還有在榜單裡面嗎? | | @onlystreetsfun 提供 TOP 200 創作者 1% supply 的獎勵 | | 想像一下 | | 路邊一隻表情很有戲的狗、一塊奇怪的招牌，甚至是一個讓人看不懂的街頭裝置。 | | 這些平常可能只是拍張照、發個限時動態的東西。 | | 但在 @onlystreetsfun A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreet",
+      "window_bucket": 83081,
+      "post_count": 2,
+      "representative_text": "每天上线做做任务，点点赚也是不错的嘴撸任务 | | 目前排名1万+，还是得继续多写帖子 @rarelistio | | 继续提升我的等级 A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreetsfun is the first launchpad built to turn real-life moments into coins. | | Duration: Nov 11–17 x.com/rarelistio/status/212022",
       "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/luke102579/status/2121440377291055487",
+      "tweet_url": "https://x.com/wen394428142129/status/2121147824419274791",
       "samples": [
+        {
+          "text": "每天上线做做任务，点点赚也是不错的嘴撸任务 | | 目前排名1万+，还是得继续多写帖子 @rarelistio | | 继续提升我的等级 A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreetsfun is the first launchpa",
+          "url": "https://x.com/wen394428142129/status/2121147824419274791",
+          "post_time": "2026-11-13T07:47:05+00:00"
+        },
         {
           "text": "這次 @rarelistio 新推出的競賽只剩3天了 | | 大家的排名還有在榜單裡面嗎? | | @onlystreetsfun 提供 TOP 200 創作者 1% supply 的獎勵 | | 想像一下 | | 路邊一隻表情很有戲的狗、一塊奇怪的招牌，甚至是一個讓人看不懂的街頭裝置。 | | 這些平常可能只是拍張照、發個限時動態的東西。 | | 但在 @onlystreetsfun A new",
           "url": "https://x.com/luke102579/status/2121440377291055487",
           "post_time": "2026-11-14T03:09:35+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc|83082",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-13T14:36:09Z",
-      "last_seen_at": "2026-11-13T15:04:24Z",
-      "window_bucket": 83082,
-      "post_count": 3,
-      "representative_text": "这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172947",
-      "keywords": "[\"高:launchpad\", \"高:新台子\"]",
-      "tweet_url": "https://x.com/Mojito_cx/status/2121250771757084705",
-      "samples": [
-        {
-          "text": "这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172947",
-          "url": "https://x.com/Mojito_cx/status/2121250771757084705",
-          "post_time": "2026-11-13T14:36:09+00:00"
-        },
-        {
-          "text": "$cpepe 其实才是 @onepumpcc 的第一枚认证代币 他是官方最早部署 不知道什么原因一直没有发射的代币 | | 有强大的社区 以及官方预告里都有提到 可能因为昨天有人抢跑 导致官方没有及时发送它 | | 现在不要再错过了 onepump的龙头 这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-18",
-          "url": "https://x.com/Mojito_cx/status/2121253209566216488",
-          "post_time": "2026-11-13T14:45:50+00:00"
-        },
-        {
-          "text": "董事长进军canton链 要乱杀了 | | @nyenchenn most handsome frog 🐸 on canton is officially live on @onepumpcc | | make memes great again. $CPEPE | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172",
-          "url": "https://x.com/Mojito_cx/status/2121257882197119118",
-          "post_time": "2026-11-13T15:04:24+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:pump.fun|83082",
-      "identity": "domain:pump.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T13:49:30Z",
-      "last_seen_at": "2026-11-13T14:34:29Z",
-      "window_bucket": 83082,
-      "post_count": 4,
-      "representative_text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人）",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/tiger_web3/status/2121239029928653014",
-      "samples": [
-        {
-          "text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
-          "url": "https://x.com/tiger_web3/status/2121239029928653014",
-          "post_time": "2026-11-13T13:49:30+00:00"
-        },
-        {
-          "text": "蛙总的 @GigaXApp 太权威了，信号又升级了，不愧是中文区的fomo版打狗神器 | | 这两天的大金狗全都被早鸟信号抓到了， $FOOD 75x ， $MAX 20x、 $UPDOG 30x，FOOD当时看到了，没上车，眼睁睁看它一路狂飙 | | 这次的 AI $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载",
-          "url": "https://x.com/Feng_btc/status/2121245953256763458",
-          "post_time": "2026-11-13T14:17:00+00:00"
-        },
-        {
-          "text": "不得不说，蛙哥全力转战 @GigaXApp后，信号功能越来越完善，今天 $FOOD 直接爆拉到75x，早鸟信号真得牛逼 | | 两天内信号就推送了好几个几十倍大金狗， $MAX 25x， $updog 33x，胜率真不错！信号可以根据自己需求配置，早鸟信号抓更早机会，翻倍概率更高；趋势信号专盯顶级交易员进场，专门抓大金 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
-          "url": "https://x.com/sweet919268/status/2121248920676479209",
-          "post_time": "2026-11-13T14:28:48+00:00"
-        },
-        {
-          "text": "卧槽，蛙总的 @GigaXApp 这波 AI 信号升级真的杀疯了，中文区最权威的打狗神器！ | | 先看这两天的战绩，大金狗全call到了:FOOD 狂飙 75x，UPDOG 33x，MAX 25x。FOOD 那波我眼睁睁看它飞没上车，下个金狗按头好吗！ | | 这次 AI 信号升级牛在哪？ | 🐣 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 Gi",
-          "url": "https://x.com/CandyDAO_leaf/status/2121250352250998918",
-          "post_time": "2026-11-13T14:34:29+00:00"
         }
       ]
     },
@@ -1200,60 +1044,22 @@
       ]
     },
     {
-      "event_id": "domain:zxoxo.xyz|83081",
-      "identity": "domain:zxoxo.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T10:59:18Z",
-      "last_seen_at": "2026-11-13T10:59:18Z",
-      "window_bucket": 83081,
-      "post_count": 1,
-      "representative_text": "Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/card/G9DJ-9BJN x.com/aiqiang888/status/2121196197981696344/photo/1",
-      "keywords": "[\"高:新东西\"]",
-      "tweet_url": "https://x.com/aiqiang888/status/2121196197981696344",
-      "samples": [
-        {
-          "text": "Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/card/G9DJ-9BJN x.com/aiqiang888/status/2121196197981696344/photo",
-          "url": "https://x.com/aiqiang888/status/2121196197981696344",
-          "post_time": "2026-11-13T10:59:18+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc|83081",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-13T08:49:53Z",
-      "last_seen_at": "2026-11-13T09:24:53Z",
-      "window_bucket": 83081,
-      "post_count": 2,
-      "representative_text": "顶级 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1",
-      "keywords": "[\"高:launchpad\", \"高:台子\"]",
-      "tweet_url": "https://x.com/Anbzydd520/status/2121163631895412979",
-      "samples": [
-        {
-          "text": "顶级 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1",
-          "url": "https://x.com/Anbzydd520/status/2121163631895412979",
-          "post_time": "2026-11-13T08:49:53+00:00"
-        },
-        {
-          "text": "会有点卡，但是卡才是机会 | 这里创建邮箱输入验证码https://www.oneswap.cc/home | 然后链接钱包跨链 | 有eth，bnb等等自己选择 | 买了点这个币安实验室投资的项目 | 是个新链 | 市值才15w左右，不是显示的m是cc计价的 | 需要链接钱包跨链cc过去 | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96",
-          "url": "https://x.com/Anbzydd520/status/2121172439883501790",
-          "post_time": "2026-11-13T09:24:53+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:papersnake.fun|83081",
+      "event_id": "domain:papersnake.fun",
       "identity": "domain:papersnake.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T09:11:48Z",
+      "first_seen_at": "2026-11-13T04:55:28Z",
       "last_seen_at": "2026-11-13T09:11:48Z",
-      "window_bucket": 83081,
-      "post_count": 1,
-      "representative_text": "免费去领一条蛇吧 | 好像要投钱才能玩 | 先领着吧 | 这蛇看着挺喜庆 | 链接：papersnake.fun/#mint x.com/web3cxk/status/2121169147845661127/photo/1",
+      "window_bucket": 83080,
+      "post_count": 2,
+      "representative_text": "这玩意可以免费领个蛇 不过蛇好像没啥用 也有付费档的蛇 | | 只能拿来玩游戏 游戏的话需要投入真钱才可以 | | 就跟贪吃蛇一样 撞死别人可以拿走 90% 的筹码 | | 目前好像没啥人。先给免费的拿着 | | 花钱的不打！ | | 链接：papersnake.fun/#mint x.com/kuk47377341/status/2121104636602184156/photo/1",
       "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/web3cxk/status/2121169147845661127",
+      "tweet_url": "https://x.com/kuk47377341/status/2121104636602184156",
       "samples": [
+        {
+          "text": "这玩意可以免费领个蛇 不过蛇好像没啥用 也有付费档的蛇 | | 只能拿来玩游戏 游戏的话需要投入真钱才可以 | | 就跟贪吃蛇一样 撞死别人可以拿走 90% 的筹码 | | 目前好像没啥人。先给免费的拿着 | | 花钱的不打！ | | 链接：papersnake.fun/#mint x.com/kuk47377341/status/2121104636602184156/photo/1",
+          "url": "https://x.com/kuk47377341/status/2121104636602184156",
+          "post_time": "2026-11-13T04:55:28+00:00"
+        },
         {
           "text": "免费去领一条蛇吧 | 好像要投钱才能玩 | 先领着吧 | 这蛇看着挺喜庆 | 链接：papersnake.fun/#mint x.com/web3cxk/status/2121169147845661127/photo/1",
           "url": "https://x.com/web3cxk/status/2121169147845661127",
@@ -1262,79 +1068,7 @@
       ]
     },
     {
-      "event_id": "domain:pump.fun|83081",
-      "identity": "domain:pump.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T08:27:35Z",
-      "last_seen_at": "2026-11-13T08:44:48Z",
-      "window_bucket": 83081,
-      "post_count": 3,
-      "representative_text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X ,$UODOG 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度直接起飞 x.com/PepeBoost888/status/21211300892030320",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/AODHLG/status/2121158020575240519",
-      "samples": [
-        {
-          "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X ,$UODOG 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人",
-          "url": "https://x.com/AODHLG/status/2121158020575240519",
-          "post_time": "2026-11-13T08:27:35+00:00"
-        },
-        {
-          "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X , $updog 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始",
-          "url": "https://x.com/AODHLG/status/2121160338595004448",
-          "post_time": "2026-11-13T08:36:48+00:00"
-        },
-        {
-          "text": "GigaX 真的是越来越好用了，信号大升级这波必须吹爆！🔥 | | $FOOD 这波75x的超级大肉虽然没赶上，但这早鸟信号是真猛，两天内推了好几个几十倍的大金狗，$MAX 25x，$updog 33x，别说没行情，用了 @GigaXApp，还怕没机会，随便抓到一个就够吹上好一阵子！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机",
-          "url": "https://x.com/0xldb/status/2121162353194738124",
-          "post_time": "2026-11-13T08:44:48+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:onlystreets.fun|83081",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T08:02:00Z",
-      "last_seen_at": "2026-11-13T08:09:14Z",
-      "window_bucket": 83081,
-      "post_count": 2,
-      "representative_text": "OnlyStreets 是一个代币发行平台 @onlystreetsfun | | 即将在上线前发布空投奖励 | | 奖品为1000U | 第一名300u | 前两名150u | 前三名100 U | 前4-15名恭喜450U | 前两百名占供应量的1% | 项目只做分享，不做投资建议 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and l",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/wen394428142129/status/2121151581249024372",
-      "samples": [
-        {
-          "text": "OnlyStreets 是一个代币发行平台 @onlystreetsfun | | 即将在上线前发布空投奖励 | | 奖品为1000U | 第一名300u | 前两名150u | 前三名100 U | 前4-15名恭喜450U | 前两百名占供应量的1% | 项目只做分享，不做投资建议 Introducing onlystreets.fun | | A Solana launchpad for f",
-          "url": "https://x.com/wen394428142129/status/2121151581249024372",
-          "post_time": "2026-11-13T08:02:00+00:00"
-        },
-        {
-          "text": "onlystreets.fun 即将登陆 Solana。 @onlystreetsfun | | 一个独一无二的启动平台 | | 专为源于现实生活瞬间的代币而生。 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Eve",
-          "url": "https://x.com/wen394428142129/status/2121153400104779802",
-          "post_time": "2026-11-13T08:09:14+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:rarelist.io|83081",
-      "identity": "domain:rarelist.io",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T07:47:05Z",
-      "last_seen_at": "2026-11-13T07:47:05Z",
-      "window_bucket": 83081,
-      "post_count": 1,
-      "representative_text": "每天上线做做任务，点点赚也是不错的嘴撸任务 | | 目前排名1万+，还是得继续多写帖子 @rarelistio | | 继续提升我的等级 A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreetsfun is the first launchpad built to turn real-life moments into coins. | | Duration: Nov 11–17 x.com/rarelistio/status/212022",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/wen394428142129/status/2121147824419274791",
-      "samples": [
-        {
-          "text": "每天上线做做任务，点点赚也是不错的嘴撸任务 | | 目前排名1万+，还是得继续多写帖子 @rarelistio | | 继续提升我的等级 A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreetsfun is the first launchpa",
-          "url": "https://x.com/wen394428142129/status/2121147824419274791",
-          "post_time": "2026-11-13T07:47:05+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:ord-dropz.xyz|83081",
+      "event_id": "domain:ord-dropz.xyz",
       "identity": "domain:ord-dropz.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-13T07:18:05Z",
@@ -1353,55 +1087,7 @@
       ]
     },
     {
-      "event_id": "domain:onlystreets.fun|83080",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T02:04:45Z",
-      "last_seen_at": "2026-11-13T05:48:16Z",
-      "window_bucket": 83080,
-      "post_count": 3,
-      "representative_text": "大部分 launchpad 拼的是叙事和包装，OnlyStreets 直接把约束写成规则：币只能从 App 相机拍的照片里出来。这个限制反而把同质化的图文素材清出去了，让\"街头实拍\"本身成了稀缺性来源，和 Rarelist 按真实社交行为排名的思路天然契合。 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and launch a coin. ",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/PumpVaultBase/status/2121061677055836206",
-      "samples": [
-        {
-          "text": "大部分 launchpad 拼的是叙事和包装，OnlyStreets 直接把约束写成规则：币只能从 App 相机拍的照片里出来。这个限制反而把同质化的图文素材清出去了，让\"街头实拍\"本身成了稀缺性来源，和 Rarelist 按真实社交行为排名的思路天然契合。 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic",
-          "url": "https://x.com/PumpVaultBase/status/2121061677055836206",
-          "post_time": "2026-11-13T02:04:45+00:00"
-        },
-        {
-          "text": "現在的 Meme 市場，大家每天都在尋找下一個熱門敘事。 | | 但有沒有想過，下一個爆紅的 Meme，可能就在你每天經過的街道上？ | | @onlystreetsfun 想做的事情很有意思：把現實生活中有趣、荒謬、甚至莫名其妙的瞬間，直接變成 Solana 上的代幣。 | | 看到一個有趣的畫面，現場拍照、取名，就能創建一枚 Coin。 Introducing onlystreets.fun ",
-          "url": "https://x.com/luke102579/status/2121080863391887676",
-          "post_time": "2026-11-13T03:21:00+00:00"
-        },
-        {
-          "text": ". @rarelistio 这个台子是每天都有几个任务，点赞，评论，转发的。 | 我的节奏就是每天写一篇帖子。 | Rarelist项目的排名是1742， @onlystreetsfun 的排名是1058 x.com/jiao_newlife/status/2121117923876221088/photo/1 Introducing onlystreets.fun | | A Solana la",
-          "url": "https://x.com/jiao_newlife/status/2121117923876221088",
-          "post_time": "2026-11-13T05:48:16+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:papersnake.fun|83080",
-      "identity": "domain:papersnake.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T04:55:28Z",
-      "last_seen_at": "2026-11-13T04:55:28Z",
-      "window_bucket": 83080,
-      "post_count": 1,
-      "representative_text": "这玩意可以免费领个蛇 不过蛇好像没啥用 也有付费档的蛇 | | 只能拿来玩游戏 游戏的话需要投入真钱才可以 | | 就跟贪吃蛇一样 撞死别人可以拿走 90% 的筹码 | | 目前好像没啥人。先给免费的拿着 | | 花钱的不打！ | | 链接：papersnake.fun/#mint x.com/kuk47377341/status/2121104636602184156/photo/1",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/kuk47377341/status/2121104636602184156",
-      "samples": [
-        {
-          "text": "这玩意可以免费领个蛇 不过蛇好像没啥用 也有付费档的蛇 | | 只能拿来玩游戏 游戏的话需要投入真钱才可以 | | 就跟贪吃蛇一样 撞死别人可以拿走 90% 的筹码 | | 目前好像没啥人。先给免费的拿着 | | 花钱的不打！ | | 链接：papersnake.fun/#mint x.com/kuk47377341/status/2121104636602184156/photo/1",
-          "url": "https://x.com/kuk47377341/status/2121104636602184156",
-          "post_time": "2026-11-13T04:55:28+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "github:karpathy/autoresearch|83080",
+      "event_id": "github:karpathy/autoresearch",
       "identity": "github:karpathy/autoresearch",
       "identity_type": "github",
       "first_seen_at": "2026-11-13T04:09:59Z",
@@ -1420,7 +1106,7 @@
       ]
     },
     {
-      "event_id": "domain:zetachain.com|83080",
+      "event_id": "domain:zetachain.com",
       "identity": "domain:zetachain.com",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-13T03:54:32Z",
@@ -1439,139 +1125,22 @@
       ]
     },
     {
-      "event_id": "domain:oneswap.cc|83080",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-13T00:56:17Z",
-      "last_seen_at": "2026-11-13T03:16:09Z",
-      "window_bucket": 83080,
-      "post_count": 7,
-      "representative_text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/c423855046/status/2121044444149694913",
-      "samples": [
-        {
-          "text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-          "url": "https://x.com/c423855046/status/2121044444149694913",
-          "post_time": "2026-11-13T00:56:17+00:00"
-        },
-        {
-          "text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/2121044701600272598/photo/1",
-          "url": "https://x.com/CC4238/status/2121044701600272598",
-          "post_time": "2026-11-13T00:57:18+00:00"
-        },
-        {
-          "text": "onepump龙头定了 @onepumpcc 这个射出去应该能不低的市值吧 | | cc精选，上一个台子龙头也做到5m啊 | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a",
-          "url": "https://x.com/Mojito_cx/status/2121055459956461822",
-          "post_time": "2026-11-13T01:40:03+00:00"
-        },
-        {
-          "text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 th",
-          "url": "https://x.com/SkyAAmen/status/2121060169564258786",
-          "post_time": "2026-11-13T01:58:46+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 这个jose，从早上发射台上线就一直看，一开始买了onebot，但是网站实在太卡了，p来p去，最后看到jose一直有人在买，跟上之后发现有推特账户，看图质量是很高的，本身digging也非常魔性，非常原生的meme",
-          "url": "https://x.com/SkyAAmen/status/2121062576520073282",
-          "post_time": "2026-11-13T02:08:20+00:00"
-        },
-        {
-          "text": "很多人收不到验证码了，网站卡才是金狗啊，不然分分钟被塞满。多盯一下吧，盯了一早上我也是盯麻了。多刷新重试吧，考虑到一个邮箱一个账户，其实相对还是很公平的，有一定的门槛，相当于限制了一下多号 | | canton链本身是银行链，还是很有钱的，加上onepump背景也不错，上一个canton的发射台 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室",
-          "url": "https://x.com/SkyAAmen/status/2121072254754918593",
-          "post_time": "2026-11-13T02:46:47+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 半夜开的新台子 | 晚上卡爆了 | 现在好像正常了 | 这个是跑出来的龙头（应该）",
-          "url": "https://x.com/pxiaojiang520/status/2121079642111254663",
-          "post_time": "2026-11-13T03:16:09+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:onlystreets.fun|83079",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T23:12:49Z",
-      "last_seen_at": "2026-11-12T23:12:49Z",
-      "window_bucket": 83079,
-      "post_count": 1,
-      "representative_text": "Đôi khi một khoảnh khắc bình thường ngoài đường lại có thể trở thành câu chuyện được hàng nghìn người quan tâm | | Đó là điều khiến mình muốn khám phá @onlystreetsfun. Ý tưởng đưa những hình ảnh đời thực lên Solana và biến chúng thành tài sản on-chain khá độc Introducing onlystreets.fun | | A Solana",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/mrchrismast_/status/2121018405637816356",
-      "samples": [
-        {
-          "text": "Đôi khi một khoảnh khắc bình thường ngoài đường lại có thể trở thành câu chuyện được hàng nghìn người quan tâm | | Đó là điều khiến mình muốn khám phá @onlystreetsfun. Ý tưởng đưa những hình ảnh đời t",
-          "url": "https://x.com/mrchrismast_/status/2121018405637816356",
-          "post_time": "2026-11-12T23:12:49+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc|83079",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-12T20:51:10Z",
-      "last_seen_at": "2026-11-12T22:05:29Z",
-      "window_bucket": 83079,
-      "post_count": 11,
-      "representative_text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/2120982758537449683/photo/1",
-      "keywords": "[\"高:launchpad\", \"高:台子\"]",
-      "tweet_url": "https://x.com/Reboottttttt/status/2120982758537449683",
-      "samples": [
-        {
-          "text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/21209827585",
-          "url": "https://x.com/Reboottttttt/status/2120982758537449683",
-          "post_time": "2026-11-12T20:51:10+00:00"
-        },
-        {
-          "text": "www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc GM. we're building the first memecoin launchpad on Canton. | | 2 minutes to launch, trades the same second. no mempool, so nothing to snipe",
-          "url": "https://x.com/jiumeng88888/status/2120983608974618854",
-          "post_time": "2026-11-12T20:54:33+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 第一个",
-          "url": "https://x.com/Reboottttttt/status/2120984905001922972",
-          "post_time": "2026-11-12T20:59:42+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 这是第一个 www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc",
-          "url": "https://x.com/jiumeng88888/status/2120986601346265274",
-          "post_time": "2026-11-12T21:06:26+00:00"
-        },
-        {
-          "text": "第一个 现在20k 市值 x.com/juesaiquan/status/2120986612062617865/photo/1 CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现",
-          "url": "https://x.com/juesaiquan/status/2120986612062617865",
-          "post_time": "2026-11-12T21:06:28+00:00"
-        },
-        {
-          "text": "这个台子开了 @onepumpcc @Oneswapcc | | 前三个 | | onebot | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | onecat | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f |",
-          "url": "https://x.com/AKAKAY04/status/2120989541930795259",
-          "post_time": "2026-11-12T21:18:07+00:00"
-        },
-        {
-          "text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
-          "url": "https://x.com/RK_Bitcoin/status/2120991313361559955",
-          "post_time": "2026-11-12T21:25:09+00:00"
-        },
-        {
-          "text": "onepump台子开了 我看唯一一个有网站有社区的就是这个 | | www.oneswap.cc/launchpad/token/4434b8c6-9555-5f0b-8d20-678e2dbff1b5",
-          "url": "https://x.com/Mojito_cx/status/2120992736656650394",
-          "post_time": "2026-11-12T21:30:49+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:stonkrobbers.io|83079",
+      "event_id": "domain:stonkrobbers.io",
       "identity": "domain:stonkrobbers.io",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-12T19:30:25Z",
+      "first_seen_at": "2026-11-12T17:53:55Z",
       "last_seen_at": "2026-11-12T19:30:25Z",
-      "window_bucket": 83079,
-      "post_count": 1,
-      "representative_text": "这个游戏得模式其实很不错 @stonkrobbers | | 官网：stonkrobbers.io | | 就是现在官方得NFT价格没下来，官网得花300U买NFT才有300U买代币得额度 | | 目前这个价格进场基本上是大家得成本价 | | 因为300U NFT + 300U 代币 单币成本去到两倍 | | 外盘得话有一点溢价，但是没有那么高 | | NFT 最低会到 30 x.com/RK_Bitcoin/status/2120962438522945955/photo/1 发现了个有意思的项目，创始人是@madame1829。模式是挺不错的，现在是纯早期，但是现在相当于一个防狙击。官网是",
+      "window_bucket": 83078,
+      "post_count": 2,
+      "representative_text": "发现了个有意思的项目，创始人是@madame1829。模式是挺不错的，现在是纯早期，但是现在相当于一个防狙击。官网是https://stonkrobbers.io/ | | 成本很高，我们群是几个人参加然后拿满额度了分发的。 | | 模式是这样的： | 代币分发进行的第一周，抽卡价从 300 美元起，每个区块往下掉，最低到 30 美元。 TGE x.com/0xDaaa/status/2120938153490153677/photo/1 robbers are here: stonkrobbers.io | | pull a card. crack the codes. rob the st",
       "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/RK_Bitcoin/status/2120962438522945955",
+      "tweet_url": "https://x.com/0xDaaa/status/2120938153490153677",
       "samples": [
+        {
+          "text": "发现了个有意思的项目，创始人是@madame1829。模式是挺不错的，现在是纯早期，但是现在相当于一个防狙击。官网是https://stonkrobbers.io/ | | 成本很高，我们群是几个人参加然后拿满额度了分发的。 | | 模式是这样的： | 代币分发进行的第一周，抽卡价从 300 美元起，每个区块往下掉，最低到 30 美元。 TGE x.com/0xDaaa/status/212093",
+          "url": "https://x.com/0xDaaa/status/2120938153490153677",
+          "post_time": "2026-11-12T17:53:55+00:00"
+        },
         {
           "text": "这个游戏得模式其实很不错 @stonkrobbers | | 官网：stonkrobbers.io | | 就是现在官方得NFT价格没下来，官网得花300U买NFT才有300U买代币得额度 | | 目前这个价格进场基本上是大家得成本价 | | 因为300U NFT + 300U 代币 单币成本去到两倍 | | 外盘得话有一点溢价，但是没有那么高 | | NFT 最低会到 30 x.com/RK_B",
           "url": "https://x.com/RK_Bitcoin/status/2120962438522945955",
@@ -1580,7 +1149,7 @@
       ]
     },
     {
-      "event_id": "domain:azura.xyz|83079",
+      "event_id": "domain:azura.xyz",
       "identity": "domain:azura.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-12T18:06:20Z",
@@ -1595,25 +1164,6 @@
           "text": "big fan of jackson and what he's been working on. if you try it lmk your feedback! Tomorrow (Friday), Azura (azura.xyz) will become the fastest onchain trading platform in history. | | We've invented ",
           "url": "https://x.com/rajgokal/status/2120941277944619028",
           "post_time": "2026-11-12T18:06:20+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:stonkrobbers.io|83078",
-      "identity": "domain:stonkrobbers.io",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-12T17:53:55Z",
-      "last_seen_at": "2026-11-12T17:53:55Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "发现了个有意思的项目，创始人是@madame1829。模式是挺不错的，现在是纯早期，但是现在相当于一个防狙击。官网是https://stonkrobbers.io/ | | 成本很高，我们群是几个人参加然后拿满额度了分发的。 | | 模式是这样的： | 代币分发进行的第一周，抽卡价从 300 美元起，每个区块往下掉，最低到 30 美元。 TGE x.com/0xDaaa/status/2120938153490153677/photo/1 robbers are here: stonkrobbers.io | | pull a card. crack the codes. rob the st",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/0xDaaa/status/2120938153490153677",
-      "samples": [
-        {
-          "text": "发现了个有意思的项目，创始人是@madame1829。模式是挺不错的，现在是纯早期，但是现在相当于一个防狙击。官网是https://stonkrobbers.io/ | | 成本很高，我们群是几个人参加然后拿满额度了分发的。 | | 模式是这样的： | 代币分发进行的第一周，抽卡价从 300 美元起，每个区块往下掉，最低到 30 美元。 TGE x.com/0xDaaa/status/212093",
-          "url": "https://x.com/0xDaaa/status/2120938153490153677",
-          "post_time": "2026-11-12T17:53:55+00:00"
         }
       ]
     },
@@ -1642,17 +1192,32 @@
       ]
     },
     {
-      "event_id": "domain:squeekchain.com|83078",
+      "event_id": "domain:squeekchain.com",
       "identity": "domain:squeekchain.com",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T14:04:16Z",
+      "first_seen_at": "2026-11-11T20:06:50Z",
       "last_seen_at": "2026-11-12T14:04:16Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "仓鼠这项目，今早还说改免费 mint，晚上号没了。 | | 官推 @squeekchain 已经不存在 | 创始人 @pillheadddd 也注销了 | 官网 squeekchain.com 打不开，报 Origin DNS error | 今早改免费、推迟发布的那条官帖，一起没了 | 社区说 Discord 也关了 | | 原计划 3333 张、0.05 ETH。 x.com/timliu92/status/2120880359491387402/photo/1 我日尼玛 | | 仓鼠怎么没有了 | | 官推没了 DC也没了? | | 怎么回事 x.com/Reboottttttt/sta",
-      "keywords": "[\"高:免费 mint\", \"高:创始人\"]",
-      "tweet_url": "https://x.com/timliu92/status/2120880359491387402",
+      "window_bucket": 83075,
+      "post_count": 4,
+      "representative_text": "做了的兄弟早上9点起来打，我是会打满的 | | 总供应量 | 3333 个 Squeeks | | 分配方案 | 3000 个分配给 Aura 参与者 (Aura Farmers) | 333 个归协议 (Protocol) 所有 | 33 个归团队 (Team) 所有 | | 价格 | 0.05 ETH | | 铸造方式 | 按等级顺序，先到先得—— | 依次为：Reserve（预留）、Gold（黄金）、Silver（白银），随后是 兄弟们这个 @squeekchain 一定要搞，仓鼠链！创始人是@pillheadddd | | 到时候代币按照算力分给持有Squeek NFT的人，一只真仓鼠",
+      "keywords": "[\"高:创始人\"]",
+      "tweet_url": "https://x.com/0xDaaa/status/2120609214582472799",
       "samples": [
+        {
+          "text": "做了的兄弟早上9点起来打，我是会打满的 | | 总供应量 | 3333 个 Squeeks | | 分配方案 | 3000 个分配给 Aura 参与者 (Aura Farmers) | 333 个归协议 (Protocol) 所有 | 33 个归团队 (Team) 所有 | | 价格 | 0.05 ETH | | 铸造方式 | 按等级顺序，先到先得—— | 依次为：Reserve（预留）、Gold",
+          "url": "https://x.com/0xDaaa/status/2120609214582472799",
+          "post_time": "2026-11-11T20:06:50+00:00"
+        },
+        {
+          "text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
+          "url": "https://x.com/luyuban69/status/2120675505448054834",
+          "post_time": "2026-11-12T00:30:15+00:00"
+        },
+        {
+          "text": "一觉睡醒 仓鼠 @squeekchain 竟然要免费打了！ | | 还以为睡过头要错过了呢~ | | /Pillhead(yes) @pillheadddd 大佬牛逼 | | 等待公布什么时候开Mint 仓鼠squeekchain @squeekchain 明早八点打 | | 资格查询入口：squeekchain.com/genesis/i/su3cy8sj | | 总量现在是3333个 每个0.",
+          "url": "https://x.com/Big_Tea_Rice/status/2120744591536304309",
+          "post_time": "2026-11-12T05:04:46+00:00"
+        },
         {
           "text": "仓鼠这项目，今早还说改免费 mint，晚上号没了。 | | 官推 @squeekchain 已经不存在 | 创始人 @pillheadddd 也注销了 | 官网 squeekchain.com 打不开，报 Origin DNS error | 今早改免费、推迟发布的那条官帖，一起没了 | 社区说 Discord 也关了 | | 原计划 3333 张、0.05 ETH。 x.com/timliu92",
           "url": "https://x.com/timliu92/status/2120880359491387402",
@@ -1661,7 +1226,7 @@
       ]
     },
     {
-      "event_id": "domain:reurl.cc|83078",
+      "event_id": "domain:reurl.cc",
       "identity": "domain:reurl.cc",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-12T13:16:45Z",
@@ -1718,36 +1283,32 @@
       ]
     },
     {
-      "event_id": "domain:onlystreets.fun|83078",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T12:44:01Z",
-      "last_seen_at": "2026-11-12T12:44:01Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "Memecoins inspired by real-life moments? That's what @onlystreetsfun is exploring. | | Capture something funny or unusual, turn it into a Solana coin, and bring real-world culture on-chain. | | Interesting concept to follow, especially alongside the growing ecosystem on @rarelistio . Introducing onl",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/mrchrismast_/status/2120860163754414126",
-      "samples": [
-        {
-          "text": "Memecoins inspired by real-life moments? That's what @onlystreetsfun is exploring. | | Capture something funny or unusual, turn it into a Solana coin, and bring real-world culture on-chain. | | Intere",
-          "url": "https://x.com/mrchrismast_/status/2120860163754414126",
-          "post_time": "2026-11-12T12:44:01+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:papagent.app|83078",
+      "event_id": "domain:papagent.app",
       "identity": "domain:papagent.app",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T12:14:26Z",
+      "first_seen_at": "2026-11-12T06:23:54Z",
       "last_seen_at": "2026-11-12T12:14:26Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "上一个5X这个能跑多远？ The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID has 10 minting rights | Migrates to PancakeSwap trading after 20,000 mints | Minting opens at 12:00 PM UTC on November 12, 2026 | If you have any questions, x.com/burn",
+      "window_bucket": 83077,
+      "post_count": 4,
+      "representative_text": "✨今晚八点准备打这个bkok | | 感觉非常非常多的人在蹲 | | 我自己也让ai做了狙 | | 前面一个ban倍数也很不错 | | 一个号0.015bnb，也就是10u | | 要是赌赢了暴击就是几十倍几百倍 | | 输了也可以接受损失 | | 我在他们debox群里也看见了shib头像的人 | | 是真是假我不知道，但是我觉得这个盈亏比可以搏一下 The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID ha",
       "keywords": "[\"高:Agent mint\"]",
-      "tweet_url": "https://x.com/DongZe_Q/status/2120852719233851746",
+      "tweet_url": "https://x.com/0xawansmith/status/2120764504212709397",
       "samples": [
+        {
+          "text": "✨今晚八点准备打这个bkok | | 感觉非常非常多的人在蹲 | | 我自己也让ai做了狙 | | 前面一个ban倍数也很不错 | | 一个号0.015bnb，也就是10u | | 要是赌赢了暴击就是几十倍几百倍 | | 输了也可以接受损失 | | 我在他们debox群里也看见了shib头像的人 | | 是真是假我不知道，但是我觉得这个盈亏比可以搏一下 The new project PAPER ",
+          "url": "https://x.com/0xawansmith/status/2120764504212709397",
+          "post_time": "2026-11-12T06:23:54+00:00"
+        },
+        {
+          "text": "今天出来好多Agent打新的盘子，我感觉我又行了，看看能不能干赢狗庄 | | 大家可以关注一下这个项目，今晚 8 点新出一个 $PAPER：一份 0.0015 BNB，打满 10 份也就 10U | | 总量只有 2 万份，筹码分散，相对公平一点。重点蹲一下，上次的 $BAN 打新也有3倍。晚上估计 5 分钟左右就打没了 The new project PAPER minting is comin",
+          "url": "https://x.com/taojukfc/status/2120781937308828127",
+          "post_time": "2026-11-12T07:33:10+00:00"
+        },
+        {
+          "text": "Agent打新的可以关注一下这两个项目，应该会很快！ | | 19.18分 @WLcc_Agent 的万里长城，0.005BNB一份 打满10份0.05BNB 打满15000份 | | wlcc.lol | | 8点就是 @burnsdefi_ 的PAPER 一份0.0015BNB 打满10份0.015BNB | | papagent.app | | 刚刚打的250份Stars",
+          "url": "https://x.com/taojukfc/status/2120835230269690203",
+          "post_time": "2026-11-12T11:04:56+00:00"
+        },
         {
           "text": "上一个5X这个能跑多远？ The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID has 10 minting rights | Migrates to PancakeSwap trading after 20,00",
           "url": "https://x.com/DongZe_Q/status/2120852719233851746",
@@ -1775,7 +1336,7 @@
       ]
     },
     {
-      "event_id": "domain:giphy.fun|83077",
+      "event_id": "domain:giphy.fun",
       "identity": "domain:giphy.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-12T11:12:29Z",
@@ -1794,36 +1355,7 @@
       ]
     },
     {
-      "event_id": "domain:papagent.app|83077",
-      "identity": "domain:papagent.app",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T06:23:54Z",
-      "last_seen_at": "2026-11-12T11:04:56Z",
-      "window_bucket": 83077,
-      "post_count": 3,
-      "representative_text": "✨今晚八点准备打这个bkok | | 感觉非常非常多的人在蹲 | | 我自己也让ai做了狙 | | 前面一个ban倍数也很不错 | | 一个号0.015bnb，也就是10u | | 要是赌赢了暴击就是几十倍几百倍 | | 输了也可以接受损失 | | 我在他们debox群里也看见了shib头像的人 | | 是真是假我不知道，但是我觉得这个盈亏比可以搏一下 The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID ha",
-      "keywords": "[\"高:Agent mint\"]",
-      "tweet_url": "https://x.com/0xawansmith/status/2120764504212709397",
-      "samples": [
-        {
-          "text": "✨今晚八点准备打这个bkok | | 感觉非常非常多的人在蹲 | | 我自己也让ai做了狙 | | 前面一个ban倍数也很不错 | | 一个号0.015bnb，也就是10u | | 要是赌赢了暴击就是几十倍几百倍 | | 输了也可以接受损失 | | 我在他们debox群里也看见了shib头像的人 | | 是真是假我不知道，但是我觉得这个盈亏比可以搏一下 The new project PAPER ",
-          "url": "https://x.com/0xawansmith/status/2120764504212709397",
-          "post_time": "2026-11-12T06:23:54+00:00"
-        },
-        {
-          "text": "今天出来好多Agent打新的盘子，我感觉我又行了，看看能不能干赢狗庄 | | 大家可以关注一下这个项目，今晚 8 点新出一个 $PAPER：一份 0.0015 BNB，打满 10 份也就 10U | | 总量只有 2 万份，筹码分散，相对公平一点。重点蹲一下，上次的 $BAN 打新也有3倍。晚上估计 5 分钟左右就打没了 The new project PAPER minting is comin",
-          "url": "https://x.com/taojukfc/status/2120781937308828127",
-          "post_time": "2026-11-12T07:33:10+00:00"
-        },
-        {
-          "text": "Agent打新的可以关注一下这两个项目，应该会很快！ | | 19.18分 @WLcc_Agent 的万里长城，0.005BNB一份 打满10份0.05BNB 打满15000份 | | wlcc.lol | | 8点就是 @burnsdefi_ 的PAPER 一份0.0015BNB 打满10份0.015BNB | | papagent.app | | 刚刚打的250份Stars",
-          "url": "https://x.com/taojukfc/status/2120835230269690203",
-          "post_time": "2026-11-12T11:04:56+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:miyamaker.com|83077",
+      "event_id": "domain:miyamaker.com",
       "identity": "domain:miyamaker.com",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-12T09:28:06Z",
@@ -1847,7 +1379,7 @@
       ]
     },
     {
-      "event_id": "domain:bluev.fun|83077",
+      "event_id": "domain:bluev.fun",
       "identity": "domain:bluev.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-12T08:26:35Z",
@@ -1866,50 +1398,7 @@
       ]
     },
     {
-      "event_id": "domain:oneswap.cc|83077",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T08:10:17Z",
-      "last_seen_at": "2026-11-12T08:10:17Z",
-      "window_bucket": 83077,
-      "post_count": 1,
-      "representative_text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 meme 已经确定下来了，目前日期还没定等最终审批 x.com/Ouh_web1/status/2120537228682379641/photo/1",
-      "keywords": "[\"高:新东西\"]",
-      "tweet_url": "https://x.com/Ouh_web1/status/2120791275381354627",
-      "samples": [
-        {
-          "text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 me",
-          "url": "https://x.com/Ouh_web1/status/2120791275381354627",
-          "post_time": "2026-11-12T08:10:17+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:squeekchain.com|83076",
-      "identity": "domain:squeekchain.com",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T00:30:15Z",
-      "last_seen_at": "2026-11-12T05:04:46Z",
-      "window_bucket": 83076,
-      "post_count": 2,
-      "representative_text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/luyuban69/status/2120675505448054834",
-      "samples": [
-        {
-          "text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
-          "url": "https://x.com/luyuban69/status/2120675505448054834",
-          "post_time": "2026-11-12T00:30:15+00:00"
-        },
-        {
-          "text": "一觉睡醒 仓鼠 @squeekchain 竟然要免费打了！ | | 还以为睡过头要错过了呢~ | | /Pillhead(yes) @pillheadddd 大佬牛逼 | | 等待公布什么时候开Mint 仓鼠squeekchain @squeekchain 明早八点打 | | 资格查询入口：squeekchain.com/genesis/i/su3cy8sj | | 总量现在是3333个 每个0.",
-          "url": "https://x.com/Big_Tea_Rice/status/2120744591536304309",
-          "post_time": "2026-11-12T05:04:46+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "github:truenorth-project/truenorth|83076",
+      "event_id": "github:truenorth-project/truenorth",
       "identity": "github:truenorth-project/truenorth",
       "identity_type": "github",
       "first_seen_at": "2026-11-12T04:27:46Z",
@@ -1928,26 +1417,7 @@
       ]
     },
     {
-      "event_id": "domain:onlystreets.fun|83076",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T03:27:00Z",
-      "last_seen_at": "2026-11-12T03:27:00Z",
-      "window_bucket": 83076,
-      "post_count": 1,
-      "representative_text": "最近看到一個滿有趣的項目 @onlystreetsfun | | OnlyStreets 想把日常生活中的有趣瞬間，直接帶到 Solana 鏈上。 | | 玩法很簡單 | 在街上看到有趣的畫面，用 App 即時拍照。 | | 替照片取名、設定 Ticker，就能創建自己的 Meme Coin。 | | 比較特別的是，它要求使用 App 現場拍攝，不能直接從相簿上傳圖片。 x.com/luke102579/status/2120719985597096236/video/1 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/luke102579/status/2120719985597096236",
-      "samples": [
-        {
-          "text": "最近看到一個滿有趣的項目 @onlystreetsfun | | OnlyStreets 想把日常生活中的有趣瞬間，直接帶到 Solana 鏈上。 | | 玩法很簡單 | 在街上看到有趣的畫面，用 App 即時拍照。 | | 替照片取名、設定 Ticker，就能創建自己的 Meme Coin。 | | 比較特別的是，它要求使用 App 現場拍攝，不能直接從相簿上傳圖片。 x.com/luke102",
-          "url": "https://x.com/luke102579/status/2120719985597096236",
-          "post_time": "2026-11-12T03:27:00+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:honestbull.xyz|83076",
+      "event_id": "domain:honestbull.xyz",
       "identity": "domain:honestbull.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-12T03:06:06Z",
@@ -1985,26 +1455,7 @@
       ]
     },
     {
-      "event_id": "domain:squeekchain.com|83075",
-      "identity": "domain:squeekchain.com",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T20:06:50Z",
-      "last_seen_at": "2026-11-11T20:06:50Z",
-      "window_bucket": 83075,
-      "post_count": 1,
-      "representative_text": "做了的兄弟早上9点起来打，我是会打满的 | | 总供应量 | 3333 个 Squeeks | | 分配方案 | 3000 个分配给 Aura 参与者 (Aura Farmers) | 333 个归协议 (Protocol) 所有 | 33 个归团队 (Team) 所有 | | 价格 | 0.05 ETH | | 铸造方式 | 按等级顺序，先到先得—— | 依次为：Reserve（预留）、Gold（黄金）、Silver（白银），随后是 兄弟们这个 @squeekchain 一定要搞，仓鼠链！创始人是@pillheadddd | | 到时候代币按照算力分给持有Squeek NFT的人，一只真仓鼠",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/0xDaaa/status/2120609214582472799",
-      "samples": [
-        {
-          "text": "做了的兄弟早上9点起来打，我是会打满的 | | 总供应量 | 3333 个 Squeeks | | 分配方案 | 3000 个分配给 Aura 参与者 (Aura Farmers) | 333 个归协议 (Protocol) 所有 | 33 个归团队 (Team) 所有 | | 价格 | 0.05 ETH | | 铸造方式 | 按等级顺序，先到先得—— | 依次为：Reserve（预留）、Gold",
-          "url": "https://x.com/0xDaaa/status/2120609214582472799",
-          "post_time": "2026-11-11T20:06:50+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:opensea.io|83074",
+      "event_id": "domain:opensea.io",
       "identity": "domain:opensea.io",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-11T15:59:17Z",
@@ -2023,7 +1474,7 @@
       ]
     },
     {
-      "event_id": "domain:asciienv.xyz|83074",
+      "event_id": "domain:asciienv.xyz",
       "identity": "domain:asciienv.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-11T14:46:45Z",
@@ -2042,7 +1493,7 @@
       ]
     },
     {
-      "event_id": "github:shears-mining/6bit|83074",
+      "event_id": "github:shears-mining/6bit",
       "identity": "github:shears-mining/6bit",
       "identity_type": "github",
       "first_seen_at": "2026-11-11T13:06:28Z",
@@ -2080,7 +1531,7 @@
       ]
     },
     {
-      "event_id": "domain:whalebsc.xyz|83073",
+      "event_id": "domain:whalebsc.xyz",
       "identity": "domain:whalebsc.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-11T07:59:59Z",
@@ -2099,26 +1550,7 @@
       ]
     },
     {
-      "event_id": "domain:gang.fun|83073",
-      "identity": "domain:gang.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T06:10:19Z",
-      "last_seen_at": "2026-11-11T06:10:19Z",
-      "window_bucket": 83073,
-      "post_count": 1,
-      "representative_text": "GANG Built For Agents， | | Launchpad On BNB， | | Chain, Fair Launches For Agents。 I’ll be liking gang.fun posts. | | gang.fun 트윗은 좋아요 누를게요. | | gang.fun paylaşımlarını beğeneceğim. | | Tôi sẽ thích các bài viết về gang.fun. | | 我会点赞一些 gang.fun 的推文。",
-      "keywords": "[\"高:fair launch\", \"高:launchpad\"]",
-      "tweet_url": "https://x.com/KevinQin_eth/status/2120398698018656407",
-      "samples": [
-        {
-          "text": "GANG Built For Agents， | | Launchpad On BNB， | | Chain, Fair Launches For Agents。 I’ll be liking gang.fun posts. | | gang.fun 트윗은 좋아요 누를게요. | | gang.fun paylaşımlarını beğeneceğim. | | Tôi sẽ thích cá",
-          "url": "https://x.com/KevinQin_eth/status/2120398698018656407",
-          "post_time": "2026-11-11T06:10:19+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:backtrade.xyz|83072",
+      "event_id": "domain:backtrade.xyz",
       "identity": "domain:backtrade.xyz",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-11T04:52:39Z",
@@ -2133,30 +1565,6 @@
           "text": "爆仓了还能拿 平台币、分 USDC，现在连亏钱都不白亏了？ | | 前两周还在聊纽交所东家要把永续搬回美国，Hyperliquid 链上已经有人把永续手续费的分法改了。 | | 就是@backtrade_xyz ，一个做在 HyperEVM 上的永续，团队借鉴了 Papertrade 的经验，BTC 和 ETH 永续最高支持 1000 倍杠杆。 x.com/Meta8Mate/status/212",
           "url": "https://x.com/Meta8Mate/status/2120379152390070568",
           "post_time": "2026-11-11T04:52:39+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:onlystreets.fun|83072",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T02:05:40Z",
-      "last_seen_at": "2026-11-11T03:17:56Z",
-      "window_bucket": 83072,
-      "post_count": 2,
-      "representative_text": "终于有人想治治满屏偷图和 AI 跑图发币的乱象了。 | | OnlyStreets 搞的这个机制有点意思：必须 App 内实时实拍发币，禁相册上传。 | | 1️⃣ 物理锁死偷跑：杜绝去 Pinterest 偷现成图做局 | 2️⃣ 强行拉回现实：把发币场景直接搬到线下街头 | 3️⃣ 滤掉流水线盘：至少发币前你得真出门看一眼世界 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin starts ",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/hisevenih/status/2120337131013070915",
-      "samples": [
-        {
-          "text": "终于有人想治治满屏偷图和 AI 跑图发币的乱象了。 | | OnlyStreets 搞的这个机制有点意思：必须 App 内实时实拍发币，禁相册上传。 | | 1️⃣ 物理锁死偷跑：杜绝去 Pinterest 偷现成图做局 | 2️⃣ 强行拉回现实：把发币场景直接搬到线下街头 | 3️⃣ 滤掉流水线盘：至少发币前你得真出门看一眼世界 onlystreets.fun is coming soon on",
-          "url": "https://x.com/hisevenih/status/2120337131013070915",
-          "post_time": "2026-11-11T02:05:40+00:00"
-        },
-        {
-          "text": "看到一个挺有意思的 Solana 新项目：onlystreets.fun，目前还在 Coming Soon 阶段。 | | 它想做的事情比较特别，就是把现实生活中的真实瞬间变成 Meme 币。和普通发射平台不太一样，用户必须通过 App 现场拍摄一张新照片才能创建代币，不允许从手机相册上传图片。 onlystreets.fun is coming soon on Solana. | | A one",
-          "url": "https://x.com/sodislikea/status/2120355316164391290",
-          "post_time": "2026-11-11T03:17:56+00:00"
         }
       ]
     }
