@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-18T04:44:38.344974Z",
+  "generated_at": "2026-11-18T04:53:39.450593Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1646,
-    "blocked": 230,
+    "posts_total": 1647,
+    "blocked": 232,
     "no_entry": 1251,
-    "events": 65,
+    "events": 64,
     "merged_posts": 100,
     "terms_failed": 0,
     "today_events": 3,
@@ -1553,25 +1553,6 @@
           "text": "踏马的，昨晚血亏！ | | 四大金刚：西兰花、PEPE、鲸鱼、河马 | | 全特码是创业盘，演都不演的，开盘浇给！ | | 币安 Agentic Wallet 近期小心，穷屌丝创业的太多了 好像起风了！ | | 币安 Agentic Wallet 这两天全部盈利，赢麻了😂 | | 今晚观察这2个，有免费额度抢！ | | 大家看着打，最好快满了再塞，盈亏自负： | | BROCCOLI ： broc",
           "url": "https://x.com/wajueji888/status/2120426298950750370",
           "post_time": "2026-11-11T07:59:59+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:backtrade.xyz",
-      "identity": "domain:backtrade.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T04:52:39Z",
-      "last_seen_at": "2026-11-11T04:52:39Z",
-      "window_bucket": 83072,
-      "post_count": 1,
-      "representative_text": "爆仓了还能拿 平台币、分 USDC，现在连亏钱都不白亏了？ | | 前两周还在聊纽交所东家要把永续搬回美国，Hyperliquid 链上已经有人把永续手续费的分法改了。 | | 就是@backtrade_xyz ，一个做在 HyperEVM 上的永续，团队借鉴了 Papertrade 的经验，BTC 和 ETH 永续最高支持 1000 倍杠杆。 x.com/Meta8Mate/status/2120379152390070568/photo/1 Your liquidation prints something for once. | First exchange where the liqu",
-      "keywords": "[\"高:平台币\"]",
-      "tweet_url": "https://x.com/Meta8Mate/status/2120379152390070568",
-      "samples": [
-        {
-          "text": "爆仓了还能拿 平台币、分 USDC，现在连亏钱都不白亏了？ | | 前两周还在聊纽交所东家要把永续搬回美国，Hyperliquid 链上已经有人把永续手续费的分法改了。 | | 就是@backtrade_xyz ，一个做在 HyperEVM 上的永续，团队借鉴了 Papertrade 的经验，BTC 和 ETH 永续最高支持 1000 倍杠杆。 x.com/Meta8Mate/status/212",
-          "url": "https://x.com/Meta8Mate/status/2120379152390070568",
-          "post_time": "2026-11-11T04:52:39+00:00"
         }
       ]
     }
