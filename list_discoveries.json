@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-18T15:59:04.386789Z",
+  "generated_at": "2026-11-18T16:08:00.175369Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1614,
+    "posts_total": 1613,
     "blocked": 231,
     "no_entry": 1219,
-    "events": 64,
+    "events": 63,
     "merged_posts": 100,
     "terms_failed": 0,
-    "today_events": 7,
-    "today_pushed": 4
+    "today_events": 0,
+    "today_pushed": 0
   },
   "events": [
     {
@@ -2537,41 +2537,6 @@
           "text": "【链上异动】 | | 官推说要清盘销毁的 $RECALL，凌晨链上已经开始烧了 | | 约 8 小时前，地址 0xEfE8 往多签 0x1a4 转入约 1.759 亿枚 $RECALL，价值约 522 万美元 | 约 7 小时前，这个多签把地址里全部代币约 2.501 亿枚打进了销毁地址 价值约 733 万美元 | | 同一时段，另一个多签 0xAF7 也往销毁地址打了约 x.com/sss_cr",
           "url": "https://x.com/sss_crypto/status/2120698132371783914",
           "post_time": "2026-11-12T02:00:10+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:opensea.io",
-      "identity": "domain:opensea.io",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T15:59:17Z",
-      "last_seen_at": "2026-11-11T15:59:17Z",
-      "window_bucket": 83074,
-      "post_count": 1,
-      "representative_text": "兄弟们，刚看到 @opensea 的 Rewards 说是能领 5 刀猪脚饭空投 | | 富贵也不确定要啥资格，你们自己点链接进去看 | | opensea.io/rewards | | 也不是什么大毛，不过要看自己的资格 | | 只做分享，不做投资建议 | (非广子) x.com/Ouh_web1/status/2120546918850052463/photo/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只",
-      "keywords": "[\"高:新东西\"]",
-      "tweet_url": "https://x.com/Ouh_web1/status/2120546918850052463",
-      "author": "Ouh_web1",
-      "author_name": "泼天的富贵",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 9165,
-      "blue_verified": true,
-      "listed_count": 69,
-      "reg_at": "Wed Sep 11 19:17:14 +0000 2024",
-      "views": "283",
-      "samples": [
-        {
-          "text": "兄弟们，刚看到 @opensea 的 Rewards 说是能领 5 刀猪脚饭空投 | | 富贵也不确定要啥资格，你们自己点链接进去看 | | opensea.io/rewards | | 也不是什么大毛，不过要看自己的资格 | | 只做分享，不做投资建议 | (非广子) x.com/Ouh_web1/status/2120546918850052463/photo/1 兄弟们，OneSwap 在 ",
-          "url": "https://x.com/Ouh_web1/status/2120546918850052463",
-          "post_time": "2026-11-11T15:59:17+00:00"
         }
       ]
     }
