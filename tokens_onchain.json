@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 10285.3522093392,
-    "liq_ts": 1795005067,
+    "liq_ts": 1795005368,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 25797.59306487648,
-    "liq_ts": 1795005067,
+    "liq_ts": 1795005368,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 35533.35409561776,
-    "liq_ts": 1795005067,
+    "liq_ts": 1795005368,
     "liq_src": "GMGN"
   }
 ]
