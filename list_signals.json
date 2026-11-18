@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-18T00:10:26.524574Z",
+  "generated_at": "2026-11-18T00:19:44.621929Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1981,
+    "signals_total": 1980,
     "with_ca": 278,
-    "list_posts_total": 4578,
+    "list_posts_total": 4579,
     "unique_cas": 1817,
-    "dedup_merged_posts": 2761,
-    "passed": 22,
+    "dedup_merged_posts": 2762,
+    "passed": 20,
     "dropped_dev": 64,
     "dropped_old": 252,
     "dropped_no_time": 371,
@@ -27,8 +27,8 @@
     "site_blocked_live": 5,
     "pool_too_old_live": 60,
     "v9_rechecked": 6,
-    "v9_ready": 2,
-    "v9_not_ready": 7,
+    "v9_ready": 0,
+    "v9_not_ready": 9,
     "dropped_detail": {
       "old": 252,
       "l2_suffix": 1031,
@@ -39,7 +39,7 @@
       "mcap_liq_high": 3,
       "fake_website:knowyourmeme.com": 1
     },
-    "v9_new_protected": 7
+    "v9_new_protected": 5
   },
   "items": [
     {
@@ -167,70 +167,6 @@
           "post_time": "2026-11-17T23:36:09Z",
           "text_clean": "@PlanktonOTC @RobinhoodApp @Larpcheckbot 0x9f0692785990bcb7f8c36d979a86fe5fcf31c7c3",
           "tweet_url": "https://x.com/de_gang5426/status/2122836218492727555"
-        }
-      ]
-    },
-    {
-      "ca": "0x8809f43e51dd8a9502504d30884478637eb34a01",
-      "chain": "base",
-      "symbol": "BLUPILL",
-      "dev_count": 3,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "",
-      "smart_degen_count": 0,
-      "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": null,
-      "net_buy_pass": null,
-      "net_buy_source": "",
-      "social_ok": null,
-      "v9_reasons": [],
-      "v9_check_at": "",
-      "pair_created_at": "2026-11-17T19:35:26Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-17T22:04:50Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "Frank_TheCook",
-          "author_name": "Frank_TheCook",
-          "post_time": "2026-11-17T22:04:50Z",
-          "text_clean": "pumpfun partnered with base and temporarily increased the rewards for callouts | | i went through all the new coins and found a really interesting narrative with four layers | | $blupill - 0x8809f43e51dd8a9502504d30884478637eb34a01 | | 1. blu - base | 2. pill - pumpfun | 3. wyeth is a real x.com/Frank_TheCook/status/2122813236030369814/photo/1",
-          "tweet_url": "https://x.com/Frank_TheCook/status/2122813236030369814"
-        }
-      ]
-    },
-    {
-      "ca": "yXvc7YsNGgdSCFnY6pY42VJSMxYY18xu3WmnvC3xmas",
-      "chain": "solana",
-      "symbol": "XMAS",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "",
-      "smart_degen_count": 4,
-      "renowned_count": 0,
-      "ready_to_push": false,
-      "net_buy_count": null,
-      "net_buy_pass": null,
-      "net_buy_source": "",
-      "social_ok": null,
-      "v9_reasons": [],
-      "v9_check_at": "",
-      "pair_created_at": "2026-11-17T21:35:07Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-17T22:03:44Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "Jmean__",
-          "author_name": "Jmean__",
-          "post_time": "2026-11-17T22:03:44Z",
-          "text_clean": "Xmas coming soon.. | | Why not gifts aswell? | | $XMAS XMASPAD | | CA: yXvc7YsNGgdSCFnY6pY42VJSMxYY18xu3WmnvC3xmas | | NFA DYOR! | | @solana",
-          "tweet_url": "https://x.com/Jmean__/status/2122812960603324705"
         }
       ]
     },
