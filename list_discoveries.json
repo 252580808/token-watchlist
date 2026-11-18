@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-18T07:58:29.638717Z",
+  "generated_at": "2026-11-18T08:07:21.734964Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1611,
+    "posts_total": 1607,
     "blocked": 231,
-    "no_entry": 1217,
-    "events": 64,
+    "no_entry": 1214,
+    "events": 63,
     "merged_posts": 99,
     "terms_failed": 0,
     "today_events": 3,
@@ -1529,25 +1529,6 @@
           "text": "Vitalik 和 Lubin 近期重提“ETH as SoV”，恰恰说明当 EIP-4844 压低了 L1 费用销毁后，叙事正在被迫寻找新的落脚点。 | | 但 Lubin 列出的可编程、低费率、DeFi 抵押、2028 路线图升级，每一条都在强化 ETH 作为‘结算经济看涨期权’的属性，同时每一条也都在削弱它作为‘纯粹价值存储’的硬度。 为什么说去中心化和 CROPS（抗审查和抗捕获、开源、隐",
           "url": "https://x.com/shangu365/status/2120493313299972154",
           "post_time": "2026-11-11T12:26:17+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:whalebsc.xyz",
-      "identity": "domain:whalebsc.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T07:59:59Z",
-      "last_seen_at": "2026-11-11T07:59:59Z",
-      "window_bucket": 83073,
-      "post_count": 1,
-      "representative_text": "踏马的，昨晚血亏！ | | 四大金刚：西兰花、PEPE、鲸鱼、河马 | | 全特码是创业盘，演都不演的，开盘浇给！ | | 币安 Agentic Wallet 近期小心，穷屌丝创业的太多了 好像起风了！ | | 币安 Agentic Wallet 这两天全部盈利，赢麻了😂 | | 今晚观察这2个，有免费额度抢！ | | 大家看着打，最好快满了再塞，盈亏自负： | | BROCCOLI ： broccoliagent.com/#mint | | WHALE ： whalebsc.xyz/ x.com/wajueji888/status/2120116768501100988/photo/1",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/wajueji888/status/2120426298950750370",
-      "samples": [
-        {
-          "text": "踏马的，昨晚血亏！ | | 四大金刚：西兰花、PEPE、鲸鱼、河马 | | 全特码是创业盘，演都不演的，开盘浇给！ | | 币安 Agentic Wallet 近期小心，穷屌丝创业的太多了 好像起风了！ | | 币安 Agentic Wallet 这两天全部盈利，赢麻了😂 | | 今晚观察这2个，有免费额度抢！ | | 大家看着打，最好快满了再塞，盈亏自负： | | BROCCOLI ： broc",
-          "url": "https://x.com/wajueji888/status/2120426298950750370",
-          "post_time": "2026-11-11T07:59:59+00:00"
         }
       ]
     }
