@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T01:44:07.655148Z",
+  "generated_at": "2026-11-18T01:45:11.085414Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -26,9 +26,9 @@
     "site_recheck_blocked": 0,
     "site_blocked_live": 6,
     "pool_too_old_live": 60,
-    "v9_rechecked": 3,
+    "v9_rechecked": 1,
     "v9_ready": 0,
-    "v9_not_ready": 8,
+    "v9_not_ready": 9,
     "dropped_detail": {
       "old": 252,
       "l2_suffix": 1038,
@@ -39,7 +39,7 @@
       "mcap_liq_high": 3,
       "fake_website:knowyourmeme.com": 1
     },
-    "v9_new_protected": 5
+    "v9_new_protected": 4
   },
   "items": [
     {
@@ -103,7 +103,7 @@
       "dev_blocked": false,
       "dev_blocked_at": "",
       "dev_check_at": "",
-      "smart_degen_count": 31,
+      "smart_degen_count": 32,
       "renowned_count": 3,
       "ready_to_push": true,
       "net_buy_count": 32,
