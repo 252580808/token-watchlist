@@ -1,5 +1,34 @@
 [
   {
+    "ca": "VCLUBuKaUbqGogb8Z88mWtFD5w9XK8Z31iPhiLFEkpj",
+    "chain": "sol",
+    "name": "Vice Club",
+    "symbol": "VC",
+    "first_seen": "2026-11-18 19:47",
+    "created_at": "2026-11-19 03:47",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-18 19:47",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "liquidity_usd": 16155.84,
+    "market_cap": 40939.0,
+    "holders": 352,
+    "dev_count": 1,
+    "dev_creator": "",
+    "gmgn_launchpad": "Pump.fun",
+    "description": "GTA VI Play-to-Earn on Solana. Vice Club tracks your playtime, PSN trophies and Xbox achievements to earn XP, climb the leaderboards and compete for $TTWO rewards.",
+    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知  GTA VI Play-to-Earn on Solana. Vice Club tracks your playtime, PSN trophies and Xbox achievements to earn XP, climb the leaderboards and compete for $TTWO rewards.",
+    "twitter": "",
+    "website": "https://viceclub.io",
+    "telegram": "https://t.me/viceclubio",
+    "twitter_dup": 0,
+    "image_dup": 0,
+    "creator_token_status": "",
+    "liq_src": "DEX",
+    "liq_now": 16155.84,
+    "liq_ts": 1795031484
+  },
+  {
     "ca": "0x5659250b7aac8f66701c7655da16070ecad6355e",
     "chain": "eth",
     "name": "DacityCoin",
@@ -25,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 40987.11819717218,
-    "liq_ts": 1795031165,
+    "liq_ts": 1795031484,
     "liq_src": "GMGN"
   },
   {
@@ -39,9 +68,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 15:54",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 19371.97,
-    "market_cap": 24185.0,
-    "holders": 193,
+    "liquidity_usd": 25312.76,
+    "market_cap": 68478.0,
+    "holders": 131,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "basestonk",
@@ -53,9 +82,9 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 19371.971676543842,
-    "liq_ts": 1795031165,
-    "liq_src": "GMGN"
+    "liq_src": "DEX",
+    "liq_now": 25312.76,
+    "liq_ts": 1795031484
   },
   {
     "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
@@ -68,9 +97,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 07:52",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 23465.01,
+    "liquidity_usd": 23312.61,
     "market_cap": 149634.0,
-    "holders": 566,
+    "holders": 565,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "ray_launchpad",
@@ -82,8 +111,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 23465.01105200798,
-    "liq_ts": 1795031165,
+    "liq_now": 23312.60736962472,
+    "liq_ts": 1795031484,
     "liq_src": "GMGN"
   }
 ]
