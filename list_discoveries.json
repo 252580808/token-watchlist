@@ -1,20 +1,39 @@
 {
-  "generated_at": "2026-11-18T08:44:36.818804Z",
+  "generated_at": "2026-11-18T08:53:33.557524Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1611,
+    "posts_total": 1616,
     "blocked": 233,
-    "no_entry": 1215,
-    "events": 63,
+    "no_entry": 1219,
+    "events": 64,
     "merged_posts": 100,
     "terms_failed": 0,
-    "today_events": 3,
+    "today_events": 4,
     "today_pushed": 0
   },
   "events": [
+    {
+      "event_id": "domain:nytimes.com",
+      "identity": "domain:nytimes.com",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-18T08:45:06Z",
+      "last_seen_at": "2026-11-18T08:45:06Z",
+      "window_bucket": 83101,
+      "post_count": 1,
+      "representative_text": "网安公司 Calif 借助 OpenAI 的 GPT-6 Cyber，在 Java 底层发现严重漏洞 Java4Shell。研究人员称，只花 1 小时就找到漏洞，又用 2 小时开发出首个可用的攻击程序，AI Token 成本不到 200 美元。 | | Java 被全球约 90% 的财富 500 GPT-6 Cyber for helping further secure the internet, with a major security flaw in Java found by Calif, as part of our Patch the Planet initiative: www",
+      "keywords": "[\"高:首个\"]",
+      "tweet_url": "https://x.com/0xLogicrw/status/2122974368141865004",
+      "samples": [
+        {
+          "text": "网安公司 Calif 借助 OpenAI 的 GPT-6 Cyber，在 Java 底层发现严重漏洞 Java4Shell。研究人员称，只花 1 小时就找到漏洞，又用 2 小时开发出首个可用的攻击程序，AI Token 成本不到 200 美元。 | | Java 被全球约 90% 的财富 500 GPT-6 Cyber for helping further secure the internet",
+          "url": "https://x.com/0xLogicrw/status/2122974368141865004",
+          "post_time": "2026-11-18T08:45:06+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
