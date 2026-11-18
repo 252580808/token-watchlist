@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T00:53:06.233994Z",
+  "generated_at": "2026-11-18T01:02:09.111587Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现：过统一屏蔽词(唯一拦)+命中关键词即收；不要求标准CA/官网/ID格式。事件ID=主域名或资产ID或文本指纹 + 6h时间桶，同事件聚合只推群一次、看板累加条数。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -11,6 +11,63 @@
     "merged_posts": 19
   },
   "events": [
+    {
+      "event_id": "text:904201151f76|83100",
+      "identity": "text:904201151f76",
+      "identity_type": "text_fp",
+      "first_seen_at": "2026-11-18T00:56:06Z",
+      "last_seen_at": "2026-11-18T00:56:06Z",
+      "window_bucket": 83100,
+      "post_count": 1,
+      "representative_text": "币圈项目方真实资质参差不齐，现在发射平台多如牛毛，很快就会一个dev搞一个发射台，利用发射台平台币收割散户，真是诈骗层出不穷，但就是有割不完的韭菜。因为韭菜都有一个幻想！幻想一夜暴富！ | 其实真正在币圈能翻身的基本都是交易高手，能落袋为安的，目前这环境，你格局就让你当庄家！",
+      "keywords": "[\"高:平台币\"]",
+      "tweet_url": "https://x.com/0xSOL985/status/2122856339974042008",
+      "samples": [
+        {
+          "text": "币圈项目方真实资质参差不齐，现在发射平台多如牛毛，很快就会一个dev搞一个发射台，利用发射台平台币收割散户，真是诈骗层出不穷，但就是有割不完的韭菜。因为韭菜都有一个幻想！幻想一夜暴富！ | 其实真正在币圈能翻身的基本都是交易高手，能落袋为安的，目前这环境，你格局就让你当庄家！",
+          "url": "https://x.com/0xSOL985/status/2122856339974042008",
+          "post_time": "2026-11-18T00:56:06+00:00"
+        }
+      ]
+    },
+    {
+      "event_id": "text:299a40e05c67|83100",
+      "identity": "text:299a40e05c67",
+      "identity_type": "text_fp",
+      "first_seen_at": "2026-11-18T00:55:29Z",
+      "last_seen_at": "2026-11-18T00:55:29Z",
+      "window_bucket": 83100,
+      "post_count": 1,
+      "representative_text": "⭐️币安钱包这边也开始了Anthropic的IPO打新，和海妖(Kraken)一样，都是通过xStocks这个渠道，币安的影响力，分配应该不会很低。 | | -&gt;币安这边是今天下午2点开始，海妖那边也在进行中，我两边都参与了一点。 x.com/Benjieming1Q84/status/2122856182167814596/photo/1 ⭐️海妖(Kraken)可以参与Anthropic(Claude Code母公司)的IPO，可能是因为上次SpaceX IPO失败的原因，没啥人发，我小资金参与一下。 x.com/Benjieming1Q84/status/2120488840687",
+      "keywords": "[\"高:打新\"]",
+      "tweet_url": "https://x.com/Benjieming1Q84/status/2122856182167814596",
+      "samples": [
+        {
+          "text": "⭐️币安钱包这边也开始了Anthropic的IPO打新，和海妖(Kraken)一样，都是通过xStocks这个渠道，币安的影响力，分配应该不会很低。 | | -&gt;币安这边是今天下午2点开始，海妖那边也在进行中，我两边都参与了一点。 x.com/Benjieming1Q84/status/2122856182167814596/photo/1 ⭐️海妖(Kraken)可以参与Anthropic",
+          "url": "https://x.com/Benjieming1Q84/status/2122856182167814596",
+          "post_time": "2026-11-18T00:55:29+00:00"
+        }
+      ]
+    },
+    {
+      "event_id": "text:c09926e2409f|83100",
+      "identity": "text:c09926e2409f",
+      "identity_type": "text_fp",
+      "first_seen_at": "2026-11-18T00:53:51Z",
+      "last_seen_at": "2026-11-18T00:53:51Z",
+      "window_bucket": 83100,
+      "post_count": 1,
+      "representative_text": "点了 | | 很多小学女教师纯恶魔 那些小学女教师大概率是中国大多数孩子人生中第一个霸凌者",
+      "keywords": "[\"高:第一个\"]",
+      "tweet_url": "https://x.com/clotyufu/status/2122855772078112998",
+      "samples": [
+        {
+          "text": "点了 | | 很多小学女教师纯恶魔 那些小学女教师大概率是中国大多数孩子人生中第一个霸凌者",
+          "url": "https://x.com/clotyufu/status/2122855772078112998",
+          "post_time": "2026-11-18T00:53:51+00:00"
+        }
+      ]
+    },
     {
       "event_id": "text:4afb99a009df|83100",
       "identity": "text:4afb99a009df",
@@ -27372,63 +27429,6 @@
           "text": "@0xYukiRabbit 底价配回购这组合有看头",
           "url": "https://x.com/qxgy88/status/2120321377773420550",
           "post_time": "2026-11-11T01:03:04+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "text:a30a9fc402e8|83072",
-      "identity": "text:a30a9fc402e8",
-      "identity_type": "text_fp",
-      "first_seen_at": "2026-11-11T01:00:09Z",
-      "last_seen_at": "2026-11-11T01:00:09Z",
-      "window_bucket": 83072,
-      "post_count": 1,
-      "representative_text": "你输入的网址一个字母都没错，打开的就是官方域名，钱包却还是被掏空了。这是今天凌晨跨链桥 Across 一部分用户遇到的事，攻击者没有去破解任何代码，而是盯上了一个很少有人想到的环节：域名注册商。说穿了，他们第一个骗的不是你，而是帮 Across 管域名的那家公司。 | | 按 Across 在 X x.com/nancy_c813/status/2120320643392819486/photo/1",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/nancy_c813/status/2120320643392819486",
-      "samples": [
-        {
-          "text": "你输入的网址一个字母都没错，打开的就是官方域名，钱包却还是被掏空了。这是今天凌晨跨链桥 Across 一部分用户遇到的事，攻击者没有去破解任何代码，而是盯上了一个很少有人想到的环节：域名注册商。说穿了，他们第一个骗的不是你，而是帮 Across 管域名的那家公司。 | | 按 Across 在 X x.com/nancy_c813/status/2120320643392819486/photo/",
-          "url": "https://x.com/nancy_c813/status/2120320643392819486",
-          "post_time": "2026-11-11T01:00:09+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "text:7ba5218d205d|83072",
-      "identity": "text:7ba5218d205d",
-      "identity_type": "text_fp",
-      "first_seen_at": "2026-11-11T01:00:04Z",
-      "last_seen_at": "2026-11-11T01:00:04Z",
-      "window_bucket": 83072,
-      "post_count": 1,
-      "representative_text": "MONTRA 创始人 @spinor_ 早上又发帖回击，说 igotruggedoncashcat 账户背后的人，是 Elysium 上另一个发射台 @AscendLaunch 的两个创始人 @CryptoTomYT 和 @analyzationz。 | | 他们通过与自己有关联的钱包，在市场上买入大量 $MONTRA ，以此来打击 MONTRA。 | | 事情真假不知，但能看出来 Elysium x.com/0x_SixxxVC/status/2120320622534566272/photo/1 $MONTRA 的榜一在 FOMO 发帖，说 @spinor_ 曾游说他为 @letscash",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/0x_SixxxVC/status/2120320622534566272",
-      "samples": [
-        {
-          "text": "MONTRA 创始人 @spinor_ 早上又发帖回击，说 igotruggedoncashcat 账户背后的人，是 Elysium 上另一个发射台 @AscendLaunch 的两个创始人 @CryptoTomYT 和 @analyzationz。 | | 他们通过与自己有关联的钱包，在市场上买入大量 $MONTRA ，以此来打击 MONTRA。 | | 事情真假不知，但能看出来 Elysium",
-          "url": "https://x.com/0x_SixxxVC/status/2120320622534566272",
-          "post_time": "2026-11-11T01:00:04+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "text:fe8424685512|83072",
-      "identity": "text:fe8424685512",
-      "identity_type": "text_fp",
-      "first_seen_at": "2026-11-11T00:58:09Z",
-      "last_seen_at": "2026-11-11T00:58:09Z",
-      "window_bucket": 83072,
-      "post_count": 1,
-      "representative_text": "wtf…这也太 drama 了🤯 | | Montra 团队指控 Ascend 的两位联合创始人，将约 $150K 经隐私协议转到新钱包买入 $MONTRA，然后利用 fomo 平台试图进行操纵和攻击；后者被抓包后改口谈判，提出可以销毁仓位换封口。 | | 虽然没验证这些到底是不是真的，但如果 Elysium Ladies and gentleman, meet @AscendLaunch co-founders, @CryptoTomYT and @analyzationz of @VersusFNF and @DigiWorldd, also known as 'igotruggedonc",
-      "keywords": "[\"高:创始人\", \"高:销毁\"]",
-      "tweet_url": "https://x.com/alu1337/status/2120320137673003392",
-      "samples": [
-        {
-          "text": "wtf…这也太 drama 了🤯 | | Montra 团队指控 Ascend 的两位联合创始人，将约 $150K 经隐私协议转到新钱包买入 $MONTRA，然后利用 fomo 平台试图进行操纵和攻击；后者被抓包后改口谈判，提出可以销毁仓位换封口。 | | 虽然没验证这些到底是不是真的，但如果 Elysium Ladies and gentleman, meet @AscendLaunch co-",
-          "url": "https://x.com/alu1337/status/2120320137673003392",
-          "post_time": "2026-11-11T00:58:09+00:00"
         }
       ]
     }
