@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 12468.933796523317,
-    "liq_ts": 1795037770,
+    "liq_ts": 1795038096,
     "liq_src": "GMGN"
   },
   {
@@ -39,9 +39,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 19:47",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 18118.27,
+    "liquidity_usd": 23211.83,
     "market_cap": 52263.0,
-    "holders": 299,
+    "holders": 309,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "Pump.fun",
@@ -53,8 +53,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 18118.272732856578,
-    "liq_ts": 1795037770,
+    "liq_now": 23211.82815718461,
+    "liq_ts": 1795038096,
     "liq_src": "GMGN"
   },
   {
@@ -68,9 +68,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 18:12",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 36267.75,
+    "liquidity_usd": 35071.45,
     "market_cap": 228756.0,
-    "holders": 313,
+    "holders": 307,
     "dev_count": 0,
     "dev_creator": "0x5f187f4fb315bdba54db9d3921f3c55c2739a957",
     "gmgn_launchpad": "pool_uniswap_v2",
@@ -82,8 +82,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 36267.749937294044,
-    "liq_ts": 1795037770,
+    "liq_now": 35071.44891035834,
+    "liq_ts": 1795038096,
     "liq_src": "GMGN"
   },
   {
@@ -97,9 +97,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 15:54",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 22325.46,
+    "liquidity_usd": 26220.75,
     "market_cap": 24185.0,
-    "holders": 224,
+    "holders": 234,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "basestonk",
@@ -111,8 +111,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 22325.463384449162,
-    "liq_ts": 1795037770,
+    "liq_now": 26220.752527654535,
+    "liq_ts": 1795038096,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 30798.57690453148,
-    "liq_ts": 1795037770,
+    "liq_ts": 1795038096,
     "liq_src": "GMGN"
   }
 ]
