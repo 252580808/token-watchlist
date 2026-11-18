@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T12:50:10.839921Z",
+  "generated_at": "2026-11-18T12:58:47.680144Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1642,
+    "posts_total": 1637,
     "blocked": 233,
-    "no_entry": 1243,
+    "no_entry": 1239,
     "events": 66,
-    "merged_posts": 100,
+    "merged_posts": 99,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 4
@@ -229,11 +229,11 @@
       "event_id": "article:2120473254414422017",
       "identity": "article:2120473254414422017",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-11T12:51:26Z",
+      "first_seen_at": "2026-11-16T13:03:05Z",
       "last_seen_at": "2026-11-18T04:36:22Z",
-      "window_bucket": 83074,
-      "post_count": 6,
-      "representative_text": "168X，@168X_Fortune @168MrZ 算是我接触过的最专业的媒体了。 | | 文章总结的非常棒，基本上把我在语音里的废话连篇精炼成了适合人类快速阅读的精华。 | | 只能说，在如今人人都是自媒体的时代 168X 能跑出来，和他的专业性是有非常大的关联的👍👍👍 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/",
+      "window_bucket": 83094,
+      "post_count": 5,
+      "representative_text": "“比跌幅更危险的，是多头信心崩塌 | BTC 在 7.8 万–7.9 万美元附近，原本有持续的买盘防守，大家相信插针之后很快拉回 | 这条心理防线被击穿后，原来愿意接货的资金开始怀疑自己的判断 | 多头反复防守仍被打穿，即使价格回到附近，也未必还愿意用原来的力度接 | 所以我认为这次调整可能比原来更长 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2122911771489108378",
       "author": "168X_Fortune",
@@ -253,11 +253,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "102",
       "samples": [
-        {
-          "text": "168X，@168X_Fortune @168MrZ 算是我接触过的最专业的媒体了。 | | 文章总结的非常棒，基本上把我在语音里的废话连篇精炼成了适合人类快速阅读的精华。 | | 只能说，在如今人人都是自媒体的时代 168X 能跑出来，和他的专业性是有非常大的关联的👍👍👍 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / ",
-          "url": "https://x.com/Guilin_Chen_/status/2120499643067109557",
-          "post_time": "2026-11-11T12:51:26+00:00"
-        },
         {
           "text": "“比跌幅更危险的，是多头信心崩塌 | BTC 在 7.8 万–7.9 万美元附近，原本有持续的买盘防守，大家相信插针之后很快拉回 | 这条心理防线被击穿后，原来愿意接货的资金开始怀疑自己的判断 | 多头反复防守仍被打穿，即使价格回到附近，也未必还愿意用原来的力度接 | 所以我认为这次调整可能比原来更长 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港",
           "url": "https://x.com/168X_Fortune/status/2122314513206653294",
