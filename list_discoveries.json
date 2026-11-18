@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T20:01:30.129135Z",
+  "generated_at": "2026-11-18T20:10:28.086928Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1598,
+    "posts_total": 1597,
     "blocked": 232,
     "no_entry": 1204,
     "events": 63,
-    "merged_posts": 99,
+    "merged_posts": 98,
     "terms_failed": 0,
     "today_events": 0,
     "today_pushed": 0
@@ -2089,11 +2089,11 @@
       "event_id": "domain:squeekchain.com",
       "identity": "domain:squeekchain.com",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-11T20:06:50Z",
+      "first_seen_at": "2026-11-12T00:30:15Z",
       "last_seen_at": "2026-11-12T14:04:16Z",
-      "window_bucket": 83075,
-      "post_count": 4,
-      "representative_text": "做了的兄弟早上9点起来打，我是会打满的 | | 总供应量 | 3333 个 Squeeks | | 分配方案 | 3000 个分配给 Aura 参与者 (Aura Farmers) | 333 个归协议 (Protocol) 所有 | 33 个归团队 (Team) 所有 | | 价格 | 0.05 ETH | | 铸造方式 | 按等级顺序，先到先得—— | 依次为：Reserve（预留）、Gold（黄金）、Silver（白银），随后是 兄弟们这个 @squeekchain 一定要搞，仓鼠链！创始人是@pillheadddd | | 到时候代币按照算力分给持有Squeek NFT的人，一只真仓鼠",
+      "window_bucket": 83076,
+      "post_count": 3,
+      "representative_text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
       "keywords": "[\"高:免费 mint\", \"高:创始人\"]",
       "tweet_url": "https://x.com/timliu92/status/2120880359491387402",
       "author": "timliu92",
@@ -2113,11 +2113,6 @@
       "reg_at": "Fri May 31 13:25:32 +0000 2024",
       "views": "20",
       "samples": [
-        {
-          "text": "做了的兄弟早上9点起来打，我是会打满的 | | 总供应量 | 3333 个 Squeeks | | 分配方案 | 3000 个分配给 Aura 参与者 (Aura Farmers) | 333 个归协议 (Protocol) 所有 | 33 个归团队 (Team) 所有 | | 价格 | 0.05 ETH | | 铸造方式 | 按等级顺序，先到先得—— | 依次为：Reserve（预留）、Gold",
-          "url": "https://x.com/0xDaaa/status/2120609214582472799",
-          "post_time": "2026-11-11T20:06:50+00:00"
-        },
         {
           "text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
           "url": "https://x.com/luyuban69/status/2120675505448054834",
