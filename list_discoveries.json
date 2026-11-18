@@ -1,20 +1,60 @@
 {
-  "generated_at": "2026-11-18T21:31:38.933213Z",
+  "generated_at": "2026-11-18T21:40:37.231594Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1597,
+    "posts_total": 1599,
     "blocked": 233,
     "no_entry": 1203,
-    "events": 63,
-    "merged_posts": 98,
+    "events": 64,
+    "merged_posts": 99,
     "terms_failed": 0,
-    "today_events": 0,
+    "today_events": 1,
     "today_pushed": 0
   },
   "events": [
+    {
+      "event_id": "article:2123152695821242368",
+      "identity": "article:2123152695821242368",
+      "identity_type": "tweet_article",
+      "first_seen_at": "2026-11-18T21:31:53Z",
+      "last_seen_at": "2026-11-18T21:33:51Z",
+      "window_bucket": 83103,
+      "post_count": 2,
+      "representative_text": "为啥 $float 暴跌 | 你们心里没点逼数吗？ | 艹 | 因为给你机会你把握不住啊 | $fuse $pussy 那么好的子币龙头苗子 | 你都不支持 | 不给机制上的子币回购销毁飞轮支持， | 给一群p子波子空投有个jb用 | 你把一个子币龙头扶起来 | 你可以上30-50m的天梯 | 甚至和犯了愚蠢大错的 $stonks 掰掰手腕你 | 甚至 $flip 可以有希望 x.com/webthreecool/status/2123167334127083620/photo/1 x.com/i/article/2123152695821242368",
+      "keywords": "[\"高:回购\", \"高:销毁\"]",
+      "tweet_url": "https://x.com/webthreecool/status/2123167828660609228",
+      "author": "webthreecool",
+      "author_name": "web3nb(重生版)",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 1427,
+      "blue_verified": true,
+      "listed_count": 29,
+      "reg_at": "Fri Feb 02 06:08:36 +0000 2024",
+      "views": "16",
+      "samples": [
+        {
+          "text": "为啥 $float 暴跌 | 你们心里没点逼数吗？ | 艹 | 因为给你机会你把握不住啊 | $fuse $pussy 那么好的子币龙头苗子 | 你都不支持 | 不给机制上的子币回购销毁飞轮支持， | 给一群p子波子空投有个jb用 | 你把一个子币龙头扶起来 | 你可以上30-50m的天梯 | 甚至和犯了愚蠢大错的 $stonks 掰掰手腕你 | 甚至 $flip 可以有希望 x.com/webt",
+          "url": "https://x.com/webthreecool/status/2123167334127083620",
+          "post_time": "2026-11-18T21:31:53+00:00"
+        },
+        {
+          "text": "为啥 $float 暴跌 | 你们心里没点逼数吗？ | 艹 | 因为给你机会你把握不住啊 | $fuse $pussy 那么好的子币龙头苗子 | 你都不支持 | 不给机制上的子币回购销毁飞轮支持， | 给一群p子波子空投有个jb用 | 你把一个子币龙头扶起来 | 你可以上30-50m的天梯 | 甚至和犯了愚蠢大错的 $stonks 掰掰手腕你 | 甚至可以有希望 flip x.com/webthr",
+          "url": "https://x.com/webthreecool/status/2123167828660609228",
+          "post_time": "2026-11-18T21:33:51+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2122998981395427328",
       "identity": "article:2122998981395427328",
