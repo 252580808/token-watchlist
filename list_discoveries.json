@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T03:21:56.986993Z",
+  "generated_at": "2026-11-19T03:31:14.761627Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -7,9 +7,9 @@
     "enabled": 1,
     "posts_total": 1551,
     "blocked": 218,
-    "no_entry": 1173,
+    "no_entry": 1174,
     "events": 62,
-    "merged_posts": 98,
+    "merged_posts": 97,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -1139,11 +1139,11 @@
       "event_id": "domain:onlystreets.fun",
       "identity": "domain:onlystreets.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T03:27:00Z",
+      "first_seen_at": "2026-11-12T12:44:01Z",
       "last_seen_at": "2026-11-16T04:24:09Z",
-      "window_bucket": 83076,
-      "post_count": 10,
-      "representative_text": "最近看到一個滿有趣的項目 @onlystreetsfun | | OnlyStreets 想把日常生活中的有趣瞬間，直接帶到 Solana 鏈上。 | | 玩法很簡單 | 在街上看到有趣的畫面，用 App 即時拍照。 | | 替照片取名、設定 Ticker，就能創建自己的 Meme Coin。 | | 比較特別的是，它要求使用 App 現場拍攝，不能直接從相簿上傳圖片。 x.com/luke102579/status/2120719985597096236/video/1 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind",
+      "window_bucket": 83078,
+      "post_count": 9,
+      "representative_text": "Memecoins inspired by real-life moments? That's what @onlystreetsfun is exploring. | | Capture something funny or unusual, turn it into a Solana coin, and bring real-world culture on-chain. | | Interesting concept to follow, especially alongside the growing ecosystem on @rarelistio . Introducing onl",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/yingge001/status/2122183922041974799",
       "author": "yingge001",
@@ -1163,11 +1163,6 @@
       "reg_at": "Tue Feb 27 14:09:15 +0000 2024",
       "views": "22",
       "samples": [
-        {
-          "text": "最近看到一個滿有趣的項目 @onlystreetsfun | | OnlyStreets 想把日常生活中的有趣瞬間，直接帶到 Solana 鏈上。 | | 玩法很簡單 | 在街上看到有趣的畫面，用 App 即時拍照。 | | 替照片取名、設定 Ticker，就能創建自己的 Meme Coin。 | | 比較特別的是，它要求使用 App 現場拍攝，不能直接從相簿上傳圖片。 x.com/luke102",
-          "url": "https://x.com/luke102579/status/2120719985597096236",
-          "post_time": "2026-11-12T03:27:00+00:00"
-        },
         {
           "text": "Memecoins inspired by real-life moments? That's what @onlystreetsfun is exploring. | | Capture something funny or unusual, turn it into a Solana coin, and bring real-world culture on-chain. | | Intere",
           "url": "https://x.com/mrchrismast_/status/2120860163754414126",
@@ -1202,6 +1197,11 @@
           "text": "onlystreets.fun 即将登陆 Solana。 @onlystreetsfun | | 一个独一无二的启动平台 | | 专为源于现实生活瞬间的代币而生。 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Eve",
           "url": "https://x.com/wen394428142129/status/2121153400104779802",
           "post_time": "2026-11-13T08:09:14+00:00"
+        },
+        {
+          "text": "@onlystreetsfun 是 Solana 上的一个发币平台，想把现实生活中的瞬间带上链，用不同的方式创作 meme 币 | | 发币流程分四步：在现实中看到好笑、奇怪或有意思的东西，用 OnlyStreets 的 App 内相机拍下来，起名字和 ticker，然后当场发币 | | 币发出来后，任何人都能发现、买卖和分享 | 卷起来！ onlystreets.fun is coming so",
+          "url": "https://x.com/yingge001/status/2121846788357554290",
+          "post_time": "2026-11-15T06:04:31+00:00"
         }
       ]
     },
