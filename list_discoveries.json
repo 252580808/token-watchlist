@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T21:24:23.349878Z",
+  "generated_at": "2026-11-19T21:33:28.072660Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1418,
+    "posts_total": 1416,
     "blocked": 160,
     "no_entry": 1122,
     "events": 54,
-    "merged_posts": 82,
+    "merged_posts": 80,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-12T21:25:09Z",
+      "first_seen_at": "2026-11-12T21:39:34Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83079,
-      "post_count": 27,
-      "representative_text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
+      "post_count": 25,
+      "representative_text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | x.com/onepumpcc | 很卡才几十K",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,16 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
-          "url": "https://x.com/RK_Bitcoin/status/2120991313361559955",
-          "post_time": "2026-11-12T21:25:09+00:00"
-        },
-        {
-          "text": "onepump台子开了 我看唯一一个有网站有社区的就是这个 | | www.oneswap.cc/launchpad/token/4434b8c6-9555-5f0b-8d20-678e2dbff1b5",
-          "url": "https://x.com/Mojito_cx/status/2120992736656650394",
-          "post_time": "2026-11-12T21:30:49+00:00"
-        },
         {
           "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | x.com/onepumpcc | 很卡才几十K",
           "url": "https://x.com/niuniu88688/status/2120994940474060873",
@@ -302,6 +292,16 @@
           "text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/2121044701600272598/photo/1",
           "url": "https://x.com/CC4238/status/2121044701600272598",
           "post_time": "2026-11-13T00:57:18+00:00"
+        },
+        {
+          "text": "onepump龙头定了 @onepumpcc 这个射出去应该能不低的市值吧 | | cc精选，上一个台子龙头也做到5m啊 | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a",
+          "url": "https://x.com/Mojito_cx/status/2121055459956461822",
+          "post_time": "2026-11-13T01:40:03+00:00"
+        },
+        {
+          "text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 th",
+          "url": "https://x.com/SkyAAmen/status/2121060169564258786",
+          "post_time": "2026-11-13T01:58:46+00:00"
         }
       ]
     },
