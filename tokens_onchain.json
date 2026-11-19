@@ -1,5 +1,34 @@
 [
   {
+    "ca": "0x2edd2762ec5a928f749380309eca0e33941b3e3e",
+    "chain": "robinhood",
+    "name": "Cofer",
+    "symbol": "COFR",
+    "first_seen": "2026-11-19 00:51",
+    "created_at": "2026-11-19 08:51",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-19 00:51",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "liquidity_usd": 11566.19,
+    "market_cap": 21911.0,
+    "holders": 120,
+    "dev_count": 2,
+    "dev_creator": "",
+    "gmgn_launchpad": "pons_v2",
+    "description": "发射台 pons_v2",
+    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "twitter": "",
+    "website": "https://getcofer.com",
+    "telegram": "https://t.me/usecoferonRH",
+    "twitter_dup": 0,
+    "image_dup": 0,
+    "creator_token_status": "",
+    "liq_src": "DEX",
+    "liq_now": 11566.19,
+    "liq_ts": 1795049771
+  },
+  {
     "ca": "7wkPPoNPfrp3qVZCAme7wEXd6XhwP3G6xxrWeu8GTA6",
     "chain": "sol",
     "name": "PolyGTA",
@@ -25,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13198.21253203064,
-    "liq_ts": 1795049489,
+    "liq_ts": 1795049771,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 19238.84412151853,
-    "liq_ts": 1795049489,
+    "liq_ts": 1795049771,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 39180.580165718995,
-    "liq_ts": 1795049489,
+    "liq_ts": 1795049771,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 42296.770899904564,
-    "liq_ts": 1795049489,
+    "liq_ts": 1795049771,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 28723.3375185255,
-    "liq_ts": 1795049489,
+    "liq_ts": 1795049771,
     "liq_src": "GMGN"
   }
 ]
