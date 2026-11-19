@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19T00:24:09.806411Z",
+  "generated_at": "2026-11-19T00:33:20.132045Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1582,
-    "blocked": 226,
+    "posts_total": 1579,
+    "blocked": 223,
     "no_entry": 1193,
     "events": 64,
     "merged_posts": 99,
@@ -15,6 +15,76 @@
     "today_pushed": 1
   },
   "events": [
+    {
+      "event_id": "domain:oneswap.cc",
+      "identity": "domain:oneswap.cc",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-12T08:10:17Z",
+      "last_seen_at": "2026-11-19T00:25:14Z",
+      "window_bucket": 83077,
+      "post_count": 34,
+      "representative_text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 meme 已经确定下来了，目前日期还没定等最终审批 x.com/Ouh_web1/status/2120537228682379641/photo/1",
+      "keywords": "[\"高:launchpad\"]",
+      "tweet_url": "https://x.com/into9966/status/2123210959565258935",
+      "author": "into9966",
+      "author_name": "Crypto_2025（🌱）",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 292,
+      "blue_verified": true,
+      "listed_count": 1,
+      "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
+      "views": "4",
+      "samples": [
+        {
+          "text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 me",
+          "url": "https://x.com/Ouh_web1/status/2120791275381354627",
+          "post_time": "2026-11-12T08:10:17+00:00"
+        },
+        {
+          "text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/21209827585",
+          "url": "https://x.com/Reboottttttt/status/2120982758537449683",
+          "post_time": "2026-11-12T20:51:10+00:00"
+        },
+        {
+          "text": "www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc GM. we're building the first memecoin launchpad on Canton. | | 2 minutes to launch, trades the same second. no mempool, so nothing to snipe",
+          "url": "https://x.com/jiumeng88888/status/2120983608974618854",
+          "post_time": "2026-11-12T20:54:33+00:00"
+        },
+        {
+          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 第一个",
+          "url": "https://x.com/Reboottttttt/status/2120984905001922972",
+          "post_time": "2026-11-12T20:59:42+00:00"
+        },
+        {
+          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 这是第一个 www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc",
+          "url": "https://x.com/jiumeng88888/status/2120986601346265274",
+          "post_time": "2026-11-12T21:06:26+00:00"
+        },
+        {
+          "text": "第一个 现在20k 市值 x.com/juesaiquan/status/2120986612062617865/photo/1 CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现",
+          "url": "https://x.com/juesaiquan/status/2120986612062617865",
+          "post_time": "2026-11-12T21:06:28+00:00"
+        },
+        {
+          "text": "这个台子开了 @onepumpcc @Oneswapcc | | 前三个 | | onebot | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | onecat | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f |",
+          "url": "https://x.com/AKAKAY04/status/2120989541930795259",
+          "post_time": "2026-11-12T21:18:07+00:00"
+        },
+        {
+          "text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
+          "url": "https://x.com/RK_Bitcoin/status/2120991313361559955",
+          "post_time": "2026-11-12T21:25:09+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2123152695821242368",
       "identity": "article:2123152695821242368",
@@ -322,76 +392,6 @@
           "text": "“高 Beta 不是越高越好 | BTC 波动率不够高了，所以我这轮主要做 ETH：核心资产，同时保留更大的交易弹性 | 我熟悉 ETH 的波动节奏、技术结构和市场反应，大仓位交易，熟悉程度非常重要 | SOL、HYPE、BNB 我没有投入同样多的研究精力 | HYPE 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / US",
           "url": "https://x.com/168X_Fortune/status/2122911771489108378",
           "post_time": "2026-11-18T04:36:22+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T08:10:17Z",
-      "last_seen_at": "2026-11-17T22:14:36Z",
-      "window_bucket": 83077,
-      "post_count": 33,
-      "representative_text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 meme 已经确定下来了，目前日期还没定等最终审批 x.com/Ouh_web1/status/2120537228682379641/photo/1",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/into9966/status/2122815694136058294",
-      "author": "into9966",
-      "author_name": "Crypto_2025（🌱）",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 284,
-      "blue_verified": true,
-      "listed_count": 1,
-      "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
-      "views": "3",
-      "samples": [
-        {
-          "text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 me",
-          "url": "https://x.com/Ouh_web1/status/2120791275381354627",
-          "post_time": "2026-11-12T08:10:17+00:00"
-        },
-        {
-          "text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/21209827585",
-          "url": "https://x.com/Reboottttttt/status/2120982758537449683",
-          "post_time": "2026-11-12T20:51:10+00:00"
-        },
-        {
-          "text": "www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc GM. we're building the first memecoin launchpad on Canton. | | 2 minutes to launch, trades the same second. no mempool, so nothing to snipe",
-          "url": "https://x.com/jiumeng88888/status/2120983608974618854",
-          "post_time": "2026-11-12T20:54:33+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 第一个",
-          "url": "https://x.com/Reboottttttt/status/2120984905001922972",
-          "post_time": "2026-11-12T20:59:42+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 这是第一个 www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc",
-          "url": "https://x.com/jiumeng88888/status/2120986601346265274",
-          "post_time": "2026-11-12T21:06:26+00:00"
-        },
-        {
-          "text": "第一个 现在20k 市值 x.com/juesaiquan/status/2120986612062617865/photo/1 CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现",
-          "url": "https://x.com/juesaiquan/status/2120986612062617865",
-          "post_time": "2026-11-12T21:06:28+00:00"
-        },
-        {
-          "text": "这个台子开了 @onepumpcc @Oneswapcc | | 前三个 | | onebot | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | onecat | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f |",
-          "url": "https://x.com/AKAKAY04/status/2120989541930795259",
-          "post_time": "2026-11-12T21:18:07+00:00"
-        },
-        {
-          "text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
-          "url": "https://x.com/RK_Bitcoin/status/2120991313361559955",
-          "post_time": "2026-11-12T21:25:09+00:00"
         }
       ]
     },
@@ -2129,11 +2129,11 @@
       "event_id": "domain:squeekchain.com",
       "identity": "domain:squeekchain.com",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T00:30:15Z",
+      "first_seen_at": "2026-11-12T05:04:46Z",
       "last_seen_at": "2026-11-12T14:04:16Z",
       "window_bucket": 83076,
-      "post_count": 3,
-      "representative_text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
+      "post_count": 2,
+      "representative_text": "一觉睡醒 仓鼠 @squeekchain 竟然要免费打了！ | | 还以为睡过头要错过了呢~ | | /Pillhead(yes) @pillheadddd 大佬牛逼 | | 等待公布什么时候开Mint 仓鼠squeekchain @squeekchain 明早八点打 | | 资格查询入口：squeekchain.com/genesis/i/su3cy8sj | | 总量现在是3333个 每个0.05E | | 有没有叫醒服务订阅？怕起不来啊 x.com/Big_Tea_Rice/status/2120545914767179927/photo/1",
       "keywords": "[\"高:免费 mint\", \"高:创始人\"]",
       "tweet_url": "https://x.com/timliu92/status/2120880359491387402",
       "author": "timliu92",
@@ -2153,11 +2153,6 @@
       "reg_at": "Fri May 31 13:25:32 +0000 2024",
       "views": "20",
       "samples": [
-        {
-          "text": "怎么都在发 @squeekchain 改免费铸造了 | | 不是说今早8点吗？又跳票了？ | | 链接：squeekchain.com/mint x.com/luyuban69/status/2120675505448054834/photo/1",
-          "url": "https://x.com/luyuban69/status/2120675505448054834",
-          "post_time": "2026-11-12T00:30:15+00:00"
-        },
         {
           "text": "一觉睡醒 仓鼠 @squeekchain 竟然要免费打了！ | | 还以为睡过头要错过了呢~ | | /Pillhead(yes) @pillheadddd 大佬牛逼 | | 等待公布什么时候开Mint 仓鼠squeekchain @squeekchain 明早八点打 | | 资格查询入口：squeekchain.com/genesis/i/su3cy8sj | | 总量现在是3333个 每个0.",
           "url": "https://x.com/Big_Tea_Rice/status/2120744591536304309",
