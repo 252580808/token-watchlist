@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-19T09:33:55.012199Z",
+  "generated_at": "2026-11-19T09:42:52.065451Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1495,
+    "posts_total": 1492,
     "blocked": 205,
-    "no_entry": 1138,
-    "events": 60,
+    "no_entry": 1136,
+    "events": 59,
     "merged_posts": 92,
     "terms_failed": 0,
     "today_events": 1,
@@ -2377,41 +2377,6 @@
           "text": "🆕 Whitelist｜Giphy.fun | | Anh em có thể đăng ký whitelist cho @giphyfun, nền tảng tự giới thiệu là launchpad đầu tiên dành cho GIF. | | Cách tham gia: Hoàn thành các nhiệm vụ X để vào waitlist. Nhiệm ",
           "url": "https://x.com/mrchrismast_/status/2120837130943672450",
           "post_time": "2026-11-12T11:12:29+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:miyamaker.com",
-      "identity": "domain:miyamaker.com",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T09:34:09Z",
-      "last_seen_at": "2026-11-12T09:34:09Z",
-      "window_bucket": 83077,
-      "post_count": 1,
-      "representative_text": "imd nft 持有者或milady nft 能fcfs 免费mint一个 | public 谁都能打 0.01e 一个 | supply 10000 | 量有点大 有兴趣的可以关注看看 | 点击下方start button 选择付款方式 | 有三个选项自己注意 x.com/mingwei1996/status/2120812384801697939/photo/1 Miyamaker is 10k NFTs on Ethereum, minting now at miyamaker.com/mint/miyamaker. Every piece stays hidden until it i",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/mingwei1996/status/2120812384801697939",
-      "author": "mingwei1996",
-      "author_name": "炜哥 | mfpurrs.btc",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 2338,
-      "blue_verified": true,
-      "listed_count": 49,
-      "reg_at": "Mon Jul 26 15:21:11 +0000 2021",
-      "views": "44",
-      "samples": [
-        {
-          "text": "imd nft 持有者或milady nft 能fcfs 免费mint一个 | public 谁都能打 0.01e 一个 | supply 10000 | 量有点大 有兴趣的可以关注看看 | 点击下方start button 选择付款方式 | 有三个选项自己注意 x.com/mingwei1996/status/2120812384801697939/photo/1 Miyamaker is 10",
-          "url": "https://x.com/mingwei1996/status/2120812384801697939",
-          "post_time": "2026-11-12T09:34:09+00:00"
         }
       ]
     }
