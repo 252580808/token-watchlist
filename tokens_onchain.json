@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 17120.291217457958,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 70,
     "creator_token_status": "creator_hold",
     "liq_now": 22671.22752575064,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 16117.02133766088,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 35350.62880039406,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 14021.778761680724,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   },
   {
@@ -170,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13741.262078528329,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   },
   {
@@ -199,7 +199,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 65644.94930163294,
-    "liq_ts": 1795110090,
+    "liq_ts": 1795110367,
     "liq_src": "GMGN"
   }
 ]
