@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T09:20:58.761186Z",
+  "generated_at": "2026-11-19T09:33:55.012199Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1496,
+    "posts_total": 1495,
     "blocked": 205,
     "no_entry": 1138,
     "events": 60,
-    "merged_posts": 93,
+    "merged_posts": 92,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -2384,11 +2384,11 @@
       "event_id": "domain:miyamaker.com",
       "identity": "domain:miyamaker.com",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T09:28:06Z",
+      "first_seen_at": "2026-11-12T09:34:09Z",
       "last_seen_at": "2026-11-12T09:34:09Z",
       "window_bucket": 83077,
-      "post_count": 2,
-      "representative_text": "imd nft 持有者或milady nft 能fcfs 免费mint一个 | public 谁都能打 0.01e 一个 | supply 10000 | 量有点大 有兴趣的可以关注看看 Miyamaker is 10k NFTs on Ethereum, minting now at miyamaker.com/mint/miyamaker. Every piece stays hidden until it is minted. 333 free for Miladys, 333 for identity.md holders and the rest sell for 0.01 ETH ",
+      "post_count": 1,
+      "representative_text": "imd nft 持有者或milady nft 能fcfs 免费mint一个 | public 谁都能打 0.01e 一个 | supply 10000 | 量有点大 有兴趣的可以关注看看 | 点击下方start button 选择付款方式 | 有三个选项自己注意 x.com/mingwei1996/status/2120812384801697939/photo/1 Miyamaker is 10k NFTs on Ethereum, minting now at miyamaker.com/mint/miyamaker. Every piece stays hidden until it i",
       "keywords": "[\"高:免费 mint\"]",
       "tweet_url": "https://x.com/mingwei1996/status/2120812384801697939",
       "author": "mingwei1996",
@@ -2408,11 +2408,6 @@
       "reg_at": "Mon Jul 26 15:21:11 +0000 2021",
       "views": "44",
       "samples": [
-        {
-          "text": "imd nft 持有者或milady nft 能fcfs 免费mint一个 | public 谁都能打 0.01e 一个 | supply 10000 | 量有点大 有兴趣的可以关注看看 Miyamaker is 10k NFTs on Ethereum, minting now at miyamaker.com/mint/miyamaker. Every piece stays hidden u",
-          "url": "https://x.com/mingwei1996/status/2120810858985234896",
-          "post_time": "2026-11-12T09:28:06+00:00"
-        },
         {
           "text": "imd nft 持有者或milady nft 能fcfs 免费mint一个 | public 谁都能打 0.01e 一个 | supply 10000 | 量有点大 有兴趣的可以关注看看 | 点击下方start button 选择付款方式 | 有三个选项自己注意 x.com/mingwei1996/status/2120812384801697939/photo/1 Miyamaker is 10",
           "url": "https://x.com/mingwei1996/status/2120812384801697939",
