@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-19T11:12:26.520814Z",
+  "generated_at": "2026-11-19T11:21:24.938849Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1475,
+    "posts_total": 1471,
     "blocked": 205,
-    "no_entry": 1120,
-    "events": 59,
+    "no_entry": 1117,
+    "events": 58,
     "merged_posts": 91,
     "terms_failed": 0,
     "today_events": 1,
@@ -2337,41 +2337,6 @@
           "text": "GitHub 上 14 个最火的开源 AI Agent 工具，全免费，我按最新星数排了一遍。 | 写代码、办公、管知识库、上网抓信息，14 个一次收齐。全文在文章里，你第一个想试哪个？ | 👇 x.com/i/article/2120831401239130112",
           "url": "https://x.com/Ylj158852/status/2120844838530949274",
           "post_time": "2026-11-12T11:43:07+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:giphy.fun",
-      "identity": "domain:giphy.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T11:12:29Z",
-      "last_seen_at": "2026-11-12T11:12:29Z",
-      "window_bucket": 83077,
-      "post_count": 1,
-      "representative_text": "🆕 Whitelist｜Giphy.fun | | Anh em có thể đăng ký whitelist cho @giphyfun, nền tảng tự giới thiệu là launchpad đầu tiên dành cho GIF. | | Cách tham gia: Hoàn thành các nhiệm vụ X để vào waitlist. Nhiệm vụ khá đơn giản, nhìn hơi giống task cho có 🤣 | | Lưu ý: x.com/mrchrismast_/status/21208371309436724",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/mrchrismast_/status/2120837130943672450",
-      "author": "mrchrismast_",
-      "author_name": "Mr. Chrismast",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 31098,
-      "blue_verified": true,
-      "listed_count": 57,
-      "reg_at": "Sun Oct 08 03:22:38 +0000 2023",
-      "views": "174",
-      "samples": [
-        {
-          "text": "🆕 Whitelist｜Giphy.fun | | Anh em có thể đăng ký whitelist cho @giphyfun, nền tảng tự giới thiệu là launchpad đầu tiên dành cho GIF. | | Cách tham gia: Hoàn thành các nhiệm vụ X để vào waitlist. Nhiệm ",
-          "url": "https://x.com/mrchrismast_/status/2120837130943672450",
-          "post_time": "2026-11-12T11:12:29+00:00"
         }
       ]
     }
