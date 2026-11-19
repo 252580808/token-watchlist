@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 12544.5814753108,
-    "liq_ts": 1795046468,
+    "liq_ts": 1795046796,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 15089.912571581164,
-    "liq_ts": 1795046468,
+    "liq_ts": 1795046796,
     "liq_src": "GMGN"
   },
   {
@@ -68,9 +68,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 18:12",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 41710.35,
+    "liquidity_usd": 40274.55,
     "market_cap": 228756.0,
-    "holders": 329,
+    "holders": 328,
     "dev_count": 0,
     "dev_creator": "0x5f187f4fb315bdba54db9d3921f3c55c2739a957",
     "gmgn_launchpad": "pool_uniswap_v2",
@@ -82,8 +82,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 41710.35081757586,
-    "liq_ts": 1795046468,
+    "liq_now": 40274.55244304032,
+    "liq_ts": 1795046796,
     "liq_src": "GMGN"
   },
   {
@@ -97,9 +97,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 15:54",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 33461.57,
+    "liquidity_usd": 34136.81,
     "market_cap": 24185.0,
-    "holders": 354,
+    "holders": 349,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "basestonk",
@@ -111,8 +111,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 33461.56779269814,
-    "liq_ts": 1795046468,
+    "liq_now": 34136.80910075085,
+    "liq_ts": 1795046796,
     "liq_src": "GMGN"
   },
   {
@@ -126,9 +126,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 07:52",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 30020.97,
+    "liquidity_usd": 27757.61,
     "market_cap": 149634.0,
-    "holders": 588,
+    "holders": 585,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "ray_launchpad",
@@ -140,8 +140,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 30020.96629988064,
-    "liq_ts": 1795046468,
+    "liq_now": 27757.61275014144,
+    "liq_ts": 1795046796,
     "liq_src": "GMGN"
   }
 ]
