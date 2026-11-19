@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T07:32:52.309564Z",
+  "generated_at": "2026-11-19T07:42:06.709215Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1519,
+    "posts_total": 1514,
     "blocked": 210,
-    "no_entry": 1153,
+    "no_entry": 1149,
     "events": 61,
-    "merged_posts": 95,
+    "merged_posts": 94,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -2274,11 +2274,11 @@
       "event_id": "domain:papagent.app",
       "identity": "domain:papagent.app",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T07:33:10Z",
+      "first_seen_at": "2026-11-12T11:04:56Z",
       "last_seen_at": "2026-11-12T12:14:26Z",
       "window_bucket": 83077,
-      "post_count": 3,
-      "representative_text": "今天出来好多Agent打新的盘子，我感觉我又行了，看看能不能干赢狗庄 | | 大家可以关注一下这个项目，今晚 8 点新出一个 $PAPER：一份 0.0015 BNB，打满 10 份也就 10U | | 总量只有 2 万份，筹码分散，相对公平一点。重点蹲一下，上次的 $BAN 打新也有3倍。晚上估计 5 分钟左右就打没了 The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID has 10 minting rig",
+      "post_count": 2,
+      "representative_text": "Agent打新的可以关注一下这两个项目，应该会很快！ | | 19.18分 @WLcc_Agent 的万里长城，0.005BNB一份 打满10份0.05BNB 打满15000份 | | wlcc.lol | | 8点就是 @burnsdefi_ 的PAPER 一份0.0015BNB 打满10份0.015BNB | | papagent.app | | 刚刚打的250份Stars",
       "keywords": "[\"高:Agent mint\"]",
       "tweet_url": "https://x.com/DongZe_Q/status/2120852719233851746",
       "author": "DongZe_Q",
@@ -2298,11 +2298,6 @@
       "reg_at": "Sun Apr 24 12:37:08 +0000 2022",
       "views": "9",
       "samples": [
-        {
-          "text": "今天出来好多Agent打新的盘子，我感觉我又行了，看看能不能干赢狗庄 | | 大家可以关注一下这个项目，今晚 8 点新出一个 $PAPER：一份 0.0015 BNB，打满 10 份也就 10U | | 总量只有 2 万份，筹码分散，相对公平一点。重点蹲一下，上次的 $BAN 打新也有3倍。晚上估计 5 分钟左右就打没了 The new project PAPER minting is comin",
-          "url": "https://x.com/taojukfc/status/2120781937308828127",
-          "post_time": "2026-11-12T07:33:10+00:00"
-        },
         {
           "text": "Agent打新的可以关注一下这两个项目，应该会很快！ | | 19.18分 @WLcc_Agent 的万里长城，0.005BNB一份 打满10份0.05BNB 打满15000份 | | wlcc.lol | | 8点就是 @burnsdefi_ 的PAPER 一份0.0015BNB 打满10份0.015BNB | | papagent.app | | 刚刚打的250份Stars",
           "url": "https://x.com/taojukfc/status/2120835230269690203",
