@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T00:52:41.065321Z",
+  "generated_at": "2026-11-19T01:00:03.878236Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1579,
+    "posts_total": 1576,
     "blocked": 223,
-    "no_entry": 1193,
+    "no_entry": 1191,
     "events": 64,
-    "merged_posts": 99,
+    "merged_posts": 98,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -1069,11 +1069,11 @@
       "event_id": "article:2120065383369674752",
       "identity": "article:2120065383369674752",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-12T00:53:29Z",
+      "first_seen_at": "2026-11-12T05:23:24Z",
       "last_seen_at": "2026-11-16T04:41:41Z",
       "window_bucket": 83076,
-      "post_count": 10,
-      "representative_text": "“年底反弹最大的阻力，可能是想保住业绩的基金经理 | 刚经历剧烈下跌，看到其他基金被追缴保证金、被迫平仓，第一反应是恐惧，不是兴奋 | 基金年底要结算业绩：今年没赚多少，重新押大方向，再跌一次把利润赔掉，怎么交代？ | 所以一部分主动基金 11、12 月可能仍然观望 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/r",
+      "post_count": 9,
+      "representative_text": "“为什么涨起来也不稳？ | 卖期权、提供波动率的参与者被打伤，还没回来，所以即使反弹，VIX 也未必马上大降 | 近期反弹成交量不大，在我的理解里，部分来自 Put 平仓、波动率下降和对冲调整的被动买盘，不等于主动资金重新看多 | Vol Control 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/registe",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2122188332813701485",
       "author": "168X_Fortune",
@@ -1093,11 +1093,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "197",
       "samples": [
-        {
-          "text": "“年底反弹最大的阻力，可能是想保住业绩的基金经理 | 刚经历剧烈下跌，看到其他基金被追缴保证金、被迫平仓，第一反应是恐惧，不是兴奋 | 基金年底要结算业绩：今年没赚多少，重新押大方向，再跌一次把利润赔掉，怎么交代？ | 所以一部分主动基金 11、12 月可能仍然观望 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
-          "url": "https://x.com/168X_Fortune/status/2120681353893368293",
-          "post_time": "2026-11-12T00:53:29+00:00"
-        },
         {
           "text": "“为什么涨起来也不稳？ | 卖期权、提供波动率的参与者被打伤，还没回来，所以即使反弹，VIX 也未必马上大降 | 近期反弹成交量不大，在我的理解里，部分来自 Put 平仓、波动率下降和对冲调整的被动买盘，不等于主动资金重新看多 | Vol Control 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜No",
           "url": "https://x.com/168X_Fortune/status/2120749277484048653",
@@ -1132,6 +1127,11 @@
           "text": "“地面数据中心受限之后，太空算力会不会成为另一条路？ | 这听起来很远，也不是已经证明的唯一答案 | 但不只美国，其他地区对数据中心建设也有阻力，让我开始重新思考 | 吸引我的还有通信基础设施和其他业务，想象空间很大 | 估值贵我理解，这更多是个人偏好和产业想象，不是严密的估值模型 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USD",
           "url": "https://x.com/168X_Fortune/status/2121738200674885691",
           "post_time": "2026-11-14T22:53:01+00:00"
+        },
+        {
+          "text": "“Tesla 的两条线：Robotaxi 的城市复制，与机器人的端到端能力 | Robotaxi：奥斯汀的发展比市场想象得快，按我前段时间查看的口径，单一城市约 5000 万美元 ARR 量级 | 一个城市跑通，再拿下其他城市许可，就有机会复制 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS",
+          "url": "https://x.com/168X_Fortune/status/2122132043505238220",
+          "post_time": "2026-11-16T00:58:01+00:00"
         }
       ]
     },
