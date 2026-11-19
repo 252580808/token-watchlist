@@ -1,5 +1,34 @@
 [
   {
+    "ca": "3oRzk5JpCmo3eHznWHK2x2WZwQ1pEhfHW6CrVz9BwBRd",
+    "chain": "sol",
+    "name": "GTA VI",
+    "symbol": "GTA6",
+    "first_seen": "2026-11-19 16:38",
+    "created_at": "2026-11-20 00:38",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-19 16:38",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄3170次 / 图片被抄70次 / dev持币中",
+    "liquidity_usd": 13580.15,
+    "market_cap": 103238.63,
+    "holders": 1152,
+    "dev_count": 1,
+    "dev_creator": "8VnhwwU85mHZE3CYj2wfbGNvpd5jVx5jWUn6ceP6Bwzb",
+    "gmgn_launchpad": "meteora_virtual_curve",
+    "description": "发射台 meteora_virtual_curve",
+    "intro": "硬标签: 社媒被抄3170次 / 图片被抄70次 / dev持币中",
+    "twitter": "https://x.com/RockstarGames",
+    "website": "https://www.stonkfun.xyz/token/4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+    "telegram": "",
+    "twitter_dup": 3170,
+    "image_dup": 70,
+    "creator_token_status": "creator_hold",
+    "liq_now": 13580.1491751804,
+    "liq_ts": 1795107672,
+    "liq_src": "GMGN"
+  },
+  {
     "ca": "BmGMo3SDXw1y2L4fFMY8bsxonWNZ5MitUzuAkV3jmor",
     "chain": "sol",
     "name": "Morals",
@@ -25,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 27487.49231289006,
-    "liq_ts": 1795107367,
+    "liq_ts": 1795107672,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 37787.97808568565,
-    "liq_ts": 1795107367,
+    "liq_ts": 1795107672,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13989.357284517258,
-    "liq_ts": 1795107367,
+    "liq_ts": 1795107672,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 16546.952027562005,
-    "liq_ts": 1795107367,
+    "liq_ts": 1795107672,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 62766.60857317367,
-    "liq_ts": 1795107367,
+    "liq_ts": 1795107672,
     "liq_src": "GMGN"
   }
 ]
