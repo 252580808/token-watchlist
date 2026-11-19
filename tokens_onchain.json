@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 24718.568422985532,
-    "liq_ts": 1795131697,
+    "liq_ts": 1795131965,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 24977.50406959632,
-    "liq_ts": 1795131697,
+    "liq_ts": 1795131965,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 10155.65405429874,
-    "liq_ts": 1795131697,
+    "liq_ts": 1795131965,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 28027.20381920404,
-    "liq_ts": 1795131697,
+    "liq_ts": 1795131965,
     "liq_src": "GMGN"
   },
   {
@@ -126,8 +126,8 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-19 00:51",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 10696.0,
-    "market_cap": 16946.0,
+    "liquidity_usd": 11673.3,
+    "market_cap": 20243.0,
     "holders": 120,
     "dev_count": 2,
     "dev_creator": "",
@@ -141,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_src": "DEX",
-    "liq_now": 10696.0,
-    "liq_ts": 1795131697
+    "liq_now": 11673.3,
+    "liq_ts": 1795131965
   }
 ]
