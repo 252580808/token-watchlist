@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 25797.56386085816,
-    "liq_ts": 1795123590,
+    "liq_ts": 1795123865,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13639.90807922542,
-    "liq_ts": 1795123590,
+    "liq_ts": 1795123865,
     "liq_src": "GMGN"
   },
   {
@@ -83,36 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 31838.781845086625,
-    "liq_ts": 1795123590,
-    "liq_src": "GMGN"
-  },
-  {
-    "ca": "7wkPPoNPfrp3qVZCAme7wEXd6XhwP3G6xxrWeu8GTA6",
-    "chain": "sol",
-    "name": "PolyGTA",
-    "symbol": "PolyGTA",
-    "first_seen": "2026-11-18 21:28",
-    "created_at": "2026-11-19 05:28",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-18 21:28",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 11718.68,
-    "market_cap": 9887.92,
-    "holders": 171,
-    "dev_count": 1,
-    "dev_creator": "",
-    "gmgn_launchpad": "Pump.fun",
-    "description": "The first prediction market on live GTA VI streams. Watch, bet YES or NO, and AI settles it from the screen.",
-    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知  The first prediction market on live GTA VI streams. Watch, bet YES or NO, and AI settles it from the screen.",
-    "twitter": "",
-    "website": "https://polygta.com/",
-    "telegram": "",
-    "twitter_dup": 0,
-    "image_dup": 0,
-    "creator_token_status": "",
-    "liq_now": 11718.679738035727,
-    "liq_ts": 1795123590,
+    "liq_ts": 1795123865,
     "liq_src": "GMGN"
   }
 ]
