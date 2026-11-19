@@ -1,5 +1,34 @@
 [
   {
+    "ca": "0x2edd2762ec5a928f749380309eca0e33941b3e3e",
+    "chain": "robinhood",
+    "name": "Cofer",
+    "symbol": "COFR",
+    "first_seen": "2026-11-19 00:51",
+    "created_at": "2026-11-19 08:51",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-19 00:51",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "liquidity_usd": 10076.7,
+    "market_cap": 15608.0,
+    "holders": 120,
+    "dev_count": 2,
+    "dev_creator": "",
+    "gmgn_launchpad": "pons_v2",
+    "description": "发射台 pons_v2",
+    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "twitter": "",
+    "website": "https://getcofer.com",
+    "telegram": "https://t.me/usecoferonRH",
+    "twitter_dup": 0,
+    "image_dup": 0,
+    "creator_token_status": "",
+    "liq_src": "DEX",
+    "liq_now": 10076.7,
+    "liq_ts": 1795052481
+  },
+  {
     "ca": "7wkPPoNPfrp3qVZCAme7wEXd6XhwP3G6xxrWeu8GTA6",
     "chain": "sol",
     "name": "PolyGTA",
@@ -10,9 +39,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 21:28",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 16144.15,
+    "liquidity_usd": 14580.68,
     "market_cap": 9887.92,
-    "holders": 290,
+    "holders": 272,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "Pump.fun",
@@ -24,8 +53,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 16144.14547998763,
-    "liq_ts": 1795052171,
+    "liq_now": 14580.675633702625,
+    "liq_ts": 1795052481,
     "liq_src": "GMGN"
   },
   {
@@ -39,9 +68,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 19:47",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 16581.68,
+    "liquidity_usd": 15425.29,
     "market_cap": 52263.0,
-    "holders": 299,
+    "holders": 300,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "Pump.fun",
@@ -53,8 +82,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 16581.682202472934,
-    "liq_ts": 1795052171,
+    "liq_now": 15425.290222948779,
+    "liq_ts": 1795052481,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 35966.07896591818,
-    "liq_ts": 1795052171,
+    "liq_ts": 1795052481,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 34279.27971429457,
-    "liq_ts": 1795052171,
+    "liq_ts": 1795052481,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 30776.03696308932,
-    "liq_ts": 1795052171,
+    "liq_ts": 1795052481,
     "liq_src": "GMGN"
   }
 ]
