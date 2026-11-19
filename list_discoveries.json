@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-19T19:27:28.010915Z",
+  "generated_at": "2026-11-19T19:36:21.717469Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1432,
+    "posts_total": 1431,
     "blocked": 162,
     "no_entry": 1127,
-    "events": 55,
+    "events": 54,
     "merged_posts": 88,
     "terms_failed": 0,
     "today_events": 3,
@@ -2187,41 +2187,6 @@
           "text": "@ZetaChain Burn schedule and token design, from the source: zetachain.com/whitepaper.pdf x.com/OnchainDataNerd/status/2121089304617423001/photo/1",
           "url": "https://x.com/OnchainDataNerd/status/2121089304617423001",
           "post_time": "2026-11-13T03:54:32+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:stonkrobbers.io",
-      "identity": "domain:stonkrobbers.io",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-12T19:30:25Z",
-      "last_seen_at": "2026-11-12T19:30:25Z",
-      "window_bucket": 83079,
-      "post_count": 1,
-      "representative_text": "这个游戏得模式其实很不错 @stonkrobbers | | 官网：stonkrobbers.io | | 就是现在官方得NFT价格没下来，官网得花300U买NFT才有300U买代币得额度 | | 目前这个价格进场基本上是大家得成本价 | | 因为300U NFT + 300U 代币 单币成本去到两倍 | | 外盘得话有一点溢价，但是没有那么高 | | NFT 最低会到 30 x.com/RK_Bitcoin/status/2120962438522945955/photo/1 发现了个有意思的项目，创始人是@madame1829。模式是挺不错的，现在是纯早期，但是现在相当于一个防狙击。官网是",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/RK_Bitcoin/status/2120962438522945955",
-      "author": "RK_Bitcoin",
-      "author_name": "RK_Rocky",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 25487,
-      "blue_verified": true,
-      "listed_count": 456,
-      "reg_at": "Fri Aug 04 02:18:42 +0000 2023",
-      "views": "103",
-      "samples": [
-        {
-          "text": "这个游戏得模式其实很不错 @stonkrobbers | | 官网：stonkrobbers.io | | 就是现在官方得NFT价格没下来，官网得花300U买NFT才有300U买代币得额度 | | 目前这个价格进场基本上是大家得成本价 | | 因为300U NFT + 300U 代币 单币成本去到两倍 | | 外盘得话有一点溢价，但是没有那么高 | | NFT 最低会到 30 x.com/RK_B",
-          "url": "https://x.com/RK_Bitcoin/status/2120962438522945955",
-          "post_time": "2026-11-12T19:30:25+00:00"
         }
       ]
     }
