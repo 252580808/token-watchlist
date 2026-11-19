@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T21:33:28.072660Z",
+  "generated_at": "2026-11-19T21:42:25.168641Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1416,
+    "posts_total": 1413,
     "blocked": 160,
     "no_entry": 1122,
     "events": 54,
-    "merged_posts": 80,
+    "merged_posts": 77,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-12T21:39:34Z",
+      "first_seen_at": "2026-11-12T22:05:29Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83079,
-      "post_count": 25,
-      "representative_text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | x.com/onepumpcc | 很卡才几十K",
+      "post_count": 22,
+      "representative_text": "基于@CantonNetwork的发射台@onepumpcc开了 | 钱包网站：oneswap.cc | 钱包用邮箱注册，主代币是：CC，注册好钱包可以okx交易所提或者从自己钱包跨链进来 | 目前第一个代币是：www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | Canton 是一条面向机构的隐私公链（Layer 1），由 Digital Asset the first token to graduate on @onepumpcc wins 5,000 $CC (~$440) | | one winner",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,21 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | x.com/onepumpcc | 很卡才几十K",
-          "url": "https://x.com/niuniu88688/status/2120994940474060873",
-          "post_time": "2026-11-12T21:39:34+00:00"
-        },
-        {
-          "text": "早起会刷锅吗？ | | 台子开了@onepumpcc @Oneswapcc | | 第一个 | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 第二个 | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f | | 提币用o",
-          "url": "https://x.com/0xbai/status/2120995019553485304",
-          "post_time": "2026-11-12T21:39:53+00:00"
-        },
-        {
-          "text": "CC网络上项目 @onepumpcc，cc官方多次奶了，目前超级无敌卡，网站是不可能买入的试试看ai买入吧 | | 第一个呆逼 $ONEBOT oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行，提的时候memo填1 x.com/zhijiu6699/status/2120995",
-          "url": "https://x.com/zhijiu6699/status/2120995125136675237",
-          "post_time": "2026-11-12T21:40:18+00:00"
-        },
         {
           "text": "基于@CantonNetwork的发射台@onepumpcc开了 | 钱包网站：oneswap.cc | 钱包用邮箱注册，主代币是：CC，注册好钱包可以okx交易所提或者从自己钱包跨链进来 | 目前第一个代币是：www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | Canton 是一条面向机构的隐私公链（Laye",
           "url": "https://x.com/muyiwuu/status/2121001462490882517",
@@ -302,6 +287,21 @@
           "text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 th",
           "url": "https://x.com/SkyAAmen/status/2121060169564258786",
           "post_time": "2026-11-13T01:58:46+00:00"
+        },
+        {
+          "text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 这个jose，从早上发射台上线就一直看，一开始买了onebot，但是网站实在太卡了，p来p去，最后看到jose一直有人在买，跟上之后发现有推特账户，看图质量是很高的，本身digging也非常魔性，非常原生的meme",
+          "url": "https://x.com/SkyAAmen/status/2121062576520073282",
+          "post_time": "2026-11-13T02:08:20+00:00"
+        },
+        {
+          "text": "很多人收不到验证码了，网站卡才是金狗啊，不然分分钟被塞满。多盯一下吧，盯了一早上我也是盯麻了。多刷新重试吧，考虑到一个邮箱一个账户，其实相对还是很公平的，有一定的门槛，相当于限制了一下多号 | | canton链本身是银行链，还是很有钱的，加上onepump背景也不错，上一个canton的发射台 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室",
+          "url": "https://x.com/SkyAAmen/status/2121072254754918593",
+          "post_time": "2026-11-13T02:46:47+00:00"
+        },
+        {
+          "text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 半夜开的新台子 | 晚上卡爆了 | 现在好像正常了 | 这个是跑出来的龙头（应该）",
+          "url": "https://x.com/pxiaojiang520/status/2121079642111254663",
+          "post_time": "2026-11-13T03:16:09+00:00"
         }
       ]
     },
