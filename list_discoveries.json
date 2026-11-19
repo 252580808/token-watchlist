@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-19T13:09:37.350405Z",
+  "generated_at": "2026-11-19T13:18:28.916422Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1444,
+    "posts_total": 1441,
     "blocked": 203,
-    "no_entry": 1095,
-    "events": 56,
+    "no_entry": 1094,
+    "events": 54,
     "merged_posts": 90,
     "terms_failed": 0,
     "today_events": 2,
@@ -2197,76 +2197,6 @@
           "text": "仓鼠这项目，今早还说改免费 mint，晚上号没了。 | | 官推 @squeekchain 已经不存在 | 创始人 @pillheadddd 也注销了 | 官网 squeekchain.com 打不开，报 Origin DNS error | 今早改免费、推迟发布的那条官帖，一起没了 | 社区说 Discord 也关了 | | 原计划 3333 张、0.05 ETH。 x.com/timliu92",
           "url": "https://x.com/timliu92/status/2120880359491387402",
           "post_time": "2026-11-12T14:04:16+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:reurl.cc",
-      "identity": "domain:reurl.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T13:16:45Z",
-      "last_seen_at": "2026-11-12T13:16:45Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "兄弟们，可以值得关注的三个项目(非投资建议) | | @giraffies_nft 说的是 giraffies valley 游戏和 $GIRAFF 代币上线 / TBA | | 明天 13 日 NFT 免费 mint，6666 个在 Robinhood Chain 走 OpenSea GTD 快照是今天 23:00 ( 上一个 NFT 最高点 11 倍 ) | | @onepumpcc Canton x.com/Ouh_web1/status/2120868400499142921/photo/1 兄弟们,富贵突然心血来潮写了个隐私 VPN 的帖子,如果感兴趣可以去看看,不感兴趣直接划走哈😂",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/Ouh_web1/status/2120868400499142921",
-      "author": "Ouh_web1",
-      "author_name": "泼天的富贵",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 9225,
-      "blue_verified": true,
-      "listed_count": 69,
-      "reg_at": "Wed Sep 11 19:17:14 +0000 2024",
-      "views": "285",
-      "samples": [
-        {
-          "text": "兄弟们，可以值得关注的三个项目(非投资建议) | | @giraffies_nft 说的是 giraffies valley 游戏和 $GIRAFF 代币上线 / TBA | | 明天 13 日 NFT 免费 mint，6666 个在 Robinhood Chain 走 OpenSea GTD 快照是今天 23:00 ( 上一个 NFT 最高点 11 倍 ) | | @onepumpcc Cant",
-          "url": "https://x.com/Ouh_web1/status/2120868400499142921",
-          "post_time": "2026-11-12T13:16:45+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2120846768779001856",
-      "identity": "article:2120846768779001856",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-12T13:15:49Z",
-      "last_seen_at": "2026-11-12T13:15:49Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "Durov喊话GRAM应跻身市值前三，Telegram的流量能撑起这个目标吗？ | | Gram钱包已超353万个，但日活地址占比仅约1.5%，TON链上锁仓资金也仅约4574万美元，钱包增长与真实采用仍有落差。 | | GRAM逆势走强背后，创始人的看好能否转化为持续的用户需求，才是这轮行情值得追问的问题。 x.com/i/article/2120846768779001856",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/PANewsCN/status/2120868167467905412",
-      "author": "PANewsCN",
-      "author_name": "PANews丨APP全面升级",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 99820,
-      "blue_verified": true,
-      "listed_count": 1345,
-      "reg_at": "Sun Jul 18 08:46:20 +0000 2021",
-      "views": "541",
-      "samples": [
-        {
-          "text": "Durov喊话GRAM应跻身市值前三，Telegram的流量能撑起这个目标吗？ | | Gram钱包已超353万个，但日活地址占比仅约1.5%，TON链上锁仓资金也仅约4574万美元，钱包增长与真实采用仍有落差。 | | GRAM逆势走强背后，创始人的看好能否转化为持续的用户需求，才是这轮行情值得追问的问题。 x.com/i/article/2120846768779001856",
-          "url": "https://x.com/PANewsCN/status/2120868167467905412",
-          "post_time": "2026-11-12T13:15:49+00:00"
         }
       ]
     }
