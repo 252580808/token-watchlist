@@ -1,34 +1,5 @@
 [
   {
-    "ca": "Cut7jtRww6hCjxMYEgAjH9ThRbPfUFq2uCpqdEuRdGLo",
-    "chain": "sol",
-    "name": "GTA VI",
-    "symbol": "GTA6",
-    "first_seen": "2026-11-19 18:01",
-    "created_at": "2026-11-20 02:01",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-19 18:01",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄3183次 / 图片被抄77次 / dev持币中",
-    "liquidity_usd": 12223.26,
-    "market_cap": 103658.02,
-    "holders": 1171,
-    "dev_count": 1,
-    "dev_creator": "8RFcEJdgqxEFvpVXBeXeq7rgfyMsEFTgbwuWXJGqcKPY",
-    "gmgn_launchpad": "meteora_virtual_curve",
-    "description": "发射台 meteora_virtual_curve",
-    "intro": "硬标签: 社媒被抄3183次 / 图片被抄77次 / dev持币中",
-    "twitter": "https://x.com/RockstarGames",
-    "website": "https://www.stonkfun.xyz/token/4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
-    "telegram": "",
-    "twitter_dup": 3183,
-    "image_dup": 77,
-    "creator_token_status": "creator_hold",
-    "liq_now": 12223.2631034976,
-    "liq_ts": 1795112467,
-    "liq_src": "GMGN"
-  },
-  {
     "ca": "H7yRpCUpQJ12YVDLnahKAwGLbqutzEctD1bdETFsBUCK",
     "chain": "sol",
     "name": "DacityCoin",
@@ -39,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-19 17:30",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 12416.92,
+    "liquidity_usd": 12775.78,
     "market_cap": 20337.01,
-    "holders": 361,
+    "holders": 345,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "Pump.fun",
@@ -53,8 +24,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 12416.916783447816,
-    "liq_ts": 1795112467,
+    "liq_now": 12775.780637699665,
+    "liq_ts": 1795112780,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 15296.7667555458,
-    "liq_ts": 1795112467,
+    "liq_ts": 1795112780,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 35729.24652544823,
-    "liq_ts": 1795112467,
+    "liq_ts": 1795112780,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13681.93883764599,
-    "liq_ts": 1795112467,
+    "liq_ts": 1795112780,
     "liq_src": "GMGN"
   },
   {
@@ -170,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13206.964578958088,
-    "liq_ts": 1795112467,
+    "liq_ts": 1795112780,
     "liq_src": "GMGN"
   }
 ]
