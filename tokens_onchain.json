@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 11715.149545935956,
-    "liq_ts": 1795110678,
+    "liq_ts": 1795110987,
     "liq_src": "GMGN"
   },
   {
@@ -39,9 +39,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-19 15:51",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 16117.02,
+    "liquidity_usd": 16892.93,
     "market_cap": 79068.0,
-    "holders": 379,
+    "holders": 374,
     "dev_count": 0,
     "dev_creator": "",
     "gmgn_launchpad": "ray_launchpad",
@@ -53,8 +53,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 16117.02133766088,
-    "liq_ts": 1795110678,
+    "liq_now": 16892.93257196188,
+    "liq_ts": 1795110987,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 35350.62880039406,
-    "liq_ts": 1795110678,
+    "liq_ts": 1795110987,
     "liq_src": "GMGN"
   },
   {
@@ -97,7 +97,7 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 21:28",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 14021.78,
+    "liquidity_usd": 13992.54,
     "market_cap": 9887.92,
     "holders": 188,
     "dev_count": 1,
@@ -111,8 +111,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 14021.778761680724,
-    "liq_ts": 1795110678,
+    "liq_now": 13992.535074496656,
+    "liq_ts": 1795110987,
     "liq_src": "GMGN"
   },
   {
@@ -128,7 +128,7 @@
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
     "liquidity_usd": 13741.26,
     "market_cap": 52263.0,
-    "holders": 260,
+    "holders": 259,
     "dev_count": 1,
     "dev_creator": "",
     "gmgn_launchpad": "Pump.fun",
@@ -141,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13741.262078528329,
-    "liq_ts": 1795110678,
+    "liq_ts": 1795110987,
     "liq_src": "GMGN"
   },
   {
@@ -155,9 +155,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 18:12",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 65644.95,
+    "liquidity_usd": 62099.38,
     "market_cap": 228756.0,
-    "holders": 773,
+    "holders": 792,
     "dev_count": 0,
     "dev_creator": "0x5f187f4fb315bdba54db9d3921f3c55c2739a957",
     "gmgn_launchpad": "pool_uniswap_v2",
@@ -169,8 +169,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 65644.94930163294,
-    "liq_ts": 1795110678,
+    "liq_now": 62099.38296275306,
+    "liq_ts": 1795110987,
     "liq_src": "GMGN"
   }
 ]
