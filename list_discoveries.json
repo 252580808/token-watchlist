@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T08:08:57.441215Z",
+  "generated_at": "2026-11-19T08:17:52.926584Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1510,
+    "posts_total": 1507,
     "blocked": 208,
-    "no_entry": 1147,
+    "no_entry": 1145,
     "events": 61,
-    "merged_posts": 94,
+    "merged_posts": 93,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -63,12 +63,12 @@
     {
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T08:10:17Z",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-12T20:51:10Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
-      "window_bucket": 83077,
-      "post_count": 34,
-      "representative_text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 meme 已经确定下来了，目前日期还没定等最终审批 x.com/Ouh_web1/status/2120537228682379641/photo/1",
+      "window_bucket": 83079,
+      "post_count": 33,
+      "representative_text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/2120982758537449683/photo/1",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -88,11 +88,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "卧槽了，富贵才睡醒 | | 再也不去嫩模了 | | 又累有花钱😅 x.com/Ouh_web1/status/2120791275381354627/video/1 兄弟们，OneSwap 在 Canton 网上做的 meme 发射台差不多要开始了新东西应该第一波可以吃肉 | | 没注册的可以提前注册: oneswap.cc/w/7PCUG2NZ | | 官号 @onepumpcc 说第一只 me",
-          "url": "https://x.com/Ouh_web1/status/2120791275381354627",
-          "post_time": "2026-11-12T08:10:17+00:00"
-        },
         {
           "text": "CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现在行情不好 乱动很容易亏钱 | | Dyor 注意风险 x.com/Reboottttttt/status/21209827585",
           "url": "https://x.com/Reboottttttt/status/2120982758537449683",
@@ -127,6 +122,11 @@
           "text": "CC网络上项目 @onepumpcc 根本买不进去 | | 这是第一个代币 $ONEBOT | | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行 x.com/RK_Bitcoin/status/2120991313361559955/photo/1",
           "url": "https://x.com/RK_Bitcoin/status/2120991313361559955",
           "post_time": "2026-11-12T21:25:09+00:00"
+        },
+        {
+          "text": "onepump台子开了 我看唯一一个有网站有社区的就是这个 | | www.oneswap.cc/launchpad/token/4434b8c6-9555-5f0b-8d20-678e2dbff1b5",
+          "url": "https://x.com/Mojito_cx/status/2120992736656650394",
+          "post_time": "2026-11-12T21:30:49+00:00"
         }
       ]
     },
