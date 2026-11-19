@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13541.954686063253,
-    "liq_ts": 1795058484,
+    "liq_ts": 1795058791,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13341.92971587061,
-    "liq_ts": 1795058484,
+    "liq_ts": 1795058791,
     "liq_src": "GMGN"
   },
   {
@@ -68,7 +68,7 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 18:12",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 32601.39,
+    "liquidity_usd": 31491.61,
     "market_cap": 228756.0,
     "holders": 327,
     "dev_count": 0,
@@ -82,8 +82,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 32601.38648554395,
-    "liq_ts": 1795058484,
+    "liq_now": 31491.613727989083,
+    "liq_ts": 1795058791,
     "liq_src": "GMGN"
   },
   {
@@ -97,7 +97,7 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 15:54",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 27723.11,
+    "liquidity_usd": 27738.63,
     "market_cap": 24185.0,
     "holders": 363,
     "dev_count": 1,
@@ -111,8 +111,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 27723.108919273956,
-    "liq_ts": 1795058484,
+    "liq_now": 27738.63081152166,
+    "liq_ts": 1795058791,
     "liq_src": "GMGN"
   },
   {
@@ -126,7 +126,7 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-18 07:52",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 29356.51,
+    "liquidity_usd": 30882.0,
     "market_cap": 149634.0,
     "holders": 584,
     "dev_count": 1,
@@ -140,8 +140,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 29356.51077772044,
-    "liq_ts": 1795058484,
+    "liq_now": 30881.9954100554,
+    "liq_ts": 1795058791,
     "liq_src": "GMGN"
   }
 ]
