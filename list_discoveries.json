@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-19T12:06:45.862489Z",
+  "generated_at": "2026-11-19T12:15:37.884065Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1465,
+    "posts_total": 1463,
     "blocked": 204,
-    "no_entry": 1112,
-    "events": 58,
+    "no_entry": 1111,
+    "events": 57,
     "merged_posts": 91,
     "terms_failed": 0,
     "today_events": 2,
-    "today_pushed": 1
+    "today_pushed": 2
   },
   "events": [
     {
@@ -2302,41 +2302,6 @@
           "text": "去年封的账号是我第一个iOS的开发者账号，APP下架倒也只能接受，但是账号没了，真的挺心痛的。所以如果大家是做APP，给大家几个小建议： | | 1、一定要做好账号环境的隔离，包含手机号、网络、设备、开发者账号等等 x.com/i/article/2120832713854750720",
           "url": "https://x.com/AI_Jasonyu/status/2120862258204991522",
           "post_time": "2026-11-12T12:52:20+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:papagent.app",
-      "identity": "domain:papagent.app",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-12T12:14:26Z",
-      "last_seen_at": "2026-11-12T12:14:26Z",
-      "window_bucket": 83078,
-      "post_count": 1,
-      "representative_text": "上一个5X这个能跑多远？ The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID has 10 minting rights | Migrates to PancakeSwap trading after 20,000 mints | Minting opens at 12:00 PM UTC on November 12, 2026 | If you have any questions, x.com/burn",
-      "keywords": "[\"高:Agent mint\"]",
-      "tweet_url": "https://x.com/DongZe_Q/status/2120852719233851746",
-      "author": "DongZe_Q",
-      "author_name": "東沢🇨🇳.",
-      "channel_name": "https://x.com/i/lists/1990005205656572103/tweets",
-      "list_id": "1990005205656572103",
-      "list_short": "2103",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 1232,
-      "blue_verified": true,
-      "listed_count": 25,
-      "reg_at": "Sun Apr 24 12:37:08 +0000 2022",
-      "views": "9",
-      "samples": [
-        {
-          "text": "上一个5X这个能跑多远？ The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID has 10 minting rights | Migrates to PancakeSwap trading after 20,00",
-          "url": "https://x.com/DongZe_Q/status/2120852719233851746",
-          "post_time": "2026-11-12T12:14:26+00:00"
         }
       ]
     }
