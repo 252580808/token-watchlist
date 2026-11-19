@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-19T11:39:35.909586Z",
+  "generated_at": "2026-11-19T11:48:41.051043Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1470,
+    "posts_total": 1466,
     "blocked": 205,
-    "no_entry": 1116,
-    "events": 58,
+    "no_entry": 1113,
+    "events": 57,
     "merged_posts": 91,
     "terms_failed": 0,
     "today_events": 1,
@@ -2302,41 +2302,6 @@
           "text": "上一个5X这个能跑多远？ The new project PAPER minting is coming soon! | Minting link: papagent.app | Each mint costs 0.0015 BNB | Each Agent ID has 10 minting rights | Migrates to PancakeSwap trading after 20,00",
           "url": "https://x.com/DongZe_Q/status/2120852719233851746",
           "post_time": "2026-11-12T12:14:26+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2120831401239130112",
-      "identity": "article:2120831401239130112",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-12T11:43:07Z",
-      "last_seen_at": "2026-11-12T11:43:07Z",
-      "window_bucket": 83077,
-      "post_count": 1,
-      "representative_text": "GitHub 上 14 个最火的开源 AI Agent 工具，全免费，我按最新星数排了一遍。 | 写代码、办公、管知识库、上网抓信息，14 个一次收齐。全文在文章里，你第一个想试哪个？ | 👇 x.com/i/article/2120831401239130112",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/Ylj158852/status/2120844838530949274",
-      "author": "Ylj158852",
-      "author_name": "极简",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 19096,
-      "blue_verified": true,
-      "listed_count": 23,
-      "reg_at": "Mon Sep 25 07:47:40 +0000 2023",
-      "views": "26",
-      "samples": [
-        {
-          "text": "GitHub 上 14 个最火的开源 AI Agent 工具，全免费，我按最新星数排了一遍。 | 写代码、办公、管知识库、上网抓信息，14 个一次收齐。全文在文章里，你第一个想试哪个？ | 👇 x.com/i/article/2120831401239130112",
-          "url": "https://x.com/Ylj158852/status/2120844838530949274",
-          "post_time": "2026-11-12T11:43:07+00:00"
         }
       ]
     }
