@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T20:57:23.376292Z",
+  "generated_at": "2026-11-19T21:06:28.378511Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1424,
+    "posts_total": 1421,
     "blocked": 160,
     "no_entry": 1124,
     "events": 54,
-    "merged_posts": 86,
+    "merged_posts": 83,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-12T20:59:42Z",
+      "first_seen_at": "2026-11-12T21:18:07Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83079,
-      "post_count": 31,
-      "representative_text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 第一个",
+      "post_count": 28,
+      "representative_text": "这个台子开了 @onepumpcc @Oneswapcc | | 前三个 | | onebot | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | onecat | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f | | NPCC | www.oneswap.cc/launchpad/token/26d3f487-f543-59ff-ad7b-eaafb9d8d2c4 | | 可以okx提cc到他钱包二维码，也可",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,21 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 第一个",
-          "url": "https://x.com/Reboottttttt/status/2120984905001922972",
-          "post_time": "2026-11-12T20:59:42+00:00"
-        },
-        {
-          "text": "www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 这是第一个 www.oneswap.cc | 这个cc链的这个启动版快开了，盯着，可以在okx直接提cc到链上 @onepumpcc",
-          "url": "https://x.com/jiumeng88888/status/2120986601346265274",
-          "post_time": "2026-11-12T21:06:26+00:00"
-        },
-        {
-          "text": "第一个 现在20k 市值 x.com/juesaiquan/status/2120986612062617865/photo/1 CC这个台子要开了 | | 看看玩不玩吧 | | 毕竟预热很久了 @onepumpcc | | www.oneswap.cc/launchpad/trenches?pool=rt-l4xayw | | 目前还没有代币 | | 现在网站很卡 玩不玩看自己哈 | | 毕竟现",
-          "url": "https://x.com/juesaiquan/status/2120986612062617865",
-          "post_time": "2026-11-12T21:06:28+00:00"
-        },
         {
           "text": "这个台子开了 @onepumpcc @Oneswapcc | | 前三个 | | onebot | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | onecat | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f |",
           "url": "https://x.com/AKAKAY04/status/2120989541930795259",
@@ -302,6 +287,21 @@
           "text": "早起会刷锅吗？ | | 台子开了@onepumpcc @Oneswapcc | | 第一个 | www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | 第二个 | www.oneswap.cc/launchpad/token/9c869828-7802-529f-842d-1740783a542f | | 提币用o",
           "url": "https://x.com/0xbai/status/2120995019553485304",
           "post_time": "2026-11-12T21:39:53+00:00"
+        },
+        {
+          "text": "CC网络上项目 @onepumpcc，cc官方多次奶了，目前超级无敌卡，网站是不可能买入的试试看ai买入吧 | | 第一个呆逼 $ONEBOT oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | | 直接okx提CC去网页内置钱包就行，提的时候memo填1 x.com/zhijiu6699/status/2120995",
+          "url": "https://x.com/zhijiu6699/status/2120995125136675237",
+          "post_time": "2026-11-12T21:40:18+00:00"
+        },
+        {
+          "text": "基于@CantonNetwork的发射台@onepumpcc开了 | 钱包网站：oneswap.cc | 钱包用邮箱注册，主代币是：CC，注册好钱包可以okx交易所提或者从自己钱包跨链进来 | 目前第一个代币是：www.oneswap.cc/launchpad/token/5dcb0613-16e5-5ce6-81b8-e4835636dbf0 | Canton 是一条面向机构的隐私公链（Laye",
+          "url": "https://x.com/muyiwuu/status/2121001462490882517",
+          "post_time": "2026-11-12T22:05:29+00:00"
+        },
+        {
+          "text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
+          "url": "https://x.com/c423855046/status/2121044444149694913",
+          "post_time": "2026-11-13T00:56:17+00:00"
         }
       ]
     },
