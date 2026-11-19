@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-19T13:18:28.916422Z",
+  "generated_at": "2026-11-19T13:27:28.482830Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1441,
+    "posts_total": 1442,
     "blocked": 203,
     "no_entry": 1094,
-    "events": 54,
+    "events": 55,
     "merged_posts": 90,
     "terms_failed": 0,
-    "today_events": 2,
+    "today_events": 3,
     "today_pushed": 2
   },
   "events": [
+    {
+      "event_id": "domain:renaiss.xyz",
+      "identity": "domain:renaiss.xyz",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-19T13:18:09Z",
+      "last_seen_at": "2026-11-19T13:18:09Z",
+      "window_bucket": 83106,
+      "post_count": 1,
+      "representative_text": "这个 GTA6 的视频我看到的居然是背后的 | TCG 卡牌——喷火龙及手办 | 以及火影忍者，也是明年就要正式上线它的 TCG | | @renaissxyz 已经在 @binance 上做了很多事情 | 最近也有很多大招在上线，敬请期待 | | www.renaiss.xyz/ref/fisher | | 可以通过我的链接加入平台去买你喜欢的卡 世界上第一个GTA6偷飞机视频诞生 | | 狂刷全网上亿浏览量😱 x.com/linmumu223/status/2123260544669126790/video/1",
+      "keywords": "[\"高:第一个\"]",
+      "tweet_url": "https://x.com/AWeb3Going/status/2123405470534914294",
+      "author": "AWeb3Going",
+      "author_name": "Fisher 🌊RIVER | Renaiss",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 7002,
+      "blue_verified": true,
+      "listed_count": 95,
+      "reg_at": "Mon Sep 27 14:08:19 +0000 2021",
+      "views": "13",
+      "samples": [
+        {
+          "text": "这个 GTA6 的视频我看到的居然是背后的 | TCG 卡牌——喷火龙及手办 | 以及火影忍者，也是明年就要正式上线它的 TCG | | @renaissxyz 已经在 @binance 上做了很多事情 | 最近也有很多大招在上线，敬请期待 | | www.renaiss.xyz/ref/fisher | | 可以通过我的链接加入平台去买你喜欢的卡 世界上第一个GTA6偷飞机视频诞生 | | 狂刷",
+          "url": "https://x.com/AWeb3Going/status/2123405470534914294",
+          "post_time": "2026-11-19T13:18:09+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2123362461801975808",
       "identity": "article:2123362461801975808",
