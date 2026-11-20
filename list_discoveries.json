@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-20T07:21:20.079525Z",
+  "generated_at": "2026-11-20T07:30:27.234052Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1359,
-    "blocked": 123,
-    "no_entry": 1119,
-    "events": 53,
+    "posts_total": 1364,
+    "blocked": 122,
+    "no_entry": 1124,
+    "events": 54,
     "merged_posts": 64,
     "terms_failed": 0,
-    "today_events": 5,
+    "today_events": 6,
     "today_pushed": 5
   },
   "events": [
+    {
+      "event_id": "article:2115312728785174528",
+      "identity": "article:2115312728785174528",
+      "identity_type": "tweet_article",
+      "first_seen_at": "2026-11-20T07:25:32Z",
+      "last_seen_at": "2026-11-20T07:25:32Z",
+      "window_bucket": 83109,
+      "post_count": 1,
+      "representative_text": "是真抄底还是在掏自家池子？ | | Sky 创始人 Rune 在自家 stUSDS 借贷池里占了近一半债务，约 7700 万美元，多个仓位已超过 6 个月未还款，部分都低于清算线。 | | 协议随后将自动清算改为手动清算，并下调清算阈值，给这些仓位留出缓冲。 | | 鱼池联创王纯评论称，Rune 是在抄底，把 SKY 比作 MSTR，stUSDS x.com/OdailyChina/status/2123679116280873127/photo/1 x.com/i/article/2115312728785174528",
+      "keywords": "[\"高:创始人\"]",
+      "tweet_url": "https://x.com/OdailyChina/status/2123679116280873127",
+      "author": "OdailyChina",
+      "author_name": "OdailyNews",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 70288,
+      "blue_verified": true,
+      "listed_count": 1107,
+      "reg_at": "Tue Aug 07 05:09:48 +0000 2018",
+      "views": "202",
+      "samples": [
+        {
+          "text": "是真抄底还是在掏自家池子？ | | Sky 创始人 Rune 在自家 stUSDS 借贷池里占了近一半债务，约 7700 万美元，多个仓位已超过 6 个月未还款，部分都低于清算线。 | | 协议随后将自动清算改为手动清算，并下调清算阈值，给这些仓位留出缓冲。 | | 鱼池联创王纯评论称，Rune 是在抄底，把 SKY 比作 MSTR，stUSDS x.com/OdailyChina/status/",
+          "url": "https://x.com/OdailyChina/status/2123679116280873127",
+          "post_time": "2026-11-20T07:25:32+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:termix.ai",
       "identity": "domain:termix.ai",
