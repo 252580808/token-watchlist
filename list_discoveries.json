@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T01:42:45.546404Z",
+  "generated_at": "2026-11-20T01:51:36.712679Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1400,
+    "posts_total": 1396,
     "blocked": 148,
-    "no_entry": 1126,
+    "no_entry": 1123,
     "events": 54,
-    "merged_posts": 72,
+    "merged_posts": 71,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -1249,11 +1249,11 @@
       "event_id": "article:2120065383369674752",
       "identity": "article:2120065383369674752",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-13T01:45:09Z",
+      "first_seen_at": "2026-11-13T09:45:36Z",
       "last_seen_at": "2026-11-16T04:41:41Z",
-      "window_bucket": 83080,
-      "post_count": 8,
-      "representative_text": "“CapEx 增速见顶，不等于总额下降 | 我说的是增速可能在 2027 年见顶，总额下降是更严重的另一件事 | 投资放慢，可能把很陡的曲线拉平、拉长：增长更平缓，却持续更久 | 如果市场发现盈利没有想象中受影响，部分半导体公司可能从周期股重新被当成成长股 | 资源受限也会逼下游提高效率：1 万张卡有 1 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立",
+      "window_bucket": 83081,
+      "post_count": 7,
+      "representative_text": "“选举之后，我反而觉得黄金的逻辑比 BTC 更强 | 第一，如果行政与立法之间出现更多制约，大规模财政扩张没那么容易推进，市场可能下调增长预期，增长预期降低会压低真实利率，对黄金有利 | 第二，财政政策的不确定性增加，黄金作为对政府和政策信用的对冲，会变得更有吸引力 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/r",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2122188332813701485",
       "author": "168X_Fortune",
@@ -1273,11 +1273,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "197",
       "samples": [
-        {
-          "text": "“CapEx 增速见顶，不等于总额下降 | 我说的是增速可能在 2027 年见顶，总额下降是更严重的另一件事 | 投资放慢，可能把很陡的曲线拉平、拉长：增长更平缓，却持续更久 | 如果市场发现盈利没有想象中受影响，部分半导体公司可能从周期股重新被当成成长股 | 资源受限也会逼下游提高效率：1 万张卡有 1 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 +",
-          "url": "https://x.com/168X_Fortune/status/2121056744436838595",
-          "post_time": "2026-11-13T01:45:09+00:00"
-        },
         {
           "text": "“选举之后，我反而觉得黄金的逻辑比 BTC 更强 | 第一，如果行政与立法之间出现更多制约，大规模财政扩张没那么容易推进，市场可能下调增长预期，增长预期降低会压低真实利率，对黄金有利 | 第二，财政政策的不确定性增加，黄金作为对政府和政策信用的对冲，会变得更有吸引力 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
           "url": "https://x.com/168X_Fortune/status/2121177653768241348",
