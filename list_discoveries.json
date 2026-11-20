@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-20T09:09:25.363799Z",
+  "generated_at": "2026-11-20T09:18:20.888150Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1346,
+    "posts_total": 1345,
     "blocked": 117,
     "no_entry": 1116,
-    "events": 55,
+    "events": 54,
     "merged_posts": 58,
     "terms_failed": 0,
     "today_events": 7,
@@ -2147,41 +2147,6 @@
           "text": "Canton联合创始人兼CEO的文章！ | 值得细品，可能早晚你会主动关注。 | | 代币化已是金融必需品， | 它需要一个更好的市场： | -更快的结算 | -更广的准入 | -更低的成本 | 恰好 @CantonNetwork 正中下怀！ x.com/i/article/2120615210121936896",
           "url": "https://x.com/Kangzi_VC/status/2121196767349997750",
           "post_time": "2026-11-13T11:01:33+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:papersnake.fun",
-      "identity": "domain:papersnake.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T09:11:48Z",
-      "last_seen_at": "2026-11-13T09:11:48Z",
-      "window_bucket": 83081,
-      "post_count": 1,
-      "representative_text": "免费去领一条蛇吧 | 好像要投钱才能玩 | 先领着吧 | 这蛇看着挺喜庆 | 链接：papersnake.fun/#mint x.com/web3cxk/status/2121169147845661127/photo/1",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/web3cxk/status/2121169147845661127",
-      "author": "web3cxk",
-      "author_name": "币跑跑",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 10458,
-      "blue_verified": true,
-      "listed_count": 10,
-      "reg_at": "Sun Mar 30 14:56:12 +0000 2025",
-      "views": "47",
-      "samples": [
-        {
-          "text": "免费去领一条蛇吧 | 好像要投钱才能玩 | 先领着吧 | 这蛇看着挺喜庆 | 链接：papersnake.fun/#mint x.com/web3cxk/status/2121169147845661127/photo/1",
-          "url": "https://x.com/web3cxk/status/2121169147845661127",
-          "post_time": "2026-11-13T09:11:48+00:00"
         }
       ]
     }
