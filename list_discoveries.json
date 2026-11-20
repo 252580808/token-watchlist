@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-20T07:30:27.234052Z",
+  "generated_at": "2026-11-20T07:48:20.983793Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1364,
-    "blocked": 122,
-    "no_entry": 1124,
+    "posts_total": 1359,
+    "blocked": 120,
+    "no_entry": 1122,
     "events": 54,
-    "merged_posts": 64,
+    "merged_posts": 63,
     "terms_failed": 0,
     "today_events": 6,
-    "today_pushed": 5
+    "today_pushed": 6
   },
   "events": [
     {
@@ -2059,11 +2059,11 @@
       "event_id": "domain:rarelist.io",
       "identity": "domain:rarelist.io",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T07:47:05Z",
+      "first_seen_at": "2026-11-14T03:09:35Z",
       "last_seen_at": "2026-11-14T03:09:35Z",
-      "window_bucket": 83081,
-      "post_count": 2,
-      "representative_text": "每天上线做做任务，点点赚也是不错的嘴撸任务 | | 目前排名1万+，还是得继续多写帖子 @rarelistio | | 继续提升我的等级 A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreetsfun is the first launchpad built to turn real-life moments into coins. | | Duration: Nov 11–17 x.com/rarelistio/status/212022",
+      "window_bucket": 83084,
+      "post_count": 1,
+      "representative_text": "這次 @rarelistio 新推出的競賽只剩3天了 | | 大家的排名還有在榜單裡面嗎? | | @onlystreetsfun 提供 TOP 200 創作者 1% supply 的獎勵 | | 想像一下 | | 路邊一隻表情很有戲的狗、一塊奇怪的招牌，甚至是一個讓人看不懂的街頭裝置。 | | 這些平常可能只是拍張照、發個限時動態的東西。 | | 但在 @onlystreetsfun A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreet",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/luke102579/status/2121440377291055487",
       "author": "luke102579",
@@ -2083,11 +2083,6 @@
       "reg_at": "Sat Jun 05 14:50:55 +0000 2021",
       "views": "19",
       "samples": [
-        {
-          "text": "每天上线做做任务，点点赚也是不错的嘴撸任务 | | 目前排名1万+，还是得继续多写帖子 @rarelistio | | 继续提升我的等级 A new campaign just went live on Rarelist! | | Join now: rarelist.io/projects/onlystreets | | @onlystreetsfun is the first launchpa",
-          "url": "https://x.com/wen394428142129/status/2121147824419274791",
-          "post_time": "2026-11-13T07:47:05+00:00"
-        },
         {
           "text": "這次 @rarelistio 新推出的競賽只剩3天了 | | 大家的排名還有在榜單裡面嗎? | | @onlystreetsfun 提供 TOP 200 創作者 1% supply 的獎勵 | | 想像一下 | | 路邊一隻表情很有戲的狗、一塊奇怪的招牌，甚至是一個讓人看不懂的街頭裝置。 | | 這些平常可能只是拍張照、發個限時動態的東西。 | | 但在 @onlystreetsfun A new",
           "url": "https://x.com/luke102579/status/2121440377291055487",
