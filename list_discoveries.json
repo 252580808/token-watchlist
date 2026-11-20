@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T08:33:23.089086Z",
+  "generated_at": "2026-11-20T08:42:30.062433Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1351,
+    "posts_total": 1350,
     "blocked": 119,
     "no_entry": 1116,
     "events": 55,
-    "merged_posts": 61,
+    "merged_posts": 60,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 7
@@ -604,11 +604,11 @@
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T08:36:48Z",
+      "first_seen_at": "2026-11-13T08:44:48Z",
       "last_seen_at": "2026-11-18T08:10:43Z",
       "window_bucket": 83081,
-      "post_count": 9,
-      "representative_text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X , $updog 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度直接起飞 x.com/PepeBoost888/status/2121130089203032",
+      "post_count": 8,
+      "representative_text": "GigaX 真的是越来越好用了，信号大升级这波必须吹爆！🔥 | | $FOOD 这波75x的超级大肉虽然没赶上，但这早鸟信号是真猛，两天内推了好几个几十倍的大金狗，$MAX 25x，$updog 33x，别说没行情，用了 @GigaXApp，还怕没机会，随便抓到一个就够吹上好一阵子！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度",
       "keywords": "[\"高:新币\"]",
       "tweet_url": "https://x.com/linda6248130564/status/2122965711723401345",
       "author": "linda6248130564",
@@ -628,11 +628,6 @@
       "reg_at": "Sat Nov 30 09:38:15 +0000 2024",
       "views": "21",
       "samples": [
-        {
-          "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X , $updog 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始",
-          "url": "https://x.com/AODHLG/status/2121160338595004448",
-          "post_time": "2026-11-13T08:36:48+00:00"
-        },
         {
           "text": "GigaX 真的是越来越好用了，信号大升级这波必须吹爆！🔥 | | $FOOD 这波75x的超级大肉虽然没赶上，但这早鸟信号是真猛，两天内推了好几个几十倍的大金狗，$MAX 25x，$updog 33x，别说没行情，用了 @GigaXApp，还怕没机会，随便抓到一个就够吹上好一阵子！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机",
           "url": "https://x.com/0xldb/status/2121162353194738124",
@@ -667,6 +662,11 @@
           "text": "这谁能想到啊，Grok做了个 pump.fun/u/QKL2058 交易桌，我就看着它自己跑交易。 | | 480美元进去，最后变成7160美元。 | | 交易桌会把每一步操作明明白白放出来： | | → 在 pump.fun/u/QKL2058 上面刷出新币 | → 检查rug风险：开发者持仓、筹码捆绑、以前有没有rug | → 选择买入或者跳过 | → 卖出 x.com/crbpite8/st",
           "url": "https://x.com/crbpite8/status/2122877623176982724",
           "post_time": "2026-11-18T02:20:41+00:00"
+        },
+        {
+          "text": "Grok 自动化交易桌｜480美元 → 7160美元 | 地址：pump.fun/u/Pumpner | | 运行逻辑 | 自动刷新币，半秒快速核验rug风险 | 核查开发者持仓、筹码捆绑、历史记录，有风险直接跳过 | | 本次交易记录 | PIXEL｜+165% | LUNA｜+220% | AURA｜+290% | RIFT｜-28美元 | NOVA、ECHO、$VOID 风险拦截，后续全部r",
+          "url": "https://x.com/linda6248130564/status/2122965711723401345",
+          "post_time": "2026-11-18T08:10:43+00:00"
         }
       ]
     },
