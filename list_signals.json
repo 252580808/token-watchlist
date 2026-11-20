@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:18:27.668188Z",
+  "generated_at": "2026-11-20T06:29:59.076118Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,10 +7,10 @@
   "stats": {
     "signals_total": 1662,
     "with_ca": 288,
-    "list_posts_total": 5369,
+    "list_posts_total": 5367,
     "unique_cas": 2109,
-    "dedup_merged_posts": 3260,
-    "passed": 2,
+    "dedup_merged_posts": 3258,
+    "passed": 1,
     "dropped_dev": 82,
     "dropped_old": 251,
     "dropped_no_time": 459,
@@ -19,22 +19,22 @@
     "pending_retry": 1,
     "verdict_cached": 885,
     "tags_refreshed": 20,
-    "dev_rechecked": 2,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 1,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 6,
-    "dead_blocked_live": 62,
+    "dead_blocked_live": 63,
     "pool_too_old_live": 6,
-    "v9_rechecked": 1,
+    "v9_rechecked": 0,
     "v9_ready": 0,
     "v9_not_ready": 7,
     "security_unknown": 0,
     "dropped_detail": {
       "l2_suffix": 1222,
-      "no_pool": 457,
       "old": 251,
+      "no_pool": 457,
       "dev_over": 82,
       "no_created_at": 2,
       "fake_website:linktr.ee": 1,
@@ -84,59 +84,6 @@
           "post_time": "2026-11-19T21:32:50Z",
           "text_clean": "🔥 4.9x profit secured on $ONI | | FSfZuwaRFVcTtVBsiJ45NYK7Mwi3ANRcVT8kpbevtPGj x.com/alphaviper01/status/2123529961567068368/photo/1",
           "tweet_url": "https://x.com/alphaviper01/status/2123529961567068368"
-        }
-      ]
-    },
-    {
-      "ca": "7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX",
-      "chain": "solana",
-      "symbol": "ACRUX",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-19T18:32:37.968879Z",
-      "smart_degen_count": 33,
-      "renowned_count": 1,
-      "ready_to_push": true,
-      "net_buy_count": 16,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-17T23:54:27.738379Z",
-      "pair_created_at": "2026-11-17T17:30:24Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-17T18:04:00Z",
-      "post_count": 4,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "alphaviper01",
-          "author_name": "alphaviper01",
-          "post_time": "2026-11-17T18:04:00Z",
-          "text_clean": "CA | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122752631139623065/photo/1",
-          "tweet_url": "https://x.com/alphaviper01/status/2122752631139623065"
-        },
-        {
-          "author": "alphaviper01",
-          "author_name": "alphaviper01",
-          "post_time": "2026-11-17T18:07:18Z",
-          "text_clean": "🔥 6x profit secured on $ACRUX | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122753459346944301/photo/1",
-          "tweet_url": "https://x.com/alphaviper01/status/2122753459346944301"
-        },
-        {
-          "author": "alphaviper01",
-          "author_name": "alphaviper01",
-          "post_time": "2026-11-17T20:03:16Z",
-          "text_clean": "9x profit secured on $ACRUX | | Early calls are always in my private Tg 🔥🚀 | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122782645700411751/photo/1",
-          "tweet_url": "https://x.com/alphaviper01/status/2122782645700411751"
-        },
-        {
-          "author": "alphaviper01",
-          "author_name": "alphaviper01",
-          "post_time": "2026-11-18T00:32:53Z",
-          "text_clean": "11.5x profit secured on $ACRUX | | Another solid execution. Patience, precision, and the right information make all the difference🔥🚀 | | 7Evw4uxTxLGGEFEvXLUNYyc1J7PnFk9EYwTUFagARUX x.com/alphaviper01/status/2122850495173914927/photo/1",
-          "tweet_url": "https://x.com/alphaviper01/status/2122850495173914927"
         }
       ]
     }
