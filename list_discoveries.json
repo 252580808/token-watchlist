@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T02:04:17.963032Z",
+  "generated_at": "2026-11-20T02:13:08.772988Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1394,
+    "posts_total": 1393,
     "blocked": 147,
-    "no_entry": 1123,
+    "no_entry": 1124,
     "events": 54,
-    "merged_posts": 70,
+    "merged_posts": 68,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-13T02:08:20Z",
+      "first_seen_at": "2026-11-13T02:46:47Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83080,
-      "post_count": 17,
-      "representative_text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 这个jose，从早上发射台上线就一直看，一开始买了onebot，但是网站实在太卡了，p来p去，最后看到jose一直有人在买，跟上之后发现有推特账户，看图质量是很高的，本身digging也非常魔性，非常原生的meme",
+      "post_count": 16,
+      "representative_text": "很多人收不到验证码了，网站卡才是金狗啊，不然分分钟被塞满。多盯一下吧，盯了一早上我也是盯麻了。多刷新重试吧，考虑到一个邮箱一个账户，其实相对还是很公平的，有一定的门槛，相当于限制了一下多号 | | canton链本身是银行链，还是很有钱的，加上onepump背景也不错，上一个canton的发射台 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.c",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,11 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 这个jose，从早上发射台上线就一直看，一开始买了onebot，但是网站实在太卡了，p来p去，最后看到jose一直有人在买，跟上之后发现有推特账户，看图质量是很高的，本身digging也非常魔性，非常原生的meme",
-          "url": "https://x.com/SkyAAmen/status/2121062576520073282",
-          "post_time": "2026-11-13T02:08:20+00:00"
-        },
         {
           "text": "很多人收不到验证码了，网站卡才是金狗啊，不然分分钟被塞满。多盯一下吧，盯了一早上我也是盯麻了。多刷新重试吧，考虑到一个邮箱一个账户，其实相对还是很公平的，有一定的门槛，相当于限制了一下多号 | | canton链本身是银行链，还是很有钱的，加上onepump背景也不错，上一个canton的发射台 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室",
           "url": "https://x.com/SkyAAmen/status/2121072254754918593",
@@ -302,6 +297,11 @@
           "text": "董事长进军canton链 要乱杀了 | | @nyenchenn most handsome frog 🐸 on canton is officially live on @onepumpcc | | make memes great again. $CPEPE | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172",
           "url": "https://x.com/Mojito_cx/status/2121257882197119118",
           "post_time": "2026-11-13T15:04:24+00:00"
+        },
+        {
+          "text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc",
+          "url": "https://x.com/drjingle/status/2121537412719612092",
+          "post_time": "2026-11-14T09:35:10+00:00"
         }
       ]
     },
@@ -1314,11 +1314,11 @@
       "event_id": "domain:onlystreets.fun",
       "identity": "domain:onlystreets.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T02:04:45Z",
+      "first_seen_at": "2026-11-13T03:21:00Z",
       "last_seen_at": "2026-11-16T04:24:09Z",
       "window_bucket": 83080,
-      "post_count": 7,
-      "representative_text": "大部分 launchpad 拼的是叙事和包装，OnlyStreets 直接把约束写成规则：币只能从 App 相机拍的照片里出来。这个限制反而把同质化的图文素材清出去了，让\"街头实拍\"本身成了稀缺性来源，和 Rarelist 按真实社交行为排名的思路天然契合。 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and launch a coin. ",
+      "post_count": 6,
+      "representative_text": "現在的 Meme 市場，大家每天都在尋找下一個熱門敘事。 | | 但有沒有想過，下一個爆紅的 Meme，可能就在你每天經過的街道上？ | | @onlystreetsfun 想做的事情很有意思：把現實生活中有趣、荒謬、甚至莫名其妙的瞬間，直接變成 Solana 上的代幣。 | | 看到一個有趣的畫面，現場拍照、取名，就能創建一枚 Coin。 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconi",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/yingge001/status/2122183922041974799",
       "author": "yingge001",
@@ -1338,11 +1338,6 @@
       "reg_at": "Tue Feb 27 14:09:15 +0000 2024",
       "views": "22",
       "samples": [
-        {
-          "text": "大部分 launchpad 拼的是叙事和包装，OnlyStreets 直接把约束写成规则：币只能从 App 相机拍的照片里出来。这个限制反而把同质化的图文素材清出去了，让\"街头实拍\"本身成了稀缺性来源，和 Rarelist 按真实社交行为排名的思路天然契合。 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic",
-          "url": "https://x.com/PumpVaultBase/status/2121061677055836206",
-          "post_time": "2026-11-13T02:04:45+00:00"
-        },
         {
           "text": "現在的 Meme 市場，大家每天都在尋找下一個熱門敘事。 | | 但有沒有想過，下一個爆紅的 Meme，可能就在你每天經過的街道上？ | | @onlystreetsfun 想做的事情很有意思：把現實生活中有趣、荒謬、甚至莫名其妙的瞬間，直接變成 Solana 上的代幣。 | | 看到一個有趣的畫面，現場拍照、取名，就能創建一枚 Coin。 Introducing onlystreets.fun ",
           "url": "https://x.com/luke102579/status/2121080863391887676",
