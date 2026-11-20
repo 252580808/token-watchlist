@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T07:58:56.735675Z",
+  "generated_at": "2026-11-20T08:06:58.591136Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1355,
-    "blocked": 120,
-    "no_entry": 1118,
+    "posts_total": 1356,
+    "blocked": 121,
+    "no_entry": 1119,
     "events": 54,
-    "merged_posts": 63,
+    "merged_posts": 62,
     "terms_failed": 0,
     "today_events": 6,
     "today_pushed": 6
@@ -1424,11 +1424,11 @@
       "event_id": "domain:onlystreets.fun",
       "identity": "domain:onlystreets.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T08:02:00Z",
+      "first_seen_at": "2026-11-13T08:09:14Z",
       "last_seen_at": "2026-11-16T04:24:09Z",
       "window_bucket": 83081,
-      "post_count": 4,
-      "representative_text": "OnlyStreets 是一个代币发行平台 @onlystreetsfun | | 即将在上线前发布空投奖励 | | 奖品为1000U | 第一名300u | 前两名150u | 前三名100 U | 前4-15名恭喜450U | 前两百名占供应量的1% | 项目只做分享，不做投资建议 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and l",
+      "post_count": 3,
+      "representative_text": "onlystreets.fun 即将登陆 Solana。 @onlystreetsfun | | 一个独一无二的启动平台 | | 专为源于现实生活瞬间的代币而生。 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin starts with a fresh photo taken directly in the app. No gallery uploads are allowed. | | CT ",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/yingge001/status/2122183922041974799",
       "author": "yingge001",
@@ -1448,11 +1448,6 @@
       "reg_at": "Tue Feb 27 14:09:15 +0000 2024",
       "views": "22",
       "samples": [
-        {
-          "text": "OnlyStreets 是一个代币发行平台 @onlystreetsfun | | 即将在上线前发布空投奖励 | | 奖品为1000U | 第一名300u | 前两名150u | 前三名100 U | 前4-15名恭喜450U | 前两百名占供应量的1% | 项目只做分享，不做投资建议 Introducing onlystreets.fun | | A Solana launchpad for f",
-          "url": "https://x.com/wen394428142129/status/2121151581249024372",
-          "post_time": "2026-11-13T08:02:00+00:00"
-        },
         {
           "text": "onlystreets.fun 即将登陆 Solana。 @onlystreetsfun | | 一个独一无二的启动平台 | | 专为源于现实生活瞬间的代币而生。 onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Eve",
           "url": "https://x.com/wen394428142129/status/2121153400104779802",
