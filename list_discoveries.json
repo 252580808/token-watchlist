@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T13:44:07.981310Z",
+  "generated_at": "2026-11-20T13:53:10.307111Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1322,
+    "posts_total": 1320,
     "blocked": 102,
-    "no_entry": 1113,
+    "no_entry": 1112,
     "events": 53,
-    "merged_posts": 54,
+    "merged_posts": 53,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 7
@@ -604,11 +604,11 @@
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T13:49:30Z",
+      "first_seen_at": "2026-11-13T14:17:00Z",
       "last_seen_at": "2026-11-18T08:10:43Z",
       "window_bucket": 83082,
-      "post_count": 7,
-      "representative_text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人）",
+      "post_count": 6,
+      "representative_text": "蛙总的 @GigaXApp 太权威了，信号又升级了，不愧是中文区的fomo版打狗神器 | | 这两天的大金狗全都被早鸟信号抓到了， $FOOD 75x ， $MAX 20x、 $UPDOG 30x，FOOD当时看到了，没上车，眼睁睁看它一路狂飙 | | 这次的 AI $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度直接起飞 x.co",
       "keywords": "[\"高:新币\"]",
       "tweet_url": "https://x.com/linda6248130564/status/2122965711723401345",
       "author": "linda6248130564",
@@ -628,11 +628,6 @@
       "reg_at": "Sat Nov 30 09:38:15 +0000 2024",
       "views": "21",
       "samples": [
-        {
-          "text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
-          "url": "https://x.com/tiger_web3/status/2121239029928653014",
-          "post_time": "2026-11-13T13:49:30+00:00"
-        },
         {
           "text": "蛙总的 @GigaXApp 太权威了，信号又升级了，不愧是中文区的fomo版打狗神器 | | 这两天的大金狗全都被早鸟信号抓到了， $FOOD 75x ， $MAX 20x、 $UPDOG 30x，FOOD当时看到了，没上车，眼睁睁看它一路狂飙 | | 这次的 AI $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载",
           "url": "https://x.com/Feng_btc/status/2121245953256763458",
