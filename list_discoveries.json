@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T08:42:30.062433Z",
+  "generated_at": "2026-11-20T08:51:28.995842Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -7,9 +7,9 @@
     "enabled": 1,
     "posts_total": 1350,
     "blocked": 119,
-    "no_entry": 1116,
+    "no_entry": 1118,
     "events": 55,
-    "merged_posts": 60,
+    "merged_posts": 58,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 7
@@ -389,11 +389,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-13T08:49:53Z",
+      "first_seen_at": "2026-11-13T09:24:53Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83081,
-      "post_count": 14,
-      "representative_text": "顶级 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1",
+      "post_count": 13,
+      "representative_text": "会有点卡，但是卡才是机会 | 这里创建邮箱输入验证码https://www.oneswap.cc/home | 然后链接钱包跨链 | 有eth，bnb等等自己选择 | 买了点这个币安实验室投资的项目 | 是个新链 | 市值才15w左右，不是显示的m是cc计价的 | 需要链接钱包跨链cc过去 | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a the citizen has a name. | | $JOSE is the first token ever launched on onepump. | | l",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -413,11 +413,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "顶级 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1",
-          "url": "https://x.com/Anbzydd520/status/2121163631895412979",
-          "post_time": "2026-11-13T08:49:53+00:00"
-        },
         {
           "text": "会有点卡，但是卡才是机会 | 这里创建邮箱输入验证码https://www.oneswap.cc/home | 然后链接钱包跨链 | 有eth，bnb等等自己选择 | 买了点这个币安实验室投资的项目 | 是个新链 | 市值才15w左右，不是显示的m是cc计价的 | 需要链接钱包跨链cc过去 | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96",
           "url": "https://x.com/Anbzydd520/status/2121172439883501790",
@@ -452,6 +447,11 @@
           "text": "这个行情能不断保持新高的不多了，本月第一个alphacall，含金量如何？ | 63k--380k--6x | | canton链的背景是相当豪华的，只是玩的人少 | 爆发起来不比任何一个公链差 | @onepumpcc @JoseOnCanton | #canton x.com/SkyAAmen/status/2122195863066046529/photo/1 onepump作为canton",
           "url": "https://x.com/SkyAAmen/status/2122195863066046529",
           "post_time": "2026-11-16T05:11:36+00:00"
+        },
+        {
+          "text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
+          "url": "https://x.com/c423855046/status/2122442256938594785",
+          "post_time": "2026-11-16T21:30:41+00:00"
         }
       ]
     },
@@ -604,11 +604,11 @@
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T08:44:48Z",
+      "first_seen_at": "2026-11-13T13:49:30Z",
       "last_seen_at": "2026-11-18T08:10:43Z",
-      "window_bucket": 83081,
-      "post_count": 8,
-      "representative_text": "GigaX 真的是越来越好用了，信号大升级这波必须吹爆！🔥 | | $FOOD 这波75x的超级大肉虽然没赶上，但这早鸟信号是真猛，两天内推了好几个几十倍的大金狗，$MAX 25x，$updog 33x，别说没行情，用了 @GigaXApp，还怕没机会，随便抓到一个就够吹上好一阵子！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度",
+      "window_bucket": 83082,
+      "post_count": 7,
+      "representative_text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人）",
       "keywords": "[\"高:新币\"]",
       "tweet_url": "https://x.com/linda6248130564/status/2122965711723401345",
       "author": "linda6248130564",
@@ -628,11 +628,6 @@
       "reg_at": "Sat Nov 30 09:38:15 +0000 2024",
       "views": "21",
       "samples": [
-        {
-          "text": "GigaX 真的是越来越好用了，信号大升级这波必须吹爆！🔥 | | $FOOD 这波75x的超级大肉虽然没赶上，但这早鸟信号是真猛，两天内推了好几个几十倍的大金狗，$MAX 25x，$updog 33x，别说没行情，用了 @GigaXApp，还怕没机会，随便抓到一个就够吹上好一阵子！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机",
-          "url": "https://x.com/0xldb/status/2121162353194738124",
-          "post_time": "2026-11-13T08:44:48+00:00"
-        },
         {
           "text": "卧槽，蛙哥的gigaX信号大升级，低市值就抓到好几个几十倍个10x金狗 | | 这波早鸟信号是真的猛，两天推了好几个大金狗，$MAX25x，$updog 33x，还有$FOOD干到75x。有了这个信号一下能减少好多盯盘时间，meme讲究的就是一个信息差，高频+低频用户都能组合出不同玩法。还能自己配置想要的信号，特丝滑！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
           "url": "https://x.com/tiger_web3/status/2121239029928653014",
