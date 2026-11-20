@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T14:20:03.589671Z",
+  "generated_at": "2026-11-20T14:29:07.472026Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1308,
+    "posts_total": 1309,
     "blocked": 100,
-    "no_entry": 1103,
+    "no_entry": 1105,
     "events": 53,
-    "merged_posts": 52,
+    "merged_posts": 51,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 7
@@ -604,11 +604,11 @@
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T14:28:48Z",
+      "first_seen_at": "2026-11-13T14:34:29Z",
       "last_seen_at": "2026-11-18T08:10:43Z",
       "window_bucket": 83082,
-      "post_count": 5,
-      "representative_text": "不得不说，蛙哥全力转战 @GigaXApp后，信号功能越来越完善，今天 $FOOD 直接爆拉到75x，早鸟信号真得牛逼 | | 两天内信号就推送了好几个几十倍大金狗， $MAX 25x， $updog 33x，胜率真不错！信号可以根据自己需求配置，早鸟信号抓更早机会，翻倍概率更高；趋势信号专盯顶级交易员进场，专门抓大金 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人）",
+      "post_count": 4,
+      "representative_text": "卧槽，蛙总的 @GigaXApp 这波 AI 信号升级真的杀疯了，中文区最权威的打狗神器！ | | 先看这两天的战绩，大金狗全call到了:FOOD 狂飙 75x，UPDOG 33x，MAX 25x。FOOD 那波我眼睁睁看它飞没上车，下个金狗按头好吗！ | | 这次 AI 信号升级牛在哪？ | 🐣 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s wi",
       "keywords": "[\"高:新币\"]",
       "tweet_url": "https://x.com/linda6248130564/status/2122965711723401345",
       "author": "linda6248130564",
@@ -628,11 +628,6 @@
       "reg_at": "Sat Nov 30 09:38:15 +0000 2024",
       "views": "21",
       "samples": [
-        {
-          "text": "不得不说，蛙哥全力转战 @GigaXApp后，信号功能越来越完善，今天 $FOOD 直接爆拉到75x，早鸟信号真得牛逼 | | 两天内信号就推送了好几个几十倍大金狗， $MAX 25x， $updog 33x，胜率真不错！信号可以根据自己需求配置，早鸟信号抓更早机会，翻倍概率更高；趋势信号专盯顶级交易员进场，专门抓大金 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就",
-          "url": "https://x.com/sweet919268/status/2121248920676479209",
-          "post_time": "2026-11-13T14:28:48+00:00"
-        },
         {
           "text": "卧槽，蛙总的 @GigaXApp 这波 AI 信号升级真的杀疯了，中文区最权威的打狗神器！ | | 先看这两天的战绩，大金狗全call到了:FOOD 狂飙 75x，UPDOG 33x，MAX 25x。FOOD 那波我眼睁睁看它飞没上车，下个金狗按头好吗！ | | 这次 AI 信号升级牛在哪？ | 🐣 $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 Gi",
           "url": "https://x.com/CandyDAO_leaf/status/2121250352250998918",
