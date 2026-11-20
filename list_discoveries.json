@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T14:56:08.241339Z",
+  "generated_at": "2026-11-20T15:05:24.078213Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -7,9 +7,9 @@
     "enabled": 1,
     "posts_total": 1305,
     "blocked": 99,
-    "no_entry": 1105,
+    "no_entry": 1106,
     "events": 53,
-    "merged_posts": 48,
+    "merged_posts": 47,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 7
@@ -389,11 +389,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-13T15:04:24Z",
+      "first_seen_at": "2026-11-14T09:35:10Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
-      "window_bucket": 83082,
-      "post_count": 10,
-      "representative_text": "董事长进军canton链 要乱杀了 | | @nyenchenn most handsome frog 🐸 on canton is officially live on @onepumpcc | | make memes great again. $CPEPE | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172947 x.com/pepeoncanton/status/2121251636291015052/photo/1",
+      "window_bucket": 83085,
+      "post_count": 9,
+      "representative_text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc/launchpad/token/8c3fd77c-75a7-5be4-955f-07c7da397eb5",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -413,11 +413,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "董事长进军canton链 要乱杀了 | | @nyenchenn most handsome frog 🐸 on canton is officially live on @onepumpcc | | make memes great again. $CPEPE | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172",
-          "url": "https://x.com/Mojito_cx/status/2121257882197119118",
-          "post_time": "2026-11-13T15:04:24+00:00"
-        },
         {
           "text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc",
           "url": "https://x.com/drjingle/status/2121537412719612092",
@@ -452,6 +447,11 @@
           "text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入",
           "url": "https://x.com/01573bit/status/2122621484090916945",
           "post_time": "2026-11-17T09:22:52+00:00"
+        },
+        {
+          "text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: ",
+          "url": "https://x.com/into9966/status/2122815694136058294",
+          "post_time": "2026-11-17T22:14:36+00:00"
         }
       ]
     },
