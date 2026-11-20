@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-20T08:24:26.620657Z",
+  "generated_at": "2026-11-20T08:33:23.089086Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1350,
-    "blocked": 120,
-    "no_entry": 1114,
+    "posts_total": 1351,
+    "blocked": 119,
+    "no_entry": 1116,
     "events": 55,
     "merged_posts": 61,
     "terms_failed": 0,
@@ -20,14 +20,14 @@
       "identity": "article:2120480147711410178",
       "identity_type": "tweet_article",
       "first_seen_at": "2026-11-20T08:05:09Z",
-      "last_seen_at": "2026-11-20T08:05:09Z",
+      "last_seen_at": "2026-11-20T08:30:28Z",
       "window_bucket": 83109,
-      "post_count": 1,
+      "post_count": 2,
       "representative_text": "又是一位从发财集团走出来的农民之王 | | 刺出了属于自己的一片天 唯有深深的服气 | | 现在向你走来的是：万币A8打法创始人、许昌GOAT 🍗 👑 x.com/i/article/2120480147711410178",
       "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/0xfacairiji/status/2123689086435397925",
-      "author": "0xfacairiji",
-      "author_name": "发财日记",
+      "tweet_url": "https://x.com/0xZhangCrypto1/status/2123695458623291555",
+      "author": "0xZhangCrypto1",
+      "author_name": "小财神🔶BNB（从头再来版）",
       "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
       "list_id": "1887729607585173782",
       "list_short": "3782",
@@ -37,16 +37,21 @@
       "kw_strong": "[]",
       "kw_weak": "[]",
       "kw_entry": "[]",
-      "followers": 27482,
+      "followers": 7969,
       "blue_verified": true,
-      "listed_count": 396,
-      "reg_at": "Fri Nov 05 06:23:44 +0000 2021",
-      "views": "219",
+      "listed_count": 71,
+      "reg_at": "Mon Aug 11 14:51:46 +0000 2025",
+      "views": "26",
       "samples": [
         {
           "text": "又是一位从发财集团走出来的农民之王 | | 刺出了属于自己的一片天 唯有深深的服气 | | 现在向你走来的是：万币A8打法创始人、许昌GOAT 🍗 👑 x.com/i/article/2120480147711410178",
           "url": "https://x.com/0xfacairiji/status/2123689086435397925",
           "post_time": "2026-11-20T08:05:09+00:00"
+        },
+        {
+          "text": "许昌首富，万币 A8 创始人，鸡腿神 @XIANGCHIJITUI x.com/i/article/2120480147711410178",
+          "url": "https://x.com/0xZhangCrypto1/status/2123695458623291555",
+          "post_time": "2026-11-20T08:30:28+00:00"
         }
       ]
     },
@@ -599,11 +604,11 @@
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T08:27:35Z",
+      "first_seen_at": "2026-11-13T08:36:48Z",
       "last_seen_at": "2026-11-18T08:10:43Z",
       "window_bucket": 83081,
-      "post_count": 10,
-      "representative_text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X ,$UODOG 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度直接起飞 x.com/PepeBoost888/status/21211300892030320",
+      "post_count": 9,
+      "representative_text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X , $updog 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人 Alon 回复 Leap（Donate.gg加密慈善平台的创始人） “let’s win”，慈善币热度直接起飞 x.com/PepeBoost888/status/2121130089203032",
       "keywords": "[\"高:新币\"]",
       "tweet_url": "https://x.com/linda6248130564/status/2122965711723401345",
       "author": "linda6248130564",
@@ -623,11 +628,6 @@
       "reg_at": "Sat Nov 30 09:38:15 +0000 2024",
       "views": "21",
       "samples": [
-        {
-          "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X ,$UODOG 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始人",
-          "url": "https://x.com/AODHLG/status/2121158020575240519",
-          "post_time": "2026-11-13T08:27:35+00:00"
-        },
         {
           "text": "蛙哥的@GigaXApp 是真有点东西啊！最近信号进行了大升级，可以根据自己的打法去配信号，这两天的战绩都很漂亮，$FOOD 75X，$MAX 25X , $updog 33X.早用早享受！ $FOOD 75x 没赶上？5x 你总该能吃到吧。 | 真不是抓到一个大倍数就猛吹，只要用了 GigaX，天天有机会。别光喷，先下载体验了再来说话。 | | 看这个盘，叙事很简单，借着 Pump.fun 创始",
           "url": "https://x.com/AODHLG/status/2121160338595004448",
@@ -662,6 +662,11 @@
           "text": "谁能想到还能这样？Grok搭了个 pump.fun/u/QKL2058 小应用，它负责交易，我就在旁边看着。 | | 800美元，只用17秒就做到4055美元。 | | 它遇到每个币，都会把操作步骤明明白白展示出来： | | → 在 pump.fun/u/QKL2058 刷出新币 | → 检查会不会rug：看开发者钱包、筹码捆绑、X平台帖子数量 | → 买入 | → x.com/crbpite8/",
           "url": "https://x.com/crbpite8/status/2122592331517870287",
           "post_time": "2026-11-17T07:27:02+00:00"
+        },
+        {
+          "text": "这谁能想到啊，Grok做了个 pump.fun/u/QKL2058 交易桌，我就看着它自己跑交易。 | | 480美元进去，最后变成7160美元。 | | 交易桌会把每一步操作明明白白放出来： | | → 在 pump.fun/u/QKL2058 上面刷出新币 | → 检查rug风险：开发者持仓、筹码捆绑、以前有没有rug | → 选择买入或者跳过 | → 卖出 x.com/crbpite8/st",
+          "url": "https://x.com/crbpite8/status/2122877623176982724",
+          "post_time": "2026-11-18T02:20:41+00:00"
         }
       ]
     },
