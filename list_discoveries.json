@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T10:53:51.246053Z",
+  "generated_at": "2026-11-20T11:02:09.383274Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1337,
+    "posts_total": 1334,
     "blocked": 110,
-    "no_entry": 1117,
-    "events": 54,
-    "merged_posts": 56,
+    "no_entry": 1116,
+    "events": 53,
+    "merged_posts": 55,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 7
@@ -1634,11 +1634,11 @@
       "event_id": "domain:zxoxo.xyz",
       "identity": "domain:zxoxo.xyz",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-13T10:59:18Z",
+      "first_seen_at": "2026-11-15T06:57:46Z",
       "last_seen_at": "2026-11-15T06:57:46Z",
-      "window_bucket": 83081,
-      "post_count": 2,
-      "representative_text": "Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/card/G9DJ-9BJN x.com/aiqiang888/status/2121196197981696344/photo/1",
+      "window_bucket": 83089,
+      "post_count": 1,
+      "representative_text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/c",
       "keywords": "[\"高:新东西\"]",
       "tweet_url": "https://x.com/aiqiang888/status/2121860192845631999",
       "author": "aiqiang888",
@@ -1658,11 +1658,6 @@
       "reg_at": "Tue Aug 28 09:58:29 +0000 2012",
       "views": "171",
       "samples": [
-        {
-          "text": "Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/card/G9DJ-9BJN x.com/aiqiang888/status/2121196197981696344/photo",
-          "url": "https://x.com/aiqiang888/status/2121196197981696344",
-          "post_time": "2026-11-13T10:59:18+00:00"
-        },
         {
           "text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类",
           "url": "https://x.com/aiqiang888/status/2121860192845631999",
@@ -2107,41 +2102,6 @@
           "text": "這次 @rarelistio 新推出的競賽只剩3天了 | | 大家的排名還有在榜單裡面嗎? | | @onlystreetsfun 提供 TOP 200 創作者 1% supply 的獎勵 | | 想像一下 | | 路邊一隻表情很有戲的狗、一塊奇怪的招牌，甚至是一個讓人看不懂的街頭裝置。 | | 這些平常可能只是拍張照、發個限時動態的東西。 | | 但在 @onlystreetsfun A new",
           "url": "https://x.com/luke102579/status/2121440377291055487",
           "post_time": "2026-11-14T03:09:35+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2120615210121936896",
-      "identity": "article:2120615210121936896",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-13T11:01:33Z",
-      "last_seen_at": "2026-11-13T11:01:33Z",
-      "window_bucket": 83081,
-      "post_count": 1,
-      "representative_text": "Canton联合创始人兼CEO的文章！ | 值得细品，可能早晚你会主动关注。 | | 代币化已是金融必需品， | 它需要一个更好的市场： | -更快的结算 | -更广的准入 | -更低的成本 | 恰好 @CantonNetwork 正中下怀！ x.com/i/article/2120615210121936896",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/Kangzi_VC/status/2121196767349997750",
-      "author": "Kangzi_VC",
-      "author_name": "康子の密言密语",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 3822,
-      "blue_verified": true,
-      "listed_count": 46,
-      "reg_at": "Sun Jan 22 05:15:49 +0000 2023",
-      "views": "18",
-      "samples": [
-        {
-          "text": "Canton联合创始人兼CEO的文章！ | 值得细品，可能早晚你会主动关注。 | | 代币化已是金融必需品， | 它需要一个更好的市场： | -更快的结算 | -更广的准入 | -更低的成本 | 恰好 @CantonNetwork 正中下怀！ x.com/i/article/2120615210121936896",
-          "url": "https://x.com/Kangzi_VC/status/2121196767349997750",
-          "post_time": "2026-11-13T11:01:33+00:00"
         }
       ]
     }
