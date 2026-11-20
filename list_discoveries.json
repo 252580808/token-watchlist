@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-20T05:52:22.386676Z",
+  "generated_at": "2026-11-20T06:01:25.941692Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1367,
+    "posts_total": 1369,
     "blocked": 126,
-    "no_entry": 1124,
-    "events": 53,
+    "no_entry": 1125,
+    "events": 54,
     "merged_posts": 64,
     "terms_failed": 0,
-    "today_events": 4,
+    "today_events": 5,
     "today_pushed": 4
   },
   "events": [
+    {
+      "event_id": "domain:termix.ai",
+      "identity": "domain:termix.ai",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-20T05:56:56Z",
+      "last_seen_at": "2026-11-20T05:56:56Z",
+      "window_bucket": 83108,
+      "post_count": 1,
+      "representative_text": "币安的 agent ID 我从前阵子热度高在链上打狗外，领完就一直放着 | | @termix_ai 今天给它派了第一个活 | 让 agent 自己去装 skills，装完还有 50TP 拿 | | 挺好，起码有地方用了 | | 放了好几天的 agent ID | 今天总算让它干了点活 x.com/0xshunshun/status/2123656819562398109/video/1 A gift for 235,000+ @binance Agent ID holders! 🎁 | | Install @termix_ai Skills for 50 TP—our first step ",
+      "keywords": "[\"高:第一个\"]",
+      "tweet_url": "https://x.com/0xshunshun/status/2123656819562398109",
+      "author": "0xshunshun",
+      "author_name": "0xshun 順",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 5363,
+      "blue_verified": true,
+      "listed_count": 54,
+      "reg_at": "Wed Jan 01 17:12:01 +0000 2014",
+      "views": "22",
+      "samples": [
+        {
+          "text": "币安的 agent ID 我从前阵子热度高在链上打狗外，领完就一直放着 | | @termix_ai 今天给它派了第一个活 | 让 agent 自己去装 skills，装完还有 50TP 拿 | | 挺好，起码有地方用了 | | 放了好几天的 agent ID | 今天总算让它干了点活 x.com/0xshunshun/status/2123656819562398109/video/1 A gi",
+          "url": "https://x.com/0xshunshun/status/2123656819562398109",
+          "post_time": "2026-11-20T05:56:56+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2122998981395427328",
       "identity": "article:2122998981395427328",
