@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T00:51:41.012295Z",
+  "generated_at": "2026-11-20T01:00:35.257025Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1408,
-    "blocked": 155,
-    "no_entry": 1124,
+    "posts_total": 1403,
+    "blocked": 154,
+    "no_entry": 1122,
     "events": 54,
-    "merged_posts": 75,
+    "merged_posts": 73,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-13T00:56:17Z",
+      "first_seen_at": "2026-11-13T01:40:03Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83080,
-      "post_count": 21,
-      "representative_text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
+      "post_count": 19,
+      "representative_text": "onepump龙头定了 @onepumpcc 这个射出去应该能不低的市值吧 | | cc精选，上一个台子龙头也做到5m啊 | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,16 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-          "url": "https://x.com/c423855046/status/2121044444149694913",
-          "post_time": "2026-11-13T00:56:17+00:00"
-        },
-        {
-          "text": "canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/2121044701600272598/photo/1",
-          "url": "https://x.com/CC4238/status/2121044701600272598",
-          "post_time": "2026-11-13T00:57:18+00:00"
-        },
         {
           "text": "onepump龙头定了 @onepumpcc 这个射出去应该能不低的市值吧 | | cc精选，上一个台子龙头也做到5m啊 | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a",
           "url": "https://x.com/Mojito_cx/status/2121055459956461822",
@@ -302,6 +292,16 @@
           "text": "顶级 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1",
           "url": "https://x.com/Anbzydd520/status/2121163631895412979",
           "post_time": "2026-11-13T08:49:53+00:00"
+        },
+        {
+          "text": "会有点卡，但是卡才是机会 | 这里创建邮箱输入验证码https://www.oneswap.cc/home | 然后链接钱包跨链 | 有eth，bnb等等自己选择 | 买了点这个币安实验室投资的项目 | 是个新链 | 市值才15w左右，不是显示的m是cc计价的 | 需要链接钱包跨链cc过去 | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96",
+          "url": "https://x.com/Anbzydd520/status/2121172439883501790",
+          "post_time": "2026-11-13T09:24:53+00:00"
+        },
+        {
+          "text": "这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172947",
+          "url": "https://x.com/Mojito_cx/status/2121250771757084705",
+          "post_time": "2026-11-13T14:36:09+00:00"
         }
       ]
     },
