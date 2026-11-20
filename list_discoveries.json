@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T01:55:19.843184Z",
+  "generated_at": "2026-11-20T02:04:17.963032Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1397,
-    "blocked": 148,
-    "no_entry": 1124,
+    "posts_total": 1394,
+    "blocked": 147,
+    "no_entry": 1123,
     "events": 54,
-    "merged_posts": 71,
+    "merged_posts": 70,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-13T01:58:46Z",
+      "first_seen_at": "2026-11-13T02:08:20Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83080,
-      "post_count": 18,
-      "representative_text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 the citizen has a name. | | $JOSE is the first token ever launched on onepump. | | live now. keep digg",
+      "post_count": 17,
+      "representative_text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 这个jose，从早上发射台上线就一直看，一开始买了onebot，但是网站实在太卡了，p来p去，最后看到jose一直有人在买，跟上之后发现有推特账户，看图质量是很高的，本身digging也非常魔性，非常原生的meme",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,11 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 th",
-          "url": "https://x.com/SkyAAmen/status/2121060169564258786",
-          "post_time": "2026-11-13T01:58:46+00:00"
-        },
         {
           "text": "www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 这个jose，从早上发射台上线就一直看，一开始买了onebot，但是网站实在太卡了，p来p去，最后看到jose一直有人在买，跟上之后发现有推特账户，看图质量是很高的，本身digging也非常魔性，非常原生的meme",
           "url": "https://x.com/SkyAAmen/status/2121062576520073282",
@@ -302,6 +297,11 @@
           "text": "$cpepe 其实才是 @onepumpcc 的第一枚认证代币 他是官方最早部署 不知道什么原因一直没有发射的代币 | | 有强大的社区 以及官方预告里都有提到 可能因为昨天有人抢跑 导致官方没有及时发送它 | | 现在不要再错过了 onepump的龙头 这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-18",
           "url": "https://x.com/Mojito_cx/status/2121253209566216488",
           "post_time": "2026-11-13T14:45:50+00:00"
+        },
+        {
+          "text": "董事长进军canton链 要乱杀了 | | @nyenchenn most handsome frog 🐸 on canton is officially live on @onepumpcc | | make memes great again. $CPEPE | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172",
+          "url": "https://x.com/Mojito_cx/status/2121257882197119118",
+          "post_time": "2026-11-13T15:04:24+00:00"
         }
       ]
     },
