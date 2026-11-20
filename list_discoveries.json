@@ -1,20 +1,70 @@
 {
-  "generated_at": "2026-11-20T04:12:41.204195Z",
+  "generated_at": "2026-11-20T04:21:22.095300Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
     "posts_total": 1376,
-    "blocked": 134,
+    "blocked": 133,
     "no_entry": 1124,
     "events": 53,
-    "merged_posts": 65,
+    "merged_posts": 66,
     "terms_failed": 0,
     "today_events": 4,
     "today_pushed": 4
   },
   "events": [
+    {
+      "event_id": "article:2122998981395427328",
+      "identity": "article:2122998981395427328",
+      "identity_type": "tweet_article",
+      "first_seen_at": "2026-11-18T10:31:16Z",
+      "last_seen_at": "2026-11-20T04:09:48Z",
+      "window_bucket": 83101,
+      "post_count": 4,
+      "representative_text": "内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/register?invite_code=BMDMP4 x.com/i/article/2122998981395427328",
+      "keywords": "[\"高:打新\"]",
+      "tweet_url": "https://x.com/168X_Fortune/status/2123629860870607171",
+      "author": "168X_Fortune",
+      "author_name": "168X",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 21532,
+      "blue_verified": true,
+      "listed_count": 294,
+      "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
+      "views": "189",
+      "samples": [
+        {
+          "text": "内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/register?invite_code=BMDMP4 x.com/i/arti",
+          "url": "https://x.com/168X_Fortune/status/2123001083593412919",
+          "post_time": "2026-11-18T10:31:16+00:00"
+        },
+        {
+          "text": "“NVIDIA 最难复制的，不只是 CUDA 或 GPU，而是把整个供应链连接起来的信用 | GPU 背后有台积电、存储、先进封装、光通信、网络设备、服务器 ODM，每个环节都要协调 | AI 需求暴增时，最有价值的是谁能把关键零组件准时拿到，并形成可交付的完整系统 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
+          "url": "https://x.com/168X_Fortune/status/2123061144126685295",
+          "post_time": "2026-11-18T14:29:55+00:00"
+        },
+        {
+          "text": "“NVIDIA 的 Full Stack 有两层 | 第一层是工程资产：GPU 架构、CUDA、NVLink、网络设备、开发者和客户基础，不会一夜消失，保守的职业经理人也可能把现有业务经营得很好 | 第二层是产业打法：帮客户设计 AI Factory、网络配置、产能锁定、资金安排、未来几代升级，而且要在需求未确定时先承担风险 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美",
+          "url": "https://x.com/168X_Fortune/status/2123285026393731425",
+          "post_time": "2026-11-19T05:19:33+00:00"
+        },
+        {
+          "text": "“Google TPU 订单能见度看到 2029 年：第二供应来源，正在变成长期战略 | 大型 AI 公司不会把未来算力全押在一家供应商身上，本来就有动力增加 TPU、ASIC 和自研芯片 | 供应链研究认为 TPU 订单能见度已延伸到 2029 年，2028–2029 年潜在需求合计可能约 2600 万颗 | 客户不只是补 GPU 内地身份 5 分钟极速开户 BIT @BITstocks_CN ",
+          "url": "https://x.com/168X_Fortune/status/2123629860870607171",
+          "post_time": "2026-11-20T04:09:48+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:nftx.io",
       "identity": "domain:nftx.io",
@@ -222,51 +272,6 @@
           "text": "SKY（原MakerDAO）创始人Rune用自家代币作抵押，借走了stUSDS池子近一半的钱，现在存款人取不出钱。 | | 他用价值约1.85亿美元的SKY作抵押借出约7700万美元USDS，半年没还过本金。池子资金利用率已经到了100%，利率涨到19.75%也没把钱留住。 x.com/i/article/2123362461801975808",
           "url": "https://x.com/PANewsCN/status/2123387137202725372",
           "post_time": "2026-11-19T12:05:18+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2122998981395427328",
-      "identity": "article:2122998981395427328",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-18T10:31:16Z",
-      "last_seen_at": "2026-11-19T05:19:33Z",
-      "window_bucket": 83101,
-      "post_count": 3,
-      "representative_text": "内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/register?invite_code=BMDMP4 x.com/i/article/2122998981395427328",
-      "keywords": "[\"高:打新\"]",
-      "tweet_url": "https://x.com/168X_Fortune/status/2123285026393731425",
-      "author": "168X_Fortune",
-      "author_name": "168X",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 21554,
-      "blue_verified": true,
-      "listed_count": 295,
-      "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
-      "views": "146",
-      "samples": [
-        {
-          "text": "内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/register?invite_code=BMDMP4 x.com/i/arti",
-          "url": "https://x.com/168X_Fortune/status/2123001083593412919",
-          "post_time": "2026-11-18T10:31:16+00:00"
-        },
-        {
-          "text": "“NVIDIA 最难复制的，不只是 CUDA 或 GPU，而是把整个供应链连接起来的信用 | GPU 背后有台积电、存储、先进封装、光通信、网络设备、服务器 ODM，每个环节都要协调 | AI 需求暴增时，最有价值的是谁能把关键零组件准时拿到，并形成可交付的完整系统 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
-          "url": "https://x.com/168X_Fortune/status/2123061144126685295",
-          "post_time": "2026-11-18T14:29:55+00:00"
-        },
-        {
-          "text": "“NVIDIA 的 Full Stack 有两层 | 第一层是工程资产：GPU 架构、CUDA、NVLink、网络设备、开发者和客户基础，不会一夜消失，保守的职业经理人也可能把现有业务经营得很好 | 第二层是产业打法：帮客户设计 AI Factory、网络配置、产能锁定、资金安排、未来几代升级，而且要在需求未确定时先承担风险 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美",
-          "url": "https://x.com/168X_Fortune/status/2123285026393731425",
-          "post_time": "2026-11-19T05:19:33+00:00"
         }
       ]
     },
