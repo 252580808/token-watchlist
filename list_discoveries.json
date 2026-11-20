@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T01:33:32.706444Z",
+  "generated_at": "2026-11-20T01:42:45.546404Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1398,
-    "blocked": 149,
-    "no_entry": 1122,
+    "posts_total": 1400,
+    "blocked": 148,
+    "no_entry": 1126,
     "events": 54,
-    "merged_posts": 73,
+    "merged_posts": 72,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 3
@@ -239,11 +239,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-13T01:40:03Z",
+      "first_seen_at": "2026-11-13T01:58:46Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83080,
-      "post_count": 19,
-      "representative_text": "onepump龙头定了 @onepumpcc 这个射出去应该能不低的市值吧 | | cc精选，上一个台子龙头也做到5m啊 | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a",
+      "post_count": 18,
+      "representative_text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 the citizen has a name. | | $JOSE is the first token ever launched on onepump. | | live now. keep digg",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -263,11 +263,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "onepump龙头定了 @onepumpcc 这个射出去应该能不低的市值吧 | | cc精选，上一个台子龙头也做到5m啊 | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a",
-          "url": "https://x.com/Mojito_cx/status/2121055459956461822",
-          "post_time": "2026-11-13T01:40:03+00:00"
-        },
         {
           "text": "onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a x.com/SkyAAmen/status/2121060169564258786/photo/1 th",
           "url": "https://x.com/SkyAAmen/status/2121060169564258786",
@@ -302,6 +297,11 @@
           "text": "这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-188959172947",
           "url": "https://x.com/Mojito_cx/status/2121250771757084705",
           "post_time": "2026-11-13T14:36:09+00:00"
+        },
+        {
+          "text": "$cpepe 其实才是 @onepumpcc 的第一枚认证代币 他是官方最早部署 不知道什么原因一直没有发射的代币 | | 有强大的社区 以及官方预告里都有提到 可能因为昨天有人抢跑 导致官方没有及时发送它 | | 现在不要再错过了 onepump的龙头 这个应该是新台子龙头 | | www.oneswap.cc/launchpad/token/0fa0c779-ccfb-5290-bdde-18",
+          "url": "https://x.com/Mojito_cx/status/2121253209566216488",
+          "post_time": "2026-11-13T14:45:50+00:00"
         }
       ]
     },
