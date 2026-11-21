@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T21:14:15.699963Z",
+  "generated_at": "2026-11-21T21:23:05.155065Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1275,
+    "posts_total": 1274,
     "blocked": 78,
     "no_entry": 1111,
-    "events": 47,
+    "events": 46,
     "merged_posts": 39,
     "terms_failed": 0,
     "today_events": 1,
@@ -1797,41 +1797,6 @@
           "text": "看空cuda快半年，三个月前转空btc | | 希望对大家避过这一波有一点点帮助 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.c",
           "url": "https://x.com/rickawsb/status/2121773443184304151",
           "post_time": "2026-11-15T01:13:04+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:hero-sms.com",
-      "identity": "domain:hero-sms.com",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T21:15:00Z",
-      "last_seen_at": "2026-11-14T21:15:00Z",
-      "window_bucket": 83087,
-      "post_count": 1,
-      "representative_text": "还有人找不到接码平台？全球50个短信接码平台集合，前几个最常用，大家可以收藏一下 | | SMS-Activate：hero-sms.com | 5Sim：5sim.net/zh | SMS-Man：sms-man.com | Tiger-SMS：tiger-sms.com | PingMe：pingme.tel | SMSSir：smssir.com x.com/WY_mask/status/2121713532500598793/photo/1 生成地址证明平台集合，可过一些打新平台的KYC，但是也和运气有关，现在很多卡的比较严格过不去 | | 1、账单地址生成 | 1stbills.co",
-      "keywords": "[\"高:新平台\"]",
-      "tweet_url": "https://x.com/WY_mask/status/2121713532500598793",
-      "author": "WY_mask",
-      "author_name": "无颜",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 94527,
-      "blue_verified": true,
-      "listed_count": 2276,
-      "reg_at": "Thu Sep 08 12:31:26 +0000 2022",
-      "views": "153",
-      "samples": [
-        {
-          "text": "还有人找不到接码平台？全球50个短信接码平台集合，前几个最常用，大家可以收藏一下 | | SMS-Activate：hero-sms.com | 5Sim：5sim.net/zh | SMS-Man：sms-man.com | Tiger-SMS：tiger-sms.com | PingMe：pingme.tel | SMSSir：smssir.com x.com/WY_mask/status/2",
-          "url": "https://x.com/WY_mask/status/2121713532500598793",
-          "post_time": "2026-11-14T21:15:00+00:00"
         }
       ]
     }
