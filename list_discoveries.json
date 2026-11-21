@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T08:47:06.673372Z",
+  "generated_at": "2026-11-21T08:56:06.820474Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1301,
+    "posts_total": 1300,
     "blocked": 88,
     "no_entry": 1118,
-    "events": 49,
+    "events": 48,
     "merged_posts": 46,
     "terms_failed": 0,
     "today_events": 1,
@@ -1897,41 +1897,6 @@
           "text": "🚀 Agent Life 正式上线 BNB Chain！ | | 你收班，Agent 上岗 🤖 | | Mint $ALIFE → 铸造 Life Card → 交给你的 AI Agent 工作、学习、开店 | | 从洗碗工 → 外卖员 → 的士司机 → 地摊主 → BOSS 💼 | | 现在就去 Mint：agentlife.fun/mint | | #BNBChain #DeFAI #Agen",
           "url": "https://x.com/BTCfuyao/status/2121575056664932646",
           "post_time": "2026-11-14T12:04:45+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:flap.sh",
-      "identity": "domain:flap.sh",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-14T08:54:03Z",
-      "last_seen_at": "2026-11-14T08:54:03Z",
-      "window_bucket": 83085,
-      "post_count": 1,
-      "representative_text": "Flap — The Programmable Token Launchpad | 打了点https://flap.sh/apps/mintai?lang=zh",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/fhaddad39/status/2121527066067890242",
-      "author": "fhaddad39",
-      "author_name": "悟空",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 186,
-      "blue_verified": true,
-      "listed_count": 4,
-      "reg_at": "Tue Feb 12 22:34:42 +0000 2013",
-      "views": "20",
-      "samples": [
-        {
-          "text": "Flap — The Programmable Token Launchpad | 打了点https://flap.sh/apps/mintai?lang=zh",
-          "url": "https://x.com/fhaddad39/status/2121527066067890242",
-          "post_time": "2026-11-14T08:54:03+00:00"
         }
       ]
     }
