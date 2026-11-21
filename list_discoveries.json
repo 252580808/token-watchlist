@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T11:29:10.974302Z",
+  "generated_at": "2026-11-21T11:38:11.850550Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1290,
+    "posts_total": 1289,
     "blocked": 86,
     "no_entry": 1111,
     "events": 49,
-    "merged_posts": 44,
+    "merged_posts": 43,
     "terms_failed": 0,
     "today_events": 2,
     "today_pushed": 6
@@ -458,12 +458,12 @@
     {
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T11:37:53Z",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-16T05:11:36Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
-      "window_bucket": 83085,
-      "post_count": 8,
-      "representative_text": "实在没啥玩的了😭 | | 刚在CC链上了点彩票，创始人发了三个币都还卡着没发射 | | @onepumpcc @Oneswapcc 能不能给点力啊 | oneswap.cc 跨链蹲着等起飞 🌱 x.com/guoxf23/status/2121568298756436229/photo/1",
+      "window_bucket": 83092,
+      "post_count": 7,
+      "representative_text": "这个行情能不断保持新高的不多了，本月第一个alphacall，含金量如何？ | 63k--380k--6x | | canton链的背景是相当豪华的，只是玩的人少 | 爆发起来不比任何一个公链差 | @onepumpcc @JoseOnCanton | #canton x.com/SkyAAmen/status/2122195863066046529/photo/1 onepump作为canton上的官方发射台，这是唯一一个得到官方认证的代币，这个台子得到了bn实验室的投资。 | | 基本上名牌了这个代币--目前63k | www.oneswap.cc/launchpad/token/42f8",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -483,11 +483,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "实在没啥玩的了😭 | | 刚在CC链上了点彩票，创始人发了三个币都还卡着没发射 | | @onepumpcc @Oneswapcc 能不能给点力啊 | oneswap.cc 跨链蹲着等起飞 🌱 x.com/guoxf23/status/2121568298756436229/photo/1",
-          "url": "https://x.com/guoxf23/status/2121568298756436229",
-          "post_time": "2026-11-14T11:37:53+00:00"
-        },
         {
           "text": "这个行情能不断保持新高的不多了，本月第一个alphacall，含金量如何？ | 63k--380k--6x | | canton链的背景是相当豪华的，只是玩的人少 | 爆发起来不比任何一个公链差 | @onepumpcc @JoseOnCanton | #canton x.com/SkyAAmen/status/2122195863066046529/photo/1 onepump作为canton",
           "url": "https://x.com/SkyAAmen/status/2122195863066046529",
