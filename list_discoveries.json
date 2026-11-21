@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T07:44:12.484639Z",
+  "generated_at": "2026-11-21T07:53:10.594890Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1307,
+    "posts_total": 1305,
     "blocked": 90,
-    "no_entry": 1121,
-    "events": 50,
+    "no_entry": 1120,
+    "events": 49,
     "merged_posts": 46,
     "terms_failed": 0,
     "today_events": 1,
@@ -1932,41 +1932,6 @@
           "text": "Flap — The Programmable Token Launchpad | 打了点https://flap.sh/apps/mintai?lang=zh",
           "url": "https://x.com/fhaddad39/status/2121527066067890242",
           "post_time": "2026-11-14T08:54:03+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:xiaoyuzhoufm.com",
-      "identity": "domain:xiaoyuzhoufm.com",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-14T07:49:54Z",
-      "last_seen_at": "2026-11-14T07:49:54Z",
-      "window_bucket": 83085,
-      "post_count": 1,
-      "representative_text": "尝试建立一个Something 俱乐部 | | 有打新、TapeOut电路、CA乱飞、公共、公告等子群 | | 俱乐部每天会罗列一些优质的推文，提升时间线质量，和社区伙伴一起互相激发，互相唤醒 | | 比较特别是有一个“觉察内心”的子群 | | 在币圈，K线、噪音、涨跌，很容易挤占内心 | | 焦虑、内耗，是因为我们没有安心 x.com/something_labs/status/2121510924473466968/photo/1 假如鱼神的18分钟演讲，觉得太精彩但是又偏短不够看 | | 可以听孟岩和李继刚，超过3小时的对话 | | 里面非常多底层的洞见 | | 全程无快进，一秒不浪费听",
-      "keywords": "[\"高:打新\"]",
-      "tweet_url": "https://x.com/something_labs/status/2121510924473466968",
-      "author": "something_labs",
-      "author_name": "新东西|Something",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "1",
-      "ent_level": "C",
-      "reason": "命中关键词 + 入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[\"ca\"]",
-      "followers": 3408,
-      "blue_verified": true,
-      "listed_count": 65,
-      "reg_at": "Tue Apr 28 21:14:34 +0000 2026",
-      "views": "85",
-      "samples": [
-        {
-          "text": "尝试建立一个Something 俱乐部 | | 有打新、TapeOut电路、CA乱飞、公共、公告等子群 | | 俱乐部每天会罗列一些优质的推文，提升时间线质量，和社区伙伴一起互相激发，互相唤醒 | | 比较特别是有一个“觉察内心”的子群 | | 在币圈，K线、噪音、涨跌，很容易挤占内心 | | 焦虑、内耗，是因为我们没有安心 x.com/something_labs/status/21215109",
-          "url": "https://x.com/something_labs/status/2121510924473466968",
-          "post_time": "2026-11-14T07:49:54+00:00"
         }
       ]
     }
