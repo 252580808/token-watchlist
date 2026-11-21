@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T14:02:17.205973Z",
+  "generated_at": "2026-11-21T14:11:13.616256Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1281,
+    "posts_total": 1280,
     "blocked": 84,
     "no_entry": 1109,
-    "events": 48,
+    "events": 47,
     "merged_posts": 40,
     "terms_failed": 0,
     "today_events": 2,
@@ -1837,41 +1837,6 @@
           "text": "absolutely fucking based. | | working solana memefork mainnet, bridge, wallet, native launchpad, and now developer SDK so we can build whatever we want there. | | @toly check it out, this is what gorb",
           "url": "https://x.com/YokaiCapital/status/2121685701796184371",
           "post_time": "2026-11-14T19:24:24+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:btc-agent.fun",
-      "identity": "domain:btc-agent.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T14:04:07Z",
-      "last_seen_at": "2026-11-14T14:04:07Z",
-      "window_bucket": 83086,
-      "post_count": 1,
-      "representative_text": "尼玛这么快的吗 好像就抢到一张免费的 | | 进度有点快啊 风险自辨了老师们！ x.com/kuk47377341/status/2121605097788789163/photo/1 10点agent抢下这个免费的。只有210份哦 | | 付费的话 看进度情况吧 | | 看到btc的还是有点慌 因为第一个跑路的就是跟btc有关🥲 | | 链接：btc-agent.fun/#mint x.com/kuk47377341/status/2121587683546075355/photo/1",
-      "keywords": "[\"高:Agent mint\", \"高:第一个\"]",
-      "tweet_url": "https://x.com/kuk47377341/status/2121605097788789163",
-      "author": "kuk47377341",
-      "author_name": "Kithe",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 22682,
-      "blue_verified": true,
-      "listed_count": 183,
-      "reg_at": "Wed Nov 16 09:09:50 +0000 2022",
-      "views": null,
-      "samples": [
-        {
-          "text": "尼玛这么快的吗 好像就抢到一张免费的 | | 进度有点快啊 风险自辨了老师们！ x.com/kuk47377341/status/2121605097788789163/photo/1 10点agent抢下这个免费的。只有210份哦 | | 付费的话 看进度情况吧 | | 看到btc的还是有点慌 因为第一个跑路的就是跟btc有关🥲 | | 链接：btc-agent.fun/#mint x.com/",
-          "url": "https://x.com/kuk47377341/status/2121605097788789163",
-          "post_time": "2026-11-14T14:04:07+00:00"
         }
       ]
     }
