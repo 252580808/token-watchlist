@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T01:44:05.936100Z",
+  "generated_at": "2026-11-21T01:53:10.162178Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1309,
+    "posts_total": 1305,
     "blocked": 89,
-    "no_entry": 1120,
+    "no_entry": 1117,
     "events": 53,
-    "merged_posts": 47,
+    "merged_posts": 46,
     "terms_failed": 0,
     "today_events": 0,
     "today_pushed": 0
@@ -1374,11 +1374,11 @@
       "event_id": "article:2120065383369674752",
       "identity": "article:2120065383369674752",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-14T01:45:54Z",
+      "first_seen_at": "2026-11-14T10:23:34Z",
       "last_seen_at": "2026-11-16T04:41:41Z",
-      "window_bucket": 83084,
-      "post_count": 5,
-      "representative_text": "“电力分散，光通信的机会还在，但 Lumentum 已经不是原来的交易 | 一个地方很难一次拿到几 GW 电力，要考虑建多个小型数据中心再连接起来 | 分散之后，机房之间的延迟和连接能力变得很重要，尤其是训练 | 除了 Scale-up、Scale-out，还有 Scale-across：不同数据中心之间协同 | 这是我关注 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研",
+      "window_bucket": 83085,
+      "post_count": 4,
+      "representative_text": "“Intel 为什么被我从抄底名单移出？ | 当时吸引我的，是先进制程和先进封装可能有突破，未来有机会不只靠政策支持 | 但后面的财报让我很失望，选举后市场对政策支持路径的预期也变了 | EMIB 封装良率的讨论增加了不确定性，我不会把听来的良率数字当成已核实的事实 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/r",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2122188332813701485",
       "author": "168X_Fortune",
@@ -1398,11 +1398,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "197",
       "samples": [
-        {
-          "text": "“电力分散，光通信的机会还在，但 Lumentum 已经不是原来的交易 | 一个地方很难一次拿到几 GW 电力，要考虑建多个小型数据中心再连接起来 | 分散之后，机房之间的延迟和连接能力变得很重要，尤其是训练 | 除了 Scale-up、Scale-out，还有 Scale-across：不同数据中心之间协同 | 这是我关注 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美",
-          "url": "https://x.com/168X_Fortune/status/2121419321197166771",
-          "post_time": "2026-11-14T01:45:54+00:00"
-        },
         {
           "text": "“Intel 为什么被我从抄底名单移出？ | 当时吸引我的，是先进制程和先进封装可能有突破，未来有机会不只靠政策支持 | 但后面的财报让我很失望，选举后市场对政策支持路径的预期也变了 | EMIB 封装良率的讨论增加了不确定性，我不会把听来的良率数字当成已核实的事实 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
           "url": "https://x.com/168X_Fortune/status/2121549594026975678",
