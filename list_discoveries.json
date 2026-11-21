@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T05:02:25.465771Z",
+  "generated_at": "2026-11-21T05:11:14.769735Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1302,
+    "posts_total": 1300,
     "blocked": 89,
-    "no_entry": 1114,
-    "events": 53,
+    "no_entry": 1113,
+    "events": 52,
     "merged_posts": 46,
     "terms_failed": 0,
     "today_events": 1,
@@ -2037,41 +2037,6 @@
           "text": "浅浅刷了一天 42 Space，就冲到了周榜前20，跟群友比其实差距很大，没有赶在头几天刷已经来不及拍大腿了， | 第一周全网仅578人瓜分 @42space 头矿积分，你知道这意味着什么，我预计本周参与人数起码要突破1500人，接下来积分会越来越卷！ | | 现在安装 @openclawby 的skill或者使用Binance Agent Wallet x.com/FokLouis144/sta",
           "url": "https://x.com/FokLouis144/status/2121476129232142763",
           "post_time": "2026-11-14T05:31:38+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:zro.fun",
-      "identity": "domain:zro.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T05:08:31Z",
-      "last_seen_at": "2026-11-14T05:08:31Z",
-      "window_bucket": 83084,
-      "post_count": 1,
-      "representative_text": "Memes meet $ZRO. | | ZRO.FUN is building a $ZRO-paired meme launchpad on Zero. I’m here before the first launch. | | zro.fun | #ZRO #LayerZero",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/aiqiang888/status/2121470310751039831",
-      "author": "aiqiang888",
-      "author_name": "记得爱强",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 19543,
-      "blue_verified": true,
-      "listed_count": 169,
-      "reg_at": "Tue Aug 28 09:58:29 +0000 2012",
-      "views": "167",
-      "samples": [
-        {
-          "text": "Memes meet $ZRO. | | ZRO.FUN is building a $ZRO-paired meme launchpad on Zero. I’m here before the first launch. | | zro.fun | #ZRO #LayerZero",
-          "url": "https://x.com/aiqiang888/status/2121470310751039831",
-          "post_time": "2026-11-14T05:08:31+00:00"
         }
       ]
     }
