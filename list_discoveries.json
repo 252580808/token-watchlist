@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T09:32:18.231522Z",
+  "generated_at": "2026-11-21T09:41:14.243316Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -7,12 +7,12 @@
     "enabled": 1,
     "posts_total": 1296,
     "blocked": 88,
-    "no_entry": 1113,
+    "no_entry": 1114,
     "events": 49,
-    "merged_posts": 46,
+    "merged_posts": 45,
     "terms_failed": 0,
     "today_events": 2,
-    "today_pushed": 3
+    "today_pushed": 4
   },
   "events": [
     {
@@ -458,12 +458,12 @@
     {
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-14T09:35:10Z",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-14T11:37:53Z",
       "last_seen_at": "2026-11-19T00:25:14Z",
       "window_bucket": 83085,
-      "post_count": 9,
-      "representative_text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc/launchpad/token/8c3fd77c-75a7-5be4-955f-07c7da397eb5",
+      "post_count": 8,
+      "representative_text": "实在没啥玩的了😭 | | 刚在CC链上了点彩票，创始人发了三个币都还卡着没发射 | | @onepumpcc @Oneswapcc 能不能给点力啊 | oneswap.cc 跨链蹲着等起飞 🌱 x.com/guoxf23/status/2121568298756436229/photo/1",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/into9966/status/2123210959565258935",
       "author": "into9966",
@@ -483,11 +483,6 @@
       "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
       "views": "4",
       "samples": [
-        {
-          "text": "这哥们在One Pump上发了一个Meme Coin @YessahBlessahCC $Yessah | | Canton上的Meme Coin有几个特别的地方： | 1，没有MEV； | 2，单次Swap挺贵，但考虑没有mev可能也就还好； | 3，交易有奖励； | 4，奖励可以回购代币或者奖励补贴Swap这种方式； | | 😂 NFA ，我也是被安利的。 | | www.oneswap.cc",
-          "url": "https://x.com/drjingle/status/2121537412719612092",
-          "post_time": "2026-11-14T09:35:10+00:00"
-        },
         {
           "text": "实在没啥玩的了😭 | | 刚在CC链上了点彩票，创始人发了三个币都还卡着没发射 | | @onepumpcc @Oneswapcc 能不能给点力啊 | oneswap.cc 跨链蹲着等起飞 🌱 x.com/guoxf23/status/2121568298756436229/photo/1",
           "url": "https://x.com/guoxf23/status/2121568298756436229",
@@ -522,6 +517,11 @@
           "text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: ",
           "url": "https://x.com/into9966/status/2122815694136058294",
           "post_time": "2026-11-17T22:14:36+00:00"
+        },
+        {
+          "text": "＃Canton 传奇刚刚开篇， $JOSE 便是这场史诗行情的领路先锋！🚀 | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱创建账号，输入十位密码，填写自己的用户名即可注册完成。 | 2、注册完成后，在钱包准备eth、BNB都可以，链接钱包，完成跨链换成CC。 | www.oneswap.cc/launchpad/token/42f8bd78-b674-53",
+          "url": "https://x.com/into9966/status/2123210959565258935",
+          "post_time": "2026-11-19T00:25:14+00:00"
         }
       ]
     },
