@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T10:17:13.160839Z",
+  "generated_at": "2026-11-21T10:26:11.568608Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1295,
+    "posts_total": 1293,
     "blocked": 88,
-    "no_entry": 1113,
+    "no_entry": 1112,
     "events": 49,
-    "merged_posts": 45,
+    "merged_posts": 44,
     "terms_failed": 0,
     "today_events": 2,
     "today_pushed": 5
@@ -1444,11 +1444,11 @@
       "event_id": "article:2120065383369674752",
       "identity": "article:2120065383369674752",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-14T10:23:34Z",
+      "first_seen_at": "2026-11-14T22:53:01Z",
       "last_seen_at": "2026-11-16T04:41:41Z",
-      "window_bucket": 83085,
-      "post_count": 4,
-      "representative_text": "“Intel 为什么被我从抄底名单移出？ | 当时吸引我的，是先进制程和先进封装可能有突破，未来有机会不只靠政策支持 | 但后面的财报让我很失望，选举后市场对政策支持路径的预期也变了 | EMIB 封装良率的讨论增加了不确定性，我不会把听来的良率数字当成已核实的事实 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/r",
+      "window_bucket": 83087,
+      "post_count": 3,
+      "representative_text": "“地面数据中心受限之后，太空算力会不会成为另一条路？ | 这听起来很远，也不是已经证明的唯一答案 | 但不只美国，其他地区对数据中心建设也有阻力，让我开始重新思考 | 吸引我的还有通信基础设施和其他业务，想象空间很大 | 估值贵我理解，这更多是个人偏好和产业想象，不是严密的估值模型 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2122188332813701485",
       "author": "168X_Fortune",
@@ -1468,11 +1468,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "197",
       "samples": [
-        {
-          "text": "“Intel 为什么被我从抄底名单移出？ | 当时吸引我的，是先进制程和先进封装可能有突破，未来有机会不只靠政策支持 | 但后面的财报让我很失望，选举后市场对政策支持路径的预期也变了 | EMIB 封装良率的讨论增加了不确定性，我不会把听来的良率数字当成已核实的事实 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
-          "url": "https://x.com/168X_Fortune/status/2121549594026975678",
-          "post_time": "2026-11-14T10:23:34+00:00"
-        },
         {
           "text": "“地面数据中心受限之后，太空算力会不会成为另一条路？ | 这听起来很远，也不是已经证明的唯一答案 | 但不只美国，其他地区对数据中心建设也有阻力，让我开始重新思考 | 吸引我的还有通信基础设施和其他业务，想象空间很大 | 估值贵我理解，这更多是个人偏好和产业想象，不是严密的估值模型 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USD",
           "url": "https://x.com/168X_Fortune/status/2121738200674885691",
