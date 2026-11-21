@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T13:26:26.489879Z",
+  "generated_at": "2026-11-21T13:35:27.175693Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1283,
+    "posts_total": 1282,
     "blocked": 85,
     "no_entry": 1108,
     "events": 48,
-    "merged_posts": 42,
+    "merged_posts": 41,
     "terms_failed": 0,
     "today_events": 2,
     "today_pushed": 6
@@ -1844,11 +1844,11 @@
       "event_id": "domain:btc-agent.fun",
       "identity": "domain:btc-agent.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T13:34:31Z",
+      "first_seen_at": "2026-11-14T13:36:07Z",
       "last_seen_at": "2026-11-14T14:04:07Z",
       "window_bucket": 83086,
-      "post_count": 3,
-      "representative_text": "⏰ Sắp mở mint｜BTC-Agent (btc-agent.fun) | | Dự án: Bitcoin bản Agent ID trên BNB Chain. Tổng 2.100 suất, mỗi suất 5.000 token, 1 suất/ví. | | Tham gia: mint mở 22:00 tối nay (14/11, giờ Bangkok). 210 suất đầu miễn phí, ai nhanh thì được. Hết free chuyển x.com/mrchrismast_/status/2121597647803003033/",
+      "post_count": 2,
+      "representative_text": "项目方现在是越来越随意了🤣 | | 10点的这个什么比特币 | | @BTCcoinAi 转推似乎好像没有删干净哦 | | 还是说项目方比较喜欢这种类型哈哈哈哈哈 x.com/kuk47377341/status/2121598050917568903/photo/1 10点agent抢下这个免费的。只有210份哦 | | 付费的话 看进度情况吧 | | 看到btc的还是有点慌 因为第一个跑路的就是跟btc有关🥲 | | 链接：btc-agent.fun/#mint x.com/kuk47377341/status/2121587683546075355/photo/1",
       "keywords": "[\"高:Agent mint\", \"高:第一个\"]",
       "tweet_url": "https://x.com/kuk47377341/status/2121605097788789163",
       "author": "kuk47377341",
@@ -1868,11 +1868,6 @@
       "reg_at": "Wed Nov 16 09:09:50 +0000 2022",
       "views": null,
       "samples": [
-        {
-          "text": "⏰ Sắp mở mint｜BTC-Agent (btc-agent.fun) | | Dự án: Bitcoin bản Agent ID trên BNB Chain. Tổng 2.100 suất, mỗi suất 5.000 token, 1 suất/ví. | | Tham gia: mint mở 22:00 tối nay (14/11, giờ Bangkok). 210 ",
-          "url": "https://x.com/mrchrismast_/status/2121597647803003033",
-          "post_time": "2026-11-14T13:34:31+00:00"
-        },
         {
           "text": "项目方现在是越来越随意了🤣 | | 10点的这个什么比特币 | | @BTCcoinAi 转推似乎好像没有删干净哦 | | 还是说项目方比较喜欢这种类型哈哈哈哈哈 x.com/kuk47377341/status/2121598050917568903/photo/1 10点agent抢下这个免费的。只有210份哦 | | 付费的话 看进度情况吧 | | 看到btc的还是有点慌 因为第一个跑路的就",
           "url": "https://x.com/kuk47377341/status/2121598050917568903",
