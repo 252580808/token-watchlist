@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T11:56:20.513855Z",
+  "generated_at": "2026-11-21T12:05:09.839624Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1289,
+    "posts_total": 1288,
     "blocked": 86,
     "no_entry": 1111,
-    "events": 49,
+    "events": 48,
     "merged_posts": 43,
     "terms_failed": 0,
     "today_events": 2,
@@ -1887,41 +1887,6 @@
           "text": "尼玛这么快的吗 好像就抢到一张免费的 | | 进度有点快啊 风险自辨了老师们！ x.com/kuk47377341/status/2121605097788789163/photo/1 10点agent抢下这个免费的。只有210份哦 | | 付费的话 看进度情况吧 | | 看到btc的还是有点慌 因为第一个跑路的就是跟btc有关🥲 | | 链接：btc-agent.fun/#mint x.com/",
           "url": "https://x.com/kuk47377341/status/2121605097788789163",
           "post_time": "2026-11-14T14:04:07+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:agentlife.fun",
-      "identity": "domain:agentlife.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-14T12:04:45Z",
-      "last_seen_at": "2026-11-14T12:04:45Z",
-      "window_bucket": 83086,
-      "post_count": 1,
-      "representative_text": "🚀 Agent Life 正式上线 BNB Chain！ | | 你收班，Agent 上岗 🤖 | | Mint $ALIFE → 铸造 Life Card → 交给你的 AI Agent 工作、学习、开店 | | 从洗碗工 → 外卖员 → 的士司机 → 地摊主 → BOSS 💼 | | 现在就去 Mint：agentlife.fun/mint | | #BNBChain #DeFAI #AgentLife #ALIFE",
-      "keywords": "[\"高:Agent mint\"]",
-      "tweet_url": "https://x.com/BTCfuyao/status/2121575056664932646",
-      "author": "BTCfuyao",
-      "author_name": "加密扶摇",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 23463,
-      "blue_verified": true,
-      "listed_count": 50,
-      "reg_at": "Sun Oct 05 12:54:24 +0000 2014",
-      "views": "19",
-      "samples": [
-        {
-          "text": "🚀 Agent Life 正式上线 BNB Chain！ | | 你收班，Agent 上岗 🤖 | | Mint $ALIFE → 铸造 Life Card → 交给你的 AI Agent 工作、学习、开店 | | 从洗碗工 → 外卖员 → 的士司机 → 地摊主 → BOSS 💼 | | 现在就去 Mint：agentlife.fun/mint | | #BNBChain #DeFAI #Agen",
-          "url": "https://x.com/BTCfuyao/status/2121575056664932646",
-          "post_time": "2026-11-14T12:04:45+00:00"
         }
       ]
     }
