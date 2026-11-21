@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-21T16:26:06.367379Z",
+  "generated_at": "2026-11-21T16:35:15.687637Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1284,
+    "posts_total": 1287,
     "blocked": 81,
-    "no_entry": 1116,
-    "events": 47,
+    "no_entry": 1118,
+    "events": 48,
     "merged_posts": 40,
     "terms_failed": 0,
-    "today_events": 0,
+    "today_events": 1,
     "today_pushed": 0
   },
   "events": [
+    {
+      "event_id": "domain:loloncanton.xyz",
+      "identity": "domain:loloncanton.xyz",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-21T16:24:49Z",
+      "last_seen_at": "2026-11-21T16:24:49Z",
+      "window_bucket": 83114,
+      "post_count": 1,
+      "representative_text": "$LOL Faces - One round face, a million expressions. A gallery of meme face drawings in the classic rage comic style — from full-on laughter to full-on rage — plus the story that inspired them.😂🚀 | | ✓ Website: www.loloncanton.xyz/ | ✓ Buy On Onepump : swap.oneswap.cc/launchpad/token/7d31b2ba-db86-5b",
+      "keywords": "[\"高:launchpad\"]",
+      "tweet_url": "https://x.com/pizzabasedev1x/status/2124177219685621974",
+      "author": "pizzabasedev1x",
+      "author_name": "bigfud.sol 🌱",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 6376,
+      "blue_verified": true,
+      "listed_count": 11,
+      "reg_at": "Tue Jul 08 22:43:50 +0000 2025",
+      "views": "27",
+      "samples": [
+        {
+          "text": "$LOL Faces - One round face, a million expressions. A gallery of meme face drawings in the classic rage comic style — from full-on laughter to full-on rage — plus the story that inspired them.😂🚀 | | ✓",
+          "url": "https://x.com/pizzabasedev1x/status/2124177219685621974",
+          "post_time": "2026-11-21T16:24:49+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:bunkbsc.com",
       "identity": "domain:bunkbsc.com",
