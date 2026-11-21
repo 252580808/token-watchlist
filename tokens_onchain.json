@@ -10,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-21 00:00",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 42854.29,
+    "liquidity_usd": 39172.77,
     "market_cap": 216708.0,
-    "holders": 988,
+    "holders": 989,
     "dev_count": 1,
     "dev_creator": "6FjMNwKGCAyXZB6GUidCtXRSrucsXMS1vx6NajvEw9n2",
     "gmgn_launchpad": "ray_launchpad",
@@ -24,8 +24,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 42854.285158627674,
-    "liq_ts": 1795300861,
+    "liq_now": 39172.769337042504,
+    "liq_ts": 1795301171,
     "liq_src": "GMGN"
   }
 ]
