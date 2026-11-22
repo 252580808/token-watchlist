@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-22T13:56:34.631557Z",
+  "generated_at": "2026-11-22T14:05:32.805068Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1215,
+    "posts_total": 1211,
     "blocked": 78,
-    "no_entry": 1061,
+    "no_entry": 1059,
     "events": 41,
-    "merged_posts": 35,
+    "merged_posts": 33,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 4
@@ -1109,11 +1109,11 @@
       "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T14:02:08Z",
+      "first_seen_at": "2026-11-15T14:09:56Z",
       "last_seen_at": "2026-11-17T10:18:30Z",
       "window_bucket": 83090,
-      "post_count": 9,
-      "representative_text": "fungolabs的创造者分配出来了兄弟们查 | | 传送门：fungolabs.org/launchpad/leaderboard | | 看看能不能吃到一顿猪脚饭啊 | | 我感觉是小毛我丢🥲看市值多少把 x.com/CandyDAO_leaf/status/2121966986917990704/photo/1 熊市兄弟们撸现金奖励吧 | | 真实发奖的，之前撸不少了🥲 | | JasperVault真不错啊，发不少钱",
+      "post_count": 7,
+      "representative_text": "Level 2, Ember Silver, 18 points on FungoLabs Launchpad fungolabs.org/launchpad/p/wen394428142129",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/wen394428142129/status/2122635483524243966",
       "author": "wen394428142129",
@@ -1133,16 +1133,6 @@
       "reg_at": "Sun Sep 29 01:54:41 +0000 2024",
       "views": "40",
       "samples": [
-        {
-          "text": "fungolabs的创造者分配出来了兄弟们查 | | 传送门：fungolabs.org/launchpad/leaderboard | | 看看能不能吃到一顿猪脚饭啊 | | 我感觉是小毛我丢🥲看市值多少把 x.com/CandyDAO_leaf/status/2121966986917990704/photo/1 熊市兄弟们撸现金奖励吧 | | 真实发奖的，之前撸不少了🥲 | | Jasper",
-          "url": "https://x.com/CandyDAO_leaf/status/2121966986917990704",
-          "post_time": "2026-11-15T14:02:08+00:00"
-        },
-        {
-          "text": "🔗：fungolabs.org/launchpad/leaderboard?view=x",
-          "url": "https://x.com/ETH116688/status/2121967301021041080",
-          "post_time": "2026-11-15T14:03:23+00:00"
-        },
         {
           "text": "Level 2, Ember Silver, 18 points on FungoLabs Launchpad fungolabs.org/launchpad/p/wen394428142129",
           "url": "https://x.com/wen394428142129/status/2121968951408443722",
@@ -1172,6 +1162,11 @@
           "text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
           "url": "https://x.com/wen394428142129/status/2122635201499234493",
           "post_time": "2026-11-17T10:17:23+00:00"
+        },
+        {
+          "text": "Captain Cat ($DM) | fungolabs.org/launchpad/c/pg6cwm83",
+          "url": "https://x.com/wen394428142129/status/2122635483524243966",
+          "post_time": "2026-11-17T10:18:30+00:00"
         }
       ]
     },
