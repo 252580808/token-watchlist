@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T06:53:35.789001Z",
+  "generated_at": "2026-11-22T07:02:31.273411Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1242,
+    "posts_total": 1240,
     "blocked": 79,
-    "no_entry": 1082,
-    "events": 44,
+    "no_entry": 1081,
+    "events": 43,
     "merged_posts": 37,
     "terms_failed": 0,
     "today_events": 1,
@@ -1682,41 +1682,6 @@
           "text": "💎 Mint mới｜PONKE ($PONKE) | | Dự án: Token fair-mint trên BNB Chain cho người giữ Binance Agent ID. Mỗi suất 27.300.000 PONKE, tổng cung cố định 450B, không presale. | | Tham gia: Suất free đã hết 555",
           "url": "https://x.com/mrchrismast_/status/2121885991971832114",
           "post_time": "2026-11-15T08:40:17+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:zxoxo.xyz",
-      "identity": "domain:zxoxo.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T06:57:46Z",
-      "last_seen_at": "2026-11-15T06:57:46Z",
-      "window_bucket": 83089,
-      "post_count": 1,
-      "representative_text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类型的 | | LayerZero to ZXOXO. Delivered. | | Signal 4,054. Packet G9DJ-9BJN. @zxoxocash | | zxoxo.xyz/c",
-      "keywords": "[\"高:新东西\"]",
-      "tweet_url": "https://x.com/aiqiang888/status/2121860192845631999",
-      "author": "aiqiang888",
-      "author_name": "记得爱强",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 19554,
-      "blue_verified": true,
-      "listed_count": 169,
-      "reg_at": "Tue Aug 28 09:58:29 +0000 2012",
-      "views": "171",
-      "samples": [
-        {
-          "text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类",
-          "url": "https://x.com/aiqiang888/status/2121860192845631999",
-          "post_time": "2026-11-15T06:57:46+00:00"
         }
       ]
     }
