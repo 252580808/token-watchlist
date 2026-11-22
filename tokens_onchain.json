@@ -10,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-22 02:56",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 39297.37,
+    "liquidity_usd": 39041.04,
     "market_cap": 226239.0,
-    "holders": 1599,
+    "holders": 1591,
     "dev_count": 1,
     "dev_creator": "A7HB4xzKdHEmd6JxyNwQtX6H74afCaAB4XqqxwW83ddJ",
     "gmgn_launchpad": "meteora_virtual_curve",
@@ -24,8 +24,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 39297.36795874944,
-    "liq_ts": 1795354261,
+    "liq_now": 39041.0386336246,
+    "liq_ts": 1795354566,
     "liq_src": "GMGN"
   },
   {
@@ -39,9 +39,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-22 00:43",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 12526.94,
+    "liquidity_usd": 12127.35,
     "market_cap": 0,
-    "holders": 184,
+    "holders": 181,
     "dev_count": 1,
     "dev_creator": "DtMdvLoBp1bLVZsU1uwzT31SLxjX8jBxGrtBc7MasHyo",
     "gmgn_launchpad": "Pump.fun",
@@ -53,8 +53,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 12526.941219123124,
-    "liq_ts": 1795354261,
+    "liq_now": 12127.35041951949,
+    "liq_ts": 1795354566,
     "liq_src": "GMGN"
   }
 ]
