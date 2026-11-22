@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T05:50:28.792219Z",
+  "generated_at": "2026-11-22T05:59:26.261372Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1254,
+    "posts_total": 1251,
     "blocked": 79,
-    "no_entry": 1092,
-    "events": 45,
+    "no_entry": 1090,
+    "events": 44,
     "merged_posts": 38,
     "terms_failed": 0,
     "today_events": 1,
@@ -1722,41 +1722,6 @@
           "text": "坏了，这个卷起来了 | | 现在这个可以买矿机进行挖矿了 | | 不过现在挖的都是测试币，没有价值 | | 我看有个人花了1000U买矿机，算力暴增 | | 这个项目现在已经收入不少了 | | 还得是尼玛创业啊！真赚钱！ x.com/aiqiang888/status/2121860192845631999/photo/1 Zero 主网要开了，新东西都注册注册吧 | | 看着像是链上声誉和挖矿类",
           "url": "https://x.com/aiqiang888/status/2121860192845631999",
           "post_time": "2026-11-15T06:57:46+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2121165118063157248",
-      "identity": "article:2121165118063157248",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-15T05:53:51Z",
-      "last_seen_at": "2026-11-15T05:53:51Z",
-      "window_bucket": 83088,
-      "post_count": 1,
-      "representative_text": "2022 年，在位于美国亚利桑那州台积电工厂开工典礼仪式上，远道而来的台积电创始人张忠谋并不开心，甚至显得悲伤 | | 他没为台积电打入美国市场而开心，而是淡淡说道，“Globalization is almost dead and free trade is almost dead.” | | 自由贸易已死，这是将一生奉献给半导体、台积电老将的悲鸣 x.com/zuoyeweb3/status/2121844105487757687/photo/1 x.com/i/article/2121165118063157248",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/zuoyeweb3/status/2121844105487757687",
-      "author": "zuoyeweb3",
-      "author_name": "佐爷",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 4460,
-      "blue_verified": true,
-      "listed_count": 117,
-      "reg_at": "Mon Jul 25 07:55:43 +0000 2022",
-      "views": "12",
-      "samples": [
-        {
-          "text": "2022 年，在位于美国亚利桑那州台积电工厂开工典礼仪式上，远道而来的台积电创始人张忠谋并不开心，甚至显得悲伤 | | 他没为台积电打入美国市场而开心，而是淡淡说道，“Globalization is almost dead and free trade is almost dead.” | | 自由贸易已死，这是将一生奉献给半导体、台积电老将的悲鸣 x.com/zuoyeweb3/status/",
-          "url": "https://x.com/zuoyeweb3/status/2121844105487757687",
-          "post_time": "2026-11-15T05:53:51+00:00"
         }
       ]
     }
