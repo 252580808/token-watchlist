@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-22T11:23:38.169065Z",
+  "generated_at": "2026-11-22T11:33:00.961397Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1233,
+    "posts_total": 1231,
     "blocked": 78,
     "no_entry": 1076,
     "events": 41,
-    "merged_posts": 38,
+    "merged_posts": 36,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 2
@@ -1109,11 +1109,11 @@
       "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T11:26:45Z",
+      "first_seen_at": "2026-11-15T12:26:27Z",
       "last_seen_at": "2026-11-17T10:18:30Z",
-      "window_bucket": 83089,
-      "post_count": 12,
-      "representative_text": "Cỡ này bú được 10$ ko các khầy. 🤣🤣🤣 | | Anh em check hết chưa, chúa tể scam hả ae 🤣🤣🤣 | | Ko chỉnh chu bài viết và viết trong 2 ngày 5 bài cho nhiêu thì cũng thank you, mà cho ít quá là có chiện. 🤣🤣 | | Link check: fungolabs.org/launchpad/leaderboard?view=x x.com/mrchrismast_/status/2121927883891601",
+      "window_bucket": 83090,
+      "post_count": 10,
+      "representative_text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/wen394428142129/status/2122635483524243966",
       "author": "wen394428142129",
@@ -1133,16 +1133,6 @@
       "reg_at": "Sun Sep 29 01:54:41 +0000 2024",
       "views": "40",
       "samples": [
-        {
-          "text": "Cỡ này bú được 10$ ko các khầy. 🤣🤣🤣 | | Anh em check hết chưa, chúa tể scam hả ae 🤣🤣🤣 | | Ko chỉnh chu bài viết và viết trong 2 ngày 5 bài cho nhiêu thì cũng thank you, mà cho ít quá là có chiện. 🤣🤣 |",
-          "url": "https://x.com/mrchrismast_/status/2121927883891601580",
-          "post_time": "2026-11-15T11:26:45+00:00"
-        },
-        {
-          "text": "0 points on FungoLabs Launchpad fungolabs.org/launchpad/p/Yiyixmb",
-          "url": "https://x.com/Yiyixmb/status/2121928786992414942",
-          "post_time": "2026-11-15T11:30:21+00:00"
-        },
         {
           "text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
           "url": "https://x.com/kuk47377341/status/2121942907032867181",
@@ -1172,6 +1162,16 @@
           "text": "I earned the 5 Badges badge on FungoLabs Launchpad fungolabs.org/launchpad/p/ElvieEvon67457",
           "url": "https://x.com/ElvieEvon67457/status/2121972981459038489",
           "post_time": "2026-11-15T14:25:57+00:00"
+        },
+        {
+          "text": "2/3. Tiny worlds in pixel space | fungolabs.org/launchpad/c/nvs5bw7x",
+          "url": "https://x.com/Kangzi_VC/status/2122208612571631692",
+          "post_time": "2026-11-16T06:02:16+00:00"
+        },
+        {
+          "text": "最烦的事儿就是： | 你期待很久的项目要空投了，大盘开始阴跌了 | ▪️Extended 的代币盘前跌破 0.2 | ▪️Variational 年底之前空投概率跌到了 66% | 虽然对他俩信心很足，但看数据还是会心烦🙃 x.com/zaijin338191/status/2122217853978092002/photo/1 打了 @FungoLabs 的兄弟可以去开箱子 | 有群友已经开出 ",
+          "url": "https://x.com/zaijin338191/status/2122217853978092002",
+          "post_time": "2026-11-16T06:38:59+00:00"
         }
       ]
     },
