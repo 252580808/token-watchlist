@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T08:32:34.291845Z",
+  "generated_at": "2026-11-22T08:41:32.404338Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1234,
+    "posts_total": 1233,
     "blocked": 79,
     "no_entry": 1075,
-    "events": 43,
+    "events": 42,
     "merged_posts": 37,
     "terms_failed": 0,
     "today_events": 1,
@@ -1647,41 +1647,6 @@
           "text": "黄仁勋已经被逼下台，卷入风暴的 Megaspeed 终于开口了。而它给出的第一个事实，可能让整场舆论风暴的时间线变得更加耐人寻味。 | | 据路透和 CNBC 报道，Megaspeed 首次正式回应： | | Alice Huang 早在 2025 年 8 月 30 日就已离职，目前与公司不存在任何职务关系。 | | 对于 Alice Megaspeed says Alice Huang left",
           "url": "https://x.com/sleepy0x13/status/2121916623938572435",
           "post_time": "2026-11-15T10:42:01+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:agmask.org",
-      "identity": "domain:agmask.org",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T08:40:17Z",
-      "last_seen_at": "2026-11-15T08:40:17Z",
-      "window_bucket": 83089,
-      "post_count": 1,
-      "representative_text": "💎 Mint mới｜PONKE ($PONKE) | | Dự án: Token fair-mint trên BNB Chain cho người giữ Binance Agent ID. Mỗi suất 27.300.000 PONKE, tổng cung cố định 450B, không presale. | | Tham gia: Suất free đã hết 555/555. Chỉ còn suất trả phí 0,002 BNB/suất, mỗi Agent ID tối đa 10 x.com/mrchrismast_/status/21218859",
-      "keywords": "[\"高:Agent mint\", \"高:fair mint\"]",
-      "tweet_url": "https://x.com/mrchrismast_/status/2121885991971832114",
-      "author": "mrchrismast_",
-      "author_name": "Mr. Chrismast",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 31414,
-      "blue_verified": true,
-      "listed_count": 58,
-      "reg_at": "Sun Oct 08 03:22:38 +0000 2023",
-      "views": "170",
-      "samples": [
-        {
-          "text": "💎 Mint mới｜PONKE ($PONKE) | | Dự án: Token fair-mint trên BNB Chain cho người giữ Binance Agent ID. Mỗi suất 27.300.000 PONKE, tổng cung cố định 450B, không presale. | | Tham gia: Suất free đã hết 555",
-          "url": "https://x.com/mrchrismast_/status/2121885991971832114",
-          "post_time": "2026-11-15T08:40:17+00:00"
         }
       ]
     }
