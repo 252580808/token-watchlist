@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-22T05:59:26.261372Z",
+  "generated_at": "2026-11-22T06:08:38.865912Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1251,
+    "posts_total": 1249,
     "blocked": 79,
-    "no_entry": 1090,
+    "no_entry": 1089,
     "events": 44,
-    "merged_posts": 38,
+    "merged_posts": 37,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 2
@@ -1514,11 +1514,11 @@
       "event_id": "domain:onlystreets.fun",
       "identity": "domain:onlystreets.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T06:04:31Z",
+      "first_seen_at": "2026-11-16T04:24:09Z",
       "last_seen_at": "2026-11-16T04:24:09Z",
-      "window_bucket": 83089,
-      "post_count": 2,
-      "representative_text": "@onlystreetsfun 是 Solana 上的一个发币平台，想把现实生活中的瞬间带上链，用不同的方式创作 meme 币 | | 发币流程分四步：在现实中看到好笑、奇怪或有意思的东西，用 OnlyStreets 的 App 内相机拍下来，起名字和 ticker，然后当场发币 | | 币发出来后，任何人都能发现、买卖和分享 | 卷起来！ onlystreets.fun is coming soon on Solana. | | A one-of-a-kind launchpad for coins born from real-life moments. | | Every coin st",
+      "window_bucket": 83092,
+      "post_count": 1,
+      "representative_text": "OnlyStreets 是一个即将上线的 Solana 链上 memecoin 发射平台 | | 它的最大特点是：每个币必须从应用内实时拍摄的照片开始 | | 不能从相册上传、截图、网络图片或库存图。只有你在街上亲眼看到并当场用 App 相机拍下来的瞬间，才能变成代币 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and launch a c",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/yingge001/status/2122183922041974799",
       "author": "yingge001",
@@ -1538,11 +1538,6 @@
       "reg_at": "Tue Feb 27 14:09:15 +0000 2024",
       "views": "22",
       "samples": [
-        {
-          "text": "@onlystreetsfun 是 Solana 上的一个发币平台，想把现实生活中的瞬间带上链，用不同的方式创作 meme 币 | | 发币流程分四步：在现实中看到好笑、奇怪或有意思的东西，用 OnlyStreets 的 App 内相机拍下来，起名字和 ticker，然后当场发币 | | 币发出来后，任何人都能发现、买卖和分享 | 卷起来！ onlystreets.fun is coming so",
-          "url": "https://x.com/yingge001/status/2121846788357554290",
-          "post_time": "2026-11-15T06:04:31+00:00"
-        },
         {
           "text": "OnlyStreets 是一个即将上线的 Solana 链上 memecoin 发射平台 | | 它的最大特点是：每个币必须从应用内实时拍摄的照片开始 | | 不能从相册上传、截图、网络图片或库存图。只有你在街上亲眼看到并当场用 App 相机拍下来的瞬间，才能变成代币 Introducing onlystreets.fun | | A Solana launchpad for fresh auth",
           "url": "https://x.com/yingge001/status/2122183922041974799",
