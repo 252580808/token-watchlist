@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-22T12:17:26.519846Z",
+  "generated_at": "2026-11-22T12:26:39.641566Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1225,
+    "posts_total": 1223,
     "blocked": 78,
-    "no_entry": 1070,
+    "no_entry": 1069,
     "events": 41,
-    "merged_posts": 36,
+    "merged_posts": 35,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 3
@@ -1109,11 +1109,11 @@
       "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-15T12:26:27Z",
+      "first_seen_at": "2026-11-15T14:02:08Z",
       "last_seen_at": "2026-11-17T10:18:30Z",
       "window_bucket": 83090,
-      "post_count": 10,
-      "representative_text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
+      "post_count": 9,
+      "representative_text": "fungolabs的创造者分配出来了兄弟们查 | | 传送门：fungolabs.org/launchpad/leaderboard | | 看看能不能吃到一顿猪脚饭啊 | | 我感觉是小毛我丢🥲看市值多少把 x.com/CandyDAO_leaf/status/2121966986917990704/photo/1 熊市兄弟们撸现金奖励吧 | | 真实发奖的，之前撸不少了🥲 | | JasperVault真不错啊，发不少钱",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/wen394428142129/status/2122635483524243966",
       "author": "wen394428142129",
@@ -1133,11 +1133,6 @@
       "reg_at": "Sun Sep 29 01:54:41 +0000 2024",
       "views": "40",
       "samples": [
-        {
-          "text": "fungolabs的嘴撸排行榜出来啦 | | 发了几篇来着忘记了 排名我看是138 | | 发过的去瞅瞅：fungolabs.org/launchpad/leaderboard?view=x x.com/kuk47377341/status/2121942907032867181/photo/1",
-          "url": "https://x.com/kuk47377341/status/2121942907032867181",
-          "post_time": "2026-11-15T12:26:27+00:00"
-        },
         {
           "text": "fungolabs的创造者分配出来了兄弟们查 | | 传送门：fungolabs.org/launchpad/leaderboard | | 看看能不能吃到一顿猪脚饭啊 | | 我感觉是小毛我丢🥲看市值多少把 x.com/CandyDAO_leaf/status/2121966986917990704/photo/1 熊市兄弟们撸现金奖励吧 | | 真实发奖的，之前撸不少了🥲 | | Jasper",
           "url": "https://x.com/CandyDAO_leaf/status/2121966986917990704",
@@ -1172,6 +1167,11 @@
           "text": "最烦的事儿就是： | 你期待很久的项目要空投了，大盘开始阴跌了 | ▪️Extended 的代币盘前跌破 0.2 | ▪️Variational 年底之前空投概率跌到了 66% | 虽然对他俩信心很足，但看数据还是会心烦🙃 x.com/zaijin338191/status/2122217853978092002/photo/1 打了 @FungoLabs 的兄弟可以去开箱子 | 有群友已经开出 ",
           "url": "https://x.com/zaijin338191/status/2122217853978092002",
           "post_time": "2026-11-16T06:38:59+00:00"
+        },
+        {
+          "text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
+          "url": "https://x.com/wen394428142129/status/2122635201499234493",
+          "post_time": "2026-11-17T10:17:23+00:00"
         }
       ]
     },
