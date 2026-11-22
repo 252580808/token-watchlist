@@ -1,5 +1,34 @@
 [
   {
+    "ca": "2tHu2hyTFRVKTnmLPeadN2xivajbwsYeCWV7rQzKSYNC",
+    "chain": "sol",
+    "name": "Mem Sync",
+    "symbol": "MEMSYNC",
+    "first_seen": "2026-11-22 18:11",
+    "created_at": "2026-11-23 02:11",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-22 18:11",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "liquidity_usd": 15155.33,
+    "market_cap": 38758.0,
+    "holders": 491,
+    "dev_count": 1,
+    "dev_creator": "AiRvNcnvLY4Gm5uqZpMUvX3Gwqr7Jy7cvK88mqGYvNHh",
+    "gmgn_launchpad": "Pump.fun",
+    "description": "Bidirectional project memory for Codex and Claude Code. by Claudia\n\nLaunched with notrandom.fun",
+    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知  Bidirectional project memory for Codex and Claude Code. by Claudia\n\nLaunched with notrandom.fun",
+    "twitter": "",
+    "website": "https://memsync.gallery/",
+    "telegram": "",
+    "twitter_dup": 0,
+    "image_dup": 0,
+    "creator_token_status": "",
+    "liq_now": 15155.327454606115,
+    "liq_ts": 1795371364,
+    "liq_src": "GMGN"
+  },
+  {
     "ca": "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor",
     "chain": "sol",
     "name": "SIDOOR",
@@ -25,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 33702.26497754636,
-    "liq_ts": 1795371066,
+    "liq_ts": 1795371364,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 10759.432452094316,
-    "liq_ts": 1795371066,
+    "liq_ts": 1795371364,
     "liq_src": "GMGN"
   }
 ]
