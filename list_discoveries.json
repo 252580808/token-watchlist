@@ -1,20 +1,70 @@
 {
-  "generated_at": "2026-11-22T10:38:30.122836Z",
+  "generated_at": "2026-11-22T10:47:34.519888Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1233,
-    "blocked": 79,
-    "no_entry": 1075,
-    "events": 42,
-    "merged_posts": 37,
+    "posts_total": 1234,
+    "blocked": 78,
+    "no_entry": 1077,
+    "events": 41,
+    "merged_posts": 38,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 2
   },
   "events": [
+    {
+      "event_id": "domain:oripa.xyz",
+      "identity": "domain:oripa.xyz",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-16T13:57:06Z",
+      "last_seen_at": "2026-11-22T10:37:37Z",
+      "window_bucket": 83094,
+      "post_count": 4,
+      "representative_text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
+      "keywords": "[\"高:头矿\"]",
+      "tweet_url": "https://x.com/Xuegaogx/status/2124452235350540754",
+      "author": "Xuegaogx",
+      "author_name": "雪糕战神🍦",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 32953,
+      "blue_verified": true,
+      "listed_count": 633,
+      "reg_at": "Sat Oct 07 03:03:07 +0000 2023",
+      "views": "135",
+      "samples": [
+        {
+          "text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @Hyp",
+          "url": "https://x.com/Mulight/status/2122328107734728957",
+          "post_time": "2026-11-16T13:57:06+00:00"
+        },
+        {
+          "text": "跟着搞 @oripaxyz 头矿 | | 简单来说就是 抽卡版的Papertrade，11/25之前整WL，12/2公开参与回合 | | 嘿嘿有点晚了 明天写个详细版玩法参考 x.com/0xStudy/status/2122346701726106052/photo/1 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.c",
+          "url": "https://x.com/0xStudy/status/2122346701726106052",
+          "post_time": "2026-11-16T15:10:59+00:00"
+        },
+        {
+          "text": "看到很多人都在说这个oripa项目 | | 感觉他和之前的papertrade类似，抽中了就会获得真实卡片（可换成USDC），没抽中就给你 $ORIPA 代币 | | 但是这个代币也并没有说可以交易，本质类似于链上开盲盒，前期头矿应该是能赚到钱的，后面进去的都是接盘侠 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com",
+          "url": "https://x.com/lugeweb3/status/2122618412379812117",
+          "post_time": "2026-11-17T09:10:40+00:00"
+        },
+        {
+          "text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody shoul",
+          "url": "https://x.com/Xuegaogx/status/2124452235350540754",
+          "post_time": "2026-11-22T10:37:37+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:loloncanton.xyz",
       "identity": "domain:loloncanton.xyz",
@@ -1126,51 +1176,6 @@
       ]
     },
     {
-      "event_id": "domain:oripa.xyz",
-      "identity": "domain:oripa.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T13:57:06Z",
-      "last_seen_at": "2026-11-17T09:10:40Z",
-      "window_bucket": 83094,
-      "post_count": 3,
-      "representative_text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
-      "keywords": "[\"高:头矿\"]",
-      "tweet_url": "https://x.com/lugeweb3/status/2122618412379812117",
-      "author": "lugeweb3",
-      "author_name": "撸哥整顿币圈",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 45655,
-      "blue_verified": true,
-      "listed_count": 114,
-      "reg_at": "Mon Nov 22 20:00:20 +0000 2021",
-      "views": "56",
-      "samples": [
-        {
-          "text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @Hyp",
-          "url": "https://x.com/Mulight/status/2122328107734728957",
-          "post_time": "2026-11-16T13:57:06+00:00"
-        },
-        {
-          "text": "跟着搞 @oripaxyz 头矿 | | 简单来说就是 抽卡版的Papertrade，11/25之前整WL，12/2公开参与回合 | | 嘿嘿有点晚了 明天写个详细版玩法参考 x.com/0xStudy/status/2122346701726106052/photo/1 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.c",
-          "url": "https://x.com/0xStudy/status/2122346701726106052",
-          "post_time": "2026-11-16T15:10:59+00:00"
-        },
-        {
-          "text": "看到很多人都在说这个oripa项目 | | 感觉他和之前的papertrade类似，抽中了就会获得真实卡片（可换成USDC），没抽中就给你 $ORIPA 代币 | | 但是这个代币也并没有说可以交易，本质类似于链上开盲盒，前期头矿应该是能赚到钱的，后面进去的都是接盘侠 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com",
-          "url": "https://x.com/lugeweb3/status/2122618412379812117",
-          "post_time": "2026-11-17T09:10:40+00:00"
-        }
-      ]
-    },
-    {
       "event_id": "domain:poolfun.app",
       "identity": "domain:poolfun.app",
       "identity_type": "domain_bare",
@@ -1612,41 +1617,6 @@
           "text": "没人发现 | 作者发了一个pandacoin | 才是大家认为的第一个吗 x.com/Oringold_/status/2121992425262785008/photo/1 x.com/i/article/2121985716993261568",
           "url": "https://x.com/Oringold_/status/2121992425262785008",
           "post_time": "2026-11-15T15:43:13+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:cnbc.com",
-      "identity": "domain:cnbc.com",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-15T10:42:01Z",
-      "last_seen_at": "2026-11-15T10:42:01Z",
-      "window_bucket": 83089,
-      "post_count": 1,
-      "representative_text": "黄仁勋已经被逼下台，卷入风暴的 Megaspeed 终于开口了。而它给出的第一个事实，可能让整场舆论风暴的时间线变得更加耐人寻味。 | | 据路透和 CNBC 报道，Megaspeed 首次正式回应： | | Alice Huang 早在 2025 年 8 月 30 日就已离职，目前与公司不存在任何职务关系。 | | 对于 Alice Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business www.cnbc.com/2026/11/15/megas",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/sleepy0x13/status/2121916623938572435",
-      "author": "sleepy0x13",
-      "author_name": "sleepy",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 40151,
-      "blue_verified": true,
-      "listed_count": 646,
-      "reg_at": "Wed Jul 15 02:32:36 +0000 2020",
-      "views": "99",
-      "samples": [
-        {
-          "text": "黄仁勋已经被逼下台，卷入风暴的 Megaspeed 终于开口了。而它给出的第一个事实，可能让整场舆论风暴的时间线变得更加耐人寻味。 | | 据路透和 CNBC 报道，Megaspeed 首次正式回应： | | Alice Huang 早在 2025 年 8 月 30 日就已离职，目前与公司不存在任何职务关系。 | | 对于 Alice Megaspeed says Alice Huang left",
-          "url": "https://x.com/sleepy0x13/status/2121916623938572435",
-          "post_time": "2026-11-15T10:42:01+00:00"
         }
       ]
     }
