@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "ca": "58MxvPSQYi7PLWMfQH9r8R98AMGqkRPTSfAde7i3NESd",
+    "chain": "sol",
+    "name": "AnonPad",
+    "symbol": "ANON",
+    "first_seen": "2026-11-22 00:43",
+    "created_at": "2026-11-22 08:43",
+    "source": "新潜力币",
+    "push_status": "pushed",
+    "pushed_at": "2026-11-22 00:43",
+    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "liquidity_usd": 10834.82,
+    "market_cap": 0,
+    "holders": 150,
+    "dev_count": 1,
+    "dev_creator": "DtMdvLoBp1bLVZsU1uwzT31SLxjX8jBxGrtBc7MasHyo",
+    "gmgn_launchpad": "Pump.fun",
+    "description": "发射台 Pump.fun",
+    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
+    "twitter": "https://x.com/useanonapp",
+    "website": "https://anonpad.app/",
+    "telegram": "",
+    "twitter_dup": 0,
+    "image_dup": 0,
+    "creator_token_status": "",
+    "liq_now": 10834.819980019722,
+    "liq_ts": 1795310463,
+    "liq_src": "GMGN"
+  }
+]
