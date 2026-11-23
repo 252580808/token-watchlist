@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T21:31:24.674872Z",
+  "generated_at": "2026-11-23T21:40:26.684190Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1181,
+    "posts_total": 1180,
     "blocked": 65,
     "no_entry": 1061,
     "events": 36,
-    "merged_posts": 19,
+    "merged_posts": 18,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -18,12 +18,12 @@
     {
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T21:31:28Z",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-17T01:32:11Z",
       "last_seen_at": "2026-11-23T18:59:40Z",
-      "window_bucket": 83095,
-      "post_count": 6,
-      "representative_text": "jose现在660k了， @onepumpcc | 前几个币也拉一拉呗，都是好角度 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/2121044701600272598/photo/1",
+      "window_bucket": 83096,
+      "post_count": 5,
+      "representative_text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购 $JOSE x.com/MiracleboyNFT/status/2122503032047129064/photo/1 盯了一个多月的 canton-network:native 链的发射台One",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
       "author": "RK_Bitcoin",
@@ -43,11 +43,6 @@
       "reg_at": "Fri Aug 04 02:18:42 +0000 2023",
       "views": "200",
       "samples": [
-        {
-          "text": "jose现在660k了， @onepumpcc | 前几个币也拉一拉呗，都是好角度 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/212104470160027259",
-          "url": "https://x.com/CC4238/status/2122442452007260457",
-          "post_time": "2026-11-16T21:31:28+00:00"
-        },
         {
           "text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购",
           "url": "https://x.com/MiracleboyNFT/status/2122503032047129064",
