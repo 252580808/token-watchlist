@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-23T11:01:24.205306Z",
+  "generated_at": "2026-11-23T11:10:20.283565Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1406,
-    "with_ca": 219,
-    "list_posts_total": 4649,
-    "unique_cas": 1764,
-    "dedup_merged_posts": 2885,
+    "signals_total": 1407,
+    "with_ca": 220,
+    "list_posts_total": 4654,
+    "unique_cas": 1765,
+    "dedup_merged_posts": 2889,
     "passed": 4,
     "dropped_dev": 58,
-    "dropped_old": 173,
-    "dropped_no_time": 422,
+    "dropped_old": 175,
+    "dropped_no_time": 421,
     "dropped_dev_unknown": 20,
     "dropped_fake_site": 8,
     "pending_retry": 0,
     "verdict_cached": 732,
     "tags_refreshed": 20,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
@@ -32,10 +32,10 @@
     "v9_not_ready": 0,
     "security_unknown": 0,
     "dropped_detail": {
-      "old": 173,
       "dev_over": 58,
+      "old": 175,
       "l2_suffix": 1031,
-      "no_pool": 419,
+      "no_pool": 418,
       "mcap_liq_high": 6,
       "fake_website:solana.com": 1,
       "fake_website:linktr.ee": 2,
@@ -69,7 +69,7 @@
       "pair_created_at": "2026-11-23T02:53:35Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-23T03:42:52Z",
-      "post_count": 5,
+      "post_count": 6,
       "unique_authors": 5,
       "posts": [
         {
@@ -106,6 +106,13 @@
           "post_time": "2026-11-23T08:09:57Z",
           "text_clean": "everyone wants to be seen. $FLY is here to remind you that sometimes the most interesting perspective comes from the wall. | | just a fly on the wall. | | A simple name, a recognizable concept, and plenty of room for the community to turn it into something bigger. | | No need to force the narrative. Let the community bring the energy, build the attention, and give $FLY its own identity. | | Small fly. Big perspective. | | CA: 84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | Website: t.co/mEoQRTRY22 | | Chart: t.co/zfltuM486G | | DYOR & NFA.",
           "tweet_url": "https://x.com/MaxelRowan/status/2124777460504187389"
+        },
+        {
+          "author": "crbpite8",
+          "author_name": "crbpite8",
+          "post_time": "2026-11-23T11:05:56Z",
+          "text_clean": "#sol #bsc 链上热点叙事 11.23 | | 1、 #Fly | 不是讲故事的动物币，而是对“现在连苍蝇都能被推起来”这个市场现实的元讽刺。 $230K | CA:84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | 2、 #cCAT | Helius 隐私功能上线后，社区搞的“保密猫”meme，主打 Solana confidential 交易梗 $300K | CA:6aiyJ9uwGYRE3tM6rk7oeqLwpdDcdtVgU7aW2mFFpump | | 3、 #OpenIndex | AI Agent 专用知识库/Wiki 项目的社区 meme 币$350K | CA:FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump | | 4、 #MCAT | 反 t.co/MdEGcBsdjp 内卷砸盘、主张“重新相信并持有”的月亮猫 meme $400K | CA:BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi | | 5、 #P | 蹭“AI agent 公开求解 P vs NP”热点的数学/CS 梗 meme 币。 | $120k | CA:7Kn92xBncvzp8FUrmZKFnEDd7wS3iLAugr5A8vWBpump | | 6、 #HOLD | 奖励长期持有、用 fee 分红对抗 t.co/MdEGcBsdjp 式 PvP 砸盘的“持有激励”平台币 $120k | CA:9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump",
+          "tweet_url": "https://x.com/crbpite8/status/2124821746515689941"
         }
       ]
     },
