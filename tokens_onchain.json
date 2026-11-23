@@ -1,34 +1,5 @@
 [
   {
-    "ca": "pikypfxzZBPAST4Pq5u47eAKUQsDDY9obWD1whJgCHu",
-    "chain": "sol",
-    "name": "Pikachu",
-    "symbol": "PIKACHU",
-    "first_seen": "2026-11-23 19:23",
-    "created_at": "2026-11-24 03:23",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-23 19:23",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 17654.49,
-    "market_cap": 38363.0,
-    "holders": 402,
-    "dev_count": 1,
-    "dev_creator": "7YUhKA7shytwi4e9Mo3o1GPbTGWZqyrXCE4jdpkUhyPg",
-    "gmgn_launchpad": "Pump.fun",
-    "description": "A brand-new auction platform where you can bid on and purchase just a fraction of a collector card instead of buying a whole card. All the cards are backed by original card !\n\nPowered by Collector Crypt\n\nLaunched with notrandom.fun",
-    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知  A brand-new auction platform where you can bid on and purchase just a fraction of a collector card instead of buying a whole card. All the cards are backed by original card !\n\nPowered by Collector Crypt\n\nLaunched with notrandom.fun",
-    "twitter": "",
-    "website": "https://pikachu.fun/",
-    "telegram": "",
-    "twitter_dup": 0,
-    "image_dup": 0,
-    "creator_token_status": "",
-    "liq_now": 17654.492215683975,
-    "liq_ts": 1795462862,
-    "liq_src": "GMGN"
-  },
-  {
     "ca": "0x231b1e6d55f163a55629c4ada2dfe714349ae237",
     "chain": "eth",
     "name": "COOLDOG",
@@ -39,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 13:07",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 45897.99,
+    "liquidity_usd": 42532.63,
     "market_cap": 315070.0,
-    "holders": 1850,
+    "holders": 1840,
     "dev_count": 0,
     "dev_creator": "0x08cde0383fff318e40478edd891b6a59185df7d4",
     "gmgn_launchpad": "pool_uniswap_v2",
@@ -53,8 +24,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 45897.99159978403,
-    "liq_ts": 1795462862,
+    "liq_now": 42532.63094923521,
+    "liq_ts": 1795463179,
     "liq_src": "GMGN"
   },
   {
@@ -68,7 +39,7 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 11:16",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 35859.79,
+    "liquidity_usd": 33886.08,
     "market_cap": 24773.0,
     "holders": 876,
     "dev_count": 1,
@@ -82,8 +53,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 35859.78981222064,
-    "liq_ts": 1795462862,
+    "liq_now": 33886.084931173,
+    "liq_ts": 1795463179,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 17707.13106899184,
-    "liq_ts": 1795462862,
+    "liq_ts": 1795463179,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 17408.897056661226,
-    "liq_ts": 1795462862,
+    "liq_ts": 1795463179,
     "liq_src": "GMGN"
   },
   {
@@ -170,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 13965.30104135584,
-    "liq_ts": 1795462862,
+    "liq_ts": 1795463179,
     "liq_src": "GMGN"
   },
   {
@@ -199,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 26591.66493543684,
-    "liq_ts": 1795462862,
+    "liq_ts": 1795463179,
     "liq_src": "GMGN"
   }
 ]
