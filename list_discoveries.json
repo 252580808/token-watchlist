@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-23T18:22:22.647186Z",
+  "generated_at": "2026-11-23T18:31:29.187131Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1176,
+    "posts_total": 1175,
     "blocked": 67,
-    "no_entry": 1055,
-    "events": 35,
+    "no_entry": 1053,
+    "events": 36,
     "merged_posts": 19,
     "terms_failed": 0,
-    "today_events": 0,
+    "today_events": 1,
     "today_pushed": 0
   },
   "events": [
+    {
+      "event_id": "article:2124747000960983040",
+      "identity": "article:2124747000960983040",
+      "identity_type": "tweet_article",
+      "first_seen_at": "2026-11-23T18:23:32Z",
+      "last_seen_at": "2026-11-23T18:23:32Z",
+      "window_bucket": 83123,
+      "post_count": 1,
+      "representative_text": "现在不 TGE 的项目创始人是 GAY | | @saturn_credit @kevinlhr88 | | @variational_io @variational_lvs | | @extendedapp @rf_extended | | @predictdotfun @dingalingts x.com/i/article/2124747000960983040",
+      "keywords": "[\"高:创始人\"]",
+      "tweet_url": "https://x.com/RXu107/status/2124931871054389639",
+      "author": "RXu107",
+      "author_name": "一千万是只猫(lockin for internship mode)",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 10640,
+      "blue_verified": true,
+      "listed_count": 240,
+      "reg_at": "Wed Aug 23 10:36:28 +0000 2023",
+      "views": "78",
+      "samples": [
+        {
+          "text": "现在不 TGE 的项目创始人是 GAY | | @saturn_credit @kevinlhr88 | | @variational_io @variational_lvs | | @extendedapp @rf_extended | | @predictdotfun @dingalingts x.com/i/article/2124747000960983040",
+          "url": "https://x.com/RXu107/status/2124931871054389639",
+          "post_time": "2026-11-23T18:23:32+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:strategy.com",
       "identity": "domain:strategy.com",
