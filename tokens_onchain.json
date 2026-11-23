@@ -1,34 +1,5 @@
 [
   {
-    "ca": "6tCcpic2iBoWhEhh1xygUDikimHD1zjiZgRGHAxbWexe",
-    "chain": "sol",
-    "name": "exe",
-    "symbol": "EXE",
-    "first_seen": "2026-11-23 18:16",
-    "created_at": "2026-11-24 02:16",
-    "source": "新潜力币",
-    "push_status": "pushed",
-    "pushed_at": "2026-11-23 18:16",
-    "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 12218.2,
-    "market_cap": 13180.19,
-    "holders": 282,
-    "dev_count": 1,
-    "dev_creator": "CwzdLTdZZoxALQMjoeLfKGQb8WEHyrEcAEcfJUmam2Nm",
-    "gmgn_launchpad": "Pump.fun",
-    "description": "The .exe File To Run GTA 6 On Pc . Second Token Officialy Launched By CyberLeek .",
-    "intro": "硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知  The .exe File To Run GTA 6 On Pc . Second Token Officialy Launched By CyberLeek .",
-    "twitter": "",
-    "website": "https://cyberleek.arwe.io/",
-    "telegram": "https://t.me/cyberleekario",
-    "twitter_dup": 0,
-    "image_dup": 0,
-    "creator_token_status": "",
-    "liq_now": 12218.19921191072,
-    "liq_ts": 1795459894,
-    "liq_src": "GMGN"
-  },
-  {
     "ca": "0x231b1e6d55f163a55629c4ada2dfe714349ae237",
     "chain": "eth",
     "name": "COOLDOG",
@@ -54,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 43566.993865094046,
-    "liq_ts": 1795459894,
+    "liq_ts": 1795460166,
     "liq_src": "GMGN"
   },
   {
@@ -83,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 37796.6208063354,
-    "liq_ts": 1795459894,
+    "liq_ts": 1795460166,
     "liq_src": "GMGN"
   },
   {
@@ -112,7 +83,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 15018.20816462176,
-    "liq_ts": 1795459894,
+    "liq_ts": 1795460166,
     "liq_src": "GMGN"
   },
   {
@@ -141,7 +112,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 17403.802398922668,
-    "liq_ts": 1795459894,
+    "liq_ts": 1795460166,
     "liq_src": "GMGN"
   },
   {
@@ -170,7 +141,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 16580.4195051785,
-    "liq_ts": 1795459894,
+    "liq_ts": 1795460166,
     "liq_src": "GMGN"
   },
   {
@@ -199,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 23172.52387706868,
-    "liq_ts": 1795459894,
+    "liq_ts": 1795460166,
     "liq_src": "GMGN"
   }
 ]
