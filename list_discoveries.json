@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T13:52:26.457479Z",
+  "generated_at": "2026-11-23T14:02:19.057853Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1188,
+    "posts_total": 1186,
     "blocked": 67,
     "no_entry": 1062,
-    "events": 36,
-    "merged_posts": 23,
+    "events": 35,
+    "merged_posts": 22,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 10
@@ -209,11 +209,11 @@
       "event_id": "domain:oripa.xyz",
       "identity": "domain:oripa.xyz",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T13:57:06Z",
+      "first_seen_at": "2026-11-16T15:10:59Z",
       "last_seen_at": "2026-11-22T10:37:37Z",
       "window_bucket": 83094,
-      "post_count": 4,
-      "representative_text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
+      "post_count": 3,
+      "representative_text": "跟着搞 @oripaxyz 头矿 | | 简单来说就是 抽卡版的Papertrade，11/25之前整WL，12/2公开参与回合 | | 嘿嘿有点晚了 明天写个详细版玩法参考 x.com/0xStudy/status/2122346701726106052/photo/1 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
       "keywords": "[\"高:头矿\"]",
       "tweet_url": "https://x.com/Xuegaogx/status/2124452235350540754",
       "author": "Xuegaogx",
@@ -233,11 +233,6 @@
       "reg_at": "Sat Oct 07 03:03:07 +0000 2023",
       "views": "135",
       "samples": [
-        {
-          "text": "为什么今天全网都在按头让你去填oripa的邮箱白单？ | | 因为这盘子的头矿时间差给得太明显了。@oripaxyz 是在Hyperliquid上搞宝可梦PSA卡链上抽包，它最牛逼的机制是抽中了能直接一键熔成USDC落袋，要是没抽中，亏掉的差价会直接给你铸造成$ORIPA代币，质押进去就能分后面全网所有人抽卡的USDC。 every miss mints. | | Nov 25 · on @Hyp",
-          "url": "https://x.com/Mulight/status/2122328107734728957",
-          "post_time": "2026-11-16T13:57:06+00:00"
-        },
         {
           "text": "跟着搞 @oripaxyz 头矿 | | 简单来说就是 抽卡版的Papertrade，11/25之前整WL，12/2公开参与回合 | | 嘿嘿有点晚了 明天写个详细版玩法参考 x.com/0xStudy/status/2122346701726106052/photo/1 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.c",
           "url": "https://x.com/0xStudy/status/2122346701726106052",
@@ -1352,41 +1347,6 @@
           "text": "这个发射台的创始人的操盘水平说实话是很高的。 | | 不论是素材、还是节奏把控的恰到好处，顶级叙事。 | | 唯一的问题是目前行情真的太枯了，拉盘也没有流动性，看看近期会不会流动性回流到robinhood吧。 | | 想拿到大结果，我是真买了不少。 | | 最近买开头带B的币都把我亏惨了😭。 Do you believe in blessed? | | getblessed.fun x.com/g",
           "url": "https://x.com/Showy005/status/2122552595395055843",
           "post_time": "2026-11-17T04:49:08+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:make.fun",
-      "identity": "domain:make.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T13:54:55Z",
-      "last_seen_at": "2026-11-16T13:54:55Z",
-      "window_bucket": 83094,
-      "post_count": 1,
-      "representative_text": "💎 Mint mới｜Bee ($BEE) | | Dự án: Bee là token dành cho ví có Binance Agent ID trên BNB Chain, bán theo lô qua hợp đồng đã xác minh. | | Tham gia: Cần có Binance Agent ID. Mỗi lô giá khoảng 1 USD, trả bằng BNB theo giá Chainlink (hiện khoảng 0,0017 BNB/lô), nhận 55.000 x.com/mrchrismast_/status/21223",
-      "keywords": "[\"高:Agent mint\"]",
-      "tweet_url": "https://x.com/mrchrismast_/status/2122327559757246713",
-      "author": "mrchrismast_",
-      "author_name": "Mr. Chrismast",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 31502,
-      "blue_verified": true,
-      "listed_count": 58,
-      "reg_at": "Sun Oct 08 03:22:38 +0000 2023",
-      "views": "115",
-      "samples": [
-        {
-          "text": "💎 Mint mới｜Bee ($BEE) | | Dự án: Bee là token dành cho ví có Binance Agent ID trên BNB Chain, bán theo lô qua hợp đồng đã xác minh. | | Tham gia: Cần có Binance Agent ID. Mỗi lô giá khoảng 1 USD, trả ",
-          "url": "https://x.com/mrchrismast_/status/2122327559757246713",
-          "post_time": "2026-11-16T13:54:55+00:00"
         }
       ]
     }
