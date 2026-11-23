@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T11:28:31.829084Z",
+  "generated_at": "2026-11-23T11:37:35.131962Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1183,
+    "posts_total": 1182,
     "blocked": 70,
     "no_entry": 1047,
-    "events": 39,
+    "events": 38,
     "merged_posts": 27,
     "terms_failed": 0,
     "today_events": 3,
@@ -1477,41 +1477,6 @@
           "text": "💎 Mint mới｜币安人生AI ($币安人生AI) | | Dự án: Token sale qua Stars factory, cần ví có Agent ID .ai. Mỗi suất 0,001 BNB nhận 500 token, tổng 1.600.000 suất. | | Tham gia: Hạn mức ban đầu 50 suất/ID, mời thêm ",
           "url": "https://x.com/mrchrismast_/status/2122303025318699321",
           "post_time": "2026-11-16T12:17:26+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:gang.fun",
-      "identity": "domain:gang.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T11:32:12Z",
-      "last_seen_at": "2026-11-16T11:32:12Z",
-      "window_bucket": 83093,
-      "post_count": 1,
-      "representative_text": "这个 gang.fun 我认真看了 BNB链上专门给AI Agent发币的发射台 | | 新币先在内盘打 只有带着.ai的币安Agent钱包能打 单钱包 上限总量的1% | GANG已经发射 代币没有买卖税 平台手续费八成 回购销毁 有的新项目还用GANG来计价 合约没有owner，也不能增发 x.com/102BTC/status/2122291642183115116/photo/1 $JAGENT | 那时候才4万市值 我发了这张K线图 | | 现在四十多万份打出去了 市值到了五百万附近 | | 但这事才刚开头 总共444万份，现在才打了不到一成 | | 打一份现在大约4.36U 后面档",
-      "keywords": "[\"高:回购\", \"高:销毁\", \"高:新币\"]",
-      "tweet_url": "https://x.com/102BTC/status/2122291642183115116",
-      "author": "102BTC",
-      "author_name": "102.btc",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 53677,
-      "blue_verified": true,
-      "listed_count": 84,
-      "reg_at": "Sat May 15 06:44:36 +0000 2021",
-      "views": "220",
-      "samples": [
-        {
-          "text": "这个 gang.fun 我认真看了 BNB链上专门给AI Agent发币的发射台 | | 新币先在内盘打 只有带着.ai的币安Agent钱包能打 单钱包 上限总量的1% | GANG已经发射 代币没有买卖税 平台手续费八成 回购销毁 有的新项目还用GANG来计价 合约没有owner，也不能增发 x.com/102BTC/status/2122291642183115116/photo/1 $JAG",
-          "url": "https://x.com/102BTC/status/2122291642183115116",
-          "post_time": "2026-11-16T11:32:12+00:00"
         }
       ]
     }
