@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-23T14:37:26.311419Z",
+  "generated_at": "2026-11-23T14:46:29.135507Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1184,
+    "posts_total": 1181,
     "blocked": 67,
-    "no_entry": 1061,
+    "no_entry": 1059,
     "events": 35,
-    "merged_posts": 21,
+    "merged_posts": 20,
     "terms_failed": 0,
-    "today_events": 3,
+    "today_events": 4,
     "today_pushed": 10
   },
   "events": [
@@ -19,11 +19,11 @@
       "event_id": "domain:strategy.com",
       "identity": "domain:strategy.com",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-16T14:39:28Z",
+      "first_seen_at": "2026-11-23T13:14:06Z",
       "last_seen_at": "2026-11-23T13:14:06Z",
-      "window_bucket": 83094,
-      "post_count": 2,
-      "representative_text": "Strategy又出手了。 | | 买了485个比特币，反手还花了2.28亿美金，去回购自家的优先股（STRC）。 | | 看一眼它现在的家底：手里死死捏着85万多枚比特币，美元现金也堆到了49亿。 | | 很多人可能没看懂，这波“一边买买买，一边还钱”到底图啥。 | | 其实你看透了就知道，Saylor现在玩的，是极致的资产负债表精算。 Strategy has acquired 485 $BTC and repurchased $228M of $STRC. As of 11/15/26, we hold 850,849 BTC and $4.9B of USD Assets. $MSTR",
+      "window_bucket": 83122,
+      "post_count": 1,
+      "representative_text": "刚刚，Saylor 又出手了！MicroStrategy (微策略)继续加仓比特币！ | | 最新数据显示： | | 1. 再次买入价值 2,800 万美元的 BTC | 2.比特币总持仓达到 851,305 枚 | 3.回购了价值 2.12 亿美元的优先股 | 4.现金储备从 49 亿美元降至 48 亿美元 | | 一边持续囤积 BTC，一边回购优先股。 | | Saylor 依然坚定地执行着他的比特币战略。 Strategy has acquired 457 $BTC and repurchased $212M of $STRC. We increased our Digital Cred",
       "keywords": "[\"高:回购\"]",
       "tweet_url": "https://x.com/BitHunterCN/status/2124854003309637793",
       "author": "BitHunterCN",
@@ -43,11 +43,6 @@
       "reg_at": "Thu Dec 22 03:12:18 +0000 2022",
       "views": "9",
       "samples": [
-        {
-          "text": "Strategy又出手了。 | | 买了485个比特币，反手还花了2.28亿美金，去回购自家的优先股（STRC）。 | | 看一眼它现在的家底：手里死死捏着85万多枚比特币，美元现金也堆到了49亿。 | | 很多人可能没看懂，这波“一边买买买，一边还钱”到底图啥。 | | 其实你看透了就知道，Saylor现在玩的，是极致的资产负债表精算。 Strategy has acquired 485 $BT",
-          "url": "https://x.com/zhuanbidao/status/2122338770175644144",
-          "post_time": "2026-11-16T14:39:28+00:00"
-        },
         {
           "text": "刚刚，Saylor 又出手了！MicroStrategy (微策略)继续加仓比特币！ | | 最新数据显示： | | 1. 再次买入价值 2,800 万美元的 BTC | 2.比特币总持仓达到 851,305 枚 | 3.回购了价值 2.12 亿美元的优先股 | 4.现金储备从 49 亿美元降至 48 亿美元 | | 一边持续囤积 BTC，一边回购优先股。 | | Saylor 依然坚定地执行着他",
           "url": "https://x.com/BitHunterCN/status/2124854003309637793",
