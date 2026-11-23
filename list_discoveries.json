@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-23T01:03:03.159256Z",
+  "generated_at": "2026-11-23T01:11:59.570514Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1184,
-    "blocked": 76,
-    "no_entry": 1039,
-    "events": 40,
+    "posts_total": 1183,
+    "blocked": 75,
+    "no_entry": 1038,
+    "events": 41,
     "merged_posts": 29,
     "terms_failed": 0,
-    "today_events": 1,
+    "today_events": 2,
     "today_pushed": 4
   },
   "events": [
+    {
+      "event_id": "github:allencake/coil-reclaim-indicator",
+      "identity": "github:allencake/coil-reclaim-indicator",
+      "identity_type": "github",
+      "first_seen_at": "2026-11-23T01:04:22Z",
+      "last_seen_at": "2026-11-23T01:04:22Z",
+      "window_bucket": 83120,
+      "post_count": 1,
+      "representative_text": "这东西现在放出来，说实话有点危险。 | | 一套规则写死的时段策略：两根K线定方向，只做开盘第一个小时，先回踩才进场。 | | 我把它做成了 TradingView 指标，代码全公开，免费拿。 | | 把指标或者这条帖子丢给 Grok Bot，让它帮你搭一个 24 小时盯盘的交易机器人：github.com/Allencake/coil-reclaim-indicator x.com/waveking1314/status/2124670357152104675/photo/1 x.com/i/article/2120892917719961600",
+      "keywords": "[\"高:第一个\"]",
+      "tweet_url": "https://x.com/waveking1314/status/2124670357152104675",
+      "author": "waveking1314",
+      "author_name": "断浪 WaveKing",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 74086,
+      "blue_verified": true,
+      "listed_count": 258,
+      "reg_at": "Mon Mar 27 11:17:38 +0000 2023",
+      "views": "123",
+      "samples": [
+        {
+          "text": "这东西现在放出来，说实话有点危险。 | | 一套规则写死的时段策略：两根K线定方向，只做开盘第一个小时，先回踩才进场。 | | 我把它做成了 TradingView 指标，代码全公开，免费拿。 | | 把指标或者这条帖子丢给 Grok Bot，让它帮你搭一个 24 小时盯盘的交易机器人：github.com/Allencake/coil-reclaim-indicator x.com/waveki",
+          "url": "https://x.com/waveking1314/status/2124670357152104675",
+          "post_time": "2026-11-23T01:04:22+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2123762035997675520",
       "identity": "article:2123762035997675520",
