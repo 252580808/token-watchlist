@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T06:31:24.557309Z",
+  "generated_at": "2026-11-23T06:41:16.018861Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1158,
+    "posts_total": 1156,
     "blocked": 71,
-    "no_entry": 1021,
+    "no_entry": 1020,
     "events": 39,
-    "merged_posts": 27,
+    "merged_posts": 26,
     "terms_failed": 0,
     "today_events": 2,
     "today_pushed": 7
@@ -1174,11 +1174,11 @@
       "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T06:38:59Z",
+      "first_seen_at": "2026-11-17T10:17:23Z",
       "last_seen_at": "2026-11-17T10:18:30Z",
-      "window_bucket": 83093,
-      "post_count": 3,
-      "representative_text": "最烦的事儿就是： | 你期待很久的项目要空投了，大盘开始阴跌了 | ▪️Extended 的代币盘前跌破 0.2 | ▪️Variational 年底之前空投概率跌到了 66% | 虽然对他俩信心很足，但看数据还是会心烦🙃 x.com/zaijin338191/status/2122217853978092002/photo/1 打了 @FungoLabs 的兄弟可以去开箱子 | 有群友已经开出 ETH 啦～这项目方格局还是可以的，之前打了NFT的不但费用全退，还新增了很多权益，每周都能开箱子🤑 | 链接🔗：fungolabs.org/launchpad/ x.com/zaijin338191",
+      "window_bucket": 83097,
+      "post_count": 2,
+      "representative_text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/wen394428142129/status/2122635483524243966",
       "author": "wen394428142129",
@@ -1198,11 +1198,6 @@
       "reg_at": "Sun Sep 29 01:54:41 +0000 2024",
       "views": "40",
       "samples": [
-        {
-          "text": "最烦的事儿就是： | 你期待很久的项目要空投了，大盘开始阴跌了 | ▪️Extended 的代币盘前跌破 0.2 | ▪️Variational 年底之前空投概率跌到了 66% | 虽然对他俩信心很足，但看数据还是会心烦🙃 x.com/zaijin338191/status/2122217853978092002/photo/1 打了 @FungoLabs 的兄弟可以去开箱子 | 有群友已经开出 ",
-          "url": "https://x.com/zaijin338191/status/2122217853978092002",
-          "post_time": "2026-11-16T06:38:59+00:00"
-        },
         {
           "text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
           "url": "https://x.com/wen394428142129/status/2122635201499234493",
