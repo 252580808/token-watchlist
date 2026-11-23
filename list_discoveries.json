@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T04:20:58.291038Z",
+  "generated_at": "2026-11-23T04:29:59.169082Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1169,
+    "posts_total": 1168,
     "blocked": 74,
     "no_entry": 1025,
-    "events": 41,
+    "events": 40,
     "merged_posts": 29,
     "terms_failed": 0,
     "today_events": 2,
@@ -1557,41 +1557,6 @@
           "text": "“Palantir 真正让我眼前一亮的，是开源模型与利润率 | 财报讨论里提到，用开源模型结合自己的数据微调，在特定任务上效果更好、成本更低 | 过去 SaaS 加 AI 功能，市场担心：收入涨了，模型调用成本也涨，利润率被挤压 | 如果能降低对上游的依赖，又把 AI 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USD",
           "url": "https://x.com/168X_Fortune/status/2122188332813701485",
           "post_time": "2026-11-16T04:41:41+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:onlystreets.fun",
-      "identity": "domain:onlystreets.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T04:24:09Z",
-      "last_seen_at": "2026-11-16T04:24:09Z",
-      "window_bucket": 83092,
-      "post_count": 1,
-      "representative_text": "OnlyStreets 是一个即将上线的 Solana 链上 memecoin 发射平台 | | 它的最大特点是：每个币必须从应用内实时拍摄的照片开始 | | 不能从相册上传、截图、网络图片或库存图。只有你在街上亲眼看到并当场用 App 相机拍下来的瞬间，才能变成代币 Introducing onlystreets.fun | | A Solana launchpad for fresh authentic memes born in the real world. | | Capture something iconic IRL, give it a name, and launch a c",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/yingge001/status/2122183922041974799",
-      "author": "yingge001",
-      "author_name": "闫大胆-YDD",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 24480,
-      "blue_verified": true,
-      "listed_count": 68,
-      "reg_at": "Tue Feb 27 14:09:15 +0000 2024",
-      "views": "22",
-      "samples": [
-        {
-          "text": "OnlyStreets 是一个即将上线的 Solana 链上 memecoin 发射平台 | | 它的最大特点是：每个币必须从应用内实时拍摄的照片开始 | | 不能从相册上传、截图、网络图片或库存图。只有你在街上亲眼看到并当场用 App 相机拍下来的瞬间，才能变成代币 Introducing onlystreets.fun | | A Solana launchpad for fresh auth",
-          "url": "https://x.com/yingge001/status/2122183922041974799",
-          "post_time": "2026-11-16T04:24:09+00:00"
         }
       ]
     }
