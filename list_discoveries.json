@@ -1,20 +1,65 @@
 {
-  "generated_at": "2026-11-23T13:07:29.770413Z",
+  "generated_at": "2026-11-23T13:16:27.837701Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1183,
+    "posts_total": 1184,
     "blocked": 67,
     "no_entry": 1057,
     "events": 36,
-    "merged_posts": 23,
+    "merged_posts": 24,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 10
   },
   "events": [
+    {
+      "event_id": "domain:strategy.com",
+      "identity": "domain:strategy.com",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-16T13:20:27Z",
+      "last_seen_at": "2026-11-23T13:14:06Z",
+      "window_bucket": 83094,
+      "post_count": 3,
+      "representative_text": "地主家也没有余粮了， | 好消息是微策略 @Strategy 没有卖币。 | | Strategy 上周卖了 $2.45亿 的 $MSTR 股票， | 只拿 $3,340万 买了 485 枚 $BTC ，均价$68,887; | 剩下的大头 $2.06亿，全拿去回购自家的优先股 $STRC 了。 | | 钱从买币转向还债， | @saylor 老哥这是开始防守了？🫣 x.com/Meta8Mate/status/2122318884368003394/photo/1 Strategy has acquired 485 $BTC and repurchased $228M of $STRC. A",
+      "keywords": "[\"高:回购\"]",
+      "tweet_url": "https://x.com/BitHunterCN/status/2124854003309637793",
+      "author": "BitHunterCN",
+      "author_name": "比特猎人(BitHunter)",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 5596,
+      "blue_verified": true,
+      "listed_count": 31,
+      "reg_at": "Thu Dec 22 03:12:18 +0000 2022",
+      "views": "9",
+      "samples": [
+        {
+          "text": "地主家也没有余粮了， | 好消息是微策略 @Strategy 没有卖币。 | | Strategy 上周卖了 $2.45亿 的 $MSTR 股票， | 只拿 $3,340万 买了 485 枚 $BTC ，均价$68,887; | 剩下的大头 $2.06亿，全拿去回购自家的优先股 $STRC 了。 | | 钱从买币转向还债， | @saylor 老哥这是开始防守了？🫣 x.com/Meta8Mate",
+          "url": "https://x.com/Meta8Mate/status/2122318884368003394",
+          "post_time": "2026-11-16T13:20:27+00:00"
+        },
+        {
+          "text": "Strategy又出手了。 | | 买了485个比特币，反手还花了2.28亿美金，去回购自家的优先股（STRC）。 | | 看一眼它现在的家底：手里死死捏着85万多枚比特币，美元现金也堆到了49亿。 | | 很多人可能没看懂，这波“一边买买买，一边还钱”到底图啥。 | | 其实你看透了就知道，Saylor现在玩的，是极致的资产负债表精算。 Strategy has acquired 485 $BT",
+          "url": "https://x.com/zhuanbidao/status/2122338770175644144",
+          "post_time": "2026-11-16T14:39:28+00:00"
+        },
+        {
+          "text": "刚刚，Saylor 又出手了！MicroStrategy (微策略)继续加仓比特币！ | | 最新数据显示： | | 1. 再次买入价值 2,800 万美元的 BTC | 2.比特币总持仓达到 851,305 枚 | 3.回购了价值 2.12 亿美元的优先股 | 4.现金储备从 49 亿美元降至 48 亿美元 | | 一边持续囤积 BTC，一边回购优先股。 | | Saylor 依然坚定地执行着他",
+          "url": "https://x.com/BitHunterCN/status/2124854003309637793",
+          "post_time": "2026-11-23T13:14:06+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
@@ -1312,46 +1357,6 @@
           "text": "这个发射台的创始人的操盘水平说实话是很高的。 | | 不论是素材、还是节奏把控的恰到好处，顶级叙事。 | | 唯一的问题是目前行情真的太枯了，拉盘也没有流动性，看看近期会不会流动性回流到robinhood吧。 | | 想拿到大结果，我是真买了不少。 | | 最近买开头带B的币都把我亏惨了😭。 Do you believe in blessed? | | getblessed.fun x.com/g",
           "url": "https://x.com/Showy005/status/2122552595395055843",
           "post_time": "2026-11-17T04:49:08+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:strategy.com",
-      "identity": "domain:strategy.com",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-16T13:20:27Z",
-      "last_seen_at": "2026-11-16T14:39:28Z",
-      "window_bucket": 83094,
-      "post_count": 2,
-      "representative_text": "地主家也没有余粮了， | 好消息是微策略 @Strategy 没有卖币。 | | Strategy 上周卖了 $2.45亿 的 $MSTR 股票， | 只拿 $3,340万 买了 485 枚 $BTC ，均价$68,887; | 剩下的大头 $2.06亿，全拿去回购自家的优先股 $STRC 了。 | | 钱从买币转向还债， | @saylor 老哥这是开始防守了？🫣 x.com/Meta8Mate/status/2122318884368003394/photo/1 Strategy has acquired 485 $BTC and repurchased $228M of $STRC. A",
-      "keywords": "[\"高:回购\"]",
-      "tweet_url": "https://x.com/zhuanbidao/status/2122338770175644144",
-      "author": "zhuanbidao",
-      "author_name": "长坡厚雪",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 19361,
-      "blue_verified": true,
-      "listed_count": 39,
-      "reg_at": "Tue Nov 21 11:16:29 +0000 2023",
-      "views": "60",
-      "samples": [
-        {
-          "text": "地主家也没有余粮了， | 好消息是微策略 @Strategy 没有卖币。 | | Strategy 上周卖了 $2.45亿 的 $MSTR 股票， | 只拿 $3,340万 买了 485 枚 $BTC ，均价$68,887; | 剩下的大头 $2.06亿，全拿去回购自家的优先股 $STRC 了。 | | 钱从买币转向还债， | @saylor 老哥这是开始防守了？🫣 x.com/Meta8Mate",
-          "url": "https://x.com/Meta8Mate/status/2122318884368003394",
-          "post_time": "2026-11-16T13:20:27+00:00"
-        },
-        {
-          "text": "Strategy又出手了。 | | 买了485个比特币，反手还花了2.28亿美金，去回购自家的优先股（STRC）。 | | 看一眼它现在的家底：手里死死捏着85万多枚比特币，美元现金也堆到了49亿。 | | 很多人可能没看懂，这波“一边买买买，一边还钱”到底图啥。 | | 其实你看透了就知道，Saylor现在玩的，是极致的资产负债表精算。 Strategy has acquired 485 $BT",
-          "url": "https://x.com/zhuanbidao/status/2122338770175644144",
-          "post_time": "2026-11-16T14:39:28+00:00"
         }
       ]
     },
