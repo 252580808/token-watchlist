@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-23T00:08:55.980583Z",
+  "generated_at": "2026-11-23T00:18:05.725138Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1183,
+    "posts_total": 1184,
     "blocked": 77,
     "no_entry": 1037,
-    "events": 39,
+    "events": 40,
     "merged_posts": 30,
     "terms_failed": 0,
-    "today_events": 0,
+    "today_events": 1,
     "today_pushed": 3
   },
   "events": [
+    {
+      "event_id": "article:2123762035997675520",
+      "identity": "article:2123762035997675520",
+      "identity_type": "tweet_article",
+      "first_seen_at": "2026-11-23T00:08:31Z",
+      "last_seen_at": "2026-11-23T00:08:31Z",
+      "window_bucket": 83120,
+      "post_count": 1,
+      "representative_text": "“好公司可以上市成功，其他 AI 股票却仍然继续下跌，这两件事可以同时成立 | 我觉得这一轮 AI 资产的调整，在两三个月前就已经开始了，IPO 只是确认所处的阶段，不是创造转折点 | 历史上：2021 年 11 月之后的 Crypto 是持续调整，2000 年之后的纳斯达克经历了很长的熊市 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.",
+      "keywords": "[\"高:打新\"]",
+      "tweet_url": "https://x.com/168X_Fortune/status/2124656302718955722",
+      "author": "168X_Fortune",
+      "author_name": "168X",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 21537,
+      "blue_verified": true,
+      "listed_count": 293,
+      "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
+      "views": "81",
+      "samples": [
+        {
+          "text": "“好公司可以上市成功，其他 AI 股票却仍然继续下跌，这两件事可以同时成立 | 我觉得这一轮 AI 资产的调整，在两三个月前就已经开始了，IPO 只是确认所处的阶段，不是创造转折点 | 历史上：2021 年 11 月之后的 Crypto 是持续调整，2000 年之后的纳斯达克经历了很长的熊市 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支",
+          "url": "https://x.com/168X_Fortune/status/2124656302718955722",
+          "post_time": "2026-11-23T00:08:31+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:oripa.xyz",
       "identity": "domain:oripa.xyz",
