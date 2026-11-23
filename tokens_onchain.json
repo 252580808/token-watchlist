@@ -25,7 +25,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 45160.44504570059,
-    "liq_ts": 1795466185,
+    "liq_ts": 1795466473,
     "liq_src": "GMGN"
   },
   {
@@ -54,7 +54,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 34600.33695096612,
-    "liq_ts": 1795466185,
+    "liq_ts": 1795466473,
     "liq_src": "GMGN"
   },
   {
@@ -68,9 +68,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 04:12",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 20001.47,
+    "liquidity_usd": 18631.23,
     "market_cap": 149809.0,
-    "holders": 1631,
+    "holders": 1610,
     "dev_count": 1,
     "dev_creator": "UGktQfqV18QoCfJtHNe7TWhhJLRTMK221gSUb67zEye",
     "gmgn_launchpad": "Pump.fun",
@@ -82,8 +82,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 20001.46677718016,
-    "liq_ts": 1795466185,
+    "liq_now": 18631.23435827748,
+    "liq_ts": 1795466473,
     "liq_src": "GMGN"
   },
   {
@@ -97,9 +97,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 04:11",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 15445.55,
+    "liquidity_usd": 15881.9,
     "market_cap": 91142.0,
-    "holders": 415,
+    "holders": 417,
     "dev_count": 1,
     "dev_creator": "2KisRU41rXKtJjxcBhmxbqquDLKFwFhhKVFEDVwnwMtY",
     "gmgn_launchpad": "ray_launchpad",
@@ -111,8 +111,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 15445.550144984527,
-    "liq_ts": 1795466185,
+    "liq_now": 15881.89617872133,
+    "liq_ts": 1795466473,
     "liq_src": "GMGN"
   },
   {
@@ -126,9 +126,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-22 23:40",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 14206.47,
+    "liquidity_usd": 14597.74,
     "market_cap": 15296.0,
-    "holders": 505,
+    "holders": 496,
     "dev_count": 1,
     "dev_creator": "6UKmpmfBhE7tLLp1D3zaEKMAFnMaLHYYbZ4xY4dqS8Er",
     "gmgn_launchpad": "Pump.fun",
@@ -140,8 +140,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 14206.4684466672,
-    "liq_ts": 1795466185,
+    "liq_now": 14597.74417409012,
+    "liq_ts": 1795466473,
     "liq_src": "GMGN"
   },
   {
@@ -170,7 +170,7 @@
     "image_dup": 0,
     "creator_token_status": "",
     "liq_now": 24945.60030803892,
-    "liq_ts": 1795466185,
+    "liq_ts": 1795466473,
     "liq_src": "GMGN"
   }
 ]
