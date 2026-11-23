@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T12:49:20.264219Z",
+  "generated_at": "2026-11-23T12:58:32.091530Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -7,9 +7,9 @@
     "enabled": 1,
     "posts_total": 1180,
     "blocked": 67,
-    "no_entry": 1051,
-    "events": 37,
-    "merged_posts": 25,
+    "no_entry": 1053,
+    "events": 36,
+    "merged_posts": 24,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 10
@@ -1364,11 +1364,11 @@
       "event_id": "domain:make.fun",
       "identity": "domain:make.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T12:54:01Z",
+      "first_seen_at": "2026-11-16T13:54:55Z",
       "last_seen_at": "2026-11-16T13:54:55Z",
       "window_bucket": 83094,
-      "post_count": 2,
-      "representative_text": "🪂 make.fun — AI agent làm code, thắng thưởng USDC thật | | Dự án | make.fun là sàn bounty cho AI agent: người ta treo tiền, agent viết code dự thi, sandbox chấm theo thang điểm công khai, thắng thì nhận USDC trên Solana. | | Tham gia | Đăng ký x.com/mrchrismast_/status/2122312232516083966/photo/1 💎 ",
+      "post_count": 1,
+      "representative_text": "💎 Mint mới｜Bee ($BEE) | | Dự án: Bee là token dành cho ví có Binance Agent ID trên BNB Chain, bán theo lô qua hợp đồng đã xác minh. | | Tham gia: Cần có Binance Agent ID. Mỗi lô giá khoảng 1 USD, trả bằng BNB theo giá Chainlink (hiện khoảng 0,0017 BNB/lô), nhận 55.000 x.com/mrchrismast_/status/21223",
       "keywords": "[\"高:Agent mint\"]",
       "tweet_url": "https://x.com/mrchrismast_/status/2122327559757246713",
       "author": "mrchrismast_",
@@ -1389,49 +1389,9 @@
       "views": "115",
       "samples": [
         {
-          "text": "🪂 make.fun — AI agent làm code, thắng thưởng USDC thật | | Dự án | make.fun là sàn bounty cho AI agent: người ta treo tiền, agent viết code dự thi, sandbox chấm theo thang điểm công khai, thắng thì nh",
-          "url": "https://x.com/mrchrismast_/status/2122312232516083966",
-          "post_time": "2026-11-16T12:54:01+00:00"
-        },
-        {
           "text": "💎 Mint mới｜Bee ($BEE) | | Dự án: Bee là token dành cho ví có Binance Agent ID trên BNB Chain, bán theo lô qua hợp đồng đã xác minh. | | Tham gia: Cần có Binance Agent ID. Mỗi lô giá khoảng 1 USD, trả ",
           "url": "https://x.com/mrchrismast_/status/2122327559757246713",
           "post_time": "2026-11-16T13:54:55+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:meritfunded.com",
-      "identity": "domain:meritfunded.com",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-16T12:53:32Z",
-      "last_seen_at": "2026-11-16T12:53:32Z",
-      "window_bucket": 83094,
-      "post_count": 1,
-      "representative_text": "兄弟们 快来看看这个，会玩的直接润100刀 | | 项目方 @MeritFunded 搞了个1000U免费额度的测试版挑战赛，规则是开始后为期14天。 | meritfunded.com/ | | 开单盈利目标赚 10%，合格的利润会按 80% 发奖励(每人上限 100 刀) $USDC x.com/wen394428142129/status/2122312111141662950/photo/1 《余烬世界》的Pass怎么那么贵 | | 当时开始Mint才0.15OKB好像 | | 现在0.89OKB了，翻了8倍 | | 总量3333张，进去游戏体验需要五张才行 | | 而且每一张Pass",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/wen394428142129/status/2122312111141662950",
-      "author": "wen394428142129",
-      "author_name": "非重要角色|🕊️",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 10928,
-      "blue_verified": true,
-      "listed_count": 32,
-      "reg_at": "Sun Sep 29 01:54:41 +0000 2024",
-      "views": "57",
-      "samples": [
-        {
-          "text": "兄弟们 快来看看这个，会玩的直接润100刀 | | 项目方 @MeritFunded 搞了个1000U免费额度的测试版挑战赛，规则是开始后为期14天。 | meritfunded.com/ | | 开单盈利目标赚 10%，合格的利润会按 80% 发奖励(每人上限 100 刀) $USDC x.com/wen394428142129/status/2122312111141662950/photo/",
-          "url": "https://x.com/wen394428142129/status/2122312111141662950",
-          "post_time": "2026-11-16T12:53:32+00:00"
         }
       ]
     }
