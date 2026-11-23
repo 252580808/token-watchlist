@@ -1,20 +1,85 @@
 {
-  "generated_at": "2026-11-23T18:58:24.951151Z",
+  "generated_at": "2026-11-23T19:07:03.105412Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1175,
+    "posts_total": 1176,
     "blocked": 67,
     "no_entry": 1053,
     "events": 36,
-    "merged_posts": 19,
+    "merged_posts": 20,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
   },
   "events": [
+    {
+      "event_id": "domain:oneswap.cc",
+      "identity": "domain:oneswap.cc",
+      "identity_type": "domain",
+      "first_seen_at": "2026-11-16T21:30:41Z",
+      "last_seen_at": "2026-11-23T18:59:40Z",
+      "window_bucket": 83095,
+      "post_count": 7,
+      "representative_text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
+      "keywords": "[\"高:launchpad\"]",
+      "tweet_url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
+      "author": "RK_Bitcoin",
+      "author_name": "RK_Rocky",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 25256,
+      "blue_verified": true,
+      "listed_count": 453,
+      "reg_at": "Fri Aug 04 02:18:42 +0000 2023",
+      "views": "200",
+      "samples": [
+        {
+          "text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
+          "url": "https://x.com/c423855046/status/2122442256938594785",
+          "post_time": "2026-11-16T21:30:41+00:00"
+        },
+        {
+          "text": "jose现在660k了， @onepumpcc | 前几个币也拉一拉呗，都是好角度 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/212104470160027259",
+          "url": "https://x.com/CC4238/status/2122442452007260457",
+          "post_time": "2026-11-16T21:31:28+00:00"
+        },
+        {
+          "text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购",
+          "url": "https://x.com/MiracleboyNFT/status/2122503032047129064",
+          "post_time": "2026-11-17T01:32:11+00:00"
+        },
+        {
+          "text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入",
+          "url": "https://x.com/01573bit/status/2122621484090916945",
+          "post_time": "2026-11-17T09:22:52+00:00"
+        },
+        {
+          "text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: ",
+          "url": "https://x.com/into9966/status/2122815694136058294",
+          "post_time": "2026-11-17T22:14:36+00:00"
+        },
+        {
+          "text": "＃Canton 传奇刚刚开篇， $JOSE 便是这场史诗行情的领路先锋！🚀 | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱创建账号，输入十位密码，填写自己的用户名即可注册完成。 | 2、注册完成后，在钱包准备eth、BNB都可以，链接钱包，完成跨链换成CC。 | www.oneswap.cc/launchpad/token/42f8bd78-b674-53",
+          "url": "https://x.com/into9966/status/2123210959565258935",
+          "post_time": "2026-11-19T00:25:14+00:00"
+        },
+        {
+          "text": "这个背景很不错噢 博主自己发推支持的代币 | | 🔗www.oneswap.cc/launchpad/token/dfae0f50-0d02-5090-b59d-6d3db1a54cce x.com/RK_Bitcoin/status/2124940967174423025/photo/1 The cat is officially out of the bag. 🐱⚡ | | Meet $CAT",
+          "url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
+          "post_time": "2026-11-23T18:59:40+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2124747000960983040",
       "identity": "article:2124747000960983040",
@@ -747,66 +812,6 @@
           "text": "SKY（原MakerDAO）创始人Rune用自家代币作抵押，借走了stUSDS池子近一半的钱，现在存款人取不出钱。 | | 他用价值约1.85亿美元的SKY作抵押借出约7700万美元USDS，半年没还过本金。池子资金利用率已经到了100%，利率涨到19.75%也没把钱留住。 x.com/i/article/2123362461801975808",
           "url": "https://x.com/PANewsCN/status/2123387137202725372",
           "post_time": "2026-11-19T12:05:18+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oneswap.cc",
-      "identity": "domain:oneswap.cc",
-      "identity_type": "domain",
-      "first_seen_at": "2026-11-16T21:30:41Z",
-      "last_seen_at": "2026-11-19T00:25:14Z",
-      "window_bucket": 83095,
-      "post_count": 6,
-      "representative_text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-      "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/into9966/status/2123210959565258935",
-      "author": "into9966",
-      "author_name": "Crypto_2025（🌱）",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 292,
-      "blue_verified": true,
-      "listed_count": 1,
-      "reg_at": "Fri Oct 20 11:15:48 +0000 2023",
-      "views": "4",
-      "samples": [
-        {
-          "text": "Jose拉到660k了，这几个能不能拉个100k啊 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | www.oneswap.cc/w/T2GWHZ5K x.com/c423855046/status/2121044444149694913/photo/1",
-          "url": "https://x.com/c423855046/status/2122442256938594785",
-          "post_time": "2026-11-16T21:30:41+00:00"
-        },
-        {
-          "text": "jose现在660k了， @onepumpcc | 前几个币也拉一拉呗，都是好角度 canton链上的第一个meme发射台 @onepumpcc | 前三个 | onecat | onebot | npcc | 现在位置都很低，彩票，dyor | oneswap.cc/w/T2GWHZ5K | 新台子用新钱包玩，注意安全 x.com/CC4238/status/212104470160027259",
-          "url": "https://x.com/CC4238/status/2122442452007260457",
-          "post_time": "2026-11-16T21:31:28+00:00"
-        },
-        {
-          "text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购",
-          "url": "https://x.com/MiracleboyNFT/status/2122503032047129064",
-          "post_time": "2026-11-17T01:32:11+00:00"
-        },
-        {
-          "text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入",
-          "url": "https://x.com/01573bit/status/2122621484090916945",
-          "post_time": "2026-11-17T09:22:52+00:00"
-        },
-        {
-          "text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: ",
-          "url": "https://x.com/into9966/status/2122815694136058294",
-          "post_time": "2026-11-17T22:14:36+00:00"
-        },
-        {
-          "text": "＃Canton 传奇刚刚开篇， $JOSE 便是这场史诗行情的领路先锋！🚀 | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱创建账号，输入十位密码，填写自己的用户名即可注册完成。 | 2、注册完成后，在钱包准备eth、BNB都可以，链接钱包，完成跨链换成CC。 | www.oneswap.cc/launchpad/token/42f8bd78-b674-53",
-          "url": "https://x.com/into9966/status/2123210959565258935",
-          "post_time": "2026-11-19T00:25:14+00:00"
         }
       ]
     },
