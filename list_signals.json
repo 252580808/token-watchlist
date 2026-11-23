@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T03:53:58.757839Z",
+  "generated_at": "2026-11-23T04:02:54.308998Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,26 +7,26 @@
   "stats": {
     "signals_total": 1377,
     "with_ca": 204,
-    "list_posts_total": 4629,
-    "unique_cas": 1763,
+    "list_posts_total": 4630,
+    "unique_cas": 1764,
     "dedup_merged_posts": 2866,
-    "passed": 4,
+    "passed": 3,
     "dropped_dev": 58,
     "dropped_old": 176,
-    "dropped_no_time": 427,
+    "dropped_no_time": 428,
     "dropped_dev_unknown": 20,
     "dropped_fake_site": 7,
     "pending_retry": 0,
-    "verdict_cached": 742,
+    "verdict_cached": 744,
     "tags_refreshed": 20,
-    "dev_rechecked": 1,
-    "dev_recheck_blocked": 1,
+    "dev_rechecked": 0,
+    "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
-    "site_rechecked": 1,
+    "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 2,
     "dead_blocked_live": 40,
-    "pool_too_old_live": 8,
+    "pool_too_old_live": 9,
     "v9_rechecked": 0,
     "v9_ready": 0,
     "v9_not_ready": 1,
@@ -35,7 +35,7 @@
       "l2_suffix": 1019,
       "old": 176,
       "dev_over": 58,
-      "no_pool": 425,
+      "no_pool": 426,
       "fake_website:solana.com": 1,
       "mcap_liq_high": 6,
       "fake_website:linktr.ee": 1,
@@ -45,7 +45,7 @@
       "no_created_at": 2,
       "dev_blacklist": 10
     },
-    "today_new": 5,
+    "today_new": 6,
     "today_pushed": 2,
     "v9_new_protected": 1
   },
@@ -125,66 +125,6 @@
           "post_time": "2026-11-22T20:06:16Z",
           "text_clean": "Ring any wallet. | | the-open-network:native is live on @Solana. | | SOL plus a note, encrypted onchain through @Helius Privacy Rings. | | CA: HELio3Xy1xAJhbMA9fWZMpeNDjoeiM5LrmCJrrrxZ5zM | | heliogram.im x.com/tryheliogram/status/2124595338426343531/video/1",
           "tweet_url": "https://x.com/tryheliogram/status/2124595338426343531"
-        }
-      ]
-    },
-    {
-      "ca": "UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL",
-      "chain": "solana",
-      "symbol": "ZOL",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-23T02:50:35.859478Z",
-      "smart_degen_count": 74,
-      "renowned_count": 6,
-      "ready_to_push": true,
-      "net_buy_count": 44,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-22T06:53:22.770020Z",
-      "pair_created_at": "2026-11-20T04:02:41Z",
-      "freshness": "72h",
-      "first_seen_at": "2026-11-22T01:55:13Z",
-      "post_count": 5,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "YokaiCapital",
-          "author_name": "YokaiCapital",
-          "post_time": "2026-11-22T01:55:13Z",
-          "text_clean": "I might've found an absolute GEM | | UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL | zolana.com the domain itself is worth $100k+ and coin has 500+ pumpfun callouts from REAL people and real wallets, and chart has held up really well | | its a privacy SVM L1. if",
-          "tweet_url": "https://x.com/YokaiCapital/status/2124320768636891366"
-        },
-        {
-          "author": "YokaiCapital",
-          "author_name": "YokaiCapital",
-          "post_time": "2026-11-22T03:00:36Z",
-          "text_clean": "Zolana is that kind of coin that builds up slowly, A LOT OF small buyers, A LOT OF callouts, then community makes sure the likes of @toly @blknoiz06 @rajgokal @mert discover it and then even one mention unlocks that $10M+ discovery | | UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL x.com/YokaiCapital/status/2124337221948112926/photo/1",
-          "tweet_url": "https://x.com/YokaiCapital/status/2124337221948112926"
-        },
-        {
-          "author": "YokaiCapital",
-          "author_name": "YokaiCapital",
-          "post_time": "2026-11-22T04:13:16Z",
-          "text_clean": "only sold solana:UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL to buy solana:25hAyBQfoDhfWx9ay6rarbgvWGwDdNqcHsXS3jQ3mTDJ",
-          "tweet_url": "https://x.com/YokaiCapital/status/2124355509650071639"
-        },
-        {
-          "author": "YokaiCapital",
-          "author_name": "YokaiCapital",
-          "post_time": "2026-11-22T05:23:51Z",
-          "text_clean": "bought back couldn't resist the potential of solana:UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL",
-          "tweet_url": "https://x.com/YokaiCapital/status/2124373270732358140"
-        },
-        {
-          "author": "YokaiCapital",
-          "author_name": "YokaiCapital",
-          "post_time": "2026-11-22T23:03:46Z",
-          "text_clean": "did Yokai just call like another 10x? casually? how did he know? | | solana:UQLWvkwiSsnViuVBy7oArMtzb5RAZyrdJ79amQFrzoL",
-          "tweet_url": "https://x.com/YokaiCapital/status/2124640007231340716"
         }
       ]
     },
