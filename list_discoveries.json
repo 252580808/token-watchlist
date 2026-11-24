@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T01:25:29.908339Z",
+  "generated_at": "2026-11-24T01:34:33.987749Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1176,
+    "posts_total": 1174,
     "blocked": 64,
-    "no_entry": 1058,
+    "no_entry": 1057,
     "events": 36,
-    "merged_posts": 18,
+    "merged_posts": 17,
     "terms_failed": 0,
     "today_events": 1,
     "today_pushed": 1
@@ -19,11 +19,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-17T01:32:11Z",
+      "first_seen_at": "2026-11-17T09:22:52Z",
       "last_seen_at": "2026-11-23T18:59:40Z",
-      "window_bucket": 83096,
-      "post_count": 5,
-      "representative_text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购 $JOSE x.com/MiracleboyNFT/status/2122503032047129064/photo/1 盯了一个多月的 canton-network:native 链的发射台One",
+      "window_bucket": 83097,
+      "post_count": 4,
+      "representative_text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入！ | | $JOSE",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
       "author": "RK_Bitcoin",
@@ -43,11 +43,6 @@
       "reg_at": "Fri Aug 04 02:18:42 +0000 2023",
       "views": "200",
       "samples": [
-        {
-          "text": "今天早上 $JOSE 创了历史新高，市值突破了750K！！！ | 群车入场市值：37K | 目前：750K | 涨幅：20X！！！ | @onepumpcc 是@CantonNetwork 公链上面的龙头发射台，网站：www.oneswap.cc/w/WV3P4U4N | $JOSE 是@onepumpcc 发射台上面的第一个官方代币 | 机制：@onepumpcc 平台产生的交易收入都会用来回购",
-          "url": "https://x.com/MiracleboyNFT/status/2122503032047129064",
-          "post_time": "2026-11-17T01:32:11+00:00"
-        },
         {
           "text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入",
           "url": "https://x.com/01573bit/status/2122621484090916945",
