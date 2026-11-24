@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T07:25:26.702572Z",
+  "generated_at": "2026-11-24T07:34:23.671146Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1166,
-    "blocked": 55,
-    "no_entry": 1055,
+    "posts_total": 1164,
+    "blocked": 53,
+    "no_entry": 1056,
     "events": 39,
-    "merged_posts": 17,
+    "merged_posts": 16,
     "terms_failed": 0,
     "today_events": 6,
     "today_pushed": 7
@@ -1129,11 +1129,11 @@
       "event_id": "domain:pump.fun",
       "identity": "domain:pump.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T07:27:02Z",
+      "first_seen_at": "2026-11-18T02:20:41Z",
       "last_seen_at": "2026-11-18T08:10:43Z",
-      "window_bucket": 83097,
-      "post_count": 3,
-      "representative_text": "谁能想到还能这样？Grok搭了个 pump.fun/u/QKL2058 小应用，它负责交易，我就在旁边看着。 | | 800美元，只用17秒就做到4055美元。 | | 它遇到每个币，都会把操作步骤明明白白展示出来： | | → 在 pump.fun/u/QKL2058 刷出新币 | → 检查会不会rug：看开发者钱包、筹码捆绑、X平台帖子数量 | → 买入 | → x.com/crbpite8/status/2122592331517870287/video/1",
+      "window_bucket": 83100,
+      "post_count": 2,
+      "representative_text": "这谁能想到啊，Grok做了个 pump.fun/u/QKL2058 交易桌，我就看着它自己跑交易。 | | 480美元进去，最后变成7160美元。 | | 交易桌会把每一步操作明明白白放出来： | | → 在 pump.fun/u/QKL2058 上面刷出新币 | → 检查rug风险：开发者持仓、筹码捆绑、以前有没有rug | → 选择买入或者跳过 | → 卖出 x.com/crbpite8/status/2122877623176982724/video/1",
       "keywords": "[\"高:新币\"]",
       "tweet_url": "https://x.com/linda6248130564/status/2122965711723401345",
       "author": "linda6248130564",
@@ -1153,11 +1153,6 @@
       "reg_at": "Sat Nov 30 09:38:15 +0000 2024",
       "views": "21",
       "samples": [
-        {
-          "text": "谁能想到还能这样？Grok搭了个 pump.fun/u/QKL2058 小应用，它负责交易，我就在旁边看着。 | | 800美元，只用17秒就做到4055美元。 | | 它遇到每个币，都会把操作步骤明明白白展示出来： | | → 在 pump.fun/u/QKL2058 刷出新币 | → 检查会不会rug：看开发者钱包、筹码捆绑、X平台帖子数量 | → 买入 | → x.com/crbpite8/",
-          "url": "https://x.com/crbpite8/status/2122592331517870287",
-          "post_time": "2026-11-17T07:27:02+00:00"
-        },
         {
           "text": "这谁能想到啊，Grok做了个 pump.fun/u/QKL2058 交易桌，我就看着它自己跑交易。 | | 480美元进去，最后变成7160美元。 | | 交易桌会把每一步操作明明白白放出来： | | → 在 pump.fun/u/QKL2058 上面刷出新币 | → 检查rug风险：开发者持仓、筹码捆绑、以前有没有rug | → 选择买入或者跳过 | → 卖出 x.com/crbpite8/st",
           "url": "https://x.com/crbpite8/status/2122877623176982724",
