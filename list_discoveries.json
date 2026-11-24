@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T10:16:22.534101Z",
+  "generated_at": "2026-11-24T10:25:31.821464Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1160,
+    "posts_total": 1158,
     "blocked": 51,
-    "no_entry": 1055,
-    "events": 40,
-    "merged_posts": 14,
+    "no_entry": 1056,
+    "events": 39,
+    "merged_posts": 12,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 12
@@ -349,11 +349,11 @@
       "event_id": "domain:fungolabs.org",
       "identity": "domain:fungolabs.org",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T10:17:23Z",
+      "first_seen_at": "2026-11-23T10:02:57Z",
       "last_seen_at": "2026-11-23T10:02:57Z",
-      "window_bucket": 83097,
-      "post_count": 3,
-      "representative_text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
+      "window_bucket": 83121,
+      "post_count": 1,
+      "representative_text": "Zuki Genesis: $500 + 10M Airdrop! | fungolabs.org/launchpad/c/2qrzxtv9",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/ElvieEvon67457/status/2124805895687209208",
       "author": "ElvieEvon67457",
@@ -373,16 +373,6 @@
       "reg_at": "Tue Oct 03 00:41:05 +0000 2023",
       "views": "5",
       "samples": [
-        {
-          "text": "Mint Giraffies &amp; Share 750K $TOKEN | fungolabs.org/launchpad/c/c5fvjzjq",
-          "url": "https://x.com/wen394428142129/status/2122635201499234493",
-          "post_time": "2026-11-17T10:17:23+00:00"
-        },
-        {
-          "text": "Captain Cat ($DM) | fungolabs.org/launchpad/c/pg6cwm83",
-          "url": "https://x.com/wen394428142129/status/2122635483524243966",
-          "post_time": "2026-11-17T10:18:30+00:00"
-        },
         {
           "text": "Zuki Genesis: $500 + 10M Airdrop! | fungolabs.org/launchpad/c/2qrzxtv9",
           "url": "https://x.com/ElvieEvon67457/status/2124805895687209208",
@@ -1447,41 +1437,6 @@
           "text": "近七日已回购 1215844枚 aster-2:native | 点击查看 buildaster.xyz/ x.com/zsf11221/status/2122669277522403353/photo/1",
           "url": "https://x.com/zsf11221/status/2122669277522403353",
           "post_time": "2026-11-17T12:32:47+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:pepe666.cc",
-      "identity": "domain:pepe666.cc",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T10:25:13Z",
-      "last_seen_at": "2026-11-17T10:25:13Z",
-      "window_bucket": 83097,
-      "post_count": 1,
-      "representative_text": "毛毛姐又开始奶了 | | 今晚八点开始Mint（打满即开） | | Mint网站： pepe666.cc/ | 数量10,000 份 · 每份 0.003 BNB · 每份 6000 万 PEPE | | 没有免费的，估计十多分钟打满了 | | 兄弟们，你们冲不冲？？ | | 项目只做分享，不做投资建议 x.com/wen394428142129/status/2122637173929464060/photo/1",
-      "keywords": "[\"高:免费 mint\"]",
-      "tweet_url": "https://x.com/wen394428142129/status/2122637173929464060",
-      "author": "wen394428142129",
-      "author_name": "非重要角色|🕊️",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 10899,
-      "blue_verified": true,
-      "listed_count": 32,
-      "reg_at": "Sun Sep 29 01:54:41 +0000 2024",
-      "views": "67",
-      "samples": [
-        {
-          "text": "毛毛姐又开始奶了 | | 今晚八点开始Mint（打满即开） | | Mint网站： pepe666.cc/ | 数量10,000 份 · 每份 0.003 BNB · 每份 6000 万 PEPE | | 没有免费的，估计十多分钟打满了 | | 兄弟们，你们冲不冲？？ | | 项目只做分享，不做投资建议 x.com/wen394428142129/status/212263717392946406",
-          "url": "https://x.com/wen394428142129/status/2122637173929464060",
-          "post_time": "2026-11-17T10:25:13+00:00"
         }
       ]
     }
