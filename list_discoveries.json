@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T09:22:23.699107Z",
+  "generated_at": "2026-11-24T09:31:20.070890Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1164,
+    "posts_total": 1162,
     "blocked": 51,
-    "no_entry": 1059,
+    "no_entry": 1058,
     "events": 39,
-    "merged_posts": 15,
+    "merged_posts": 14,
     "terms_failed": 0,
     "today_events": 6,
     "today_pushed": 8
@@ -199,11 +199,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-17T09:22:52Z",
+      "first_seen_at": "2026-11-17T22:14:36Z",
       "last_seen_at": "2026-11-23T18:59:40Z",
-      "window_bucket": 83097,
-      "post_count": 4,
-      "representative_text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入！ | | $JOSE",
+      "window_bucket": 83099,
+      "post_count": 3,
+      "representative_text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: +78.8% | | jose doesn't check the btc chart. jose digs ⛏️🌱 x.com/onepumpcc/status/212261347040761870",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
       "author": "RK_Bitcoin",
@@ -223,11 +223,6 @@
       "reg_at": "Fri Aug 04 02:18:42 +0000 2023",
       "views": "200",
       "samples": [
-        {
-          "text": "拉菲了，地推劲大！ | | $jose x.com/01573bit/status/2122621484090916945/photo/1 新东西直接交给AI打，grok bot全程操作，自动买卖！ | | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | | 链接直接发给 grokbot ，帮我自动操作买入",
-          "url": "https://x.com/01573bit/status/2122621484090916945",
-          "post_time": "2026-11-17T09:22:52+00:00"
-        },
         {
           "text": "隐私公链 ＃CantonNetwork 第一个 #memecoin | $JOSE 这非常有可能是今年唯一一个可以改变你命运的 #token | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱（谷歌邮箱、网易邮箱、QQ邮箱）创建账号，输入十位密码，再填写自己的用户名即可注册完成。 $BTC last 24h: -0.25% | $JOSE last 24h: ",
           "url": "https://x.com/into9966/status/2122815694136058294",
