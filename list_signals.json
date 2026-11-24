@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-11-24T15:31:08.744647Z",
+  "generated_at": "2026-11-24T15:40:35.785686Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1378,
-    "with_ca": 256,
-    "list_posts_total": 4446,
-    "unique_cas": 1688,
-    "dedup_merged_posts": 2758,
-    "passed": 4,
+    "signals_total": 1374,
+    "with_ca": 255,
+    "list_posts_total": 4450,
+    "unique_cas": 1691,
+    "dedup_merged_posts": 2759,
+    "passed": 3,
     "dropped_dev": 50,
     "dropped_old": 187,
-    "dropped_no_time": 418,
+    "dropped_no_time": 420,
     "dropped_dev_unknown": 28,
     "dropped_fake_site": 7,
     "pending_retry": 0,
-    "verdict_cached": 739,
-    "tags_refreshed": 0,
-    "dev_rechecked": 0,
+    "verdict_cached": 737,
+    "tags_refreshed": 20,
+    "dev_rechecked": 3,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 1,
-    "dead_blocked_live": 35,
+    "dead_blocked_live": 36,
     "pool_too_old_live": 7,
-    "v9_rechecked": 1,
+    "v9_rechecked": 0,
     "v9_ready": 0,
     "v9_not_ready": 2,
     "security_unknown": 0,
     "dropped_detail": {
-      "no_pool": 415,
-      "l2_suffix": 949,
       "dev_over": 50,
+      "l2_suffix": 950,
+      "no_pool": 417,
       "old": 187,
       "fake_website:knowyourmeme.com": 2,
       "fake_website:solana.com": 1,
@@ -78,87 +78,6 @@
           "post_time": "2026-11-23T12:14:31Z",
           "text_clean": "$PRV is tapping into one of the biggest conversations in crypto: PRIVACY. | | On-chain transparency is great, but not everything needs to be exposed. | | That’s where PrivacyCash comes in. | | Built on Solana, PrivacyCash is focused on encrypted balances and private transfers, bringing a different approach to how users manage their on-chain activity. | | Privacy is not a trend that disappears overnight. It’s a narrative worth paying attention to. | | $PRV deserves a closer look. | | CA: GKg5RfhuCVprXSyESwpNznuzrWD5mCmjeg1eb1LejyZP | | Chart: t.co/GpTR0N9UZJ | | Website: t.co/tQXI7M7IqE | | DYOR & NFA.",
           "tweet_url": "https://x.com/MaxelRowan/status/2124839005610987841"
-        }
-      ]
-    },
-    {
-      "ca": "84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc",
-      "chain": "solana",
-      "symbol": "Fly",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-24T04:06:57.679734Z",
-      "smart_degen_count": 162,
-      "renowned_count": 10,
-      "ready_to_push": true,
-      "net_buy_count": 138,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-23T06:02:00.116188Z",
-      "pair_created_at": "2026-11-23T02:53:35Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-23T03:42:52Z",
-      "post_count": 8,
-      "unique_authors": 6,
-      "posts": [
-        {
-          "author": "CryptoLord100x",
-          "author_name": "CryptoLord100x",
-          "post_time": "2026-11-23T03:42:52Z",
-          "text_clean": "@blknoiz06 | | can $fly hit 100m to save the trenches | | 84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc",
-          "tweet_url": "https://x.com/CryptoLord100x/status/2124710244534435953"
-        },
-        {
-          "author": "cfm_sol",
-          "author_name": "cfm_sol",
-          "post_time": "2026-11-23T04:13:08Z",
-          "text_clean": "$Fly 150k dyor | | 84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | okx wallet:web3.okx.com/ul/WHunlmn?ref=JEFF1 | | A pure meme coin. | | The market right now is completely dominated by wallets. People have lost the instinct to judge \"what makes a good meme.\" Even something as simple as \"a fly on x.com/cfm_sol/status/2124717863437251044/photo/1",
-          "tweet_url": "https://x.com/cfm_sol/status/2124717863437251044"
-        },
-        {
-          "author": "fcsauc",
-          "author_name": "fcsauc",
-          "post_time": "2026-11-23T05:43:17Z",
-          "text_clean": "$Fly 现价175K DYOR | | 这次 AI 选币系统给出的目标有点特别，竟然是一只苍蝇！ | | OKX AI 精准命中，早期 $71 做到了 $7.88K，表现相当吸睛。 | | 一键追踪这个钱包： | t.co/KHNl7bEPzX | | CA：84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | 重点来了，Fly 的故事并不只是苍蝇。 | | 它的概念来自一句对市场现状的调侃：现在的 Meme 已经被钱包主导了。 | | 一个币有没有意思，似乎没那么重要；真正决定它能不能飞起来的，是不是有正确的钱包进场。 | | 哪怕只是一只墙上的苍蝇，只要被聪明钱看中，也可能成为市场追逐的对象。 | | 「Fly on a wall」就是围绕这个观点诞生的，同名代币紧跟原帖出现，把这份自嘲直接变成了 Meme 身份。 | | 它的特别之处，是没有硬编一个宏大的故事，而是拿整个 Degen 市场的玩法开玩笑。 | | 但个人认为，这种纯叙事定位并不等于长期价值。没有产品和生态，行情一旦轮动离场，跌起来同样可能很快。",
-          "tweet_url": "https://x.com/fcsauc/status/2124740549701669132"
-        },
-        {
-          "author": "crbpite8",
-          "author_name": "crbpite8",
-          "post_time": "2026-11-23T05:58:42Z",
-          "text_clean": "$Fly 现价223K DYOR | | OKX的AI选币系统顺利锁定了这只标的 | | 喜欢埋伏meme的朋友看过来，AI工具帮你找准出手时机 | | $71.2一路走到 $7.7K，这位玩家稳稳拿下这波行情 | | 一键追踪钱包地址：t.co/Qii4kzIyE4 | | CA：84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | 叙事总结：它就是一款主打纯粹玩梗的meme币。 | | 当下盘面风向，基本都是头部钱包在带动节奏。不少玩家慢慢丢掉了自主分辨优质meme的直觉，哪怕只是墙上苍蝇这类简简单单的创意，只要有优质钱包进场加持，热度和价格就能被快速推高。 | | 不少人选择跟进，仅仅是看到Ansem和一众精明钱包率先布局进场。",
-          "tweet_url": "https://x.com/crbpite8/status/2124744429525229664"
-        },
-        {
-          "author": "MaxelRowan",
-          "author_name": "MaxelRowan",
-          "post_time": "2026-11-23T08:09:57Z",
-          "text_clean": "everyone wants to be seen. $FLY is here to remind you that sometimes the most interesting perspective comes from the wall. | | just a fly on the wall. | | A simple name, a recognizable concept, and plenty of room for the community to turn it into something bigger. | | No need to force the narrative. Let the community bring the energy, build the attention, and give $FLY its own identity. | | Small fly. Big perspective. | | CA: 84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | Website: t.co/mEoQRTRY22 | | Chart: t.co/zfltuM486G | | DYOR & NFA.",
-          "tweet_url": "https://x.com/MaxelRowan/status/2124777460504187389"
-        },
-        {
-          "author": "crbpite8",
-          "author_name": "crbpite8",
-          "post_time": "2026-11-23T11:05:56Z",
-          "text_clean": "#sol #bsc 链上热点叙事 11.23 | | 1、 #Fly | 不是讲故事的动物币，而是对“现在连苍蝇都能被推起来”这个市场现实的元讽刺。 $230K | CA:84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | 2、 #cCAT | Helius 隐私功能上线后，社区搞的“保密猫”meme，主打 Solana confidential 交易梗 $300K | CA:6aiyJ9uwGYRE3tM6rk7oeqLwpdDcdtVgU7aW2mFFpump | | 3、 #OpenIndex | AI Agent 专用知识库/Wiki 项目的社区 meme 币$350K | CA:FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump | | 4、 #MCAT | 反 t.co/MdEGcBsdjp 内卷砸盘、主张“重新相信并持有”的月亮猫 meme $400K | CA:BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi | | 5、 #P | 蹭“AI agent 公开求解 P vs NP”热点的数学/CS 梗 meme 币。 | $120k | CA:7Kn92xBncvzp8FUrmZKFnEDd7wS3iLAugr5A8vWBpump | | 6、 #HOLD | 奖励长期持有、用 fee 分红对抗 t.co/MdEGcBsdjp 式 PvP 砸盘的“持有激励”平台币 $120k | CA:9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump",
-          "tweet_url": "https://x.com/crbpite8/status/2124821746515689941"
-        },
-        {
-          "author": "fcsauc",
-          "author_name": "fcsauc",
-          "post_time": "2026-11-23T11:17:20Z",
-          "text_clean": "#sol #bsc 链上热点叙事 11.23 | | 1、 #Fly | 不是讲故事的动物币，而是对“现在连苍蝇都能被推起来”这个市场现实的元讽刺。 $230K | CA:84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | | 2、 #cCAT | Helius 隐私功能上线后，社区搞的“保密猫”meme，主打 Solana confidential 交易梗 $300K | CA:6aiyJ9uwGYRE3tM6rk7oeqLwpdDcdtVgU7aW2mFFpump | | 3、 #OpenIndex | AI Agent 专用知识库/Wiki 项目的社区 meme 币$350K | CA:FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump | | 4、 #MCAT | 反 t.co/BhbxmbbWT0 内卷砸盘、主张“重新相信并持有”的月亮猫 meme $400K | CA:BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi | | 5、 #P | 蹭“AI agent 公开求解 P vs NP”热点的数学/CS 梗 meme 币。 | $120k | CA:7Kn92xBncvzp8FUrmZKFnEDd7wS3iLAugr5A8vWBpump | | 6、 #HOLD | 奖励长期持有、用 fee 分红对抗 t.co/BhbxmbbWT0 式 PvP 砸盘的“持有激励”平台币 $120k | CA:9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump",
-          "tweet_url": "https://x.com/fcsauc/status/2124824616250020109"
-        },
-        {
-          "author": "sol_jingou",
-          "author_name": "sol_jingou",
-          "post_time": "2026-11-23T12:51:47Z",
-          "text_clean": "#sol #bsc 链上热点叙事｜11.23 观察清单 | 市场现在的共识：随便一个标的都能被推起来，叙事优先，给大家整理6个新鲜梗币，全部SOL链pumpfun： | | 1. $Fly｜市值230K | 不是普通动物meme，主打元讽刺，调侃当下行情——连苍蝇都能被拉盘，市场狂热的缩影 | CA:84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc | 2. $cCAT｜市值300K | 保密猫，蹭Helius隐私交易上线热点，Solana confidential隐私交易梗，社区玩梗向 | CA:6aiyJ9uwGYRE3tM6rk7oeqLwpdDcdtVgU7aW2mFFpump | 3. solana:FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump｜市值350K | AI Agent叙事，AI智能体知识库、Wiki方向的社区meme，贴合AI Agent主线 | CA:FuKY3dk7QmpbDdQRjzbjB3G6PiCuqKNvN4dAWDpwpump | 4. $MCAT｜市值400K | 月亮猫，反shturl.c内卷砸盘，社区口号：重新相信、拿住不砸，对抗PvP互砸生态 | CA:BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi | 5. $P｜市值120K | 硬核CS梗，蹭P vs NP数学难题全网讨论热点，偏极客、程序员圈子叙事 | CA:7Kn92xBncvzp8FUrmZKFnEDd7wS3iLAugr5A8vWBpump | 6. $HOLD｜市值120K | 反砸盘机制币，交易手续费分红，奖励长期持有者，对抗Pumpfun快进快出内卷 | CA:9AiHB952pXVrHuct9m3RKWoWv4LG52p58FYjMvUkpump",
-          "tweet_url": "https://x.com/sol_jingou/status/2124848384716820881"
         }
       ]
     },
