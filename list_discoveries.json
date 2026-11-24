@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-24T02:10:25.619518Z",
+  "generated_at": "2026-11-24T02:19:24.096680Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1179,
+    "posts_total": 1180,
     "blocked": 64,
     "no_entry": 1061,
     "events": 37,
-    "merged_posts": 17,
+    "merged_posts": 18,
     "terms_failed": 0,
     "today_events": 2,
-    "today_pushed": 1
+    "today_pushed": 2
   },
   "events": [
     {
@@ -20,14 +20,14 @@
       "identity": "domain:genius.fun",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-24T02:06:46Z",
-      "last_seen_at": "2026-11-24T02:06:46Z",
+      "last_seen_at": "2026-11-24T02:13:31Z",
       "window_bucket": 83124,
-      "post_count": 1,
+      "post_count": 2,
       "representative_text": "$ANTB is now available on Genius.fun. 🧠 | | Creators can now launch tokens paired with Anthropic's tokenized equity, opening up more possibilities for new markets on Genius launchpad. x.com/GeniusTerminal/status/2125048451025220087/photo/1",
       "keywords": "[\"高:launchpad\"]",
-      "tweet_url": "https://x.com/GeniusTerminal/status/2125048451025220087",
-      "author": "GeniusTerminal",
-      "author_name": "Genius",
+      "tweet_url": "https://x.com/ryanmyher/status/2125050149584134451",
+      "author": "ryanmyher",
+      "author_name": "Ryan Myher - 天才",
       "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
       "list_id": "1887729607585173782",
       "list_short": "3782",
@@ -37,16 +37,21 @@
       "kw_strong": "[]",
       "kw_weak": "[]",
       "kw_entry": "[]",
-      "followers": 77570,
+      "followers": 12372,
       "blue_verified": true,
-      "listed_count": 270,
-      "reg_at": "Sun Mar 08 01:16:38 +0000 2020",
-      "views": "1739",
+      "listed_count": 109,
+      "reg_at": "Tue Jul 31 22:00:35 +0000 2012",
+      "views": "66",
       "samples": [
         {
           "text": "$ANTB is now available on Genius.fun. 🧠 | | Creators can now launch tokens paired with Anthropic's tokenized equity, opening up more possibilities for new markets on Genius launchpad. x.com/GeniusTerm",
           "url": "https://x.com/GeniusTerminal/status/2125048451025220087",
           "post_time": "2026-11-24T02:06:46+00:00"
+        },
+        {
+          "text": "Looking to bid some Genius.fun tokens as we release new quote token support 👀 | | Follow me on the Genius App! | | tradegenius.com/u/86a19251-66fd-441e-b62f-dd51f3c467bc?pnl=0 $ANTB is now available o",
+          "url": "https://x.com/ryanmyher/status/2125050149584134451",
+          "post_time": "2026-11-24T02:13:31+00:00"
         }
       ]
     },
