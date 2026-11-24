@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-24T15:58:26.782997Z",
+  "generated_at": "2026-11-24T16:07:35.504567Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1115,
-    "blocked": 50,
-    "no_entry": 1018,
-    "events": 37,
+    "posts_total": 1110,
+    "blocked": 49,
+    "no_entry": 1015,
+    "events": 36,
     "merged_posts": 10,
     "terms_failed": 0,
-    "today_events": 7,
-    "today_pushed": 13
+    "today_events": 0,
+    "today_pushed": 0
   },
   "events": [
     {
@@ -1322,41 +1322,6 @@
           "text": "$BP 单日 +27% 背后：Backpack 把加密交易所的天花板捅开了 | | 先看市场投票：BP $1.03778，24 小时 +27.24%。但我想说，涨幅只是结果，真正的大事是这两张牌照把 Backpack 的身份换了。 | | 一、美国首个，没有第二家 | | 美国首个合规的链上衍生品交易平台 — 注意「首个」两个字。DCM + DCO x.com/web3cxk/status/212",
           "url": "https://x.com/web3cxk/status/2122727205444911173",
           "post_time": "2026-11-17T16:22:58+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:pxio.fun",
-      "identity": "domain:pxio.fun",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T16:06:55Z",
-      "last_seen_at": "2026-11-17T16:06:55Z",
-      "window_bucket": 83098,
-      "post_count": 1,
-      "representative_text": "这个pxio昨天领的免费的 今天看竟然打满了 | | 不过是真垃圾啊 | | 收的 bnb 直接进项目方钱包，也不说拿来干嘛 | | 池子没多少钱，nft 也没几个人买，挖再多币卖给谁啊…… x.com/kuk47377341/status/2122723164589584541/photo/1 pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不打 | | 网站比这几天的流水盘看着舒服多了 | | 玩法就是 你的NFT是矿机 每小时可以产 $pxio | | ai告诉我 NFT是可以交易的 但是网站还没看到 | | 反正先给免费档拿着。花钱的",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/kuk47377341/status/2122723164589584541",
-      "author": "kuk47377341",
-      "author_name": "Kithe",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 22743,
-      "blue_verified": true,
-      "listed_count": 182,
-      "reg_at": "Wed Nov 16 09:09:50 +0000 2022",
-      "views": "306",
-      "samples": [
-        {
-          "text": "这个pxio昨天领的免费的 今天看竟然打满了 | | 不过是真垃圾啊 | | 收的 bnb 直接进项目方钱包，也不说拿来干嘛 | | 池子没多少钱，nft 也没几个人买，挖再多币卖给谁啊…… x.com/kuk47377341/status/2122723164589584541/photo/1 pxio的免费NFT让agent去领下 | | 每个钱包第一个免费 单号能mint30张 花钱的暂时不",
-          "url": "https://x.com/kuk47377341/status/2122723164589584541",
-          "post_time": "2026-11-17T16:06:55+00:00"
         }
       ]
     }
