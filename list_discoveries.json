@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T13:16:27.564823Z",
+  "generated_at": "2026-11-24T13:25:28.559979Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1147,
+    "posts_total": 1145,
     "blocked": 50,
-    "no_entry": 1048,
+    "no_entry": 1047,
     "events": 38,
-    "merged_posts": 11,
+    "merged_posts": 10,
     "terms_failed": 0,
     "today_events": 7,
     "today_pushed": 13
@@ -1364,11 +1364,11 @@
       "event_id": "domain:punchin.fun",
       "identity": "domain:punchin.fun",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T13:20:18Z",
+      "first_seen_at": "2026-11-17T15:29:32Z",
       "last_seen_at": "2026-11-17T15:29:32Z",
       "window_bucket": 83098,
-      "post_count": 2,
-      "representative_text": "🆓GETAGENT Genesis Quest ĐÃ MỞ! | | 1.000 người đầu tiên hoàn thành quest với Agent ID hợp lệ sẽ nhận được 1 lượt mint MIỄN PHÍ, không cần xếp hàng. | | link: getagent-quest.web.app/ | X @GetAgentBNB | | Minting sắp mở! x.com/mrchrismast_/status/2122681232882532652/photo/1 🆓 Mint miễn phí｜Punch Card ",
+      "post_count": 1,
+      "representative_text": "🆓 Mint miễn phí｜Bold Leonidas ($BOLD) | | Dự án: Bộ sưu tập NFT 1.111 chiếc trên BNB Chain, dành cho ví có Agent ID .ai. | | Tham gia: Ví có Agent ID .ai được mint 1 NFT đầu miễn phí qua hàm mint(1) value 0. Các NFT sau trả phí theo giá hợp đồng. | | Hợp đồng: x.com/mrchrismast_/status/2122713759257",
       "keywords": "[\"高:Agent mint\", \"高:.ai mint\"]",
       "tweet_url": "https://x.com/mrchrismast_/status/2122713759257067814",
       "author": "mrchrismast_",
@@ -1388,11 +1388,6 @@
       "reg_at": "Sun Oct 08 03:22:38 +0000 2023",
       "views": "166",
       "samples": [
-        {
-          "text": "🆓GETAGENT Genesis Quest ĐÃ MỞ! | | 1.000 người đầu tiên hoàn thành quest với Agent ID hợp lệ sẽ nhận được 1 lượt mint MIỄN PHÍ, không cần xếp hàng. | | link: getagent-quest.web.app/ | X @GetAgentBNB |",
-          "url": "https://x.com/mrchrismast_/status/2122681232882532652",
-          "post_time": "2026-11-17T13:20:18+00:00"
-        },
         {
           "text": "🆓 Mint miễn phí｜Bold Leonidas ($BOLD) | | Dự án: Bộ sưu tập NFT 1.111 chiếc trên BNB Chain, dành cho ví có Agent ID .ai. | | Tham gia: Ví có Agent ID .ai được mint 1 NFT đầu miễn phí qua hàm mint(1) v",
           "url": "https://x.com/mrchrismast_/status/2122713759257067814",
