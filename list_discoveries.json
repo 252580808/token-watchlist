@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-24T09:04:26.886190Z",
+  "generated_at": "2026-11-24T09:13:42.156021Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1165,
+    "posts_total": 1164,
     "blocked": 51,
     "no_entry": 1059,
     "events": 39,
-    "merged_posts": 16,
+    "merged_posts": 15,
     "terms_failed": 0,
     "today_events": 6,
-    "today_pushed": 7
+    "today_pushed": 8
   },
   "events": [
     {
@@ -469,11 +469,11 @@
       "event_id": "domain:oripa.xyz",
       "identity": "domain:oripa.xyz",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-17T09:10:40Z",
+      "first_seen_at": "2026-11-22T10:37:37Z",
       "last_seen_at": "2026-11-22T10:37:37Z",
-      "window_bucket": 83097,
-      "post_count": 2,
-      "representative_text": "看到很多人都在说这个oripa项目 | | 感觉他和之前的papertrade类似，抽中了就会获得真实卡片（可换成USDC），没抽中就给你 $ORIPA 代币 | | 但是这个代币也并没有说可以交易，本质类似于链上开盲盒，前期头矿应该是能赚到钱的，后面进去的都是接盘侠 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com/oripaxyz/status/2118314438873002202/video/1",
+      "window_bucket": 83117,
+      "post_count": 1,
+      "representative_text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody should have to wait until Dec 2. | | So here's the Early Bird badge. | No mint price. You only pay gas. |",
       "keywords": "[\"高:头矿\"]",
       "tweet_url": "https://x.com/Xuegaogx/status/2124452235350540754",
       "author": "Xuegaogx",
@@ -493,11 +493,6 @@
       "reg_at": "Sat Oct 07 03:03:07 +0000 2023",
       "views": "135",
       "samples": [
-        {
-          "text": "看到很多人都在说这个oripa项目 | | 感觉他和之前的papertrade类似，抽中了就会获得真实卡片（可换成USDC），没抽中就给你 $ORIPA 代币 | | 但是这个代币也并没有说可以交易，本质类似于链上开盲盒，前期头矿应该是能赚到钱的，后面进去的都是接盘侠 every miss mints. | | Nov 25 · on @HyperliquidX | oripa.xyz x.com",
-          "url": "https://x.com/lugeweb3/status/2122618412379812117",
-          "post_time": "2026-11-17T09:10:40+00:00"
-        },
         {
           "text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody shoul",
           "url": "https://x.com/Xuegaogx/status/2124452235350540754",
