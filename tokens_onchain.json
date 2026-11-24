@@ -10,9 +10,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 13:07",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 44435.04,
+    "liquidity_usd": 45747.41,
     "market_cap": 315070.0,
-    "holders": 1868,
+    "holders": 1873,
     "dev_count": 0,
     "dev_creator": "0x08cde0383fff318e40478edd891b6a59185df7d4",
     "gmgn_launchpad": "pool_uniswap_v2",
@@ -24,8 +24,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 44435.04285285099,
-    "liq_ts": 1795487164,
+    "liq_now": 45747.40873384235,
+    "liq_ts": 1795487499,
     "liq_src": "GMGN"
   },
   {
@@ -39,9 +39,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 11:16",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 23985.33,
+    "liquidity_usd": 24070.0,
     "market_cap": 24773.0,
-    "holders": 869,
+    "holders": 871,
     "dev_count": 1,
     "dev_creator": "78XzeLvhyvsgQTirz9LmerGB6PNMDgFhdtHXSWoo83oi",
     "gmgn_launchpad": "meteora_virtual_curve",
@@ -53,8 +53,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 23985.32798689002,
-    "liq_ts": 1795487164,
+    "liq_now": 24070.0045625369,
+    "liq_ts": 1795487499,
     "liq_src": "GMGN"
   },
   {
@@ -68,9 +68,9 @@
     "push_status": "pushed",
     "pushed_at": "2026-11-23 04:12",
     "push_reason": "新潜力币信号（Dev≤2 + 安全检查 + KOL/聪明钱实际买入 + 流动性达标） ｜ 硬标签: 社媒被抄0次 / 图片被抄0次 / dev状态未知",
-    "liquidity_usd": 16636.08,
+    "liquidity_usd": 18825.01,
     "market_cap": 149809.0,
-    "holders": 1437,
+    "holders": 1443,
     "dev_count": 1,
     "dev_creator": "UGktQfqV18QoCfJtHNe7TWhhJLRTMK221gSUb67zEye",
     "gmgn_launchpad": "Pump.fun",
@@ -82,8 +82,8 @@
     "twitter_dup": 0,
     "image_dup": 0,
     "creator_token_status": "",
-    "liq_now": 16636.0771306899,
-    "liq_ts": 1795487164,
+    "liq_now": 18825.01173093712,
+    "liq_ts": 1795487499,
     "liq_src": "GMGN"
   }
 ]
