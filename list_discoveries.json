@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-25T00:58:39.974176Z",
+  "generated_at": "2026-11-25T01:07:30.815177Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1067,
+    "posts_total": 1066,
     "blocked": 40,
     "no_entry": 985,
     "events": 33,
-    "merged_posts": 9,
+    "merged_posts": 8,
     "terms_failed": 0,
     "today_events": 0,
     "today_pushed": 2
@@ -1179,11 +1179,11 @@
       "event_id": "article:2120473254414422017",
       "identity": "article:2120473254414422017",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-18T01:00:12Z",
+      "first_seen_at": "2026-11-18T04:36:22Z",
       "last_seen_at": "2026-11-18T04:36:22Z",
       "window_bucket": 83100,
-      "post_count": 2,
-      "representative_text": "“BTC 未来可能有 90% 的时间在震荡 | 以前 BTC 涨得快、洗得快；2024 年 3 月以后，运行方式明显变慢、更容易反复震荡 | 假设过去一轮周期 70% 时间震荡，未来可能增加到 90% | 可能原因：资金更多、市值更大、波动率下降，多空要花更长时间交换筹码 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/z",
+      "post_count": 1,
+      "representative_text": "“高 Beta 不是越高越好 | BTC 波动率不够高了，所以我这轮主要做 ETH：核心资产，同时保留更大的交易弹性 | 我熟悉 ETH 的波动节奏、技术结构和市场反应，大仓位交易，熟悉程度非常重要 | SOL、HYPE、BNB 我没有投入同样多的研究精力 | HYPE 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2122911771489108378",
       "author": "168X_Fortune",
@@ -1203,11 +1203,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "102",
       "samples": [
-        {
-          "text": "“BTC 未来可能有 90% 的时间在震荡 | 以前 BTC 涨得快、洗得快；2024 年 3 月以后，运行方式明显变慢、更容易反复震荡 | 假设过去一轮周期 70% 时间震荡，未来可能增加到 90% | 可能原因：资金更多、市值更大、波动率下降，多空要花更长时间交换筹码 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / U",
-          "url": "https://x.com/168X_Fortune/status/2122857368849641961",
-          "post_time": "2026-11-18T01:00:12+00:00"
-        },
         {
           "text": "“高 Beta 不是越高越好 | BTC 波动率不够高了，所以我这轮主要做 ETH：核心资产，同时保留更大的交易弹性 | 我熟悉 ETH 的波动节奏、技术结构和市场反应，大仓位交易，熟悉程度非常重要 | SOL、HYPE、BNB 我没有投入同样多的研究精力 | HYPE 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / US",
           "url": "https://x.com/168X_Fortune/status/2122911771489108378",
