@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:46:24.588059Z",
+  "generated_at": "2026-11-25T17:55:23.056593Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,10 +7,10 @@
   "stats": {
     "signals_total": 1213,
     "with_ca": 211,
-    "list_posts_total": 4120,
-    "unique_cas": 1560,
-    "dedup_merged_posts": 2560,
-    "passed": 3,
+    "list_posts_total": 4122,
+    "unique_cas": 1561,
+    "dedup_merged_posts": 2561,
+    "passed": 4,
     "dropped_dev": 45,
     "dropped_old": 177,
     "dropped_no_time": 398,
@@ -18,18 +18,18 @@
     "dropped_fake_site": 4,
     "pending_retry": 0,
     "verdict_cached": 701,
-    "tags_refreshed": 20,
-    "dev_rechecked": 0,
+    "tags_refreshed": 10,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
-    "site_rechecked": 0,
+    "site_rechecked": 1,
     "site_recheck_blocked": 0,
     "site_blocked_live": 2,
     "dead_blocked_live": 30,
     "pool_too_old_live": 6,
     "v9_rechecked": 1,
-    "v9_ready": 0,
-    "v9_not_ready": 4,
+    "v9_ready": 1,
+    "v9_not_ready": 3,
     "security_unknown": 0,
     "dropped_detail": {
       "l2_suffix": 859,
@@ -45,9 +45,63 @@
       "fake_website:linktr.ee": 1
     },
     "today_new": 0,
-    "today_pushed": 0
+    "today_pushed": 0,
+    "v9_new_protected": 1
   },
   "items": [
+    {
+      "ca": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+      "chain": "solana",
+      "symbol": "TANGENT",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 10,
+      "renowned_count": 0,
+      "ready_to_push": true,
+      "net_buy_count": 10,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
+      "social_ok": true,
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-25T17:55:18.613540Z",
+      "pair_created_at": "2026-11-25T13:29:46Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-25T13:36:08Z",
+      "post_count": 4,
+      "unique_authors": 2,
+      "posts": [
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-25T13:36:08Z",
+          "text_clean": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS | | 卧槽 尼玛的 超级大宝贝？？？ | | 🔒了 50% | | ai扫出来是这样说： | | Tangent Systems 是一个由普通人运行的电脑网络，而不是由一家大公司控制。可以把它想象成一个社区，每家每户都贡献一点自己的网络，大家一起组成一个不属于任何人的私密互联网。 | | 这个网络能做三件事： | | 私密互联网：一个 VPN，会把你的流量在好几个人的电脑之间多跳转发，所以没人能看到你在做什么。还能证明不保存任何日志，另外有私密 DNS 和通往 .onion（暗网）网站的入口。 | | 离网也能用：没有普通网络的时候，也能通过蓝牙或无线电发送 Solana 交易，就像把纸条一个人传给一个人，直到送上链。 | | 给 AI 代理用的电脑：AI 机器人可以租用密封的私密电脑，按秒付费。可以通过 MCP、Chrome 插件或者手机确认来接入。 | | 运行节点的人会获得收益。整体分阶段推出：先是软件，然后是应用、Chrome 插件、Seeker dApp Store 应用，最后是大家可以购买的实体节点设备。",
+          "tweet_url": "https://x.com/mewudi669/status/2125584324158456064"
+        },
+        {
+          "author": "Lynx_Crypto3",
+          "author_name": "Lynx_Crypto3",
+          "post_time": "2026-11-25T13:37:53Z",
+          "text_clean": "@mewudi669 省流版就是 | 私有互联网、离线支付、密封计算，把“隐私”和“AI agent”两个最热词都塞进去了 | BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+          "tweet_url": "https://x.com/Lynx_Crypto3/status/2125584763549606194"
+        },
+        {
+          "author": "Lynx_Crypto3",
+          "author_name": "Lynx_Crypto3",
+          "post_time": "2026-11-25T13:38:06Z",
+          "text_clean": "省流版就是 | 私有互联网、离线支付、密封计算，把“隐私”和“AI agent”两个最热词都塞进去了 | BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+          "tweet_url": "https://x.com/Lynx_Crypto3/status/2125584815458226177"
+        },
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-25T14:45:38Z",
+          "text_clean": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS | | A lack of value discovery | | With its focus on privacy and the dark web, combined with 50% of its supply locked, this is an absolute gem on the Solana network. | | I don’t think people realize just how big this project is.",
+          "tweet_url": "https://x.com/mewudi669/status/2125601813365944585"
+        }
+      ]
+    },
     {
       "ca": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
       "chain": "solana",
@@ -55,7 +109,7 @@
       "dev_count": 1,
       "dev_blocked": false,
       "dev_blocked_at": "",
-      "dev_check_at": "",
+      "dev_check_at": "2026-11-25T17:55:02.040711Z",
       "smart_degen_count": 91,
       "renowned_count": 4,
       "ready_to_push": true,
