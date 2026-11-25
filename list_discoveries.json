@@ -1,20 +1,60 @@
 {
-  "generated_at": "2026-11-25T13:25:35.867322Z",
+  "generated_at": "2026-11-25T13:34:47.816499Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1001,
+    "posts_total": 1003,
     "blocked": 38,
-    "no_entry": 926,
+    "no_entry": 927,
     "events": 31,
-    "merged_posts": 6,
+    "merged_posts": 7,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 6
   },
   "events": [
+    {
+      "event_id": "domain:oripa.xyz",
+      "identity": "domain:oripa.xyz",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-22T10:37:37Z",
+      "last_seen_at": "2026-11-25T13:25:48Z",
+      "window_bucket": 83117,
+      "post_count": 2,
+      "representative_text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody should have to wait until Dec 2. | | So here's the Early Bird badge. | No mint price. You only pay gas. |",
+      "keywords": "[\"高:头矿\"]",
+      "tweet_url": "https://x.com/MengLayer/status/2125581721374806443",
+      "author": "MengLayer",
+      "author_name": "陈小萌",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 23083,
+      "blue_verified": true,
+      "listed_count": 444,
+      "reg_at": "Fri May 14 09:00:39 +0000 2021",
+      "views": "83",
+      "samples": [
+        {
+          "text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody shoul",
+          "url": "https://x.com/Xuegaogx/status/2124452235350540754",
+          "post_time": "2026-11-22T10:37:37+00:00"
+        },
+        {
+          "text": "我就这么说吧，如果你还在链上玩，明晚上8点你不去干Oripa，那你白玩了！ | | 目前 $Orip 的铸造曲线只走了十分之一，白单基本都打完了，也就是说，明天晚上8点铸造过nft的人第一时间冲进去也能爽吃铸造头矿，年化几万吧。 | | 所以如果你还没铸造NFT，速度！👇 | oripa.xyz/FBG53BDD x.com/MengLayer/status/2125581721374806443",
+          "url": "https://x.com/MengLayer/status/2125581721374806443",
+          "post_time": "2026-11-25T13:25:48+00:00"
+        }
+      ]
+    },
     {
       "event_id": "github:bnb-chain/bsc-genesis-contract",
       "identity": "github:bnb-chain/bsc-genesis-contract",
@@ -582,41 +622,6 @@
           "text": "“好公司可以上市成功，其他 AI 股票却仍然继续下跌，这两件事可以同时成立 | 我觉得这一轮 AI 资产的调整，在两三个月前就已经开始了，IPO 只是确认所处的阶段，不是创造转折点 | 历史上：2021 年 11 月之后的 Crypto 是持续调整，2000 年之后的纳斯达克经历了很长的熊市 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支",
           "url": "https://x.com/168X_Fortune/status/2124656302718955722",
           "post_time": "2026-11-23T00:08:31+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:oripa.xyz",
-      "identity": "domain:oripa.xyz",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-22T10:37:37Z",
-      "last_seen_at": "2026-11-22T10:37:37Z",
-      "window_bucket": 83117,
-      "post_count": 1,
-      "representative_text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody should have to wait until Dec 2. | | So here's the Early Bird badge. | No mint price. You only pay gas. |",
-      "keywords": "[\"高:头矿\"]",
-      "tweet_url": "https://x.com/Xuegaogx/status/2124452235350540754",
-      "author": "Xuegaogx",
-      "author_name": "雪糕战神🍦",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 32953,
-      "blue_verified": true,
-      "listed_count": 633,
-      "reg_at": "Sat Oct 07 03:03:07 +0000 2023",
-      "views": "135",
-      "samples": [
-        {
-          "text": "最近很火的 Oripa 玩法很新 可以看看 | | oripa.xyz/DQ5C3GWK | | 走我链接现在可以 Mint 早鸟 NFT | | 26 号晚上 8 点就可以参与头矿 You asked. We heard you. | | The allowlist still goes out by draw. That doesn't change. | | But nobody shoul",
-          "url": "https://x.com/Xuegaogx/status/2124452235350540754",
-          "post_time": "2026-11-22T10:37:37+00:00"
         }
       ]
     },
