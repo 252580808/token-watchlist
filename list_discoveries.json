@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:28:50.087756Z",
+  "generated_at": "2026-11-25T14:37:10.640211Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
@@ -7,9 +7,9 @@
     "enabled": 1,
     "posts_total": 997,
     "blocked": 39,
-    "no_entry": 920,
+    "no_entry": 921,
     "events": 31,
-    "merged_posts": 7,
+    "merged_posts": 6,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 7
@@ -844,11 +844,11 @@
       "event_id": "article:2122998981395427328",
       "identity": "article:2122998981395427328",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-18T14:29:55Z",
+      "first_seen_at": "2026-11-19T05:19:33Z",
       "last_seen_at": "2026-11-20T04:09:48Z",
-      "window_bucket": 83102,
-      "post_count": 3,
-      "representative_text": "“NVIDIA 最难复制的，不只是 CUDA 或 GPU，而是把整个供应链连接起来的信用 | GPU 背后有台积电、存储、先进封装、光通信、网络设备、服务器 ODM，每个环节都要协调 | AI 需求暴增时，最有价值的是谁能把关键零组件准时拿到，并形成可交付的完整系统 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh/regist",
+      "window_bucket": 83104,
+      "post_count": 2,
+      "representative_text": "“NVIDIA 的 Full Stack 有两层 | 第一层是工程资产：GPU 架构、CUDA、NVLink、网络设备、开发者和客户基础，不会一夜消失，保守的职业经理人也可能把现有业务经营得很好 | 第二层是产业打法：帮客户设计 AI Factory、网络配置、产能锁定、资金安排、未来几代升级，而且要在需求未确定时先承担风险 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | ",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2123629860870607171",
       "author": "168X_Fortune",
@@ -868,11 +868,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "189",
       "samples": [
-        {
-          "text": "“NVIDIA 最难复制的，不只是 CUDA 或 GPU，而是把整个供应链连接起来的信用 | GPU 背后有台积电、存储、先进封装、光通信、网络设备、服务器 ODM，每个环节都要协调 | AI 需求暴增时，最有价值的是谁能把关键零组件准时拿到，并形成可交付的完整系统 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC",
-          "url": "https://x.com/168X_Fortune/status/2123061144126685295",
-          "post_time": "2026-11-18T14:29:55+00:00"
-        },
         {
           "text": "“NVIDIA 的 Full Stack 有两层 | 第一层是工程资产：GPU 架构、CUDA、NVLink、网络设备、开发者和客户基础，不会一夜消失，保守的职业经理人也可能把现有业务经营得很好 | 第二层是产业打法：帮客户设计 AI Factory、网络配置、产能锁定、资金安排、未来几代升级，而且要在需求未确定时先承担风险 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美",
           "url": "https://x.com/168X_Fortune/status/2123285026393731425",
