@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-25T15:14:05.385053Z",
+  "generated_at": "2026-11-25T15:22:49.570126Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1214,
-    "with_ca": 216,
-    "list_posts_total": 4146,
-    "unique_cas": 1556,
-    "dedup_merged_posts": 2590,
+    "signals_total": 1212,
+    "with_ca": 215,
+    "list_posts_total": 4144,
+    "unique_cas": 1555,
+    "dedup_merged_posts": 2589,
     "passed": 3,
     "dropped_dev": 45,
     "dropped_old": 177,
@@ -19,7 +19,7 @@
     "pending_retry": 0,
     "verdict_cached": 695,
     "tags_refreshed": 20,
-    "dev_rechecked": 0,
+    "dev_rechecked": 1,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
@@ -27,14 +27,14 @@
     "site_blocked_live": 2,
     "dead_blocked_live": 29,
     "pool_too_old_live": 7,
-    "v9_rechecked": 2,
+    "v9_rechecked": 1,
     "v9_ready": 0,
     "v9_not_ready": 3,
     "security_unknown": 0,
     "dropped_detail": {
-      "l2_suffix": 861,
-      "fake_website:youtube.com": 3,
       "old": 177,
+      "l2_suffix": 860,
+      "fake_website:youtube.com": 3,
       "no_pool": 388,
       "dev_over": 45,
       "mcap_liq_high": 7,
@@ -69,8 +69,8 @@
       "pair_created_at": "2026-11-25T04:43:02Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-25T04:58:08Z",
-      "post_count": 18,
-      "unique_authors": 12,
+      "post_count": 19,
+      "unique_authors": 13,
       "posts": [
         {
           "author": "0xZerah",
@@ -197,6 +197,13 @@
           "post_time": "2026-11-25T13:42:13Z",
           "text_clean": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | 明牌了 | 感谢debot的地址标注 | @Debot710718 @0xCat_Crypto @Debot_Official x.com/0xZerah/status/2125585854219661652/photo/1",
           "tweet_url": "https://x.com/0xZerah/status/2125585854219661652"
+        },
+        {
+          "author": "fangfang3366",
+          "author_name": "fangfang3366",
+          "post_time": "2026-11-25T15:10:05Z",
+          "text_clean": "Sol的流动性还是好，每天都有速通几M的金狗。这两天除了几个热门的动物meme跑出来以外，今天又速通了一个 $Basket，它是Sol上面的新台子，都说是@Raydium团队做的~ | | 简单来说: $Basket是结合了$Stonk+$Float两个台子的玩法。平台手续费的一部分会自动分红给买了$Basket的用户，另外的用来回购销毁~ | | 它最特别的点在于: 除了USDC和SOL，还支持130多种代币化美股当交易对。而且在平台毕业的币子，还能给后面的新币做底层交易对，相当于持续给老币带来买盘，形成生态内循环~ | | 另外，如果你要在$BASKET上发币，至少要准备1万U的流动池，提高发币成本，可以很好规避掉那些跑一波就撤的老鼠盘子，池子深度和承接也会更好~ | | 它的风险点在于: 它只是搭在Ray生态上，大家都说他是Ray做的，但只是传言，官方并没有承认~ | | 一句话总结: $Basket分红销毁机制不错+传和Ray有关，但目前Fomo点依托在Ray这个传闻之上，DYOR~! | | $Basket | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
+          "tweet_url": "https://x.com/fangfang3366/status/2125607963822055528"
         }
       ]
     },
