@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-25T12:04:15.788275Z",
+  "generated_at": "2026-11-25T12:13:26.587233Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 995,
+    "posts_total": 994,
     "blocked": 36,
-    "no_entry": 923,
-    "events": 30,
+    "no_entry": 921,
+    "events": 31,
     "merged_posts": 6,
     "terms_failed": 0,
-    "today_events": 2,
+    "today_events": 3,
     "today_pushed": 4
   },
   "events": [
+    {
+      "event_id": "github:bnb-chain/bsc-genesis-contract",
+      "identity": "github:bnb-chain/bsc-genesis-contract",
+      "identity_type": "github",
+      "first_seen_at": "2026-11-25T12:00:33Z",
+      "last_seen_at": "2026-11-25T12:00:33Z",
+      "window_bucket": 83130,
+      "post_count": 1,
+      "representative_text": "官方写了name：BSC Governance Token | | github.com/bnb-chain/bsc-genesis-contract/blob/84641812a013eda1593e058aeed4dc116c7746eb/contracts/GovToken.sol#L22 x.com/shitshitppl/status/2125560266020856101/photo/1 币安要放大招了！新一代高速公链不发行新币，直接使用BNB！ | | 最近币安正在推进一个值得高度关注的计划：开发新一代高性能Layer 1公链。 | | 这次最有意思的地方是： | | 新链不发行",
+      "keywords": "[\"高:平台币\", \"高:销毁\", \"高:新币\"]",
+      "tweet_url": "https://x.com/shitshitppl/status/2125560266020856101",
+      "author": "shitshitppl",
+      "author_name": "_",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "1",
+      "ent_level": "C",
+      "reason": "命中关键词 + 入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[\"contract\"]",
+      "followers": 3130,
+      "blue_verified": true,
+      "listed_count": 19,
+      "reg_at": "Thu Dec 04 03:47:10 +0000 2025",
+      "views": "48",
+      "samples": [
+        {
+          "text": "官方写了name：BSC Governance Token | | github.com/bnb-chain/bsc-genesis-contract/blob/84641812a013eda1593e058aeed4dc116c7746eb/contracts/GovToken.sol#L22 x.com/shitshitppl/status/2125560266020856101/photo/",
+          "url": "https://x.com/shitshitppl/status/2125560266020856101",
+          "post_time": "2026-11-25T12:00:33+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:basketlaunch.xyz",
       "identity": "domain:basketlaunch.xyz",
