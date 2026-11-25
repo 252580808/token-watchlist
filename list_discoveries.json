@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25T04:34:29.395087Z",
+  "generated_at": "2026-11-25T04:43:53.017359Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1040,
+    "posts_total": 1039,
     "blocked": 38,
     "no_entry": 962,
-    "events": 33,
+    "events": 32,
     "merged_posts": 7,
     "terms_failed": 0,
     "today_events": 0,
@@ -1167,41 +1167,6 @@
           "text": "Grok 自动化交易桌｜480美元 → 7160美元 | 地址：pump.fun/u/Pumpner | | 运行逻辑 | 自动刷新币，半秒快速核验rug风险 | 核查开发者持仓、筹码捆绑、历史记录，有风险直接跳过 | | 本次交易记录 | PIXEL｜+165% | LUNA｜+220% | AURA｜+290% | RIFT｜-28美元 | NOVA、ECHO、$VOID 风险拦截，后续全部r",
           "url": "https://x.com/linda6248130564/status/2122965711723401345",
           "post_time": "2026-11-18T08:10:43+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2120473254414422017",
-      "identity": "article:2120473254414422017",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-18T04:36:22Z",
-      "last_seen_at": "2026-11-18T04:36:22Z",
-      "window_bucket": 83100,
-      "post_count": 1,
-      "representative_text": "“高 Beta 不是越高越好 | BTC 波动率不够高了，所以我这轮主要做 ETH：核心资产，同时保留更大的交易弹性 | 我熟悉 ETH 的波动节奏、技术结构和市场反应，大仓位交易，熟悉程度非常重要 | SOL、HYPE、BNB 我没有投入同样多的研究精力 | HYPE 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS 交易免税 | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | | 👉 立即注册：www.bit.com/zh",
-      "keywords": "[\"高:打新\"]",
-      "tweet_url": "https://x.com/168X_Fortune/status/2122911771489108378",
-      "author": "168X_Fortune",
-      "author_name": "168X",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 21565,
-      "blue_verified": true,
-      "listed_count": 295,
-      "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
-      "views": "102",
-      "samples": [
-        {
-          "text": "“高 Beta 不是越高越好 | BTC 波动率不够高了，所以我这轮主要做 ETH：核心资产，同时保留更大的交易弹性 | 我熟悉 ETH 的波动节奏、技术结构和市场反应，大仓位交易，熟悉程度非常重要 | SOL、HYPE、BNB 我没有投入同样多的研究精力 | HYPE 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / US",
-          "url": "https://x.com/168X_Fortune/status/2122911771489108378",
-          "post_time": "2026-11-18T04:36:22+00:00"
         }
       ]
     }
