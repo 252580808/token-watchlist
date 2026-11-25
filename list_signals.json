@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T22:43:26.196841Z",
+  "generated_at": "2026-11-25T22:52:31.268283Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,34 +7,34 @@
   "stats": {
     "signals_total": 1221,
     "with_ca": 211,
-    "list_posts_total": 4159,
-    "unique_cas": 1560,
-    "dedup_merged_posts": 2599,
-    "passed": 3,
+    "list_posts_total": 4161,
+    "unique_cas": 1561,
+    "dedup_merged_posts": 2600,
+    "passed": 5,
     "dropped_dev": 42,
-    "dropped_old": 176,
+    "dropped_old": 177,
     "dropped_no_time": 399,
     "dropped_dev_unknown": 32,
     "dropped_fake_site": 4,
     "pending_retry": 0,
-    "verdict_cached": 702,
+    "verdict_cached": 703,
     "tags_refreshed": 20,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 2,
-    "dead_blocked_live": 36,
+    "dead_blocked_live": 35,
     "pool_too_old_live": 4,
-    "v9_rechecked": 0,
-    "v9_ready": 0,
-    "v9_not_ready": 4,
+    "v9_rechecked": 3,
+    "v9_ready": 1,
+    "v9_not_ready": 3,
     "security_unknown": 0,
     "dropped_detail": {
       "l2_suffix": 857,
       "mcap_liq_high": 7,
-      "old": 176,
+      "old": 177,
       "fake_website:solana.com": 1,
       "no_pool": 396,
       "dev_over": 42,
@@ -49,6 +49,45 @@
     "v9_new_protected": 1
   },
   "items": [
+    {
+      "ca": "CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27",
+      "chain": "solana",
+      "symbol": "Santa",
+      "dev_count": 0,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "",
+      "smart_degen_count": 2,
+      "renowned_count": 0,
+      "ready_to_push": true,
+      "net_buy_count": 2,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
+      "social_ok": true,
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-25T22:52:22.315872Z",
+      "pair_created_at": "2026-11-24T17:12:22Z",
+      "freshness": "72h",
+      "first_seen_at": "2026-11-25T18:36:15Z",
+      "post_count": 2,
+      "unique_authors": 2,
+      "posts": [
+        {
+          "author": "CryptoThannos",
+          "author_name": "CryptoThannos",
+          "post_time": "2026-11-25T18:36:15Z",
+          "text_clean": "$SANTA caught my attention, picked up a bag | | It's the first Christmas-themed ticker I've seen this year, and I think the timing is interesting | | Christmas meta is about to get more attention as we get closer to December | | This one also has an actual Santa workshop tasks and rewards. Holder gifts are planned too | | I like the concept, could be an interesting play heading into the holidays | | CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27",
+          "tweet_url": "https://x.com/CryptoThannos/status/2125659849161896028"
+        },
+        {
+          "author": "gem_insider",
+          "author_name": "gem_insider",
+          "post_time": "2026-11-25T18:40:05Z",
+          "text_clean": "Aped $SANTA here | | hearing that this is a good dev, so decided to gamble some | | first Christmas narrative launched on Raydium | | holders can claim gifts in SOL from the trading fees | | CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27 x.com/gem_insider/status/2125660812270317772/photo/1",
+          "tweet_url": "https://x.com/gem_insider/status/2125660812270317772"
+        }
+      ]
+    },
     {
       "ca": "AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend",
       "chain": "solana",
@@ -282,6 +321,38 @@
           "post_time": "2026-11-23T16:00:21Z",
           "text_clean": "这项目等主网上线，搞不好能冲到几十万市值！ $antc | | ca：0x1a9ca5a347c4aeab4870668e76506e45c23d6281",
           "tweet_url": "https://x.com/bajieChina/status/2124895840804471054"
+        }
+      ]
+    },
+    {
+      "ca": "GKg5RfhuCVprXSyESwpNznuzrWD5mCmjeg1eb1LejyZP",
+      "chain": "solana",
+      "symbol": "PRV",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "2026-11-25T12:39:57.953847Z",
+      "smart_degen_count": 28,
+      "renowned_count": 2,
+      "ready_to_push": true,
+      "net_buy_count": 21,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
+      "social_ok": true,
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-23T16:33:59.368272Z",
+      "pair_created_at": "2026-11-23T10:17:10Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-23T12:14:31Z",
+      "post_count": 1,
+      "unique_authors": 1,
+      "posts": [
+        {
+          "author": "MaxelRowan",
+          "author_name": "MaxelRowan",
+          "post_time": "2026-11-23T12:14:31Z",
+          "text_clean": "$PRV is tapping into one of the biggest conversations in crypto: PRIVACY. | | On-chain transparency is great, but not everything needs to be exposed. | | That’s where PrivacyCash comes in. | | Built on Solana, PrivacyCash is focused on encrypted balances and private transfers, bringing a different approach to how users manage their on-chain activity. | | Privacy is not a trend that disappears overnight. It’s a narrative worth paying attention to. | | $PRV deserves a closer look. | | CA: GKg5RfhuCVprXSyESwpNznuzrWD5mCmjeg1eb1LejyZP | | Chart: t.co/GpTR0N9UZJ | | Website: t.co/tQXI7M7IqE | | DYOR & NFA.",
+          "tweet_url": "https://x.com/MaxelRowan/status/2124839005610987841"
         }
       ]
     }
