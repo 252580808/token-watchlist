@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-26T15:23:36.790867Z",
+  "generated_at": "2026-11-26T15:31:49.300157Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 934,
+    "posts_total": 931,
     "blocked": 29,
-    "no_entry": 864,
+    "no_entry": 860,
     "events": 35,
-    "merged_posts": 6,
+    "merged_posts": 7,
     "terms_failed": 0,
     "today_events": 7,
-    "today_pushed": 15
+    "today_pushed": 16
   },
   "events": [
     {
@@ -20,14 +20,14 @@
       "identity": "domain:blobmeme.com",
       "identity_type": "domain_bare",
       "first_seen_at": "2026-11-26T15:17:26Z",
-      "last_seen_at": "2026-11-26T15:17:26Z",
+      "last_seen_at": "2026-11-26T15:24:59Z",
       "window_bucket": 83134,
-      "post_count": 1,
+      "post_count": 2,
       "representative_text": "@ika_xbt @the_smart_ape the fees on OG BLOB goes to buyback and burn, also it give half of the fees as $HYPE to its holder. you can claim the fees on website blobmeme.com | | this vamp attempt by montra whale doesn't make any sense on OG BLOB. | | always support the OG",
       "keywords": "[\"高:buyback\", \"高:burn\"]",
-      "tweet_url": "https://x.com/Aurelius0121/status/2125972201388331494",
-      "author": "Aurelius0121",
-      "author_name": "Aurelius",
+      "tweet_url": "https://x.com/ika_xbt/status/2125974103207084045",
+      "author": "ika_xbt",
+      "author_name": "ika",
       "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
       "list_id": "1887729607585173782",
       "list_short": "3782",
@@ -37,16 +37,21 @@
       "kw_strong": "[]",
       "kw_weak": "[]",
       "kw_entry": "[]",
-      "followers": 46467,
+      "followers": 25315,
       "blue_verified": true,
-      "listed_count": 225,
-      "reg_at": "Wed Aug 24 13:28:36 +0000 2016",
-      "views": "134",
+      "listed_count": 294,
+      "reg_at": "Sat Jun 30 14:24:11 +0000 2012",
+      "views": "408",
       "samples": [
         {
           "text": "@ika_xbt @the_smart_ape the fees on OG BLOB goes to buyback and burn, also it give half of the fees as $HYPE to its holder. you can claim the fees on website blobmeme.com | | this vamp attempt by mont",
           "url": "https://x.com/Aurelius0121/status/2125972201388331494",
           "post_time": "2026-11-26T15:17:26+00:00"
+        },
+        {
+          "text": "you can argue about taste, you can't argue about facts | | 0.3% of the trading fees from the elyspump BLOB are being extracted, not redistributed to holders | | but you do you x.com/ika_xbt/status/212",
+          "url": "https://x.com/ika_xbt/status/2125974103207084045",
+          "post_time": "2026-11-26T15:24:59+00:00"
         }
       ]
     },
