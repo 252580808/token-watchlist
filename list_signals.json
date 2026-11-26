@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-26T02:47:00.199326Z",
+  "generated_at": "2026-11-26T02:55:31.316094Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1222,
+    "signals_total": 1218,
     "with_ca": 209,
-    "list_posts_total": 4156,
+    "list_posts_total": 4159,
     "unique_cas": 1560,
-    "dedup_merged_posts": 2596,
+    "dedup_merged_posts": 2599,
     "passed": 4,
     "dropped_dev": 41,
     "dropped_old": 178,
@@ -19,7 +19,7 @@
     "pending_retry": 0,
     "verdict_cached": 700,
     "tags_refreshed": 20,
-    "dev_rechecked": 0,
+    "dev_rechecked": 2,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
@@ -27,7 +27,7 @@
     "site_blocked_live": 2,
     "dead_blocked_live": 39,
     "pool_too_old_live": 3,
-    "v9_rechecked": 2,
+    "v9_rechecked": 0,
     "v9_ready": 0,
     "v9_not_ready": 1,
     "security_unknown": 0,
@@ -117,6 +117,73 @@
           "post_time": "2026-11-25T17:43:49Z",
           "text_clean": "Memecoins are evolving, and $LENDR is bringing something different to the Solana ecosystem. | | A lending platform built around meme coins, allowing holders to put their assets to work instead of simply holding or selling. | | Borrow USDC against your tokens or lend USDC and set your own terms. | | Interesting concept, especially if meme coin lending starts gaining traction. | | $LENDR | | CA: AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend | | Chart: t.co/LvAQ4TiQxB | | t.co/tXNFVDESuo | | DYOR & NFA",
           "tweet_url": "https://x.com/MaxelRowan/status/2125646653059457410"
+        }
+      ]
+    },
+    {
+      "ca": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+      "chain": "solana",
+      "symbol": "TANGENT",
+      "dev_count": 1,
+      "dev_blocked": false,
+      "dev_blocked_at": "",
+      "dev_check_at": "2026-11-26T01:52:08.804997Z",
+      "smart_degen_count": 14,
+      "renowned_count": 0,
+      "ready_to_push": true,
+      "net_buy_count": 10,
+      "net_buy_pass": true,
+      "net_buy_source": "web_free_holding",
+      "social_ok": true,
+      "v9_reasons": [],
+      "v9_check_at": "2026-11-25T17:55:18.613540Z",
+      "pair_created_at": "2026-11-25T13:29:46Z",
+      "freshness": "24h",
+      "first_seen_at": "2026-11-25T13:36:08Z",
+      "post_count": 6,
+      "unique_authors": 2,
+      "posts": [
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-25T13:36:08Z",
+          "text_clean": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS | | 卧槽 尼玛的 超级大宝贝？？？ | | 🔒了 50% | | ai扫出来是这样说： | | Tangent Systems 是一个由普通人运行的电脑网络，而不是由一家大公司控制。可以把它想象成一个社区，每家每户都贡献一点自己的网络，大家一起组成一个不属于任何人的私密互联网。 | | 这个网络能做三件事： | | 私密互联网：一个 VPN，会把你的流量在好几个人的电脑之间多跳转发，所以没人能看到你在做什么。还能证明不保存任何日志，另外有私密 DNS 和通往 .onion（暗网）网站的入口。 | | 离网也能用：没有普通网络的时候，也能通过蓝牙或无线电发送 Solana 交易，就像把纸条一个人传给一个人，直到送上链。 | | 给 AI 代理用的电脑：AI 机器人可以租用密封的私密电脑，按秒付费。可以通过 MCP、Chrome 插件或者手机确认来接入。 | | 运行节点的人会获得收益。整体分阶段推出：先是软件，然后是应用、Chrome 插件、Seeker dApp Store 应用，最后是大家可以购买的实体节点设备。",
+          "tweet_url": "https://x.com/mewudi669/status/2125584324158456064"
+        },
+        {
+          "author": "Lynx_Crypto3",
+          "author_name": "Lynx_Crypto3",
+          "post_time": "2026-11-25T13:37:53Z",
+          "text_clean": "@mewudi669 省流版就是 | 私有互联网、离线支付、密封计算，把“隐私”和“AI agent”两个最热词都塞进去了 | BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+          "tweet_url": "https://x.com/Lynx_Crypto3/status/2125584763549606194"
+        },
+        {
+          "author": "Lynx_Crypto3",
+          "author_name": "Lynx_Crypto3",
+          "post_time": "2026-11-25T13:38:06Z",
+          "text_clean": "省流版就是 | 私有互联网、离线支付、密封计算，把“隐私”和“AI agent”两个最热词都塞进去了 | BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+          "tweet_url": "https://x.com/Lynx_Crypto3/status/2125584815458226177"
+        },
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-25T14:45:38Z",
+          "text_clean": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS | | A lack of value discovery | | With its focus on privacy and the dark web, combined with 50% of its supply locked, this is an absolute gem on the Solana network. | | I don’t think people realize just how big this project is.",
+          "tweet_url": "https://x.com/mewudi669/status/2125601813365944585"
+        },
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-26T01:14:43Z",
+          "text_clean": "@deadshotXBT You should have a look. | | BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS",
+          "tweet_url": "https://x.com/mewudi669/status/2125760125252272600"
+        },
+        {
+          "author": "mewudi669",
+          "author_name": "mewudi669",
+          "post_time": "2026-11-26T01:16:36Z",
+          "text_clean": "BQYzmKyoSzdgeaeRiRwKJdWVaiLjpngUH6YT49PNNhsS | | 锁50% | | 私有互联网、离线支付、密封计算，把“隐私”和“AI agent”两个项目都整合了 | | 居然能这么低啊？？",
+          "tweet_url": "https://x.com/mewudi669/status/2125760601087742058"
         }
       ]
     },
@@ -282,38 +349,6 @@
           "post_time": "2026-11-25T16:19:09Z",
           "text_clean": "why ppl are saying solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f is made by the solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx team? | | am I missing something or is there actually a connection?",
           "tweet_url": "https://x.com/CryptoThannos/status/2125625344732401740"
-        }
-      ]
-    },
-    {
-      "ca": "GKg5RfhuCVprXSyESwpNznuzrWD5mCmjeg1eb1LejyZP",
-      "chain": "solana",
-      "symbol": "PRV",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-26T00:39:58.740198Z",
-      "smart_degen_count": 28,
-      "renowned_count": 2,
-      "ready_to_push": true,
-      "net_buy_count": 21,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-23T16:33:59.368272Z",
-      "pair_created_at": "2026-11-23T10:17:10Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-23T12:14:31Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "MaxelRowan",
-          "author_name": "MaxelRowan",
-          "post_time": "2026-11-23T12:14:31Z",
-          "text_clean": "$PRV is tapping into one of the biggest conversations in crypto: PRIVACY. | | On-chain transparency is great, but not everything needs to be exposed. | | That’s where PrivacyCash comes in. | | Built on Solana, PrivacyCash is focused on encrypted balances and private transfers, bringing a different approach to how users manage their on-chain activity. | | Privacy is not a trend that disappears overnight. It’s a narrative worth paying attention to. | | $PRV deserves a closer look. | | CA: GKg5RfhuCVprXSyESwpNznuzrWD5mCmjeg1eb1LejyZP | | Chart: t.co/GpTR0N9UZJ | | Website: t.co/tQXI7M7IqE | | DYOR & NFA.",
-          "tweet_url": "https://x.com/MaxelRowan/status/2124839005610987841"
         }
       ]
     }
