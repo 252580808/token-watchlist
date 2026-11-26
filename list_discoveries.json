@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26T17:10:45.040007Z",
+  "generated_at": "2026-11-26T17:19:37.693892Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 906,
+    "posts_total": 903,
     "blocked": 28,
-    "no_entry": 837,
-    "events": 34,
+    "no_entry": 835,
+    "events": 33,
     "merged_posts": 7,
     "terms_failed": 0,
     "today_events": 0,
@@ -1202,41 +1202,6 @@
           "text": "官推：@perposexyz | 网址：perpose.xyz | | Solana 上的 meme 永续合约平台，拟支持新币上线首日做多或做空，最高 5 倍杠杆。网站记录称已开放候补登记、可获奖励，但主网尚未上线。奖励规则、代币计划及上线时间未明确，不能当作已确认空投。杠杆交易有爆仓风险。",
           "url": "https://x.com/0x2a_ikun/status/2123475639546044888",
           "post_time": "2026-11-19T17:56:59+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "article:2123463937362632704",
-      "identity": "article:2123463937362632704",
-      "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-19T17:15:35Z",
-      "last_seen_at": "2026-11-19T17:15:35Z",
-      "window_bucket": 83106,
-      "post_count": 1,
-      "representative_text": "$ANT 一夜造富：7 位创始人合计 $1389 亿，SBF 的 FTX 错过了约 $356 亿 x.com/i/article/2123463937362632704",
-      "keywords": "[\"高:创始人\"]",
-      "tweet_url": "https://x.com/LA_Iron_man/status/2123465220802974023",
-      "author": "LA_Iron_man",
-      "author_name": "洛杉矶钢铁侠LA Iron Man｜加密美股AI快讯｜美中注册会计CPA｜蓝V互关 回关率100%",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 4361,
-      "blue_verified": true,
-      "listed_count": 32,
-      "reg_at": "Fri Mar 27 03:04:00 +0000 2020",
-      "views": "99",
-      "samples": [
-        {
-          "text": "$ANT 一夜造富：7 位创始人合计 $1389 亿，SBF 的 FTX 错过了约 $356 亿 x.com/i/article/2123463937362632704",
-          "url": "https://x.com/LA_Iron_man/status/2123465220802974023",
-          "post_time": "2026-11-19T17:15:35+00:00"
         }
       ]
     }
