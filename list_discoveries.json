@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-26T00:22:34.647073Z",
+  "generated_at": "2026-11-26T00:34:24.888245Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1015,
-    "blocked": 39,
+    "posts_total": 1013,
+    "blocked": 38,
     "no_entry": 939,
     "events": 31,
-    "merged_posts": 6,
+    "merged_posts": 5,
     "terms_failed": 0,
     "today_events": 1,
-    "today_pushed": 4
+    "today_pushed": 5
   },
   "events": [
     {
@@ -419,11 +419,11 @@
       "event_id": "domain:oneswap.cc",
       "identity": "domain:oneswap.cc",
       "identity_type": "domain",
-      "first_seen_at": "2026-11-19T00:25:14Z",
+      "first_seen_at": "2026-11-23T18:59:40Z",
       "last_seen_at": "2026-11-23T18:59:40Z",
-      "window_bucket": 83104,
-      "post_count": 2,
-      "representative_text": "＃Canton 传奇刚刚开篇， $JOSE 便是这场史诗行情的领路先锋！🚀 | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱创建账号，输入十位密码，填写自己的用户名即可注册完成。 | 2、注册完成后，在钱包准备eth、BNB都可以，链接钱包，完成跨链换成CC。 | www.oneswap.cc/launchpad/token/42f8bd78-b674-535d-96fb-4a2c004c264a | 3、打开⬆️链接，购买 OnePump is now live on Canton. x.com/onepumpcc/status/21210590311",
+      "window_bucket": 83123,
+      "post_count": 1,
+      "representative_text": "这个背景很不错噢 博主自己发推支持的代币 | | 🔗www.oneswap.cc/launchpad/token/dfae0f50-0d02-5090-b59d-6d3db1a54cce x.com/RK_Bitcoin/status/2124940967174423025/photo/1 The cat is officially out of the bag. 🐱⚡ | | Meet $CATON the official cat meme coin of the Canton Network. | | Cat on Canton = CatOn | | No complicated pi",
       "keywords": "[\"高:launchpad\"]",
       "tweet_url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
       "author": "RK_Bitcoin",
@@ -443,11 +443,6 @@
       "reg_at": "Fri Aug 04 02:18:42 +0000 2023",
       "views": "200",
       "samples": [
-        {
-          "text": "＃Canton 传奇刚刚开篇， $JOSE 便是这场史诗行情的领路先锋！🚀 | | www.oneswap.cc/w/WQ2Q2GS2 | 1、打开⬆️链接，用邮箱创建账号，输入十位密码，填写自己的用户名即可注册完成。 | 2、注册完成后，在钱包准备eth、BNB都可以，链接钱包，完成跨链换成CC。 | www.oneswap.cc/launchpad/token/42f8bd78-b674-53",
-          "url": "https://x.com/into9966/status/2123210959565258935",
-          "post_time": "2026-11-19T00:25:14+00:00"
-        },
         {
           "text": "这个背景很不错噢 博主自己发推支持的代币 | | 🔗www.oneswap.cc/launchpad/token/dfae0f50-0d02-5090-b59d-6d3db1a54cce x.com/RK_Bitcoin/status/2124940967174423025/photo/1 The cat is officially out of the bag. 🐱⚡ | | Meet $CAT",
           "url": "https://x.com/RK_Bitcoin/status/2124940967174423025",
