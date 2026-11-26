@@ -1,20 +1,60 @@
 {
-  "generated_at": "2026-11-26T02:37:30.043217Z",
+  "generated_at": "2026-11-26T02:47:02.533713Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1014,
+    "posts_total": 1010,
     "blocked": 37,
-    "no_entry": 940,
+    "no_entry": 935,
     "events": 32,
-    "merged_posts": 5,
+    "merged_posts": 6,
     "terms_failed": 0,
     "today_events": 2,
     "today_pushed": 7
   },
   "events": [
+    {
+      "event_id": "domain:nftx.io",
+      "identity": "domain:nftx.io",
+      "identity_type": "domain_bare",
+      "first_seen_at": "2026-11-20T02:25:02Z",
+      "last_seen_at": "2026-11-26T02:39:14Z",
+      "window_bucket": 83108,
+      "post_count": 2,
+      "representative_text": "起床开工了！ | | 第一个事，@buzzchain_io 测试网开了，链接推特就可以 | 排行榜是追溯的，早期发文互动都计入了 | | 第二个事，@ThinkersClub_官方等候名单开了，非常之简单，链接推特，关注账号就可以，现在有3000多人 | | nftx.io/thinkers x.com/aiqiang888/status/2123603497052680546/photo/1",
+      "keywords": "[\"高:第一个\"]",
+      "tweet_url": "https://x.com/erjie22/status/2125781393926148415",
+      "author": "erjie22",
+      "author_name": "二姐",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "1",
+      "ent_level": "C",
+      "reason": "命中关键词 + 入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[\"官推\"]",
+      "followers": 11300,
+      "blue_verified": true,
+      "listed_count": 30,
+      "reg_at": "Tue Aug 15 08:01:56 +0000 2023",
+      "views": "80",
+      "samples": [
+        {
+          "text": "起床开工了！ | | 第一个事，@buzzchain_io 测试网开了，链接推特就可以 | 排行榜是追溯的，早期发文互动都计入了 | | 第二个事，@ThinkersClub_官方等候名单开了，非常之简单，链接推特，关注账号就可以，现在有3000多人 | | nftx.io/thinkers x.com/aiqiang888/status/2123603497052680546/photo/1",
+          "url": "https://x.com/aiqiang888/status/2123603497052680546",
+          "post_time": "2026-11-20T02:25:02+00:00"
+        },
+        {
+          "text": "最后三个小时了，@ThinkersClub_要怎么走呀？ | | 我感觉看这形式，我能凑够 3 个NFT，我定价296，按这个速度，应该冲不到这个价。 | | 这个玩下来，白单没有占到很大的便宜，尤其买NFT那波人😂 | | 不过官推昨天下午发推了，要从买到零头的人里随机抽 25 个人，帮补满到 1 个。想去抽的赶紧去抽去。 | | 今天早上4点左右价格涨到了179u，出价人数超过1100。 | ",
+          "url": "https://x.com/erjie22/status/2125781393926148415",
+          "post_time": "2026-11-26T02:39:14+00:00"
+        }
+      ]
+    },
     {
       "event_id": "article:2125409854525517824",
       "identity": "article:2125409854525517824",
@@ -947,41 +987,6 @@
           "text": "“Google TPU 订单能见度看到 2029 年：第二供应来源，正在变成长期战略 | 大型 AI 公司不会把未来算力全押在一家供应商身上，本来就有动力增加 TPU、ASIC 和自研芯片 | 供应链研究认为 TPU 订单能见度已延伸到 2029 年，2028–2029 年潜在需求合计可能约 2600 万颗 | 客户不只是补 GPU 内地身份 5 分钟极速开户 BIT @BITstocks_CN ",
           "url": "https://x.com/168X_Fortune/status/2123629860870607171",
           "post_time": "2026-11-20T04:09:48+00:00"
-        }
-      ]
-    },
-    {
-      "event_id": "domain:nftx.io",
-      "identity": "domain:nftx.io",
-      "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-20T02:25:02Z",
-      "last_seen_at": "2026-11-20T02:25:02Z",
-      "window_bucket": 83108,
-      "post_count": 1,
-      "representative_text": "起床开工了！ | | 第一个事，@buzzchain_io 测试网开了，链接推特就可以 | 排行榜是追溯的，早期发文互动都计入了 | | 第二个事，@ThinkersClub_官方等候名单开了，非常之简单，链接推特，关注账号就可以，现在有3000多人 | | nftx.io/thinkers x.com/aiqiang888/status/2123603497052680546/photo/1",
-      "keywords": "[\"高:第一个\"]",
-      "tweet_url": "https://x.com/aiqiang888/status/2123603497052680546",
-      "author": "aiqiang888",
-      "author_name": "记得爱强",
-      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
-      "list_id": "1887729607585173782",
-      "list_short": "3782",
-      "sig_level": "3",
-      "ent_level": "none",
-      "reason": "命中关键词或条件词，无入口",
-      "kw_strong": "[]",
-      "kw_weak": "[]",
-      "kw_entry": "[]",
-      "followers": 19493,
-      "blue_verified": true,
-      "listed_count": 171,
-      "reg_at": "Tue Aug 28 09:58:29 +0000 2012",
-      "views": "102",
-      "samples": [
-        {
-          "text": "起床开工了！ | | 第一个事，@buzzchain_io 测试网开了，链接推特就可以 | 排行榜是追溯的，早期发文互动都计入了 | | 第二个事，@ThinkersClub_官方等候名单开了，非常之简单，链接推特，关注账号就可以，现在有3000多人 | | nftx.io/thinkers x.com/aiqiang888/status/2123603497052680546/photo/1",
-          "url": "https://x.com/aiqiang888/status/2123603497052680546",
-          "post_time": "2026-11-20T02:25:02+00:00"
         }
       ]
     },
