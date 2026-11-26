@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-26T05:14:20.758143Z",
+  "generated_at": "2026-11-26T05:19:47.912063Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1004,
+    "posts_total": 1003,
     "blocked": 35,
     "no_entry": 930,
     "events": 33,
-    "merged_posts": 6,
+    "merged_posts": 5,
     "terms_failed": 0,
     "today_events": 3,
     "today_pushed": 9
@@ -989,11 +989,11 @@
       "event_id": "article:2122998981395427328",
       "identity": "article:2122998981395427328",
       "identity_type": "tweet_article",
-      "first_seen_at": "2026-11-19T05:19:33Z",
+      "first_seen_at": "2026-11-20T04:09:48Z",
       "last_seen_at": "2026-11-20T04:09:48Z",
-      "window_bucket": 83104,
-      "post_count": 2,
-      "representative_text": "“NVIDIA 的 Full Stack 有两层 | 第一层是工程资产：GPU 架构、CUDA、NVLink、网络设备、开发者和客户基础，不会一夜消失，保守的职业经理人也可能把现有业务经营得很好 | 第二层是产业打法：帮客户设计 AI Factory、网络配置、产能锁定、资金安排、未来几代升级，而且要在需求未确定时先承担风险 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报！ | ",
+      "window_bucket": 83108,
+      "post_count": 1,
+      "representative_text": "“Google TPU 订单能见度看到 2029 年：第二供应来源，正在变成长期战略 | 大型 AI 公司不会把未来算力全押在一家供应商身上，本来就有动力增加 TPU、ASIC 和自研芯片 | 供应链研究认为 TPU 订单能见度已延伸到 2029 年，2028–2029 年潜在需求合计可能约 2600 万颗 | 客户不只是补 GPU 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美股、港股真实股票 + 港股打新｜支持 USDT / USDC 入金｜Non-CRS | | 通过 168X 注册并完成核验，即可加入 168X Trading Room，获取 BIT 独家研报",
       "keywords": "[\"高:打新\"]",
       "tweet_url": "https://x.com/168X_Fortune/status/2123629860870607171",
       "author": "168X_Fortune",
@@ -1013,11 +1013,6 @@
       "reg_at": "Tue Jul 01 08:23:44 +0000 2025",
       "views": "189",
       "samples": [
-        {
-          "text": "“NVIDIA 的 Full Stack 有两层 | 第一层是工程资产：GPU 架构、CUDA、NVLink、网络设备、开发者和客户基础，不会一夜消失，保守的职业经理人也可能把现有业务经营得很好 | 第二层是产业打法：帮客户设计 AI Factory、网络配置、产能锁定、资金安排、未来几代升级，而且要在需求未确定时先承担风险 内地身份 5 分钟极速开户 BIT @BITstocks_CN 证券｜美",
-          "url": "https://x.com/168X_Fortune/status/2123285026393731425",
-          "post_time": "2026-11-19T05:19:33+00:00"
-        },
         {
           "text": "“Google TPU 订单能见度看到 2029 年：第二供应来源，正在变成长期战略 | 大型 AI 公司不会把未来算力全押在一家供应商身上，本来就有动力增加 TPU、ASIC 和自研芯片 | 供应链研究认为 TPU 订单能见度已延伸到 2029 年，2028–2029 年潜在需求合计可能约 2600 万颗 | 客户不只是补 GPU 内地身份 5 分钟极速开户 BIT @BITstocks_CN ",
           "url": "https://x.com/168X_Fortune/status/2123629860870607171",
