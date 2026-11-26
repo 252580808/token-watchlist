@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-26T10:16:42.801891Z",
+  "generated_at": "2026-11-26T10:25:39.292544Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1154,
+    "signals_total": 1153,
     "with_ca": 202,
     "list_posts_total": 4088,
-    "unique_cas": 1539,
-    "dedup_merged_posts": 2549,
+    "unique_cas": 1538,
+    "dedup_merged_posts": 2550,
     "passed": 4,
     "dropped_dev": 40,
-    "dropped_old": 173,
-    "dropped_no_time": 387,
+    "dropped_old": 172,
+    "dropped_no_time": 388,
     "dropped_dev_unknown": 34,
     "dropped_fake_site": 4,
     "pending_retry": 0,
-    "verdict_cached": 689,
+    "verdict_cached": 688,
     "tags_refreshed": 20,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
@@ -32,9 +32,9 @@
     "v9_not_ready": 4,
     "security_unknown": 0,
     "dropped_detail": {
-      "old": 173,
-      "l2_suffix": 850,
-      "no_pool": 384,
+      "no_pool": 385,
+      "l2_suffix": 849,
+      "old": 172,
       "dev_over": 40,
       "no_created_at": 3,
       "mcap_liq_high": 7,
@@ -146,8 +146,8 @@
       "pair_created_at": "2026-11-25T04:43:02Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-25T04:58:08Z",
-      "post_count": 23,
-      "unique_authors": 16,
+      "post_count": 24,
+      "unique_authors": 17,
       "posts": [
         {
           "author": "0xZerah",
@@ -309,6 +309,13 @@
           "post_time": "2026-11-26T05:03:38Z",
           "text_clean": "$BASKET ｜当前 70 万美元，这盘真正的发动机在代币化股票这条叙事上，Raydium LaunchLab 只是基础设施 | | 直接给结论，这个标的我给不出倍数预期，但我觉得它的上限取决于代币化股票叙事能不能继续发酵。 | | xStocks 这套在 Solana 上跑得起来，Basket 作为把股票当配对资产的发射台就有存在意义。股票叙事熄火，Basket 的回购销毁飞轮就是空转。 | | 当天中午毕业我没追，位置看着就不安全。晚上回过神来它已经从 5 万美元顶到 300 万高点了，70 倍过去了心态就不对。追高的盈亏比太难算，我没算明白。 | | 这个盘我盯的几个点： | | 1⃣持仓 6764 万枚的头号地址和 Streamflow 锁仓数量正好对上，这个地址的解锁节奏是二段能不能起的最关键变量。官号自己锁了 7% 在那里，中短期不往下砸就是最大的利好。 | | 2⃣1000 个 NFT 每铸一个销毁 10 万枚 BASKET，目前已铸 155 个。全部铸满再销毁 8445 万枚，占总量不到 1%。这个销毁强度听着大，平摊到时间维度上没那么夸张。 | | 3⃣平台能不能持续发出有流量的新币才是飞轮能不能转的真答案。Solana 上 pad 已经卷到极致，想做出一个 $WIF 级别的爆款难度不小。 | | 现在的位置相对高点腰斩加七成，从百万美元回到七十万，筹码也洗了一轮。盈亏比比高点那会儿好看不少，但是二段能不能起我不敢打包票。等它走出一次站稳 30 万以上的回测再说。 | | CA：3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | ------- | | 欢迎各位加入我的链上频道，7 * 24 打狗，分享一些高质量研判👇",
           "tweet_url": "https://x.com/xiaoluoweb3/status/2125817735267733682"
+        },
+        {
+          "author": "btc2ai",
+          "author_name": "btc2ai",
+          "post_time": "2026-11-26T09:30:11Z",
+          "text_clean": "最近一级都不知道可以交易啥了... | 观察了一下这个项目，一天时间，没挂，那就再观察 | | $BASKET｜发射台开始让 Meme 用另一个 Meme 报价 | Basket 是 Solana 上基于 Raydium LaunchLab 的发射台。Raydium 发射页把本 CA 标成 Basket 平台。 | | CA：Solana | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | Basket 把发币时的两个选择交给创作者：用什么资产给新币报价，以及用什么资产发交易费奖励。可以发一枚用 $BASKET 报价、奖励也发 $BASKET 的猫币，也可以用 SOL 报价、奖励按轮换发代币化美股。",
+          "tweet_url": "https://x.com/btc2ai/status/2125884814645706784"
         }
       ]
     },
