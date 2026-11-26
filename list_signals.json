@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-26T13:43:36.435169Z",
+  "generated_at": "2026-11-26T13:52:36.732298Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1153,
-    "with_ca": 207,
-    "list_posts_total": 4046,
-    "unique_cas": 1518,
-    "dedup_merged_posts": 2528,
+    "signals_total": 1158,
+    "with_ca": 211,
+    "list_posts_total": 4054,
+    "unique_cas": 1516,
+    "dedup_merged_posts": 2538,
     "passed": 5,
     "dropped_dev": 39,
-    "dropped_old": 176,
+    "dropped_old": 175,
     "dropped_no_time": 377,
     "dropped_dev_unknown": 35,
     "dropped_fake_site": 4,
     "pending_retry": 1,
-    "verdict_cached": 680,
+    "verdict_cached": 679,
     "tags_refreshed": 20,
-    "dev_rechecked": 1,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
@@ -32,9 +32,9 @@
     "v9_not_ready": 2,
     "security_unknown": 0,
     "dropped_detail": {
-      "l2_suffix": 837,
-      "old": 176,
+      "l2_suffix": 836,
       "no_pool": 374,
+      "old": 175,
       "dev_over": 39,
       "no_created_at": 3,
       "mcap_liq_high": 7,
@@ -193,7 +193,7 @@
       "pair_created_at": "2026-11-25T04:43:02Z",
       "freshness": "24h",
       "first_seen_at": "2026-11-25T04:58:08Z",
-      "post_count": 24,
+      "post_count": 26,
       "unique_authors": 17,
       "posts": [
         {
@@ -363,6 +363,20 @@
           "post_time": "2026-11-26T09:30:11Z",
           "text_clean": "最近一级都不知道可以交易啥了... | 观察了一下这个项目，一天时间，没挂，那就再观察 | | $BASKET｜发射台开始让 Meme 用另一个 Meme 报价 | Basket 是 Solana 上基于 Raydium LaunchLab 的发射台。Raydium 发射页把本 CA 标成 Basket 平台。 | | CA：Solana | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | Basket 把发币时的两个选择交给创作者：用什么资产给新币报价，以及用什么资产发交易费奖励。可以发一枚用 $BASKET 报价、奖励也发 $BASKET 的猫币，也可以用 SOL 报价、奖励按轮换发代币化美股。",
           "tweet_url": "https://x.com/btc2ai/status/2125884814645706784"
+        },
+        {
+          "author": "0xZerah",
+          "author_name": "0xZerah",
+          "post_time": "2026-11-26T13:42:41Z",
+          "text_clean": "最近2天sol上call的币，复盘一下，我觉得行情这样，跑出来的币都吃到了真的很牛逼，我都佩服我自己 | 1、9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump | 白衬衫jessen | 黄仁勋重返ceo叙事，100-150k上的，老马过一会奶了一口，高点1.2m，900k随便出， | 2、 | 38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | Jimmy | 4chan叙事，400k上，2m以上随便卖 | 3、3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | basket | 发射台叙事 | 昨天下午130k我上的同步发推让回调200k上，信我的100k也随便买，高点3m | 4、 | DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump | 4chan | 让600k稳住上，没稳住，没上pass | 5、5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump | pompom | 三丽鸥涂鸦叙事，有点传播性，回调200k上的，高点750k | 6、6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump | 今天白天实在无聊买的一个，100k上，高点也300多k | 一共6个，上了五个，都有倍数，上车时间和下车时间也很充足，只要不是睡着了都能赶得上，非常期待流动性爆发的那天。",
+          "tweet_url": "https://x.com/0xZerah/status/2125948357273333766"
+        },
+        {
+          "author": "0xZerah",
+          "author_name": "0xZerah",
+          "post_time": "2026-11-26T13:46:56Z",
+          "text_clean": "38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | 大家也别忘了这个的二段哈，700k以下随便买，浮盈中。 | | 然后这个basket | | solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 按照float的剧本来说，500k左右分批买吧 | ，拿个3天左右看看，带个止损 x.com/0xZerah/status/2125949425889714343/photo/1",
+          "tweet_url": "https://x.com/0xZerah/status/2125949425889714343"
         }
       ]
     },
