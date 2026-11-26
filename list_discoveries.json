@@ -1,20 +1,55 @@
 {
-  "generated_at": "2026-11-26T02:55:34.370449Z",
+  "generated_at": "2026-11-26T03:04:33.321779Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 1009,
+    "posts_total": 1011,
     "blocked": 37,
-    "no_entry": 934,
-    "events": 32,
+    "no_entry": 935,
+    "events": 33,
     "merged_posts": 6,
     "terms_failed": 0,
-    "today_events": 2,
+    "today_events": 3,
     "today_pushed": 8
   },
   "events": [
+    {
+      "event_id": "article:2125780679892115456",
+      "identity": "article:2125780679892115456",
+      "identity_type": "tweet_article",
+      "first_seen_at": "2026-11-26T02:58:31Z",
+      "last_seen_at": "2026-11-26T02:58:31Z",
+      "window_bucket": 83132,
+      "post_count": 1,
+      "representative_text": "如果你想理解今天的硅谷，尤其是 AI 行业里那些看起来匪夷所思的人和事，有效利他主义（EA）是一门绕不开的功课。 | | 从鼓吹 AI 末日论的学者，到推动对华芯片封锁的政策专家，从前沿模型公司的创始人，到报道这些公司的媒体记者，顺着他们的履历、资金来源和人际关系往回查，总能碰到一些熟悉的名字。 | | 一个起初研究怎么给非洲人买蚊帐的慈善运动，怎么就在二十年间，发展成了硅谷最值得关注的思想与权力网络之一？ | | 我很不喜欢 EA，它把人类历史上一种非常危险的思想重新包装成了理性与科学，少数人因为相信自己拥有更高级的道德观念，便认为自己有资格支配多数人的命运。 | | 这群人既是 AI 灭绝",
+      "keywords": "[\"高:创始人\"]",
+      "tweet_url": "https://x.com/sleepy0x13/status/2125786247855780139",
+      "author": "sleepy0x13",
+      "author_name": "sleepy",
+      "channel_name": "https://x.com/i/lists/1887729607585173782/tweets",
+      "list_id": "1887729607585173782",
+      "list_short": "3782",
+      "sig_level": "3",
+      "ent_level": "none",
+      "reason": "命中关键词或条件词，无入口",
+      "kw_strong": "[]",
+      "kw_weak": "[]",
+      "kw_entry": "[]",
+      "followers": 40199,
+      "blue_verified": true,
+      "listed_count": 643,
+      "reg_at": "Wed Jul 15 02:32:36 +0000 2020",
+      "views": "98",
+      "samples": [
+        {
+          "text": "如果你想理解今天的硅谷，尤其是 AI 行业里那些看起来匪夷所思的人和事，有效利他主义（EA）是一门绕不开的功课。 | | 从鼓吹 AI 末日论的学者，到推动对华芯片封锁的政策专家，从前沿模型公司的创始人，到报道这些公司的媒体记者，顺着他们的履历、资金来源和人际关系往回查，总能碰到一些熟悉的名字。 | | 一个起初研究怎么给非洲人买蚊帐的慈善运动，怎么就在二十年间，发展成了硅谷最值得关注的思想与权力",
+          "url": "https://x.com/sleepy0x13/status/2125786247855780139",
+          "post_time": "2026-11-26T02:58:31+00:00"
+        }
+      ]
+    },
     {
       "event_id": "domain:nftx.io",
       "identity": "domain:nftx.io",
