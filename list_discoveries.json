@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-27T02:24:47.108438Z",
+  "generated_at": "2026-11-27T02:29:20.912038Z",
   "window_days": 7,
   "window_hours": 6.0,
   "filter_note": "线B无CA新发现=关键词+入口：过统一屏蔽词 + 命中关键词 + 必须带官网/GitHub/推特文章(/article/)入口三者之一才收；纯文本、只有普通推文status链接、只有资产ID的一律不收（无入口点进去看不了，是闲聊）。事件ID=入口身份(官网域名/GitHub仓库/推特文章号)，同一入口只推群一次（跨天不再重复）。🆕新发现未过9道体检，仅供早期线索，买入自己判断。",
   "stats": {
     "enabled": 1,
-    "posts_total": 843,
+    "posts_total": 841,
     "blocked": 27,
-    "no_entry": 777,
+    "no_entry": 776,
     "events": 32,
-    "merged_posts": 7,
+    "merged_posts": 6,
     "terms_failed": 0,
     "today_events": 0,
-    "today_pushed": 1
+    "today_pushed": 2
   },
   "events": [
     {
@@ -204,11 +204,11 @@
       "event_id": "domain:nftx.io",
       "identity": "domain:nftx.io",
       "identity_type": "domain_bare",
-      "first_seen_at": "2026-11-20T02:25:02Z",
+      "first_seen_at": "2026-11-26T02:39:14Z",
       "last_seen_at": "2026-11-26T02:39:14Z",
-      "window_bucket": 83108,
-      "post_count": 2,
-      "representative_text": "起床开工了！ | | 第一个事，@buzzchain_io 测试网开了，链接推特就可以 | 排行榜是追溯的，早期发文互动都计入了 | | 第二个事，@ThinkersClub_官方等候名单开了，非常之简单，链接推特，关注账号就可以，现在有3000多人 | | nftx.io/thinkers x.com/aiqiang888/status/2123603497052680546/photo/1",
+      "window_bucket": 83132,
+      "post_count": 1,
+      "representative_text": "最后三个小时了，@ThinkersClub_要怎么走呀？ | | 我感觉看这形式，我能凑够 3 个NFT，我定价296，按这个速度，应该冲不到这个价。 | | 这个玩下来，白单没有占到很大的便宜，尤其买NFT那波人😂 | | 不过官推昨天下午发推了，要从买到零头的人里随机抽 25 个人，帮补满到 1 个。想去抽的赶紧去抽去。 | | 今天早上4点左右价格涨到了179u，出价人数超过1100。 | 也有KOL说这招太阴了，大家都在拍卖里买到高价，二级市场谁还去接？ | | 现在每个 198u，1222 人出价，总投入 51 万美元。 | | 这个项目好在 Ink 链团队公开站台，同时，这是 In",
       "keywords": "[\"高:第一个\"]",
       "tweet_url": "https://x.com/erjie22/status/2125781393926148415",
       "author": "erjie22",
@@ -228,11 +228,6 @@
       "reg_at": "Tue Aug 15 08:01:56 +0000 2023",
       "views": "80",
       "samples": [
-        {
-          "text": "起床开工了！ | | 第一个事，@buzzchain_io 测试网开了，链接推特就可以 | 排行榜是追溯的，早期发文互动都计入了 | | 第二个事，@ThinkersClub_官方等候名单开了，非常之简单，链接推特，关注账号就可以，现在有3000多人 | | nftx.io/thinkers x.com/aiqiang888/status/2123603497052680546/photo/1",
-          "url": "https://x.com/aiqiang888/status/2123603497052680546",
-          "post_time": "2026-11-20T02:25:02+00:00"
-        },
         {
           "text": "最后三个小时了，@ThinkersClub_要怎么走呀？ | | 我感觉看这形式，我能凑够 3 个NFT，我定价296，按这个速度，应该冲不到这个价。 | | 这个玩下来，白单没有占到很大的便宜，尤其买NFT那波人😂 | | 不过官推昨天下午发推了，要从买到零头的人里随机抽 25 个人，帮补满到 1 个。想去抽的赶紧去抽去。 | | 今天早上4点左右价格涨到了179u，出价人数超过1100。 | ",
           "url": "https://x.com/erjie22/status/2125781393926148415",
