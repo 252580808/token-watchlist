@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T06:24:22.894062Z",
+  "generated_at": "2026-11-27T06:31:46.482646Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
@@ -7,35 +7,35 @@
   "stats": {
     "signals_total": 986,
     "with_ca": 209,
-    "list_posts_total": 3892,
-    "unique_cas": 1471,
-    "dedup_merged_posts": 2421,
-    "passed": 7,
+    "list_posts_total": 3891,
+    "unique_cas": 1472,
+    "dedup_merged_posts": 2419,
+    "passed": 6,
     "dropped_dev": 34,
     "dropped_old": 184,
     "dropped_no_time": 347,
     "dropped_dev_unknown": 42,
     "dropped_fake_site": 4,
     "pending_retry": 1,
-    "verdict_cached": 668,
+    "verdict_cached": 670,
     "tags_refreshed": 20,
-    "dev_rechecked": 2,
+    "dev_rechecked": 0,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
-    "site_rechecked": 0,
+    "site_rechecked": 1,
     "site_recheck_blocked": 0,
     "site_blocked_live": 2,
-    "dead_blocked_live": 42,
+    "dead_blocked_live": 43,
     "pool_too_old_live": 3,
-    "v9_rechecked": 1,
+    "v9_rechecked": 2,
     "v9_ready": 0,
     "v9_not_ready": 5,
     "security_unknown": 0,
     "dropped_detail": {
-      "l2_suffix": 800,
-      "no_pool": 345,
       "dev_over": 34,
       "old": 184,
+      "l2_suffix": 800,
+      "no_pool": 345,
       "dev_blacklist": 24,
       "fake_website:solana.com": 1,
       "mcap_liq_high": 8,
@@ -46,7 +46,8 @@
       "pending_retry": 1
     },
     "today_new": 12,
-    "today_pushed": 8
+    "today_pushed": 8,
+    "v9_new_protected": 1
   },
   "items": [
     {
@@ -181,52 +182,6 @@
           "post_time": "2026-11-26T22:30:01Z",
           "text_clean": "0x2c41ff518f0a9ea28fab7047055545c5ff3552d3 | | hype的计算层 面向人工智能的卖方市场 | | gpu➕ai",
           "tweet_url": "https://x.com/mewudi669/status/2126081064850624622"
-        }
-      ]
-    },
-    {
-      "ca": "8p5r57jYPKWZa3oWENFMvxbHytebHmeavqwxJ1R7P8Z1",
-      "chain": "solana",
-      "symbol": "PNP",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-26T19:51:59.022022Z",
-      "smart_degen_count": 56,
-      "renowned_count": 2,
-      "ready_to_push": true,
-      "net_buy_count": 51,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-26T11:55:27.542504Z",
-      "pair_created_at": "2026-11-26T01:39:20Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-26T06:58:23Z",
-      "post_count": 3,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "onononup719",
-          "author_name": "onononup719",
-          "post_time": "2026-11-26T06:58:23Z",
-          "text_clean": "8p5r57jYPKWZa3oWENFMvxbHytebHmeavqwxJ1R7P8Z1 | 有人用一堆AI公开攻坚“P是否等于NP”这个数学难题，所有证明都机器验证。这个币就是用来奖励帮忙的人：如果你贡献的引理被用到，就可以按贡献比例拿币。 | 帮AI证明数学，还能分钱。",
-          "tweet_url": "https://x.com/onononup719/status/2125846614434783566"
-        },
-        {
-          "author": "CryptoThannos",
-          "author_name": "CryptoThannos",
-          "post_time": "2026-11-26T12:32:07Z",
-          "text_clean": "solana:8p5r57jYPKWZa3oWENFMvxbHytebHmeavqwxJ1R7P8Z1 is getting hyped because of a Kalshi volume spike and a headline about the P vs NP problem | | For context, P vs NP asks whether every problem that's easy to verify is also easy to solve. It's one of the biggest unsolved problems in computer science | | Let's be real: a sudden surge in betting volume doesn't mean we're anywhere closer to solving one of the biggest problems in computer science | | This coin is riding the headline, not an actual breakthrough. Don't confuse market hype with scientific progress",
-          "tweet_url": "https://x.com/CryptoThannos/status/2125930600183873848"
-        },
-        {
-          "author": "CryptoThannos",
-          "author_name": "CryptoThannos",
-          "post_time": "2026-11-26T17:48:51Z",
-          "text_clean": "told you this was just headline hype | | hope you didn't get caught chasing solana:8p5r57jYPKWZa3oWENFMvxbHytebHmeavqwxJ1R7P8Z1 here | | Kalshi volume spike doesn't mean we're any closer to solving P vs NP x.com/CryptoThannos/status/2126010309978820930/photo/1",
-          "tweet_url": "https://x.com/CryptoThannos/status/2126010309978820930"
         }
       ]
     },
