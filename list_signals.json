@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-11-27T03:50:22.611181Z",
+  "generated_at": "2026-11-27T03:58:49.218230Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 1033,
+    "signals_total": 1031,
     "with_ca": 211,
-    "list_posts_total": 3903,
-    "unique_cas": 1471,
+    "list_posts_total": 3904,
+    "unique_cas": 1472,
     "dedup_merged_posts": 2432,
-    "passed": 8,
+    "passed": 6,
     "dropped_dev": 35,
     "dropped_old": 182,
-    "dropped_no_time": 354,
-    "dropped_dev_unknown": 41,
+    "dropped_no_time": 355,
+    "dropped_dev_unknown": 42,
     "dropped_fake_site": 4,
     "pending_retry": 1,
     "verdict_cached": 674,
     "tags_refreshed": 20,
-    "dev_rechecked": 1,
+    "dev_rechecked": 2,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 2,
-    "dead_blocked_live": 36,
+    "dead_blocked_live": 38,
     "pool_too_old_live": 4,
-    "v9_rechecked": 2,
+    "v9_rechecked": 3,
     "v9_ready": 0,
     "v9_not_ready": 5,
     "security_unknown": 0,
     "dropped_detail": {
-      "l2_suffix": 796,
       "old": 182,
-      "no_pool": 352,
+      "no_pool": 353,
+      "l2_suffix": 795,
       "dev_over": 35,
       "fake_website:solana.com": 1,
-      "dev_blacklist": 23,
+      "dev_blacklist": 24,
       "mcap_liq_high": 8,
       "holders_low": 10,
       "no_created_at": 2,
@@ -189,66 +189,6 @@
           "post_time": "2026-11-26T17:48:51Z",
           "text_clean": "told you this was just headline hype | | hope you didn't get caught chasing solana:8p5r57jYPKWZa3oWENFMvxbHytebHmeavqwxJ1R7P8Z1 here | | Kalshi volume spike doesn't mean we're any closer to solving P vs NP x.com/CryptoThannos/status/2126010309978820930/photo/1",
           "tweet_url": "https://x.com/CryptoThannos/status/2126010309978820930"
-        }
-      ]
-    },
-    {
-      "ca": "CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27",
-      "chain": "solana",
-      "symbol": "Santa",
-      "dev_count": 0,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-26T18:48:58.687195Z",
-      "smart_degen_count": 3,
-      "renowned_count": 0,
-      "ready_to_push": true,
-      "net_buy_count": 2,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-25T22:52:22.315872Z",
-      "pair_created_at": "2026-11-24T17:12:22Z",
-      "freshness": "72h",
-      "first_seen_at": "2026-11-25T18:36:15Z",
-      "post_count": 5,
-      "unique_authors": 3,
-      "posts": [
-        {
-          "author": "CryptoThannos",
-          "author_name": "CryptoThannos",
-          "post_time": "2026-11-25T18:36:15Z",
-          "text_clean": "$SANTA caught my attention, picked up a bag | | It's the first Christmas-themed ticker I've seen this year, and I think the timing is interesting | | Christmas meta is about to get more attention as we get closer to December | | This one also has an actual Santa workshop tasks and rewards. Holder gifts are planned too | | I like the concept, could be an interesting play heading into the holidays | | CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27",
-          "tweet_url": "https://x.com/CryptoThannos/status/2125659849161896028"
-        },
-        {
-          "author": "gem_insider",
-          "author_name": "gem_insider",
-          "post_time": "2026-11-25T18:40:05Z",
-          "text_clean": "Aped $SANTA here | | hearing that this is a good dev, so decided to gamble some | | first Christmas narrative launched on Raydium | | holders can claim gifts in SOL from the trading fees | | CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27 x.com/gem_insider/status/2125660812270317772/photo/1",
-          "tweet_url": "https://x.com/gem_insider/status/2125660812270317772"
-        },
-        {
-          "author": "MaxelRowan",
-          "author_name": "MaxelRowan",
-          "post_time": "2026-11-26T13:23:57Z",
-          "text_clean": "🎅 Christmas season is approaching, and $SANTA is building more than just a meme. | | A Christmas-themed community on Solana with Santa’s own virtual house, interactive Workshop tasks, stocking rewards, and plans for holder gifts and surprises. | | The journey to Christmas 2027 starts now. The community is building, the holiday narrative is warming up, and Santa’s house is open. | | Don’t miss the ride to the North Pole. | | CA: CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27 | | Chart: t.co/aGVoWKHhtm | | Website: t.co/Nf96kgtJqb | | $SANTA DYOR & NFA 🎄🎁",
-          "tweet_url": "https://x.com/MaxelRowan/status/2125943646004658189"
-        },
-        {
-          "author": "CryptoThannos",
-          "author_name": "CryptoThannos",
-          "post_time": "2026-11-26T14:00:18Z",
-          "text_clean": "LESS THAN A MONTH UNTIL CHRISTMAS | | I'd expect the christmas coin meta to start heating up over the next 1-2 weeks, with new tickers spawning left and right as we get closer to the holidays | | solana:CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27 is already here and starting to gain traction ahead of the crowd | | I like being early to a seasonal narrative rather than chasing it once the whole timeline is full of christmas coins",
-          "tweet_url": "https://x.com/CryptoThannos/status/2125952793114452292"
-        },
-        {
-          "author": "gem_insider",
-          "author_name": "gem_insider",
-          "post_time": "2026-11-26T14:02:11Z",
-          "text_clean": "in two weeks Christmas narratives will take over trenches | | and $SANTA is the first one to launch on Raydium | | and if you have been in the trenches you probably noticed how a lot of Raydium coins do better long term than pf coins | | frontrunning the crowd here and patiently waiting 💪 | | CcpN5RXTEjbRqbtuHoxyiMZorzsghbfpeyYQjSvTgS27",
-          "tweet_url": "https://x.com/gem_insider/status/2125953264503882000"
         }
       ]
     },
@@ -502,59 +442,6 @@
           "post_time": "2026-11-26T13:52:39Z",
           "text_clean": "$BASKET 和 $JIMMY | 昨天两个大热门meme今天都回调很多 | | basket虽然机制不错，也有独特优势，但是昨天分析不是ray官方出的发射台当时就是高点了，现在做发射台都是地狱难度 | | jimmy的叙事不错，故事也好，可惜没头部玩家的买入和喊单，还是缺乏持续上涨动力 | | 行情影响，现在sol上meme的节奏很快，所以都还是以打一枪就跑的策略 | | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | 38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | #BASKET #JIMMY #DYOR",
           "tweet_url": "https://x.com/XPnftclub/status/2125950864947134500"
-        }
-      ]
-    },
-    {
-      "ca": "0xb200000000000000000000c6bfaaf26aad50f901",
-      "chain": "base",
-      "symbol": "SVAG",
-      "dev_count": 2,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-27T01:42:59.071570Z",
-      "smart_degen_count": 3,
-      "renowned_count": 10,
-      "ready_to_push": true,
-      "net_buy_count": 13,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-26T19:52:29.331011Z",
-      "pair_created_at": "2026-11-24T11:47:21Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-24T12:42:49Z",
-      "post_count": 4,
-      "unique_authors": 2,
-      "posts": [
-        {
-          "author": "0xkopil",
-          "author_name": "0xkopil",
-          "post_time": "2026-11-24T12:42:49Z",
-          "text_clean": "$Base ağında yeni mem projeler Ant hisse senetli ile işlem görmeye başladı biraz aldım ytd ✋ | | 0xb200000000000000000000c6bfaaf26aad50f901 | | launch.o1.exchange/token/0xb200000000000000000000c6bfaaf26aad50f901?chain=8453",
-          "tweet_url": "https://x.com/0xkopil/status/2125208515652288666"
-        },
-        {
-          "author": "bajieChina",
-          "author_name": "bajieChina",
-          "post_time": "2026-11-24T13:17:53Z",
-          "text_clean": "很棒的想法 base链上的项目 $svag | | ca：0xb200000000000000000000c6bfaaf26aad50f901",
-          "tweet_url": "https://x.com/bajieChina/status/2125217340988223622"
-        },
-        {
-          "author": "bajieChina",
-          "author_name": "bajieChina",
-          "post_time": "2026-11-24T13:19:00Z",
-          "text_clean": "@mksvibe @base @o1_exchange @Larpcheckbot 0xb200000000000000000000c6bfaaf26aad50f901",
-          "tweet_url": "https://x.com/bajieChina/status/2125217620941304010"
-        },
-        {
-          "author": "bajieChina",
-          "author_name": "bajieChina",
-          "post_time": "2026-11-24T14:40:05Z",
-          "text_clean": "这项目越来越有意思了 $svag | | ca：0xb200000000000000000000c6bfaaf26aad50f901",
-          "tweet_url": "https://x.com/bajieChina/status/2125238026121199912"
         }
       ]
     }
