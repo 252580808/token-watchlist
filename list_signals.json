@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-11-28T02:38:27.447742Z",
+  "generated_at": "2026-11-28T02:46:52.774694Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 811,
+    "signals_total": 808,
     "with_ca": 185,
-    "list_posts_total": 3855,
-    "unique_cas": 1485,
-    "dedup_merged_posts": 2370,
-    "passed": 10,
+    "list_posts_total": 3854,
+    "unique_cas": 1486,
+    "dedup_merged_posts": 2368,
+    "passed": 9,
     "dropped_dev": 33,
-    "dropped_old": 196,
+    "dropped_old": 197,
     "dropped_no_time": 323,
     "dropped_dev_unknown": 50,
     "dropped_fake_site": 4,
     "pending_retry": 1,
     "verdict_cached": 683,
     "tags_refreshed": 20,
-    "dev_rechecked": 2,
+    "dev_rechecked": 3,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 4,
-    "dead_blocked_live": 53,
+    "dead_blocked_live": 54,
     "pool_too_old_live": 5,
-    "v9_rechecked": 3,
+    "v9_rechecked": 4,
     "v9_ready": 0,
-    "v9_not_ready": 4,
+    "v9_not_ready": 5,
     "security_unknown": 0,
     "dropped_detail": {
-      "no_pool": 321,
       "l2_suffix": 801,
       "fake_website:solana.com": 1,
-      "old": 196,
+      "no_pool": 321,
+      "old": 197,
       "dev_blacklist": 24,
       "dev_over": 33,
       "no_created_at": 2,
@@ -46,8 +46,7 @@
       "pending_retry": 1
     },
     "today_new": 4,
-    "today_pushed": 3,
-    "v9_new_protected": 1
+    "today_pushed": 3
   },
   "items": [
     {
@@ -228,38 +227,6 @@
           "post_time": "2026-11-27T01:22:14Z",
           "text_clean": "Being able to change leverage on open positions is pretty cool actually. Don’t think Ive seen that before | | 0xB56c064e833F3b24a85a3e7322B6096d19510A41",
           "tweet_url": "https://x.com/deadshotXBT/status/2126124406380581120"
-        }
-      ]
-    },
-    {
-      "ca": "0x8bf8388a6512b6dc9675bc964b1298da08c5afbd",
-      "chain": "elysium",
-      "symbol": "DEMI",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-27T17:45:59.142393Z",
-      "smart_degen_count": 2,
-      "renowned_count": 0,
-      "ready_to_push": true,
-      "net_buy_count": 2,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-27T08:10:36.622998Z",
-      "pair_created_at": "2026-11-26T13:03:20Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-26T16:39:41Z",
-      "post_count": 1,
-      "unique_authors": 1,
-      "posts": [
-        {
-          "author": "CryptoDeus2",
-          "author_name": "CryptoDeus2",
-          "post_time": "2026-11-26T16:39:41Z",
-          "text_clean": "ape a bag $demi on @Enter_Elysium | | Drag apps onto a canvas of your chain or type them in a sentence. | | Demiurge launches your own layer on Elysium: a real chain with its own chain id and RPC, where gas is HYPE and every batch and state claim is posted to Elysium. On top of it you put apps: one-click templates, contracts the AI builder writes from one sentence, or anything you deploy yourself through the layer's RPC. | | These pages describe what the product does today, read from its contracts and its code. Where a number can change, the page says who can change it and within what limit. | | t.co/ci6uxsLGcm | | CA: 0x8bf8388a6512b6dc9675bc964b1298da08c5afbd | | t.co/ecEsU0At79 | | t.co/s2y8kilxrF | t.co/EBlsdZz8X4",
-          "tweet_url": "https://x.com/CryptoDeus2/status/2125992903713472882"
         }
       ]
     },
