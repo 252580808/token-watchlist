@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-28T04:35:58.557629Z",
+  "generated_at": "2026-11-28T04:43:50.855669Z",
   "window_days": 7,
   "window_basis": "post_time",
   "filter_note": "池龄只取 DexScreener pairCreatedAt；dev 发币数走 GMGN 网页端 token_stat(官方 OpenAPI 仅兜底)。池龄每个 CA 只在第一次出现时算一次、以后不再重算；dev 入选后按周期复查(默认12小时)，复查发现 >3 就把 dev_blocked 置 true(币不删除、记录保留)，看板应据此不再展示该币；查不到池子/dev数直接拦截；网络或接口出错下轮继续查。2026-11-15 新增：官网假域名(instagram/youtube/tiktok/冒充站)命中、或 CA 已在观察池共享蜜罐黑名单里，直接不入选；历史 pass 结论会补查一次(共享黑名单零请求、官网每轮限量复查)，被清掉的币不再上看板、但结论记录保留可回溯。smart_degen_count/renowned_count 为聪明钱/KOL 钱包持仓数，取自 GMGN wallet_tags_stat(免费网页端点、与官方API同源)，是活数：对入选币定期刷新(默认30分钟)每轮导出用最新值覆盖，查不到为 null；不支持的链(如 Elysium)一直为 null",
   "stats_note": "signals_total/with_ca 来自主库 signals(只存命中规则的推文)；list_posts_total/unique_cas 来自独立新库(全量带CA推文)，两者口径不同。筛选层按 CA 去重：dedup_merged_posts 是被合并的重复帖子数，原始帖子全保留在 posts 供计票。verdict_cached=本轮照抄历史结论、零接口请求的 CA 数；pending_retry=网络/接口异常、下轮会继续查的 CA 数；tags_refreshed=本轮刷新了聪明钱/KOL 活数的入选币数；dev_rechecked=本轮复查了 dev 的入选币数；dev_recheck_blocked=本轮因 dev 涨过 3 新被屏蔽的币数；dev_blocked_live=当前处于屏蔽状态(dev_blocked=true)的币数。池龄与首筛结论记一次不复查，dev 会定期复查(涨过 3 就屏蔽)，入选币会一直保留到 7 天推文窗口把它滚出去",
   "stats": {
-    "signals_total": 793,
+    "signals_total": 792,
     "with_ca": 181,
-    "list_posts_total": 3863,
+    "list_posts_total": 3864,
     "unique_cas": 1494,
-    "dedup_merged_posts": 2369,
-    "passed": 9,
+    "dedup_merged_posts": 2370,
+    "passed": 8,
     "dropped_dev": 33,
     "dropped_old": 195,
     "dropped_no_time": 329,
@@ -19,15 +19,15 @@
     "pending_retry": 1,
     "verdict_cached": 691,
     "tags_refreshed": 20,
-    "dev_rechecked": 0,
+    "dev_rechecked": 3,
     "dev_recheck_blocked": 0,
     "dev_blocked_live": 0,
     "site_rechecked": 0,
     "site_recheck_blocked": 0,
     "site_blocked_live": 5,
-    "dead_blocked_live": 53,
+    "dead_blocked_live": 54,
     "pool_too_old_live": 6,
-    "v9_rechecked": 0,
+    "v9_rechecked": 3,
     "v9_ready": 0,
     "v9_not_ready": 5,
     "security_unknown": 0,
@@ -352,220 +352,6 @@
           "post_time": "2026-11-26T04:12:30Z",
           "text_clean": "2026.11.26链上一级市场热点项目,关注Jack每天第一时间获得链上热点项目资讯 | | BSC链 | | 1：黄大仙 HMC:190K CMC:163K | 0xa3dfecd6298d37f98ca17e19bdff902d2bbf7777 | 叙事：该代币名为玄铁算力坊主，符号为黄大仙，灵感源自央视相关恶搞内容、《流金谷恩仇录》相关内容以及英伟达黄仁勋辞职归位风波，关联对应指定抖音网页。该代币将黄大仙的民间民俗形象与算力相关内容结合，通过指定KOL转发和社群裂变的方式开展传播。 | | 2:莫达 HMC:985K CMC:453K | 0x2133b903cd4cb46aeece2ab4457e25cff1a87777 | 叙事：代币老鼠莫达源自71岁创作者在抖音“郑渊洁童话世界”账号借助AI技术创作的同名动画IP，该创作者每日凌晨四点半开工，单集动画耗时三天完成。该代币围绕手持饼干的老鼠莫达视觉形象做传播，关联童话IP相关内容开展定向推广，依托专属动画创作相关特色内容触达对应受众。 | | 3:ANT HMC:2.37M CMC:474K | 0xb4f9d1b2cad3646d15797de462e5d773194d7777 | 叙事：ANT代币上线于Flap平台，名称源自AI研发相关主体Anthropic，视觉设计融入蚂蚁相关元素，依托对应合约元数据搭建初始认知。项目通过指定KOL传播、社区自发传播扩大知名度，推广适配创意写作、编程、数据分析场景的ANT Chat、ANT Code等AI相关功能工具落地，同时关联Flap平台生态及蝴蝶IP内容开展宣传。 | | 4:SPACEXLIFE HMC:133K CMC:128K | 0xfb8b99ff90a33a6d81b0212f0ac80e9339e17777 | 叙事：该代币源于lebombjam发布的相关推文，参考了BINANCE LIFE的模式发起推出。该代币通过社区驱动的方式，推动太空探索相关内容传播与创新相关活动开展，旨在将美国每个人都纳入SpaceX对应社区当中。 | | SOL链 | | 1:BASKET HMC:3M CMC:749K | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 叙事：Basket代币名称来源于将多类不同资产整合进单个代币的创意，官方站点为basketlaunch xyz，是基于Raydium LaunchLab的发射平台代币，视觉标识设定为购物篮。该代币依托X平台的meme交易社区开展组合包晒单传播，支持用户转发篮子配图配文完成二次创作，搭配空投快照、持币分红、NFT金库分红、代币费用燃烧的相关规则带动用户主动拉新，同时通过Streamflow完成生态相关资产锁定，每笔交易产生的费用每5分钟自动发放给持币用户。 | | 2:Zero HMC:1.3M CMC:382K | DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump | 叙事：ZeroSumEnjoyer是受零和游戏概念及加密社区归零自嘲文化启发的迷因代币，由comethankme12通过j7tracker部署，可通过指定项目官网查看相关展示内容。该代币通过官方宣布空投10%代币的激励活动，依托X平台多位KOL转发传播相关空投信息，面向关注对应概念的受众开展推广传递自身特质。 | | 3:JIMMY HMC:2.3M CMC:888K | 38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | 叙事：该代币名称源自经典网络迷因“That really rustled my jimmies”，相关迷因最早可追溯至2010年FunnyJunk平台发布的皱眉大猩猩图片宏，关联了4plebs归档的4chan相关线程网页。项目采用“搜索即参与”的传播机制，搭配指定KOL玩梗传播，以“你被rustle了吗”作为专属暗号带动社区裂变传播。 | | 4:MONEY HMC:1.55M CMC:1M | DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump | 叙事：该代币在pump fun平台发行，核心设定源自“Money is Meme”的趣味概念，关联官网为moneyismeme fun。项目通过在X平台发布“Show me the MONEY”相关口号，联动指定KOL开展晒单与meme创作推广，借助名称自带的传播属性吸引用户关注。 | | 5:LENDR HMC:860K CMC:625K | AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend | 叙事：Lendr诞生于Meme币交易者难以适配传统主流借贷协议的现实背景，官方推出了可由持有者自行设定借贷相关条款的Meme币借贷相关产品。项目将借贷操作进行游戏化设计引导用户完成借还循环产出可分享的社交内容，邀请平台知名KOL发布相关收益内容，借助各类线上社群实现内容的快速传播扩散。 | | 全网最强Debot扫链工具 毫秒级钱包快速跟单 金狗信号 快速扫链 大热标的一个不漏 超级无敌好用 新手小白上手最快:t.co/WIonVBMfdB | | 豹拉帮你第一时间捕捉全网 FOMO 主线，筛出靠谱车头豹拉把扫链做成了更轻的信号工具，小白也能免费拿到全网喊单信号，抓机会更轻松。 如果你长期追 Meme 热点，可以把它当成你的 Meme 信号雷达 注册邀请好友得手续费返佣：t.co/6cul8oqza7 | | web3全链专业交易员分析工具 只要学会 屌炸天 ： 筹码分析，资金流向，地址标签方面比同类产品做的更好用，非常适合专业交易员用 t.co/5iEI1N6TBW | | 欢迎大家进交流群 一起分享底部密码 ：t.co/GUXgv8lZc7",
           "tweet_url": "https://x.com/Mrjacknicee/status/2125804866379624887"
-        }
-      ]
-    },
-    {
-      "ca": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
-      "chain": "solana",
-      "symbol": "BASKET",
-      "dev_count": 1,
-      "dev_blocked": false,
-      "dev_blocked_at": "",
-      "dev_check_at": "2026-11-27T18:12:59.186799Z",
-      "smart_degen_count": 102,
-      "renowned_count": 4,
-      "ready_to_push": true,
-      "net_buy_count": 72,
-      "net_buy_pass": true,
-      "net_buy_source": "web_free_holding",
-      "social_ok": true,
-      "v9_reasons": [],
-      "v9_check_at": "2026-11-25T09:58:00.171462Z",
-      "pair_created_at": "2026-11-25T04:43:02Z",
-      "freshness": "24h",
-      "first_seen_at": "2026-11-25T04:58:08Z",
-      "post_count": 27,
-      "unique_authors": 17,
-      "posts": [
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-25T04:58:08Z",
-          "text_clean": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 新发射台 量挺大的 | 可以同时配两个股票对 | 200k看看",
-          "tweet_url": "https://x.com/0xZerah/status/2125453961335619889"
-        },
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-25T05:55:06Z",
-          "text_clean": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 这个大概率是raydium官方发射台 | 这个人先发了推 | 然后这个人的地址买了 | 梦想一下 | 晚上看 | 上班了 x.com/0xZerah/status/2125468298842378507/photo/1",
-          "tweet_url": "https://x.com/0xZerah/status/2125468298842378507"
-        },
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-25T06:25:02Z",
-          "text_clean": "solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f 相信晚上能够高 | higher x.com/0xZerah/status/2125475832240234748/photo/1",
-          "tweet_url": "https://x.com/0xZerah/status/2125475832240234748"
-        },
-        {
-          "author": "wbybtc",
-          "author_name": "wbybtc",
-          "post_time": "2026-11-25T06:58:15Z",
-          "text_clean": "大概率是ray的官方发射台，ray官方的人买了 | | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
-          "tweet_url": "https://x.com/wbybtc/status/2125484189520945607"
-        },
-        {
-          "author": "Motier_crypto",
-          "author_name": "Motier_crypto",
-          "post_time": "2026-11-25T08:00:43Z",
-          "text_clean": "$BASKET 774K | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | OKX wallet:t.co/Y3z2RnWG1M | | $BASKET combines tokenized U.S. stocks with a meme launch platform, and what's interesting this time is its capital flow design. | | Built on Raydium LaunchLab, it supports tokenized assets like Nvidia, Tesla, and the S&P 500 as trading pairs, and issued tokens can also choose up to 10 assets as holder rewards. | | A few mechanisms worth watching: | | ▸ For tokens on the SOL curve, 0.25% of volume before graduation and 0.33% after are used to buy back and burn $BASKET | | ▸ Every Basket NFT minted burns 100,000 $BASKET; minting all 1,000 would consume 10% of total supply | | ▸ The platform sets a holder reward cycle every 5 minutes, and every 10 hours airdrops SOL to the top 500 qualifying users by volume | | ▸ New coins start at a market cap of about $9,300; reusing an existing token name requires an extra fee, and wallets that snipe the launch block don't qualify for holder rewards | | New coins like $TEKSAB and $BASCAT, both paired with $BASKET, have already appeared on the official site. | | Compared to an ordinary launch platform, $BASKET's valuation logic depends not only on its own trading heat, but also on whether the platform can keep incubating high-volume tokens. | | Going forward, the key is when the first ecosystem token with a million-dollar market cap appears, and how much actual buyback and burn the platform's volume can generate.",
-          "tweet_url": "https://x.com/Motier_crypto/status/2125499912452284599"
-        },
-        {
-          "author": "XPnftclub",
-          "author_name": "XPnftclub",
-          "post_time": "2026-11-25T08:36:15Z",
-          "text_clean": "卧槽，这个 $BASKET 怎么直通1M了 | | 都在说是 @Raydium 团队推出的，暂时还没确定，如果这真的是 ray 团队的发射平台，可能会拉飞 | | 这个项目本质上就是把 $Stonk 和 $Float 结合在一起，优势叠加。在现在stonk和float都熄火的情况下，如果真能做起来的话会变成发射台的一匹黑马 | | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | #BASKET",
-          "tweet_url": "https://x.com/XPnftclub/status/2125508854658351176"
-        },
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-25T08:56:37Z",
-          "text_clean": "sol的行情已经慢慢变好了 | 近一周 | | solana:B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump 最起码能玩3-4次 | 每次都有个2-3倍 | 就算不做波段 也有7倍 | 昨天的38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | jimmy | 白天看到200k上车给我洗下车了 | 晚上接回来又给我吃了一倍出本就止损了 | 但没办法 还是得挂单 不然半夜真的睡不好 | | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | basket | 这个又爽吃10x | 其实sol真不是最旺我的链 | 最旺我的是bsc和Robin Hood | 期待流动性回归的一天吧",
-          "tweet_url": "https://x.com/0xZerah/status/2125513979690926147"
-        },
-        {
-          "author": "cfm_sol",
-          "author_name": "cfm_sol",
-          "post_time": "2026-11-25T10:01:10Z",
-          "text_clean": "$BASKET 1.3m dyor | | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | okx wallet:t.co/8mMfVHzjNs | | A meme launch platform that pays money to holders. | | Its core feature is: fees from every transaction are automatically distributed to holders (every 5 minutes). It supports trading pairs using SOL, USDC, tokenized U.S. stocks, or even other memes on Basket, and creators can choose up to 10 assets as holder rewards. | | The BASKET token is the value-capture token of the basketlaunch platform. Half of the holder distributions from coins on the SOL curve are used to buy back and burn BASKET. Minting a Basket NFT burns 100,000 BASKET. A portion of platform revenue is airdropped in SOL to active traders.",
-          "tweet_url": "https://x.com/cfm_sol/status/2125530224893067443"
-        },
-        {
-          "author": "sharkapescall",
-          "author_name": "sharkapescall",
-          "post_time": "2026-11-25T10:03:27Z",
-          "text_clean": "🚀🚀 $BASKET hits 28.2x from our call | | CA: 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | Called $51.6k → $1.46m (x) | | Chart + trade : gmgn.ai/sol/token/EkzrgkGr_3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | Bot signal: t.me/shark_apes_call/99106 x.com/sharkapescall/status/2125530798631923837/photo/1",
-          "tweet_url": "https://x.com/sharkapescall/status/2125530798631923837"
-        },
-        {
-          "author": "CC4238",
-          "author_name": "CC4238",
-          "post_time": "2026-11-25T10:21:22Z",
-          "text_clean": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 3L76bgF471g1ZFwUxPZzEX478GSc3BuiD5huZDZKF2eZ | basket上第一个币，测试币，彩票，dyor | 这个平台感觉有点仿float，但是ray跟这个平台有点暧昧的感觉 x.com/CC4238/status/2125535305486733647/photo/1",
-          "tweet_url": "https://x.com/CC4238/status/2125535305486733647"
-        },
-        {
-          "author": "c423855046",
-          "author_name": "c423855046",
-          "post_time": "2026-11-25T10:22:00Z",
-          "text_clean": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 3L76bgF471g1ZFwUxPZzEX478GSc3BuiD5huZDZKF2eZ | basket上第一个币，测试币，彩票，dyor | 这个平台感觉有点仿float，但是ray跟这个平台有点暧昧的感觉 x.com/c423855046/status/2125535465893970088/photo/1",
-          "tweet_url": "https://x.com/c423855046/status/2125535465893970088"
-        },
-        {
-          "author": "TToday82",
-          "author_name": "TToday82",
-          "post_time": "2026-11-25T10:51:14Z",
-          "text_clean": "$Basket 是基于 Raydium LaunchLab 的发射台，核心卖点是： | 1、在 Basket 上发射的币，每一笔交易都会自动给持有者分红（每 5 分钟结算一次，无需手动领取） | 2、可以配对 SOL、USDC，也可以配对 代币化股票（NVDAx、TSLAx、SPYx 等）或其他在 Basket 上毕业的币 | 3、毕业后的币可以成为新币的配对资产，形成“配对树” | 4、平台自己也有分红机制：交易者可以拿到 SOL 空投，持有者拿分红，同时有 $BASKET 回购销毁 | | 关键机制 | 1、持有者分红：每笔交易约 0.5% 给持有者，每 5 分钟自动发放 | 2、可配股票：可以拿 NVDA、TSLA 等代币化股票当配对资产或奖励/3、毕业后可被配对：毕业的币能成为新币的底池，形成需求循环 | 4、防复制：复制 ticker 要收费（1 SOL / 0.5 SOL） | 5、 销毁：SOL 曲线币的部分分红会用来回购销毁 | 推特上已经开始有人说这是Raydium官方支持的发射台，具体是不是真的，现在还证据还有待考证。 | | $BASKET | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
-          "tweet_url": "https://x.com/TToday82/status/2125542822795485691"
-        },
-        {
-          "author": "TToday82",
-          "author_name": "TToday82",
-          "post_time": "2026-11-25T10:54:51Z",
-          "text_clean": "$Basket 是基于 Raydium LaunchLab 的发射台，核心卖点是： | 1、在 Basket 上发射的币，每一笔交易都会自动给持有者分红（每 5 分钟结算一次，无需手动领取） | 2、可以配对 SOL、USDC，也可以配对 代币化股票（NVDAx、TSLAx、SPYx 等）或其他在 Basket 上毕业的币 | 3、毕业后的币可以成为新币的配对资产，形成“配对树” | 4、平台自己也有分红机制：交易者可以拿到 SOL 空投，持有者拿分红，同时有 $BASKET 回购销毁 | | 关键机制 | 1、持有者分红：每笔交易约 0.5% 给持有者，每 5 分钟自动发放 | 2、可配股票：可以拿 NVDA、TSLA 等代币化股票当配对资产或奖励/3、毕业后可被配对：毕业的币能成为新币的底池，形成需求循环 | 4、防复制：复制 ticker 要收费（1 SOL / 0.5 SOL） | 5、 销毁：SOL 曲线币的部分分红会用来回购销毁 | 推特上已经开始有人说这是Raydium官方支持的发射台，具体是不是真的，现在还有待考证。 | | $BASKET | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
-          "tweet_url": "https://x.com/TToday82/status/2125543733865406638"
-        },
-        {
-          "author": "sol_jingou",
-          "author_name": "sol_jingou",
-          "post_time": "2026-11-25T11:21:50Z",
-          "text_clean": "#sol #bsc 链上热点叙事｜11.25 | 1、#BASKET｜$1.3M | 机制亮点：每一笔交易给持有者+交易者分润；支持代币化股票、其他Basket系列代币配对，目标搭建互相引流的共生生态。 | CA:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | 2、#PERRO｜$150K | 经典动物meme，叙事简单直接：perro=西语“小狗”，靠萌系视觉+社区抱团热度驱动，纯情绪盘。 | CA:4Di56UJzpnb7E4D7aLXFf7aLF5TrpJYv9Q3mR398pump | | 3、#4CHAN｜$280K | 文化叙事标的：4chan是互联网meme发源地，定位成为4chan系一众meme币的底层承载配对标的，做文化母币。 | CA:DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump | | 4、#DUVAL｜100K | 对立叙事：Ansem（ANSEM）因钱包大额抛售（自述被盗）崩盘之后，社区快速催生的“新领袖”meme，Euris新接班人故事，承接老ANSEM套牢盘情绪。 | CA:7fmD1p3jzva28EPP9bPqbDoxZGj5j398yJoE3EVypump | | 5、#莫达｜$300K | 国内出圈叙事：童话大王郑渊洁AI自制动画短片里拿饼干的小老鼠角色“莫达”，国内流量发酵，BSC链中文meme。 | CA:0x2133b903cd4cb46aeece2ab4457e25cff1a87777 | | 短视频口播精简版 | | Solana、BSC链上新meme盘点，11.25 | ✅BASKET：交易分润生态盘，体量最大 | ✅PERRO：小狗萌系动物币，纯社区热度 | ✅4CHAN：4chan文化母币，承接一众meme配对 | ✅DUVAL：Ansem崩盘后的新对立叙事，接老社区情绪 | ✅莫达：郑渊洁AI动画小老鼠，国内流量出圈的中文meme | | 全部都是高风险meme，叙事来得快、归零也快，一定要自己查合约、查流动性。",
-          "tweet_url": "https://x.com/sol_jingou/status/2125550524196081675"
-        },
-        {
-          "author": "0CryptoZero",
-          "author_name": "0CryptoZero",
-          "post_time": "2026-11-25T11:52:01Z",
-          "text_clean": "solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f @Basketdotxyz 快速研究简报 | | 基于 @Raydium LaunchLab 的 launchpad。它通过“交易费分给持币者、交易者空投、 solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f 回购销毁、NFT 收益金库”形成经济闭环 | | solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f 的价值捕获 | 1、曲线上的新币会将持币者份额的一半用于回购并销毁 solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 2、每铸造一个 Basket NFT 需销毁 100,000 solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f，NFT 总量 1,000 个，最多通过该渠道销毁总供应量的 10%。（设计类似于 @otc_labs ） | | 商业模式： | 1、创作者可选择 SOL、USDC 或自定义资产作为报价币，包括代币化股票和其他 Memecoin，目前launchpad 的基础，无创新 | 2、bonding curve 阶段买卖均收取 2%，毕业后降至 1.25%，由持币者、平台、Raydium 及回购销毁等方向分配。费用相较于其他平台费用更高 | 3、平台收入再分配，平台收入的 25% 进入 Basket NFT 金库，10% 用于交易者空投（类 @otc_labs 设计，非原创） | | 综合判断 | 1、产品机制上依然是大杂烩，无明显创新 | 2、透明度方面还算可以，费用、分配比例、奖励门槛和主要钱包均在官网公开 | 3、采用验证尚属于早期，风险不低 | | 后续最值得跟踪的是：毕业新币数量与高度、实际收入及销毁金额、NFT 铸造与金库余额",
-          "tweet_url": "https://x.com/0CryptoZero/status/2125558121825509646"
-        },
-        {
-          "author": "Motier_crypto",
-          "author_name": "Motier_crypto",
-          "post_time": "2026-11-25T12:39:31Z",
-          "text_clean": "solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f, which I flagged at 774K, is starting to deliver on platform data. | | Just 3 hours after launch: | | ▸ Ecosystem cumulative volume of $2.73 million | ▸ $6,684 in rewards distributed so far | ▸ 90 NFTs minted | ▸ 9 million solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f burned | ▸ The team announced 67.64 million tokens locked via Streamflow | | More worth watching is that ecosystem tokens like $TEKSAB, $BASCAT, $BCAT, and solana:9nwLzYqpTHnA64UL9a2m74qLYbNagXDeua1iBmorpump have already adopted solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f as their trading pair and holder reward asset. | | Buying these sub-coins requires routing through solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f, and ecosystem tokens on the SOL curve continuously use part of their trading fees to buy back and burn solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f. | | If the ecosystem produces its first hot token with a million—or even ten million—dollar market cap, the parent coin's demand logic will no longer be limited to its own trading heat. | | Currently only 9% of the 1,000 NFTs have been minted, leaving potential burn room for another 91 million tokens. | | Going forward, the key is ecosystem breakout tokens, daily platform volume, and NFT minting speed—these three data points will determine whether solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f can move from a single-coin play to a platform-coin play. | | CA: 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
-          "tweet_url": "https://x.com/Motier_crypto/status/2125570074165858335"
-        },
-        {
-          "author": "rutradebtc",
-          "author_name": "rutradebtc",
-          "post_time": "2026-11-25T13:35:30Z",
-          "text_clean": "Bought $BASKET, hearing things about it and America is about to wake up | | Connections to Raydium team, could be an incoming crime | | CA: 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f x.com/rutradebtc/status/2125584160798781541/photo/1",
-          "tweet_url": "https://x.com/rutradebtc/status/2125584160798781541"
-        },
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-25T13:42:13Z",
-          "text_clean": "3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | 明牌了 | 感谢debot的地址标注 | @Debot710718 @0xCat_Crypto @Debot_Official x.com/0xZerah/status/2125585854219661652/photo/1",
-          "tweet_url": "https://x.com/0xZerah/status/2125585854219661652"
-        },
-        {
-          "author": "fangfang3366",
-          "author_name": "fangfang3366",
-          "post_time": "2026-11-25T15:10:05Z",
-          "text_clean": "Sol的流动性还是好，每天都有速通几M的金狗。这两天除了几个热门的动物meme跑出来以外，今天又速通了一个 $Basket，它是Sol上面的新台子，都说是@Raydium团队做的~ | | 简单来说: $Basket是结合了$Stonk+$Float两个台子的玩法。平台手续费的一部分会自动分红给买了$Basket的用户，另外的用来回购销毁~ | | 它最特别的点在于: 除了USDC和SOL，还支持130多种代币化美股当交易对。而且在平台毕业的币子，还能给后面的新币做底层交易对，相当于持续给老币带来买盘，形成生态内循环~ | | 另外，如果你要在$BASKET上发币，至少要准备1万U的流动池，提高发币成本，可以很好规避掉那些跑一波就撤的老鼠盘子，池子深度和承接也会更好~ | | 它的风险点在于: 它只是搭在Ray生态上，大家都说他是Ray做的，但只是传言，官方并没有承认~ | | 一句话总结: $Basket分红销毁机制不错+传和Ray有关，但目前Fomo点依托在Ray这个传闻之上，DYOR~! | | $Basket | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f",
-          "tweet_url": "https://x.com/fangfang3366/status/2125607963822055528"
-        },
-        {
-          "author": "CryptoThannos",
-          "author_name": "CryptoThannos",
-          "post_time": "2026-11-25T16:19:09Z",
-          "text_clean": "why ppl are saying solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f is made by the solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx team? | | am I missing something or is there actually a connection?",
-          "tweet_url": "https://x.com/CryptoThannos/status/2125625344732401740"
-        },
-        {
-          "author": "rutradebtc",
-          "author_name": "rutradebtc",
-          "post_time": "2026-11-26T03:49:22Z",
-          "text_clean": "Raydium needs to push it from here or I'll be so pissed on solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f x.com/rutradebtc/status/2125799046682190220/photo/1",
-          "tweet_url": "https://x.com/rutradebtc/status/2125799046682190220"
-        },
-        {
-          "author": "Mrjacknicee",
-          "author_name": "Mrjacknicee",
-          "post_time": "2026-11-26T04:12:30Z",
-          "text_clean": "2026.11.26链上一级市场热点项目,关注Jack每天第一时间获得链上热点项目资讯 | | BSC链 | | 1：黄大仙 HMC:190K CMC:163K | 0xa3dfecd6298d37f98ca17e19bdff902d2bbf7777 | 叙事：该代币名为玄铁算力坊主，符号为黄大仙，灵感源自央视相关恶搞内容、《流金谷恩仇录》相关内容以及英伟达黄仁勋辞职归位风波，关联对应指定抖音网页。该代币将黄大仙的民间民俗形象与算力相关内容结合，通过指定KOL转发和社群裂变的方式开展传播。 | | 2:莫达 HMC:985K CMC:453K | 0x2133b903cd4cb46aeece2ab4457e25cff1a87777 | 叙事：代币老鼠莫达源自71岁创作者在抖音“郑渊洁童话世界”账号借助AI技术创作的同名动画IP，该创作者每日凌晨四点半开工，单集动画耗时三天完成。该代币围绕手持饼干的老鼠莫达视觉形象做传播，关联童话IP相关内容开展定向推广，依托专属动画创作相关特色内容触达对应受众。 | | 3:ANT HMC:2.37M CMC:474K | 0xb4f9d1b2cad3646d15797de462e5d773194d7777 | 叙事：ANT代币上线于Flap平台，名称源自AI研发相关主体Anthropic，视觉设计融入蚂蚁相关元素，依托对应合约元数据搭建初始认知。项目通过指定KOL传播、社区自发传播扩大知名度，推广适配创意写作、编程、数据分析场景的ANT Chat、ANT Code等AI相关功能工具落地，同时关联Flap平台生态及蝴蝶IP内容开展宣传。 | | 4:SPACEXLIFE HMC:133K CMC:128K | 0xfb8b99ff90a33a6d81b0212f0ac80e9339e17777 | 叙事：该代币源于lebombjam发布的相关推文，参考了BINANCE LIFE的模式发起推出。该代币通过社区驱动的方式，推动太空探索相关内容传播与创新相关活动开展，旨在将美国每个人都纳入SpaceX对应社区当中。 | | SOL链 | | 1:BASKET HMC:3M CMC:749K | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 叙事：Basket代币名称来源于将多类不同资产整合进单个代币的创意，官方站点为basketlaunch xyz，是基于Raydium LaunchLab的发射平台代币，视觉标识设定为购物篮。该代币依托X平台的meme交易社区开展组合包晒单传播，支持用户转发篮子配图配文完成二次创作，搭配空投快照、持币分红、NFT金库分红、代币费用燃烧的相关规则带动用户主动拉新，同时通过Streamflow完成生态相关资产锁定，每笔交易产生的费用每5分钟自动发放给持币用户。 | | 2:Zero HMC:1.3M CMC:382K | DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump | 叙事：ZeroSumEnjoyer是受零和游戏概念及加密社区归零自嘲文化启发的迷因代币，由comethankme12通过j7tracker部署，可通过指定项目官网查看相关展示内容。该代币通过官方宣布空投10%代币的激励活动，依托X平台多位KOL转发传播相关空投信息，面向关注对应概念的受众开展推广传递自身特质。 | | 3:JIMMY HMC:2.3M CMC:888K | 38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | 叙事：该代币名称源自经典网络迷因“That really rustled my jimmies”，相关迷因最早可追溯至2010年FunnyJunk平台发布的皱眉大猩猩图片宏，关联了4plebs归档的4chan相关线程网页。项目采用“搜索即参与”的传播机制，搭配指定KOL玩梗传播，以“你被rustle了吗”作为专属暗号带动社区裂变传播。 | | 4:MONEY HMC:1.55M CMC:1M | DeACAbp2GMzapB6Z2K8qdkTZupmNbKc6EZx9bnbCpump | 叙事：该代币在pump fun平台发行，核心设定源自“Money is Meme”的趣味概念，关联官网为moneyismeme fun。项目通过在X平台发布“Show me the MONEY”相关口号，联动指定KOL开展晒单与meme创作推广，借助名称自带的传播属性吸引用户关注。 | | 5:LENDR HMC:860K CMC:625K | AGazYig7A8Co6ZapAPterBRLitdiP6AAaWiPH8jWLend | 叙事：Lendr诞生于Meme币交易者难以适配传统主流借贷协议的现实背景，官方推出了可由持有者自行设定借贷相关条款的Meme币借贷相关产品。项目将借贷操作进行游戏化设计引导用户完成借还循环产出可分享的社交内容，邀请平台知名KOL发布相关收益内容，借助各类线上社群实现内容的快速传播扩散。 | | 全网最强Debot扫链工具 毫秒级钱包快速跟单 金狗信号 快速扫链 大热标的一个不漏 超级无敌好用 新手小白上手最快:t.co/WIonVBMfdB | | 豹拉帮你第一时间捕捉全网 FOMO 主线，筛出靠谱车头豹拉把扫链做成了更轻的信号工具，小白也能免费拿到全网喊单信号，抓机会更轻松。 如果你长期追 Meme 热点，可以把它当成你的 Meme 信号雷达 注册邀请好友得手续费返佣：t.co/6cul8oqza7 | | web3全链专业交易员分析工具 只要学会 屌炸天 ： 筹码分析，资金流向，地址标签方面比同类产品做的更好用，非常适合专业交易员用 t.co/5iEI1N6TBW | | 欢迎大家进交流群 一起分享底部密码 ：t.co/GUXgv8lZc7",
-          "tweet_url": "https://x.com/Mrjacknicee/status/2125804866379624887"
-        },
-        {
-          "author": "xiaoluoweb3",
-          "author_name": "xiaoluoweb3",
-          "post_time": "2026-11-26T05:03:38Z",
-          "text_clean": "$BASKET ｜当前 70 万美元，这盘真正的发动机在代币化股票这条叙事上，Raydium LaunchLab 只是基础设施 | | 直接给结论，这个标的我给不出倍数预期，但我觉得它的上限取决于代币化股票叙事能不能继续发酵。 | | xStocks 这套在 Solana 上跑得起来，Basket 作为把股票当配对资产的发射台就有存在意义。股票叙事熄火，Basket 的回购销毁飞轮就是空转。 | | 当天中午毕业我没追，位置看着就不安全。晚上回过神来它已经从 5 万美元顶到 300 万高点了，70 倍过去了心态就不对。追高的盈亏比太难算，我没算明白。 | | 这个盘我盯的几个点： | | 1⃣持仓 6764 万枚的头号地址和 Streamflow 锁仓数量正好对上，这个地址的解锁节奏是二段能不能起的最关键变量。官号自己锁了 7% 在那里，中短期不往下砸就是最大的利好。 | | 2⃣1000 个 NFT 每铸一个销毁 10 万枚 BASKET，目前已铸 155 个。全部铸满再销毁 8445 万枚，占总量不到 1%。这个销毁强度听着大，平摊到时间维度上没那么夸张。 | | 3⃣平台能不能持续发出有流量的新币才是飞轮能不能转的真答案。Solana 上 pad 已经卷到极致，想做出一个 $WIF 级别的爆款难度不小。 | | 现在的位置相对高点腰斩加七成，从百万美元回到七十万，筹码也洗了一轮。盈亏比比高点那会儿好看不少，但是二段能不能起我不敢打包票。等它走出一次站稳 30 万以上的回测再说。 | | CA：3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | ------- | | 欢迎各位加入我的链上频道，7 * 24 打狗，分享一些高质量研判👇",
-          "tweet_url": "https://x.com/xiaoluoweb3/status/2125817735267733682"
-        },
-        {
-          "author": "btc2ai",
-          "author_name": "btc2ai",
-          "post_time": "2026-11-26T09:30:11Z",
-          "text_clean": "最近一级都不知道可以交易啥了... | 观察了一下这个项目，一天时间，没挂，那就再观察 | | $BASKET｜发射台开始让 Meme 用另一个 Meme 报价 | Basket 是 Solana 上基于 Raydium LaunchLab 的发射台。Raydium 发射页把本 CA 标成 Basket 平台。 | | CA：Solana | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | Basket 把发币时的两个选择交给创作者：用什么资产给新币报价，以及用什么资产发交易费奖励。可以发一枚用 $BASKET 报价、奖励也发 $BASKET 的猫币，也可以用 SOL 报价、奖励按轮换发代币化美股。",
-          "tweet_url": "https://x.com/btc2ai/status/2125884814645706784"
-        },
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-26T13:42:41Z",
-          "text_clean": "最近2天sol上call的币，复盘一下，我觉得行情这样，跑出来的币都吃到了真的很牛逼，我都佩服我自己 | 1、9scVbbC7HUwXaBmo8bnYfm2Pa5oouZpjy2NvrvwLpump | 白衬衫jessen | 黄仁勋重返ceo叙事，100-150k上的，老马过一会奶了一口，高点1.2m，900k随便出， | 2、 | 38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | Jimmy | 4chan叙事，400k上，2m以上随便卖 | 3、3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | basket | 发射台叙事 | 昨天下午130k我上的同步发推让回调200k上，信我的100k也随便买，高点3m | 4、 | DVdWuNK8ncn79B6z8nCiwcNAiwyFcmBPfChgxJGTpump | 4chan | 让600k稳住上，没稳住，没上pass | 5、5EmvWDizkpjAXbcfCcVq69w1id8GaLzi4LLwtuSgpump | pompom | 三丽鸥涂鸦叙事，有点传播性，回调200k上的，高点750k | 6、6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump | 今天白天实在无聊买的一个，100k上，高点也300多k | 一共6个，上了五个，都有倍数，上车时间和下车时间也很充足，只要不是睡着了都能赶得上，非常期待流动性爆发的那天。",
-          "tweet_url": "https://x.com/0xZerah/status/2125948357273333766"
-        },
-        {
-          "author": "0xZerah",
-          "author_name": "0xZerah",
-          "post_time": "2026-11-26T13:46:56Z",
-          "text_clean": "38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | 大家也别忘了这个的二段哈，700k以下随便买，浮盈中。 | | 然后这个basket | | solana:3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | 按照float的剧本来说，500k左右分批买吧 | ，拿个3天左右看看，带个止损 x.com/0xZerah/status/2125949425889714343/photo/1",
-          "tweet_url": "https://x.com/0xZerah/status/2125949425889714343"
-        },
-        {
-          "author": "XPnftclub",
-          "author_name": "XPnftclub",
-          "post_time": "2026-11-26T13:52:39Z",
-          "text_clean": "$BASKET 和 $JIMMY | 昨天两个大热门meme今天都回调很多 | | basket虽然机制不错，也有独特优势，但是昨天分析不是ray官方出的发射台当时就是高点了，现在做发射台都是地狱难度 | | jimmy的叙事不错，故事也好，可惜没头部玩家的买入和喊单，还是缺乏持续上涨动力 | | 行情影响，现在sol上meme的节奏很快，所以都还是以打一枪就跑的策略 | | 3Tg6YnNrfPdFfsY14MaNsDMWLseAyrUDS3myJtbaJN6f | | 38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump | #BASKET #JIMMY #DYOR",
-          "tweet_url": "https://x.com/XPnftclub/status/2125950864947134500"
         }
       ]
     }
